@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js없이 Details를 활용한 Accordion</title>
+<style>
+.accordion .accordion__item{padding:0 16px;border:1px solid #e5e5e5;border-radius:8px;background:#f6f8fa}
+.accordion .accordion__item ~ .accordion__item{margin-top:4px}
+.accordion .accordion__item .accordion__button{position:relative;min-height:48px;padding:12px 0;box-sizing:border-box;color:#222;font-size:16px;line-height:1.5;font-weight:bold}
+.accordion .accordion__item .accordion__button::marker{content:none}
+.accordion .accordion__item .accordion__button:after{content:'';position:absolute;right:10px;top:30%;width:12px;height:12px;border:1px solid #666;border-width:0 0 2px 2px;transform:rotate(-45deg);transform-origin:28% 72%;transition:all .2s ease-in-out}
+.accordion .accordion__item[open] .accordion__button:after{transform:rotate(135deg)}
+.accordion .accordion__contents{color:#666;font-size:13px;line-height:1.5;padding-bottom:16px;}
+</style>
+</head>
+<body>
+    <div class="accordion">
+        <details class="accordion__item">
+            <summary class="accordion__button">title입니다</summary>
+            <div class="accordion__contents">상세내용이구요<br>상세내용이구요<br>상세내용이구요<br>상세내용이구요<br>상세내용이구요</div>
+        </details>
+        <details class="accordion__item">
+            <summary class="accordion__button">title입니다</summary>
+            <div class="accordion__contents">상세내용이구요<br>상세내용이구요<br>상세내용이구요</div>
+        </details>
+        <details class="accordion__item">
+            <summary class="accordion__button">title입니다</summary>
+            <div class="accordion__contents">상세내용이구요<br>상세내용이구요<br>상세내용이구요<br>상세내용이구요<br>상세내용이구요<br>상세내용이구요<br>상세내용이구요<br>상세내용이구요<br>상세내용이구요</div>
+        </details>
+    </div>
+</body>
+</html>
