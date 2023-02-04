@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="shortcut icon" href="../images/favicon.ico">
+<title>실시간 예약 | BMW Plus</title>
+<link href="../css/common.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div class="skipNav"><a href="#contents">본문으로 바로가기</a></div>
+
+<div class="wrap">
+	<header>
+		<div class="hdWrap">
+			<img src="../images/temp/dummy_header.gif" alt=""><!-- //임시이미지 -->
+		</div>
+	</header>
+
+	<section class="container">
+		<div id="contents" class="contents utilP"><!-- //공통&기타 페이지 : utilP 클래스 추가 -->
+			<div class="visualArea">
+				<div class="conVisual">
+					<div class="txtWrap">
+						<h1 class="conTit1">실시간 예약.</h1>
+						<p class="titCopy">온라인으로 빠르고 쉽게 서비스 예약을 할 수 있습니다.</p>
+					</div>
+				</div>
+			</div>
+			<div class="contArea reservation">
+				<div class="calendarWrap">
+					<input type="text" title="예약일" placeholder="예약일을 선택해 주세요." id="dateSelect" readonly><!-- //예약일 선택 팝업에서 선택된 값이 yyyy, mm, dd hh:mm 형태로 출력됨 -->
+					<button type="button" class="btnCalendar">날짜 선택</button><!-- 예약일 선택 팝업 호출 -->
+				</div>
+			</div>
+		</div>
+		<!-- //contents -->
+	</section>
+	<!-- //container -->
+
+	<footer>
+		<div class="ftWrap">
+			<img src="../images/temp/dummy_footer.gif" alt=""><!-- //임시이미지 -->
+		</div>
+	</footer>
+</div><!-- //wrap -->
+
+<div class="lyDim"><!-- back 영역 --></div><!-- layer Dim 영역 -->
+<!-- layer Popup : 예약일 선택 -->
+<div id="lyDateSelect" class="layerPop">
+	<section class="popWrap">
+		<h1 class="popTit">예약일 선택</h1>
+		<div class="popCont">
+			<div class="calendar">
+				<!-- 캘린더 출력 영역 -->
+			</div>
+			<div class="selType1 reverse" style="width:100%">
+				<select title="시간 선택">
+					<option value="">09:00</option>
+					<option value="">09:20</option>
+					<option value="">09:40</option>
+					<option value="" disabled>10:00</option><!-- //비활성화 되었을때 disabled 속성추가 -->
+					<option value="">10:20</option>
+					<option value="">10:40</option>
+					<option value="">13:00</option>
+					<option value="">13:20</option>
+					<option value="">13:40</option>
+					<option value="">14:00</option>
+					<option value="">14:20</option>
+					<option value="">14:40</option>
+					<option value="">15:00</option>
+					<option value="">15:20</option>
+					<option value="">15:40</option>
+					<option value="">16:00</option>
+					<option value="">16:20</option>
+					<option value="">16:40</option>
+				</select>
+			</div>
+			<div class="btnBox"><a href="#" class="btnL">확인</a></div>
+		</div>
+		<button type="button" class="popClose">닫기</button>
+	</section><!-- //popWrap -->
+</div>
+<!-- //layer Popup : 예약일 선택 -->
+
+<!-- script include -->
+<script src="../js/jquery-3.1.0.min.js"></script>
+<script src="../js/jquery-ui.min.js"></script>
+<script src="../js/common.js"></script>
+
+<script>
+	// disabled 시킬 날짜 배열
+	var disableDay = [
+		'2017.06.26',
+		'2017.06.28'
+	];
+	
+	// 날짜 input에 날짜 배열 저장
+	//datepicker안 beforeShowDay속성에서 disableDay배열을 날짜들과 비교하여 존재하면 disabled
+	$('.calendarWrap').find('input').data('disableDay', disableDay);
+	$('.calendarWrap.col2').find('.date input').data('disableDay', disableDay);
+	
+</script>
+
+</body>
+</html>

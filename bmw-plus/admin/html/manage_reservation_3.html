@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>관리자 | BMW Plus</title>
+<link href="../css/admin.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<p id="gotoContents"><a href="#container">본문으로 바로가기</a></p>
+
+<div id="wrapper" class="wrapper">
+	<div id="header" class="header">
+		<div class="headWrap">
+			<img src="../img/@dummy_header.gif" alt="">
+		</div>		
+	</div><!-- // end header -->
+	<hr>
+	
+	<div id="container" class="container">
+		<div id="snb" class="snb">
+			<img src="../img/@dummy_snb.gif" alt="">
+		</div><!-- // end snb -->
+		
+		<div id="contents" class="contents">
+			<div class="location">
+				<a href="#" class="home">HOME</a> > 
+				<a href="#">예약관리</a> > 
+				<strong>센터 예약 설정</strong>
+			</div>
+			
+			<h1>예약관리</h1>
+			<h2>센터 예약 설정</h2>
+			<div class="tableType2">
+				<table>
+					<caption>예약 내역 조회</caption>
+					<colgroup><col style="width:16%"><col><col style="width:16%"><col></colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">딜러</th>
+							<td>
+								<select title="딜러" style="width:250px">
+									<option value="">선택하세요.</option>
+									<option value="">전체</option>
+									<option value="">내쇼날 모터스</option>
+									<option value="">도이치 모터스</option>
+									<option value="">동성 모터스</option>
+									<option value="">바바리안 모터스</option>
+									<option value="">삼천리 모터스</option>
+									<option value="">신호 모터스</option>
+									<option value="">코오롱 모터스</option>
+									<option value="">한독 모터스</option>
+								</select>
+							</td>
+							<th scope="row">서비스센터</th>
+							<td>
+								<select title="서비스센터" style="width:250px">
+									<option value="">선택하세요.</option>
+									<option value="">전체</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">브랜드</th>
+							<td colspan="3">
+								<select title="브랜드" style="width:250px">
+									<option value="">전체</option>
+									<option value="">BMW</option>
+									<option value="">MINI</option>
+									<option value="">BMWi</option>
+								</select>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="btnBox_t">
+				<a href="#" class="btnM">조회</a>
+			</div>
+
+			<div class="infoBox">
+				<p><strong>주의사항</strong></p>
+				<ul class="mt5">
+					<li>- 본 화면은 DMS에 설정된 예약슬롯을 BMW Plus상에서 <strong class="fCol1">추가로 예약제한</strong>을 할 경우에만 사용하는 화면입니다.</li>
+					<li>- DMS상에서 예약이 불가능한 경우, 본 화면과 상관없이 예약입력을 할 수 없습니다.</li>
+					<li>- 체크된 항목이 <span class="linkTxt fCol1">예약 불가</span> 시간입니다.</li>
+					<li>- 설정 후 바로 적용 됩니다. (단, 설정 저장 전에 예약시간을 잡은 경우에는 예약이 될 수 있습니다)</li>
+				</ul>
+			</div>
+
+			<div class="resultArea">
+				<div class="tableType1">
+					<table>
+						<caption>예약 선택</caption>
+						<colgroup><col style="width:10%"><col style="width:20%"><col style="width:10%" span="7"></colgroup>
+						<thead>
+							<tr>
+								<th scope="col">시</th>
+								<th scope="col">분</th>
+								<th scope="col">월<br><input type="checkbox" title="월요일 전체선택" disabled></th><!-- 비활성 -->
+								<th scope="col">화<br><input type="checkbox" title="화요일 전체선택" disabled></th>
+								<th scope="col">수<br><input type="checkbox" title="수요일 전체선택" disabled></th>
+								<th scope="col">목<br><input type="checkbox" title="목요일 전체선택" disabled></th>
+								<th scope="col">금<br><input type="checkbox" title="금요일 전체선택" disabled></th>
+								<th scope="col">토<br><input type="checkbox" title="토요일 전체선택" checked></th><!-- 선택 -->
+								<th scope="col">일<br><input type="checkbox" title="일요일 전체선택"></th>
+							</tr>
+						</thead>
+						<tbody>
+							<!-- 반복 시작 -->
+							<tr>
+								<th rowspan="3" scope="row">9</th>
+								<td><label>00~19</label><input type="checkbox" disabled></td><!-- 비활성 -->
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+							</tr>
+							<tr>
+								<td><label>20~39</label><input type="checkbox" disabled></td><!-- 비활성 -->
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+							</tr>
+							<tr>
+								<td><label>40~59</label><input type="checkbox" disabled></td><!-- 비활성 -->
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+							<tr>
+							<!--// 반복 끝 -->
+							
+							<tr>
+								<th rowspan="3" scope="row">10</th>
+								<td><label>00~19</label><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+							</tr>
+							<tr>
+								<td><label>20~39</label><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+							</tr>
+							<tr>
+								<td><label>40~59</label><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+							<tr>
+							
+							<tr>
+								<th rowspan="3" scope="row">11</th>
+								<td><label>00~19</label><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+							</tr>
+							<tr>
+								<td><label>20~39</label><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+							</tr>
+							<tr>
+								<td><label>40~59</label><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+							<tr>
+							
+							<tr>
+								<th rowspan="3" scope="row">12</th>
+								<td><label>00~19</label><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+							</tr>
+							<tr>
+								<td><label>20~39</label><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+							</tr>
+							<tr>
+								<td><label>40~59</label><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+							<tr>
+							
+							<tr>
+								<th rowspan="3" scope="row">13</th>
+								<td><label>00~19</label><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+							</tr>
+							<tr>
+								<td><label>20~39</label><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+							</tr>
+							<tr>
+								<td><label>40~59</label><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+							<tr>
+							
+							<tr>
+								<th rowspan="3" scope="row">14</th>
+								<td><label>00~19</label><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+							</tr>
+							<tr>
+								<td><label>20~39</label><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+							</tr>
+							<tr>
+								<td><label>40~59</label><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+							<tr>
+							
+							<tr>
+								<th rowspan="3" scope="row">15</th>
+								<td><label>00~19</label><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+							</tr>
+							<tr>
+								<td><label>20~39</label><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+							</tr>
+							<tr>
+								<td><label>40~59</label><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+							<tr>
+							
+							<tr>
+								<th rowspan="3" scope="row">16</th>
+								<td><label>00~19</label><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+							</tr>
+							<tr>
+								<td><label>20~39</label><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+							</tr>
+							<tr>
+								<td><label>40~59</label><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+							<tr>
+							
+							<tr>
+								<th rowspan="3" scope="row">17</th>
+								<td><label>00~19</label><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+							</tr>
+							<tr>
+								<td><label>20~39</label><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+							</tr>
+							<tr>
+								<td><label>40~59</label><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+							<tr>
+							
+							<tr>
+								<th rowspan="3" scope="row">18</th>
+								<td><label>00~19</label><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+							</tr>
+							<tr>
+								<td><label>20~39</label><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+							</tr>
+							<tr>
+								<td><label>40~59</label><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+							<tr>
+						</tbody>
+					</table>
+				</div>
+				
+				<div class="btnBox tR">
+					<div class="lBtn"><a href="#" class="btnM cWhite">초기화</a></div>
+					<a href="#" class="btnM">수정</a>
+				</div>
+			</div>
+
+		</div><!-- // end contents -->
+	</div>
+
+	<div id="footer" class="footer">
+		<div class="footArea">
+			<p class="copyright">© <strong>BMW Group Korea</strong> All rights reserved.</p>
+		</div>
+	</div><!-- // end footer -->
+	
+</div><!-- // end wrapper -->
+
+<!-- script include -->
+<script src="../js/jquery-3.1.0.min.js"></script>
+<script src="../js/common.js"></script>
+
+</body>
+</html>
+

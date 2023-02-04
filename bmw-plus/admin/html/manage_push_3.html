@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>관리자 | BMW Plus</title>
+<link href="../css/admin.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<p id="gotoContents"><a href="#container">본문으로 바로가기</a></p>
+
+<div id="wrapper" class="wrapper">
+	<div id="header" class="header">
+		<div class="headWrap">
+			<img src="../img/@dummy_header.gif" alt="">
+		</div>		
+	</div><!-- // end header -->
+	<hr>
+	
+	<div id="container" class="container">
+		<div id="snb" class="snb">
+			<img src="../img/@dummy_snb.gif" alt="">
+		</div><!-- // end snb -->
+		
+		<div id="contents" class="contents">
+			<div class="location">
+				<a href="#" class="HOME">HOME</a> > 
+				<a href="#">Push 관리</a> > 
+				<strong>MINI Push 메시지</strong>
+			</div>
+			
+			<h1>MINI Push 메시지</h1>
+			<div class="tableType2">
+				<table>
+					<caption>Push 메시지 조회</caption>
+					<colgroup><col style="width:16%"><col><col style="width:16%"><col></colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">종류</th>
+							<td>
+								<select title="종류" style="width:250px">
+									<option value="">전체</option>
+								</select>
+							</td>
+							<th scope="row">전송상태</th>
+							<td>
+								<select title="전송상태" style="width:250px">
+									<option value="">전체</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">대상자 종류</th>
+							<td>
+								<select title="대상자 종류" style="width:250px">
+									<option value="">전체</option>
+								</select>
+							</td>
+							<th scope="row">발송일</th>
+							<td>
+								<input type="text" style="width:98px" title="시작 날짜입력">
+								<a href="#" class="btnCalendar"><img src="../img/calendar.gif" alt="날짜입력"></a>
+								<span style="margin-right:5px">~</span>
+								<input type="text" style="width:98px" title="끝 날짜입력">
+								<a href="#" class="btnCalendar"><img src="../img/calendar.gif" alt="날짜입력"></a>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">제목+내용 검색</th>
+							<td colspan="3">
+								<input type="text" class="fullInp" title="검색어">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="btnBox_t">
+				<a href="#" class="btnM cWhite">초기화</a>
+				<a href="#" class="btnM">조회</a>
+			</div>
+
+			<div class="resultArea">
+				<div class="topRelative">
+					<div class="resultTxt">총 <strong>0,000</strong>건이 검색 되었습니다.</div>
+					<div class="rArea"><a href="#" class="btnS cGray">메시지 작성</a></div>
+				</div>
+				<div class="tableType1 mt10">
+					<table>
+						<caption>조회결과</caption>
+						<colgroup><col style="width:7%" span="3"><col><col><col style="width:7%" span="4"></colgroup>
+						<thead>
+							<tr>
+								<th scope="col">번호</th>
+								<th scope="col">발송일</th>
+								<th scope="col">종류</th>
+								<th scope="col">제목</th>
+								<th scope="col">내용</th>
+								<th scope="col">대상자<br>선택</th>
+								<th scope="col">대상자수</th>
+								<th scope="col">전송자수</th>
+								<th scope="col">전송<br>상태</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">10</th>
+								<td>2017-05-01</td>
+								<td>공지</td>
+								<td class="tL"><a href="#">부산 차량전시장 추가 안내</a></td>
+								<td class="tL">부산 차량전시장이 추가되어 알려드립니다.</td>
+								<td>회원DB</td>
+								<td>25850</td>
+								<td>25850</td>
+								<td>완료</td>
+							</tr>
+							<tr>
+								<th scope="row">10</th>
+								<td>2017-05-01</td>
+								<td>공지</td>
+								<td class="tL"><a href="#">부산 차량전시장 추가 안내</a></td>
+								<td class="tL">부산 차량전시장이 추가되어 알려드립니다.</td>
+								<td>회원DB</td>
+								<td>25850</td>
+								<td>25850</td>
+								<td>완료</td>
+							</tr>
+							<tr>
+								<th scope="row">10</th>
+								<td>2017-05-01</td>
+								<td>공지</td>
+								<td class="tL"><a href="#">부산 차량전시장 추가 안내</a></td>
+								<td class="tL">부산 차량전시장이 추가되어 알려드립니다.</td>
+								<td>회원DB</td>
+								<td>25850</td>
+								<td>25850</td>
+								<td>완료</td>
+							</tr>
+							<tr>
+								<td class="noData" colspan="9">조회 결과가 없습니다.</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<div class="paging">
+					<a href="#" class="first"><img src="../img/btn_paging_first.gif" alt="처음 페이지"></a><a href="#" class="prev"><img src="../img/btn_paging_prev.gif" alt="이전 페이지"></a><a href="#" class="on">1</a><a href="#">2</a><a href="#">3</a><a href="#">4</a><a href="#">5</a><a href="#">6</a><a href="#">7</a><a href="#">8</a><a href="#">9</a><a href="#">10</a><a href="#" class="next"><img src="../img/btn_paging_next.gif" alt="다음 페이지"></a><a href="#" class="last"><img src="../img/btn_paging_last.gif" alt="마지막 페이지"></a>
+				</div>
+				<div class="bdBbtn dR"><a href="#" class="btnS cGray">메시지 작성</a></div>
+			</div>
+
+		</div><!-- // end contents -->
+	</div>
+
+	<div id="footer" class="footer">
+		<div class="footArea">
+			<p class="copyright">© <strong>BMW Group Korea</strong> All rights reserved.</p>
+		</div>
+	</div><!-- // end footer -->
+	
+</div><!-- // end wrapper -->
+
+<!-- script include -->
+<script src="../js/jquery-3.1.0.min.js"></script>
+<script src="../js/common.js"></script>
+
+</body>
+</html>
+

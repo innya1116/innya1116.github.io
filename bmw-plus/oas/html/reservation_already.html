@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="shortcut icon" href="../images/favicon.ico">
+<title>실시간 예약 | BMW Plus</title>
+<link href="../css/common.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div class="skipNav"><a href="#contents">본문으로 바로가기</a></div>
+
+<div class="wrap">
+	<header>
+		<div class="hdWrap">
+			<img src="../images/temp/dummy_header.gif" alt=""><!-- //임시이미지 -->
+		</div>
+	</header>
+
+	<section class="container">
+		<div id="contents" class="contents reservation"><!-- //실시간 예약 reservation 클래스 추가 -->
+			<div class="visualArea">
+				<div class="conVisual">
+					<div class="txtWrap">
+						<h1 class="conTit1">실시간 예약.</h1>
+						<p class="titCopy">온라인으로 빠르고 쉽게 서비스 예약을 할 수 있습니다.</p>
+					</div>
+				</div>
+			</div>
+			<div class="contArea reservation">
+				<a href="#" onclick="commonJs.popShow($('#lyRsvAlready'))">이미 등록된 예약이 있을 경우(레이어팝업)</a>
+			</div>
+		</div>
+		<!-- //contents -->
+	</section>
+	<!-- //container -->
+
+	<footer>
+		<div class="ftWrap">
+			<img src="../images/temp/dummy_footer.gif" alt=""><!-- //임시이미지 -->
+		</div>
+	</footer>
+</div><!-- //wrap -->
+
+<div class="lyDim"><!-- back 영역 --></div><!-- layer Dim 영역 -->
+<!-- layer Popup : 이미 등록된 예약이 있을 경우 -->
+<div id="lyRsvAlready" class="layerPop">
+	<section class="popWrap">
+		<h1 class="popTit">알림</h1>
+		<div class="popCont">
+			<div class="infoBox">
+				<strong class="tit">이미 등록된 예약이 있습니다.</strong>
+				<p class="txt">등록차량당 1건의 예약만 가능합니다.</p>
+			</div>
+			<div class="btnBox">
+				<a href="#" class="btnL bGray">닫기</a>
+			</div>
+		</div>
+		<button type="button" class="popClose">닫기</button>
+	</section><!-- //popWrap -->
+</div>
+<!-- //layer Popup : 이미 등록된 예약이 있을 경우 -->
+
+<!-- script include -->
+<script src="../js/jquery-3.1.0.min.js"></script>
+<script src="../js/jquery-ui.min.js"></script>
+<script src="../js/common.js"></script>
+
+</body>
+</html>

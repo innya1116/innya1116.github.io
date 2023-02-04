@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>관리자 | BMW Plus</title>
+<link href="../css/admin.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<p id="gotoContents"><a href="#container">본문으로 바로가기</a></p>
+
+<div id="wrapper" class="wrapper">
+	<div id="header" class="header">
+		<div class="headWrap">
+			<img src="../img/@dummy_header.gif" alt="">
+		</div>		
+	</div><!-- // end header -->
+	<hr>
+	
+	<div id="container" class="container">
+		<div id="snb" class="snb">
+			<img src="../img/@dummy_snb.gif" alt="">
+		</div><!-- // end snb -->
+		
+		<div id="contents" class="contents">
+			<div class="location">
+				<a href="#" class="home">HOME</a> > 
+				<a href="#">회원관리</a> >
+				<strong>회원관리</strong>
+			</div>
+			
+			<h1>회원관리</h1>
+			<h2>회원 조회</h2>
+
+			<div class="tableType2">
+				<table>
+					<caption>회원 조회</caption>
+					<colgroup><col style="width:20%"><col><col style="width:20%"><col></colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">차량등록여부</th>
+							<td colspan="3">
+								<input type="radio" name="rd1" id="rd11"><label for="rd11">전체</label>
+								<input type="radio" name="rd1" id="rd12"><label for="rd12">차량 있음</label>
+								<input type="radio" name="rd1" id="rd13"><label for="rd13">차량 없음</label>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">계정상태</th>
+							<td colspan="3"><!-- Modify 18.03.13 -->
+								<select title="계정상태" style="width:250px">
+									<option value="">전체</option>
+									<option value="">사용</option>
+									<option value="">정지</option>
+								</select>
+							</td>
+							<!--th scope="row">휴면여부</th>
+							<td>
+								<select title="휴면여부" style="width:250px">
+									<option value="">전체</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">주소</th>
+							<td colspan="3">
+								<select title="주소" style="width:250px">
+									<option value="">전체</option>
+								</select>
+							</td--><!-- Delete 18.03.13 -->
+						</tr>
+						<tr>
+							<th scope="row">지역</th>
+							<td>
+								<select title="지역" style="width:250px">
+									<option value="">전체</option>
+									<option value="">서울</option>
+									<option value="">인천</option>
+									<option value="">경기</option>
+									<option value="">대전</option>
+									<option value="">충북</option>
+									<option value="">충남</option>
+									<option value="">광주</option>
+									<option value="">전북</option>
+									<option value="">전남</option>
+									<option value="">부산</option>
+									<option value="">울산</option>
+									<option value="">대구</option>
+									<option value="">경북</option>
+									<option value="">경남</option>
+									<option value="">강원</option>
+								</select>
+							</td>
+							<th scope="row">가입경로(BMW/MINI)</th>
+							<td>
+								<select title="가입경로(BMW/MINI)" style="width:250px">
+									<option value="">전체</option>
+									<option value="">BMW Plus</option>
+									<option value="">MINI Plus</option>
+								</select>
+							</td>
+						</tr><!-- Add 18.03.13 -->
+						<tr>
+							<th scope="row">브랜드</th>
+							<td>
+								<select title="브랜드" style="width:250px">
+									<option value="">전체</option>
+									<option value="">BMW</option>
+									<option value="">MINI</option>
+								</select>
+							</td>
+							<th scope="row">시리즈</th>
+							<td>
+								<select title="시리즈" style="width:250px">
+									<option value="">전체</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">가입일</th>
+							<td colspan="3">
+								<input type="text" style="width:98px" title="시작 날짜입력">
+								<a href="#" class="btnCalendar"><img src="../img/calendar.gif" alt="날짜입력"></a>
+								<span style="margin-right:5px">~</span>
+								<input type="text" style="width:98px" title="끝 날짜입력">
+								<a href="#" class="btnCalendar"><img src="../img/calendar.gif" alt="날짜입력"></a>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">
+								<select title="검색분류" style="width:150px">
+									<option value="">전체</option></option>
+									<option value="">이름</option>
+									<option value="">휴대전화</option>
+									<option value="">이메일</option>
+									<option value="">차대번호</option>
+									<option value="">차량번호</option>
+								</select>
+							</th>
+							<td colspan="3">
+								<input type="text" class="fullInp" title="날짜입력">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="btnBox">
+				<a href="#" class="btnM cWhite">초기화</a>
+				<a href="#" class="btnM">조회</a>
+			</div>
+
+			<div class="resultArea">
+				<p class="resultTxt">총 <strong>9,999</strong>건이 검색 되었습니다.</p>
+				<div class="tableType1 minPd">
+					<table>
+						<caption>조회 결과</caption>
+						<thead>
+							<tr>
+								<th scope="col">No.</th>
+								<th scope="col">회원<br>번호</th><!-- Add 18.03.13 -->
+								<th scope="col">계정<br>상태</th>
+								<th scope="col">휴면<br>여부</th>
+								<th scope="col">가입<br>경로</th>
+								<th scope="col">이메일</th>
+								<th scope="col">이름</th>
+								<th scope="col">휴대전화</th>
+								<th scope="col">예약<br>이용건수</th>
+								<!--th scope="col">차량<br>등록여부</th--><!-- Delete 18.03.13 -->
+								<th scope="col">보유<br>차량대수</th><!-- Add 18.03.13 -->
+								<th scope="col">차량종류</th>
+								<th scope="col">차대번호</th>
+								<th scope="col">차량번호</th>
+								<th scope="col">가입일</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">10</th>
+								<td>10</td><!-- Add 18.03.13 -->
+								<td>사용</td>
+								<td>N</td>
+								<td>BMW Plus</td><!-- Add 18.03.13 -->
+								<td><a href="#">abcd1234@bmw.com</a></td>
+								<td>Michael Jackson</td>
+								<td>010-****-2314</td>
+								<td>1</td>
+								<!--td>Y</td--><!-- Delete 18.03.13 -->
+								<td>10</td><!-- Add 18.03.13 -->
+								<td>BMW 320d</td>
+								<td>WBAZZ0000Z<br>Z000001</td>
+								<td>77구 1234</td>
+								<td>2017-06-01</td>
+							</tr>
+							<tr class="stopId"><!-- //정지계정 클래스 stopId 추가 -->
+								<th scope="row">9</th>
+								<td>10</td><!-- Add 18.03.13 -->
+								<td>정지</td>
+								<td>N</td>
+								<td>MINI Plus</td><!-- Add 18.03.13 -->
+								<td><a href="#">abcd1234@bmw.com</a></td>
+								<td>Michael Jackson</td>
+								<td>010-****-2314</td>
+								<td>1</td>
+								<!--td>N</td--><!-- Delete 18.03.13 -->
+								<td>10</td><!-- Add 18.03.13 -->
+								<td>차량미등록</td>
+								<td>차량미등록</td>
+								<td>차량미등록</td>
+								<td>2017-05-27</td>
+							</tr>
+							<tr>
+								<td class="noData" colspan="14">조회 결과가 없습니다.</td><!-- Modify 18.03.13 -->
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<div class="paging">
+					<a href="#" class="first"><img src="../img/btn_paging_first.gif" alt="처음 페이지"></a><a href="#" class="prev"><img src="../img/btn_paging_prev.gif" alt="이전 페이지"></a><a href="#" class="on">1</a><a href="#">2</a><a href="#">3</a><a href="#">4</a><a href="#">5</a><a href="#">6</a><a href="#">7</a><a href="#">8</a><a href="#">9</a><a href="#">10</a><a href="#" class="next"><img src="../img/btn_paging_next.gif" alt="다음 페이지"></a><a href="#" class="last"><img src="../img/btn_paging_last.gif" alt="마지막 페이지"></a>
+				</div>
+			</div><!-- //resultArea -->
+
+		</div><!-- // end contents -->
+	</div>
+
+	<div id="footer" class="footer">
+		<div class="footArea">
+			<p class="copyright">© <strong>BMW Group Korea</strong> All rights reserved.</p>
+		</div>
+	</div><!-- // end footer -->
+	
+</div><!-- // end wrapper -->
+
+<!-- script include -->
+<script src="../js/jquery-3.1.0.min.js"></script>
+<script src="../js/common.js"></script>
+
+</body>
+</html>
+

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>관리자 | BMW Plus</title>
+<link href="../css/admin.css" rel="stylesheet" type="text/css">
+<link href="../css/jquery-ui.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<p id="gotoContents"><a href="#container">본문으로 바로가기</a></p>
+
+<div id="wrapper" class="wrapper">
+	<div id="header" class="header">
+		<div class="headWrap">
+			<img src="../img/@dummy_header.gif" alt="">
+		</div>		
+	</div><!-- // end header -->
+	<hr>
+	
+	<div id="container" class="container">
+		<div id="snb" class="snb">
+			<img src="../img/@dummy_snb.gif" alt="">
+		</div><!-- // end snb -->
+		
+		<div id="contents" class="contents">
+			<div class="location">
+				<a href="#" class="home">HOME</a> > 
+				<a href="#">예약 관리</a> > 
+				<strong>CIC 예약 관리</strong><!-- Modify 18.04.04 -->
+			</div>
+			
+			<h1>CIC 예약 관리</h1><!-- Modify 18.04.04 -->
+			<h2>예약 캠페인 생성</h2><!-- Modify 18.04.04 -->
+				
+			<div class="tableType2">
+				<table>
+					<caption>CIC 예약 상세보기</caption>
+					<colgroup><col style="width:15%"><col style="width:15%"><col></colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">제목</th>
+							<td colspan="2">
+								<input type="text" title="검색어" value="이벤트 배너 01" class="fullInp">
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">예약 시작일</th>
+							<td colspan="2">
+								<input type="text" style="width:100px" title="시작 날짜입력">
+								<a href="#" class="btnCalendar"><img src="../img/calendar.gif" alt="날짜입력"></a>
+								<select title="시" class="ml10" style="width:70px">
+									<option value="">09</option>
+								</select>
+								시
+								<select title="분" class="ml10" style="width:70px">
+									<option value="">01</option>
+								</select>
+								분
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">예약 종료일</th>
+							<td colspan="2">
+								<input type="text" style="width:100px" title="끝 날짜입력">
+								<a href="#" class="btnCalendar"><img src="../img/calendar.gif" alt="날짜입력"></a>
+								<select title="시" class="ml10" style="width:70px">
+									<option value="">09</option>
+								</select>
+								시
+								<select title="분" class="ml10" style="width:70px">
+									<option value="">01</option>
+								</select>
+								분
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">작성자</th>
+							<td colspan="2">Admin2</td>
+						</tr>
+						<tr>
+							<th scope="row">상담 스크립트</th>
+							<td colspan="2">
+								<div class="editorArea">
+									에디터 영역
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th scope="rowgroup" rowspan="3">TM List 생성</th>
+							<th scope="row">차대번호 불러오기</th>
+							<td>
+								<input type="file" class="fullInp" title="파일찾기">
+								<div class="mt10">
+									<span class="selectInfo">banner_01.xls
+										<a href="#" class="del" title="삭제">삭제</a>
+									</span>
+								</div>
+								<p class="txtInfo mt10">샘플파일과 동일해야 합니다. 1열은 필드명으로 삭제해서는 안됩니다. &nbsp;&nbsp; <!-- Modify 18.04.17 -->
+								<a href="../sample_carnum.xlsx" class="btnS cGray" target="_blank">샘플파일 다운로드</a></p>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">차대번호 매핑</th>
+							<td>
+								<a href="#" class="btnS cGray">매핑 실행</a>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">매핑결과</th>
+							<td>
+								<ul class="txtInfo">
+									<li>입력차대 : 1,000건</li>
+									<li>매핑결과 : 회원 50건 (차량기준 50건, 고객기준 44건)</li>
+									<li>국외 이전동의 ,3자동의 : 미동의 10건</li>
+									<li>TM수신거부 : 20건</li>
+<!-- Add 18.04.17 -->
+									<li>매핑안됨(비회원) : 950건</li>
+									<li>차대 오류 (자리수 오류, 한글포함)</li>
+									<li>차대 중복 : 2건</li>
+<!--// Add 18.04.17 -->
+								</ul>
+								<p class="fCol1 mt10">최종 결과 : 20건</p>
+								<div class="mt10">
+									<a href="#" class="btnS cGray">TM리스트 생성</a>
+									<a href="#" class="btnS cWhite">취소</a>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			
+<!-- Add 18.04.04 Start -->
+			<div class="tableType2 mt30">
+				<table>
+					<caption>예약 캠페인 생성</caption>
+					<colgroup><col style="width:20%"><col><col style="width:20%"><col></colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">일자</th>
+							<td colspan="3">
+								<input type="text" style="width:98px" title="시작 날짜입력">
+								<a href="#" class="btnCalendar"><img src="../img/calendar.gif" alt="날짜입력"></a>
+								<span style="margin-right:5px">~</span>
+								<input type="text" style="width:98px" title="끝 날짜입력">
+								<a href="#" class="btnCalendar"><img src="../img/calendar.gif" alt="날짜입력"></a>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">고객명</th>
+							<td>
+								<input type="text" title="고객명" style="width:250px">
+							</td>
+							<th scope="row">차대번호</th>
+							<td>
+								<input type="text" title="차대번호" style="width:250px">
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">차량번호</th>
+							<td>
+								<input type="text" title="차량번호" style="width:250px">
+							</td>
+							<th scope="row">상담원</th>
+							<td>
+								<input type="text" title="상담원" style="width:250px">
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">회원/비회원 여부</th>
+							<td colspan="3">
+								<input type="radio" name="gubunM" id="gubunM1" checked><label for="gubunM1">전체</label>
+									<input type="radio" name="gubunM" id="gubunM2"><label for="gubunM2">회원</label>
+									<input type="radio" name="gubunM" id="gubunM3"><label for="gubunM3">비회원</label>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="btnBox">
+				<a href="#" class="btnM cWhite">초기화</a>
+				<a href="#" class="btnM">조회</a>
+			</div>
+<!--// Add 18.04.04 End -->			
+			
+			<h2 class="mt30">TM리스트 및 할당</h2>			
+			
+			<div class="clearfix">
+				<div class="fLeft"><p class="resultTxt">총 <strong>9,999</strong>건이 검색 되었습니다.</p></div><!-- Add 18.04.04 -->
+				<div class="fRight"><a href="popup_tm.html" onclick="window.open(this.href,'','width=700,height=800,scrollbars=yes');return false;" class="btnS cGray">TM리스트 할당</a></div>
+			</div>
+			<div class="tableType1 mt10">
+				<table>
+					<caption>조회결과</caption>
+					<colgroup><col style="width:8%" span="5"><col style="width:10%" span="2"><col style="width:8%"><col><col style="width:8%"></colgroup>
+					<thead>
+						<tr>
+							<th scope="col"><input type="checkbox" title="전체 선택"></th>
+							<th scope="col">No.</th>
+							<th scope="col">고객명</th>
+							<th scope="col">3자동의</th><!-- Add 18.04.04 -->
+							<th scope="col">수신채널</th><!-- Add 18.04.04 -->
+							<th scope="col">차대번호</th>
+							<th scope="col">차종</th>
+							<th scope="col">담당자</th>
+							<th scope="col">상태값</th>
+							<th scope="col">최종컨택일</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><input type="checkbox" title="현재 열 선택"></td>
+							<td>10</td>
+							<td>홍길동</td>
+							<td>미동의</td><!-- Add 18.04.04 -->
+							<td>TM거부</td><!-- Add 18.04.04 -->
+							<td><a href="#">WBAJC3100JG000000</a></td>
+							<td>520D</td>
+							<td>상담원 1</td>
+							<td>미처리-나중에통화</td>
+							<td>2018-00-00</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" title="현재 열 선택"></td>
+							<td>10</td>
+							<td>홍길동</td>
+							<td>동의</td><!-- Add 18.04.04 -->
+							<td>TM수신</td><!-- Add 18.04.04 -->
+							<td><a href="#">WBAJC3100JG000000</a></td>
+							<td>520D</td>
+							<td>상담원 1</td>
+							<td>미처리-나중에통화</td>
+							<td>2018-00-00</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" title="현재 열 선택"></td>
+							<td>10</td>
+							<td>홍길동</td>
+							<td>미동의</td><!-- Add 18.04.04 -->
+							<td>TM거부</td><!-- Add 18.04.04 -->
+							<td><a href="#">WBAJC3100JG000000</a></td>
+							<td>520D</td>
+							<td>상담원 1</td>
+							<td>미처리-나중에통화</td>
+							<td>2018-00-00</td>
+						</tr>
+						<tr>
+							<td class="noData" colspan="10">조회 결과가 없습니다.</td><!-- Modify 18.04.04 -->
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="paging">
+				<a href="#" class="first"><img src="../img/btn_paging_first.gif" alt="처음 페이지"></a><a href="#" class="prev"><img src="../img/btn_paging_prev.gif" alt="이전 페이지"></a><a href="#" class="on">1</a><a href="#">2</a><a href="#">3</a><a href="#">4</a><a href="#">5</a><a href="#">6</a><a href="#">7</a><a href="#">8</a><a href="#">9</a><a href="#">10</a><a href="#" class="next"><img src="../img/btn_paging_next.gif" alt="다음 페이지"></a><a href="#" class="last"><img src="../img/btn_paging_last.gif" alt="마지막 페이지"></a>
+			</div>
+			
+			<div class="btnBox tR">
+				<div class="lBtn">
+					<a href="#" class="btnM cGray">선택삭제</a>
+					<a href="#" class="btnM cGray">개별생성</a><!-- Add 18.04.17 -->
+				</div>
+				<a href="#" class="btnM cWhite">취소</a>
+				<a href="#" class="btnM">완료</a>
+			</div>
+
+		</div><!-- // end contents -->
+	</div>
+
+	<div id="footer" class="footer">
+		<div class="footArea">
+			<p class="copyright">© <strong>BMW Group Korea</strong> All rights reserved.</p>
+		</div>
+	</div><!-- // end footer -->
+	
+</div><!-- // end wrapper -->
+
+<!-- script include -->
+<script src="../js/jquery-3.1.0.min.js"></script>
+<script src="../js/jquery-ui.min.js"></script>
+<script src="../js/common.js"></script>
+
+<script>
+	
+//		commonJs.calendarDateSelect(셀렉터 표현식,날짜배열[시작일,종료일])	
+//		셀렉터 표현식 대상의 시작일과 종료일 날자를 바꾼다. 시작일input과 종료일input 둘다에 적용해 주어야 한다.
+//		ex) commonJs.calendarDateSelect($('.btnCalendar:eq(0)'),['2017-08-15','2017-08-30']);
+//		ex) commonJs.calendarDateSelect($('.btnCalendar:eq(1)'),['2017-08-15','2017-08-30']);
+
+//		commonJs.allDateDisabled(셀렉터 표현식) 		 
+//		셀렉터 표현식 대상의 모든 날짜를 Disabled 시킨다. 시작일input과 종료일input 둘다에 적용해 주어야 한다.
+//		ex) commonJs.allDateDisabled($('.btnCalendar:eq(0)'));
+//		ex) commonJs.allDateDisabled($('.btnCalendar:eq(1)'));
+
+//		commonJs.allDateEnabled(셀렉터 표현식) 		 
+//		셀렉터 표현식 대상의 모든 날짜를 Enabled 시킨다. 시작일input과 종료일input 둘다에 적용해 주어야 한다.
+//		ex) commonJs.allDateEnabled($('.btnCalendar:eq(0)'));
+//		ex) commonJs.allDateEnabled($('.btnCalendar:eq(1)'));
+
+</script>
+
+</body>
+</html>
+

@@ -1,0 +1,312 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="shortcut icon" href="../images/favicon.ico">
+<title>회원가입 | BMW Plus</title>
+<link href="../css/common.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div class="skipNav"><a href="#contents">본문으로 바로가기</a></div>
+
+<div class="wrap">
+	<header>
+		<div class="hdWrap">
+			<img src="../images/temp/dummy_header.gif" alt=""><!-- //임시이미지 -->
+		</div>
+	</header>
+
+	<section class="container">
+		<div id="contents" class="contents utilP"><!-- //공통&기타 페이지 : utilP 클래스 추가 -->
+			<div class="visualArea">
+				<div class="conVisual">
+					<div class="txtWrap">
+						<h1 class="conTit1">회원가입.</h1>
+						<p class="titCopy">회원만의 혜택이 기다립니다.</p>
+					</div>
+				</div>
+			</div>
+			<div class="contArea">
+				<!-- step -->
+				<div class="step typeH">
+					<ol class="col3">
+						<li class="ing"><div class="stepTit"><span>1<span class="hidden">단계</span></span><em>약관동의</em></div></li><!-- //현재 스텝 class="ing" | 지나간 스텝 class="passed" -->
+						<li><div class="stepTit"><span>2<span class="hidden">단계</span></span><em>정보입력</em></div></li>
+						<li><div class="stepTit"><span>3<span class="hidden">단계</span></span><em>가입완료</em></div></li>
+					</ol>
+					<h2 class="hidden"><span class="hidden">현재 단계</span>약관동의</h2>
+				</div>
+				<!-- //step -->
+				<div class="stepCon step1">
+					<div class="allChkWrap"><!-- //allChkWrap 영역내에 allCheck가 있는 경우 allCheck의 체크박스를 선택하면 모든 항목에 체크 됨 -->
+						<ul class="termsBoxList">
+							<li>
+								<h3 class="conTit3">서비스 이용 약관</h3>
+								<div class="termsArea">
+									<!-- 약관내용 -->
+									고객센터 약관 &gt; 이용약관 내용 출력
+									<!-- //약관내용 -->
+								</div>
+								<div class="agreeArea"><span class="rdChk"><input type="checkbox" id="termsAgree1"><label for="termsAgree1"><span>BMW Plus 서비스 이용 약관에 동의 합니다. (필수)</span></label></span></div>
+							</li>
+							<li>
+								<h3 class="conTit3">개인정보 수집 및 활용 동의</h3>
+								<div class="termsArea">
+									<!-- 약관내용 -->
+									<section class="termsBox">
+										<p>정보통신망법 규정에 따라 BMW&amp;MINI Plus 에 회원가입 신청하시는 분께 수집하는 개인정보의 항목, 개인정보의 수집 및 이용목적, 개인정보의 보유 및 이용기간을 안내 드리오니 자세히 읽은 후 동의하여 주시기 바랍니다</p>
+
+										<h2 class="termsTit">개인정보 수집항목 및 수집목적</h2>
+										<p>이용자는 회원가입을 하지 않아도 정보 검색, BMW Group뉴스 보기 등 BMW&amp;MINI Plus 서비스를 이용할 수 있습니다. 이용자가 서비스 센터 예약, 차량 정비 이력 확인 등과 같이 개인화 혹은 회원제 서비스를 이용하기 위해 회원가입을 할 경우, 비엠더블유코리아㈜ 는 서비스 이용을 위해 필요한 최소한의 개인정보를 수집합니다.</p>
+										<ol class="circleNum">
+											<li>① 수집항목
+												<ul class="txtList">
+													<li>가. 필수항목 : 이름, 생년월일, 성별, 휴대전화번호, 이메일, 비밀번호, 신용평가기관의 본인인증값(i-PIN, 휴대폰 인증값)</li>
+													<li>나. 선택항목 : 관심 모델, 보유 차량정보 (모델, 차대번호, 차량번호)</li>
+												</ul>
+											</li>
+											<li>② 항목별 수집목적
+												<div class="termsTable">
+													<table>
+														<caption>항목별 수집목적</caption>
+														<colgroup><col style="width:10%"><col style="width:40%"><col><col style="width:15%"></colgroup>
+														<thead>
+															<tr>
+																<th scope="col">구분</th>
+																<th scope="col">수집 목적</th>
+																<th scope="col">수집 항목</th>
+																<th scope="col">보유 기간</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td>필수</td>
+																<td>BMW&amp;MINI Plus 회원제 서비스 이용에 따른 본인확인, 회원가입</td>
+																<td>이름, 생년월일, 성별, 휴대전화번호, 이메일, 비밀번호, 신용평가기관의 본인인증값, 주소</td>
+																<td>회원 탈퇴 시 까지</td>
+															</tr>
+															<tr>
+																<td>선택</td>
+																<td>서비스 개발, 개선 등 BMW Korea의 업무와 관련된 통계자료의 작성</td>
+																<td>이름, 생년월일, 성별, 주소</td>
+																<td>회원 탈퇴 시 까지</td>
+															</tr>
+															<tr>
+																<td>선택</td>
+																<td>BMW&amp;MINI Plus 회원등록 및 서비스 예약, 캠페인 정보 알림 등 각종 혜택 안내</td>
+																<td>이름, 이메일, 휴대전화번호, 차량정보 (차대번호, 차량번호)</td>
+																<td>회원 탈퇴 시 까지</td>
+															</tr>
+															<tr>
+																<td>선택</td>
+																<td>웹사이트 콘텐츠를 이용자의 컴퓨터 등 정보통신기기에 최적화된 방식으로 제공 할 수 있도록 개선</td>
+																<td>Cookie</td>
+																<td>회원 탈퇴 시 까지</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</li>
+										</ol>
+
+										<h2 class="termsTit">보유 및 이용기간</h2>
+										<ol class="circleNum">
+											<li>① BMW Korea는 법령에 따른 개인정보의 보유 및 이용기간 또는 정보주체로부터 개인정보를 수집 할 때 동의 받은 개인정보 보유 및 이용기간 내에서 개인정보를 처리 및 보유합니다.</li>
+											<li>② 개인정보의 처리 및 보유 기간은 다음 각 호와 같습니다.
+												<ol class="numList">
+													<li>1. 고객님의 개인정보는 BMW&amp;MINI Plus서비스를 제공하는 기간 동안에 한하여 보유하며 정보주체자의 삭제 요구와 가입 탈퇴 의사가 있을 경우 지체 없이 파기합니다. 단, 관계법령의 규정에 의하여 보존할 필요가 있는 경우는 아래와 같이 관계법령에서 정한 일정기간 동안 회원 정보를 분리하여 안전하게 보관합니다.</li>
+													<li>2. BMW&amp;MINI Plus 웹 홈페이지, BMW&amp;MINI Plus 어플리케이션, BMW&amp;MINI Plus 모바일 홈페이지를 통해 회원가입을 한 회원이 1년 이상 로그인(log-in)등 서비스를 이용 하지 않는 경우, 해당 회원의 개인정보는 다른 회원들의 개인정보와 분리하여 별도로 저장 및 관리하며, 법률에 특별한 규정이 있는 경우를 제외하고는 해당 개인정보를 이용하지 않습니다.</li>
+													<li>3. 제1호 및 제2호의 규정에도 불구하고, 법령이 정한 경우(Link)에는 그에 따라 회원의 개인정보를 보존 및 이용합니다 (아래 명시되지 않았더라도 다른 법령에 따라 보존 및 이용기간이 정해진 경우 그에 따릅니다)</li>
+												</ol>
+												<div class="termsTable">
+													<table>
+														<caption>개인정보의 보존 및 이용</caption>
+														<colgroup><col style="width:50%"><col></colgroup>
+														<thead>
+															<tr>
+																<th scope="col">보유 항목</th>
+																<th scope="col">보유 근거</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td>로그기록자료, 접속지의 추적자료 등 통신사실확인자료</td>
+																<td>3개월(통신비밀 보호법)</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</li>
+											<li>③ 회원님의 동의를 받아 보유하고 있는 거래정보 등을 회원님께서 열람을 요구하는 경우에는 소정의 본인확인절차를 거친 후 지체 없이 열람, 확인할 수 있도록 조치합니다.
+												<p class="txtInfo">귀하께서는 개인정보 수집∙이용에 대한 동의를 거부하실 수 있으나, 필수항목 수집∙이용에 대한 동의를 거부하실 경우에는 서비스 이용에 제한이 있을 수 있습니다. 단, 마케팅 목적으로 활용되는 것을 거부하시는 경우에는 서비스 이용에 제한이 없습니다.</p>
+											</li>
+										</ol>
+									</section>
+									<!-- //약관내용 -->
+								</div>
+								<div class="agreeArea"><span class="rdChk"><input type="checkbox" id="termsAgree2"><label for="termsAgree2"><span>BMW&amp;MINI Plus 회원 가입에 따른 서비스를 위한 개인정보 수집 및 이용에 동의합니다. (필수)</span></label></span></div>
+							</li>
+							<li>
+								<h3 class="conTit3">개인정보 국외 이전 동의</h3>
+								<div class="termsArea">
+									<!-- 약관내용 -->
+									<div class="termsBox">
+										<div class="termsTable mgt0">
+											<table>
+												<caption>개인정보 국외 이전 동의</caption>
+												<thead>
+													<tr>
+														<th scope="row">목적</th>
+														<th scope="row">이전되는 개인정보 항목</th>
+														<th scope="row">제공 대상</th>
+														<th scope="row">보유 기간</th>
+														<th scope="row">국가</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>서비스 센터 예약을 위한<br>IT 지원</td>
+														<td>이름, 전화번호, 보유 차량정보<br>(차대번호, 차량번호)</td>
+														<td>CDK Global</td>
+														<td>탈퇴 시까지<br>(관련 법률 및 규정에 의해 개인정보를 보유해야 하는 경우 제외)</td>
+														<td>싱가포르</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+										<p class="txtInfo">회원님께서는 동의를 거부할 권리가 있습니다. 단, 동의를 거부하실 경우 수집목적에 나열된 서비스 제공에 제약이 있을 수 있습니다. <br>동의 후에도 언제든지 이를 철회할 수 있으며, 동의 철회 또는 변경은 [My BMW/My MINI - 회원정보 수정] 에서 변경 가능합니다.</p>
+									</div>
+									<!-- //약관내용 -->
+								</div>
+								<div class="agreeArea"><span class="rdChk"><input type="checkbox" id="termsAgree3"><label for="termsAgree3"><span>BMW&amp;MINI Plus 서비스 센터 예약을 위한 개인정보 국외 이전에 동의합니다. (선택)</span></label></span></div>
+							</li>
+							<li>
+								<h3 class="conTit3">개인정보 제3자 제공 동의</h3>
+								<div class="termsArea">
+									<!-- 약관내용 -->
+									<div class="termsBox">
+										<div class="termsTable mgt0">
+											<table>
+												<caption>개인정보 제3자 제공 동의</caption>
+												<thead>
+													<tr>
+														<th scope="row">목적</th>
+														<th scope="row">제공 항목</th>
+														<th scope="row">제공 대상</th>
+														<th scope="row">보유 기간</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>온라인 서비스 센터 예약을 위한 예약정보 제공</td>
+														<td>이름, 전화번호, 보유 차량정보 (차대번호, 차량번호)</td>
+														<td>코오롱 글로벌㈜, ㈜한독모터스, 도이치모터스㈜, ㈜바바리안 모터스, ㈜동성모터스, ㈜삼천리 모터스, ㈜내쇼날 모터스, 신호 모터스㈜</td>
+														<td>탈퇴 시까지 (관련 법률 및 규정에 의해 개인정보를 보유해야 하는 경우 제외)</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+										<p class="txtInfo">회원님께서는 동의를 거부할 권리가 있습니다. 단, 동의를 거부하실 경우 수집목적에 나열된 서비스 제공에 제약이 있을 수 있습니다. <br>동의 후에도 언제든지 이를 철회할 수 있으며, 동의 철회 또는 정보 수신 매체에 대한 변경은 [My BMW/My MINI - 회원정보 수정] 에서 변경 가능합니다.</p>
+									</div>
+									<!-- //약관내용 -->
+								</div>
+								<div class="agreeArea"><span class="rdChk"><input type="checkbox" id="termsAgree4"><label for="termsAgree4"><span>BMW&amp;MINI Plus 서비스 센터 예약을 위한 개인정보 제 3자 제공에 동의 합니다. (선택)</span></label></span></div>
+							</li>
+							<li>
+								<h3 class="conTit3">개인정보 마케팅 활용 동의</h3>
+								<div class="termsArea">
+									<!-- 약관내용 -->
+									<div class="termsBox">
+										<div class="termsTable mgt0">
+											<table>
+												<caption>개인정보 마케팅 활용 동의</caption>
+												<colgroup><col style="width:44%"><col style="width:28%"><col></colgroup>
+												<thead>
+													<tr>
+														<th scope="row">목적</th>
+														<th scope="row">수집 항목</th>
+														<th scope="row">보유 기간</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="tL"><strong>마케팅 목적</strong>
+															<ol class="numList">
+																<li>1. BMW Korea가 제공하는 서비스 캠페인 및 기타 혜택에 관련된 정보</li>
+																<li>2. BMW Korea가 제공하는 뉴스</li>
+																<li>3. BMW Korea가 실시하는 각종 이벤트 안내</li>
+																<li>4. 기타 BMW Korea가 고객을 대상으로 실시하는 각종 마케팅 정보</li>
+															</ol>
+														</td>
+														<td>이름, 휴대전화번호, 이메일, 주소, <br>성별, 관심모델, 보유 차량정보 (모델)</td>
+														<td>탈퇴 시까지<br>(관련 법률 및 규정에 의해 개인정보를 보유해야 하는 경우 제외)</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+										<p class="txtInfo">회원님께서는 동의를 거부할 권리가 있습니다. 단, 동의를 거부하실 경우 수집목적에 나열된 서비스 제공에 제약이 있을 수 있습니다. <br>동의 후에도 언제든지 이를 철회할 수 있으며, 동의 철회 또는 정보 수신 매체에 대한 변경은 [My BMW/My MINI - 회원정보 수정] 에서 변경 가능합니다.</p>
+									</div>
+									<!-- //약관내용 -->
+								</div>
+								<div class="agreeArea"><span class="rdChk"><input type="checkbox" id="termsAgree5"><label for="termsAgree5"><span>수집된 개인정보를 마케팅 및 광고에 활용하는데 동의합니다. (선택)</span></label></span></div>
+							</li>
+							<li>
+								<h3 class="conTit3">위치정보 활용 동의</h3>
+								<div class="termsArea">
+									<!-- 약관내용 -->
+									<div class="termsBox">
+										<p>BMW Korea는 BMW&amp;MINI Plus서비스 중 가까운 지점 정보 제공을 위해 위치정보보호법 제 15조에 따라 개인 위치정보의 활용에 대한 동의를 받습니다.</p>
+										<div class="termsTable">
+											<table>
+												<caption>위치정보 활용 동의</caption>
+												<colgroup><col style="width:50%"><col></colgroup>
+												<thead>
+													<tr>
+														<th scope="row">목적</th>
+														<th scope="row">활용 항목</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>가까운 서비스 센터 정보 제공</td>
+														<td>Mobile App 실행 단말기 위치</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+										<p class="txtInfo">회원님께서는 동의를 거부할 권리가 있습니다. 단, 동의를 거부하실 경우 수집목적에 나열된 서비스 제공에 제약이 있을 수 있습니다. <br>동의 후에도 언제든지 이를 철회할 수 있으며, 동의 철회 또는 변경은 [My BMW/My MINI - 회원정보 수정] 에서 변경 가능합니다.</p>
+									</div>
+									<!-- //약관내용 -->
+								</div>
+								<div class="agreeArea"><span class="rdChk"><input type="checkbox" id="termsAgree6"><label for="termsAgree6"><span>가까운 서비스 센터 정보 제공을 위한 위치정보 활용에 동의 합니다. (선택)</span></label></span></div>
+							</li>
+						</ul>
+						<div class="allCheck tR"><span class="rdChk"><input type="checkbox" id="termsAllChk"><label for="termsAllChk"><span>전체 동의</span></label></span></div>
+					</div><!-- //allChkWrap -->
+					<div class="btnBox tR">
+						<a href="#" class="btnL bGray">이전</a>
+						<a href="#" class="btnL">다음</a>
+					</div>
+				</div><!-- //stepCon -->
+			</div>
+		</div>
+		<!-- //contents -->
+	</section>
+	<!-- //container -->
+
+	<footer>
+		<div class="ftWrap">
+			<img src="../images/temp/dummy_footer.gif" alt=""><!-- //임시이미지 -->
+		</div>
+	</footer>
+</div><!-- //wrap -->
+
+<!-- script include -->
+<script src="../js/jquery-3.1.0.min.js"></script>
+<script src="../js/jquery-ui.min.js"></script>
+<script src="../js/common.js"></script>
+
+</body>
+</html>

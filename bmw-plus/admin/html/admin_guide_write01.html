@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>관리자 | BMW Plus</title>
+<link href="../css/admin.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<p id="gotoContents"><a href="#container">본문으로 바로가기</a></p>
+
+<div id="wrapper" class="wrapper">
+	<div id="header" class="header">
+		<div class="headWrap">
+			<img src="../img/@dummy_header.gif" alt="">
+		</div>		
+	</div><!-- // end header -->
+	<hr>
+	
+	<div id="container" class="container">
+		<div id="snb" class="snb">
+			<img src="../img/@dummy_snb.gif" alt="">
+		</div><!-- // end snb -->
+		
+		<div id="contents" class="contents">
+			<div class="location">
+				<a href="#" class="home">home</a> > 
+				<a href="#">보람가이드</a> > 
+				<strong>수상실적</strong>
+			</div>
+			
+			<h1>수상실적</h1>
+			<!-- 수정 -->
+			<p>[수상실적 수정]</p>
+			<div class="tableType2">
+				<table>
+					<colgroup><col style="width:20%"><col></colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">숨김여부</th>
+							<td>
+								<input type="checkbox" name="chk1" id="chk1"><label for="chk1">숨김</label>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">제목</th>
+							<td><input type="text" title="제목입력" style="width:500px"></td>
+						</tr>
+						<tr>
+							<th scope="row">썸네일이미지</th>
+							<td>
+								<span class="thumbImg"><img src="img/img_thumnail.jpg" alt=""></span><!-- 등록한 보정 이미지 미리보기 영역 -->
+								<input type="file" style="width:60%;" class="marT5" title="파일 찾기">
+								<div class="marT5"><a href="#"><img src="img/btn_delete.gif" alt="삭제"></a> banner_01.jpg</div>
+								<p class="marT10">* 이미지 파일의 권장 사이즈는 000*000 입니다.<br>* .jpg, .gif 만 등록 가능합니다.</p>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">내용</th>
+							<td>
+								<textarea cols="100" rows="10"></textarea>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">등록일</th>
+							<td>2015-05-05</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			
+			<div class="btnWrap">
+				<a href="#" class="btnType1">확인</a>
+				<a href="#" class="btnType2">취소</a>
+			</div>
+			<div class="boardBtnLB">
+				<a href="#" class="btnType2">삭제</a>
+			</div>
+			<div class="boardBtnRB">
+				<a href="#" class="btnType1">목록</a>
+			</div>
+			<!-- //수정 -->
+			
+			<!-- 등록 -->
+			<p>[수상실적 등록]</p>
+			<div class="tableType2">
+				<table>
+					<colgroup><col style="width:20%"><col></colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">숨김여부</th>
+							<td>
+								<input type="checkbox" name="chk2" id="chk2"><label for="chk2">숨김</label>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">제목</th>
+							<td><input type="text" title="제목입력" style="width:500px"></td>
+						</tr>
+						<tr>
+							<th scope="row">썸네일이미지</th>
+							<td>
+								<input type="file" style="width:70%;" title="파일찾기">
+								<p class="marT5">* 이미지 파일의 권장 사이즈는 000*000 입니다.<br>* .jpg, .gif 만 등록 가능합니다.</p>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">내용</th>
+							<td>
+								<textarea cols="100" rows="10"></textarea>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			
+			<div class="btnWrap">
+				<a href="#" class="btnType1">확인</a>
+				<a href="#" class="btnType2">취소</a>
+			</div>
+			<div class="boardBtnRB">
+				<a href="#" class="btnType1">목록</a>
+			</div>
+			<!-- //등록 -->
+
+		</div><!-- // end contents -->
+	</div>
+	
+</div><!-- // end wrapper -->
+
+<div id="footer" class="footer">
+	<img src="../img/@dummy_footer.gif" alt="">
+</div><!-- // end footer -->
+</body>
+
+</html>
+

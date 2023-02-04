@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Airport Service 예약 관리 | BMW Plus</title>
+<link href="../css/admin.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<section class="popWrap">
+	<hgroup class="popTit">
+		<h1 class="tit">Airport Service 예약 관리</h1>
+	</hgroup>
+	<div class="popCont">
+		<div class="tableType2">
+			<table>
+				<caption>예약 관리</caption>
+				<colgroup>
+					<col style="width:13%"><col style="width:13%"><col style="width:30%"><col style="width:13%"><col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th scope="rowgroup" rowspan="3">고객 정보</th>
+						<th scope="row">고객명</th>
+						<td colspan="3"><input type="text" style="width:150px" vale="송종우" title="고객명 입력"></td>
+					</tr>
+					<tr>
+						<th scope="row">휴대전화</th>
+						<td colspan="3"><input type="text" style="width:150px" value="010-1234-5678" title="고객명 입력"></td>
+					</tr>
+					<tr>
+						<th scope="row">이메일</th>
+						<td colspan="3"><input type="text" style="width:150px" value="abc123@mini.co.kr" title="이메일 입력"></td>
+					</tr>
+					<tr>
+						<th scope="rowgroup" rowspan="3">차량 정보<a href="#lyCar" onclick="commonJs.popShow($('#lyCar'))" class="btnSearch"><img src="../img/search.gif" alt="차량정보찾기"></a></th>
+						<th scope="row">모델</th>
+						<td colspan="3"><input type="text" style="width:150px" vale="BMW i8" title="모델 입력"></td>
+					</tr>
+					<tr>
+						<th scope="row">차대번호</th>
+						<td colspan="3"><input type="text" style="width:150px" value="WBAZZ0000ZZ0000" title="차대번호 입력"></td>
+					</tr>
+					<tr>
+						<th scope="row">차량번호</th>
+						<td colspan="3"><input type="text" style="width:150px" value="12가3456" title="차량번호 입력"></td>
+					</tr>
+					<tr>
+						<th scope="rowgroup" rowspan="7">예약 일정</th>
+						<th scope="row">인원</th>
+						<td colspan="3">
+							<select title="인원" style="width:150px">
+								<option>4명</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">출국일시</th>
+						<td>
+							<input type="text" style="width:150px" title="출국일시 입력">
+							<a href="#" class="btnCalendar"><img src="../img/calendar.gif" alt="날짜입력"></a>
+						</td>
+						<th scope="row">귀국일시</th>
+						<td>
+							<input type="text" style="width:150px" title="귀국일시 입력">
+							<a href="#" class="btnCalendar"><img src="../img/calendar.gif" alt="날짜입력"></a>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">출국터미널</th>
+						<td><input type="text" style="width:150px" value="제1 터미널" title="출국터미널 입력"></td>
+						<th scope="row">귀국터미널</th>
+						<td><input type="text" style="width:150px" value="제1 터미널" title="귀국터미널 입력"></td>
+					</tr>
+					<tr>
+						<th scope="row">출국편명</th>
+						<td><input type="text" style="width:150px" value="ZX888" title="출국편명 입력"></td>
+						<th scope="row">귀국편명</th>
+						<td><input type="text" style="width:150px" value="ZX888" title="귀국편명 입력"></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="btnBox">
+			<a href="#" class="btnM cWhite">취소</a>
+			<a href="#" class="btnM cGray">예약 취소</a>
+			<a href="#" class="btnM cGray">확인</a>
+		</div>
+	</div>
+</section>
+
+<!-- layer popup : Airport Service 고객 차량 조회 -->
+<div class="lyDim"><!-- background --></div>
+<section id="lyCar" class="layerPop w400">
+	<hgroup class="popTit">
+		<h1 class="tit">Airport Service 고객 차량 조회</h1>
+		<a href="#" class="lyClose">닫기</a>
+	</hgroup>
+	<div class="popCont">
+		<div class="tableType1">
+			<table>
+				<caption>Airport Service 고객 차량 조회</caption>
+				<colgroup><col style="width:10%"><col style="width:30%" span="3"></colgroup>
+				<thead>
+					<tr>
+						<th scope="col">-</th>
+						<th scope="col">모델</th>
+						<th scope="col">차대번호</th>
+						<th scope="col">차량번호</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><input type="radio" name="car" id="car1" checked="checked"></td>
+						<td><label for="car1">BMW 520d</label></td>
+						<td>WBAZZ0000ZZ0000</td>
+						<td>12가3456</td>
+					</tr>
+					<tr>
+						<td><input type="radio" name="car" id="car2"></td>
+						<td><label for="car2">BMW 520d</label></td>
+						<td>WBAZZ0000ZZ0000</td>
+						<td>12가3456</td>
+					</tr>
+					<tr>
+						<td><input type="radio" name="car" id="car3"></td>
+						<td><label for="car3">BMW 520d</label></td>
+						<td>WBAZZ0000ZZ0000</td>
+						<td>12가3456</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="btnBox">
+			<a href="#" class="btnM cWhite">취소</a>
+			<a href="#" class="btnM cGray">확인</a>
+		</div>
+	</div>
+</section>
+<!-- //layer popup : Airport Service 고객 차량 조회 -->
+
+<!-- script include -->
+<script src="../js/jquery-3.1.0.min.js"></script>
+<script src="../js/common.js"></script>
+</body>
+</html>
+

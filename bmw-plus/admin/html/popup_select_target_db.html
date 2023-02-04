@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>대상자 선택 (회원DB에서) | BMW Plus</title>
+<link href="../css/admin.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<section class="popWrap">
+	<hgroup class="popTit">
+		<h1 class="tit">대상자 선택 (회원DB에서)</h1>
+	</hgroup>
+	<div class="popCont">
+		<div class="tableType2">
+			<table>
+				<caption>대상자 선택</caption>
+				<colgroup>
+					<col style="width:20%"><col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th scope="row">가입경로</th>
+						<td>
+							<input type="radio" name="rd3" id="rd31"><label for="rd31">전체</label>
+							<input type="radio" name="rd3" id="rd32"><label for="rd32">BMW Plus</label>
+							<input type="radio" name="rd3" id="rd33"><label for="rd33">MINI Plus</label>
+						</td>
+					</tr><!-- Add 18.03.13 -->
+					<tr>
+						<th scope="row">차량등록여부</th>
+						<td>
+							<input type="radio" name="rd1" id="rd11"><label for="rd11">전체</label>
+							<input type="radio" name="rd1" id="rd12"><label for="rd12">차량 있음</label>
+							<input type="radio" name="rd1" id="rd13"><label for="rd13">차량 없음</label>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">성별</th>
+						<td>
+							<input type="radio" name="rd2" id="rd21"><label for="rd21">전체</label>
+							<input type="radio" name="rd2" id="rd22"><label for="rd22">남</label>
+							<input type="radio" name="rd2" id="rd23"><label for="rd23">여</label>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">연령대</th>
+						<td>
+							<input type="checkbox" name="chk1" id="chk11"><label for="chk11">전체</label>
+							<input type="checkbox" name="chk1" id="chk12"><label for="chk12">10대</label>
+							<input type="checkbox" name="chk1" id="chk13"><label for="chk13">20대</label>
+							<input type="checkbox" name="chk1" id="chk14"><label for="chk14">30대</label>
+							<input type="checkbox" name="chk1" id="chk15"><label for="chk15">40대</label>
+							<input type="checkbox" name="chk1" id="chk16"><label for="chk16">50대</label><br>
+							<input type="checkbox" name="chk1" id="chk17"><label for="chk17">60대</label>
+							<input type="checkbox" name="chk1" id="chk18"><label for="chk18">60대 이상</label>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">관심차량</th>
+						<td>
+							<select title="브랜드" style="width:200px">
+								<option value="">브랜드1</option>
+								<option value="">브랜드2</option>
+							</select>
+							<select title="시리즈" style="width:200px">
+								<option value="">시리즈1</option>
+								<option value="">시리즈2</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">보유차량</th>
+						<td>
+							<select title="브랜드" style="width:200px">
+								<option value="">브랜드1</option>
+								<option value="">브랜드2</option>
+							</select>
+							<select title="시리즈" style="width:200px">
+								<option value="">시리즈1</option>
+								<option value="">시리즈2</option>
+							</select>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="btnBox">
+			<a href="#" class="btnM cWhite">초기화</a>
+			<a href="#" class="btnM">조회</a>
+		</div>
+
+		<div class="resultArea">
+			<p class="resultTxt">총 <strong>9,999</strong>명 (마케팅 수신동의만)</p>
+			<div class="tableType1 minPd">
+				<table>
+					<caption>조회 결과</caption>
+					<thead>
+						<tr>
+							<th scope="col">번호</th>
+							<th scope="col">이메일</th>
+							<th scope="col">회원명</th>
+							<th scope="col">차량등록</th>
+							<th scope="col">성별</th>
+							<th scope="col">연령대</th>
+							<th scope="col">관심차량</th>
+							<th scope="col">보유차량</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row">10</th>
+							<td class="tL">ga*****@chol.com</td>
+							<td>홍*동1</td>
+							<td>Y</td>
+							<td>남</td>
+							<td>20대</td>
+							<td class="tL">BMW 4</td>
+							<td class="tL">BMW 4 Series Gran Coupé</td>
+						</tr>
+						<tr>
+							<th scope="row">10</th>
+							<td class="tL">ga*****@chol.com</td>
+							<td>홍*동1</td>
+							<td>Y</td>
+							<td>남</td>
+							<td>20대</td>
+							<td class="tL">BMW 4</td>
+							<td class="tL">BMW 4 Series Gran Coupé</td>
+						</tr>
+						<tr>
+							<td class="noData" colspan="8">조회 결과가 없습니다.</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div class="paging">
+				<a href="#" class="first"><img src="../img/btn_paging_first.gif" alt="처음 페이지"></a><a href="#" class="prev"><img src="../img/btn_paging_prev.gif" alt="이전 페이지"></a><a href="#" class="on">1</a><a href="#">2</a><a href="#">3</a><a href="#">4</a><a href="#">5</a><a href="#">6</a><a href="#">7</a><a href="#">8</a><a href="#">9</a><a href="#">10</a><a href="#" class="next"><img src="../img/btn_paging_next.gif" alt="다음 페이지"></a><a href="#" class="last"><img src="../img/btn_paging_last.gif" alt="마지막 페이지"></a>
+			</div>
+		</div><!-- //resultArea -->
+		<div class="btnBox">
+			<a href="#" class="btnM cWhite">취소</a>
+			<a href="#" class="btnM cGray">완료</a>
+		</div>
+	</div>
+</section>
+</body>
+</html>
+

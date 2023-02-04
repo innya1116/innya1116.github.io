@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="shortcut icon" href="../images/favicon.ico">
+<title>My BMW | BMW Plus</title>
+<link href="../css/common.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div class="skipNav"><a href="#contents">본문으로 바로가기</a></div>
+
+<div class="wrap">
+	<header>
+		<div class="hdWrap">
+			<img src="../images/temp/dummy_header.gif" alt=""><!-- //임시이미지 -->
+		</div>
+	</header>
+
+	<section class="container">
+		<div id="contents" class="contents utilP"><!-- //공통&기타 페이지 : utilP 클래스 추가 -->
+			<div class="visualArea">
+				<div class="conVisual">
+					<div class="txtWrap">
+						<h1 class="conTit1">My BMW.</h1>
+						<p class="titCopy">회원님의 정보를 한눈에 볼 수 있습니다.</p>
+					</div>
+				</div>
+			</div>
+			<div class="contArea">
+				<a href="#eodimpossible" onclick="commonJs.popShow($('#eodimpossible'))">EoD시간중 차량등록 불가(레이어팝업)</a>
+			</div>
+		</div>
+		<!-- //contents -->
+	</section>
+	<!-- //container -->
+
+	<footer>
+		<div class="ftWrap">
+			<img src="../images/temp/dummy_footer.gif" alt=""><!-- //임시이미지 -->
+		</div>
+	</footer>
+</div><!-- //wrap -->
+
+<div class="lyDim"><!-- back 영역 --></div><!-- layer Dim 영역 -->
+<!-- layer Popup : EoD시간중 차량등록 불가 -->
+<div id="eodimpossible" class="layerPop w600">
+	<section class="popWrap">
+		<h1 class="popTit">알림</h1>
+		<div class="popCont">
+			<div class="infoBox">
+				<p class="txt">시스템 점검 시간에는 차량 조회 및 등록이<br>불가합니다.<br>시스템 점검 시간 : 매일 23:40 ~ 03:00</p>
+			</div>
+			<div class="btnBox">
+				<a href="#" class="btnL bGray" onclick="commonJs.popClose($('#lyChannelRsv'))">닫기</a>
+			</div>
+		</div>
+		<button type="button" class="popClose">닫기</button>
+
+	</section><!-- //popWrap -->
+</div>
+<!-- //layer Popup : 회원탈퇴 -->
+
+<!-- script include -->
+<script src="../js/jquery-3.1.0.min.js"></script>
+<script src="../js/jquery-ui.min.js"></script>
+<script src="../js/common.js"></script>
+
+</body>
+</html>

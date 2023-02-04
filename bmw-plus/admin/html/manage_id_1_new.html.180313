@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>관리자 | BMW Plus</title>
+<link href="../css/admin.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<p id="gotoContents"><a href="#container">본문으로 바로가기</a></p>
+
+<div id="wrapper" class="wrapper">
+	<div id="header" class="header">
+		<div class="headWrap">
+			<img src="../img/@dummy_header.gif" alt="">
+		</div>		
+	</div><!-- // end header -->
+	<hr>
+	
+	<div id="container" class="container">
+		<div id="snb" class="snb">
+			<img src="../img/@dummy_snb.gif" alt="">
+		</div><!-- // end snb -->
+		
+		<div id="contents" class="contents">
+			<div class="location">
+				<a href="#" class="home">HOME</a> > 
+				<a href="#">관리자 계정관리</a> > 
+				<strong>관리자 계정관리</strong>
+			</div>
+			
+			<h1>관리자 계정관리</h1>
+			<h2>관리자 계정추가</h2>
+			<p class="tR">* 표는 필수입력 입니다.</p>
+			<div class="tableType2 mt10">
+				<table>
+					<caption>관리자 계정추가</caption>
+					<colgroup><col style="width:20%"><col></colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">아이디(*)</th>
+							<td>
+								<input type="text" title="아이디" style="width:250px">
+								<a href="#" class="btnS cGray">중복체크</a>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">비밀번호(*)</th>
+							<td>
+								<input type="password" title="비밀번호" style="width:250px">
+								<p class="txtInfo mt10">비밀번호는 8자 이상으로 영문대소문자, 숫자, 특수문자 중 3가지 이상을 조합하여 주세요.</p>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">비밀번호확인(*)</th>
+							<td>
+								<input type="password" title="비밀번호확인" style="width:250px">
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">계정유형(*)</th>
+							<td>
+								<select title="계정유형" style="width:250px">
+									<option value="">센터(SA)</option>
+									<option value="">딜러</option>
+								</select>
+								<div class="mt10">
+									<select title="딜러를 선택하세요" style="width:250px">
+										<option value="">딜러를 선택하세요</option>
+									</select>
+									<select title="센터를 선택하세요" style="width:250px">
+										<option value="">센터를 선택하세요</option>
+									</select>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">계정그룹(*)</th>
+							<td>
+								<select title="계정그룹" style="width:250px">
+									<option value="">컨텐츠관리자</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">이름(*)</th>
+							<td>
+								<input type="text" title="이름" style="width:250px">
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">부서/소속(*)</th>
+							<td>
+								<input type="text" title="부서/소속" style="width:250px">
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">담당업무</th>
+							<td>
+								<input type="text" title="담당업무" style="width:250px">
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">이메일</th>
+							<td>
+								<input type="text" title="이메일" placeholder="ex. abc123@bmw.com" style="width:250px">
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">전화번호(*)</th>
+							<td>
+								<input type="text" title="전화번호" style="width:250px">
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">휴대폰(*)</th>
+							<td>
+								<input type="text" title="휴대폰" style="width:250px">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<ul class="txtInfo mt10">
+				<li>필수항목(*)은 반드시 입력해주세요.</li>
+				<li>로그인시 인증문자 발송을 위해 정확한 휴대폰을 입력해 주세요.</li>
+			</ul>
+			<p class="txtInfo mt10">계정 생성 후에 계정 수정을 통하여 반드시 권한을 입력해주세요.</p>
+			<div class="btnBox tR">
+				<div class="lBtn"><a href="#" class="btnM cWhite">취소</a></div>
+				<a href="#" class="btnM">계정추가</a>
+			</div>
+
+		</div><!-- // end contents -->
+	</div>
+
+	<div id="footer" class="footer">
+		<div class="footArea">
+			<p class="copyright">© <strong>BMW Group Korea</strong> All rights reserved.</p>
+		</div>
+	</div><!-- // end footer -->
+	
+</div><!-- // end wrapper -->
+
+<!-- script include -->
+<script src="../js/jquery-3.1.0.min.js"></script>
+<script src="../js/common.js"></script>
+
+</body>
+</html>
+

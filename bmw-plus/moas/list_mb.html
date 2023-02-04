@@ -1,0 +1,1383 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<title>MOBILE LIST | BMW Plus</title>
+<style type="text/css">
+	body {padding:20px;margin:0px;font-size:0.75em;}
+	h1 {background-color:#484848;color:#fff;text-align:center;padding:0px;margin:0px;font-family:Verdana;}
+	h2 {padding:0;margin:0;}
+	h3 {text-decoration:underline;background-color:yellow;}
+	a {color:#f68e56;text-decoration:none;}
+	a:hover {color:#f55e21}
+	strong.red {font-weight:normal;color:red;font-size:11px;}
+	strong.green {font-weight:normal;color:green;font-size:11px;}
+	strong.modify {font-weight:normal;color:skyblue;font-size:11px;}
+	strong.script {font-weight:normal;color:brown;font-size:11px;}
+	sup {color:violet;}
+	.num {position:fixed;left:0;top:0;color:red;font-weight:16px;}
+	
+	.tabMenu {list-style:none;padding:0;margin:0;width:100%;overflow:hidden;background:#CCC;}
+	.tabMenu li {float:left;width:25%;height:40px;line-height:40px;text-align:center;font-weight:bold;font-size:16px;}
+	.tabMenu li.sel {background:orange;}
+	.tabMenu li a {display:block;color:#000;}
+	
+	.subtabMenu {list-style:none;padding:0;margin:0;width:100%;overflow:hidden;}
+	.subtabMenu li {float:left;height:40px;line-height:40px;text-align:center;font-weight:bold;font-size:16px;}
+	.subtabMenu li a {color:#000;padding:0 20px;}
+	.subtabMenu li.sel a {background:yellow;border-bottom:3px dotted;}
+	
+	table {width:100%;padding:0;margin:0;border-collapse:collapse;margin-top:20px;}
+	table th, td {border:1px solid #dedede;line-height:22px;padding:0 10px;}
+	table th {background:#eee;}
+	table td+td+td+td+td {font-size:11px;text-align:center;font-family:Verdana;color:#666;width:100px;}
+	table td+td+td+td+td+td+td {text-align:left;width:40%}
+	table tr:hover {background:#EEE;}
+	table tr.ing {background:pink}
+	table tr.delete, table td.delete {background:lightgray;text-decoration:line-through}
+</style>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+</head>
+
+<body>
+	
+<ul class="tabMenu">
+	<li class="sel"><a href="list_mb.html">BMW Plus 파일리스트[2017.10.18 open]</a></li>
+	<li><a href="../index.html">MINI Plus 파일리스트[2018.05.28 open]</a></li>
+	<li><a href="../admin/list_admin.html">통합 관리자</a></li>
+	<li><a href="../admin/list_admin_valet.html">발렛파킹 관리자</a></li>
+</ul>
+	
+<ul class="subtabMenu">
+	<li class="sel"><a href="list_mb.html">BMW Plus MO</a></li>
+	<li><a href="../oas/list_pc.html">BMW Plus PC</a></li>
+</ul>
+
+<table>
+	<thead>
+		<tr>
+			<th scope="col">1depth</th>
+			<th scope="col">2depth</th>
+			<th scope="col">3depth</th>
+			<th scope="col">4depth</th>
+			<th scope="col">작업일</th>
+			<th scope="col">검수</th>
+			<th scope="col">최종수정일</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><a href="guide/guide_index.html" target="_blank">모바일 HTML 가이드</a></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td><a href="guide/layout_dev.html">공통레이아웃(sample)</a></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>2017-07-06</td>
+			<td>완료</td>
+			<td>[수정 17.07.10]헤더영역에 알림추가(app에서만 출력)<br>
+				[수정 17.07.13]메뉴명 변경<br>
+				[수정 17.07.31]개인화영역 차량등록전 케이스 추가<br>
+				[수정 17.08.07]파비콘 링크영역 추가(전체페이지 공통으로 적용필요)<br>
+				[수정 18.12.18]M Performance Club 메뉴 추가<br>
+				[수정 19.04.29]BMW Motorrad 링크 변경
+			</td>
+		</tr>
+		<tr>
+			<td><a href="html/main.html">메인</a></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>2017-06-30</td>
+			<td>완료</td>
+			<td>[수정 17.07.10]차량정보영역에 등록된 차량이 없을 경우 추가/링크영역 예약관리에 건수 추가<br>
+				[수정 17.07.13]링크명 변경<br>
+				[수정 17.07.20]사고차 긴급출동 영역 수정
+			</td>
+		</tr>
+		<tr>
+			<td>실시간 예약</td>
+			<td><a href="html/reservation_no_vehicle.html">차량 미등록</a></td>
+			<td></td>
+			<td></td>
+			<td>2017-06-22</td>
+			<td>완료</td>
+			<td>공통 사용 파일임</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><a href="html/reservation_no_agree.html">실시간 예약_약관 미동의</a></td>
+			<td></td>
+			<td></td>
+			<td>2017-06-22</td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><a href="html/system_eod.html">서비스 점검 중(예약 대기 안내)</a></td>
+			<td></td>
+			<td></td>
+			<td>2017-06-22</td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><a href="html/reservation_recall_guide.html">[L]리콜 서비스 문의 및 예약 안내(EGR 모듈)</a></td>
+			<td></td>
+			<td></td>
+			<td>2018-10-24</td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><a href="html/reservation_step1.html">[Step1]고객 및 차량정보 선택</a></td>
+			<td></td>
+			<td></td>
+			<td>2017-06-22</td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td><a href="html/lp_reservation_already.html">[L]등록된 예약이 있는 경우</a></td>
+			<td></td>
+			<td>2017-06-22</td>
+			<td>완료</td>
+			<td>*step1 페이지에 포함</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>[Step2]서비스 센터 선택</td>
+			<td><a href="html/reservation_step2_tab1.html">[T]선호서비스센터</a></td>
+			<td></td>
+			<td>2017-06-22</td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td><a href="html/reservation_step2_tab2.html">[T]지역검색</a></td>
+			<td></td>
+			<td>2017-06-22</td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td><a href="html/reservation_step2_tab3.html">[T]최근이용센터</a></td>
+			<td></td>
+			<td>2017-06-22</td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td><a href="html/reservation_step2_tab4.html">[T]가까운 지역 검색</a></td>
+			<td></td>
+			<td>2017-06-22</td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td><a href="html/pop_reservation_centerinfo.html">[P]서비스센터 상세보기</a></td>
+			<td></td>
+			<td>2017-06-22</td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr class="ing">
+			<td></td>
+			<td><a href="html/reservation_step3.html">[Step3]정비서비스 입력</a> <sup>modify 2.5</sup></td>
+			<td></td>
+			<td></td>
+			<td>2017-06-22</td>
+			<td>완료</td>
+			<td>
+				[수정 17.06.28]서비스항목 및 추가요청사항 수정<br>
+				[수정 18.03.29]온라인 정비항목 확장 신규기능 추가<br>
+				[수정 18.06.28]항목추가<br>
+<strong class="red">[수정 19.09.10]추가요청 사항 삭제, 주의사항 추가</strong>
+			</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td><a href="html/lp_before_bsi_select.html">[L]BSI 안내</a></td>
+			<td></td>
+			<td>2017-08-07</td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td><a href="html/lp_before_pickup.html">[L]픽업 &amp; 딜리버리</a></td>
+			<td></td>
+			<td>2017-09-04</td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><a href="html/reservation_step4.html">[step4]예약정보 입력</a></td>
+			<td></td>
+			<td></td>
+			<td>2017-06-22</td>
+			<td>완료</td>
+			<td>
+				[수정 17.06.28]텍스트 수정<br>
+				[수정 19.08.08] 8월 프로모션 안내 메세지 추가
+			</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td><a href="html/lp_date_select.html">[L]예약일 선택</a></td>
+			<td></td>
+			<td></td>
+			<td>완료</td>
+			<td>*예약정보 입력 페이지에 포함</td>
+		</tr>
+		<tr class="ing">
+			<td></td>
+			<td><a href="html/reservation_step5.html">[Step5]예약정보 확인</a></td>
+			<td></td>
+			<td></td>
+			<td>2017-06-22</td>
+			<td>완료</td>
+			<td>
+				[수정 17.06.28]모빌리티 서비스 항목 추가<br>
+				<strong class="red">[수정 19.09.10]추가요청 사항 삭제</strong>
+			</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td><a href="html/reservation_complete.html">예약 완료</a></td>
+			<td></td>
+			<td>2017-06-22</td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td><a href="html/reservation_complete2.html">대기 예약 완료</a></td>
+			<td></td>
+			<td>2017-07-13</td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Owner's Guide</td>
+			<td><a href="html/service_light_info.html">차량 경고등/표시등 안내</a></td>
+			<td></td>
+			<td></td>
+			<td>2017-06-22</td>
+			<td>완료</td>
+			<td>[수정 17.06.29]하단링크추가<br>
+				[수정 17.07.13]미니링크삭제
+			</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>에어포트 서비스</td>
+			<td><a href="html/service_airport_guide.html">[T]서비스 안내</a> <sup>modify 2.5</sup></td>
+			<td></td>
+			<td>2017-07-03</td>
+			<td>완료</td>
+			<td>
+				[수정 18.06.05]타이틀 수정<br>
+				[수정 18.06.21]텍스트 수정<br>
+				[수정 19.03.14]텍스트 수정<br>
+				[수정 19.04.29]가격 수정
+			</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td>[T]서비스 예약</td>
+			<td><a href="html/airportservice_tab2_list.html">목록</a> <sup>new 2.5</sup></td>
+			<td>2018-06-05</td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td><a href="html/airportservice_tab2_detail.html">상세</a> <sup>new 2.5</sup></td>
+			<td>2018-06-05</td>
+			<td></td>
+			<td>[수정 18.06.21]텍스트 수정</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td><a href="html/airportservice_tab2_step1.html">[step1]기본정보</a> <sup>new 2.5</sup></td>
+			<td>2018-06-05</td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td><a href="html/airportservice_tab2_step2.html">[step2]예약일정</a> <sup>new 2.5</sup></td>
+			<td>2018-06-05</td>
+			<td></td>
+			<td>[수정 18.06.21]텍스트 수정</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td><a href="html/airportservice_tab2_step3.html">[step3]예약정보확인</a> <sup>new 2.5</sup></td>
+			<td>2018-06-05</td>
+			<td></td>
+			<td>[수정 18.06.21]텍스트 수정</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td><a href="html/airportservice_complete.html">예약완료</a> <sup>new 2.5</sup></td>
+			<td>2018-06-05</td>
+			<td></td>
+			<td>[수정 18.06.21]텍스트 수정</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><a href="html/service_emergency_dispatch.html">사고차긴급출동</a></td>
+			<td></td>
+			<td></td>
+			<td>2017-07-03</td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>BSI 및 Warranty 상품 안내</td>
+			<td><a href="html/service_bmsi_warranty_tab1.html">BMW</a></td>
+			<td></td>
+			<td>2017-07-03</td>
+			<td>완료</td>
+			<td>[수정 17.07.13]미니탭 삭제</td>
+		</tr>
+		<tr class="delete">
+			<td></td>
+			<td></td>
+			<td><a href="html/service_bmsi_warranty_tab2.html">MINI</a></td>
+			<td></td>
+			<td>2017-07-03</td>
+			<td>완료</td>
+			<td>[수정 17.07.13]미니페이지삭제</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><a href="html/service_part_price_info.html">BMW 그룹 오리지널 부품 가격정보</a></td>
+			<td></td>
+			<td></td>
+			<td>2017-07-03</td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><a href="html/m_performance_club_회원확인(회원이아닐경우).html">M Performance Club</a></td>
+			<td></td>
+			<td></td>
+			<td>2018-10-18</td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td><a href="html/m_performance_club_회원확인.html">[로그인 후]회원 혜택</a></td>
+			<td></td>
+			<td>2018-10-18</td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>BMW 그룹 공식 딜러</td>
+			<td>[T]전시장</td>
+			<td><a href="html/dealer.html">조회전</a></td>
+			<td></td>
+			<td>2017-06-22</td>
+			<td>완료</td>
+			<td>[수정 17.07.13]미니관련내용삭제</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td><a href="html/dealer_result.html">검색결과</a></td>
+			<td></td>
+			<td>2017-06-22</td>
+			<td>완료</td>
+			<td>[수정 17.07.13]미니관련내용삭제</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td><a href="html/dealer_result_tab1.html">[로그인 후]검색결과</a></td>
+			<td></td>
+			<td>2017-07-31</td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td><a href="html/dealer_result_nodata.html">조회결과 없음</a></td>
+			<td></td>
+			<td>2017-07-12</td>
+			<td></td>
+			<td>[수정 17.07.13]미니관련내용삭제</td>
+		</tr>
+	<tr>
+		<td></td>
+		<td>뉴스&amp;이벤트</td>
+		<td><a href="html/dealer_campaign_result_nodata.html">검색결과없음</a> <sup>new 2.5</sup></td>
+		<td></td>
+		<td>2018-05-08</td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td><a href="html/dealer_campaign_list.html">목록</a> <sup>new 2.5</sup></td>
+		<td></td>
+		<td>2018-05-08</td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td><a href="html/dealer_campaign_view.html">상세</a> <sup>new 2.5</sup></td>
+		<td></td>
+		<td>2018-05-08</td>
+		<td></td>
+		<td></td>
+	</tr>
+		<tr>
+			<td>차량 구매 정보</td>
+			<td><a href="html/service_new_car_info.html">신차정보</a></td>
+			<td></td>
+			<td></td>
+			<td>2017-07-03</td>
+			<td>완료</td>
+			<td>[수정 17.07.10]링크값 변경</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><a href="html/service_test_application.html">시승신청</a></td>
+			<td></td>
+			<td></td>
+			<td>2017-07-03</td>
+			<td>완료</td>
+			<td>[수정 17.07.10]링크값 변경</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><a href="html/service_used_car.html">BMW 공식 인증 중고차</a></td>
+			<td></td>
+			<td></td>
+			<td>2017-07-03</td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>BMW 그룹 소식</td>
+			<td>공지사항</td>
+			<td><a href="html/cscenter_notice_result_nodata.html">검색결과 없음</a></td>
+			<td></td>
+			<td>2017-07-12</td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td><a href="html/cscenter_notice_list.html">목록</a></td>
+			<td></td>
+			<td>2017-06-22</td>
+			<td>완료</td>
+			<td>*검색결과 포함<br>[수정 17.07.06]타이틀 문구 수정</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td><a href="html/cscenter_notice_view.html">상세</a></td>
+			<td></td>
+			<td>2017-06-22</td>
+			<td>완료</td>
+			<td>[수정 17.07.06]타이틀 문구 수정</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>BMW 뉴스</td>
+			<td><a href="html/cscenter_news_result_nodata.html">검색결과 없음</a></td>
+			<td></td>
+			<td>2017-07-12</td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td><a href="html/cscenter_news_list.html">목록</a></td>
+			<td></td>
+			<td>2017-06-22</td>
+			<td>완료</td>
+			<td>*검색결과 포함<br>[수정 17.07.06]타이틀 문구 수정</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td><a href="html/cscenter_news_view.html">상세</a></td>
+			<td></td>
+			<td>2017-06-22</td>
+			<td>완료</td>
+			<td>[수정 17.07.06]타이틀 문구 수정</td>
+		</tr>
+		<tr>
+			<td>이벤트</td>
+			<td>캠페인</td>
+			<td><a href="html/cscenter_campaign_result_nodata.html">검색결과없음</a></td>
+			<td></td>
+			<td>2017-07-12</td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td><a href="html/cscenter_campaign_list.html">목록</a></td>
+			<td></td>
+			<td>2017-06-22</td>
+			<td>완료</td>
+			<td>*검색결과 포함<br>[수정 17.07.06]타이틀 문구 수정</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td><a href="html/cscenter_campaign_view.html">상세</a></td>
+			<td></td>
+			<td>2017-06-22</td>
+			<td>완료</td>
+			<td>[수정 17.07.06]타이틀 문구 수정</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>이벤트</td>
+			<td><a href="html/cscenter_event_result_nodata.html">검색결과</a></td>
+			<td></td>
+			<td>2017-07-12</td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td>[T]진행중이벤트</a></td>
+			<td><a href="html/cscenter_event_tab1_list.html">목록</a></td>
+			<td>2017-06-22</td>
+			<td>완료</td>
+			<td>*검색결과 포함<br>[수정 17.07.06]타이틀 문구 수정</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td><a href="html/cscenter_event_tab1_view.html">상세</a></td>
+			<td>2017-06-22</td>
+			<td>완료</td>
+			<td>[수정 17.07.06]타이틀 문구 수정</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td>[T]당첨자발표</td>
+			<td><a href="html/cscenter_event_tab2_list.html">목록</a></td>
+			<td>2017-06-22</td>
+			<td>완료</td>
+			<td>*검색결과 포함<br>[수정 17.07.06]타이틀 문구 수정</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td><a href="html/cscenter_event_tab2_view.html">상세</a></td>
+			<td>2017-06-22</td>
+			<td>완료</td>
+			<td>[수정 17.07.06]타이틀 문구 수정</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td>[T]종료이벤트</td>
+			<td><a href="html/cscenter_event_tab3_list.html">목록</a></td>
+			<td>2017-06-22</td>
+			<td>완료</td>
+			<td>*검색결과 포함<br>[수정 17.07.06]타이틀 문구 수정</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td><a href="html/cscenter_event_tab3_view.html">상세</a></td>
+			<td>2017-06-22</td>
+			<td>완료</td>
+			<td>[수정 17.07.06]타이틀 문구 수정</td>
+		</tr>
+		<tr>
+			<td>Family Site</td>
+			<td><a href="html/service_navigation_map.html">BMW 네비게이션 맵 다운로드</a></td>
+			<td></td>
+			<td></td>
+			<td>2017-07-03</td>
+			<td>완료</td>
+			<td>[수정 17.07.13]미니링크삭제</td>
+		</tr>
+		<tr>
+			<td>고객센터</td>
+			<td><a href="html/cscenter_faq.html">서비스 FAQ</a></td>
+			<td></td>
+			<td></td>
+			<td>2017-06-22</td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><a href="html/cscenter_inquiry.html">1:1문의</a></td>
+			<td></td>
+			<td></td>
+			<td>2017-06-30</td>
+			<td>완료</td>
+			<td>[수정 17.07.06]타이틀 문구 수정</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><a href="html/cscenter_terms.html">이용약관</a> <sup>modify 2.5</sup></td>
+			<td></td>
+			<td></td>
+			<td>2017-06-22</td>
+			<td>완료</td>
+			<td>[수정 17.07.06]타이틀 문구 수정<br>[수정 18.05.24]약관 변경</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><a href="html/cscenter_terms2.html">개인정보처리방침</a> <sup>modify 2.5</sup></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>[수정 18.05.24]약관 변경<br>[수정 18.07.26]약관 변경</td>
+		</tr>
+		<tr>
+			<td><a href="html/join.html">회원가입</a> <sup>modify 2.5</sup></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>2017-06-15</td>
+			<td>완료</td>
+			<td>[수정 17.06.29]버튼 클래스 수정<br>
+				[수정 17.07.14]주소레이블 클래스 변경<br>
+				[수정 18.05.10]문구추가
+			</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><a href="html/join_step1.html">[Step1]본인인증</a></td>
+			<td></td>
+			<td></td>
+			<td>2017-06-15</td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><a href="html/join_step2.html">[Step2]약관 동의</a></td>
+			<td></td>
+			<td></td>
+			<td>2017-06-15</td>
+			<td>완료</td>
+			<td>[수정 17.07.19]선택약관추가</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td><a href="html/pop_terms1.html">[L]약관</a></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><a href="html/join_step3.html">[Step3]정보 입력</a> <sup>modify 2.5</sup></td>
+			<td></td>
+			<td></td>
+			<td>2017-06-15</td>
+			<td>완료</td>
+			<td>
+			주소 팝업은 다음 API 사용<br>
+			[수정 17.07.27]이메일 입력 폼 수정<br>
+			[수정 18.03.09]캠페인 수신 채널 추가</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><a href="html/join_complete.html">[Step4]가입완료</a></td>
+			<td></td>
+			<td></td>
+			<td>2017-06-15</td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>차량등록</td>
+			<td><a href="html/vehicle_registration_1.html">조회전</a></td>
+			<td></td>
+			<td></td>
+			<td>2017-06-14</td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><a href="html/vehicle_registration_2.html">조회후</a></td>
+			<td></td>
+			<td></td>
+			<td>2017-06-14</td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><a href="html/vehicle_registration_complete.html">등록완료</a></td>
+			<td></td>
+			<td></td>
+			<td>2017-06-14</td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td><a href="html/login.html">로그인</a></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>2017-06-14</td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><a href="html/lp_auto_login.html">[L]자동로그인</a></td>
+			<td></td>
+			<td></td>
+			<td>2017-06-14</td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><a href="html/lp_change_temp_pw.html">[L]임시비밀번호 변경안내</a></td>
+			<td></td>
+			<td></td>
+			<td>2017-06-14</td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><a href="html/lp_change_pw.html">[L]비밀번호 변경안내(90일간 변경이력이 없는 경우)</a></td>
+			<td></td>
+			<td></td>
+			<td>2017-06-14</td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>이메일 찾기</td>
+			<td><a href="html/login_find_email.html">본인인증</a></td>
+			<td></td>
+			<td>2017-06-14</td>
+			<td>완료</td>
+			<td>[수정 17.06.29]버튼 클래스 수정</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td><a href="html/login_find_email1.html">완료</a></td>
+			<td></td>
+			<td>2017-06-14</td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td><a href="html/login_find_email2.html">실패</a></td>
+			<td></td>
+			<td>2017-06-14</td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>비밀번호</td>
+			<td><a href="html/login_find_password.html">본인인증</a></td>
+			<td></td>
+			<td>2017-06-14</td>
+			<td>완료</td>
+			<td>[수정 17.06.29]버튼 클래스 수정</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td><a href="html/login_find_password1.html">완료</a></td>
+			<td></td>
+			<td>2017-06-14</td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td><a href="html/login_find_password2.html">실패</a></td>
+			<td></td>
+			<td>2017-06-14</td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<!-- <tr>
+			<td>&nbsp;</td>
+			<td></td>
+			<td></td>
+			<td>[LPop]탈퇴비번확인</td>
+			<td><a href="./html/filename.html"></a></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr> -->
+		<tr>
+			<td><a href="html/mybmw.html">My BMW</a></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>2017-06-27</td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><a href="html/mybmw_nolist.html">예약/정비내역이 없을 때</a></td>
+			<td></td>
+			<td></td>
+			<td>2017-06-27</td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>회원정보</td>
+			<td>[T]정보변경</td>
+			<td><a href="html/mybmw_userinfo_tab1.html">[Step1]정보변경</a> <sup>modify 2.5</sup></td>
+			<td>2017-06-27</td>
+			<td>완료</td>
+			<td>[수정 17.07.14]휴대전화번호변경 프로세스 추가 및 주소 레이블 클래스 수정<br>
+				[수정 17.07.19]선택약관추가<br>
+				[수정 18.03.12]캠페인 수신 채널 추가
+			</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td><a href="html/lp_member_secession.html">[L]회원탈퇴</a> <sup>modify 2.5</sup></td>
+			<td>2017-06-27</td>
+			<td>완료</td>
+			<td>[수정 18.05.10]문구추가</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td><a href="html/pop_secession_terms.html">[L]회원 탈퇴 시 유의사항</a> <sup>modify 2.5</sup></td>
+			<td>2017-06-27</td>
+			<td>완료</td>
+			<td>[수정 18.05.10]문구추가</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td><a href="html/mybmw_secession_complete.html">회원탈퇴완료</a></td>
+			<td>2017-06-27</td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td><a href="html/mybmw_userinfo_tab1_editinfo.html">[Step2]변경 확인</a></td>
+			<td>2017-06-27</td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td><a href="html/mybmw_userinfo_tab1_complete.html">[Step3]변경완료</a></td>
+			<td>2017-06-27</td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td><a href="html/mybmw_userinfo_tab2.html">[T]비밀번호 변경</a></td>
+			<td></td>
+			<td>2017-06-27</td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td><a href="html/mybmw_userinfo_tab2_complete.html">변경완료</a></td>
+			<td>2017-06-27</td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><a href="html/mybmw_manage_vehicle.html">차량관리</a> <sup>modify 2.5</sup></td>
+			<td></td>
+			<td></td>
+			<td>2017-06-27</td>
+			<td>완료</td>
+			<td>[수정 18.06.19]서비스 쿠폰 삭제 및 안내문구 수정</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td><a href="html/mybmw_manage_vehicle_del.html">차량삭제완료</a></td>
+			<td></td>
+			<td>2017-06-27</td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td><a href="html/layer_bsi1.html">[L]BSI 만료 시 <sup>new 2.5</sup></a></td>
+			<td></td>
+			<td>2018-06-28</td>
+			<td></td>
+			<td>
+				[수정 18.07.04]layer slide 기능 추가<br>
+				[수정 18.07.13]태그 수정
+			</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td><a href="html/layer_bsi2.html">[L]BSI Plus 만료 시 <sup>new 2.5</sup></a></td>
+			<td></td>
+			<td>2018-06-28</td>
+			<td></td>
+			<td>
+				[수정 18.07.04]layer slide 기능 추가<br>
+				[수정 18.07.13]태그 수정
+			</td>
+		</tr>
+		<!--tr>
+			<td>&nbsp;</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td><a href="html/reservation_no_vehicle.html">등록된 차량이 없을 경우</a></td>
+			<td>2017-06-27</td>
+			<td>완료</td>
+			<td></td>
+		</tr-->
+
+		<tr>
+			<td></td>
+			<td><a href="html/mybmw_manage_reservation.html">예약관리</a></td>
+			<td></td>
+			<td></td>
+			<td>2017-06-27</td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td><a href="html/mybmw_manage_reservation2.html">예약정보</a></td>
+			<td>2017-06-27</td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td><a href="html/manage_reservation_eod.html">EOD 서비스 준비중</a></td>
+			<td>2017-07-31</td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td><a href="html/mybmw_manage_rsv_cancel.html">예약취소</a></td>
+			<td>2017-06-27</td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>정비 이력</td>
+			<td><a href="html/mybmw_maintenance_list_before.html">조회전</a></td>
+			<td></td>
+			<td>2017-06-27</td>
+			<td>완료</td>
+			<td>
+				<strong class="script">달력 script</strong>
+			</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td><a href="html/mybmw_maintenance_list.html">조회후</a></td>
+			<td></td>
+			<td>2017-06-27</td>
+			<td>완료</td>
+			<td>
+				<strong class="script">달력 script</strong>
+			</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>선호서비스센터</td>
+			<td><a href="html/mybmw_center_tab1.html">[T]등록된선호서비스센터</a></td>
+			<td></td>
+			<td>2017-06-27</td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr class="delete">
+			<td></td>
+			<td></td>
+			<td>(tab2)MINI</td>
+			<td><a href="html/mybmw_center_tab2.html">[T]mini</a></td>
+			<td>2017-06-27</td>
+			<td>완료</td>
+			<td>[삭제 17.07.13]삭제</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td><a href="html/mybmw_center_tab3.html">[T]최근이용서비스센터</a></td>
+			<td>2017-06-27</td>
+			<td>완료</td>
+			<td>[수정 17.07.24]최근이용일 추가</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td><a href="html/mybmw_no_center.html">등록된 센터 없을 때</a></td>
+			<td>2017-06-27</td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>쿠폰관리</td>
+			<td>[T]서비스 쿠폰</td>
+			<td><a href="html/mybmw_coupon_tab1.html">[T]사용가능</a> <sup>modify 쿠폰고도화</sup></td>
+			<td></td>
+			<td>2018-06-20</td>
+			<td>완료</td>
+			<td>
+				[수정 18.07.16] 쿠폰 태그 수정<br>
+				[수정 19.03.27] 쿠폰 고도화 수정
+			</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td><a href="html/mybmw_coupon_tab1_만료.html">[T]사용완료/만료</a> <sup>new 쿠폰고도화</sup></td>
+			<td></td>
+			<td>2019-03-27</td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td><a href="html/mybmw_coupon_layer1.html">[L]차량선택</a> <sup> new 쿠폰고도화</sup></td>
+			<td>2019-03-27</td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td><a href="html/mybmw_coupon_layer2.html">[L]쿠폰사용내역 <sup>new 쿠폰고도화</sup></a></td>
+			<td>2019-03-27</td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>[T]1/M 시리즈쿠폰</td>
+			<td><a href="html/mybmw_coupon_tab2.html">[T]사용가능</a> <sup>modify 쿠폰고도화</sup></td>
+			<td></td>
+			<td>2018-06-20</td>
+			<td>완료</td>
+			<td>
+				[수정 18.06.26] 쿠폰 고도화 수정<br>
+				[수정 18.07.16] 쿠폰 태그 수정<br>
+				[수정 18.12.19] 사용완료 쿠폰 표기<br>
+				[수정 19.03.27] 쿠폰 고도화 수정
+			</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td><a href="html/mybmw_coupon_tab2_만료.html">[T]사용완료/만료</a> <sup>new 쿠폰고도화</sup></td>
+			<td></td>
+			<td>2019-03-27</td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>[T]BMW Excellence Club</td>
+			<td><a href="html/mybmw_coupon_tab3.html">[T]사용가능</a> <sup>new 쿠폰고도화</sup></td>
+			<td></td>
+			<td>2019-03-27</td>
+			<td>완료</td>
+			<td>[추가 19.05.21]렌트카 쿠폰 내용 추가</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td><a href="html/mybmw_coupon_tab3_만료.html">[T]사용완료/만료</a> <sup>new 쿠폰고도화</sup></td>
+			<td></td>
+			<td>2019-03-27</td>
+			<td>완료</td>
+			<td>[추가 19.05.21]렌트카 쿠폰 내용 추가</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td><a href="html/pop_coupon_rental.html">[L]렌터카 자세히 보기</a> <sup>new 쿠폰고도화</sup></td>
+			<td></td>
+			<td>2019-05-21</td>
+			<td>완료</td>
+			<td>[추가 19.05.21]렌터카 자세히 보기 팝업<br>[추가 19.07.02]렌트카 쿠폰 내용 추가</td>
+		</tr>
+		<tr>
+			<td><a href="html/message_list.html">메시지함</a></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>2017-06-22</td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<!--tr class="del">
+			<td>&nbsp;</td>
+			<td>전체메뉴</td>
+			<td></td>
+			<td></td>
+			<td> <a href="./html/total_menu.html">(전체메뉴)</a></td>
+			<td>2017-06-30</td>
+			<td>완료</td>
+			<td>2017-07-13</td>
+			<td>*수정(07-13):메뉴명 변경<br>
+				*삭제:레이아웃에 포함
+			</td>
+		</tr-->
+		<tr>
+			<td>공통</td>
+			<td><a href="html/system_error.html">500 서비스 장애</a></td>
+			<td></td>
+			<td></td>
+			<td>2017-06-30</td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><a href="html/system_preparing.html">404 서비스 준비중</a></td>
+			<td></td>
+			<td></td>
+			<td>2017-06-30</td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><a href="html/503.html">503 에러 등</a></td>
+			<td></td>
+			<td></td>
+			<td>2018-12-18</td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><a href="html/system_ing.html">공사중</a></td>
+			<td></td>
+			<td></td>
+			<td>2017-06-30</td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><a href="html/pop_reservation_centerinfo.html">[L]서비스센터 상세보기</a></td>
+			<td></td>
+			<td></td>
+			<td>2017-06-30</td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><a href="html/loading.html">로딩중</a></td>
+			<td></td>
+			<td></td>
+			<td>2017-07-26</td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><a href="html/lp_service_stop.html">[L]서비스 일시 중단 안내</a> <sup>new 2.5</sup></td>
+			<td></td>
+			<td></td>
+			<td>2018-05-21</td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>약관 및 동의</td>
+			<td><a href="html/pop_agree_cont1.html">[L]개인정보 수집 및 활용 동의</a> <sup>modify 2.5</sup></td>
+			<td></td>
+			<td></td>
+			<td>2017-07-25</td>
+			<td></td>
+			<td>[수정 18.05.24]약관 변경</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><a href="html/pop_agree_cont2.html">[L]개인정보 국외 이전 동의</a> <sup>modify 2.5</sup></td>
+			<td></td>
+			<td></td>
+			<td>2017-07-25</td>
+			<td></td>
+			<td>[수정 18.05.24]약관 변경</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><a href="html/pop_agree_cont3.html">[L]개인정보 제3자 제공 동의</a> <sup>modify 2.5</sup></td>
+			<td></td>
+			<td></td>
+			<td>2017-07-25</td>
+			<td></td>
+			<td>[수정 18.05.24]약관 변경</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><a href="html/pop_agree_cont4.html">[L]개인정보 마케팅 활용 동의</a> <sup>modify 2.5</sup></td>
+			<td></td>
+			<td></td>
+			<td>2017-07-25</td>
+			<td></td>
+			<td>[수정 18.05.24]약관 변경</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><a href="html/pop_agree_cont5.html">[L]위치정보 활용 동의</a> <sup>modify 2.5</sup></td>
+			<td></td>
+			<td></td>
+			<td>2017-07-25</td>
+			<td></td>
+			<td>[수정 18.05.24]약관 변경</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><a href="html/pop_agree_cont6.html">[L]개인정보 수집 및 이용에 대한 안내</a></td>
+			<td></td>
+			<td></td>
+			<td>2017-07-25</td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><a href="html/pop_terms1.html">[L]이용약관</a> <sup>modify 2.5</sup></td>
+			<td></td>
+			<td></td>
+			<td>2017-07-25</td>
+			<td></td>
+			<td>[수정 18.05.24]약관 변경</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><a href="html/pop_terms2.html">[L]개인정보 처리방침</a> <sup>modify 2.5</sup></td>
+			<td></td>
+			<td></td>
+			<td>2017-07-25</td>
+			<td></td>
+			<td>[수정 18.05.24]약관 변경<br>[수정 18.07.26]약관 변경</td>
+		</tr>
+	</tbody>
+</table>
+	
+<script type="text/javascript">
+	document.write("<div class=num>total : " + $('tbody > tr').size() + " page</div>");
+</script>
+
+</body>
+</html>

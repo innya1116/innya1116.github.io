@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="shortcut icon" href="../images/favicon.ico">
+<title>Button Guide | BMW Plus</title>
+<link href="../css/common.css" rel="stylesheet" type="text/css">
+<link href="guide.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<div id="wrapGuide">
+	<div class="topArea">
+		<header>
+			<h1 class="h1Tit">BMW Plus 구축 프로젝트 PC List</h1>
+		</header>
+		<nav>
+			<ul>
+				<li class="on"><a href="guide_index.html">PC Guide</a></li>
+				<li><a href="../../moas/list_mb.html">Mobile List</a></li>
+				<li><a href="../list_pc.html">PC List</a></li>
+				<li><a href="../../admin/list_admin.html">Admin List</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<section class="container">
+		<div class="gLeft">
+			<h2 class="h2Tit">HTML Guide</h2>
+			<nav>
+				<ul>
+					<li><a href="guide_index.html">기본규칙</a></li>
+					<li><a href="layout.html">Layout</a></li>
+					<li class="on"><a href="button.html">Button</a></li>
+					<li><a href="paragraph.html">Paragraph</a></li>
+					<li><a href="step_tab.html">Step, Tab</a></li>
+					<li><a href="table.html">Table</a></li>
+					<li><a href="form.html">Form</a></li>
+					<li><a href="popup.html">Popup</a></li>
+					<li><a href="board.html">Board</a></li>
+					<li><a href="etc.html">Etc</a></li>
+				</ul>
+			</nav>
+		</div>
+		<article class="gContents">
+			<h1 class="gTit1">Button</h1>
+			<h2 class="gTit2">Large</h2>
+			<a href="#" class="btnL bGray">회색버튼</a>
+			<a href="#" class="btnL">기본버튼</a>
+			<div class="btnBox">
+				<span><a href="#" class="btnL bGray">회색버튼(기본 정렬)</a></span>
+				<span><a href="#" class="btnL">기본버튼(기본 정렬)</a></span>
+			</div>
+			<div class="btnBox tR"><!-- 우정렬 -->
+				<span><a href="#" class="btnL bGray">회색버튼(우측 정렬)</a></span>
+				<span><a href="#" class="btnL">기본버튼(우측 정렬)</a></span>
+			</div>
+<pre class="code">
+&lt;a href="#" class="btnL"&gt;기본버튼&lt;/a&gt;
+&lt;a href="#" class="btnL bGray"&gt;회색버튼&lt;/a&gt;
+&lt;div class="btnBox"&gt;
+	&lt;span&gt;&lt;a href="#" class="btnL bGray"&gt;회색버튼&lt;/a&gt;&lt;/span&gt;
+	&lt;span&gt;&lt;a href="#" class="btnL"&gt;기본버튼&lt;/a&gt;&lt;/span&gt;
+&lt;/div&gt;
+</pre>
+
+			<br>
+
+			<h2 class="gTit2">Small</h2>
+			<a href="#" class="btnS">기본버튼</a>
+			<a href="#" class="btnS bGray">회색버튼</a>
+<pre class="code">
+&lt;a href="#" class="btnS"&gt;기본버튼&lt;/a&gt;
+&lt;a href="#" class="btnS bGray"&gt;회색버튼&lt;/a&gt;
+</pre>
+
+
+		</article>
+	</section>
+	<!-- //contents -->
+</div><!-- //wrap -->
+
+<!-- script include -->
+<script src="../js/jquery-3.1.0.min.js"></script>
+<script src="../js/jquery-ui.min.js"></script>
+<script src="../js/common.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="shortcut icon" href="../images/favicon.ico">
+<title>Step, Tab Guide | BMW Plus</title>
+<link href="../css/common.css" rel="stylesheet" type="text/css">
+<link href="guide.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<div id="wrapGuide">
+	<div class="topArea">
+		<header>
+			<h1 class="h1Tit">BMW Plus 구축 프로젝트 PC List</h1>
+		</header>
+		<nav>
+			<ul>
+				<li class="on"><a href="guide_index.html">PC Guide</a></li>
+				<li><a href="../../moas/list_mb.html">Mobile List</a></li>
+				<li><a href="../list_pc.html">PC List</a></li>
+				<li><a href="../../admin/list_admin.html">Admin List</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<section class="container">
+		<div class="gLeft">
+			<h2 class="h2Tit">HTML Guide</h2>
+			<nav>
+				<ul>
+					<li><a href="guide_index.html">기본규칙</a></li>
+					<li><a href="layout.html">Layout</a></li>
+					<li><a href="button.html">Button</a></li>
+					<li><a href="paragraph.html">Paragraph</a></li>
+					<li class="on"><a href="step_tab.html">Step, Tab</a></li>
+					<li><a href="table.html">Table</a></li>
+					<li><a href="form.html">Form</a></li>
+					<li><a href="popup.html">Popup</a></li>
+					<li><a href="board.html">Board</a></li>
+					<li><a href="etc.html">Etc</a></li>
+				</ul>
+			</nav>
+		</div>
+		<article class="gContents">
+			<h1 class="gTit1">Step, Tab</h1>
+			<h2 class="gTit2">Step - 가로형</h2>
+			<!-- step -->
+			<div class="step typeH">
+				<ol class="col4"><!-- 스탭의 개수에 따라 col2~col5까지 사용 -->
+					<li class="passed"><div class="stepTit"><span>1<span class="hidden">단계</span></span><em>본인인증</em></div></li><!-- 현재 스텝 class="ing" | 지나간 스텝 class="passed" -->
+					<li class="ing"><div class="stepTit"><span>2<span class="hidden">단계</span></span><em>약관동의</em></div></li>
+					<li><div class="stepTit"><span>3<span class="hidden">단계</span></span><em>정보입력</em></div></li>
+					<li><div class="stepTit"><span>4<span class="hidden">단계</span></span><em>가입완료</em></div></li>
+				</ol>
+				<h2 class="hidden"><span class="hidden">현재 단계</span>약관동의</h2>
+			</div>
+			<!-- //step -->
+<pre class="code">
+&lt;!-- step --&gt;
+&lt;div class="step typeH"&gt;
+	&lt;ol class="col4"&gt;&lt;!-- 스탭의 개수에 따라 col2~col5까지 사용 --&gt;
+		&lt;li class="passed"&gt;&lt;div class="stepTit"&gt;&lt;span&gt;1&lt;span class="hidden"&gt;단계&lt;/span&gt;&lt;/span&gt;&lt;em&gt;본인인증&lt;/em&gt;&lt;/div&gt;&lt;/li&gt;&lt;!-- 현재 스텝 class="ing" | 지나간 스텝 class="passed" --&gt;
+		&lt;li class="ing"&gt;&lt;div class="stepTit"&gt;&lt;span&gt;2&lt;span class="hidden"&gt;단계&lt;/span&gt;&lt;/span&gt;&lt;em&gt;약관동의&lt;/em&gt;&lt;/div&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;div class="stepTit"&gt;&lt;span&gt;3&lt;span class="hidden"&gt;단계&lt;/span&gt;&lt;/span&gt;&lt;em&gt;정보입력&lt;/em&gt;&lt;/div&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;div class="stepTit"&gt;&lt;span&gt;4&lt;span class="hidden"&gt;단계&lt;/span&gt;&lt;/span&gt;&lt;em&gt;가입완료&lt;/em&gt;&lt;/div&gt;&lt;/li&gt;
+	&lt;/ol&gt;
+	&lt;h2 class="hidden"&gt;&lt;span class="hidden"&gt;현재 단계&lt;/span&gt;약관동의&lt;/h2&gt;
+&lt;/div&gt;
+&lt;!-- //step --&gt;
+</pre>
+
+			<br>
+
+			<h2 class="gTit2">Step - 세로형</h2>
+			<!-- step -->
+			<div class="step typeV">
+				<ol>
+					<li class="passed"><!-- 현재 스텝 class="ing" | 지나간 스텝 class="passed" -->
+						<a href="#" class="stepTit"><span>1<span class="hidden">단계</span></span><em>차량정보 및 서비스센터</em></a>
+						<div class="stepCon">
+							<div class="leftCon">
+								leftCon
+							</div>
+							<div class="rightCon">
+								rightCont
+							</div>
+						</div>
+						<div class="rsvInfo">
+							<div class="overArea"><span><em class="hidden">항목</em>내용</span><span><em class="hidden">항목</em>내용</span></div>
+							<!-- <div class="overArea"><span>선택한 데이터가 없습니다.</span></div> //데이터 선택 전 -->
+						</div>
+					</li>
+					<li class="ing">
+						<a href="#" class="stepTit"><span>2<span class="hidden">단계</span></span><em>정비서비스 및 예약일</em></a>
+						<div class="stepCon">
+							<div class="leftCon">
+								leftCon
+							</div>
+							<div class="rightCon">
+								rightCont
+							</div>
+						</div>
+						<div class="rsvInfo">
+							<div class="overArea"><span>선택한 데이터가 없습니다.</span></div>
+							<!-- <div class="overArea"><span><em class="hidden">항목</em>내용</span><span><em class="hidden">항목</em>내용</span></div> //데이터 선택 후 -->
+						</div>
+					</li>
+					<li>
+						<a href="#" class="stepTit"><span>3<span class="hidden">단계</span></span><em>예약 정보 확인</em></a>
+						<div class="stepCon">
+							<div class="leftCon">
+								leftCon
+							</div>
+							<div class="rightCon">
+								rightCont
+							</div>
+						</div>
+						<div class="rsvInfo">
+							<div class="overArea"><span>선택한 데이터가 없습니다.</span></div>
+							<!-- <div class="overArea"><span><em class="hidden">항목</em>내용</span><span><em class="hidden">항목</em>내용</span></div> //데이터 선택 후 -->
+						</div>
+					</li>
+				</ol>
+			</div>
+			<!-- //step -->
+
+<pre class="code">
+&lt;!-- step --&gt;
+&lt;div class="step typeV"&gt;
+	&lt;ol&gt;
+		&lt;li class="passed"&gt;&lt;!-- 현재 스텝 class="ing" | 지나간 스텝 class="passed" --&gt;
+			&lt;a href="#" class="stepTit"&gt;&lt;span&gt;1&lt;span class="hidden"&gt;단계&lt;/span&gt;&lt;/span&gt;&lt;em&gt;차량정보 및 서비스센터&lt;/em&gt;&lt;/a&gt;
+			&lt;div class="stepCon"&gt;
+				&lt;div class="leftCon"&gt;
+					leftCon
+				&lt;/div&gt;
+				&lt;div class="rightCon"&gt;
+					rightCont
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class="rsvInfo"&gt;
+				&lt;div class="overArea"&gt;&lt;span&gt;&lt;em class="hidden"&gt;항목&lt;/em&gt;내용&lt;/span&gt;&lt;span&gt;&lt;em class="hidden"&gt;항목&lt;/em&gt;내용&lt;/span&gt;&lt;/div&gt;
+				&lt;!-- &lt;div class="overArea"&gt;&lt;span&gt;선택한 데이터가 없습니다.&lt;/span&gt;&lt;/div&gt; //데이터 선택 전 --&gt;
+			&lt;/div&gt;
+		&lt;/li&gt;
+		&lt;li class="ing"&gt;
+			&lt;a href="#" class="stepTit"&gt;&lt;span&gt;2&lt;span class="hidden"&gt;단계&lt;/span&gt;&lt;/span&gt;&lt;em&gt;정비서비스 및 예약일&lt;/em&gt;&lt;/a&gt;
+			&lt;div class="stepCon"&gt;
+				&lt;div class="leftCon"&gt;
+					leftCon
+				&lt;/div&gt;
+				&lt;div class="rightCon"&gt;
+					rightCont
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class="rsvInfo"&gt;
+				&lt;div class="overArea"&gt;&lt;span&gt;선택한 데이터가 없습니다.&lt;/span&gt;&lt;/div&gt;
+				&lt;!-- &lt;div class="overArea"&gt;&lt;span&gt;&lt;em class="hidden"&gt;항목&lt;/em&gt;내용&lt;/span&gt;&lt;span&gt;&lt;em class="hidden"&gt;항목&lt;/em&gt;내용&lt;/span&gt;&lt;/div&gt; //데이터 선택 후 --&gt;
+			&lt;/div&gt;
+		&lt;/li&gt;
+		&lt;li&gt;
+			&lt;a href="#" class="stepTit"&gt;&lt;span&gt;3&lt;span class="hidden"&gt;단계&lt;/span&gt;&lt;/span&gt;&lt;em&gt;예약 정보 확인&lt;/em&gt;&lt;/a&gt;
+			&lt;div class="stepCon"&gt;
+				&lt;div class="leftCon"&gt;
+					leftCon
+				&lt;/div&gt;
+				&lt;div class="rightCon"&gt;
+					rightCont
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class="rsvInfo"&gt;
+				&lt;div class="overArea"&gt;&lt;span&gt;선택한 데이터가 없습니다.&lt;/span&gt;&lt;/div&gt;
+				&lt;!-- &lt;div class="overArea"&gt;&lt;span&gt;&lt;em class="hidden"&gt;항목&lt;/em&gt;내용&lt;/span&gt;&lt;span&gt;&lt;em class="hidden"&gt;항목&lt;/em&gt;내용&lt;/span&gt;&lt;/div&gt; //데이터 선택 후 --&gt;
+			&lt;/div&gt;
+		&lt;/li&gt;
+	&lt;/ol&gt;
+&lt;/div&gt;
+&lt;!-- //step --&gt;
+</pre>
+
+			<br>
+
+			<h2 class="gTit2">Tab - default</h2>
+			<!-- tab -->
+			<div class="tabType1">
+				<ul class="col4">
+					<li class="on"><a href="#">지역검색</a></li><!-- 활성화 탭 : class="on" -->
+					<li><a href="#">관심서비스센터</a></li>
+					<li><a href="#">최근이용센터</a></li>
+					<li><a href="#">가까운지역검색</a></li>
+				</ul>
+			</div>
+			<!-- //tab -->
+			<div class="tabCont">
+				<h2 class="hidden">지역검색</h2>
+			</div>
+<pre class="code">
+&lt;!-- tab --&gt;
+&lt;div class="tabType1"&gt;
+	&lt;ul class="col4"&gt;
+		&lt;li class="on"&gt;&lt;a href="#"&gt;지역검색&lt;/a&gt;&lt;/li&gt;&lt;!-- 활성화 탭 : class="on" --&gt;
+		&lt;li&gt;&lt;a href="#"&gt;관심서비스센터&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="#"&gt;최근이용센터&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="#"&gt;가까운지역검색&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;
+&lt;!-- //tab --&gt;
+&lt;div class="tabCont"&gt;
+	&lt;h2 class="hidden"&gt;지역검색&lt;/h2&gt;
+&lt;/div&gt;
+</pre>
+
+			<br>
+
+			<h2 class="gTit2">Tab - Large</h2>
+			<!-- tab -->
+			<div class="tabType1 lg">
+				<ul class="col2">
+					<li class="on"><a href="#">지역검색</a></li><!-- 활성화 탭 : class="on" -->
+					<li><a href="#">관심서비스센터</a></li>
+				</ul>
+			</div>
+			<!-- //tab -->
+			<div class="tabCont">
+				<h2 class="hidden">지역검색</h2>
+			</div>
+<pre class="code">
+&lt;!-- tab --&gt;
+&lt;div class="tabType1 lg"&gt;
+	&lt;ul class="col2"&gt;
+		&lt;li class="on"&gt;&lt;a href="#"&gt;지역검색&lt;/a&gt;&lt;/li&gt;&lt;!-- 활성화 탭 : class="on" --&gt;
+		&lt;li&gt;&lt;a href="#"&gt;관심서비스센터&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;
+&lt;!-- //tab --&gt;
+&lt;div class="tabCont"&gt;
+	&lt;h2 class="hidden"&gt;지역검색&lt;/h2&gt;
+&lt;/div&gt;	
+</pre>
+
+			<br>
+
+			<h2 class="gTit2">Tab - multiTab</h2>
+			<!-- tab -->
+			<div class="multiTab">
+				<ul class="col6">
+					<li><a href="#"><span>전체</span></a></li><!-- 활성화 탭 : class="on" -->
+					<li><a href="#"><span>차량등록관련</span></a></li>
+					<li><a href="#"><span>예약신청관련</span></a></li>
+					<li class="on"><a href="#"><span>딜러찾기관련</span></a></li>
+					<li><a href="#"><span>이용방법</span></a></li>
+					<li><a href="#"><span>차량일반</span></a></li>
+				</ul>
+			</div>
+			<!-- //tab -->
+			<div class="tabCont">
+				<h2 class="hidden">전체</h2>
+			</div>
+<pre class="code">
+&lt;!-- tab --&gt;
+&lt;div class="multiTab"&gt;
+	&lt;ul class="col6"&gt;
+		&lt;li&gt;&lt;a href="#"&gt;&lt;span&gt;전체&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;!-- 활성화 탭 : class="on" --&gt;
+		&lt;li&gt;&lt;a href="#"&gt;&lt;span&gt;차량등록관련&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="#"&gt;&lt;span&gt;예약신청관련&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+		&lt;li class="on"&gt;&lt;a href="#"&gt;&lt;span&gt;딜러찾기관련&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="#"&gt;&lt;span&gt;이용방법&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="#"&gt;&lt;span&gt;차량일반&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;
+&lt;!-- //tab --&gt;
+&lt;div class="tabCont"&gt;
+	&lt;h2 class="hidden"&gt;전체&lt;/h2&gt;
+&lt;/div&gt;
+</pre>
+		</article>
+	</section>
+	<!-- //contents -->
+</div><!-- //wrap -->
+
+<!-- script include -->
+<script src="../js/jquery-3.1.0.min.js"></script>
+<script src="../js/jquery-ui.min.js"></script>
+<script src="../js/common.js"></script>
+
+</body>
+</html>

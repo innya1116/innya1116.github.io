@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="shortcut icon" href="../images/favicon.ico">
+<title>My BMW | BMW Plus</title>
+<link href="../css/common.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div class="skipNav"><a href="#contents">본문으로 바로가기</a></div>
+
+<div class="wrap">
+	<header>
+		<div class="hdWrap">
+			<img src="../images/temp/dummy_header.gif" alt=""><!-- //임시이미지 -->
+		</div>
+	</header>
+
+	<section class="container">
+		<div id="contents" class="contents utilP"><!-- //공통&기타 페이지 : utilP 클래스 추가 -->
+			<div class="visualArea">
+				<div class="conVisual">
+					<div class="txtWrap">
+						<h1 class="conTit1">My BMW.</h1>
+						<p class="titCopy">회원님의 정보를 한눈에 볼 수 있습니다.</p>
+					</div>
+				</div>
+			</div>
+			<div class="contArea">
+				<a href="#" onclick="commonJs.popShow($('#lyChangeVehicle'))">차량선택(레이어팝업)</a>
+			</div>
+		</div>
+		<!-- //contents -->
+	</section>
+	<!-- //container -->
+
+	<footer>
+		<div class="ftWrap">
+			<img src="../images/temp/dummy_footer.gif" alt=""><!-- //임시이미지 -->
+		</div>
+	</footer>
+</div><!-- //wrap -->
+
+<div class="lyDim"><!-- back 영역 --></div><!-- layer Dim 영역 -->
+<!-- layer Popup : 차량선택 -->
+<div id="lyChangeVehicle" class="layerPop">
+	<section class="popWrap">
+		<h1 class="popTit">차량선택</h1>
+		<div class="popCont">
+			<div class="vehicleList type2 mgt2">
+				<ul>
+					<li>
+						<div class="rdChk"><input type="radio" name="vehicleSelect" id="vehicleSelect1" checked><label for="vehicleSelect1">
+							<span class="dpTbl"><em class="dpTc tL">차량정보</em><span class="dpTc tR">BMW 320d</span></span>
+							<span class="dpTbl"><em class="dpTc tL">차대번호</em><span class="dpTc tR">WBAZZ0000Z<span class="fCol1">Z000000</span></span></span>
+						</label></div>
+					</li>
+					<li>
+						<div class="rdChk"><input type="radio" name="vehicleSelect" id="vehicleSelect2"><label for="vehicleSelect2">
+							<span class="dpTbl"><em class="dpTc tL">차량정보</em><span class="dpTc tR">BMW 320d</span></span>
+							<span class="dpTbl"><em class="dpTc tL">차대번호</em><span class="dpTc tR">WBAZZ0000Z<span class="fCol1">Z000001</span></span></span>
+						</label></div>
+					</li>
+				</ul>
+			</div>
+			<div class="btnBox">
+				<a href="#" class="btnL bGray">취소</a>
+				<a href="#" class="btnL">확인</a>
+			</div>
+		</div>
+		<button type="button" class="popClose">닫기</button>
+	</section><!-- //popWrap -->
+</div>
+<!-- //layer Popup : 차량선택 -->
+
+<!-- script include -->
+<script src="../js/jquery-3.1.0.min.js"></script>
+<script src="../js/jquery-ui.min.js"></script>
+<script src="../js/common.js"></script>
+
+</body>
+</html>

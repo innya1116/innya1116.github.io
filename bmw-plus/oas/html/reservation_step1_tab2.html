@@ -1,0 +1,341 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="shortcut icon" href="../images/favicon.ico">
+<title>실시간 예약 | BMW Plus</title>
+<link href="../css/common.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div class="skipNav"><a href="#contents">본문으로 바로가기</a></div>
+
+<div class="wrap">
+	<header>
+		<div class="hdWrap">
+			<img src="../images/temp/dummy_header.gif" alt=""><!-- //임시이미지 -->
+		</div>
+	</header>
+
+	<section class="container">
+		<div id="contents" class="contents reservation"><!-- //실시간 예약 reservation 클래스 추가 -->
+			<div class="visualArea">
+				<div class="conVisual">
+					<div class="txtWrap">
+						<h1 class="conTit1">실시간 예약.</h1>
+						<p class="titCopy">온라인으로 빠르고 쉽게 서비스 예약을 할 수 있습니다.</p>
+					</div>
+				</div>
+			</div>
+			<div class="contArea">
+				<h2 class="hidden">단계별 정보입력</h2>
+				<!-- step -->
+				<div class="step typeV">
+					<ol>
+						<li class="ing"><!-- //현재 스텝 class="ing" | 지나간 스텝 class="passed" -->
+							<a href="#" class="stepTit"><span>1<span class="hidden">단계</span></span><em>차량정보 및 서비스센터</em></a>
+							<div class="stepCon step1">
+								<div class="leftCon">
+									<dl class="userInfo">
+										<dt>홍길동님</dt>
+										<dd class="tR">
+											<span class="email">abc123@bmw.com</span>
+											<span class="sPhone">010-1234-1234</span>
+										</dd>
+									</dl>
+
+									<h3 class="conTit2 mgt3">차량정보</h3>
+									<div class="vehicleList">
+										<div class="scrollArea">
+											<ul>
+												<li>
+													<div class="rdChk"><input type="radio" name="vehicleSelect" id="vehicleSelect1"><label for="vehicleSelect1">
+														<span class="dpTbl"><em class="dpTc tL">차량정보 / 차대번호</em><span class="dpTc tR">BMW 320d / WBAZZ0000Z<span class="fCol1">Z000000</span></span></span>
+													</label></div>
+													<span class="dpTbl"><label for="vehicleNum" class="dpTc tL">차량번호</label><span class="dpTc tR"><input type="text" id="vehicleNum"></span></span>
+												</li>
+												<li>
+													<div class="rdChk"><input type="radio" name="vehicleSelect" id="vehicleSelect2"><label for="vehicleSelect2">
+														<span class="dpTbl"><em class="dpTc tL">차량정보 / 차대번호</em><span class="dpTc tR">BMW 320d / WBAZZ0000Z<span class="fCol1">Z000000</span></span></span>
+													</label></div>
+													<span class="dpTbl"><label for="vehicleNum2" class="dpTc tL">차량번호</label><span class="dpTc tR"><input type="text" id="vehicleNum2"></span></span>
+												</li>
+												<li>
+													<div class="rdChk"><input type="radio" name="vehicleSelect" id="vehicleSelect3"><label for="vehicleSelect3">
+														<span class="dpTbl"><em class="dpTc tL">차량정보 / 차대번호</em><span class="dpTc tR">BMW 320d / WBAZZ0000Z<span class="fCol1">Z000000</span></span></span>
+													</label></div>
+													<span class="dpTbl"><label for="vehicleNum3" class="dpTc tL">차량번호</label><span class="dpTc tR"><input type="text" id="vehicleNum3"></span></span>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div><!-- //leftCon -->
+								<div class="rightCon">
+									<h3 class="conTit2">서비스 센터 선택</h3>
+									<div class="tabType1 jsTab"><!-- //스크립트 탭 사용을 위한 클래스 jsTab -->
+										<ul class="col3">
+											<li><a href="#centerTab1">선호서비스센터</a></li><!-- //선택된 탭에 class="on" 추가 -->
+											<li class="on"><a href="#centerTab2">지역검색</a></li>
+											<li><a href="#centerTab3">최근이용센터</a></li>
+										</ul>
+									</div>
+									<!-- 선호서비스센터 -->
+									<div class="tabCont" id="centerTab1" style="display:none">
+										<h4 class="hidden">선호서비스센터</h4>
+										<!-- 차량정보 선택 전 -->
+										<div class="infoBox">
+											<em class="txt">차량정보를 선택해 주세요.</em>
+										</div>
+										<!-- //차량정보 선택 전 -->
+										<!-- 차량정보 선택 후 -->
+										<div class="svcList">
+											<ul>
+												<li><span class="rdChk"><input type="radio" name="svCenter1" id="svCenter11"><label for="svCenter11"><span>BMW 드라이빙 센터 패스트레인 서비스 센터 (바바리안 모터스)</span></label></span>
+													<a href="#" target="_blank" title="새창 열림" class="btnInfo">보기</a>
+												</li>
+												<li><span class="rdChk"><input type="radio" name="svCenter1" id="svCenter12"><label for="svCenter12"><span>BMW 드라이빙 센터 패스트레인 서비스 센터 (바바리안 모터스)</span></label></span>
+													<a href="#" target="_blank" title="새창 열림" class="btnInfo">보기</a>
+												</li>
+												<li><span class="rdChk"><input type="radio" name="svCenter1" id="svCenter13"><label for="svCenter13"><span>BMW 드라이빙 센터 패스트레인 서비스 센터 (바바리안 모터스)</span></label></span>
+													<a href="#" target="_blank" title="새창 열림" class="btnInfo">보기</a>
+												</li>
+												<li><span class="rdChk"><input type="radio" name="svCenter1" id="svCenter14"><label for="svCenter14"><span>BMW 드라이빙 센터 패스트레인 서비스 센터 (바바리안 모터스)</span></label></span>
+													<a href="#" target="_blank" title="새창 열림" class="btnInfo">보기</a>
+												</li>
+												<li><span class="rdChk"><input type="radio" name="svCenter1" id="svCenter15"><label for="svCenter15"><span>BMW 드라이빙 센터 패스트레인 서비스 센터 (바바리안 모터스)</span></label></span>
+													<a href="#" target="_blank" title="새창 열림" class="btnInfo">보기</a>
+												</li>
+												<li><span class="rdChk"><input type="radio" name="svCenter1" id="svCenter16"><label for="svCenter16"><span>BMW 드라이빙 센터 패스트레인 서비스 센터 (바바리안 모터스)</span></label></span>
+													<a href="#" target="_blank" title="새창 열림" class="btnInfo">보기</a>
+												</li>
+												<li><span class="rdChk"><input type="radio" name="svCenter1" id="svCenter17"><label for="svCenter17"><span>BMW 드라이빙 센터 패스트레인 서비스 센터 (바바리안 모터스)</span></label></span>
+													<a href="#" target="_blank" title="새창 열림" class="btnInfo">보기</a>
+												</li>
+											</ul>
+										</div>
+										<!-- //차량정보 선택 후 -->
+										<!-- 선호 서비스 센터가 없을 때 -->
+										<div class="infoBox before">
+											<em class="txt">My BMW에서 선호서비스센터를 등록해 주세요.</em>
+										</div>
+										<!-- //선호 서비스 센터가 없을 때 -->
+									</div>
+									<!-- //선호서비스센터 -->
+
+									<!-- 지역검색 -->
+									<div class="tabCont" id="centerTab2" style="display:non e">
+										<h4 class="hidden">지역검색</h4>
+										<div class="areaSelect">
+											<div class="selType2">
+												<select title="지역 선택">
+													<option value="">서울 강남</option>
+													<option value="">지역지역</option>
+												</select>
+											</div>
+											<button type="button" class="btnS">조회</button>
+										</div>
+										<!-- 지역 선택 전 -->
+										<div class="infoBox">
+											<em class="txt">지역 선택 후 조회하시면 상세 정보를 확인할 수 있습니다.</em>
+										</div>
+										<!-- //지역 선택 전 -->
+										<!-- 지역 선택 후 -->
+										<div class="resultArea">
+											<div class="resultTxt">총 00건</div>
+											<div class="svcList">
+												<ul>
+													<li><span class="rdChk"><input type="radio" name="svCenter2" id="svCenter21"><label for="svCenter21"><span>BMW 드라이빙 센터 패스트레인 서비스 센터 (바바리안 모터스)</span></label></span>
+														<a href="#" target="_blank" title="새창 열림" class="btnInfo">보기</a>
+													</li>
+													<li><span class="rdChk"><input type="radio" name="svCenter2" id="svCenter22"><label for="svCenter22"><span>BMW 드라이빙 센터 패스트레인 서비스 센터 (바바리안 모터스)</span></label></span>
+														<a href="#" target="_blank" title="새창 열림" class="btnInfo">보기</a>
+													</li>
+													<li><span class="rdChk"><input type="radio" name="svCenter2" id="svCenter23"><label for="svCenter23"><span>BMW 드라이빙 센터 패스트레인 서비스 센터 (바바리안 모터스)</span></label></span>
+														<a href="#" target="_blank" title="새창 열림" class="btnInfo">보기</a>
+													</li>
+													<li><span class="rdChk"><input type="radio" name="svCenter2" id="svCenter24"><label for="svCenter24"><span>BMW 드라이빙 센터 패스트레인 서비스 센터 (바바리안 모터스)</span></label></span>
+														<a href="#" target="_blank" title="새창 열림" class="btnInfo">보기</a>
+													</li>
+													<li><span class="rdChk"><input type="radio" name="svCenter2" id="svCenter25"><label for="svCenter25"><span>BMW 드라이빙 센터 패스트레인 서비스 센터 (바바리안 모터스)</span></label></span>
+														<a href="#" target="_blank" title="새창 열림" class="btnInfo">보기</a>
+													</li>
+													<li><span class="rdChk"><input type="radio" name="svCenter2" id="svCenter26"><label for="svCenter26"><span>BMW 드라이빙 센터 패스트레인 서비스 센터 (바바리안 모터스)</span></label></span>
+														<a href="#" target="_blank" title="새창 열림" class="btnInfo">보기</a>
+													</li>
+													<li><span class="rdChk"><input type="radio" name="svCenter2" id="svCenter27"><label for="svCenter27"><span>BMW 드라이빙 센터 패스트레인 서비스 센터 (바바리안 모터스)</span></label></span>
+														<a href="#" target="_blank" title="새창 열림" class="btnInfo">보기</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<!-- //지역 선택 후 -->
+									</div>
+									<!-- //지역검색 -->
+
+									<!-- 최근이용센터 -->
+									<div class="tabCont" id="centerTab3" style="display:none">
+										<h4 class="hidden">최근이용센터</h4>
+										<!-- 최근이용센터가 있을 때 -->
+										<div class="svcList">
+											<ul>
+												<li><span class="rdChk"><input type="radio" name="svCenter3" id="svCenter31"><label for="svCenter31"><span>BMW 드라이빙 센터 패스트레인 서비스 센터 (바바리안 모터스)</span></label></span>
+													<a href="#" target="_blank" title="새창 열림" class="btnInfo">보기</a>
+												</li>
+												<li><span class="rdChk"><input type="radio" name="svCenter3" id="svCenter32"><label for="svCenter32"><span>BMW 드라이빙 센터 패스트레인 서비스 센터 (바바리안 모터스)</span></label></span>
+													<a href="#" target="_blank" title="새창 열림" class="btnInfo">보기</a>
+												</li>
+												<li><span class="rdChk"><input type="radio" name="svCenter3" id="svCenter33"><label for="svCenter33"><span>BMW 드라이빙 센터 패스트레인 서비스 센터 (바바리안 모터스)</span></label></span>
+													<a href="#" target="_blank" title="새창 열림" class="btnInfo">보기</a>
+												</li>
+												<li><span class="rdChk"><input type="radio" name="svCenter3" id="svCenter34"><label for="svCenter34"><span>BMW 드라이빙 센터 패스트레인 서비스 센터 (바바리안 모터스)</span></label></span>
+													<a href="#" target="_blank" title="새창 열림" class="btnInfo">보기</a>
+												</li>
+												<li><span class="rdChk"><input type="radio" name="svCenter3" id="svCenter35"><label for="svCenter35"><span>BMW 드라이빙 센터 패스트레인 서비스 센터 (바바리안 모터스)</span></label></span>
+													<a href="#" target="_blank" title="새창 열림" class="btnInfo">보기</a>
+												</li>
+												<li><span class="rdChk"><input type="radio" name="svCenter3" id="svCenter36"><label for="svCenter36"><span>BMW 드라이빙 센터 패스트레인 서비스 센터 (바바리안 모터스)</span></label></span>
+													<a href="#" target="_blank" title="새창 열림" class="btnInfo">보기</a>
+												</li>
+												<li><span class="rdChk"><input type="radio" name="svCenter3" id="svCenter37"><label for="svCenter37"><span>BMW 드라이빙 센터 패스트레인 서비스 센터 (바바리안 모터스)</span></label></span>
+													<a href="#" target="_blank" title="새창 열림" class="btnInfo">보기</a>
+												</li>
+											</ul>
+										</div>
+										<!-- //최근이용센터가 있을 때 -->
+										<!-- 최근이용센터가 없을 때 -->
+										<div class="infoBox before">
+											<em class="txt">최근에 이용한 센터가 없습니다.</em>
+										</div>
+										<!-- //최근이용센터가 없을 때 -->
+									</div>
+									<!-- //최근이용센터 -->
+								</div><!-- //rightCon -->
+							</div>
+							<!-- 선택된 정보 출력 영역 -->
+							<div class="rsvInfo">
+								<div class="overArea"><span><em class="hidden">차량정보</em>BMW 320d</span><span><em class="hidden">서비스센터</em>BMW 드라이빙 센터 패스트레인 서비스 센터 (바바리안 모터스)</span></div>
+								<!-- <div class="overArea"><span>선택한 데이터가 없습니다.</span></div> //데이터 선택 전 -->
+							</div>
+							<!-- //선택된 정보 출력 영역 -->
+						</li>
+						<li><!-- //현재 스텝 class="ing" | 지나간 스텝 class="passed" -->
+							<a href="#" class="stepTit"><span>2<span class="hidden">단계</span></span><em>정비서비스 및 예약일</em></a>
+							<div class="stepCon step2">
+								<div class="leftCon">
+									<h3 class="conTit2">정비 서비스 선택</h3>
+									<div class="mSvList">
+										<ul>
+											<li><span class="rdChk"><input type="checkbox" id="mService1"><label for="mService1"><span>일반점검(BSI)</span></label></span></li>
+											<li><span class="rdChk"><input type="checkbox" id="mService2"><label for="mService2"><span>엔진오일</span></label></span></li>
+											<li><span class="rdChk"><input type="checkbox" id="mService3"><label for="mService3"><span>브레이크 오일</span></label></span></li>
+											<li><span class="rdChk"><input type="checkbox" id="mService4"><label for="mService4"><span>에어필터 / 마이크로 필터</span></label></span></li>
+											<li><span class="rdChk"><input type="checkbox" id="mService5"><label for="mService5"><span>브레이크 디스크 / 브레이크 패드</span></label></span></li>
+											<li><span class="rdChk"><input type="checkbox" id="mService6"><label for="mService6"><span>스파크 플러그 / 연료 필터</span></label></span></li>
+											<li><span class="rdChk"><input type="checkbox" id="mService7"><label for="mService7"><span>와이퍼 블레이드</span></label></span></li>
+										</ul>
+									</div>
+									<h4 class="conTit3">추가 요청 내용</h4>
+									<div class="taWrap">
+										<textarea title="textarea title" placeholder="BMW Plus를 통한 정비 예약은 간단한 정비서비스와 BSI(BMW Service Inclusive) 항목만 예약이 가능합니다. 그 외 정비는 정확한 진단과 판단을 위하여 서비스센터로 문의 부탁 드립니다."></textarea>
+										<p class="taT"><em class="fCol1">50</em> / 50</p>
+									</div>
+								</div>
+								<div class="rightCon">
+									<h3 class="conTit2">예약일</h3>
+									<div class="calendarWrap">
+										<input type="text" title="예약일" placeholder="예약일을 선택해 주세요." id="dateSelect" readonly>
+										<button type="button" class="btnCalendar">날짜 선택</button><!-- //예약일 선택 팝업 호출 -->
+									</div>
+									<p class="txtInfo">예약 취소는 전날 23:30 까지 가능 합니다.</p>
+									<h3 class="conTit2">모빌리티 서비스</h3>
+									<div class="lineWrap">
+										<span class="rdChk"><input type="checkbox" id="mobilityOption"><label for="mobilityOption"><span>픽업 &amp; 딜리버리</span></label></span>
+									</div>
+									<p class="txtInfo">픽업 &amp; 딜리버리 선택 시 서비스센터의 상황에 따라 예약 시간이 변경될 수 있습니다.</p>
+								</div>
+							</div>
+							<!-- 선택된 정보 출력 영역 -->
+							<div class="rsvInfo">
+								<div class="overArea"><span>선택한 데이터가 없습니다.</span></div>
+								<!-- <div class="overArea"><span><em class="hidden">정비서비스</em>정기점검 외</span><span><em class="hidden">예약일</em>2017-04-12 10:00</span></div> //데이터 선택 후 -->
+							</div>
+							<!-- //선택된 정보 출력 영역 -->
+						</li>
+						<li><!-- //현재 스텝 class="ing" | 지나간 스텝 class="passed" -->
+							<a href="#" class="stepTit"><span>3<span class="hidden">단계</span></span><em>예약 정보 확인</em></a>
+							<div class="stepCon step3">
+								<h3 class="conTit2">예약 정보</h3>
+								<div class="leftCon">
+									<div class="lineWrap">
+										<ul class="infoTable">
+											<li><em>예약자명</em><span>홍길동</span></li>
+											<li><em>예약차량</em><span>BMW 320d</span></li>
+											<li><em>차대번호</em><span>WBAZZ0000Z<span class="fCol1">Z000000</span></span></li>
+											<li><em>차량번호</em><span>77가1234</span></li>
+											<li><em>서비스 항목</em>
+												<div>
+													<ul class="txtList">
+														<li>일반점검(BSI)</li>
+														<li>엔진오일</li>
+														<li>브레이크 오일</li>
+														<li>에어필터 / 마이크로 필터</li>
+														<li>브레이크 디스크 / 브레이크 패드</li>
+														<li>스파크 플러그 / 연료 필터</li>
+														<li>와이퍼 블레이드</li>
+													</ul>
+												</div>
+											</li>
+											<li><em>추가요청내용</em><span>브레이크를 밟을 때 바로 제동이 안되고 밀리는 현상이 있습니다. 브레이크를 밟을 때 바로 제동이 안되고 밀리는 현상이 있습니다.</span></li>
+										</ul>
+									</div>
+								</div>
+								<div class="rightCon">
+									<div class="lineWrap noBor">
+										<ul class="infoTable">
+											<li><em>예약일시</em><span>2017-04-12 10:00</span></li>
+											<li><em>모빌리티 서비스</em><span>픽업 &amp; 딜리버리</span></li>
+											<li><em>서비스센터</em><span>도곡 패스트레인 서비스센터</span>
+												<div class="centerMap">
+													<div class="mapArea">
+														<!-- 지도 출력 영역 -->
+														<img src="../images/temp/dummy_map.gif" alt="" style="width:100%"><!-- 더미이미지 -->
+													</div>
+													<ul class="ctInfo">
+														<li class="addr"><em class="hidden">주소</em>서울특별시 서초구 양재대로11길 36 서울 오토갤러리 금관 1층</li>
+														<li class="tel"><em class="hidden">전화번호</em>02-586-3331</li>
+													</ul>
+												</div>
+											</li>
+										</ul>
+									</div>
+									<div class="btnBox tR">
+										<a href="#" class="btnL bGray">취소</a>
+										<a href="#" class="btnL">예약신청</a>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ol>
+				</div>
+				<!-- //step -->
+			</div>
+		</div>
+		<!-- //contents -->
+	</section>
+	<!-- //container -->
+
+	<footer>
+		<div class="ftWrap">
+			<img src="../images/temp/dummy_footer.gif" alt=""><!-- //임시이미지 -->
+		</div>
+	</footer>
+</div><!-- //wrap -->
+
+<!-- script include -->
+<script src="../js/jquery-3.1.0.min.js"></script>
+<script src="../js/jquery-ui.min.js"></script>
+<script src="../js/common.js"></script>
+
+</body>
+</html>

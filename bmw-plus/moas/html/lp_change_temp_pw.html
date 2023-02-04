@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="shortcut icon" href="../images/favicon.ico">
+<title>로그인 | BMW Plus</title>
+<link href="../css/common.css" rel="stylesheet" type="text/css">
+<style>
+body>a{color:#fff;}
+</style>
+</head>
+
+<body>
+<a href="#lyTempPwLogin" onclick="commonJs.popShow($('#lyTempPwLogin'))">임시비밀번호로 로그인 레이어팝업 호출</a>
+
+<div class="lyDim"><!-- back 영역 --></div><!-- layer Dim 영역 -->
+<!-- layer Popup : 임시비밀번호로 로그인 -->
+<section id="lyTempPwLogin" class="layerPop">
+	<div class="lyWrap">
+		<h1 class="lyTit">확인</h1>
+		<div class="lyCon">
+			<p>입력하신 비밀번호는 임시 비밀번호입니다.</p>
+			<p>임시 비밀번호는 변경 후 사용하시기 바랍니다.</p>
+		</div>
+		<div class="btnBox">
+			<span><a href="#" onclick="commonJs.popClose($('#lyTempPwLogin'))">닫기</a></span>
+			<span><a href="#" class="fCol1">비밀번호 변경</a></span>
+		</div>
+	</div>
+</section>
+<!-- //layer Popup : 임시비밀번호로 로그인 -->
+
+<!-- script include -->
+<script src="../js/jquery-3.1.0.min.js"></script>
+<script src="../js/jquery-ui.min.js"></script>
+<script src="../js/common.js"></script>
+
+
+</body>
+</html>

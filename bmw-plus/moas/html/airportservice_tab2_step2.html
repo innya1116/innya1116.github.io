@@ -1,0 +1,212 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="shortcut icon" href="../images/favicon.ico">
+<title>에어포트 서비스 | BMW Plus</title>
+<link href="../css/common.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div class="skipNav"><a href="#contents">본문으로 바로가기</a></div>
+
+<div class="wrap">
+	<header>
+		<img src="../images/temp/dummy_header.gif" alt=""><!-- 임시이미지 -->
+	</header>
+
+	<section class="container">
+		<div id="contents" class="contents">
+			<div class="titArea"><h1>에어포트 서비스 예약</h1></div>
+			<!-- step -->
+			<div class="step">
+				<ol class="status">
+					<li class="passed">1<span class="hidden">단계 - 현재 단계</span></li><!-- 현재 스텝 class="ing" | 지나간 스텝 class="passed" -->
+					<li class="ing">2<span class="hidden">단계</span></li>
+					<li>3<span class="hidden">단계</span></li>
+				</ol>
+				<h2 class="stepTit">예약 일정</h2>
+			</div>
+			<!-- //step -->
+			<div class="contArea">
+				<h3 class="conTit1">예약 인원</h3>
+				<div class="selectBox">
+					<select title="예약 인원 선택">
+						<option value="" selected>1명</option>
+						<option value="">2명</option>
+						<option value="">3명</option>
+						<option value="">4명</option>
+					</select>
+				</div>
+				<p class="txtInfo">예약가능 최대 인원은 4명입니다.(어린이 포함)<br>4인 이상 예약 시, 해당 서비스 센터로 문의 바랍니다.</p>
+
+				<h3 class="conTit1">센터 방문 일정</h3>
+				<label for="dateSelect1" class="selectLabel">예약 일시</label>
+				<div class="airSelect calendarCol2">
+					<div class="calendarWrap"><!-- 인풋에 포커스가 가거나 버튼을 클릭하면 예약일 선택 팝업 호출 -->
+						<input id="dateSelect1" type="text" placeholder="예약일을 선택해 주세요." title="예약일 선택" readonly="">
+						<button type="button" class="btnCalendar">예약일시 선택</button>
+					</div>
+				</div>
+				<div class="formWrap rdChoice">
+					<span class="rdChk"><input type="radio" name="terminal1" id="terminal1_1" checked><label for="terminal1_1"><span>제 1터미널</span></label></span>
+					<span class="rdChk"><input type="radio" name="terminal1" id="terminal1_2"><label for="terminal1_2"><span>제 2터미널</span></label></span>
+				</div>
+				<div class="wrapInp">
+					<input type="text" id="flight1">
+					<label for="flight1">편명</label>
+				</div>
+				<ul class="txtInfo">
+					<li>출국일시 최소 2시간 전에 서비스센터로 방문하시기 바랍니다. (센터 도착 후 공항 도착까지 약 20분 소요)</li><!-- 수정 2018-06-21 제 1터미널 선택 시 -->
+					<li>출국일시 최소 2시간 전에 서비스센터로 방문하시기 바랍니다. (센터 도착 후 공항 도착까지 약 30분 소요)</li><!-- 수정 2018-06-21 제 2 터미널 선택 시-->
+				</ul>
+
+				<h3 class="conTit1">귀국 일정</h3>
+				<label for="dateSelect2" class="selectLabel">예약 일시</label>
+				<div class="airSelect calendarCol2">
+					<div class="calendarWrap"><!-- 인풋에 포커스가 가거나 버튼을 클릭하면 예약일 선택 팝업 호출 -->
+						<input id="dateSelect2" type="text" placeholder="예약일을 선택해 주세요." title="예약일 선택" readonly="">
+						<button type="button" class="btnCalendar">예약일시 선택</button>
+					</div>
+				</div>
+				<div class="formWrap rdChoice">
+					<span class="rdChk"><input type="radio" name="terminal2" id="terminal2_1" checked><label for="terminal2_1"><span>제 1터미널</span></label></span>
+					<span class="rdChk"><input type="radio" name="terminal2" id="terminal2_2"><label for="terminal2_2"><span>제 2터미널</span></label></span>
+				</div>
+				<div class="wrapInp">
+					<input type="text" id="flight1">
+					<label for="flight1">편명</label>
+				</div>
+				<!-- 수정 2018-06-21 -->
+				<ul class="txtInfo">
+					<li>귀국 일시는 공항에 도착하시는 일정입니다.</li>
+					<li>귀국 일정이 다른 예약 일정과 겹치게 될 시 대기시간이 발생할 수 있습니다.</li>
+				</ul>
+				<!-- //수정 2018-06-21 -->
+
+				<h3 class="conTit1">추가 요청 사항</h3>
+				<ul class="formList type2">
+					<li><span class="rdChk"><input type="checkbox" id="svItem1"><label for="svItem1"><span>일반점검(BSI/MSI)</span></label></span></li><!-- Modify 18.03.12 -->
+					<li><span class="rdChk"><input type="checkbox" id="svItem2"><label for="svItem2"><span>엔진오일</span></label></span></li>
+					<li><span class="rdChk"><input type="checkbox" id="svItem3"><label for="svItem3"><span>브레이크 오일</span></label></span></li>
+					<li><span class="rdChk"><input type="checkbox" id="svItem4"><label for="svItem4"><span>에어필터 / 마이크로 필터</span></label></span></li>
+					<li><span class="rdChk"><input type="checkbox" id="svItem5"><label for="svItem5"><span>브레이크 디스크 / 브레이크 패드</span></label></span></li>
+					<li><span class="rdChk"><input type="checkbox" id="svItem6"><label for="svItem6"><span>스파크 플러그 / 연료 필터</span></label></span></li>
+					<li><span class="rdChk"><input type="checkbox" id="svItem7"><label for="svItem7"><span>와이퍼 블레이드</span></label></span></li>
+				</ul>
+			</div>
+
+			<!-- 하단 고정 버튼 -->
+			<div class="fixedBtn stepType">
+				<span><a href="#">이전</a></span>
+				<span><a href="#" class="layerOpen">예약정보 확인</a></span>
+			</div>
+			<!-- //하단 고정 버튼 -->
+		</div>
+		<!-- //contents -->
+	</section>
+	<!-- //container -->
+
+	<footer>
+		<img src="../images/temp/dummy_footer.gif" alt=""><!-- 임시이미지 -->
+	</footer>
+</div><!-- //wrap -->
+
+<div class="lyDim" style="display:bl ock"><!-- back 영역 --></div><!-- layer Dim 영역 -->
+<!-- 레이어팝업 : 출발일 -->
+<section id="lyStartDay" class="layerPop fullType dateSelect">
+	<div class="popWrap">
+		<h1 class="popTit">출국 일정</h1>
+		<div class="popCon">
+			<div class="contArea">
+				<div class="calendarWrap inPage">
+					<!-- 캘린더 출력 영역 -->
+				</div>
+				<div class="selectBox reverse mgt2">
+					<select title="시간 선택">
+						<option value="">09:00</option>
+						<option value="">09:20</option>
+						<option value="">09:40</option>
+						<option value="" disabled>10:00</option>
+						<option value="">10:20</option>
+						<option value="">10:40</option>
+						<option value="">13:00</option>
+						<option value="">13:20</option>
+						<option value="">13:40</option>
+						<option value="">14:00</option>
+						<option value="">14:20</option>
+						<option value="">14:40</option>
+						<option value="">15:00</option>
+						<option value="">15:20</option>
+						<option value="">15:40</option>
+						<option value="">16:00</option>
+						<option value="">16:20</option>
+						<option value="">16:40</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		<button type="button" class="btnClose">닫기</button>
+	</div>
+</section>
+<!-- //레이어팝업 : 출발일 -->
+
+<!-- 레이어팝업 : 귀국일 -->
+<section id="lyEndDay" class="layerPop fullType dateSelect">
+	<div class="popWrap">
+		<h1 class="popTit">귀국 일정</h1>
+		<div class="popCon">
+			<div class="contArea">
+				<div class="calendarWrap inPage">
+					<!-- 캘린더 출력 영역 -->
+				</div>
+				<div class="selectBox reverse mgt2">
+					<select title="시간 선택">
+						<option value="">09:00</option>
+						<option value="">09:20</option>
+						<option value="">09:40</option>
+						<option value="" disabled>10:00</option>
+						<option value="">10:20</option>
+						<option value="">10:40</option>
+						<option value="">13:00</option>
+						<option value="">13:20</option>
+						<option value="">13:40</option>
+						<option value="">14:00</option>
+						<option value="">14:20</option>
+						<option value="">14:40</option>
+						<option value="">15:00</option>
+						<option value="">15:20</option>
+						<option value="">15:40</option>
+						<option value="">16:00</option>
+						<option value="">16:20</option>
+						<option value="">16:40</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		<button type="button" class="btnClose">닫기</button>
+	</div>
+</section>
+<!-- //레이어팝업 : 귀국일 -->
+
+<!-- script include -->
+<script src="../js/jquery-3.1.0.min.js"></script>
+<script src="../js/jquery-ui.min.js"></script>
+<script src="../js/common.js"></script>
+<script>
+	// disabled 시킬 날짜 배열
+	var disableDay = [
+		'2017.06.26',
+		'2017.06.28'
+	];
+	
+	// 날짜 input에 날짜 배열 저장
+	//datepicker안 beforeShowDay속성에서 disableDay배열을 날짜들과 비교하여 존재하면 disabled
+	$('.calendarCol2').find('.calendarWrap>input').data('disableDay', disableDay);
+	
+</script>
+</body>
+</html>

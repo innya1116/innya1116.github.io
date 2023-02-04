@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="shortcut icon" href="../images/favicon.ico">
+<title>My BMW | BMW Plus</title>
+<link href="../css/common.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div class="skipNav"><a href="#contents">본문으로 바로가기</a></div>
+
+<div class="wrap">
+	<header>
+		<div class="hdWrap">
+			<img src="../images/temp/dummy_header.gif" alt=""><!-- //임시이미지 -->
+		</div>
+	</header>
+
+	<section class="container">
+		<div id="contents" class="contents utilP"><!-- //공통&기타 페이지 : utilP 클래스 추가 -->
+			<div class="visualArea">
+				<div class="conVisual">
+					<div class="txtWrap">
+						<h1 class="conTit1">My BMW.</h1>
+						<p class="titCopy">회원님의 정보를 한눈에 볼 수 있습니다.</p>
+					</div>
+				</div>
+			</div>
+			<div class="contArea">
+				<div class="calendarWrap col2">
+					<div class="date">
+						<input type="text" title="조회 시작일" placeholder="조회 시작일" readonly>
+						<button type="button" class="btnCalendar">날짜 선택</button><!-- //조회 시작일 선택 팝업 호출 -->
+					</div>
+					<span>~</span>
+					<div class="date">
+						<input type="text" title="조회 종료일" placeholder="조회 종료일" readonly>
+						<button type="button" class="btnCalendar">날짜 선택</button><!-- //조회 종료일 선택 팝업 호출 -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- //contents -->
+	</section>
+	<!-- //container -->
+
+	<footer>
+		<div class="ftWrap">
+			<img src="../images/temp/dummy_footer.gif" alt=""><!-- //임시이미지 -->
+		</div>
+	</footer>
+</div><!-- //wrap -->
+
+<div class="lyDim"><!-- back 영역 --></div><!-- layer Dim 영역 -->
+<!-- layer Popup : 조회 시작일 -->
+<div id="lyStartDateSelect" class="layerPop">
+	<section class="popWrap">
+		<h1 class="popTit">조회 시작일</h1>
+		<div class="popCont">
+			<div class="calendar">
+				<!-- //캘린더 출력 영역 -->
+			</div>
+		</div>
+		<button type="button" class="popClose">닫기</button>
+	</section><!-- //popWrap -->
+</div>
+<!-- //layer Popup : 조회 시작일 -->
+
+<!-- layer Popup : 조회 종료일 -->
+<div id="lyEndDateSelect" class="layerPop">
+	<section class="popWrap">
+		<h1 class="popTit">조회 종료일</h1>
+		<div class="popCont">
+			<div class="calendar">
+				<!-- //캘린더 출력 영역 -->
+			</div>
+		</div>
+		<button type="button" class="popClose">닫기</button>
+	</section><!-- //popWrap -->
+</div>
+<!-- //layer Popup : 조회 종료일 -->
+
+<!-- script include -->
+<script src="../js/jquery-3.1.0.min.js"></script>
+<script src="../js/jquery-ui.min.js"></script>
+<script src="../js/common.js"></script>
+
+<script>
+	// disabled 시킬 날짜 배열
+	var disableDay = [
+		'2017.06.26',
+		'2017.06.28'
+	];
+	
+	// 날짜 input에 날짜 배열 저장
+	//datepicker안 beforeShowDay속성에서 disableDay배열을 날짜들과 비교하여 존재하면 disabled
+	$('.calendarWrap').find('input').data('disableDay', disableDay);
+	$('.calendarWrap.col2').find('.date input').data('disableDay', disableDay);
+
+</script>
+
+</body>
+</html>

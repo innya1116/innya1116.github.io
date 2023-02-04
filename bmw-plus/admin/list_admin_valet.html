@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>ADMIN LIST | BMW Plus</title>
+<style type="text/css">
+	body {padding:20px;margin:0px;font-size:0.75em;}
+	h1 {background-color:#484848;color:#fff;text-align:center;padding:0px;margin:0px;font-family:Verdana;}
+	h2 {padding:0;margin:0;}
+	h3 {text-decoration:underline;background-color:yellow;}
+	a {color:#f68e56;text-decoration:none;}
+	a:hover {color:#f55e21}
+	strong.red {font-weight:normal;color:red;font-size:11px;}
+	strong.green {font-weight:normal;color:green;font-size:11px;}
+	strong.modify {font-weight:normal;color:skyblue;font-size:11px;}
+	strong.script {font-weight:normal;color:brown;font-size:11px;}
+	sup {color:violet;}
+	.num {position:fixed;left:0;top:0;color:red;font-weight:16px;}
+	
+	.tabMenu {list-style:none;padding:0;margin:0;width:100%;overflow:hidden;background:#CCC;}
+	.tabMenu li {float:left;width:25%;height:40px;line-height:40px;text-align:center;font-weight:bold;font-size:16px;}
+	.tabMenu li.sel {background:orange;}
+	.tabMenu li a {display:block;color:#000;}
+	
+	table {width:100%;padding:0;margin:0;border-collapse:collapse;margin-top:20px;}
+	table th, td {border:1px solid #dedede;line-height:22px;padding:0 10px;}
+	table th {background:#eee;}
+	table td+td+td+td+td {font-size:11px;text-align:center;font-family:Verdana;color:#666;width:100px;}
+	table td+td+td+td+td+td+td {text-align:left;width:40%}
+	table tr:hover {background:#EEE;}
+	table tr.ing {background:pink}
+	table tr.delete, table td.delete {background:lightgray;text-decoration:line-through}
+</style>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+</head>
+
+<body>
+
+<ul class="tabMenu">
+	<li><a href="../moas/list_mb.html">BMW Plus 파일리스트[2017.10.18 open]</a></li>
+	<li><a href="../index.html">MINI Plus 파일리스트</a></li>
+	<li><a href="list_admin.html">통합관리자</a></li>
+	<li class="sel"><a href="list_admin02.html">발렛파킹 관리자</a></li>
+</ul>
+
+<table class="sorttable">
+	<thead>
+		<tr>
+			<th scope="col">1depth</th>
+			<th scope="col">2depth</th>
+			<th scope="col">3depth</th>
+			<th scope="col">4depth</th>
+			<th scope="col">작업일</th>
+			<th scope="col">검수</th>
+			<th scope="col">최종수정일</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><a href="./html/sample.html">GUIDE</a></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td><a href="./html/layout_valet.html">레이아웃</a></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>19.03.21</td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td><a href="./html/login_valet.html">로그인</a></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>19.03.21</td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr class="upgrade">
+			<td>발렛파킹 관리</td>
+			<td><a href="html/발렛파킹 관리 쿠폰관리.html">쿠폰관리</a></td>
+			<td></td>
+			<td></td>
+			<td>19.03.21</td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr class="upgrade">
+			<td></td>
+			<td></td>
+			<td><a href="html/layer_valet_coupon_info.html">[L]바코드 스캔</a></td>
+			<td></td>
+			<td>19.03.21</td>
+			<td></td>
+			<td></td>
+		</tr>
+	</tbody>
+</table>
+	
+<script type="text/javascript">
+	document.write("<div class=num>total : " + $('tbody > tr').size() + " page</div>");
+</script>
+
+</body>
+</html>

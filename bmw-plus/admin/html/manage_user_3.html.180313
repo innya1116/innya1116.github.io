@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>관리자 | BMW Plus</title>
+<link href="../css/admin.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<p id="gotoContents"><a href="#container">본문으로 바로가기</a></p>
+
+<div id="wrapper" class="wrapper">
+	<div id="header" class="header">
+		<div class="headWrap">
+			<img src="../img/@dummy_header.gif" alt="">
+		</div>		
+	</div><!-- // end header -->
+	<hr>
+	
+	<div id="container" class="container">
+		<div id="snb" class="snb">
+			<img src="../img/@dummy_snb.gif" alt="">
+		</div><!-- // end snb -->
+		
+		<div id="contents" class="contents">
+			<div class="location">
+				<a href="#" class="home">HOME</a> > 
+				<a href="#">회원관리</a> >
+				<strong>회원관리</strong>
+			</div>
+			
+			<h1>회원관리</h1>
+			<h2>회원 상세정보</h2>
+			<div class="tableType2">
+				<table>
+					<caption>회원 상세정보</caption>
+					<colgroup><col style="width:200px"><col style="width:20%" span="3"><col></colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">최근접속IP</th>
+							<td colspan="5">123.123.***.123</td>
+						</tr>
+						<tr>
+							<th scope="row">가입일</th>
+							<td colspan="5">2017-04-04</td>
+						</tr>
+						<tr>
+							<th scope="row">이메일</th>
+							<td colspan="5">ab*********@bmw.com
+								<span class="ml20">
+									<input type="radio" name="rd1" id="rd11"><label for="rd11">사용</label>
+									<input type="radio" name="rd1" id="rd12"><label for="rd12">정지</label>
+								</span>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">휴면여부</th>
+							<td colspan="5">
+								<input type="radio" name="rd2" id="rd21"><label for="rd21">아니오</label>
+								<input type="radio" name="rd2" id="rd22"><label for="rd22">예</label>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">이름</th>
+							<td colspan="5">홍*동</td>
+						</tr>
+						<tr>
+							<th scope="row">비밀번호</th>
+							<td colspan="5"><a href="#" class="btnS cGray">임시비밀번호발송</a></td>
+						</tr>
+						<tr>
+							<th scope="row">휴대전화</th>
+							<td colspan="5">010-****-1234</td>
+						</tr>
+						<tr>
+							<th scope="row">주소</th>
+							<td colspan="5">(우편번호 : 12345) 서울 종로구 ***동 12-3</td>
+						</tr>
+						<tr>
+							<th scope="rowgroup">추가정보</th>
+							<th scope="row">성별</th>
+							<td>남</td>
+							<th scope="row">생년월일</th>
+							<td>****년 **월 **일</td>
+						</tr>
+						<tr>
+							<th scope="row">예약이용건수</th>
+							<td colspan="5">1</td>
+						</tr>
+						<tr>
+							<th scope="row">최근 예약 내역</th>
+							<td colspan="5">강남역 서비스센터 | 2017-06-01 10:00</td>
+						</tr>
+						<tr>
+							<th scope="rowgroup" rowspan="3">약관동의</th>
+							<th scope="row">서비스이용약관</th>
+							<td>동의</td>
+							<th scope="row">개인정보 수집 및 활용 동의</th>
+							<td>동의</td>
+						</tr>
+						<tr>
+							<th scope="row">개인정보 국외 이전 동의</th>
+							<td>동의</td>
+							<th scope="row">개인정보 제공 제3자 동의</th>
+							<td>동의</td>
+						</tr>
+						<tr>
+							<th scope="row">개인정보 마케팅 활용 동의</th>
+							<td>동의</td>
+							<th scope="row">위치정보 활용 동의</th>
+							<td>동의</td>
+						</tr>
+						<tr>
+							<th scope="row">예약정보 수신 채널 선택</th>
+							<td colspan="5">
+								<div class="reCh">
+									<span>SMS : O</span>
+									<span>이메일 : X</span>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">마케팅 / 캠페인 수신 채널 선택</th>
+							<td colspan="5">
+								<div class="reCh">
+									<span>SMS : O</span>
+									<span>이메일 : X</span>
+									<span>APP Push : O</span>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th scope="rowgroup">관심차량</th>
+							<th scope="row">브랜드</th>
+							<td>BMW</td>
+							<th scope="row">시리즈</th>
+							<td>3시리즈</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<h2 class="mt30">차량정보</h2>
+			<div class="tableType2">
+				<table>
+					<caption>차량정보</caption>
+					<colgroup><col><col style="width:14.5%" span="6"></colgroup>
+					<tbody>
+						<tr>
+							<th scope="rowgroup" rowspan="3">
+								<strong>차량정보1</strong>
+								<div class="mt10"><a href="#" class="btnS cGray">삭제</a></div>
+							</th>
+							<th scope="row">모델</th>
+							<td>BMW 320d</td>
+							<th scope="row">구매딜러</th>
+							<td>코오롱모터스</td>
+							<th scope="row">보증정보</th>
+							<td>WARRANTY PLUS</td>
+						</tr>
+						<tr>
+							<th scope="row">만료일</th>
+							<td>2020-03-11</td>
+							<th scope="row">잔여일</th>
+							<td>2년 10개월</td>
+							<th scope="row">잔여 마일리지</th>
+							<td>13만km</td>
+						</tr>
+						<tr>
+							<th scope="row">차대번호</th>
+							<td colspan="2">BMAWAZ34Z000001</td>
+							<th scope="row">차량번호</th>
+							<td colspan="2">77구 1234</td>
+						</tr>
+					</tbody>
+					<tbody>
+						<tr>
+							<th scope="rowgroup" rowspan="3">
+								<strong>차량정보2</strong>
+								<div class="mt10"><a href="#" class="btnS cGray">삭제</a></div>
+							</th>
+							<th scope="row">모델</th>
+							<td>BMW 320d</td>
+							<th scope="row">구매딜러</th>
+							<td>코오롱모터스</td>
+							<th scope="row">보증정보</th>
+							<td>WARRANTY PLUS</td>
+						</tr>
+						<tr>
+							<th scope="row">만료일</th>
+							<td>2020-03-11</td>
+							<th scope="row">잔여일</th>
+							<td>2년 10개월</td>
+							<th scope="row">잔여 마일리지</th>
+							<td>13만km</td>
+						</tr>
+						<tr>
+							<th scope="row">차대번호</th>
+							<td colspan="2">BMAWAZ34Z000001</td>
+							<th scope="row">차량번호</th>
+							<td colspan="2">77구 1234</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="btnBox tR">
+				<div class="lBtn">
+					<a href="#" class="btnM cGray">목록</a>
+					<a href="#" class="btnM cWhite">탈퇴</a>
+				</div>
+				<a href="#" class="btnM cWhite">취소</a>
+				<a href="#" class="btnM">저장</a>
+			</div>
+
+		</div><!-- // end contents -->
+	</div>
+
+	<div id="footer" class="footer">
+		<div class="footArea">
+			<p class="copyright">© <strong>BMW Group Korea</strong> All rights reserved.</p>
+		</div>
+	</div><!-- // end footer -->
+	
+</div><!-- // end wrapper -->
+
+<!-- script include -->
+<script src="../js/jquery-3.1.0.min.js"></script>
+<script src="../js/common.js"></script>
+
+</body>
+</html>
+

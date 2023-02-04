@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="shortcut icon" href="../images/favicon.ico">
+<title>실시간 예약 | BMW Plus</title>
+<link href="../css/common.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div class="skipNav"><a href="#contents">본문으로 바로가기</a></div>
+
+<div class="wrap bpd"><!-- 실시간 예약의 스텝이 진행될때 wrap Div에 bpd 클래스 추가 -->
+	<header>
+		<img src="../images/temp/dummy_header.gif" alt=""><!-- 임시이미지 -->
+	</header>
+
+	<section class="container">
+		<div id="contents" class="contents">
+			<div class="titArea"><h1>실시간 예약</h1></div>
+			<!-- step -->
+			<div class="step">
+				<ol class="status">
+					<li class="ing">1<span class="hidden">단계 - 현재 단계</span></li><!-- 현재 스텝 class="ing" | 지나간 스텝 class="passed" -->
+					<li>2<span class="hidden">단계</span></li>
+					<li>3<span class="hidden">단계</span></li>
+					<li>4<span class="hidden">단계</span></li>
+					<li>5<span class="hidden">단계</span></li>
+				</ol>
+				<h2 class="stepTit">고객 및 차량정보 선택</h2>
+			</div>
+			<!-- //step -->
+			<div class="contArea tpd">
+				<h3 class="conTit1">고객정보</h3>
+				<!-- 2017-09-01 수정 -->
+				<ul class="formList">
+					<li><div class="wrapInp disabled">
+						<input type="text" id="inpUserName" value="홍길동" disabled>
+						<label for="inpUserName">고객명</label>
+					</div></li>
+					<li><div class="wrapInp disabled">
+						<input type="text" id="inpUserNum" value="010-1234-5678" disabled>
+						<label for="inpUserNum">휴대전화</label>
+					</div></li>
+					<li><div class="wrapInp disabled">
+						<input type="text" id="inpUserEmail" value="abc123@bmw.com" disabled>
+						<label for="inpUserEmail">이메일</label>
+					</div></li>
+				</ul>
+				<!-- //2017-09-01 수정 -->
+				
+				<h3 class="conTit1">차량정보</h3>
+				<ul class="vehicleInfo">
+					<li><span class="rdChk"><input type="radio" name="infoVehicle1" id="infoVehicle1_1" checked><label for="infoVehicle1_1"><span class="hidden">차대번호 : WBAZZ0000ZZ000000</span></label></span><!-- 히든영역에 차대번호 필요 -->
+						<dl>
+							<dt class="hidden">차량정보</dt>
+							<dd><em>차량정보</em><span>BMW 320d</span></dd>
+							<dd><em>차대번호</em><span>WBAZZ0000Z<span class="fCol1">Z000000</span></span></dd>
+							<dd class="incInp"><em><label for="vehicleNum1">차량번호</label></em><span><input type="text" id="vehicleNum1"></span></dd>
+						</dl>
+					</li>
+					<li><span class="rdChk"><input type="radio" name="infoVehicle1" id="infoVehicle1_2"><label for="infoVehicle1_2"><span class="hidden">차대번호 : WBAZZ0000ZZ000000</span></label></span><!-- 히든영역에 차대번호 필요 -->
+						<dl>
+							<dt class="hidden">차량정보</dt>
+							<dd><em>차량정보</em><span>BMW MINI</span></dd>
+							<dd><em>차대번호</em><span>WBAZZ0000Z<span class="fCol1">Z000001</span></span></dd>
+							<dd class="incInp"><em><label for="vehicleNum2">차량번호</label></em><span><input type="text" id="vehicleNum2"></span></dd>
+						</dl>
+					</li>
+				</ul>
+			</div>
+			
+			<!-- 하단 고정 버튼 -->
+			<div class="fixedBtn stepType">
+				<span class="noArr"><a href="#">취소</a></span>
+				<span><a href="#" class="layerOpen">서비스센터 선택</a></span>
+			</div>
+			<!-- //하단 고정 버튼 -->
+		</div>
+		<!-- //contents -->
+	</section>
+	<!-- //container -->
+
+	<footer>
+		<img src="../images/temp/dummy_footer.gif" alt=""><!-- 임시이미지 -->
+	</footer>
+</div><!-- //wrap -->
+
+<div class="lyDim" style="display:bl ock"><!-- back 영역 --></div><!-- layer Dim 영역 -->
+<!-- layer Popup : 완료되지 않은 예약건이 있을 경우 -->
+<section id="lyUnfinishedReser" class="layerPop" style="display:bl ock">
+	<div class="lyWrap">
+		<h1 class="lyTit">알림</h1>
+		<div class="lyCon">
+			<p>등록차량당 1건의 예약만 가능합니다.</p>
+		</div>
+		<div class="btnBox">
+			<span><a href="#">닫기</a></span>
+			<span><a href="#" class="fCol1">예약관리</a></span>
+		</div>
+	</div>
+</section>
+<!-- //layer Popup : 완료되지 않은 예약건이 있을 경우 -->
+
+<!-- script include -->
+<script src="../js/jquery-3.1.0.min.js"></script>
+<script src="../js/jquery-ui.min.js"></script>
+<script src="../js/common.js"></script>
+
+</body>
+</html>

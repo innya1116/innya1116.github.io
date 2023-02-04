@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>관리자 | BMW Plus</title>
+<link href="../css/admin.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<p id="gotoContents"><a href="#container">본문으로 바로가기</a></p>
+
+<div id="wrapper" class="wrapper">
+	<div id="header" class="header">
+		<div class="headWrap">
+			<img src="../img/@dummy_header.gif" alt="">
+		</div>		
+	</div><!-- // end header -->
+	<hr>
+	
+	<div id="container" class="container">
+		<div id="snb" class="snb">
+			<img src="../img/@dummy_snb.gif" alt="">
+		</div><!-- // end snb -->
+		
+		<div id="contents" class="contents">
+			<div class="location">
+				<a href="#" class="home">HOME</a> > 
+				<a href="#">컨텐츠 관리</a> > 
+				<strong>FAQ 게시물 관리</strong>
+			</div>
+			
+			<h1>FAQ 게시물 관리</h1>
+			<h2>FAQ 게시물 상세보기</h2>
+
+			<div class="tableType2">
+				<table>
+					<caption>FAQ 게시물 상세보기</caption>
+					<colgroup><col style="width:15%"><col></colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">작성일</th>
+							<td>2017-05-05</td>
+						</tr>
+						<tr>
+							<th scope="row">작성자</th>
+							<td>홍길동</td>
+						</tr>
+						<tr>
+							<th scope="row">카테고리</th>
+							<td>
+								<select style="width:250px" title="카테고리">
+									<option value="">차량등록 관련</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">제목</th>
+							<td>
+								<input type="text" title="검색어" class="fullInp">
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">답변내용</th>
+							<td>
+								<div class="editorArea">
+									에디터 영역
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			
+			<div class="btnBox tR">
+				<div class="lBtn">
+					<a href="#" class="btnM cGray">목록으로</a>
+				</div>
+				<a href="#" class="btnM cWhite">삭제</a>
+				<a href="#" class="btnM">저장</a>
+			</div>
+
+		</div><!-- // end contents -->
+	</div>
+
+	<div id="footer" class="footer">
+		<div class="footArea">
+			<p class="copyright">© <strong>BMW Group Korea</strong> All rights reserved.</p>
+		</div>
+	</div><!-- // end footer -->
+	
+</div><!-- // end wrapper -->
+
+<!-- script include -->
+<script src="../js/jquery-3.1.0.min.js"></script>
+<script src="../js/common.js"></script>
+
+</body>
+</html>
+

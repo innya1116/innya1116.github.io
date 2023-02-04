@@ -1,0 +1,330 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="shortcut icon" href="../images/favicon.ico">
+<title>에어포트 서비스 | BMW Plus</title>
+<link href="../css/common.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div class="skipNav"><a href="#contents">본문으로 바로가기</a></div>
+
+<div class="wrap">
+	<header>
+		<div class="hdWrap">
+			<img src="../images/temp/dummy_header.gif" alt=""><!-- //임시이미지 -->
+		</div>
+	</header>
+
+	<section class="container">
+		<div id="contents" class="contents airportS"><!-- //에어포트 서비스 : airportS 클래스 추가 -->
+			<div class="visualArea">
+				<div class="conVisual">
+					<div class="txtWrap">
+						<h1 class="conTit1">에어포트 서비스.</h1>
+						<p class="titCopy">프리미엄 서비스, 여행 중에도 부담 없이 만나세요.</p>
+					</div>
+				</div>
+			</div>
+			<div class="contArea">
+				<div class="tabType1 lg">
+					<ul class="col2">
+						<li><a href="#"><span>에어포트 서비스 안내</span></a></li>
+						<li class="on"><a href="#"><span>에어포트 서비스 예약</span></a></li>
+					</ul>
+				</div>
+				<div class="tabCon">
+					<p class="txt">에어포트 서비스를 차량 및 일정 선택으로 간편하게 예약하실 수 있습니다.</p>	
+					<div class="airportR">
+						<div class="fLeft">
+							<strong class="conTit2">고객 정보</strong>
+							<ul class="infoT">
+								<li>
+									<em><label for="name">고객명</label></em>
+									<div><input type="text" id="name" disabled="disabled"></div>
+								</li>
+								<li>
+									<em><label for="cellN">휴대전화</label></em>
+									<div><input type="text" id="cellN" disabled="disabled"></div>
+								</li>
+								<li>
+									<em><label for="email">이메일</label></em>
+									<div><input type="text" id="email" disabled="disabled"></div>
+								</li>
+							</ul>
+						</div>
+						<div class="fRight">
+							<strong class="conTit2">차량 정보 <a href="#" class="btnCar" onclick="commonJs.popShow($('#lyChangeVehicle'));return false;">차량정보보기</a></strong>
+							<ul class="infoT">
+								<li>
+									<em><label for="car1">차량정보</label></em>
+									<div><input type="text" id="car1" disabled="disabled"></div>
+								</li>
+								<li>
+									<em><label for="car2">차대번호</label></em>
+									<div><input type="text" id="car2" disabled="disabled"></div>
+								</li>
+								<li>
+									<em><label for="car3">차량번호</label></em>
+									<div><input type="text" id="car3" placeholder="차량번호를 입력해주세요."></div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="airportR">
+						<div class="fLeft">
+							<strong class="conTit2">센터 방문 일정</strong>
+							<ul class="infoT">
+								<li>
+									<em>예약일시</em>
+									<div class="calendarWrap col2">
+										<input type="text" title="예약일" placeholder="예약일을 선택해 주세요." readonly>
+										<button type="button" class="btnCalendar">날짜 선택</button><!-- //예약일 선택 팝업 호출 -->
+									</div>
+								</li>
+								<li>
+									<em>터미널</em>
+									<div class="terminal">
+										<span class="rdChk"><input type="radio" name="terminalSelect1" id="terminalSelect1_1" checked><label for="terminalSelect1_1">제1 터미널</label></span>
+										<span class="rdChk"><input type="radio" name="terminalSelect1" id="terminalSelect2_1"><label for="terminalSelect2_1">제2 터미널</label></span>
+									</div>
+								</li>
+								<li>
+									<em><label for="flightN1">편명</label></em>
+									<div><input type="text" id="flightN1"></div>
+								</li>
+							</ul>
+							<ul class="info">
+								<li>출국일시 최소 2시간 전에 서비스센터로 방문하시기 바랍니다. <br>(센터 도착 후 공항 도착까지 약 20분 소요)</li><!-- 수정 2018-06-21 제1 터미널 선택시-->
+								<li>출국일시 최소 2시간 전에 서비스센터로 방문하시기 바랍니다. <br>(센터 도착 후 공항 도착까지 약 30분 소요)</li><!-- 수정 2018-06-21 제2 터미널 선택시-->
+							</ul>
+							<strong class="conTit2">귀국 일정</strong>
+							<ul class="infoT">
+								<li>
+									<em>예약일시</em>
+									<div class="calendarWrap col2">
+										<input type="text" title="예약일" placeholder="예약일을 선택해 주세요." readonly>
+										<button type="button" class="btnCalendar">날짜 선택</button><!-- //예약일 선택 팝업 호출 -->
+									</div>
+								</li>
+								<li>
+									<em>터미널</em>
+									<div class="terminal">
+										<span class="rdChk"><input type="radio" name="terminalSelect2" id="terminalSelect2_1" checked><label for="terminalSelect2_1">제1 터미널</label></span>
+										<span class="rdChk"><input type="radio" name="terminalSelect2" id="terminalSelect2_2"><label for="terminalSelect2_2">제2 터미널</label></span>
+									</div>
+								</li>
+								<li>
+									<em><label for="flightN2">편명</label></em>
+									<div><input type="text" id="flightN2"></div>
+								</li>
+							</ul>
+							<ul class="info">
+								<li>귀국 일시는 귀국하시는 일정입니다.</li>
+								<li>귀국 일정이 다른 예약 일정과 겹치게 될 시 대기시간이 발생할 수 있습니다.</li><!-- 수정 2018-06-21 -->
+							</ul>
+						</div>
+
+						<div class="fRight">
+							<strong class="conTit2">예약 인원</strong>
+							<ul class="infoT">
+								<li>
+									<em>인원</em>
+									<div class="selType2">
+										<select title="인원선택">
+											<option value="">1명</option>
+											<option value="">2명</option>
+											<option value="">3명</option>
+											<option value="">4명</option>
+										</select>
+									</div>
+								</li>
+							</ul>
+							<ul class="info">
+								<li>예약가능 최대 인원은 4명입니다. (어린이 포함)</li>
+								<li>4인 이상 예약 시, 해당 서비스센터로 문의 바랍니다.</li>
+							</ul>
+							<strong class="conTit2">추가 요청 사항</strong>
+							<div class="mSvList">
+								<ul>
+									<li><span class="rdChk"><input type="checkbox" id="mService1"><label for="mService1"><span>일반점검(BSI/MSI)</span></label></span></li>
+									<li><span class="rdChk"><input type="checkbox" id="mService5"><label for="mService5"><span>브레이크 디스크 / 브레이크 패드</span></label></span></li>
+									<li><span class="rdChk"><input type="checkbox" id="mService2"><label for="mService2"><span>엔진오일</span></label></span></li>
+									<li><span class="rdChk"><input type="checkbox" id="mService6"><label for="mService6"><span>스파크 플러그 / 연료 필터</span></label></span></li>
+									<li><span class="rdChk"><input type="checkbox" id="mService3"><label for="mService3"><span>브레이크 오일</span></label></span></li>
+									<li><span class="rdChk"><input type="checkbox" id="mService7"><label for="mService7"><span>와이퍼 블레이드</span></label></span></li>
+									<li><span class="rdChk"><input type="checkbox" id="mService4"><label for="mService4"><span>에어필터 / 마이크로 필터</span></label></span></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="btnBox tR">
+						<a href="#" class="btnL bGray">취소</a>
+						<a href="#" class="btnL">예약확인</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- //contents -->
+	</section>
+	<!-- //container -->
+
+	<footer>
+		<div class="ftWrap">
+			<img src="../images/temp/dummy_footer.gif" alt=""><!-- //임시이미지 -->
+		</div>
+	</footer>
+</div><!-- //wrap -->
+
+<div class="lyDim"><!-- back 영역 --></div><!-- layer Dim 영역 -->
+<!-- layer Popup : 출국일  선택 -->
+<div id="lyStartDateSelect" class="layerPop">
+	<section class="popWrap">
+		<h1 class="popTit">예약일 선택</h1>
+		<div class="popCont">
+			<div class="calendar">
+				<!-- 캘린더 출력 영역 -->
+			</div>
+			<div class="selType1 reverse" style="width:100%">
+				<select title="시간 선택">
+					<option value="">09:00</option>
+					<option value="">09:20</option>
+					<option value="">09:40</option>
+					<option value="" disabled>10:00</option><!-- //비활성화 되었을때 disabled 속성추가 -->
+					<option value="">10:20</option>
+					<option value="">10:40</option>
+					<option value="">13:00</option>
+					<option value="">13:20</option>
+					<option value="">13:40</option>
+					<option value="">14:00</option>
+					<option value="">14:20</option>
+					<option value="">14:40</option>
+					<option value="">15:00</option>
+					<option value="">15:20</option>
+					<option value="">15:40</option>
+					<option value="">16:00</option>
+					<option value="">16:20</option>
+					<option value="">16:40</option>
+				</select>
+			</div>
+			<div class="btnBox"><a href="#" class="btnL">확인</a></div>
+		</div>
+		<button type="button" class="popClose">닫기</button>
+	</section><!-- //popWrap -->
+</div>
+<!-- //layer Popup : 출국일 선택 -->
+
+<!-- layer Popup : 귀국일  선택 -->
+<div id="lyEndDateSelect" class="layerPop">
+	<section class="popWrap">
+		<h1 class="popTit">예약일 선택</h1>
+		<div class="popCont">
+			<div class="calendar">
+				<!-- 캘린더 출력 영역 -->
+			</div>
+			<div class="selType1 reverse" style="width:100%">
+				<select title="시간 선택">
+					<option value="">09:00</option>
+					<option value="">09:20</option>
+					<option value="">09:40</option>
+					<option value="" disabled>10:00</option><!-- //비활성화 되었을때 disabled 속성추가 -->
+					<option value="">10:20</option>
+					<option value="">10:40</option>
+					<option value="">13:00</option>
+					<option value="">13:20</option>
+					<option value="">13:40</option>
+					<option value="">14:00</option>
+					<option value="">14:20</option>
+					<option value="">14:40</option>
+					<option value="">15:00</option>
+					<option value="">15:20</option>
+					<option value="">15:40</option>
+					<option value="">16:00</option>
+					<option value="">16:20</option>
+					<option value="">16:40</option>
+				</select>
+			</div>
+			<div class="btnBox"><a href="#" class="btnL">확인</a></div>
+		</div>
+		<button type="button" class="popClose">닫기</button>
+	</section><!-- //popWrap -->
+</div>
+<!-- //layer Popup : 귀국일 선택 -->
+
+<!-- layer Popup : 차량선택 -->
+<div id="lyChangeVehicle" class="layerPop">
+	<section class="popWrap">
+		<h1 class="popTit">차량선택</h1>
+		<div class="popCont">
+			<div class="vehicleList type2 mgt2">
+				<ul>
+					<li>
+						<div class="rdChk"><input type="radio" name="vehicleSelect" id="vehicleSelect1" checked><label for="vehicleSelect1">
+							<span class="dpTbl"><em class="dpTc tL">차량정보</em><span class="dpTc tR">BMW 320d</span></span>
+							<span class="dpTbl"><em class="dpTc tL">차대번호</em><span class="dpTc tR">WMAZZ0000Z<span class="fCol1">Z000000</span></span></span>
+						</label></div>
+					</li>
+					<li>
+						<div class="rdChk"><input type="radio" name="vehicleSelect" id="vehicleSelect2"><label for="vehicleSelect2">
+							<span class="dpTbl"><em class="dpTc tL">차량정보</em><span class="dpTc tR">BMW 320d</span></span>
+							<span class="dpTbl"><em class="dpTc tL">차대번호</em><span class="dpTc tR">WMAZZ0000Z<span class="fCol1">Z000001</span></span></span>
+						</label></div>
+					</li>
+				</ul>
+			</div>
+			<div class="btnBox">
+				<a href="#" class="btnL bGray">취소</a>
+				<a href="#" class="btnL">확인</a>
+			</div>
+		</div>
+		<button type="button" class="popClose">닫기</button>
+	</section><!-- //popWrap -->
+</div>
+<!-- //layer Popup : 차량선택 -->
+
+<!-- layer Popup : 예약정보확인 -->
+<div id="lyReserveEnd" class="layerPop">
+	<section class="popWrap">
+		<h1 class="popTit">알림</h1>
+		<div class="popCont">
+			<div class="reservationEnd">
+				<p class="tC">예약이 완료되었습니다!</p>
+				<p class="rNum">예약번호: 12345</p>
+				<ul class="info">
+					<li>출국일시 최소 2시간 전에 서비스센터로 방문하시기 바랍니다. <br>(센터 도착 후 공항 도착까지 약 20분 소요)</li><!-- 수정 2018-06-21 제1 터미널 선택시-->
+					<li>출국일시 최소 2시간 전에 서비스센터로 방문하시기 바랍니다. <br>(센터 도착 후 공항 도착까지 약 30분 소요)</li><!-- 수정 2018-06-21 제2 터미널 선택시-->
+					<li>예약 변경은 센터 방문일은 03/12, 귀국일은 03/21 까지 가능 합니다.</li>
+					<li>예약 취소는 03/11 낮 12:00 까지 가능합니다.</li> 
+				</ul>
+			</div>
+			<div class="btnBox">
+				<a href="#" class="btnL bGray">확인</a>
+			</div>
+		</div>
+		<button type="button" class="popClose">닫기</button>
+	</section><!-- //popWrap -->
+</div>
+<!-- //layer Popup : 예약정보확인 -->
+
+<!-- script include -->
+<script src="../js/jquery-3.1.0.min.js"></script>
+<script src="../js/jquery-ui.min.js"></script>
+<script src="../js/common.js"></script>
+<script>
+	// disabled 시킬 날짜 배열
+	var disableDay = [
+		'2017.06.26',
+		'2017.06.28'
+	];
+	
+	// 날짜 input에 날짜 배열 저장
+	//datepicker안 beforeShowDay속성에서 disableDay배열을 날짜들과 비교하여 존재하면 disabled
+	$('.calendarWrap').find('input').data('disableDay', disableDay);
+	$('.calendarWrap.col2').find('.date input').data('disableDay', disableDay);
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="shortcut icon" href="../images/favicon.ico">
+<title>센터 보기 | BMW Plus</title>
+<link href="../css/common.css" rel="stylesheet" type="text/css">
+<style>
+body>a{color:#fff;}
+</style>
+</head>
+
+<body>
+<a href="#lyCenterDetail" class="layerOpen" onclick="commonJs.popShow($('#lyCenterDetail'))">센터상세 레이어팝업 호출</a>
+
+<!-- layer Popup : 센터 상세 -->
+<section id="lyCenterDetail" class="layerPop fullType">
+	<div class="popWrap">
+		<h1 class="popTit">BMW 드라이빙 센터 패스트레인 서비스 센터 (바바리안 모터스)</h1>
+		<div class="popCon">
+			<div class="mapArea">
+				<!-- 지도 출력 영역 -->
+				<img src="../images/temp/dummy_map.gif" alt="" style="width:100%"><!-- 더미 이미지 -->
+			</div>
+			<div class="contArea">
+				<ul class="ctInfo">
+					<li class="addr"><em>주소</em>서울특별시 서초구 양재대로 11길 36<br>서울오토갤러리 금관 1층</li>
+					<li class="tel"><em>전화번호</em><a href="tel:02-586-3331" target="_blank" title="전화연결">02-586-3331</a></li>
+					<li class="time"><em>영업시간</em>
+						<p>[평일] 08:30~18:30</p>
+						<p>[주말/공휴일] 09:00~16:00</p>
+						<p class="txtInfo">매월 2주, 4주차 토요일만 운영</p>
+					</li>
+					<li class="url"><em>홈페이지 바로가기</em><a href="http://www.samchullymotors.co.kr" class="linkTxt" target="_blank" title="새창 열림">http://www.samchullymotors.co.kr</a></li>
+					<li class="svWrap">
+						<dl>
+							<dt class="hidden">서비스 목록</dt>
+							<dd class="sv_pd"><em>픽업 &amp; 딜리버리</em></dd>
+							<dd class="sv_ss none"><span class="hidden">서비스 안됨</span><em>셔틀 서비스</em></dd><!-- 서비스가 되지 않는 항목은 class="none"추가 및 <span class="hidden">서비스 안됨</span> 추가 -->
+							<dd class="sv_as"><em>에어포트 서비스</em></dd>
+							<dd class="sv_lc"><em>로너카</em></dd>
+							<dd class="sv_ec"><em>전기차 충전기</em></dd>
+							<dd class="sv_ra"><em>긴급출동 서비스</em></dd>
+						</dl>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<button type="button" class="btnClose" onclick="commonJs.popClose($('#lyCenterDetail'))">닫기</button>
+	</div>
+</section>
+<!-- //layer Popup : 센터 상세 -->
+
+<!-- script include -->
+<script src="../js/jquery-3.1.0.min.js"></script>
+<script src="../js/jquery-ui.min.js"></script>
+<script src="../js/common.js"></script>
+
+</body>
+</html>

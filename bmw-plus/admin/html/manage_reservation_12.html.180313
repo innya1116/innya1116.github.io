@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>관리자 | BMW Plus</title>
+<link href="../css/admin.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<p id="gotoContents"><a href="#container">본문으로 바로가기</a></p>
+
+<div id="wrapper" class="wrapper">
+	<div id="header" class="header">
+		<div class="headWrap">
+			<img src="../img/@dummy_header.gif" alt="">
+		</div>		
+	</div><!-- // end header -->
+	<hr>
+	
+	<div id="container" class="container">
+		<div id="snb" class="snb">
+			<img src="../img/@dummy_snb.gif" alt="">
+		</div><!-- // end snb -->
+		
+		<div id="contents" class="contents">
+			<div class="location">
+				<a href="#" class="home">HOME</a> > 
+				<a href="#">예약관리</a> > 
+				<strong>예약관리</strong>
+			</div>
+			
+			<h1>예약관리</h1>
+			<h2>예약 통계</h2>
+			<strong class="brDl"><em>(브랜드)</em> BMW &gt; <em>(딜러)</em> 코오롱 모터스</strong>
+			<p class="unit">단위 : 건</p>
+			<div class="tableType2 mt10">
+				<table>
+					<caption>예약 통계</caption>
+					<colgroup><col style="width:12%"><col style="width:13%"><col style="width:12%"><col><col style="width:12%"><col style="width:13%"><col style="width:12%"><col></colgroup>
+					<tbody>
+						<tr>
+							<th scope="row" colspan="2">전체예약</th>
+							<td colspan="2">10000</td>
+							<th scope="row" colspan="2">전일예약</th>
+							<td colspan="2">130</td>
+						</tr>
+						<tr>
+							<th scope="row">예약완료</th>
+							<td>10000</td>
+							<th scope="row">예약취소</th>
+							<td>130</td>
+							<th scope="row">예약완료</th>
+							<td>10000</td>
+							<th scope="row">예약취소</th>
+							<td>130</td>
+						</tr>
+						<tr>
+							<th scope="row">정비완료</th>
+							<td>10000</td>
+							<th scope="row">예약만료</th>
+							<td>130</td>
+							<th scope="row">정비완료</th>
+							<td>10000</td>
+							<th scope="row">예약만료</th>
+							<td>130</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<h2 class="mt30">예약 내역 조회</h2>
+			<div class="tableType2">
+				<table>
+					<caption>예약 내역 조회</caption>
+					<colgroup><col style="width:16%"><col><col style="width:16%"><col></colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">예약번호</th>
+							<td>
+								<input type="text" title="예약번호" style="width:250px">
+							</td>
+							<th scope="row">고객연락처</th>
+							<td>
+								<input type="text" title="고객연락처" style="width:250px">
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">차대번호</th>
+							<td>
+								<input type="text" title="차대번호" style="width:250px">
+							</td>
+							<th scope="row">차량번호</th>
+							<td>
+								<input type="text" title="차량번호" style="width:250px">
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">브랜드</th>
+							<td>
+								<select title="브랜드" style="width:250px" disabled>
+									<option value="">전체</option>
+									<option value="" selected>BMW</option>
+								</select>
+							</td>
+							<th scope="row">딜러</th>
+							<td>
+								<select title="딜러" style="width:250px" disabled>
+									<option value="">전체</option>
+									<option value="" selected>코오롱 모터스</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">서비스센터</th>
+							<td>
+								<select title="서비스센터" style="width:250px">
+									<option value="">전체</option>
+								</select>
+							</td>
+							<th scope="row">예약상태</th>
+							<td>
+								<select title="예약상태" style="width:250px">
+									<option value="">전체</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">예약일</th>
+							<td colspan="3">
+								<input type="text" style="width:98px" title="시작 날짜입력">
+								<a href="#" class="btnCalendar"><img src="../img/calendar.gif" alt="날짜입력"></a>
+								<span style="margin-right:5px">~</span>
+								<input type="text" style="width:98px" title="끝 날짜입력">
+								<a href="#" class="btnCalendar"><img src="../img/calendar.gif" alt="날짜입력"></a>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="btnBox_t">
+				<a href="#" class="btnM cWhite">초기화</a>
+				<a href="#" class="btnM">조회</a>
+			</div>
+
+			<div class="resultArea">
+				<div class="resultTxt">총 <strong>0,000</strong>건이 검색 되었습니다.</div>
+				<div class="sortType">
+					<em>정렬 :</em>
+					<a href="#" class="on">예약번호</a>
+					<a href="#">예약 일시</a>
+					<a href="#">P&amp;D</a>
+				</div>
+				<div class="tableType1 mt10">
+					<table>
+						<caption>조회결과</caption>
+						<colgroup><col style="width:70px"><col style="width:10%"><col style="width:10%"><col><col><col style="width:13%"><col style="width:140px"><col style="width:70px"><col style="width:100px"></colgroup>
+						<thead>
+							<tr>
+								<th scope="col">No.</th>
+								<th scope="col">예약번호</th>
+								<th scope="col">브랜드</th>
+								<th scope="col">딜러</th>
+								<th scope="col">서비스센터</th>
+								<th scope="col">차대번호</th>
+								<th scope="col">예약일시</th>
+								<th scope="col">P&amp;D</th>
+								<th scope="col">예약상태</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">10</th>
+								<td><a href="#">00010</a></td>
+								<td>BMW</td>
+								<td>코오롱 모터스</td>
+								<td>강남역 서비스센터</td>
+								<td>WBAZZ0000Z<br>Z000001</td>
+								<td>2017-06-12 10:00</td>
+								<td>Y</td>
+								<td>예약완료</td>
+							</tr>
+							<tr>
+								<th scope="row">9</th>
+								<td><a href="#">00010</a></td>
+								<td>BMW</td>
+								<td>코오롱 모터스</td>
+								<td>강남역 서비스센터</td>
+								<td>WBAZZ0000Z<br>Z000001</td>
+								<td>2017-06-12 10:00</td>
+								<td>Y</td>
+								<td>예약완료</td>
+							</tr>
+							<tr>
+								<th scope="row">8</th>
+								<td><a href="#">00010</a></td>
+								<td>BMW</td>
+								<td>코오롱 모터스</td>
+								<td>강남역 서비스센터</td>
+								<td>WBAZZ0000Z<br>Z000001</td>
+								<td>2017-06-12 10:00</td>
+								<td>Y</td>
+								<td>예약완료</td>
+							</tr>
+							<tr>
+								<td class="noData" colspan="9">조회 결과가 없습니다.</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<div class="paging">
+					<a href="#" class="first"><img src="../img/btn_paging_first.gif" alt="처음 페이지"></a><a href="#" class="prev"><img src="../img/btn_paging_prev.gif" alt="이전 페이지"></a><a href="#" class="on">1</a><a href="#">2</a><a href="#">3</a><a href="#">4</a><a href="#">5</a><a href="#">6</a><a href="#">7</a><a href="#">8</a><a href="#">9</a><a href="#">10</a><a href="#" class="next"><img src="../img/btn_paging_next.gif" alt="다음 페이지"></a><a href="#" class="last"><img src="../img/btn_paging_last.gif" alt="마지막 페이지"></a>
+				</div>
+			</div>
+
+		</div><!-- // end contents -->
+	</div>
+
+	<div id="footer" class="footer">
+		<div class="footArea">
+			<p class="copyright">© <strong>BMW Group Korea</strong> All rights reserved.</p>
+		</div>
+	</div><!-- // end footer -->
+	
+</div><!-- // end wrapper -->
+
+<!-- script include -->
+<script src="../js/jquery-3.1.0.min.js"></script>
+<script src="../js/common.js"></script>
+
+</body>
+</html>
+

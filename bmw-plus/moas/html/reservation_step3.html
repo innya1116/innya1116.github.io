@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="shortcut icon" href="../images/favicon.ico">
+<title>실시간 예약 | BMW Plus</title>
+<link href="../css/common.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div class="skipNav"><a href="#contents">본문으로 바로가기</a></div>
+
+<div class="wrap bpd"><!-- 실시간 예약의 스텝이 진행될때 wrap Div에 bpd 클래스 추가 -->
+	<header>
+		<img src="../images/temp/dummy_header.gif" alt=""><!-- 임시이미지 -->
+	</header>
+
+	<section class="container">
+		<div id="contents" class="contents">
+			<div class="titArea"><h1>실시간 예약</h1></div>
+			<!-- step -->
+			<div class="step">
+				<ol class="status">
+					<li class="passed">1<span class="hidden">단계</span></li><!-- 현재 스텝 class="ing" | 지나간 스텝 class="passed" -->
+					<li class="passed">2<span class="hidden">단계</span></li>
+					<li class="ing">3<span class="hidden">단계 - 현재 단계</span></li>
+					<li>4<span class="hidden">단계</span></li>
+					<li>5<span class="hidden">단계</span></li>
+				</ol>
+				<h2 class="stepTit">정비서비스 입력</h2>
+			</div>
+			<!-- //step -->
+			<div class="contArea tpd">
+				<h3 class="conTit1">서비스 항목</h3>
+				<!-- 수정 2018-06-28 -->
+				<ul class="formList type2">
+					<li><span class="rdChk"><input type="checkbox" id="svItem1"><label for="svItem1"><span>일반점검(BSI)</span></label></span></li><!-- //2017-06-28 수정 -->
+					<li><span class="rdChk"><input type="checkbox" id="svItem2"><label for="svItem2"><span>엔진오일</span></label></span></li>
+					<li><span class="rdChk"><input type="checkbox" id="svItem3"><label for="svItem3"><span>브레이크 오일</span></label></span></li>
+					<li><span class="rdChk"><input type="checkbox" id="svItem4"><label for="svItem4"><span>에어필터/마이크로 필터</span></label></span></li>
+					<li><span class="rdChk"><input type="checkbox" id="svItem5"><label for="svItem5"><span>브레이크 디스크/브레이크 패드</span></label></span></li>
+					<li><span class="rdChk"><input type="checkbox" id="svItem6"><label for="svItem6"><span>스파크 플러그/연료 필터</span></label></span></li>
+					<li><span class="rdChk"><input type="checkbox" id="svItem7"><label for="svItem7"><span>와이퍼 블레이드</span></label></span></li>
+					<li><span class="rdChk"><input type="checkbox" id="svItem8"><label for="svItem8"><span>BSI 연장 패키지</span></label></span></li>
+					<li><span class="rdChk"><input type="checkbox" id="svItem9"><label for="svItem9"><span>Warranty 연장 패키지</span></label></span></li>
+					<li><span class="rdChk"><input type="checkbox" id="svItem10"><label for="svItem10"><span>타이어 교체</span></label></span></li>
+					<li><span class="rdChk"><input type="checkbox" id="svItem11"><label for="svItem11"><span>M 시리즈 길들이기 점검</span></label></span></li>
+					<li><span class="rdChk"><input type="checkbox" id="svItem12"><label for="svItem12"><span>윈터 타이어 캠페인</span></label></span></li>
+					<li><span class="rdChk"><input type="checkbox" id="svItem13"><label for="svItem13"><span>액세서리 캠페인</span></label></span></li>
+					<li><span class="rdChk"><input type="checkbox" id="svItem14"><label for="svItem14"><span>Dr. BMW Week</span></label></span></li>
+					<li><span class="rdChk"><input type="checkbox" id="svItem15"><label for="svItem15"><span>윈터 캠페인</span></label></span></li>
+					<li><span class="rdChk"><input type="checkbox" id="svItem16"><label for="svItem16"><span>스프링 캠페인</span></label></span></li>
+					<li><span class="rdChk"><input type="checkbox" id="svItem17"><label for="svItem17"><span>썸머 캠페인</span></label></span></li>
+					<!-- 180806 추가 -->
+					<li><span class="rdChk"><input type="checkbox" id="svItem18"><label for="svItem18"><span onclick="commonJs.popShow($('#lyInfoEGR'))">EGR모듈 리콜</span></label></span></li>
+					<!--// 180806 추가 -->
+				</ul>
+				<div>
+					<h3 class="conTit1">타이어 규격</h3>
+					<div><input type="text" title="타이어 규격" class="input_type2" style="width:100%" placeholder="전폭/편평비/인치 (ex.275/65R/18)"></div>
+				</div>
+				<!-- //수정 2018-06-28 -->
+
+				<!--h3 class="conTit1">추가요청 사항</h3>
+				<div class="taWrap">
+					<textarea title="추가요청 사항" placeholder="BMW Plus를 통한 정비 예약은 간단한 정비서비스와 BSI(BMW Service Inclusive) 항목만 예약이 가능합니다. 그 외 정비는 정확한 진단과 판단을 위하여 서비스센터로 문의 부탁 드립니다." style="height:120px"></textarea>
+					<p class="taT"><em class="fCol1">0</em> / 50</p>
+				</div--><!-- Del 19.09.10 -->
+				<!-- Add 19.09.10 -->
+				<h3 class="conTit1">주의사항</h3>
+				<p class="fCol3">BMW Plus를 통한 예약은 선택한 서비스 항목만 가능합니다. 그 외 서비스에 대한 예약은 정확한 진단과 신속한 부품 준비 등을 위한 상세 상담이 필요하므로 서비스센터로 전화 문의 부탁 드립니다.<br>
+				협조에 감사 드립니다.</p>
+				<!--// Add 19.09.10 -->
+			</div>
+			
+			<!-- 하단 고정 버튼 -->
+			<div class="fixedBtn stepType">
+				<span><a href="#">이전</a></span>
+				<span><a href="#">예약정보 입력</a></span>
+			</div>
+			<!-- //하단 고정 버튼 -->
+		</div>
+		<!-- //contents -->
+	</section>
+	<!-- //container -->
+
+	<footer>
+		<img src="../images/temp/dummy_footer.gif" alt=""><!-- 임시이미지 -->
+	</footer>
+</div><!-- //wrap -->
+
+<!-- script include -->
+<script src="../js/jquery-3.1.0.min.js"></script>
+<script src="../js/jquery-ui.min.js"></script>
+<script src="../js/common.js"></script>
+
+<!-- 180806 추가 -->
+<div class="lyDim"><!-- back 영역 --></div><!-- layer Dim 영역 -->
+<!-- layer Popup : EGR 모듈 리콜 -->
+<section id="lyInfoEGR" class="layerPop">
+	<div class="lyWrap">
+		<h1 class="lyTit">EGR모듈 리콜</h1>
+		<div class="lyCon tC ">
+			<p>회원님은 EGR모듈리콜 대상입니다.</p><!-- 리콜 대상 일때 -->
+			<p>회원님은 EGR모듈리콜 대상이 아닙니다.</p><!-- 리콜 대상이 아닐때 -->
+		</div>
+		<div class="btnBox">
+			<a href="#" onclick="commonJs.popClose($('#lyInfoMperformance'))">확인</a>
+		</div>
+	</div>
+</section>
+<!-- //layer Popup : EGR 모듈 리콜 -->
+<!-- //180806 추가 -->
+
+</body>
+</html>

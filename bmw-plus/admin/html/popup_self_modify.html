@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>본인계정수정 | BMW Plus</title>
+<link href="../css/admin.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<section class="popWrap">
+	<hgroup class="popTit">
+		<h1 class="tit">본인계정수정</h1>
+	</hgroup>
+	<div class="popCont">
+		<!-- 비밀번호 입력 전 -->
+		<p class="fs14">현재 비밀번호를 입력해 주세요.</p>
+		<div class="tableType2 mt10">
+			<table>
+				<caption>비밀번호 입력</caption>
+				<colgroup><col style="width:25%"><col></colgroup>
+				<tbody>
+					<tr>
+						<th scope="row">비밀번호</th>
+						<td>
+							<input type="password" title="비밀번호" class="fullInp">
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="btnBox">
+			<a href="#" class="btnM cGray">확인</a>
+		</div>
+		<!-- //비밀번호 입력 전 -->
+		<!-- 비밀번호 입력 후 -->
+		<div class="tableType2">
+			<table>
+				<caption>본인계정 수정</caption>
+				<colgroup><col style="width:25%"><col></colgroup>
+				<tbody>
+					<tr>
+						<th scope="row">아이디</th>
+						<td>
+							<input type="text" title="아이디" class="fullInp" value="admin1" readonly>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">신규 비밀번호</th>
+						<td>
+							<input type="password" title="신규 비밀번호" class="fullInp">
+							<ul class="txtInfo mt10">
+								<li>신규 비밀번호를 입력하시면 비밀번호가 변경 됩니다.</li>
+								<li>비밀번호는 8자 이상으로 영문대소문자, 숫자, 특수문자 중 3가지 이상을  조합하여 주세요.</li>
+								<li>최근 사용했던 비밀번호 2개는 사용하실 수 없습니다.</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">신규 비밀번호확인</th>
+						<td>
+							<input type="password" title="신규 비밀번호확인" class="fullInp">
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">이름</th>
+						<td>
+							<input type="text" title="이름" class="fullInp" value="홍길동" readonly>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">부서</th>
+						<td>
+							<input type="text" title="부서" class="fullInp" value="시스템 지원부">
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">담당업무</th>
+						<td>
+							<input type="text" title="담당업무" class="fullInp" value="컨텐츠 관리" readonly>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">이메일</th>
+						<td>
+							<input type="text" title="이메일" class="fullInp" value="abcd21@bmw.com" readonly>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">전화번호(*)</th>
+						<td>
+							<input type="text" title="전화번호" class="fullInp" value="02-1343-5646">
+						</td>
+					</tr>
+					<!-- 변경 클릭 전 -->
+					<tr>
+						<th scope="row">휴대폰(*)</th>
+						<td>
+							<input type="text" title="휴대폰" value="010-1234-1234" readonly style="width:200px">
+							<a href="#" class="btnS cGray">변경</a>
+							<p class="txtInfo mt10">로그인시 인증문자 발송을 위해 정확한 휴대전화를 입력해주세요.</p>
+						</td>
+					</tr>
+					<!-- //변경 클릭 전 -->
+					<!-- 변경 클릭 후 -->
+					<tr>
+						<th scope="row">휴대폰(*)</th>
+						<td>
+							<input type="text" title="휴대폰" value="010-1234-1234" readonly style="width:200px">
+							<a href="#" class="btnS cGray">취소</a>
+							<div class="editNum mt10">
+								<div>
+									<input type="text" title="변경할 휴대폰 번호" placeholder="변경 번호를 입력해주세요" style="width:200px">
+									<a href="#" class="btnS cGray">인증번호 받기</a><!-- //인증번호 전송 후 인증번호 다시받기로 텍스트 변경필요 -->
+								</div>
+								<div class="certNum mt10">
+									<em class="time">3:00</em>
+									<input type="text" title="인증번호" placeholder="인증번호를 입력해주세요" style="width:200px">
+									<a href="#" class="btnS cGray">확인</a><!-- //인증번호가 확인되면 완료로 텍스트 변경 필요 -->
+								</div>
+							</div>
+							<p class="txtInfo mt10">로그인시 인증문자 발송을 위해 정확한 휴대전화를 입력해주세요.</p>
+						</td>
+					</tr>
+					<!-- //변경 클릭 후 -->
+				</tbody>
+			</table>
+		</div>
+		<div class="btnBox">
+			<a href="#" class="btnM cGray">확인</a>
+		</div>
+		<!-- //비밀번호 입력 후 -->
+	</div>
+</section>
+</body>
+</html>
+

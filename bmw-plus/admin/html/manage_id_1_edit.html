@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>관리자 | BMW Plus</title>
+<link href="../css/admin.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<p id="gotoContents"><a href="#container">본문으로 바로가기</a></p>
+
+<div id="wrapper" class="wrapper">
+	<div id="header" class="header">
+		<div class="headWrap">
+			<img src="../img/@dummy_header.gif" alt="">
+		</div>		
+	</div><!-- // end header -->
+	<hr>
+	
+	<div id="container" class="container">
+		<div id="snb" class="snb">
+			<img src="../img/@dummy_snb.gif" alt="">
+		</div><!-- // end snb -->
+		
+		<div id="contents" class="contents">
+			<div class="location">
+				<a href="#" class="home">HOME</a> > 
+				<a href="#">관리자 계정관리</a> > 
+				<strong>관리자 계정관리</strong>
+			</div>
+			
+			<h1>관리자 계정관리</h1>
+			
+			<strong class="brDl"><em>(딜러)</em> 코오롱 모터스</strong><!-- Add 18.03.13 -->
+			
+			<h2>관리자 계정수정</h2>
+			
+			<p class="tR">* 표는 필수입력 입니다.</p>
+			<div class="tableType2 mt10">
+				<table>
+					<caption>관리자 계정수정</caption>
+					<colgroup><col style="width:20%"><col></colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">아이디</th>
+							<td>
+								<input type="text" title="아이디" style="width:250px" value="admin1" disabled>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">비밀번호</th>
+							<td>
+								<input type="password" title="비밀번호" style="width:250px">
+								<ul class="txtInfo mt10">
+									<li>비밀번호는 8자 이상으로 영문대소문자, 숫자, 특수문자 중 3가지 이상을 조합하여 주세요.</li>
+									<li>최근 사용했던 비밀번호 2개는 사용하실 수 없습니다.</li>
+									<li>비밀번호를 변경하지 않을 경우 공란으로 두세요.</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">비밀번호확인</th>
+							<td>
+								<input type="password" title="비밀번호확인" style="width:250px">
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">계정상태</th>
+							<td>정상</td>
+						</tr>
+						<tr>
+							<th scope="row">계정상태</th>
+							<td>중지<a href="#" class="btnS cGray ml10">해제</a></td>
+						</tr>
+						<tr><!-- 2018.07.06 수정 -->
+							<th scope="row">계정유형(*)</th>
+							<td>
+								<select title="계정유형" style="width:250px">
+									<option value="">센터(SA)</option>
+									<option value="">딜러</option>
+								</select>
+								<!-- 계정유형 : 센터(SA) -->
+								<div class="mt10">
+									<select title="딜러를 선택하세요" style="width:500px">
+										<option value="">딜러를 선택하세요</option>
+										<option value="">내쇼날 모터스</option>
+										<option value="">도이치 모터스</option>
+										<option value="">동성 모터스</option>
+										<option value="">바바리안 모터스</option>
+										<option value="">삼천리 모터스</option>
+										<option value="">신호 모터스</option>
+										<option value="">코오롱 모터스</option>
+										<option value="">한독 모터스</option>
+									</select>
+									<div class="selectCheckBox mt10">
+										<ul>
+											<li><input type="checkbox" id="01"><label for="01">강남역 서비스 센터</label></li>
+											<li><input type="checkbox" id="02"><label for="02">교대 서비스 센터</label></li>
+											<li><input type="checkbox" id="03"><label for="03">대치 서비스 센터</label></li>
+											<li><input type="checkbox" id="04"><label for="04">성산 서비스 센터</label></li>
+											<li><input type="checkbox" id="05"><label for="05">역삼 패스트레인 서비스 센터</label></li>
+											<li><input type="checkbox" id="06"><label for="06">분당 패스트레인 서비스 센터</label></li>
+											<li><input type="checkbox" id="07"><label for="07">오포 서비스 센터</label></li>
+											<li><input type="checkbox" id="08"><label for="08">의정부 서비스 센터</label></li>
+											<li><input type="checkbox" id="09"><label for="09">대전 서비스 센터</label></li>
+											<li><input type="checkbox" id="10"><label for="10">광주 서비스 센터</label></li>
+											<li><input type="checkbox" id="11"><label for="11">광주 광천 패스트레인 서비스 센터</label></li>
+											<li><input type="checkbox" id="12"><label for="12">순천 서비스 센터</label></li>
+											<li><input type="checkbox" id="13"><label for="13">구미 서비스 센터</label></li>
+											<li><input type="checkbox" id="14"><label for="14">대구 서비스 센터</label></li>
+											<li><input type="checkbox" id="15"><label for="15">대구 수성 패스트레인 서비스 센터</label></li>
+											<li><input type="checkbox" id="16"><label for="16">부산 광안리 서비스 센터</label></li>
+											<li><input type="checkbox" id="17"><label for="17">김해 서비스 센터</label></li>
+											<li><input type="checkbox" id="18"><label for="18">광주 서비스 센터(MINI)</label></li>
+											<li><input type="checkbox" id="19"><label for="19">대구 서비스 센터(MINI)</label></li>
+											<li><input type="checkbox" id="20"><label for="20">서초 서비스 센터(MINI)</label></li>
+											<li><input type="checkbox" id="21"><label for="21">수성 패스트레인 서비스 센터(MINI)</label></li>
+											<li><input type="checkbox" id="22"><label for="22">성산 서비스 센터(BMW i)</label></li>
+											<li><input type="checkbox" id="23"><label for="23">광주 서비스 센터(BMW i)</label></li>
+											<li><input type="checkbox" id="24"><label for="24">대구 서비스 센터(BMW i)</label></li>
+											<li><input type="checkbox" id="25"><label for="25">대전 유성 서비스 센터</label></li>
+											<li><input type="checkbox" id="26"><label for="26">부천 서비스 센터</label></li>
+											<li><input type="checkbox" id="27"><label for="27">부천 서비스 센터(BMW i)</label></li>
+										</ul>
+									</div>
+									<p class="txtInfo mt10">센터를 선택하세요 (복수선택)</p>
+								</div>
+
+								<!-- 계정유형 : 딜러 -->
+								<div class="mt10">
+									<select title="딜러를 선택하세요" style="width:250px">
+										<option value="">딜러를 선택하세요</option>
+										<option value="">내쇼날 모터스</option>
+										<option value="">도이치 모터스</option>
+										<option value="">동성 모터스</option>
+										<option value="">바바리안 모터스</option>
+										<option value="">삼천리 모터스</option>
+										<option value="">신호 모터스</option>
+										<option value="">코오롱 모터스</option>
+										<option value="">한독 모터스</option>
+									</select>
+									<select title="딜러 그룹을 선택하세요" style="width:250px">
+										<option value="">딜러 그룹을 선택하세요</option>
+										<option value="">예약관리 용</option>
+										<option value="">딜러마케팅 용</option>
+										<option value="">센터관리 용</option>
+									</select>
+								</div>
+							</td>
+						</tr><!-- //2018.07.06 수정 -->
+						<tr>
+							<th scope="row">계정그룹(*)</th>
+							<td>
+								<select title="계정그룹" style="width:250px">
+									<option value="">컨텐츠관리자</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">이름</th>
+							<td>
+								<input type="text" title="이름" style="width:250px" value="홍길동" disabled>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">부서/소속(*)</th>
+							<td>
+								<input type="text" title="부서/소속" style="width:250px" value="시스템 지원부">
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">담당업무</th>
+							<td>
+								<input type="text" title="담당업무" style="width:250px" value="컨텐츠 관리">
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">이메일</th>
+							<td>
+								<input type="text" title="이메일" placeholder="ex. abc123@bmw.com" style="width:250px" value="abc@bmw.com">
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">전화번호</th>
+							<td>
+								<input type="text" title="전화번호" style="width:250px" value="02-3441-1111">
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">휴대폰(*)</th>
+							<td>
+								<input type="text" title="휴대폰" style="width:250px" value="010-1234-1234">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="btnBox tR">
+				<div class="lBtn">
+					<a href="#" class="btnM cGray">계정삭제</a>
+					<a href="#" class="btnM cWhite">취소</a>
+				</div>
+				<a href="#" class="btnM">저장</a>
+			</div>
+
+		</div><!-- // end contents -->
+	</div>
+
+	<div id="footer" class="footer">
+		<div class="footArea">
+			<p class="copyright">© <strong>BMW Group Korea</strong> All rights reserved.</p>
+		</div>
+	</div><!-- // end footer -->
+	
+</div><!-- // end wrapper -->
+
+<!-- script include -->
+<script src="../js/jquery-3.1.0.min.js"></script>
+<script src="../js/common.js"></script>
+
+</body>
+</html>
+

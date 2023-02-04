@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>관리자 | BMW Plus</title>
+<link href="../css/admin.css" rel="stylesheet" type="text/css">
+<link href="../css/jquery-ui.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<p id="gotoContents"><a href="#container">본문으로 바로가기</a></p>
+
+<div id="wrapper" class="wrapper">
+	<div id="header" class="header">
+		<div class="headWrap">
+			<img src="../img/@dummy_header.gif" alt="">
+		</div>		
+	</div><!-- // end header -->
+	<hr>
+	
+	<div id="container" class="container">
+		<div id="snb" class="snb">
+			<img src="../img/@dummy_snb.gif" alt="">
+		</div><!-- // end snb -->
+		
+		<div id="contents" class="contents">
+			<div class="location">
+				<a href="#" class="home">HOME</a> > 
+				<strong>Airport Service 예약 관리</strong>
+			</div>
+			
+			<h1>Airport Service 예약 관리</h1>
+			
+			<div class="tableType2">
+				<table>
+					<caption>예약 일 조회</caption>
+					<colgroup><col style="width:20%"><col style="width:*"></colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">예약 일</th>
+							<td>
+								<input type="text" style="width:100px" title="예약 월 입력">
+								<a href="#" class="btnCalendar"><img src="../img/calendar.gif" alt="날짜입력"></a>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="btnBox_t">
+				<a href="#" class="btnM cWhite">초기화</a>
+				<a href="#" class="btnM">조회</a>
+			</div>
+
+			<div class="resultArea">
+				<ul class="topTab">
+					<li class="on"><a href="#">제 1터미널</a></li>
+					<li><a href="#">제 2터미널</a></li>
+				</ul>
+				<div class="tabCon">
+					<h2 class="hidden">제 1터미널</h2>
+					<div class="calSelect">
+						<button type="button"><img src="../img/btn_cal_prev.gif" alt="이전달"></button>
+						<span>2018.04</span>
+						<button type="button" class="calNext"><img src="../img/btn_cal_next.gif" alt="다음달"></button>
+					</div>
+					<div class="clearfix">
+						<div class="fRight"><a href="#" class="btnS cGray">전화 예약</a></div>
+					</div>
+					<div class="tableType1 mt10">
+						<table>
+							<caption>slot 조절 일 시간 선택</caption>
+							<colgroup><col style="width:10%" span="2"><col style="width:8%" span="10"></colgroup>
+							<thead>
+								<tr>
+									<th scope="col" colspan="2">시간</th>
+									<th scope="col" colspan="5">출국</th>
+									<th scope="col" colspan="5">귀국</th>
+								</tr>
+								<tr>
+									<th scope="col">시</th>
+									<th scope="col">분</th>
+									<th scope="col">홍길동1</th>
+									<th scope="col">홍길동2</th>
+									<th scope="col">홍길동3</th>
+									<th scope="col">홍길동4</th>
+									<th scope="col">홍길동5</th>
+									<th scope="col">홍길동1</th>
+									<th scope="col">홍길동2</th>
+									<th scope="col">홍길동3</th>
+									<th scope="col">홍길동4</th>
+									<th scope="col">홍길동5</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="rowgroup" rowspan="4">00</th>
+									<th scope="row">00</th>
+									<td><a href="#">예약자명</a></td>
+									<td><a href="#">예약자명</a></td>
+									<td><a href="#">예약자명</a></td>
+									<td><a href="#">-</a></td>
+									<td><a href="#">예약자명</a></td>
+									<td><a href="#">예약자명</a></td>
+									<td><a href="#">예약자명</a></td>
+									<td><a href="#">예약자명</a></td>
+									<td><a href="#">예약자명</a></td>
+									<td><a href="#">예약자명</a></td>
+								</tr>
+								<tr>
+									<th scope="row">15</th>
+									<td><a href="#">예약자명</a></td>
+									<td><a href="#">예약자명</a></td>
+									<td><a href="#">-</a></td>
+									<td><a href="#">예약자명</a></td>
+									<td><a href="#">예약자명</a></td>
+									<td><a href="#">예약자명</a></td>
+									<td><a href="#">예약자명</a></td>
+									<td><a href="#">예약자명</a></td>
+									<td><a href="#">예약자명</a></td>
+									<td><a href="#">예약자명</a></td>
+								</tr>
+								<tr>
+									<th scope="row">30</th>
+									<td><a href="#">예약자명</a></td>
+									<td><a href="#">-</a></td>
+									<td><a href="#">예약자명</a></td>
+									<td><a href="#">예약자명</a></td>
+									<td><a href="#">예약자명</a></td>
+									<td><a href="#">예약자명</a></td>
+									<td><a href="#">예약자명</a></td>
+									<td><a href="#">예약자명</a></td>
+									<td><a href="#">예약자명</a></td>
+									<td><a href="#">예약자명</a></td>
+								</tr>
+								<tr>
+									<th scope="row">45</th>
+									<td><a href="#">예약자명</a></td>
+									<td><a href="#">예약자명</a></td>
+									<td><a href="#">예약자명</a></td>
+									<td><a href="#">예약자명</a></td>
+									<td><a href="#">예약자명</a></td>
+									<td><a href="#">예약자명</a></td>
+									<td><a href="#">예약자명</a></td>
+									<td><a href="#">예약자명</a></td>
+									<td><a href="#">예약자명</a></td>
+									<td><a href="#">예약자명</a></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="btnBox tR">
+						<div class="lBtn"><a href="#" class="btnS cWhite">목록으로</a></div>
+						<a href="#" class="btnS cGray">전화 예약</a>
+					</div>
+				</div>
+			</div>
+
+		</div><!-- // end contents -->
+	</div>
+
+	<div id="footer" class="footer">
+		<div class="footArea">
+			<p class="copyright">© <strong>BMW Group Korea</strong> All rights reserved.</p>
+		</div>
+	</div><!-- // end footer -->
+	
+</div><!-- // end wrapper -->
+
+<!-- script include -->
+<script src="../js/jquery-3.1.0.min.js"></script>
+<script src="../js/jquery-ui.min.js"></script>
+<script src="../js/common.js"></script>
+
+<script>
+	
+//		commonJs.calendarDateSelect(셀렉터 표현식,날짜배열[시작일,종료일])	
+//		셀렉터 표현식 대상의 시작일과 종료일 날자를 바꾼다. 시작일input과 종료일input 둘다에 적용해 주어야 한다.
+//		ex) commonJs.calendarDateSelect($('.btnCalendar:eq(0)'),['2017-08-15','2017-08-30']);
+//		ex) commonJs.calendarDateSelect($('.btnCalendar:eq(1)'),['2017-08-15','2017-08-30']);
+
+//		commonJs.allDateDisabled(셀렉터 표현식) 		 
+//		셀렉터 표현식 대상의 모든 날짜를 Disabled 시킨다. 시작일input과 종료일input 둘다에 적용해 주어야 한다.
+//		ex) commonJs.allDateDisabled($('.btnCalendar:eq(0)'));
+//		ex) commonJs.allDateDisabled($('.btnCalendar:eq(1)'));
+
+//		commonJs.allDateEnabled(셀렉터 표현식) 		 
+//		셀렉터 표현식 대상의 모든 날짜를 Enabled 시킨다. 시작일input과 종료일input 둘다에 적용해 주어야 한다.
+//		ex) commonJs.allDateEnabled($('.btnCalendar:eq(0)'));
+//		ex) commonJs.allDateEnabled($('.btnCalendar:eq(1)'));
+
+</script>
+
+</body>
+</html>
+

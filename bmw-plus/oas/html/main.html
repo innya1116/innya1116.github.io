@@ -1,0 +1,291 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="shortcut icon" href="../images/favicon.ico">
+<title>BMW Plus</title>
+<link href="../css/common.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div class="skipNav"><a href="#contents">본문으로 바로가기</a></div>
+
+<div class="wrap">
+	<header>
+		<div class="personalInfo">
+			<div class="pInfo">
+				<strong class="userName">홍길동 님 환영합니다!</strong>
+				<div class="vehicleRsv">
+					<span><em>나의 차량</em><a href="#">2017 BMW 320d (2)</a></span>
+					<span><em>예약</em><a href="#">2건</a></span>
+				</div>
+			</div>
+			<!-- 등록된 차량이 없을 때 -->
+			<div class="pInfo">
+				<strong class="userName">홍길동 님 환영합니다!</strong>
+				<div class="vehicleRsv">
+					<span><em>등록된 차량이 존재하지 않습니다. 차량 등록시 실시간 예약 서비스를 사용할 수 있습니다.</em><a href="#">차량등록</a></span>
+				</div>
+			</div>
+			<!-- //등록된 차량이 없을 때 -->
+		</div>
+		<div class="hdWrap"><!-- //메뉴가 클릭되면 on 클래스 추가 -->
+			<strong class="logo"><a href="#"><img src="../images/logo_bmw.png" alt="BMW Plus"></a></strong>
+			<nav class="gnb">
+				<ul>
+					<li class="on"><a href="#">Home</a></li>
+					<li><a href="#">실시간 예약</a></li>
+					<li><a href="#">Owner's Guide</a>
+						<div class="depth2M">
+							<ul>
+								<li><a href="#">차량 경고등/표시등 안내</a></li>
+								<li><a href="https://www.bmw.co.kr/ko/topics/owners/bmw-premium-service/airport-service.html" target="_blank" title="새창 열림">에어포트 서비스 안내</a></li>
+								<li><a href="http://www.bmw.co.kr/ko/topics/owners/bmw-premium-service/breakdown-and-accident-management.html" target="_blank" title="새창 열림">사고차 긴급출동</a></li>
+								<li><a href="https://www.bmwaftersales.co.kr/" target="_blank" title="새창 열림">BSI 및 Warranty 상품 안내</a></li>
+								<li><a href="http://www.bmw-buildyourdrive.co.kr" target="_blank" title="새창 열림">BMW 오리지널 카 액세서리</a></li><!-- 2017-09-29 수정 -->
+								<li><a href="https://www.bmwmapupdate.co.kr/" target="_blank" title="새창 열림">BMW 네비게이션 맵 다운로드</a></li><!-- //2017-08-10 추가 -->
+								<li><a href="#">M Performance Club</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#">BMW 그룹 공식 딜러</a>
+						<div class="depth2M">
+							<ul>
+								<li><a href="#">전시장</a></li>
+								<li><a href="#">서비스센터</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#">이벤트</a>
+						<div class="depth2M">
+							<ul>
+								<li><a href="#">이벤트</a></li>
+								<li><a href="#">캠페인</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#">고객센터</a>
+						<div class="depth2M">
+							<ul>
+								<li><a href="#">서비스 FAQ</a></li>
+								<li><a href="#">1:1문의</a></li>
+								<li><a href="#">약관</a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</nav><!-- //gnb -->
+			<a href="#" class="btnClose">서브메뉴 닫기</a>
+			<div class="utilMenu">
+				<!-- 로그인 전 -->
+				<ul>
+					<li><a href="#" class="btnLogin">로그인</a></li>
+					<li><a href="#" class="btnJoin">회원가입</a></li>
+					<li><a href="#" class="btnSitemap">사이트맵</a></li>
+				</ul>
+				<!-- //로그인 전 -->
+				<!-- 로그인 후
+				<ul>
+					<li><a href="#" class="btnLogout">로그아웃</a></li>
+					<li><a href="#" class="btnMy">MY BMW</a></li>
+					<li><a href="#" class="btnSitemap">사이트맵</a></li>
+				</ul>
+				//로그인 후 -->
+			</div><!-- //utilMenu -->
+		</div>
+	</header>
+
+	<!-- 스크롤시 탑에 붙는 영역 -->
+	<aside class="stickyWrap" style="display:none">
+		<div class="stickyMenu">
+			<div class="linkList">
+				<a href="#">바로가기</a>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">실시간 예약</a></li>
+					<li><a href="#">예약 관리</a></li>
+					<li><a href="#">차량 등록</a></li>
+					<li><a href="#">BMW 그룹 공식 딜러</a></li>
+					<li><a href="#">서비스 FAQ</a></li>
+					<li><a href="#">1:1 문의</a></li>
+				</ul>
+			</div>
+		</div>
+	</aside>
+	<!-- //스크롤시 탑에 붙는 영역 -->
+
+	<section class="container">
+		<div id="contents" class="contents">
+			<div class="main">
+				<h1 class="hidden">BMW Plus</h1>
+				<div class="mSlider">
+					<div class="slider"><!-- //슬라이드 개수가 한개일 때 only 클래스 추가 -->
+						<div class="sliderNav">
+							<div class="navWrap"><a href="#" class="on">1</a><a href="#">2</a></div><!-- //sCon의 갯수만큼 필요 / 현재 활성화된 슬라이드에 맞게 class="on" 추가 필요 / 클릭시 해당 슬라이드로 이동 -->
+						</div>
+						<div class="sliderCon">
+							<button type="button" class="btnPrev">이전</button>
+							<ul class="sliderWrap"><!-- //width 값 : sCon의 width * sCon의 개수 -->
+								<li class="sCon" style="background:url(../images/bg_main_pixel1.png) repeat-x"><!-- //관리자에서 등록된 픽셀이미지 적용 -->
+									<a href="#" style="background:url(../images/bg_main_img1.png) repeat-x"><!-- //관리자에서 등록된 배경이미지 적용 -->
+										<span class="img"><img src="../images/test.jpg" alt=""></span>
+									</a>
+								</li>
+								<li class="sCon" style="background:url(../images/bg_main_pixel2.png) repeat-x"><!-- //관리자에서 등록된 픽셀이미지 적용 -->
+									<a href="#" style="background:url(../images/bg_main_img2.png) repeat-x"><!-- //관리자에서 등록된 배경이미지 적용 -->
+										<span class="img"><img src="../images/test.jpg" alt=""></span>
+									</a>
+								</li>
+							</ul>
+							<button type="button" class="btnNext">다음</button>
+						</div>
+					</div>
+				</div><!-- //mSlider -->
+
+				<div class="contArea">
+					<article class="linkWrap">
+						<h2 class="hidden">주요링크</h2>
+						<!-- 2017-08-29 수정 -->
+						<ul>
+							<li><a href="#">
+								<strong>차량등록</strong>
+								<em class="overArea">차량을 등록하여<br>다양한 A/S서비스를<br>이용하세요</em>
+							</a></li>
+							<li><a href="#">
+								<strong>서비스예약</strong>
+								<em class="overArea">온라인으로<br>정비서비스를<br>예약할 수 있습니다</em>
+							</a></li>
+							<li><a href="#">
+								<strong>예약관리</strong>
+								<em class="overArea">BMW Plus에서<br>예약하신 정보를<br>확인할 수 있습니다</em>
+							</a></li>
+							<!-- 2018-07-18 수정 -->
+							<li><a href="#">
+								<strong>쿠폰정보</strong>
+								<em class="overArea">보유하신 쿠폰을<br>확인할 수 있습니다.</em>
+							</a></li>
+							<!-- //2018-07-18 수정 -->
+							<li><a href="#">
+								<strong>캠페인</strong>
+								<em class="overArea">BMW에서 제공하는<br>다양한 캠페인 혜택을<br>받아보세요</em>
+							</a></li>
+							<!-- 2018-07-18 수정 -->
+							<li><a href="#">
+								<strong>에어포트</strong>
+								<em class="overArea">프리미엄 서비스,<br>여행 중에도<br>부담 없이 만나세요.</em>
+							</a></li>
+							<!-- //2018-07-18 수정 -->
+						</ul>
+						<!-- //2017-08-29 수정 -->
+					</article><!-- //linkWrap -->
+
+					<article class="evtSlider">
+						<h2 class="hidden">이벤트</h2>
+						<div class="slider">
+							<div class="sliderNav">
+								<div class="navWrap"><a href="#" class="on">1</a><a href="#">2</a><a href="#">3</a></div><!-- //sCon의 갯수만큼 필요 / 현재 활성화된 슬라이드에 맞게 class="on" 추가 필요 / 클릭시 해당 슬라이드로 이동 -->
+							</div>
+							<div class="sliderCon">
+								<button type="button" class="btnPrev">이전</button>
+								<ul class="sliderWrap"><!-- //width 값 : sCon의 width * sCon의 개수 -->
+									<li class="sCon"><a href="#"><img src="../images/temp/img_main_event1.jpg" alt="이미지에 포함된 텍스트 모두 필요"></a></li>
+									<li class="sCon"><a href="#"><img src="../images/temp/img_main_event2.jpg" alt="이미지에 포함된 텍스트 모두 필요"></a></li>
+									<li class="sCon"><a href="#"><img src="../images/temp/img_main_event3.jpg" alt="이미지에 포함된 텍스트 모두 필요"></a></li>
+								</ul>
+								<button type="button" class="btnNext">다음</button>
+							</div>
+						</div>
+					</article><!-- //evtSlider -->
+
+					<article class="drLink">
+						<h2 class="hidden">바로가기</h2>
+						<ul>
+							<li>
+								<span class="img"><img src="../images/img_main_directlink1.jpg" alt=""></span>
+								<strong class="tit">사고차 긴급출동</strong>
+								<p class="txt">BMW 긴급출동 및 사고차량 지원 서비스</p>
+								<a href="#" class="arrLinkL">바로가기</a>
+							</li>
+							<li>
+								<span class="img"><img src="../images/img_main_directlink2.jpg" alt=""></span>
+								<strong class="tit">BMW 오리지널 카 액세서리</strong><!-- 2017-09-29 수정 -->
+								<p class="txt">BMW 오리지널 부품의 가격을 투명하게 제공합니다.</p>
+								<a href="#" class="arrLinkL">바로가기</a>
+							</li>
+							<li>
+								<span class="img"><img src="../images/img_main_directlink3.jpg" alt=""></span>
+								<strong class="tit">BSI 및 WARRANTY 상품 안내</strong>
+								<p class="txt">합리적 가격으로 완성된 BMW 서비스 패키지</p>
+								<a href="#" class="arrLinkL">바로가기</a>
+							</li>
+							<li>
+								<span class="img"><img src="../images/img_main_directlink4.jpg" alt=""></span>
+								<strong class="tit">BMW 드라이빙 센터</strong>
+								<p class="txt">전세계 최초의 드라이빙 센터, 드라이빙 그 이상의 즐거움을 느껴보십시오.</p>
+								<a href="#" target="_blank" title="새창 열림" class="arrLinkL">바로가기</a>
+							</li>
+							<li>
+								<span class="img"><img src="../images/img_main_directlink5.jpg" alt=""></span>
+								<strong class="tit">BMW 네비게이션 맵 다운로드</strong>
+								<p class="txt">최신 버전의 네비게이션 맵을 업데이트 하실 수 있습니다.</p>
+								<a href="#" class="arrLinkL">바로가기</a>
+							</li>
+							<!-- 2017-09-01 수정 -->
+							<li>
+								<span class="img"><img src="../images/img_main_directlink6.jpg" alt=""></span>
+								<strong class="tit">BMW Recall 대상차량 확인</strong>
+								<p class="txt">소유하신 차량에 대한 RECALL 정보 조회가 가능합니다.</p>
+								<a href="#" target="_blank" title="새창 열림" class="arrLinkL">바로가기</a>
+							</li>
+							<!-- //2017-09-01 수정 -->
+						</ul>
+					</article>
+				</div>
+			</div><!-- //main -->
+		</div>
+		<!-- //contents -->
+	</section>
+	<!-- //container -->
+
+	<footer>
+		<div class="ftWrap">
+			<div class="linkWrap clearfix">
+				<div class="leftCon">
+					<a href="#">서비스 이용약관</a>
+					<a href="#">개인정보처리방침</a>
+				</div>
+				<div class="rightCon">
+					<!-- <em class="tel">080-269-2200</em> // 삭제 -->
+					<div class="sns">
+						<a href="#" class="fb" target="_blank" title="BMW Facebook 새창 열림">Facebook</a>
+						<a href="#" class="insta" target="_blank" title="BMW Instagram 새창 열림">Instagram</a>
+					</div>
+				</div>
+			</div>
+			<div class="ftCont">
+				<p class="copy">&copy; BMW Group Korea All rights reserved.</p>
+				<div class="fmSite">
+					<a href="#">Family site</a><!-- //버튼을 클릭하면 fmSite에 on 클래스가 추가됨 -->
+					<ul>
+						<li><a href="https://www.bmw.co.kr/ko/index.html" target="_blank" title="새창 열림">BMW 코리아</a></li>
+						<li><a href="https://www.mini.co.kr/ko_KR/home.html" target="_blank" title="새창 열림">MINI 코리아</a></li>
+						<li><a href="http://www.bmwfs.co.kr/" target="_blank" title="새창 열림">BMW 파이낸셜 서비스 코리아</a></li>
+						<li><a href="http://www.bps.co.kr/index.do" target="_blank" title="새창 열림">BPS</a></li>
+						<li><a href="https://www.bmw-motorrad.co.kr" target="_blank" title="새창 열림">BMW 모토라드</a></li><!-- Modify 19.04.29 -->
+						<li><a href="http://www.bmw-driving-center.co.kr/" target="_blank" title="새창 열림">BMW 드라이빙 센터</a></li>
+						<li><a href="http://www.bmwkoreafuturefund.co.kr/" target="_blank" title="새창 열림">BMW 코리아 미래재단</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+</div><!-- //wrap -->
+
+<!-- script include -->
+<script src="../js/jquery-3.1.0.min.js"></script>
+<script src="../js/jquery-ui.min.js"></script>
+<script src="../js/common.js"></script>
+
+</body>
+</html>

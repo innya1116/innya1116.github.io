@@ -1,0 +1,191 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="shortcut icon" href="../images/favicon.ico">
+<title>에어포트 서비스 | BMW Plus</title>
+<link href="../css/common.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div class="skipNav"><a href="#contents">본문으로 바로가기</a></div>
+
+<div class="wrap">
+	<header>
+		<img src="../images/temp/dummy_header.gif" alt=""><!-- 임시이미지 -->
+	</header>
+
+	<section class="container">
+		<div id="contents" class="contents">
+			<div class="titArea"><h1>에어포트 서비스 예약</h1></div>
+			<!-- step -->
+			<div class="step">
+				<ol class="status">
+					<li class="passed">1<span class="hidden">단계 - 현재 단계</span></li><!-- 현재 스텝 class="ing" | 지나간 스텝 class="passed" -->
+					<li class="passed">2<span class="hidden">단계</span></li>
+					<li class="ing">3<span class="hidden">단계</span></li>
+				</ol>
+				<h2 class="stepTit">예약 정보 확인</h2>
+			</div>
+			<!-- //step -->
+			<div class="contArea">
+				<h3 class="conTit1">예약정보</h3>
+				<ul class="infoTable reserInfo">
+					<li><em>고객명</em><span>홍길동</span></li>
+					<li><em>인원</em><span>4명</span></li>
+					<li><em>예약차량</em><span>MINI JCW</span></li>
+					<li><em>예약일시</em>
+						<span>
+							센터 방문 :<br>2018-08-12 10:00<br><span class="terminal">(제 1터미널)</span>
+							<span class="a">귀국 :<br>2018-08-21 10:00<br><span class="terminal">(제 2터미널)</span></span>
+						</span>
+					</li>
+					<li><em>항공정보</em>
+						<span>
+							출국편 : ZX888
+							<span class="a">귀국편 : ZX888</span>
+						</span>
+					</li>
+					<li><em>추가요청 사항</em>
+						<div>
+							<ul class="chkList">
+								<li>일반점검(BSI/MSI)</li>
+								<li>엔진오일</li>
+								<li>브레이크 오일</li>
+								<li>에어필터 / 마이크로 필터</li>
+								<li>브레이크 디스크 / 브레이크 패드</li>
+								<li>스파크 플러그 / 연료 필터</li>
+								<li>와이퍼 블레이드</li>
+							</ul>
+						</div>
+					</li>
+					<li class="dpB">
+						<div class="dpT"><em>방문 센터</em><span>BMW 드라이빙 센터 패스트레인 서비스 센터 (바바리안 모터스)</span></div><!-- 수정 2018-06-21 -->
+						<div class="mapInfo">
+							<div class="mapArea">
+								<!-- 지도 출력 영역 -->
+								<img src="../images/temp/dummy_map.gif" alt="" style="width:100%"><!-- 더미이미지 -->
+							</div>
+							<ul class="ctInfo">
+								<li class="addr"><em>주소</em>서울특별시 서초구 양재대로11길 36<br>서울 오토갤러리 금관 1층</li>
+								<li class="tel"><em>전화번호</em><a href="tel:02-586-3331">02-586-3331</a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+
+			<!-- 하단 고정 버튼 -->
+			<div class="fixedBtn stepType">
+				<span><a href="#">이전</a></span>
+				<span><a href="#">예약완료</a></span>
+			</div>
+			<!-- //하단 고정 버튼 -->
+		</div>
+		<!-- //contents -->
+	</section>
+	<!-- //container -->
+
+	<footer>
+		<img src="../images/temp/dummy_footer.gif" alt=""><!-- 임시이미지 -->
+	</footer>
+</div><!-- //wrap -->
+
+<div class="lyDim" style="display:bl ock"><!-- back 영역 --></div><!-- layer Dim 영역 -->
+<!-- 레이어팝업 : 출발일 -->
+<section id="lyStartDay" class="layerPop fullType dateSelect">
+	<div class="popWrap">
+		<h1 class="popTit">출국 일정</h1>
+		<div class="popCon">
+			<div class="contArea">
+				<div class="calendarWrap inPage">
+					<!-- 캘린더 출력 영역 -->
+				</div>
+				<div class="selectBox reverse mgt2">
+					<select title="시간 선택">
+						<option value="">09:00</option>
+						<option value="">09:20</option>
+						<option value="">09:40</option>
+						<option value="" disabled>10:00</option>
+						<option value="">10:20</option>
+						<option value="">10:40</option>
+						<option value="">13:00</option>
+						<option value="">13:20</option>
+						<option value="">13:40</option>
+						<option value="">14:00</option>
+						<option value="">14:20</option>
+						<option value="">14:40</option>
+						<option value="">15:00</option>
+						<option value="">15:20</option>
+						<option value="">15:40</option>
+						<option value="">16:00</option>
+						<option value="">16:20</option>
+						<option value="">16:40</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		<button type="button" class="btnClose">닫기</button>
+	</div>
+</section>
+<!-- //레이어팝업 : 출발일 -->
+
+<!-- 레이어팝업 : 귀국일 -->
+<section id="lyEndDay" class="layerPop fullType dateSelect">
+	<div class="popWrap">
+		<h1 class="popTit">귀국 일정</h1>
+		<div class="popCon">
+			<div class="contArea">
+				<div class="calendarWrap inPage">
+					<!-- 캘린더 출력 영역 -->
+				</div>
+				<div class="selectBox reverse mgt2">
+					<select title="시간 선택">
+						<option value="">09:00</option>
+						<option value="">09:20</option>
+						<option value="">09:40</option>
+						<option value="" disabled>10:00</option>
+						<option value="">10:20</option>
+						<option value="">10:40</option>
+						<option value="">13:00</option>
+						<option value="">13:20</option>
+						<option value="">13:40</option>
+						<option value="">14:00</option>
+						<option value="">14:20</option>
+						<option value="">14:40</option>
+						<option value="">15:00</option>
+						<option value="">15:20</option>
+						<option value="">15:40</option>
+						<option value="">16:00</option>
+						<option value="">16:20</option>
+						<option value="">16:40</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		<button type="button" class="btnClose">닫기</button>
+	</div>
+</section>
+<!-- //레이어팝업 : 귀국일 -->
+
+<!-- script include -->
+<script src="../js/jquery-3.1.0.min.js"></script>
+<script src="../js/jquery-ui.min.js"></script>
+<script src="../js/common.js"></script>
+<script>
+	// disabled 시킬 날짜 배열
+	var disableDay = [
+		'2017.06.26',
+		'2017.06.28'
+	];
+	
+	// 날짜 input에 날짜 배열 저장
+	//datepicker안 beforeShowDay속성에서 disableDay배열을 날짜들과 비교하여 존재하면 disabled
+	$('.calendarCol2').find('.calendarWrap>input').data('disableDay', disableDay);
+	
+</script>
+</body>
+</html>

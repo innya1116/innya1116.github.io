@@ -1,0 +1,154 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 8]><html class="lt-ie7" lang="ko"><![endif]-->
+<!--[if IE 8]><html class="lt-ie8" lang="ko"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="ko"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>우편번호 찾기 | 보람상조 관리자</title>
+<link href="./css/admin.css" rel="stylesheet" type="text/css">
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<p id="gotoContents"><a href="#container">본문으로 바로가기</a></p>
+
+<div class="popWrap">
+	<header class="popHeader">
+		<h1>우편번호 찾기</h1>
+	</header>
+
+	<div id="container" class="popCont zipCode">
+
+		<div class="radWrap">
+			<input type="radio" id="searchType1"><label for="searchType1">도로명+건물번호</label>
+			<input type="radio" id="searchType2"><label for="searchType2">동(읍/면)+지번</label>
+			<input type="radio" id="searchType3"><label for="searchType3">건물명(아파트명)</label>
+		</div>
+
+		<!-- 도로명 -->
+		<div class="searchCode">
+			<span class="tit">도로명</span>
+			<input type="text" class="inpTxt" title="도로명">
+			<input type="text" class="inpTxt" title="건물번호">
+			<a href="#" class="btnType1">검색</a>
+			<p class="descTxt2">예) 테헤란로 151 → 테헤란로(도로명) + 151(건물번호)</p>
+		</div>
+		<!-- //도로명 -->
+
+		<!-- 지번 -->
+		<div class="searchCode">
+			<span class="tit">동(읍/면)</span>
+			<input type="text" class="inpTxt" title="동(읍/면)명">
+			<input type="text" class="inpTxt" title="지번">
+			<a href="#" class="btnType1">검색</a>
+			<p class="descTxt2">예) 역삼동 642-19 → 역삼(동명) + 642-19(지번)</p>
+		</div>
+		<!-- //지번 -->
+
+		<!-- 건물명 -->
+		<div class="searchCode">
+			<div>
+				<span class="tit">시도</span>
+				<select title="시도" style="width:110px">
+					<option value="" selected>전체</option>
+					<option value="">서울</option>
+					<option value="">부산</option>
+					<option value="">대구</option>
+					<option value="">인천</option>
+					<option value="">광주</option>
+					<option value="">대전</option>
+					<option value="">울산</option>
+					<option value="">세종</option>
+					<option value="">경기</option>
+					<option value="">강원</option>
+					<option value="">충북</option>
+					<option value="">충남</option>
+					<option value="">전북</option>
+					<option value="">전남</option>
+					<option value="">경북</option>
+					<option value="">경남</option>
+					<option value="">제주</option>
+				</select>
+				<span class="tit1">시군구</span>
+				<select title="시군구" style="width:114px">
+					<option value="" selected>전체</option>
+					<option value="">시군구1</option>
+					<option value="">시군구2</option>
+					<option value="">시군구3</option>
+				</select>
+			</div>
+			<div class="marT10">
+				<span class="tit">건물명</span>
+				<input type="text" class="inpTxt" title="건물명" style="width:208px">
+				<a href="#" class="btnType1">검색</a>
+				<p class="descTxt2">예) '서울특별시' '강남구' 선택 후 역삼하이츠 (건물명)</p>
+			</div>
+		</div>
+		<!-- //건물명 -->
+
+		<!-- 검색결과 -->
+		<div class="resultCodelist marT30">
+			<ul>
+				<li><a href="#">
+					<span class="addrTxt">
+						서울특별시 강남구 테헤란로 151-0
+						<br>
+						(역삼동, 역삼 하이츠 빌딩)
+					</span>
+					<span class="addrCode">
+						135-981
+					</span>
+				</a></li>
+				<li class="on"><a href="#"><!-- //선택된 항목 li에 class="on" 추가 -->
+					<span class="addrTxt">
+						서울특별시 강남구 테헤란로 151-0
+						<br>
+						(역삼동, 역삼 하이츠 빌딩)
+					</span>
+					<span class="addrCode">
+						135-981
+					</span>
+				</a></li>
+				<li><a href="#">
+					<span class="addrTxt">
+						서울특별시 강남구 테헤란로 151-0
+						<br>
+						(역삼동, 역삼 하이츠 빌딩)
+					</span>
+					<span class="addrCode">
+						135-981
+					</span>
+				</a></li>
+				<li><a href="#">
+					<span class="addrTxt">
+						서울특별시 강남구 테헤란로 151-0
+						<br>
+						(역삼동, 역삼 하이츠 빌딩)
+					</span>
+					<span class="addrCode">
+						135-981
+					</span>
+				</a></li>
+				<!-- 검색 결과가 없을 경우 -->
+				<li class="noResult">
+					<p class="noTxt">
+						<em>'이호동'</em>에 대한 검색 결과가 없습니다.<br>
+						지역명을 다시 입력해주세요.
+					</p>
+				</li>
+				<!-- //검색 결과가 없을 경우 -->
+			</ul>
+		</div>
+		<!-- //검색결과 -->
+
+	</div>
+
+	<footer class="popFooter">
+		<a href="#" class="btnType2">확인</a>
+	</footer>
+</div>
+</body>
+</html>

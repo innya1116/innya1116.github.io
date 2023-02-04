@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>관리자 | BMW Plus</title>
+<link href="../css/admin.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<p id="gotoContents"><a href="#container">본문으로 바로가기</a></p>
+
+<div id="wrapper" class="wrapper">
+	<div id="header" class="header">
+		<div class="headWrap">
+			<img src="../img/@dummy_header.gif" alt="">
+		</div>		
+	</div><!-- // end header -->
+	<hr>
+	
+	<div id="container" class="container">
+		<div id="snb" class="snb">
+			<img src="../img/@dummy_snb.gif" alt="">
+		</div><!-- // end snb -->
+		
+		<div id="contents" class="contents">
+			<div class="location">
+				<a href="#" class="home">HOME</a> > 
+				<a href="#">Push 관리</a> > 
+				<strong>Push 메시지</strong>
+			</div>
+			
+			<h1>Push 메시지</h1>
+			<h2>메시지 작성</h2>
+			<div class="tableType2">
+				<table>
+					<caption>메시지 작성</caption>
+					<colgroup><col style="width:15%"><col style="width:50%"><col style="width:15%"><col></colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">제목</th>
+							<td>
+								<input type="text" class="fullInp" title="제목" placeholder="제목은 10자 미만으로 입력해주세요.">
+							</td>
+							<th scope="row">종류</th>
+							<td>
+								<select title="종류" style="width:100%">
+									<option value="">공지</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">회망배송일시</th>
+							<td colspan="3">
+								<input type="text" style="width:150px" title="배송일">
+								<a href="#" class="btnCalendar"><img src="../img/calendar.gif" alt="날짜입력"></a>
+								<select title="시" class="ml10" style="width:70px">
+									<option value="">09</option>
+								</select>
+								시
+								<select title="분" class="ml10" style="width:70px">
+									<option value="">01</option>
+								</select>
+								분
+								<input type="checkbox" id="currNow" class="ml20"><label for="currNow">즉시발송</label>
+								<div class="mt10">
+									<p class="txtInfo">실제 도달시간은 회원별로 차이가 날 수 있습니다.</p>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">내용</th>
+							<td colspan="3">
+								<textarea style="height:100px" placeholder="본문은 100자 미만으로 입력해주세요."></textarea>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">대상자 선택</th>
+							<td colspan="3" class="targetUser">
+								<div>
+									<input type="radio" name="rd1" id="rd11"><label for="rd11">회원DB에서 선택</label>
+									<span class="selectInfo">총 500명 선택
+										<a href="#" class="edit" title="수정">수정</a>
+										<a href="#" class="del" title="삭제">삭제</a>
+									</span>
+								</div>
+								<div class="mt10">
+									<input type="radio" name="rd1" id="rd12"><label for="rd12">차대번호(엑셀) 업로드</label>
+									<a href="#" class="btnS cGray">찾기</a>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div class="infoBox">
+				<p>본문에서 변수처리가 가능합니다.</p>
+				<ul class="mt5">
+					<li>- 회원이름 : ;%member;</li>
+					<li>- 이메일 : ;%email;</li>
+					<li>- 차대번호 : ;%vin;</li>
+					<li>- 차량번호 : ;%num;</li>
+				</ul>
+				<div class="mt20">회원의 이름을 출력할 경우 ‘;%member;’으로 넣으면, 해당 회원이름이 자동으로 선택되어 전송됩니다.
+					<p class="mt5">예) ;%member;님 안녕하세요? ;%member;님의 차량(차대번호: ;%vin;)이 현재 리콜 대상입니다.<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;→ 홍길동님 안녕하세요? 홍길동님의 차량(차대번호 : 2017AJ1234567)이 현재 리콜 대상입니다.</p>
+				</div>
+				<p class="mt20">샘플 전송시, 등록된 사람에게만 전송 됩니다.</p>
+			</div>
+			
+			<div class="btnBox tR">
+				<div class="lBtn">
+					<a href="#" class="btnM cGray">임시저장</a>
+					<a href="#" class="btnM cWhite">취소</a>
+				</div>
+				<a href="#" class="btnM cGray">테스트 전송</a>
+				<a href="#" class="btnM">전송</a>
+			</div>
+
+		</div><!-- // end contents -->
+	</div>
+
+	<div id="footer" class="footer">
+		<div class="footArea">
+			<p class="copyright">© <strong>BMW Group Korea</strong> All rights reserved.</p>
+		</div>
+	</div><!-- // end footer -->
+	
+</div><!-- // end wrapper -->
+
+<!-- script include -->
+<script src="../js/jquery-3.1.0.min.js"></script>
+<script src="../js/common.js"></script>
+
+</body>
+</html>
+

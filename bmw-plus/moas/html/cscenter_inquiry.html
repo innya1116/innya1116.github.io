@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="shortcut icon" href="../images/favicon.ico">
+<title>1:1문의 | BMW Plus</title>
+<link href="../css/common.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div class="skipNav"><a href="#contents">본문으로 바로가기</a></div>
+
+<div class="wrap">
+	<header>
+		<img src="../images/temp/dummy_header.gif" alt=""><!-- 임시이미지 -->
+	</header>
+
+	<section class="container">
+		<div id="contents" class="contents">
+			<div class="titArea"><h1>1:1문의</h1></div><!-- //수정 2017-07-06 -->
+			<div class="contArea tpd">
+				<p class="listDot">BMW 고객센터로 1:1 문의를 하실 수 있습니다.<br>문의하신 내용의 답변은 고객님의 이메일로 발송됩니다.</p><!-- 2017-10-11 문구 수정 -->
+				
+				<ul class="formList inquiry">
+					<li>
+						<div class="rdWrap">
+							<span class="rdChk"><input type="radio" name="emailInpType" id="emailInpType1" checked><label for="emailInpType1"><span>기본이메일</span></label></span>
+							<span class="rdChk"><input type="radio" name="emailInpType" id="emailInpType2"><label for="emailInpType2"><span>직접입력</span></label></span>
+						</div>
+					</li>
+					<!-- 기본이메일일 경우 -->
+					<li>
+						<div class="wrapInp disabled">
+							<input type="email" id="emailAddr1" value="abc123@bmw.com" disabled>
+							<label for="emailAddr1">답변 받을 이메일</label>
+						</div>
+					</li>
+					<!-- //기본이메일일 경우 -->
+					<!-- 직접입력일 경우 -->
+					<li>
+						<div class="wrapInp">
+							<input type="email" id="emailAddr2">
+							<label for="emailAddr2">답변 받을 이메일</label>
+						</div>
+					</li>
+					<!-- //직접입력일 경우 -->
+					<li>
+						<div class="selectBox">
+							<select title="문의유형">
+								<option value="">차량등록관련</option>
+								<option value="">예약신청관련</option>
+								<option value="">딜러찾기관련</option>
+								<option value="">이용방법</option>
+								<option value="">차량일반</option>
+							</select>
+						</div>
+					</li>
+					<li>
+						<div class="wrapInp">
+							<input type="text" id="inquiryTit">
+							<label for="inquiryTit">제목</label>
+						</div>
+					</li>
+					<li>
+						<div class="taWrap">
+							<textarea title="문의 내용" placeholder="내용을 입력해 주세요." style="height:130px"></textarea>
+							<p class="taT"><em class="fCol1">0</em> / 500</p>
+						</div>
+					</li>
+				</ul>
+				<p class="txt">BMW 고객센터 (080-269-2200)</p><!-- 2017-10-11 추가 -->
+				<div class="btnBox"><a href="#" class="btnL">문의하기</a></div>
+			</div>
+		</div>
+		<!-- //contents -->
+	</section>
+	<!-- //container -->
+
+	<footer>
+		<img src="../images/temp/dummy_footer.gif" alt=""><!-- 임시이미지 -->
+	</footer>
+</div><!-- //wrap -->
+
+<!-- script include -->
+<script src="../js/jquery-3.1.0.min.js"></script>
+<script src="../js/jquery-ui.min.js"></script>
+<script src="../js/common.js"></script>
+
+</body>
+</html>

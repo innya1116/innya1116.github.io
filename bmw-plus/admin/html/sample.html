@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>관리자 | BMW Plus</title>
+<link href="../css/admin.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<p id="gotoContents"><a href="#container">본문으로 바로가기</a></p>
+
+<div id="wrapper" class="wrapper">
+	<div id="header" class="header">
+		<div class="headWrap">
+			<img src="../img/@dummy_header.gif" alt="">
+		</div>		
+	</div><!-- // end header -->
+	<hr>
+	
+	<div id="container" class="container">
+		<div id="snb" class="snb">
+			<img src="../img/@dummy_snb.gif" alt="">
+		</div><!-- // end snb -->
+		
+		<div id="contents" class="contents">
+			<div class="location">
+				<a href="#" class="home">HOME</a> > 
+				<a href="#">1depth</a> >
+				<strong>현재페이지</strong>
+			</div>
+			
+			<h1>현재페이지</h1>
+
+			<h2>레이어팝업 띄우기</h2>
+			<a href="#lyID" class="btnS layerOpen" onclick="commonJs.popShow($('#lyID'))">레이어팝업 오픈</a>
+
+			<h2 class="mt30">탭</h2>
+
+			<ul class="topTab">
+				<li class="on"><a href="#">탭메뉴</a></li><!-- //활성화 되는 탭 li class="on" 추가 -->
+				<li><a href="#">탭메뉴</a></li>
+				<li><a href="#">탭메뉴</a></li>
+			</ul>
+
+			<h2 class="mt30">버튼</h2>
+
+			<div>
+
+			<a href="#" class="btnM">기본버튼</a>
+			<a href="#" class="btnM cWhite">기본버튼(화이트)</a>
+			<a href="#" class="btnM cGray">기본버튼(그레이)</a>
+
+			</div>
+			<br>
+			<div>
+
+			<a href="#" class="btnS">작은버튼</a>
+			<a href="#" class="btnS cWhite">작은버튼(화이트)</a>
+			<a href="#" class="btnS cGray">작은버튼(그레이)</a>
+
+			</div>
+			<br>
+			<div class="btnBox">
+				<a href="#" class="btnM">div class="btnBox" 기본정렬</a>
+			</div>
+
+			<h2 class="mt30">테이블(tableType1)</h2>
+			<div class="tableType1">
+				<table>
+					<caption>조회 결과</caption>
+					<colgroup><col style="width:11%"><col><col style="width:11%" span="7"></colgroup>
+					<thead>
+						<tr>
+							<th scope="col">날짜</th>
+							<th scope="col">총 건수</th>
+							<th scope="col">정기점검</th>
+							<th scope="col">엔진오일</th>
+							<th scope="col">브레이크 오일</th>
+							<th scope="col">에어필터 / 마이크로 필터</th>
+							<th scope="col">브레이크 디스크 / 브레이크 패드</th>
+							<th scope="col">스파크 플러그 / 연료 필터</th>
+							<th scope="col">와이퍼 블레이드</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row">2017-05-01</th>
+							<td>121</td>
+							<td>60</td>
+							<td>61</td>
+							<td>10</td>
+							<td>10</td>
+							<td>20</td>
+							<td>20</td>
+							<td>20</td>
+						</tr>
+						<tr>
+							<th scope="row">2017-05-02</th>
+							<td>999,999</td>
+							<td>160</td>
+							<td>161</td>
+							<td>110</td>
+							<td>110</td>
+							<td>120</td>
+							<td>130</td>
+							<td>130</td>
+						</tr>
+						<tr>
+							<th scope="row">2017-05-03</th>
+							<td>999,999</td>
+							<td>160</td>
+							<td>161</td>
+							<td>110</td>
+							<td>110</td>
+							<td>120</td>
+							<td>130</td>
+							<td>130</td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<th scope="row">합계</th>
+							<td>999,999</td>
+							<td>160</td>
+							<td>161</td>
+							<td>110</td>
+							<td>110</td>
+							<td>120</td>
+							<td>130</td>
+							<td>130</td>
+						</tr>
+					</tfoot>
+				</table>
+			</div>
+
+			<h2 class="mt30">테이블(tableType2 - thead가 없는 타입)</h2>
+			<div class="tableType2">
+				<table>
+					<caption>조회테이블</caption>
+					<colgroup>
+						<col style="width:20%"><col>
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">항목/input type="text" / </th>
+							<td><input type="text" title="항목" style="width:350px"></td>
+						</tr>
+						<tr>
+							<th scope="row">input type="radio"</th>
+							<td>
+								<input type="radio" name="radio1" id="radio11"><label for="radio11">radio라디오</label>
+								<input type="radio" name="radio1" id="radio12"><label for="radio12">radio라디오</label>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">input type="checkbox"</th>
+							<td>
+								<input type="checkbox" name="chk1" id="chk11"><label for="chk11">checkbox체크박스</label>
+								<input type="checkbox" name="chk1" id="chk12"><label for="chk12">checkbox체크박스</label>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">달력폼</th>
+							<td>
+								<input type="text" style="width:100px" title="날짜입력">
+								<a href="#" class="btnCalendar"><img src="../img/calendar.gif" alt="날짜입력"></a>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">달력폼(기간)</th>
+							<td>
+								<input type="text" style="width:100px" title="시작 날짜입력">
+								<a href="#" class="btnCalendar"><img src="../img/calendar.gif" alt="날짜입력"></a>
+								<span style="margin-right:5px">~</span>
+								<input type="text" style="width:100px" title="끝 날짜입력">
+								<a href="#" class="btnCalendar"><img src="../img/calendar.gif" alt="날짜입력"></a>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">조회</th>
+							<td>
+								<div>
+									<input type="radio" name="dayType" id="dayType1" checked><label for="dayType1">당일</label>
+									<input type="radio" name="dayType" id="dayType2"><label for="dayType2">전일</label>
+									<input type="radio" name="dayType" id="dayType3"><label for="dayType3">최근7일</label>
+									<input type="radio" name="dayType" id="dayType4"><label for="dayType4">전월</label>
+								</div>
+								<div class="mt10">
+									<input type="radio" name="dayType" id="dayType5"><label for="dayType5">기간입력</label>
+									<input type="text" style="width:100px" title="시작 날짜입력">
+									<a href="#" class="btnCalendar"><img src="../img/calendar.gif" alt="날짜선택"></a>
+									<span style="margin-right:5px">~</span>
+									<input type="text" style="width:100px" title="끝 날짜입력">
+									<a href="#" class="btnCalendar"><img src="../img/calendar.gif" alt="날짜선택"></a>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">셀렉트</th>
+							<td>
+								<select title="선택" style="width:200px">
+									<option value="">셀렉트 option</option>
+									<option value="">셀렉트 option</option>
+									<option value="">셀렉트 option</option>
+									<option value="">셀렉트 option</option>
+									<option value="">셀렉트 option</option>
+									<option value="">셀렉트 option</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">파일첨부/input type="file"</th>
+							<td><input type="file" style="width:250px;" title="파일찾기"></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="btnBox"><a href="#" class="btnM">검색</a></div>
+
+			<div class="resultArea">
+				<p class="resultTxt">총 <strong>9,999</strong>건이 검색 되었습니다.</p>
+				<div class="tableType1 minPd">
+					<table>
+						<caption>조회 결과</caption>
+						<colgroup><col style="width:11%"><col><col style="width:11%" span="7"></colgroup>
+						<thead>
+							<tr>
+								<th scope="col">날짜</th>
+								<th scope="col">총 건수</th>
+								<th scope="col">정기점검</th>
+								<th scope="col">엔진오일</th>
+								<th scope="col">브레이크 오일</th>
+								<th scope="col">에어필터 / 마이크로 필터</th>
+								<th scope="col">브레이크 디스크 / 브레이크 패드</th>
+								<th scope="col">스파크 플러그 / 연료 필터</th>
+								<th scope="col">와이퍼 블레이드</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">2017-05-01</th>
+								<td>121</td>
+								<td>60</td>
+								<td>61</td>
+								<td>10</td>
+								<td>10</td>
+								<td>20</td>
+								<td>20</td>
+								<td>20</td>
+							</tr>
+							<tr>
+								<th scope="row">2017-05-02</th>
+								<td>999,999</td>
+								<td>160</td>
+								<td>161</td>
+								<td>110</td>
+								<td>110</td>
+								<td>120</td>
+								<td>130</td>
+								<td>130</td>
+							</tr>
+							<tr>
+								<th scope="row">2017-05-03</th>
+								<td>999,999</td>
+								<td>160</td>
+								<td>161</td>
+								<td>110</td>
+								<td>110</td>
+								<td>120</td>
+								<td>130</td>
+								<td>130</td>
+							</tr>
+						</tbody>
+						<tfoot>
+							<tr>
+								<th scope="row">합계</th>
+								<td>999,999</td>
+								<td>160</td>
+								<td>161</td>
+								<td>110</td>
+								<td>110</td>
+								<td>120</td>
+								<td>130</td>
+								<td>130</td>
+							</tr>
+						</tfoot>
+					</table>
+				</div>
+				<div class="btnBox tR"><a href="#" class="btnS">엑셀 Export</a></div>
+			</div><!-- //resultArea -->
+			
+			<div class="resultArea">
+				<p class="resultTxt">총 <strong>9,999</strong>건이 검색 되었습니다.</p>
+				 <div class="tableType1">
+					<table>
+						<caption>테이블캡션</caption>
+						<colgroup>
+							<col style="width:8%"><col style="width:9%"><col><col style="width:12%"><col style="width:12%">
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">선택</th>
+								<th scope="col">번호</th>
+								<th scope="col">제목</th>
+								<th scope="col">날짜</th>
+								<th scope="col">조회수</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><input type="checkbox" title="현재 열 선택"></td>
+								<td>111</td>
+								<td class="tL"><a href="#">제목입니다.</a></td>
+								<td>2015-04-01</td>
+								<td>9999</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" title="현재 열 선택"></td>
+								<td>111</td>
+								<td class="tL"><a href="#">제목입니다.</a></td>
+								<td>2015-04-01</td>
+								<td>9999</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" title="현재 열 선택"></td>
+								<td>111</td>
+								<td class="tL"><a href="#">제목입니다.</a></td>
+								<td>2015-04-01</td>
+								<td>9999</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" title="현재 열 선택"></td>
+								<td>111</td>
+								<td class="tL"><a href="#">제목입니다.</a></td>
+								<td>2015-04-01</td>
+								<td>9999</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" title="현재 열 선택"></td>
+								<td>111</td>
+								<td class="tL"><a href="#">제목입니다.</a></td>
+								<td>2015-04-01</td>
+								<td>9999</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" title="현재 열 선택"></td>
+								<td>111</td>
+								<td class="tL"><a href="#">제목입니다.</a></td>
+								<td>2015-04-01</td>
+								<td>9999</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" title="현재 열 선택"></td>
+								<td>111</td>
+								<td class="tL"><a href="#">제목입니다.</a></td>
+								<td>2015-04-01</td>
+								<td>9999</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" title="현재 열 선택"></td>
+								<td>111</td>
+								<td class="tL"><a href="#">제목입니다.</a></td>
+								<td>2015-04-01</td>
+								<td>9999</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" title="현재 열 선택"></td>
+								<td>111</td>
+								<td class="tL"><a href="#">제목입니다.</a></td>
+								<td>2015-04-01</td>
+								<td>9999</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" title="현재 열 선택"></td>
+								<td>111</td>
+								<td class="tL"><a href="#">제목입니다.</a></td>
+								<td>2015-04-01</td>
+								<td>9999</td>
+							</tr>
+							<tr>
+								<td class="noData" colspan="5">조회 결과가 없습니다.</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<div class="paging">
+					<a href="#" class="first"><img src="../img/btn_paging_first.gif" alt="처음 페이지"></a><a href="#" class="prev"><img src="../img/btn_paging_prev.gif" alt="이전 페이지"></a><a href="#" class="on">1</a><a href="#">2</a><a href="#">3</a><a href="#">4</a><a href="#">5</a><a href="#">6</a><a href="#">7</a><a href="#">8</a><a href="#">9</a><a href="#">10</a><a href="#" class="next"><img src="../img/btn_paging_next.gif" alt="다음 페이지"></a><a href="#" class="last"><img src="../img/btn_paging_last.gif" alt="마지막 페이지"></a>
+				</div>
+
+				<!-- 페이징이 있을 경우 좌우버튼 -->
+				<div class="bdBbtn dR">
+					<a href="#" class="btnS cGray">오른쪽버튼</a>
+				</div>
+				<div class="bdBbtn dL">
+					<a href="#" class="btnS cGray">왼쪽버튼</a>
+				</div>
+				<!-- //페이징이 있을 경우 좌우버튼 -->
+			</div><!-- //resultArea -->
+		</div><!-- // end contents -->
+	</div>
+
+	<div id="footer" class="footer">
+		<div class="footArea">
+			<p class="copyright">© <strong>BMW Group Korea</strong> All rights reserved.</p>
+		</div>
+	</div><!-- // end footer -->
+	
+</div><!-- // end wrapper -->
+
+<!-- layer popup : 레이어 팝업 -->
+<div class="lyDim"><!-- background --></div>
+<section id="lyID" class="layerPop">
+	<hgroup class="popTit">
+		<h1 class="tit">레이어팝업 타이틀</h1>
+		<a href="#" class="lyClose">닫기</a>
+	</hgroup>
+	<div class="popCont">
+		레이어팝업 콘텐츠
+		<div class="btnBox"><a href="#" class="btnM cGray" onclick="commonJs.popClose($('#lyID'))">닫기</a></div>
+	</div>
+</section>
+<!-- //layer popup : 레이어 팝업 -->
+
+<!-- script include -->
+<script src="../js/jquery-3.1.0.min.js"></script>
+<script src="../js/common.js"></script>
+
+</body>
+</html>
+
