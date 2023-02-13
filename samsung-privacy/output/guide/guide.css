@@ -1,0 +1,235 @@
+.guide {
+  padding: 24px;
+}
+.guide-header {
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 24px;
+  padding-bottom: 0;
+  background: #227aff;
+  z-index: 999;
+}
+.guide-tit1 {
+  color: #fff;
+  font-size: 36px;
+  line-height: 1.2;
+}
+.guide-nav .nav-depth1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  margin: 24px -24px 0;
+  padding: 8px 24px 0;
+  background: rgba(255, 255, 255, 0.7);
+}
+.guide-nav .nav-depth1 a {
+  display: block;
+  padding: 12px 24px;
+  border-radius: 12px 12px 0 0;
+  font-size: 20px;
+}
+.guide-nav .nav-depth1 a.on {
+  background: #fff;
+  font-weight: bold;
+}
+.guide-nav .nav-depth1 a:hover,
+.guide-nav .nav-depth1 a:focus {
+  text-decoration: underline;
+}
+.guide-nav .nav-depth2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 -24px;
+  padding: 16px 24px 8px;
+  background: #fff;
+  -webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);
+}
+.guide-nav .nav-depth2 a {
+  display: block;
+  position: relative;
+  padding: 4px 24px;
+  color: #000;
+  opacity: 0.7;
+}
+.guide-nav .nav-depth2 a:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 1px;
+  height: 16px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background: #ccc;
+}
+.guide-nav .nav-depth2 a:last-child:after {
+  content: none;
+}
+.guide-nav .nav-depth2 a.on {
+  font-weight: bold;
+  text-decoration: underline;
+  opacity: 1;
+}
+.guide-section:not(:first-child) {
+  margin-top: 60px;
+}
+.guide-tit2 {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 24px;
+}
+.guide-tit2 ~ .guide-tit2 {
+  margin-top: 32px;
+}
+.guide-tit3 {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+.guide-tit3 ~ .guide-tit3 {
+  margin-top: 24px;
+}
+.guide-info-list li {
+  padding-left: 10px;
+  text-indent: -10px;
+}
+.guide-info-list li:not(:first-child) {
+  margin-top: 4px;
+}
+.guide-info-list li:before {
+  content: '- ';
+}
+.guide .filelist {
+  width: 100%;
+  counter-reset: row-number;
+}
+.guide .filelist th,
+.guide .filelist td {
+  padding: 8px 4px;
+  border: 1px solid #ccc;
+}
+.guide .filelist thead th {
+  background: #eee;
+}
+.guide .filelist tbody tr {
+  counter-increment: row-number;
+}
+.guide .filelist tbody tr:hover {
+  background: #f4f7f8;
+}
+.guide .filelist tbody tr td:first-child::before {
+  content: counter(row-number);
+}
+.guide .filelist tbody tr td:first-child,
+.guide .filelist tbody tr td:nth-child(2),
+.guide .filelist tbody tr td:nth-last-child(2),
+.guide .filelist tbody tr td:nth-last-child(3) {
+  text-align: center;
+}
+.guide .filelist tbody tr.del td {
+  background: #efefef;
+  text-decoration: line-through;
+}
+.guide .filelist tbody tr.del td,
+.guide .filelist tbody tr.del td a {
+  color: #999;
+}
+.guide__icons {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+}
+.guide__icons div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.guide__icons > div:not(:first-child) {
+  width: 150px;
+}
+.guide__icons .icon {
+  width: 100%;
+  height: 60px;
+}
+.guide__icons .icon + span {
+  display: block;
+}
+.guide table {
+  width: 100%;
+  border-top: 1px solid #ccc;
+}
+.guide table th,
+.guide table td {
+  padding: 8px;
+  color: #111;
+  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  font-size: 14px;
+}
+.guide table th:last-child,
+.guide table td:last-child {
+  border-right: none;
+}
+.guide table th {
+  font-weight: 500;
+  background: #f8f8f8;
+}
+.guide .code {
+  overflow: auto;
+  margin-top: 10px;
+  padding: 10px;
+  background: #212121;
+  color: #ccc;
+  font-size: 14px;
+  font-family: Consolas, 'SamsungOneKorean', monospace;
+  white-space: pre-wrap;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+.guide .code-wrap {
+  position: relative;
+  margin-top: 24px;
+}
+.guide .code-wrap:after {
+  content: '[markup code]';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 6px 16px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  background: #000;
+  border: 1px solid #fff;
+  text-transform: uppercase;
+}
+.guide .code-wrap .code {
+  padding-top: 48px;
+}
+.guide .code i {
+  color: #72bb78;
+}
+.guide .code b {
+  color: #ff0;
+}
