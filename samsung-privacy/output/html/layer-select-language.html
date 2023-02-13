@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" sizes="16x16" href="../images/favicon_16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../images/favicon_32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="../images/favicon_48.png">
+<title>언어 선택 | Samsung Privacy</title>
+<!-- css link -->
+<link rel="stylesheet" href="../css/common.css">
+<link rel="stylesheet" href="../css/style.css">
+<script>
+  window.addEventListener('load', function() {
+    // use-guide
+    mvJs.popup.open('#layer-select-language');
+  });
+</script>
+</head>
+<body>
+
+<section class="wrap">
+  <button class="cta cta--big cta--icon" data-popup-id="layer-select-language">
+    언어 선택
+    <svg class="icon icon--first" focusable="false">
+      <use href="../images/sprite-svg.svg#language"></use>
+    </svg>
+  </button>
+</section><!--// .wrap -->
+
+<!-- 언어 선택 팝업 -->
+<div class="popup popup--layer popup--medium" aria-modal="true" role="dialog" aria-hidden="true" aria-labelledby="layer-select-language-title" id="layer-select-language">
+  <div class="popup__inner">
+    <!-- 2022.05.25 스피커 버튼 추가 -->
+    <h2 class="popup__title" id="layer-select-language-title">
+      <strong id="ttsSelectLanguage">언어 선택</strong>
+      <button class="tts-btn" data-target-id="ttsSelectLanguage"><span class="hidden">Click to start listening</span></button>
+    </h2>
+    <!--// 2022.05.25 스피커 버튼 추가 -->
+    <div class="popup__contents cont-select-language">
+      <div class="scroll-area">
+        <div class="accordion" data-options='{
+            "id": "selectLanguage",
+            "openType": "multi",
+            "animation": true,
+            "animationSpeed":0.5
+          }'>
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <h3>Africa</h3>
+              <!-- (dev) 아코디언 활성화 처리, aria-expanded="true" -->
+              <button type="button" class="accordion-btn" aria-expanded="true">
+                <!-- (dev) 아코디언 활성화 처리, <span data-text='{"text":"open|close", "show":2}'>close</span> -->
+                <span data-text='{"text":"open|close", "show":2}'>close</span>
+              </button>
+            </div>
+            <!-- (dev) 아코디언 활성화 처리, aria-hidden="false" -->
+            <div class="accordion-panel" aria-hidden="false">
+              <ul class="language-list">
+                <li><a href="#" role="button">Algeria / English</a></li>
+                <li><a href="#" role="button">Algeria / Français</a></li>
+                <li><a href="#" role="button">Angola / Português</a></li>
+                <li><a href="#" role="button">Benin / English</a></li>
+                <!-- (dev) 국가명 활성화 처리, on 클래스 추가 -->
+                <li class="on"><a href="#" role="button">Botswana / English</a></li>
+                <li><a href="#" role="button">Burkina Faso / English</a></li>
+                <li><a href="#" role="button">Burundi / English</a></li>
+                <li><a href="#" role="button">Cameroon / Français</a></li>
+                <li><a href="#" role="button">Cape Verde / English</a></li>
+                <li><a href="#" role="button">Central African Republic / English</a></li>
+                <li><a href="#" role="button">Chad / English</a></li>
+                <li><a href="#" role="button">Comoros / English</a></li>
+                <li><a href="#" role="button">Congo / Français</a></li>
+                <li><a href="#" role="button">DR Congo / Français</a></li>
+                <li><a href="#" role="button">Cote D'Ivoire / Français</a></li>
+                <li><a href="#" role="button">Djibouti / English</a></li>
+                <li><a href="#" role="button">Egypt / العربية</a></li>
+                <li><a href="#" role="button">Egypt / English</a></li>
+                <li><a href="#" role="button">Equatorial Guinea / English</a></li>
+                <li><a href="#" role="button">Eritrea / English</a></li>
+                <li><a href="#" role="button">Ethiopia / English</a></li>
+                <li><a href="#" role="button">Gabon / English</a></li>
+                <li><a href="#" role="button">Gambia / English</a></li>
+                <li><a href="#" role="button">Ghana / English</a></li>
+                <li><a href="#" role="button">Guinea / English</a></li>
+                <li><a href="#" role="button">Guinea-Bissau / English</a></li>
+                <li><a href="#" role="button">Kenya / English</a></li>
+                <li><a href="#" role="button">Lesotho / English</a></li>
+                <li><a href="#" role="button">Liberia / English</a></li>
+                <li><a href="#" role="button">Libya / العربية</a></li>
+                <li><a href="#" role="button">Madagascar / English</a></li>
+                <li><a href="#" role="button">Malawi / English</a></li>
+                <li><a href="#" role="button">Mali / English</a></li>
+                <li><a href="#" role="button">Mauritania / English</a></li>
+                <li><a href="#" role="button">Mauritania / Français</a></li>
+                <li><a href="#" role="button">Mauritius / English</a></li>
+                <li><a href="#" role="button">Morocco / English</a></li>
+                <li><a href="#" role="button">Morocco / Français</a></li>
+                <li><a href="#" role="button">Morocco / العربية</a></li>
+                <li><a href="#" role="button">Mozambique / Português</a></li>
+                <li><a href="#" role="button">Namibia / English</a></li>
+                <li><a href="#" role="button">Niger / English</a></li>
+                <li><a href="#" role="button">Nigeria / English</a></li>
+                <li><a href="#" role="button">Reunion / English</a></li>
+                <li><a href="#" role="button">Rwanda / English</a></li>
+                <li><a href="#" role="button">Sao Tome and Principe / English</a></li>
+                <li><a href="#" role="button">Senegal / Français</a></li>
+                <li><a href="#" role="button">Seychelles / English</a></li>
+                <li><a href="#" role="button">Sierra Leone / English</a></li>
+                <li><a href="#" role="button">South Africa / English</a></li>
+                <li><a href="#" role="button">South Sudan / English</a></li>
+                <li><a href="#" role="button">Sudan / English</a></li>
+                <li><a href="#" role="button">Swaziland / English</a></li>
+                <li><a href="#" role="button">Tanzania, United Republic Of / English</a></li>
+                <li><a href="#" role="button">Tunisia / English</a></li>
+                <li><a href="#" role="button">Tunisia / Français</a></li>
+                <li><a href="#" role="button">Uganda / English</a></li>
+                <li><a href="#" role="button">Zambia / English</a></li>
+                <li><a href="#" role="button">Zimbabwe / English</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <h3>America</h3>
+              <button type="button" class="accordion-btn" aria-expanded="false"><span data-text='{"text":"open|close", "show":1}'>open</span></button>
+            </div>
+            <div class="accordion-panel" aria-hidden="true">
+              <ul class="language-list">
+                <li><a href="#" role="button">Anguilla / English</a></li>
+                <li><a href="#" role="button">Antigua and Barbuda / English</a></li>
+                <li><a href="#" role="button">Argentina / Español</a></li>
+                <li><a href="#" role="button">Aruba / English</a></li>
+                <li><a href="#" role="button">Bahamas / English</a></li>
+                <li><a href="#" role="button">Barbados / English</a></li>
+                <li><a href="#" role="button">Belize / English</a></li>
+                <li><a href="#" role="button">Bermuda / English</a></li>
+                <li><a href="#" role="button">Bolivia / Español</a></li>
+                <li><a href="#" role="button">Brazil / Português</a></li>
+                <li><a href="#" role="button">British Virgin Islands / English</a> </li>
+                <li><a href="#" role="button">Canada / English</a></li>
+                <li><a href="#" role="button">Canada / Français</a></li>
+                <li><a href="#" role="button">Cayman Islands / English</a></li>
+                <li><a href="#" role="button">Chile / Español</a></li>
+                <li><a href="#" role="button">Colombia / Español</a></li>
+                <li><a href="#" role="button">Costa Rica / Español</a></li>
+                <li><a href="#" role="button">Cuba / English</a></li>
+                <li><a href="#" role="button">Dominica / English</a></li>
+                <li><a href="#" role="button">Dominican Republic / Español</a></li>
+                <li><a href="#" role="button">Ecuador / Español</a></li>
+                <li><a href="#" role="button">El Salvador / Español</a></li>
+                <li><a href="#" role="button">French Guiana / English</a></li>
+                <li><a href="#" role="button">Grenada / English</a></li>
+                <li><a href="#" role="button">Guatemala / Español</a></li>
+                <li><a href="#" role="button">Guyana / English</a></li>
+                <li><a href="#" role="button">Haiti / English</a></li>
+                <li><a href="#" role="button">Honduras / Español</a></li>
+                <li><a href="#" role="button">Jamaica / English</a></li>
+                <li><a href="#" role="button">Mexico / Español</a></li>
+                <li><a href="#" role="button">Montserrat / English</a></li>
+                <li><a href="#" role="button">Netherlands Antilles / English</a></li>
+                <li><a href="#" role="button">Nicaragua / Español</a></li>
+                <li><a href="#" role="button">Panama / Español</a></li>
+                <li><a href="#" role="button">Paraguay / Español</a></li>
+                <li><a href="#" role="button">Peru / Español</a></li>
+                <li><a href="#" role="button">Puerto Rico / Español</a></li>
+                <li><a href="#" role="button">Saint Kitts and Nevis / English</a></li>
+                <li><a href="#" role="button">Saint Lucia / English</a></li>
+                <li><a href="#" role="button">Saint Pierre and Miquelon / English</a></li>
+                <li><a href="#" role="button">Saint Vincent and The Grenadines / English</a></li>
+                <li><a href="#" role="button">Suriname / English</a></li>
+                <li><a href="#" role="button">Trinidad and Tobago / English</a></li>
+                <li><a href="#" role="button">Turks and Caicos Islands / English</a></li>
+                <li><a href="#" role="button">Uruguay / Español</a></li>
+                <li><a href="#" role="button">USA / English</a></li>
+                <li><a href="#" role="button">Venezuela / Español</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <h3>Asia Pacific</h3>
+              <button type="button" class="accordion-btn" aria-expanded="false"><span data-text='{"text":"open|close", "show":1}'>open</span></button>
+            </div>
+            <div class="accordion-panel" aria-hidden="true">
+              <ul class="language-list">
+                <li><a href="#" role="button">Australia / English</a></li>
+                <li><a href="#" role="button">Bangladesh / English</a></li>
+                <li><a href="#" role="button">Bhutan / English</a></li>
+                <li><a href="#" role="button">Brunei Darussalam / English</a></li>
+                <li><a href="#" role="button">Cambodia / English</a></li>
+                <li><a href="#" role="button">China / 中文(简体)</a></li>
+                <li><a href="#" role="button">Cook Islands / English</a></li>
+                <li><a href="#" role="button">Fiji / English</a></li>
+                <li><a href="#" role="button">French Polynesia / English</a></li>
+                <li><a href="#" role="button">Georgia / Russian</a></li>
+                <li><a href="#" role="button">Guam / English</a></li>
+                <li><a href="#" role="button">Hong Kong / 中文(繁体)</a></li>
+                <li><a href="#" role="button">Hong Kong / English</a></li>
+                <li><a href="#" role="button">India / English</a></li>
+                <li><a href="#" role="button">Indonesia / Bahasa Indonesia</a></li>
+                <li><a href="#" role="button">Japan / 日本語</a></li>
+                <li><a href="#" role="button">Kiribati / English</a></li>
+                <li><a href="#" role="button">Korea / 한국어</a></li>
+                <li><a href="#" role="button">Lao People's Democratic Republic / English</a></li>
+                <li><a href="#" role="button">Macao / 中文(繁体)</a></li>
+                <li><a href="#" role="button">Malaysia / English</a></li>
+                <li><a href="#" role="button">Malaysia / Bahasa Melayu</a></li>
+                <li><a href="#" role="button">Maldives / English</a></li>
+                <li><a href="#" role="button">Marshall Islands / English</a></li>
+                <li><a href="#" role="button">Micronesia, Federated States Of / English</a></li>
+                <li><a href="#" role="button">Mongolia / English</a></li>
+                <li><a href="#" role="button">Myanmar / Burmese</a></li>
+                <li><a href="#" role="button">Myanmar / English</a></li>
+                <li><a href="#" role="button">Nauru / English</a></li>
+                <li><a href="#" role="button">Nepal / English</a></li>
+                <li><a href="#" role="button">New Caledonia / English</a></li>
+                <li><a href="#" role="button">New Zealand / English</a></li>
+                <li><a href="#" role="button">Niue / English</a></li>
+                <li><a href="#" role="button">Palau / English</a></li>
+                <li><a href="#" role="button">Papua New Guinea / English</a></li>
+                <li><a href="#" role="button">Philippines / English</a></li>
+                <li><a href="#" role="button">Samoa / English</a></li>
+                <li><a href="#" role="button">Singapore / English</a></li>
+                <li><a href="#" role="button">Solomon Islands / English</a></li>
+                <li><a href="#" role="button">Sri Lanka / English</a></li>
+                <li><a href="#" role="button">Taiwan / 中文(繁体)</a></li>
+                <li><a href="#" role="button">Thailand / ภาษาไทย</a></li>
+                <li><a href="#" role="button">Timor-Leste / English</a></li>
+                <li><a href="#" role="button">Tonga / US English</a></li>
+                <li><a href="#" role="button">Tonga / UK English</a></li>
+                <li><a href="#" role="button">Tuvalu / English</a></li>
+                <li><a href="#" role="button">Vanuatu / English</a></li>
+                <li><a href="#" role="button">Vietnam / Tiếng Việt</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <h3>CIS</h3>
+              <button type="button" class="accordion-btn" aria-expanded="false"><span data-text='{"text":"open|close", "show":1}'>open</span></button>
+            </div>
+            <div class="accordion-panel" aria-hidden="true">
+              <ul class="language-list">
+                <li><a href="#" role="button">Armenia / Armenian</a></li>
+                <li><a href="#" role="button">Armenia / Russian</a></li>
+                <li><a href="#" role="button">Azerbaijan / Russian</a></li>
+                <li><a href="#" role="button">Belarus / Russian</a></li>
+                <li><a href="#" role="button">Kazakhstan / Kazakh </a></li>
+                <li><a href="#" role="button">Kazakhstan / Russian</a></li>
+                <li><a href="#" role="button">Kyrgyzstan / English</a></li>
+                <li><a href="#" role="button">Moldova / Russian</a></li>
+                <li><a href="#" role="button">Russia / Русский</a></li>
+                <li><a href="#" role="button">Tajikistan / English</a></li>
+                <li><a href="#" role="button">Uzbekistan / Russian</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <h3>Europe</h3>
+              <button type="button" class="accordion-btn" aria-expanded="false"><span data-text='{"text":"open|close", "show":1}'>open</span></button>
+            </div>
+            <div class="accordion-panel" aria-hidden="true">
+              <ul class="language-list">
+                <li><a href="#" role="button">Albania / English</a></li>
+                <li><a href="#" role="button">Albania / Shqipëri / Shqip</a></li>
+                <li><a href="#" role="button">Andorra / English</a></li>
+                <li><a href="#" role="button">Austria / Deutsch </a></li>
+                <li><a href="#" role="button">Belgium / Français</a></li>
+                <li><a href="#" role="button">Belgium / Nederlands</a></li>
+                <li><a href="#" role="button">Bosnia and Herzegovina / Croatian</a></li>
+                <li><a href="#" role="button">Bulgaria / Български</a></li>
+                <li><a href="#" role="button">Croatia / Croatian</a></li>
+                <li><a href="#" role="button">Cyprus / Ελληνικά</a></li>
+                <li><a href="#" role="button">Czech / Čeština</a></li>
+                <li><a href="#" role="button">Denmark / Dansk</a></li>
+                <li><a href="#" role="button">Estonia / Eesti</a></li>
+                <li><a href="#" role="button">Falkland Islands / English</a></li>
+                <li><a href="#" role="button">Faroe Islands / English</a></li>
+                <li><a href="#" role="button">Finland / Suomi</a></li>
+                <li><a href="#" role="button">France / Français</a></li>
+                <li><a href="#" role="button">FYROM / English</a></li>
+                <li><a href="#" role="button">FYROM / Македонски</a></li>
+                <li><a href="#" role="button">Germany / Deutsch </a></li>
+                <li><a href="#" role="button">Gibraltar / English</a></li>
+                <li><a href="#" role="button">Greece / Ελληνικά</a></li>
+                <li><a href="#" role="button">Greenland / English</a></li>
+                <li><a href="#" role="button">Guadeloupe / English</a></li>
+                <li><a href="#" role="button">Holy See (Vatican City State) / English</a></li>
+                <li><a href="#" role="button">Hungary / Magyar</a></li>
+                <li><a href="#" role="button">Iceland / English</a></li>
+                <li><a href="#" role="button">Ireland / English</a></li>
+                <li><a href="#" role="button">Ireland / Irish</a></li>
+                <li><a href="#" role="button">Italy / Italiano</a></li>
+                <li><a href="#" role="button">Kosovo / English</a></li>
+                <li><a href="#" role="button">Latvia / Latviešu</a></li>
+                <li><a href="#" role="button">Liechtenstein / English</a></li>
+                <li><a href="#" role="button">Lithuania / Lietuvių</a></li>
+                <li><a href="#" role="button">Luxembourg / Français</a></li>
+                <li><a href="#" role="button">Malta / English</a></li>
+                <li><a href="#" role="button">Monaco / English</a></li>
+                <li><a href="#" role="button">Montenegro / Српски</a></li>
+                <li><a href="#" role="button">Netherlands / Nederlands</a></li>
+                <li><a href="#" role="button">Norway / Norsk</a></li>
+                <li><a href="#" role="button">Poland / Polski</a></li>
+                <li><a href="#" role="button">Portugal / Português</a></li>
+                <li><a href="#" role="button">Romania / Română</a></li>
+                <li><a href="#" role="button">San Marino / English</a></li>
+                <li><a href="#" role="button">Serbia / Српски</a></li>
+                <li><a href="#" role="button">Slovakia / Slovenčina</a></li>
+                <li><a href="#" role="button">Slovenia / Slovenščina</a></li>
+                <li><a href="#" role="button">Spain / Español</a></li>
+                <li><a href="#" role="button">Sweden / Svenska</a></li>
+                <li><a href="#" role="button">Switzerland / Deutsch </a></li>
+                <li><a href="#" role="button">Switzerland / Français</a></li>
+                <li><a href="#" role="button">Switzerland / Italiano</a></li>
+                <li><a href="#" role="button">Turkey / Türkçe</a></li>
+                <li><a href="#" role="button">Turkey / English</a></li>
+                <li><a href="#" role="button">Ukraina / Українська</a></li>
+                <li><a href="#" role="button">United Kingdom / English</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <h3>Middle East</h3>
+              <button type="button" class="accordion-btn" aria-expanded="false"><span data-text='{"text":"open|close", "show":1}'>open</span></button>
+            </div>
+            <div class="accordion-panel" aria-hidden="true">
+              <ul class="language-list">
+                <li><a href="#" role="button">Afghanistan / English</a></li>
+                <li><a href="#" role="button">Bahrain / العربية</a></li>
+                <li><a href="#" role="button">Bahrain / English</a></li>
+                <li><a href="#" role="button">Iran / Persian</a></li>
+                <li><a href="#" role="button">Iran / English</a></li>
+                <li><a href="#" role="button">Iraq / العربية</a></li>
+                <li><a href="#" role="button">Israel / English</a></li>
+                <li><a href="#" role="button">Israel / עברית</a></li>
+                <li><a href="#" role="button">Jordan / العربية</a></li>
+                <li><a href="#" role="button">Jordan / English</a></li>
+                <li><a href="#" role="button">Kuwait / العربية</a></li>
+                <li><a href="#" role="button">Kuwait / English</a></li>
+                <li><a href="#" role="button">Lebanon / العربية</a></li>
+                <li><a href="#" role="button">Lebanon / English</a></li>
+                <li><a href="#" role="button">Oman / العربية</a></li>
+                <li><a href="#" role="button">Oman / English</a></li>
+                <li><a href="#" role="button">Pakistan / English</a></li>
+                <li><a href="#" role="button">Pakistan / اردو</a></li>
+                <li><a href="#" role="button">Qatar / العربية</a></li>
+                <li><a href="#" role="button">Qatar / English</a></li>
+                <li><a href="#" role="button">Saudi Arabia / العربية</a></li>
+                <li><a href="#" role="button">Saudi Arabia / English</a></li>
+                <li><a href="#" role="button">Somalia / English</a></li>
+                <li><a href="#" role="button">Syrian Arab Republic / العربية</a></li>
+                <li><a href="#" role="button">Turkmenistan / English</a></li>
+                <li><a href="#" role="button">United Arab Emirates / العربية</a></li>
+                <li><a href="#" role="button">United Arab Emirates / English</a></li>
+                <li><a href="#" role="button">Yemen / العربية</a></li>
+              </ul>
+            </div>
+          </div>
+        </div><!--// .accordion -->
+      </div>
+    </div>
+    <button class="popup-close">
+      <svg class="icon" focusable="false" aria-label="Close Popup">
+        <use href="../images/sprite-svg.svg#cancel"></use>
+      </svg>
+    </button>
+  </div>
+  <div class="popup__dimmed"><!-- popup dimmed --></div>
+</div>
+<!--// 언어 선택 팝업 -->
+
+<!-- js -->
+<script src="../js/commonJs.min.js"></script>
+
+</body>
+</html>

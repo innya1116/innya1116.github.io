@@ -1,0 +1,115 @@
+@import '../../common/_global';
+
+html[dir='rtl'] {
+  .filter-tab--depth1 {
+    .filter-tab {
+      &__item {
+        & + li a {
+          border-left: 1px solid @color--line-1;
+          border-right: 0 none;
+        }
+
+        &:first-child a {
+          border-radius: 0 6px 6px 0;
+        }
+
+        &:last-child a {
+          border-radius: 6px 0 0 6px;
+        }
+
+        &.is-active {
+          &:not(:first-child) {
+            margin-left: 0;
+            margin-right: -1px;
+          }
+        }
+      }
+    }
+  }
+
+  .filter-tab--depth2 {
+    .filter-tab {
+      &__item {
+        a {
+          strong {
+            margin-left: 0;
+            margin-right: 4px;
+          }
+        }
+
+        & + li {
+          margin-left: 0;
+          margin-right: 16px;
+        }
+      }
+    }
+  }
+}
+
+@media @media-query--desktop {
+  html[dir='rtl'] {
+    .filter-tab--depth1 {
+      .filter-tab {
+        &__item {
+          &:first-child a {
+            .vw-convert-desktop(border-radius, 0 6px 6px 0);
+          }
+
+          &:last-child a {
+            .vw-convert-desktop(border-radius, 6px 0 0 6px);
+          }
+        }
+      }
+    }
+
+    .filter-tab--depth2 {
+      .filter-tab {
+        &__item {
+          a {
+            strong {
+              .vw-convert-desktop(margin-right, 4px);
+            }
+          }
+
+          & + li {
+            .vw-convert-desktop(margin-right, 16px);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media @media-query--mobile {
+  html[dir='rtl'] {
+    .filter-tab--depth1 {
+      .filter-tab {
+        &__item {
+          &:first-child a {
+            .vw-convert-mobile(border-radius, 0 6px 6px 0);
+          }
+
+          &:last-child a {
+            .vw-convert-mobile(border-radius, 6px 0 0 6px);
+          }
+        }
+      }
+    }
+
+    .filter-tab--depth2 {
+      .filter-tab {
+        &__item {
+          a {
+            .vw-convert-mobile(padding, 3px 0);
+            .vw-convert-mobile(margin, 0 16px);
+            .vw-convert-mobile(font-size, 16px);
+          }
+
+          & + li {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+}

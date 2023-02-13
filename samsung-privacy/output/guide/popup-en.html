@@ -1,0 +1,186 @@
+<!doctype html>
+<!-- (dev) 언어코드가 ar, he, ur로 시작하는 경우 dir="rtl" 속성 추가 -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" sizes="16x16" href="../images/favicon_16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../images/favicon_32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="../images/favicon_48.png">
+<title>Popup | Publishing Guide | Samsung Privacy</title>
+<!-- css link -->
+<link rel="stylesheet" href="../css/common.css">
+<link rel="stylesheet" href="../css/style.css">
+<!-- guide css link -->
+<link rel="stylesheet" href="./guide.css">
+</head>
+<body>
+<section class="guide">
+  <header class="guide-header">
+    <h1 class="guide-tit1">삼성전자 글로벌 권리대응 사이트 UX개선</h1>
+    <nav class="guide-nav">
+      <div class="nav-depth1">
+        <a href="../index.html">Guide</a>
+        <a class="on" href="../index-en.html">Guide(EN)</a>
+        <a href="../filelist.html">HTML Filelist</a>
+      </div>
+      <div class="nav-depth2">
+        <a href="../index-en.html">General</a>
+        <a href="./button-cta-en.html">Button(CTA)</a>
+        <a href="./form-en.html">Form</a>
+        <a href="./icons-en.html">Icon</a>
+        <a class="on" href="./popup-en.html">Popup</a>
+        <a href="./swiper-en.html">Swiper</a>
+        <a href="./tab-en.html">Tab</a>
+        <a href="./accordion-en.html">Accordion</a>
+        <a href="./tts-en.html">Text to Speech</a>
+      </div>
+    </nav>
+  </header>
+  <div class="guide-content">
+    <h2 class="guide-tit2">Layer</h2>
+    <h2 class="guide-tit3">Use type 1</h2>
+    <p class="guide-txt">Put the pop-up code in the page and put the id value of the div.popup area into the data-popup-id value of the button.</p>
+    <a href="#" class="cta cta--outlined" data-popup-id="layer-id">layer popup open</a>
+<div class="code-wrap">
+<pre class="code">
+&lt;a href="#" class="cta cta--outlined" data-popup-id="<b>layer-id</b>"&gt;layer popup open&lt;/a&gt;
+</pre>
+</div>
+    <h2 class="guide-tit3">Use type 2</h2>
+    <p class="guide-txt">Put a pop-up code in the page and put the id value of the div.popup area into mvJs.popup.open('#{id value}') in the onclick of the button.</p>
+
+    <a href="#" class="cta cta--outlined" onclick="mvJs.popup.open('#layer-id')">layer popup open</a>
+<div class="code-wrap">
+<pre class="code">
+&lt;a href="#" class="cta cta--outlined" onclick="mvJs.popup.open('<b>#layer-id</b>')"&gt;layer popup open&lt;/a&gt;
+</pre>
+</div>
+
+    <h2 class="guide-tit3">Popup code</h2>
+
+    <!-- Layer Popup Title -->
+    <div class="popup popup--layer" aria-modal="true" role="dialog" aria-hidden="true" aria-labelledby="layer-id-title" id="layer-id">
+      <div class="popup__inner">
+        <h2 class="popup__title" id="layer-id-title">It's the pop-up title.</h2>
+        <div class="popup__contents">
+          <div class="scroll-area" style="max-height: 40vw">
+            popup contents<br>
+            popup contents<br>
+            popup contents<br>
+            popup contents<br>
+            popdup cdfontents<br>
+            popup confstents<br>
+            popup condfsdtents<br>
+            popfsup contents<br>
+            popup constents<br>
+            popup contents<br>
+            popup contents<br>
+            popufp cosfntents<br>
+            popup contents<br>
+            popup contents<br>
+            popup contents<br>
+            popupsdf contents<br>
+            popup contents<br>
+            popupsdf sdfcontents<br>
+            popup contents<br>
+            popup contents<br>
+            popup consdftents<br>
+            popup contents<br>
+            popup confstents<br>
+            popup condfsdtents<br>
+            popfsup contents<br>
+            popup constents<br>
+            popup contents<br>
+            popup contents<br>
+            popufp cosfntents<br>
+            popup contents<br>
+            popup contents<br>
+            popup contents<br>
+            popupsdf contents<br>
+            popup contents<br>
+            popupsdf sdfcontents<br>
+            popup contents<br>
+            popup contents<br>
+          </div><!--// .scroll-area -->
+        </div>
+        <div class="popup__cta-wrap">
+          <button class="cta cta--outlined cta--icon">Initialization
+            <svg class="icon" focusable="false">
+              <use href="../images/sprite-svg.svg#refresh"></use>
+            </svg>
+          </button>
+          <button class="cta cta--filled">Search</button>
+        </div>
+        <button class="popup-close">
+          <svg class="icon" focusable="false" aria-label="Close Popup">
+            <use href="../images/sprite-svg.svg#cancel"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="popup__dimmed"><!-- popup dimmed --></div>
+    </div>
+    <!--// Layer Popup Title -->
+<div class="code-wrap">
+<pre class="code">
+<i>&lt;!-- Layer Popup Title --&gt;</i>
+&lt;div class="popup popup--layer" aria-modal="true" role="dialog" aria-hidden="true" aria-labelledby="layer-id-title" <b>id="layer-id"</b>&gt;
+  &lt;div class="popup__inner"&gt;
+    &lt;h2 class="popup__title" id="layer-id-title"&gt;It's the pop-up title.&lt;/h2&gt;
+    &lt;div class="popup__contents"&gt;
+      &lt;div class="scroll-area"&gt;
+        popup contents&lt;br&gt;
+        popup contents&lt;br&gt;
+        popup contents&lt;br&gt;
+        popup contents&lt;br&gt;
+        popdup cdfontents&lt;br&gt;
+        popup confstents&lt;br&gt;
+        popup condfsdtents&lt;br&gt;
+        popfsup contents&lt;br&gt;
+        popup constents&lt;br&gt;
+        popup contents&lt;br&gt;
+        popup contents&lt;br&gt;
+        popufp cosfntents&lt;br&gt;
+        popup contents&lt;br&gt;
+        popup contents&lt;br&gt;
+        popup contents&lt;br&gt;
+        popupsdf contents&lt;br&gt;
+        popup contents&lt;br&gt;
+        popupsdf sdfcontents&lt;br&gt;
+        popup contents&lt;br&gt;
+        popup contents&lt;br&gt;
+      &lt;/div&gt;<i>&lt;!--// .scroll-area --&gt;</i>
+    &lt;/div&gt;
+    &lt;div class="popup__cta-wrap"&gt;
+      &lt;button class="cta cta--outlined cta--icon"&gt;Initialization
+        &lt;svg class="icon" focusable="false"&gt;
+          &lt;use href="../images/sprite-svg.svg#refresh"&gt;&lt;/use&gt;
+        &lt;/svg&gt;
+      &lt;/button&gt;
+      &lt;button class="cta cta--filled"&gt;Search&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;button class="popup-close"&gt;
+      &lt;svg class="icon" focusable="false" aria-label="Close Popup"&gt;
+        &lt;use href="../images/sprite-svg.svg#cancel"&gt;&lt;/use&gt;
+      &lt;/svg&gt;
+    &lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div class="popup__dimmed"&gt;<i>&lt;!-- popup dimmed --&gt;</i>&lt;/div&gt;
+&lt;/div&gt;
+<i>&lt;!--// Layer Popup Title --&gt;</i>
+</pre>
+</div>
+
+  </div><!--// .guide-content -->
+</section>
+
+<style>
+
+</style>
+<!-- guide js link -->
+<script src="./guide.js"></script>
+
+<!-- js -->
+<script src="../js/commonJs.min.js"></script>
+</body>
+</html>

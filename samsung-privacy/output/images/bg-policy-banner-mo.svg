@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="364.867" height="136" viewBox="0 0 364.867 136">
+  <g id="banner" transform="translate(1.999 -3854)">
+    <g id="그룹_26806" data-name="그룹 26806" transform="translate(-348.461 -2406.999)">
+      <circle id="타원_222" data-name="타원 222" cx="3" cy="3" r="3" transform="translate(366.461 6390.999)" fill="#516ac6"/>
+      <g id="그룹_26755" data-name="그룹 26755" transform="translate(380.461 6336.795)">
+        <g id="그룹_26755-2" data-name="그룹 26755" transform="translate(7.115 -0.392)">
+          <rect id="사각형_17154" data-name="사각형 17154" width="23" height="11" rx="5.5" transform="translate(-0.115 -0.404)" fill="#516ac6"/>
+          <circle id="타원_196" data-name="타원 196" cx="3" cy="3" r="3" transform="translate(1.885 2.596)" fill="#9db2ff"/>
+        </g>
+        <g id="그룹_26756" data-name="그룹 26756" transform="translate(0 13.339)">
+          <rect id="사각형_17154-2" data-name="사각형 17154" width="23" height="11" rx="5.5" transform="translate(0 -0.135)" fill="#516ac6"/>
+          <circle id="타원_196-2" data-name="타원 196" cx="3" cy="3" r="3" transform="translate(14 2.865)" fill="#9db2ff"/>
+        </g>
+      </g>
+      <g id="profile" transform="translate(345.965 6261.547)">
+        <rect id="사각형_16204" data-name="사각형 16204" width="23" height="23" rx="11.5" transform="translate(0.498 -0.548)" fill="#516ac6"/>
+        <g id="그룹_27171" data-name="그룹 27171" transform="translate(8.291 6.315)">
+          <g id="그룹_27748" data-name="그룹 27748" transform="translate(-1.793 -1.442)">
+            <rect id="Container" width="12" height="12" transform="translate(0 -0.42)" fill="none"/>
+            <path id="Icon_Bold_Human_User_select" data-name="Icon / Bold / Human / User_select" d="M.549,10.107A.55.55,0,0,1,0,9.557V8.685a3.517,3.517,0,0,1,7.031,0v.873a.55.55,0,0,1-.549.549ZM1.1,2.417A2.417,2.417,0,1,1,3.515,4.834,2.42,2.42,0,0,1,1.1,2.417Z" transform="translate(1.926 1.085)" fill="#9db2ff"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="그룹_26807" data-name="그룹 26807" transform="translate(-1125.237 -2232.706)">
+      <g id="lock" transform="translate(1421.598 6156.905)">
+        <g id="그룹_107" data-name="그룹 107" transform="translate(0 3.102) rotate(-9)">
+          <path id="패스_240" data-name="패스 240" d="M0,18.211l1.933.308L4,5.6a4.325,4.325,0,1,1,8.542,1.36L10.475,19.879l1.934.308L14.477,7.271A6.282,6.282,0,0,0,2.068,5.3Z" transform="translate(3.054)" fill="#516ac6"/>
+          <path id="패스_244" data-name="패스 244" d="M19.805,4.357,17.913,16.239a2.187,2.187,0,0,1-2.5,1.81L1.838,15.887a2.187,2.187,0,0,1-1.81-2.5L1.92,1.509A1.79,1.79,0,0,1,3.969.023l14.35,2.285a1.79,1.79,0,0,1,1.486,2.049" transform="translate(0 7.849)" fill="#516ac6"/>
+          <path id="패스_245" data-name="패스 245" d="M1.1,1.895a1.18,1.18,0,1,1,1.61.257.478.478,0,0,0-.2.418l.149,3.2a.341.341,0,0,1-.395.353l-.985-.157-.991-.16a.341.341,0,0,1-.266-.459L1.158,2.355A.48.48,0,0,0,1.1,1.9" transform="translate(8.23 13.697)" fill="#9db2ff"/>
+        </g>
+      </g>
+      <g id="shield" transform="translate(1472.525 6104.259)">
+        <path id="패스_358" data-name="패스 358" d="M1024.71,937.6a13.55,13.55,0,0,1-6.357,2.173v3.3a11.683,11.683,0,0,0,6.357,10.375,11.683,11.683,0,0,0,6.356-10.375v-3.3a13.542,13.542,0,0,1-6.356-2.173Z" transform="translate(-1018.35 -937.603)" fill="#516ac6"/>
+        <g id="그룹_924" data-name="그룹 924" transform="translate(0.297 0.021)">
+          <path id="패스_359" data-name="패스 359" d="M1019.87,983.3a11.655,11.655,0,0,0,6.077,7.906V983.3Z" transform="translate(-1019.871 -975.4)" fill="#9db2ff"/>
+          <path id="패스_360" data-name="패스 360" d="M1061.08,945.508a11.5,11.5,0,0,0,.262-2.442v-3.3A13.51,13.51,0,0,1,1055,937.6v7.905Z" transform="translate(-1048.927 -937.603)" fill="#9db2ff"/>
+        </g>
+      </g>
+      <circle id="타원_225" data-name="타원 225" cx="2.321" cy="2.321" r="2.321" transform="translate(1445.237 6088.706)" fill="#516ac6"/>
+      <circle id="타원_226" data-name="타원 226" cx="5.223" cy="5.223" r="5.223" transform="translate(1477.659 6200.259)" fill="#516ac6"/>
+    </g>
+  </g>
+</svg>

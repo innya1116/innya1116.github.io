@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" sizes="16x16" href="../images/favicon_16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../images/favicon_32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="../images/favicon_48.png">
+<title>Text to Speech | Publishing Guide | Samsung Privacy</title>
+<!-- css link -->
+<link rel="stylesheet" href="../css/common.css">
+<link rel="stylesheet" href="../css/style.css">
+<!-- guide css link -->
+<link rel="stylesheet" href="./guide.css">
+</head>
+<body>
+<section class="guide">
+  <header class="guide-header">
+    <h1 class="guide-tit1">삼성전자 글로벌 권리대응 사이트 UX개선</h1>
+    <nav class="guide-nav">
+      <div class="nav-depth1">
+        <a class="on" href="../index.html">Guide</a>
+        <a href="../index-en.html">Guide(EN)</a>
+        <a href="../filelist.html">HTML Filelist</a>
+      </div>
+      <div class="nav-depth2">
+        <a href="../index.html">General</a>
+        <a href="./button-cta.html">Button(CTA)</a>
+        <a href="./form.html">Form</a>
+        <a href="./icons.html">Icon</a>
+        <a href="./popup.html">Popup</a>
+        <a href="./swiper.html">Swiper</a>
+        <a href="./tab.html">Tab</a>
+        <a href="./accordion.html">Accordion</a>
+        <a class="on" href="./tts.html">Text to Speech</a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="guide-content">
+    <h2 class="guide-tit2">Text to Speech</h2>
+    <ul class="guide-info-list">
+      <li>영문어권에서 타이틀 및 일부 텍스트를 읽어주는 버튼 추가</li>
+      <li>html language가 en인 경우에만 활성화 됨(lang="en")<br>
+        <button class="cta cta--underline" id="changeLanguage">html language 변경</button>
+      </li>
+      <li>button.tts-btn 클릭 후 텍스트가 음성으로 출력되는 시간 동안 disabled 속성 추가됨</li>
+    </ul>
+
+    <br><br>
+
+    <h3 class="guide-tit3">Type 1: Use data-target-id(id 한개 사용)</h3>
+    <p class="guide-txt">- 타겟 id의 텍스트를 읽어줌</p>
+    <br>
+    <p id="tts-type1">Text to Speech Test1</p>
+    <button class="tts-btn" data-target-id="tts-type1"><span class="hidden">Click to start listening</span></button>
+<pre class="code">
+&lt;p <b>id="tts-type1"</b>&gt;Text to Speech Test1&lt;/p&gt;
+&lt;button class="tts-btn" <b>data-target-id="tts-type1"</b>&gt;&lt;span class="hidden"&gt;Click to start listening&lt;/span&gt;&lt;/button&gt;
+</pre>
+
+    <h3 class="guide-tit3">Type 2: Use data-target-id(id 여러개 사용)</h3>
+    <p class="guide-txt">- 여러개의 id를 사용할 경우 순서대로 읽어줌</p>
+    <div class="page-top">
+      <h1 class="page-top__title">
+        <strong id="ttsPi41">Title Text</strong>
+        <button class="tts-btn" data-target-id="ttsPi41 ttsPi42"><span class="hidden">Click to start listening</span></button>
+      </h1>
+      <p class="page-top__description" id="ttsPi42">Description Text</p>
+    </div>
+<pre class="code">
+&lt;div class="page-top"&gt;
+  &lt;h1 class="page-top__title"&gt;
+    &lt;strong <b>id="ttsPi41"</b>&gt;Title Text&lt;/strong&gt;
+    &lt;button class="tts-btn" <b>data-target-id="ttsPi41 ttsPi42"</b>&gt;&lt;span class="hidden"&gt;Click to start listening&lt;/span&gt;&lt;/button&gt;
+  &lt;/h1&gt;
+  &lt;p class="page-top__description" <b>id="ttsPi42"</b>&gt;Description Text&lt;/p&gt;
+&lt;/div>
+</pre>
+
+    <h3 class="guide-tit3">Type 3: data-label</h3>
+    <p class="guide-txt">- data-label의 텍스트를 읽어줌</p>
+    <button class="tts-btn" data-label="Text to Speech Test3"><span class="hidden">Click to start listening</span></button>
+<pre class="code">
+&lt;button class="tts-btn" <b>data-label="Text to Speech Test3"</b>&gt;&lt;span class="hidden"&gt;Click to start listening&lt;/span&gt;&lt;/button&gt;
+</pre>
+  </div><!--// .guide-content -->
+</section>
+
+<!-- guide js link -->
+<script src="./guide.js"></script>
+<script>
+  const btnChangeLanguage = document.querySelector('#changeLanguage');
+  console.log(btnChangeLanguage);
+  btnChangeLanguage.addEventListener('click', function() {
+    const docu = document.querySelector('html');
+    let lang = docu.getAttribute('lang');
+    if(lang === 'ko') {
+      docu.setAttribute('lang','en');
+    } else {
+      docu.setAttribute('lang','ko');
+    }
+  })
+</script>
+
+<!-- js -->
+<script src="../js/commonJs.min.js"></script>
+</body>
+</html>

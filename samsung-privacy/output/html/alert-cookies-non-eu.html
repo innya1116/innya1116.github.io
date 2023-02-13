@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" sizes="16x16" href="../images/favicon_16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../images/favicon_32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="../images/favicon_48.png">
+<title>Samsung and Cookies alert layer | Samsung Privacy</title>
+<!-- css link -->
+<link rel="stylesheet" href="../css/common.css">
+<link rel="stylesheet" href="../css/style.css">
+<script>
+  window.addEventListener('load', function() {
+    // use-guide
+    mvJs.popup.open('#alert-cookies-non-eu');
+  });
+</script>
+</head>
+<body>
+
+<section class="wrap">
+</section><!--// .wrap -->
+
+<!-- Samsung and Cookies 팝업 -->
+<div class="popup popup--layer" aria-modal="true" role="alertdialog" aria-hidden="false" aria-labelledby="alert-cookies-non-eu-title" id="alert-cookies-non-eu">
+  <div class="popup__inner">
+    <h2 class="popup__title" id="alert-cookies-non-eu-title">삼성 프라이버시 쿠키</h2><!-- 20220729 텍스트 수정 -->
+    <div class="popup__contents">
+      <div class="cookies-box">본 사이트는 쿠키를 사용하며, 계속 사용시 동의하는 것으로 간주합니다. <br>상세 내역 안내 <a class="cta cta--big cta--underline" href="#">클릭</a></div>
+    </div>
+    <div class="popup__cta-wrap">
+      <button class="cta cta--filled">모두 동의</button><!-- 20220729 텍스트 수정 -->
+    </div>
+  </div>
+  <div class="popup__dimmed"><!-- popup dimmed --></div>
+</div><!--// .popup -->
+<!--// Samsung and Cookies 팝업 -->
+
+<!-- js -->
+<script src="../js/commonJs.min.js"></script>
+</body>
+</html>

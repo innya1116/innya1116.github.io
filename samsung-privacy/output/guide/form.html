@@ -1,0 +1,164 @@
+<!doctype html>
+<!-- (dev) 언어코드가 ar, he, ur로 시작하는 경우 dir="rtl" 속성 추가 -->
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" sizes="16x16" href="../images/favicon_16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../images/favicon_32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="../images/favicon_48.png">
+<title>Form | Publishing Guide | Samsung PrivacySamsung Privacy</title>
+<!-- css link -->
+<link rel="stylesheet" href="../css/common.css">
+<link rel="stylesheet" href="../css/style.css">
+<!-- guide css link -->
+<link rel="stylesheet" href="./guide.css">
+</head>
+<body>
+<section class="guide">
+  <header class="guide-header">
+    <h1 class="guide-tit1">삼성전자 글로벌 권리대응 사이트 UX개선</h1>
+    <nav class="guide-nav">
+      <div class="nav-depth1">
+        <a class="on"  href="../index.html">Guide</a>
+        <a href="../index-en.html">Guide(EN)</a>
+        <a href="../filelist.html">HTML Filelist</a>
+      </div>
+      <div class="nav-depth2">
+        <a href="../index.html">General</a>
+        <a href="./button-cta.html">Button(CTA)</a>
+        <a class="on" href="./form.html">Form</a>
+        <a href="./icons.html">Icons</a>
+        <a href="./popup.html">Popup</a>
+        <a href="./swiper.html">Swiper</a>
+        <a href="./tab.html">Tab</a>
+        <a href="./accordion.html">Accordion</a>
+        <a href="./tts.html">Text to Speech</a>
+      </div>
+    </nav>
+  </header>
+  <div class="guide-content">
+    <h2 class="guide-tit2">Form</h2>
+    <span class="checkbox">
+      <input class="checkbox__input" type="checkbox" id="checkbox-sample01"><label for="checkbox-sample01" class="checkbox__label">전체 선택</label>
+    </span>
+    <span class="checkbox">
+      <input class="checkbox__input" type="checkbox" id="checkbox-sample02" checked><label for="checkbox-sample02" class="checkbox__label">전체 선택</label>
+    </span>
+    <span class="checkbox">
+      <input class="checkbox__input" type="checkbox" id="checkbox-sample03" disabled><label for="checkbox-sample03" class="checkbox__label">전체 선택</label>
+    </span>
+
+    <br><br>
+
+    <span class="radio">
+      <input class="radio__input" type="radio" id="radio-sample01" name="radio"><label for="radio-sample01" class="radio__label">가입 일자</label>
+    </span>
+    <span class="radio">
+      <input class="radio__input" type="radio" id="radio-sample02" name="radio" checked><label for="radio-sample02" class="radio__label">가입 일자</label>
+    </span>
+    <span class="radio">
+      <input class="radio__input" type="radio" id="radio-sample03" name="radio" disabled><label for="radio-sample03" class="radio__label">가입 일자</label>
+    </span>
+
+<div class="code-wrap">
+<pre class="code">
+&lt;span class="checkbox"&gt;
+  &lt;input class="checkbox__input" type="checkbox" id="checkbox-sample01"&gt;&lt;label for="checkbox-sample01" class="checkbox__label"&gt;전체 선택&lt;/label&gt;
+&lt;/span&gt;
+&lt;span class="checkbox"&gt;
+  &lt;input class="checkbox__input" type="checkbox" id="checkbox-sample02" checked&gt;&lt;label for="checkbox-sample02" class="checkbox__label"&gt;전체 선택&lt;/label&gt;
+&lt;/span&gt;
+&lt;span class="checkbox"&gt;
+  &lt;input class="checkbox__input" type="checkbox" id="checkbox-sample03" disabled&gt;&lt;label for="checkbox-sample03" class="checkbox__label"&gt;전체 선택&lt;/label&gt;
+&lt;/span&gt;
+
+&lt;span class="radio"&gt;
+  &lt;input class="radio__input" type="radio" id="radio-sample01" name="radio"&gt;&lt;label for="radio-sample01" class="radio__label"&gt;가입 일자&lt;/label&gt;
+&lt;/span&gt;
+&lt;span class="radio"&gt;
+  &lt;input class="radio__input" type="radio" id="radio-sample02" name="radio" checked&gt;&lt;label for="radio-sample02" class="radio__label"&gt;가입 일자&lt;/label&gt;
+&lt;/span&gt;
+&lt;span class="radio"&gt;
+  &lt;input class="radio__input" type="radio" id="radio-sample03" name="radio" disabled&gt;&lt;label for="radio-sample03" class="radio__label"&gt;가입 일자&lt;/label&gt;
+&lt;/span&gt;
+</pre>
+</div>
+
+    <br><br>
+
+    <div class="toggle">
+      <input type="checkbox" id="toggle-sample01">
+      <label for="toggle-sample01" class="toggle__switch"><span class="hidden active">activation</span><span class="hidden inactive">inactivation</span></label>
+    </div>
+
+<div class="code-wrap">
+<pre class="code">
+&lt;div class="toggle"&gt;
+  &lt;input type="checkbox" id="toggle-sample01"&gt;
+  &lt;label for="toggle-sample01" class="toggle__switch"&gt;&lt;span class="hidden"&gt;활성화&lt;/span&gt;&lt;/label&gt;
+&lt;/div&gt;
+</pre>
+</div>
+
+    <br><br>
+
+    <div class="box-toggle">
+      <span class="radio">
+        <input class="radio__input" type="radio" id="radio-sample04" name="box-toggle"><label for="radio-sample04" class="radio__label">전체</label>
+      </span>
+      <span class="radio">
+        <input class="radio__input" type="radio" id="radio-sample05" name="box-toggle" checked><label for="radio-sample05" class="radio__label">1개월</label>
+      </span>
+      <span class="radio">
+        <input class="radio__input" type="radio" id="radio-sample06" name="box-toggle"><label for="radio-sample06" class="radio__label">3개월</label>
+      </span>
+      <span class="radio">
+        <input class="radio__input" type="radio" id="radio-sample07" name="box-toggle" ><label for="radio-sample07" class="radio__label">직접 설정</label>
+      </span>
+    </div>
+
+    <br><br>
+
+    <div class="mixed-selection">
+      <span class="radio">
+        <input class="radio__input" type="radio" id="selection-sample01" name="mixed-selection" checked><label class="radio__label" for="selection-sample01">전체</label>
+      </span>
+      <span class="radio">
+        <input class="radio__input" type="radio" id="selection-sample02" name="mixed-selection"><label class="radio__label" for="selection-sample02">삼성계정</label>
+      </span>
+      <span class="radio">
+        <input class="radio__input" type="radio" id="selection-sample03" name="mixed-selection"><label class="radio__label" for="selection-sample03">Bixby</label>
+      </span>
+      <span class="radio">
+        <input class="radio__input" type="radio" id="selection-sample04" name="mixed-selection"><label class="radio__label" for="selection-sample04">SmartThings</label>
+      </span>
+    </div>
+
+    <br><br>
+
+    <div class="mixed-selection">
+      <span class="checkbox">
+        <input class="checkbox__input" type="checkbox" id="selection-sample05" checked><label class="checkbox__label" for="selection-sample05">전체</label>
+      </span>
+      <span class="checkbox">
+        <input class="checkbox__input" type="checkbox" id="selection-sample06" checked><label class="checkbox__label" for="selection-sample06">삼성계정</label>
+      </span>
+      <span class="checkbox">
+        <input class="checkbox__input" type="checkbox" id="selection-sample07"><label class="checkbox__label" for="selection-sample07">Bixby</label>
+      </span>
+      <span class="checkbox">
+        <input class="checkbox__input" type="checkbox" id="selection-sample08"><label class="checkbox__label" for="selection-sample08">SmartThings</label>
+      </span>
+    </div>
+
+  </div><!--// .guide-content -->
+</section>
+
+<!-- guide js link -->
+<script src="./guide.js"></script>
+
+<!-- js -->
+<script src="../js/commonJs.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" sizes="16x16" href="../images/favicon_16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../images/favicon_32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="../images/favicon_48.png">
+<title>내 정보 관리 이용안내 | Samsung Privacy</title>
+<!-- css link -->
+<link rel="stylesheet" href="../css/common.css">
+<link rel="stylesheet" href="../css/style.css">
+<script>
+  window.addEventListener('load', function() {
+    // use-guide
+    mvJs.popup.open('#layer-use-guide');
+  });
+</script>
+</head>
+<body>
+
+<section class="wrap">
+  <button class="cta cta--big cta--icon" data-popup-id="layer-use-guide">
+    이용안내
+    <svg class="icon icon--first" focusable="false">
+      <use href="../images/sprite-svg.svg#guide"></use>
+    </svg>
+  </button>
+</section><!--// .wrap -->
+
+<!-- 이용 안내 팝업 -->
+<div class="popup popup--layer" aria-modal="true" role="dialog" aria-hidden="true" aria-labelledby="layer-use-guide-title" id="layer-use-guide">
+  <div class="popup__inner popup__inner--full">
+    <h2 class="popup__title" id="layer-use-guide-title">내 정보 관리 이용 안내</h2>
+    <div class="popup__contents">
+      <div class="scroll-area">
+        <div class="use-guide__banner">
+          <strong>프라이버시 사이트에서 <br>내 정보를 쉽고 빠르게 관리해 보세요 :)</strong><!-- 20220712 문구 변경 --><!-- 20220729 텍스트 수정 -->
+        </div>
+        <h3 class="use-guide__headline">내 정보 관리는 무엇인가요?</h3>
+        <p class="use-guide__description">매일 만나는 삼성 서비스 및 앱에서 활용되는 개인정보를 확인하고, 직접 관리할 수 있도록 투명하게 제공하고 있습니다. 삼성의 보안 정책 하에 보호되고 있는 서비스와 앱을 간편하게 관리해보세요!</p><!-- 20220712 문구 변경 -->
+        <h3 class="use-guide__headline">이렇게 시작해 보세요!</h3>
+        <p class="use-guide__description">먼저 이용 중인 서비스 및 앱을 상세히 확인해 주세요! 간편 검색으로 빠르게 찾고, 서비스 이름을 선택하면 상세 내용을 확인 할 수 있어요.</p>
+
+        <div class="swiper swiper--mobile use-guide__swiper" data-options='{
+          "pagination" : "bullet",
+          "mode": "mo"
+         }'>
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="use-guide__box">
+                  <h4 class="use-guide__title">활용되는 개인정보가 궁금할 때</h4>
+                  <ol class="guide-step__list">
+                    <li class="guide-step__item">
+                      <div class="guide-step__icon">
+                        <svg class="icon" focusable="false">
+                          <use href="../images/sprite-svg.svg#guide-download"></use>
+                        </svg>
+                      </div>
+                      <div class="guide-step__inner"><p class="guide-step__text">개인정보 활용이 궁금한 서비스 및 앱의 '데이터 다운로드' 버튼을 눌러 신청해 주세요.</p><!-- 20220712 문구 변경 -->
+                      </div>
+                    </li>
+                    <li class="guide-step__item">
+                      <div class="guide-step__icon">
+                        <svg class="icon" focusable="false">
+                          <use href="../images/sprite-svg.svg#guide-step-download"></use>
+                        </svg>
+                      </div>
+                      <div class="guide-step__inner"><p class="guide-step__text">접수중 &gt; 처리중 &gt; 완료 단계를 거쳐 파일 다운로드를 할 수 있어요.</p>
+                        <ul>
+                          <!--<li>신청일로 부터 약 1~15일 소요 될 수 있어요.</li>  //20220712 문구 삭제 -->
+                          <li>신청 접수 후 이메일 계정으로 진행 상태를 알려 드려요.</li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="guide-step__item">
+                      <div class="guide-step__icon">
+                        <svg class="icon" focusable="false">
+                          <use href="../images/sprite-svg.svg#guide-password"></use>
+                        </svg>
+                      </div>
+                      <div class="guide-step__inner"><p class="guide-step__text">파일 다운로드 시 이메일 계정으로 발송된 파일 암호를 꼭 확인해 주세요!</p>
+                      </div>
+                    </li>
+                    <li class="guide-step__item">
+                      <div class="guide-step__icon">
+                        <svg class="icon" focusable="false">
+                          <use href="../images/sprite-svg.svg#guide-filedownload"></use>
+                        </svg>
+                      </div>
+                      <div class="guide-step__inner"><p class="guide-step__text">파일 다운로드 기한은 신청일 기준 한 달(30일) 후 만료되며, 필요 시 개인정보 다운로드를 다시 신청해 주세요.</p>
+                      </div>
+                    </li>
+                  </ol>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="use-guide__box">
+                  <h4 class="use-guide__title">개인정보를 삭제하고 싶을 때</h4><!-- 20220712 문구 변경 -->
+                  <ol class="guide-step__list">
+                    <li class="guide-step__item">
+                      <div class="guide-step__icon">
+                        <svg class="icon" focusable="false">
+                          <use href="../images/sprite-svg.svg#guide-notice"></use>
+                        </svg>
+                      </div>
+                      <div class="guide-step__inner"><p class="guide-step__text">개인정보 삭제 완료 후 서비스 이용 및 정보 복원을 할 수 없으니, 신중히 생각해 주세요.</p><!-- 20220712 문구 변경 -->
+                      </div>
+                    </li>
+                    <li class="guide-step__item">
+                      <div class="guide-step__icon">
+                        <svg class="icon" focusable="false">
+                          <use href="../images/sprite-svg.svg#guide-delete"></use>
+                        </svg>
+                      </div>
+                      <div class="guide-step__inner"><p class="guide-step__text">개인정보 삭제를 하고 싶은 서비스 및 앱의 '데이터 삭제' 버튼을 눌러 신청해 주세요.</p><!-- 20220712 문구 변경 -->
+                      </div>
+                    </li>
+                    <li class="guide-step__item">
+                      <div class="guide-step__icon">
+                        <svg class="icon" focusable="false">
+                          <use href="../images/sprite-svg.svg#guide-step-delete"></use>
+                        </svg>
+                      </div>
+                      <div class="guide-step__inner"><p class="guide-step__text">접수중 &gt; 처리중 &gt; 완료 단계를 거쳐 삭제를 할 수 있어요.</p>
+                        <ul>
+                          <!--<li>신청일로 부터 약 1~15일 소요 될 수 있어요.</li>  //20220712 문구 삭제 -->
+                          <li>신청 접수 후 이메일 계정으로 진행 상태를 알려 드려요.</li>
+                          <li>이외 서비스 재사용에 필수적인 삼성계정 관련 정보 또는 법률적 유지가능 정보 외에 모든 개인정보는 삭제되고, 복원할 수 없어요.</li>
+                          <li>일부 유지된 개인정보는 보존기간이 완료된 이후 즉각 삭제하고 있어요.</li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ol>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="use-guide__box">
+                  <h4 class="use-guide__title">맞춤 혜택 이메일 또는 알림을 그만 받고 싶을 때</h4>
+                  <ol class="guide-step__list">
+                    <li class="guide-step__item">
+                      <div class="guide-step__icon">
+                        <svg class="icon" focusable="false">
+                          <use href="../images/sprite-svg.svg#guide-notice"></use>
+                        </svg>
+                      </div>
+                      <div class="guide-step__inner"><p class="guide-step__text">수신 동의 취소 후 맞춤 혜택 관련 이메일과 알림을 받을 수 없으니, 신중히 생각해 주세요.</p><!-- 20220712 문구 변경 -->
+                    </div>
+                    </li>
+                    <li class="guide-step__item">
+                      <div class="guide-step__icon">
+                        <svg class="icon" focusable="false">
+                          <use href="../images/sprite-svg.svg#guide-cancel"></use>
+                        </svg>
+                      </div>
+                      <div class="guide-step__inner"><p class="guide-step__text">혜택 안내를 그만 받고 싶은 서비스 및 앱의 '수신 동의 취소' 버튼을 눌러 신청해 주세요.</p><!-- 20220712 문구 변경 -->
+                    </div>
+                    </li>
+                    <li class="guide-step__item">
+                      <div class="guide-step__icon">
+                        <svg class="icon" focusable="false">
+                          <use href="../images/sprite-svg.svg#guide-step-cancel"></use>
+                        </svg>
+                      </div>
+                      <!-- 20220729 텍스트 수정 -->
+                      <div class="guide-step__inner"><p class="guide-step__text">접수중 &gt; 처리중 &gt; 완료 단계를 거쳐 수신 동의를 취소 할 수 있어요.</p>
+                        <ul>
+                          <!--<li>신청일로 부터 약 1~15일 소요 될 수 있어요.</li>  //20220712 문구 삭제 -->
+                          <li>신청 접수 후 이메일 계정으로 진행 상태를 알려 드려요.</li>
+                          <li>선택한 서비스 및 앱의 수신 동의 취소에 따라 관련 이메일과 알림을 더 이상 발송되지 않아요.</li>
+                          <li>삼성 서비스 및 앱에서 보내는 안내 이메일과 알림은 계속 받을 수 있어요.</li>
+                        </ul>
+                      </div>
+                      <!--// 20220729 텍스트 수정 -->
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div><!--// .scroll-area -->
+    </div>
+    <div class="popup__cta-wrap">
+      <button class="cta cta--filled">확인</button>
+    </div>
+    <button class="popup-close">
+      <svg class="icon" focusable="false" aria-label="Close Popup">
+        <use href="../images/sprite-svg.svg#cancel"></use>
+      </svg>
+    </button>
+  </div>
+  <div class="popup__dimmed"><!-- popup dimmed --></div>
+</div>
+<!--// 이용 안내 팝업 -->
+
+<!-- js -->
+<script src="../js/commonJs.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <defs>
+        <clipPath id="4o4achsvza">
+            <path transform="translate(24 314)" style="fill:none" d="M0 0h24v24H0z"/>
+        </clipPath>
+    </defs>
+    <g data-name="icon_privacypolicy_x24" transform="translate(-24 -314)" style="clip-path:url(#4o4achsvza)">
+        <g data-name="그룹 26480" transform="translate(0 1.4)">
+            <rect width="14" height="19" rx="1" transform="translate(26 313.6)" style="fill:#b7d8ff"/>
+            <rect data-name="사각형 16095" width="4" height="1" rx=".5" transform="translate(29 320.6)" style="fill:#fff"/>
+            <rect data-name="사각형 16096" width="8" height="1" rx=".5" transform="translate(29 317.6)" style="fill:#fff"/>
+        </g>
+        <path d="M1017.264 930.5a8.133 8.133 0 0 1-4.758 1.572v2.759a5.236 5.236 0 1 0 9.515 0v-2.759a8.128 8.128 0 0 1-4.757-1.572z" transform="translate(-976.263 -605.5)" style="fill:#005fd0"/>
+    </g>
+</svg>

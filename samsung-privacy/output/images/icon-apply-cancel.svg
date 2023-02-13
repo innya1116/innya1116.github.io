@@ -1,0 +1,13 @@
+<svg id="icon_96_application_cancel" data-name="icon_96_application cancel" xmlns="http://www.w3.org/2000/svg" width="96" height="96.001" viewBox="0 0 96 96.001">
+  <rect id="area" width="96" height="96" transform="translate(0 0.001)" fill="red" opacity="0"/>
+  <path id="빼기_9" data-name="빼기 9" d="M55.394,96H8a8.009,8.009,0,0,1-8-8V8A8.009,8.009,0,0,1,8,0H64a8.009,8.009,0,0,1,8,8V79.392L55.394,96Z" transform="translate(84 95.999) rotate(180)" fill="#b7d8ff"/>
+  <path id="다각형_4" data-name="다각형 4" d="M12,0,24,13H0Z" transform="translate(38.163 9.192) rotate(135)" fill="#005fd0"/>
+  <g id="그룹_27723" data-name="그룹 27723" transform="translate(59.177 44.501)">
+    <path id="패스_19038" data-name="패스 19038" d="M100.173,47.388,89.085,38.724l3.733-4.63,11.089,8.663Z" transform="translate(-67.084 -34.093)" fill="#2189ff"/>
+    <path id="패스_19039" data-name="패스 19039" d="M97.918,48.013,77.842,72.51,66.754,63.844l20.074-24.5Z" transform="translate(-64.837 -34.72)" fill="#51a1ff"/>
+    <path id="패스_19040" data-name="패스 19040" d="M64.623,81.826l6.408-2.49-5.462-4.278Z" transform="translate(-64.623 -38.982)" fill="#fff"/>
+    <path id="패스_19041" data-name="패스 19041" d="M66.645,67.165l-.97,6.952,5.462,4.277,6.6-2.564Z" transform="translate(-64.729 -38.04)" fill="#2189ff"/>
+  </g>
+  <rect id="사각형_16473" data-name="사각형 16473" width="3" height="27.66" rx="1.5" transform="translate(56.382 36.817) rotate(45)" fill="#fff"/>
+  <rect id="사각형_16474" data-name="사각형 16474" width="3" height="27.66" rx="1.5" transform="translate(59.177 56.376) rotate(135)" fill="#fff"/>
+</svg>

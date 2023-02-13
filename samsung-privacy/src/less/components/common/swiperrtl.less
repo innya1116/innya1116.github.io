@@ -1,0 +1,71 @@
+@import '../../common/_global';
+
+html[dir='rtl'] {
+  .swiper {
+    &-slide {
+      .swiper--width-auto & {
+        width: auto;
+        margin-right: 0;
+        margin-left: 24px;
+      }
+    }
+
+    &-button-prev {
+      left: auto;
+      right: -20px;
+
+      .icon {
+        transform: rotate(180deg);
+      }
+    }
+
+    &-button-next {
+      right: auto;
+      left: -20px;
+
+      .icon {
+        transform: rotate(0);
+      }
+    }
+
+    &-autoplay {
+      margin-right: 0;
+      margin-left: 9px;
+    }
+  }
+}
+
+@media @media-query--desktop {
+  html[dir='rtl'] {
+    .swiper {
+      &-slide {
+        .swiper--width-auto & {
+          .vw-convert-desktop(margin-left, 24px);
+        }
+      }
+
+      &-button-prev {
+        .vw-convert-desktop(right, -20px);
+      }
+
+      &-button-next {
+        .vw-convert-desktop(left, -20px);
+      }
+
+      &-autoplay {
+        .vw-convert-desktop(margin-left, 9px);
+      }
+    }
+  }
+}
+
+@media @media-query--mobile {
+  html[dir='rtl'] {
+    .swiper {
+      &-autoplay {
+        margin-right: 0;
+        .vw-convert-mobile(margin-left, 9px);
+      }
+    }
+  }
+}

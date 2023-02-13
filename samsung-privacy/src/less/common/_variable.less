@@ -1,0 +1,33 @@
+// default size
+@size--desktop: 1440;
+@size--mobile: 360;
+
+// break point
+@break-point--desktop: 1440;
+@break-point--desktop-min: 768;
+@break-point--mobile-max: 767;
+
+// media query
+@media-query--desktop: ~ 'only screen and (min-width:@{break-point--desktop-min}px) and (max-width:@{break-point--desktop}px)';
+@media-query--mobile: ~ 'only screen and (max-width:@{break-point--mobile-max}px)';
+
+// color
+@color--black: #000;
+@color--white: #fff;
+@color--point-skyblue: #7994f9;
+@color--secondary-1: #aa5afa;
+@color--secondary-2: #73c7ac;
+@color--secondary-3: #d667bc;
+@color--bg-1: #f5f7fe;
+@color--bg-2: #f7f7f7;
+@color--line-1: #eaeaea;
+@color--dim-1: rgba(0,0,0,.6);
+@color--negative: #f13c61;
+@color--text: #313131;
+
+@color--blue-main: #006BEA;
+@color--blue-sub: #EAF4FF;
+
+//font
+@font--sharp-sans: 'SamsungSharpSans', sans-serif;
+@font--ko: 'SamsungOneKorean', sans-serif;

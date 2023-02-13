@@ -1,0 +1,170 @@
+@import '_variable';
+
+// Country excluding html language 'en', Font setting
+.lang(@lang) {
+  html[lang^='@{lang}'] {
+    &,
+    body {
+      font-family: sans-serif;
+    }
+  }
+}
+
+.lang(@lang; @font-family) {
+  html[lang^='@{lang}'] {
+    &,
+    body {
+      font-family: @font-family, sans-serif;
+    }
+  }
+}
+
+.sharp-sans() {
+  font-family: @font--sharp-sans;
+
+  html[lang^='ko'] & {
+    font-family: @font--ko;
+  }
+}
+
+// px to vw convert mixin
+.vw-convert-desktop(@property; @pixel) {
+  & when (length(@pixel) = 1) {
+    @{property}: (unit(@pixel) * 100 / @size--desktop) * 1vw;
+  }
+
+  & when (length(@pixel) = 2) {
+    // @{property}: extract(@pixel,1) extract(@pixel,2);
+    @{property}: (unit(extract(@pixel,1)) * 100 / @size--desktop) * 1vw
+      (unit(extract(@pixel,2)) * 100 / @size--desktop) * 1vw;
+  }
+
+  & when (length(@pixel) = 3) {
+    // @{property}: extract(@pixel,1) extract(@pixel,2) extract(@pixel,3);
+    @{property}: (unit(extract(@pixel,1)) * 100 / @size--desktop) * 1vw
+      (unit(extract(@pixel,2)) * 100 / @size--desktop) * 1vw
+      (unit(extract(@pixel,3)) * 100 / @size--desktop) * 1vw;
+  }
+
+  & when (length(@pixel) = 4) {
+    // @{property}: extract(@pixel,1) extract(@pixel,2) extract(@pixel,3) extract(@pixel,4);
+    @{property}: (unit(extract(@pixel,1)) * 100 / @size--desktop) * 1vw
+      (unit(extract(@pixel,2)) * 100 / @size--desktop) * 1vw
+      (unit(extract(@pixel,3)) * 100 / @size--desktop) * 1vw
+      (unit(extract(@pixel,4)) * 100 / @size--desktop) * 1vw;
+  }
+}
+
+.vw-convert-mobile(@property; @pixel) {
+  & when (length(@pixel) = 1) {
+    @{property}: (unit(@pixel) * 100 / @size--mobile) * 1vw;
+  }
+
+  & when (length(@pixel) = 2) {
+    // @{property}: extract(@pixel,1) extract(@pixel,2);
+    @{property}: (unit(extract(@pixel,1)) * 100 / @size--mobile) * 1vw
+      (unit(extract(@pixel,2)) * 100 / @size--mobile) * 1vw;
+  }
+
+  & when (length(@pixel) = 3) {
+    // @{property}: extract(@pixel,1) extract(@pixel,2) extract(@pixel,3);
+    @{property}: (unit(extract(@pixel,1)) * 100 / @size--mobile) * 1vw
+      (unit(extract(@pixel,2)) * 100 / @size--mobile) * 1vw
+      (unit(extract(@pixel,3)) * 100 / @size--mobile) * 1vw;
+  }
+
+  & when (length(@pixel) = 4) {
+    // @{property}: extract(@pixel,1) extract(@pixel,2) extract(@pixel,3) extract(@pixel,4);
+    @{property}: (unit(extract(@pixel,1)) * 100 / @size--mobile) * 1vw
+      (unit(extract(@pixel,2)) * 100 / @size--mobile) * 1vw
+      (unit(extract(@pixel,3)) * 100 / @size--mobile) * 1vw
+      (unit(extract(@pixel,4)) * 100 / @size--mobile) * 1vw;
+  }
+}
+// ---// px to vw convert mixin
+
+.icon-scale(@size) {
+  display: inline-block;
+  position: relative;
+  width: unit(@size) * 1px;
+  height: unit(@size) * 1px;
+
+  .icon-svc {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    @scale: (unit(@size) / 64);
+    transform: translate(-50%, -50%) scale(@scale);
+  }
+}
+
+.icon-scale--pc(@size) {
+  .vw-convert-desktop(width, (unit(@size) * 1px));
+  .vw-convert-desktop(height, (unit(@size) * 1px));
+}
+
+.icon-scale--mo(@size) {
+  .vw-convert-mobile(width, (unit(@size) * 1px));
+  .vw-convert-mobile(height, (unit(@size) * 1px));
+}
+
+.middle(@width; @height; @direction; @value) {
+  position: absolute;
+  @{direction}: @value;
+  top: 50%;
+  width: @width;
+  height: @height;
+  transform+: translateY(-50%);
+}
+
+.middle--pc(@width; @height; @direction; @value) {
+  .vw-convert-desktop(@direction, @value);
+  .vw-convert-desktop(width, @width);
+  .vw-convert-desktop(height, @height);
+}
+
+.middle--mo(@width; @height; @direction; @value) {
+  .vw-convert-mobile(@direction, @value);
+  .vw-convert-mobile(width, @width);
+  .vw-convert-mobile(height, @height);
+}
+
+.center(@width; @height; @direction; @value) {
+  position: absolute;
+  @{direction}: @value;
+  left: 50%;
+  width: @width;
+  height: @height;
+  transform+: translateX(-50%);
+}
+
+.center--pc(@width; @height; @direction; @value) {
+  .vw-convert-desktop(@direction, @value);
+  .vw-convert-desktop(width, @width);
+  .vw-convert-desktop(height, @height);
+}
+
+.center--mo(@width; @height; @direction; @value) {
+  .vw-convert-mobile(@direction, @value);
+  .vw-convert-mobile(width, @width);
+  .vw-convert-mobile(height, @height);
+}
+
+.center-middle(@width; @height) {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: @width;
+  height: @height;
+  transform+: translate(-50%, -50%);
+}
+
+.center-middle--pc(@width; @height) {
+  .vw-convert-desktop(width, @width);
+  .vw-convert-desktop(height, @height);
+}
+
+.center-middle--mo(@width; @height) {
+  .vw-convert-mobile(width, @width);
+  .vw-convert-mobile(height, @height);
+}

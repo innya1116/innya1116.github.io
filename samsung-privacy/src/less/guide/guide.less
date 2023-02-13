@@ -1,0 +1,268 @@
+@import '../common/_global';
+
+.guide {
+  padding: 24px;
+
+  &-header {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 24px;
+    padding-bottom: 0;
+    background: #227aff;
+    z-index: 999;
+  }
+
+  &-tit1 {
+    color: @color--white;
+    font-size: 36px;
+    line-height: 1.2;
+  }
+
+  &-nav {
+    .nav-depth1 {
+      display: flex;
+      position: relative;
+      margin: 24px -24px 0;
+      padding: 8px 24px 0;
+      background: rgba(255,255,255,.7);
+
+      a {
+        display: block;
+        padding: 12px 24px;
+        border-radius: 12px 12px 0 0;
+        font-size: 20px;
+
+        &.on {
+          background: @color--white;
+          font-weight: bold;
+        }
+
+        &:hover,
+        &:focus {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .nav-depth2 {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 -24px;
+      padding: 16px 24px 8px;
+      background: @color--white;
+      box-shadow: 0 1px 8px rgba(0,0,0,.15);
+
+      a {
+        display: block;
+        position: relative;
+        padding: 4px 24px;
+        color: @color--black;
+        opacity: .7;
+
+        &:after {
+          content: '';
+          position: absolute;
+          right: 0;
+          top: 50%;
+          width: 1px;
+          height: 16px;
+          transform: translateY(-50%);
+          background: #ccc;
+        }
+
+        &:last-child:after{
+          content: none;
+        }
+
+        &.on {
+          font-weight: bold;
+          text-decoration: underline;
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  &-section {
+    &:not(:first-child) {
+      margin-top: 60px;
+    }
+  }
+
+  &-tit2 {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 24px;
+
+    & ~ & {
+      margin-top: 32px;
+    }
+  }
+
+  &-tit3 {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 18px;
+
+    & ~ & {
+      margin-top: 24px;
+    }
+  }
+
+  &-info-list {
+    li {
+      padding-left: 10px;
+      text-indent: -10px;
+
+      &:not(:first-child) {
+        margin-top: 4px;
+      }
+
+      &:before {
+        content: '- ';
+      }
+    }
+  }
+
+  .filelist {
+    width: 100%;
+    counter-reset: row-number;
+
+    th,
+    td {
+      padding: 8px 4px;
+      border: 1px solid #ccc;
+    }
+
+    thead th {
+      background: #eee;
+    }
+
+    tbody tr {
+      counter-increment: row-number;
+
+      &:hover {
+        background: #f4f7f8;
+      }
+
+      td:first-child {
+        &::before {
+          content: counter(row-number);
+        }
+      }
+
+      td:first-child,
+      td:nth-child(2),
+      td:nth-last-child(2),
+      td:nth-last-child(3) {
+        text-align: center;
+      }
+
+      &.del td {
+        background: #efefef;
+        text-decoration: line-through;
+
+        &,
+        a {
+          color: #999;
+        }
+      }
+    }
+  }
+
+  &__icons {
+    display: inline-flex;
+    flex-wrap: wrap;
+    text-align: center;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    & > div:not(:first-child) {
+      width: 150px;
+    }
+
+    .icon {
+      width: 100%;
+      height: 60px;
+
+      & + span {
+        display: block;
+      }
+    }
+  }
+
+  table {
+    width: 100%;
+    border-top: 1px solid #ccc;
+
+    th,
+    td {
+      padding: 8px;
+      color: #111;
+      border-bottom: 1px solid #ddd;
+      border-right: 1px solid #ddd;
+      font-size: 14px;
+
+      &:last-child {
+        border-right: none;
+      }
+    }
+
+    th {
+      font-weight: 500;
+      background: #f8f8f8;
+    }
+  }
+
+  .code {
+    overflow: auto;
+    margin-top: 10px;
+    padding: 10px;
+    background: #212121;
+    color: #ccc;
+    font-size: 14px;
+    font-family: Consolas, 'SamsungOneKorean', monospace;
+    white-space: pre-wrap;
+    word-break: break-all;
+    word-wrap: break-word;
+
+    &-wrap {
+      position: relative;
+      margin-top: 24px;
+
+      &:after {
+        content: '[markup code]';
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        display: inline-flex;
+        padding: 6px 16px;
+        color: @color--white;
+        font-size: 14px;
+        font-weight: bold;
+        background: @color--black;
+        border: 1px solid @color--white;
+        text-transform: uppercase;
+      }
+
+      .code {
+        padding-top: 48px;
+      }
+    }
+
+    i {
+      color: #72bb78;
+    }
+
+    b {
+      color: #ff0;
+    }
+  }
+}

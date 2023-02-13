@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" sizes="16x16" href="../images/favicon_16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../images/favicon_32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="../images/favicon_48.png">
+<title>개인정보 삭제 확인 | Samsung Privacy</title>
+<!-- css link -->
+<link rel="stylesheet" href="../css/common.css">
+<link rel="stylesheet" href="../css/style.css">
+<script>
+  window.addEventListener('load', function() {
+    // use-guide
+    mvJs.popup.open('#layer-confirm-delete');
+  });
+</script>
+</head>
+<body>
+
+<section class="wrap">
+  <button class="cta cta--big cta--icon" data-popup-id="layer-confirm-delete">
+    데이터 삭제
+    <svg class="icon icon--first" focusable="false">
+      <use href="../images/sprite-svg.svg#trash-box"></use>
+    </svg>
+  </button>
+</section><!--// .wrap -->
+
+<!-- layer popup -->
+<div class="popup popup--layer" aria-modal="true" role="dialog" aria-hidden="true" aria-labelledby="layer-confirm-delete-title" id="layer-confirm-delete">
+  <div class="popup__inner popup__inner--full">
+    <h2 class="popup__title" id="layer-confirm-delete-title">신청 확인</h2>
+    <div class="popup__contents popup__contents--full">
+      <div class="scroll-area">
+        <div class="app-myinfo-banner">
+          <strong>개인정보 삭제 완료 후 서비스 이용 및 정보 복원을 할 수 없으니, 신중히 생각해 주세요.</strong>
+        </div>
+        <div class="app-myinfo">
+          <h3 class="app-myinfo__title">
+            <b id="ttsPply12">선택한 서비스 및 앱의 개인정보를 <strong>삭제</strong> 할까요?</b>
+            <button class="tts-btn" data-target-id="ttsPply12"><span class="hidden">Click to start listening</span></button>
+          </h3>
+          <div class="app-myinfo__inner app-myinfo__inner--delete">
+            <ul class="app-myinfo__list">
+              <li class="app-myinfo__item">
+                <div class="app-myinfo__app">
+                  <i class="icon-svc icon-svc-global-goals"></i>
+                  <!--
+                  Add classes according to apps/services
+
+                  account
+                  <i class="icon-svc icon-svc-account"></i>
+                  bixby
+                  <i class="icon-svc icon-svc-bixby"></i>
+                  blockchain wallet
+                  <i class="icon-svc icon-svc-blockchain-wallet"></i>
+                  call
+                  <i class="icon-svc icon-svc-call"></i>
+                  cloud
+                  <i class="icon-svc icon-svc-cloud"></i>
+                  dplug
+                  <i class="icon-svc icon-svc-dplug"></i>
+                  familyhub
+                  <i class="icon-svc icon-svc-familyhub"></i>
+                  find mobile
+                  <i class="icon-svc icon-svc-find-mobile"></i>
+                  galaxy store
+                  <i class="icon-svc icon-svc-galaxy-store"></i>
+                  game launcher
+                  <i class="icon-svc icon-svc-game-launcher"></i>
+                  global goals
+                  <i class="icon-svc icon-svc-global-goals"></i>
+                  health
+                  <i class="icon-svc icon-svc-health"></i>
+                  health platform
+                  <i class="icon-svc icon-svc-health-platform"></i>
+                  hrm
+                  <i class="icon-svc icon-svc-hrm"></i>
+                  members
+                  <i class="icon-svc icon-svc-members"></i>
+                  pass
+                  <i class="icon-svc icon-svc-pass"></i>
+                  pay
+                  <i class="icon-svc icon-svc-pay"></i>
+                  pen
+                  <i class="icon-svc icon-svc-pen"></i>
+                  rewards
+                  <i class="icon-svc icon-svc-rewards"></i>
+                  runestone
+                  <i class="icon-svc icon-svc-runestone"></i>
+                  samsung free
+                  <i class="icon-svc icon-svc-samsung-free"></i>
+                  samsung o
+                  <i class="icon-svc icon-svc-samsung-o"></i>
+                  smart things
+                  <i class="icon-svc icon-svc-smart-things"></i>
+                  smart tv
+                  <i class="icon-svc icon-svc-smart-tv"></i>
+                  social
+                  <i class="icon-svc icon-svc-social"></i>
+                  themes
+                  <i class="icon-svc icon-svc-themes"></i>
+                  tv plus
+                  <i class="icon-svc icon-svc-tv-plus"></i>
+                  visit in
+                  <i class="icon-svc icon-svc-visit-in"></i>
+                  vr
+                  <i class="icon-svc icon-svc-vr"></i>
+                  walkie talkie
+                  <i class="icon-svc icon-svc-walkie-talkie"></i>
+                  wear
+                  <i class="icon-svc icon-svc-wear"></i>
+                  wifi
+                  <i class="icon-svc icon-svc-wifi"></i>
+                  chat_together
+                  <i class="icon-svc icon-svc-chat-together"></i>
+                  -->
+                  <strong class="app-myinfo__name">Llamadas/mensajes en otros disp</strong>
+                  <p class="app-myinfo__text">모든 개인정보는 삭제되거나 익명화 되며 복원할 수 없습니다.
+                    다만 법률에 의해 필요로 하는 일부 개인정보는 유지하나,
+                    보존기간이 완료된 이후에는 즉각 삭제 됩니다.</p>
+                </div>
+              </li>
+              <li class="app-myinfo__item">
+                <div class="app-myinfo__app">
+                  <i class="icon-svc icon-svc-health"></i>
+                  <strong class="app-myinfo__name">Samsung Health</strong>
+                  <p class="app-myinfo__text">모든 개인정보는 삭제되거나 익명화 되며 복원할 수 없습니다.
+                    다만 법률에 의해 필요로 하는 일부 개인정보는 유지하나,
+                    보존기간이 완료된 이후에는 즉각 삭제 됩니다.</p>
+                </div>
+              </li>
+              <li class="app-myinfo__item">
+                <div class="app-myinfo__app">
+                  <i class="icon-svc icon-svc-account"></i>
+                  <strong class="app-myinfo__name">Samsung Account</strong>
+                  <p class="app-myinfo__text">If you exercise your right to erasure in the Samsung Social service, any content (e.g. photos, videos, calendar, reminder, note, and etc.) that you have shared with your family or groups using Samsung Social service and contents you shared with Family Hub using the Samsung Social service will be erased from the server. If you have data that you need to save or have to download content that was shared through Samsung Social service, please save it to your device before erasure. You can sign up again at any time.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="app-myinfo__email-wrap">
+            <p class="app-myinfo__email-text">진행 상태를 안내 받을 이메일 계정을 확인해 주세요.</p>
+            <strong class="app-myinfo__email">sjw442@samsung.com</strong>
+          </div>
+        </div>
+        <div class="information">
+          <strong class="information__title">
+            <svg class="icon" focusable="false">
+              <use href="../images/sprite-svg.svg#information"></use>
+            </svg>꼭 확인해 주세요!
+          </strong>
+          <ul class="information__list">
+            <li class="information__item">신청 접수 후 이메일 계정으로 진행 상태를 알려 드릴게요.</li>
+            <li class="information__item">개인정보 신청 처리는 접수중 &gt; 처리중 &gt; 완료 순으로 진행 되어요.</li>
+            <li class="information__item">이외 서비스 재사용에 필수적인 삼성계정 관련 정보 또는 법률적 유지가능 정보 외에 모든 개인정보는 삭제되고, 복원할 수 없어요.</li>
+            <li class="information__item">일부 유지된 개인정보는 보존기간이 완료된 이후 즉각 삭제하고 있어요.</li>
+          </ul>
+        </div>
+      </div><!--// .scroll-area -->
+    </div>
+    <div class="popup__cta-wrap">
+      <button class="cta cta--outlined">취소</button>
+      <button class="cta cta--filled">확인</button>
+    </div>
+    <button class="popup-close">
+      <svg class="icon" focusable="false" aria-label="Close Popup">
+        <use href="../images/sprite-svg.svg#cancel"></use>
+      </svg>
+    </button>
+  </div>
+  <div class="popup__dimmed"><!-- popup dimmed --></div>
+</div><!--// .popup -->
+<!--// layer popup -->
+
+<!-- js -->
+<script src="../js/commonJs.min.js"></script>
+</body>
+</html>

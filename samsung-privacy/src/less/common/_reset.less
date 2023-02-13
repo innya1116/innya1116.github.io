@@ -1,0 +1,101 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+  box-sizing: border-box;
+  line-height: 1.33;
+  word-break: keep-all;
+  word-wrap: break-word;
+}
+
+html,
+body {
+  color: @color--text;
+  font-size: 16px;
+  font-family: 'SamsungOne', sans-serif;
+}
+
+ul, li, ol {
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  color: @color--black;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus,
+a:active {
+  text-decoration: underline;
+}
+
+button {
+  overflow:visible;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  background: none;
+  cursor:pointer;
+}
+
+a:focus,
+button:focus,
+input:focus,
+select:focus,
+textarea:focus,
+div[tabindex]:focus {
+  box-shadow: 0 0 0 2px @color--white;
+  outline: 2px dotted black;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  // table-layout: fixed;
+}
+
+em {
+  font-style: normal;
+}
+
+.hidden {
+  display: block;
+  overflow: hidden;
+  position: absolute !important;
+  left: -1px;
+  top: -1px;
+  width: 1px;
+  height: 1px;
+  font-size: 1px;
+  line-height: 1px;
+  clip: rect(1px,1px,1px,1px);
+}
+
+
+@media @media-query--desktop {
+  html,
+  body {
+    .vw-convert-desktop(font-size, 16px);
+  }
+}
+
+@media @media-query--mobile {
+  html,
+  body {
+    .vw-convert-mobile(font-size, 15px);
+  }
+}

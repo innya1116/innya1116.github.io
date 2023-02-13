@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" sizes="16x16" href="../images/favicon_16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../images/favicon_32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="../images/favicon_48.png">
+<title>내 정보 관리 | Samsung Privacy</title>
+<!-- css link -->
+<link rel="stylesheet" href="../css/common.css">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<!-- dummy header -->
+<header class="header header--dummy">
+  <img src="../images/dummy-header-mo.gif" alt="" class="dummy-mo">
+  <img src="../images/dummy-header-pc.gif" alt="" class="dummy-pc">
+</header>
+<!--// dummy header -->
+<section class="wrap myinfo">
+  <div class="inner">
+    <div class="page-top">
+      <h1 class="page-top__title">
+        <strong id="ttsMy11">내 정보 관리하기</strong>
+        <button class="tts-btn" data-target-id="ttsMy11 ttsMy12"><span class="hidden">Click to start listening</span></button>
+      </h1>
+      <p class="page-top__description" id="ttsMy12">매일 만나는 삼성 서비스와 앱을 간편하게 관리해 보세요</p>
+      <div class="page-top__link">
+        <button class="cta cta--big cta--icon" data-popup-id="layer-use-guide">
+          이용 안내
+          <svg class="icon icon--first" focusable="false">
+            <use href="../images/sprite-svg.svg#guide"></use>
+          </svg>
+        </button>
+      </div>
+    </div><!--// .page-top -->
+
+    <section class="request">
+      <h2 class="hidden">개인정보 신청내역 요약</h2>
+      <ul class="request-summary">
+        <li class="status status--register">
+          <svg class="icon" focusable="false">
+            <use href="../images/sprite-svg.svg#status-register"></use>
+          </svg>
+          <em>접수중</em>
+          <strong>00</strong>
+        </li>
+        <li class="status status--processing">
+          <svg class="icon" focusable="false">
+            <use href="../images/sprite-svg.svg#status-processing"></use>
+          </svg>
+          <em>처리중</em>
+          <strong>00</strong>
+        </li>
+        <li class="status status--complete">
+          <svg class="icon" focusable="false">
+            <use href="../images/sprite-svg.svg#status-complete"></use>
+          </svg>
+          <em>완료</em>
+          <strong>00</strong>
+        </li>
+      </ul>
+      <!-- if nothing data, add class .request-list--nodata -->
+      <div class="request-list request-list--nodata">
+        <svg class="icon" focusable="false">
+          <use href="../images/sprite-svg.svg#nodata"></use>
+        </svg>
+        <p class="nodata-txt">신청하신 서비스가 없습니다.</p>
+      </div><!--// .request-list -->
+    </section><!--// .request -->
+  </div><!--// .inner -->
+</section><!--// .wrap -->
+
+<footer class="footer">
+  <img src="../images/dummy-footer-mo.gif" alt="" class="dummy-mo">
+  <img src="../images/dummy-footer-pc.gif" alt="" class="dummy-pc">
+</footer>
+
+<!-- js -->
+<script src="../js/commonJs.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96">
+    <circle cx="48" cy="48" r="48" style="fill:#b7d8ff"/>
+    <g transform="translate(1.199 2.201)">
+        <circle data-name="타원 156" cx="3" cy="3" r="3" transform="translate(28.801 63.799)" style="fill:#0054b7"/>
+        <circle data-name="타원 157" cx="3" cy="3" r="3" transform="translate(38.801 63.799)" style="fill:#0054b7"/>
+        <circle data-name="타원 158" cx="3" cy="3" r="3" transform="translate(48.801 63.799)" style="fill:#0054b7"/>
+        <circle data-name="타원 159" cx="3" cy="3" r="3" transform="translate(58.801 63.799)" style="fill:#0054b7"/>
+    </g>
+    <g data-name="그룹 27745">
+        <path transform="translate(30 20)" style="fill:none" d="M0 0h35v35H0z"/>
+        <path data-name="Icon / Bold / Human / User_select" d="M1.87 34.413A1.872 1.872 0 0 1 0 32.543V29.57a11.975 11.975 0 0 1 23.939 0v2.972a1.872 1.872 0 0 1-1.87 1.87zM3.741 8.23a8.229 8.229 0 1 1 8.228 8.229A8.238 8.238 0 0 1 3.741 8.23z" transform="translate(35.109 20.315)" style="fill:#fff"/>
+    </g>
+    <g data-name="그룹 26636" transform="translate(3.199 2.201)">
+        <circle data-name="타원 155" cx="11" cy="11" r="11" transform="translate(48.801 34.799)" style="fill:#2189ff"/>
+        <path data-name="패스 18957" d="m15889.848-7688.331 3.532 3.464 5.539-6.682" transform="translate(-15834.547 7733.848)" style="stroke:#fff;stroke-linecap:round;stroke-width:3px;fill:none"/>
+    </g>
+</svg>

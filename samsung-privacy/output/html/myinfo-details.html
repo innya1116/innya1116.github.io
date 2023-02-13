@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" sizes="16x16" href="../images/favicon_16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../images/favicon_32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="../images/favicon_48.png">
+<title>개인정보 신청 내역 &gt; 내 정보 관리 | Samsung Privacy</title>
+<!-- css link -->
+<link rel="stylesheet" href="../css/common.css">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<!-- dummy header(개발 영향 X) -->
+<header class="header header--dummy">
+  <img src="../images/dummy-header-mo.gif" alt="" class="dummy-mo">
+  <img src="../images/dummy-header-pc.gif" alt="" class="dummy-pc">
+</header>
+<!--// dummy header(개발 영향 X) -->
+<section class="wrap myinfo">
+  <div class="inner">
+    <div class="page-top">
+      <h1 class="page-top__title">
+        <strong id="ttsMy31">개인정보 신청 내역</strong>
+        <button class="tts-btn" data-target-id="ttsMy31 ttsMy32"><span class="hidden">Click to start listening</span></button>
+      </h1>
+      <p class="page-top__description" id="ttsMy32">나의 정보 관리에서 신청한 모든 내역을 한눈에 확인할 수 있어요</p>
+    </div><!--// .page-top -->
+    <div class="filter-tab filter-tab--depth1 scroll-menu">
+      <ul class="filter-tab__list">
+        <!-- (dev) If selected, add class .is-active,
+                  The selected item text to <h2 class="hidden">{selected item text}</h2> -->
+        <li class="filter-tab__item is-active"><a href="#">전체</a></li>
+        <li class="filter-tab__item"><a href="#">데이터 다운로드</a></li><!-- 20220712 문구 수정 -->
+        <li class="filter-tab__item"><a href="#">데이터 삭제</a></li><!-- 20220712 문구 수정 -->
+        <li class="filter-tab__item"><a href="#">맞춤 설정</a></li><!-- 20220712 문구 수정 -->
+      </ul>
+    </div>
+    <h2 class="hidden">전체</h2>
+
+    <div class="filter-tab filter-tab--depth2 scroll-menu">
+      <ul class="filter-tab__list">
+        <!-- (dev) If selected, add class .is-active,
+                  The selected item text to <h3 class="hidden">{selected item text}</h3> in section.request -->
+        <li class="filter-tab__item is-active"><a href="#"><span>전체</span><strong>09</strong></a></li>
+        <li class="filter-tab__item"><a href="#"><span>접수중</span><strong>02</strong></a></li>
+        <li class="filter-tab__item"><a href="#"><span>처리중</span><strong>01</strong></a></li>
+        <li class="filter-tab__item"><a href="#"><span>완료</span><strong>02</strong></a></li>
+        <li class="filter-tab__item"><a href="#"><span>기간만료/취소</span><strong>02</strong></a></li>
+      </ul>
+    </div>
+    <section class="request request--view-all">
+      <h3 class="hidden">전체</h3>
+
+      <ul class="request-list">
+        <!--
+          진행단계에 따라 클래스 추가
+
+          접수중: request-info--register
+          처리중: request-info--processing
+          완료: request-info--complete
+          기간만료: request-info--expiration
+          취소: request-info--cancel
+        -->
+        <li class="request-info request-info--complete">
+          <a class="request-info__link" href="#" role="button">
+            <div class="request-info__contents">
+              <span class="request-info__date"><span class="hidden">신청일자</span><em>2022.03.22.05:12 PM</em></span>
+              <span class="request-info__details"><span class="hidden">신청내용</span><strong>개인정보 다운로드</strong></span>
+              <span class="request-info__status"><span class="hidden">진행단계</span>
+                <!--
+                  진행단계에 따라 클래스 추가
+
+                  접수중: flag--register
+                  처리중: flag--processing
+                  완료: flag--complete
+                  기간만료: flag--expiration
+                  취소: flag--cancel
+                -->
+                <em class="flag flag--complete">완료</em>
+              </span>
+            </div>
+            <div class="request-info__service">
+              <ul class="request-info__service-list">
+                <li>
+                  <span class="icon-svc-m">
+                    <!--
+                      앱에 따라 클래스 추가
+
+                      Samsung Account - 삼성 계정
+                      <i class="icon-svc icon-svc-account"></i>
+                      Bixby Voice
+                      <i class="icon-svc icon-svc-bixby"></i>
+                      Samsung Blockchain Wallet
+                      <i class="icon-svc icon-svc-blockchain-wallet"></i>
+                      Call & text on other devices - 다른 기기에서도 전화/문자하기
+                      <i class="icon-svc icon-svc-call"></i>
+                      Samsung Cloud - 삼성 클라우드
+                      <i class="icon-svc icon-svc-cloud"></i>
+                      Samsung Appliance
+                      <i class="icon-svc icon-svc-dplug"></i>
+                      Family Hub
+                      <i class="icon-svc icon-svc-familyhub"></i>
+                      Find My Mobile
+                      <i class="icon-svc icon-svc-find-mobile"></i>
+                      Galaxy Store
+                      <i class="icon-svc icon-svc-galaxy-store"></i>
+                      Game Launcher - 게임런처
+                      <i class="icon-svc icon-svc-game-launcher"></i>
+                      Samsung Global Goals
+                      <i class="icon-svc icon-svc-global-goals"></i>
+                      Samsung Health
+                      <i class="icon-svc icon-svc-health"></i>
+                      Health Platform - 헬스 플랫폼
+                      <i class="icon-svc icon-svc-health-platform"></i>
+                      HRM
+                      <i class="icon-svc icon-svc-hrm"></i>
+                      Samsung Members
+                      <i class="icon-svc icon-svc-members"></i>
+                      Muse
+                      <i class="icon-svc icon-svc-muse"></i>
+                      Samsung Pass
+                      <i class="icon-svc icon-svc-pass"></i>
+                      Samsung Pay
+                      <i class="icon-svc icon-svc-pay"></i>
+                      PENUP
+                      <i class="icon-svc icon-svc-pen"></i>
+                      Samsung Rewards
+                      <i class="icon-svc icon-svc-rewards"></i>
+                      Customization Service - 맞춤형 서비스
+                      <i class="icon-svc icon-svc-runestone"></i>
+                      Samsung Free
+                      <i class="icon-svc icon-svc-samsung-free"></i>
+                      Samsung O
+                      <i class="icon-svc icon-svc-samsung-o"></i>
+                      SmartThings
+                      <i class="icon-svc icon-svc-smart-things"></i>
+                      Smart TV
+                      <i class="icon-svc icon-svc-smart-tv"></i>
+                      Samsung Social
+                      <i class="icon-svc icon-svc-social"></i>
+                      Samsung Themes
+                      <i class="icon-svc icon-svc-themes"></i>
+                      Samsung TV Plus
+                      <i class="icon-svc icon-svc-tv-plus"></i>
+                      Samsung Visit In
+                      <i class="icon-svc icon-svc-visit-in"></i>
+                      Samsung VR
+                      <i class="icon-svc icon-svc-vr"></i>
+                      Walkie-Talkie - 워키토키
+                      <i class="icon-svc icon-svc-walkie-talkie"></i>
+                      Galaxy Wearable
+                      <i class="icon-svc icon-svc-wear"></i>
+                      Secure Wi-Fi
+                      <i class="icon-svc icon-svc-wifi"></i>
+                      chat_together
+                      <i class="icon-svc icon-svc-chat-together"></i>
+                    -->
+                    <i class="icon-svc icon-svc-smart-things"></i>
+                  </span>
+                  <strong>SmartThings</strong>
+                </li>
+                <li>
+                  <span class="icon-svc-m">
+                    <i class="icon-svc icon-svc-global-goals"></i>
+                  </span>
+                  <strong>Samsung Global Goals</strong>
+                </li>
+                <li>
+                  <span class="icon-svc-m">
+                    <i class="icon-svc icon-svc-galaxy-wearable"></i>
+                  </span>
+                  <strong>Galaxy Wearable</strong>
+                </li>
+                <li>
+                  <span class="overlap-icons">
+                    <span class="icon-svc-m"><i class="icon-svc icon-svc-global-goals"></i></span>
+                    <span class="icon-svc-m"><i class="icon-svc icon-svc-smartthings"></i></span>
+                    <span class="icon-svc-m"><i class="icon-svc icon-svc-samsung-o"></i></span>
+                  </span>
+                  <strong>+ 3 more</strong>
+                </li>
+              </ul>
+              <svg class="icon" focusable="false">
+                <use href="../images/sprite-svg.svg#scroll-next"></use>
+              </svg>
+            </div>
+          </a>
+        </li>
+        <li class="request-info request-info--register">
+          <a class="request-info__link" href="#" role="button">
+            <div class="request-info__contents">
+              <span class="request-info__date"><span class="hidden">신청일자</span><em>2022.03.22.05:12 PM</em></span>
+              <span class="request-info__details"><span class="hidden">신청내용</span><strong>개인정보 삭제</strong></span>
+              <span class="request-info__status"><span class="hidden">진행단계</span><em class="flag flag--processing">처리중</em></span>
+            </div>
+            <div class="request-info__service">
+              <ul class="request-info__service-list">
+                <li>
+                  <span class="icon-svc-m">
+                    <i class="icon-svc icon-svc-smart-things"></i>
+                  </span>
+                  <strong>SmartThings</strong>
+                </li>
+              </ul>
+              <svg class="icon" focusable="false">
+                <use href="../images/sprite-svg.svg#scroll-next"></use>
+              </svg>
+            </div>
+          </a>
+        </li>
+        <li class="request-info request-info--processing">
+          <a class="request-info__link" href="#" role="button">
+            <div class="request-info__contents">
+              <span class="request-info__date"><span class="hidden">신청일자</span><em>2022.03.22.05:12 PM</em></span>
+              <span class="request-info__details"><span class="hidden">신청내용</span><strong>수신 동의 취소</strong></span>
+              <span class="request-info__status"><span class="hidden">진행단계</span><em class="flag flag--register">접수중</em></span>
+            </div>
+            <div class="request-info__service">
+              <ul class="request-info__service-list">
+                <li>
+                  <span class="icon-svc-m">
+                    <i class="icon-svc icon-svc-smart-things"></i>
+                  </span>
+                  <strong>SmartThings</strong>
+                </li>
+                <li>
+                  <span class="icon-svc-m">
+                    <i class="icon-svc icon-svc-global-goals"></i>
+                  </span>
+                  <strong>Samsung Global Goals</strong>
+                </li>
+              </ul>
+              <svg class="icon" focusable="false">
+                <use href="../images/sprite-svg.svg#scroll-next"></use>
+              </svg>
+            </div>
+          </a>
+        </li>
+        <li class="request-info request-info--cancel">
+          <a class="request-info__link" href="#" role="button">
+            <div class="request-info__contents">
+              <span class="request-info__date"><span class="hidden">신청일자</span><em>2022.03.22.05:12 PM</em></span>
+              <span class="request-info__details"><span class="hidden">신청내용</span><strong>개인정보 다운로드</strong></span>
+              <span class="request-info__status"><span class="hidden">진행단계</span><em class="flag flag--cancel">취소</em></span>
+            </div>
+            <div class="request-info__service">
+              <ul class="request-info__service-list">
+                <li>
+                  <span class="icon-svc-m">
+                    <i class="icon-svc icon-svc-smart-things"></i>
+                  </span>
+                  <strong>SmartThings</strong>
+                </li>
+                <li>
+                  <span class="icon-svc-m">
+                    <i class="icon-svc icon-svc-global-goals"></i>
+                  </span>
+                  <strong>Samsung Global Goals</strong>
+                </li>
+                <li>
+                  <span class="icon-svc-m">
+                    <i class="icon-svc icon-svc-galaxy-wearable"></i>
+                  </span>
+                  <strong>Galaxy Wearable</strong>
+                </li>
+              </ul>
+              <svg class="icon" focusable="false">
+                <use href="../images/sprite-svg.svg#scroll-next"></use>
+              </svg>
+            </div>
+          </a>
+        </li>
+        <li class="request-info request-info--expiration">
+          <a class="request-info__link" href="#" role="button">
+            <div class="request-info__contents">
+              <span class="request-info__date"><span class="hidden">신청일자</span><em>2022.03.22.05:12 PM</em></span>
+              <span class="request-info__details"><span class="hidden">신청내용</span><strong>개인정보 다운로드</strong></span>
+              <span class="request-info__status"><span class="hidden">진행단계</span><em class="flag flag--expiration">기간만료</em></span>
+            </div>
+            <div class="request-info__service">
+              <ul class="request-info__service-list">
+                <li>
+                  <span class="icon-svc-m">
+                    <i class="icon-svc icon-svc-smart-things"></i>
+                  </span>
+                  <strong>SmartThings</strong>
+                </li>
+                <li>
+                  <span class="icon-svc-m">
+                    <i class="icon-svc icon-svc-global-goals"></i>
+                  </span>
+                  <strong>Samsung Global Goals</strong>
+                </li>
+                <li>
+                  <span class="icon-svc-m">
+                    <i class="icon-svc icon-svc-galaxy-wearable"></i>
+                  </span>
+                  <strong>Galaxy Wearable</strong>
+                </li>
+                <li>
+                  <span class="overlap-icons">
+                    <span class="icon-svc-m"><i class="icon-svc icon-svc-global-goals"></i></span>
+                    <span class="icon-svc-m"><i class="icon-svc icon-svc-smartthings"></i></span>
+                    <span class="icon-svc-m"><i class="icon-svc icon-svc-samsung-o"></i></span>
+                  </span>
+                  <strong>+ 3 more</strong>
+                </li>
+              </ul>
+              <svg class="icon" focusable="false">
+                <use href="../images/sprite-svg.svg#scroll-next"></use>
+              </svg>
+            </div>
+            <!-- 20220530 잘못된 </ul> 코드가 있어서 삭제 -->
+          </a>
+        </li>
+      </ul><!--// .request-list -->
+    </section><!--// .request -->
+  </div><!--// .inner -->
+</section><!--// .wrap -->
+
+<footer class="footer">
+  <img src="../images/dummy-footer-mo.gif" alt="" class="dummy-mo">
+  <img src="../images/dummy-footer-pc.gif" alt="" class="dummy-pc">
+</footer>
+
+<!-- js -->
+<script src="../js/commonJs.min.js"></script>
+<script src="../js/commonJs.js"></script>
+</body>
+</html>

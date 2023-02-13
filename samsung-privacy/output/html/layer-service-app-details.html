@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" sizes="16x16" href="../images/favicon_16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../images/favicon_32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="../images/favicon_48.png">
+<title>서비스 및 앱 상세보기 팝업 | Samsung Privacy</title>
+<!-- css link -->
+<link rel="stylesheet" href="../css/common.css">
+<link rel="stylesheet" href="../css/style.css">
+<script>
+  window.addEventListener('load', function() {
+    // use-guide
+    mvJs.popup.open('#layer-service-app-details');
+  });
+</script>
+</head>
+<body>
+
+<section class="wrap">
+  <button class="cta cta--outlined" data-popup-id="layer-service-app-details">서비스 및 앱 상세보기 팝업</button>
+</section><!--// .wrap -->
+
+<!-- 서비스 및 앱 상세보기 팝업 -->
+<div class="popup popup--layer popup--medium" aria-modal="true" role="dialog" aria-hidden="true" aria-labelledby="layer-service-app-details-title" id="layer-service-app-details">
+  <div class="popup__inner">
+    <h2 class="popup__title popup__title--icon" id="layer-service-app-details-title">
+      <span class="icon-svc-s">
+        <!--
+          앱에 따라 클래스 추가
+
+          Samsung Account - 삼성 계정
+          <i class="icon-svc icon-svc-account"></i>
+          Bixby Voice
+          <i class="icon-svc icon-svc-bixby"></i>
+          Samsung Blockchain Wallet
+          <i class="icon-svc icon-svc-blockchain-wallet"></i>
+          Call & text on other devices - 다른 기기에서도 전화/문자하기
+          <i class="icon-svc icon-svc-call"></i>
+          Samsung Cloud - 삼성 클라우드
+          <i class="icon-svc icon-svc-cloud"></i>
+          Smart Appliance
+          <i class="icon-svc icon-svc-dplug"></i>
+          Family Hub
+          <i class="icon-svc icon-svc-familyhub"></i>
+          Find My Mobile
+          <i class="icon-svc icon-svc-find-mobile"></i>
+          Galaxy Store
+          <i class="icon-svc icon-svc-galaxy-store"></i>
+          Game Launcher - 게임런처
+          <i class="icon-svc icon-svc-game-launcher"></i>
+          Samsung Global Goals
+          <i class="icon-svc icon-svc-global-goals"></i>
+          Samsung Health
+          <i class="icon-svc icon-svc-health"></i>
+          Health Platform - 헬스 플랫폼
+          <i class="icon-svc icon-svc-health-platform"></i>
+          HRM
+          <i class="icon-svc icon-svc-hrm"></i>
+          Samsung Members
+          <i class="icon-svc icon-svc-members"></i>
+          Samsung Pass
+          <i class="icon-svc icon-svc-pass"></i>
+          Samsung Pay
+          <i class="icon-svc icon-svc-pay"></i>
+          PENUP
+          <i class="icon-svc icon-svc-pen"></i>
+          Samsung Rewards
+          <i class="icon-svc icon-svc-rewards"></i>
+          Customization Service - 맞춤형 서비스
+          <i class="icon-svc icon-svc-runestone"></i>
+          Samsung Free
+          <i class="icon-svc icon-svc-samsung-free"></i>
+          Samsung O
+          <i class="icon-svc icon-svc-samsung-o"></i>
+          SmartThings
+          <i class="icon-svc icon-svc-smart-things"></i>
+          Smart TV
+          <i class="icon-svc icon-svc-smart-tv"></i>
+          Samsung Social
+          <i class="icon-svc icon-svc-social"></i>
+          Samsung Themes
+          <i class="icon-svc icon-svc-themes"></i>
+          Samsung TV Plus
+          <i class="icon-svc icon-svc-tv-plus"></i>
+          Samsung Visit In
+          <i class="icon-svc icon-svc-visit-in"></i>
+          Samsung VR
+          <i class="icon-svc icon-svc-vr"></i>
+          Walkie-Talkie - 워키토키
+          <i class="icon-svc icon-svc-walkie-talkie"></i>
+          Galaxy Wearable
+          <i class="icon-svc icon-svc-wear"></i>
+          Secure Wi-Fi
+          <i class="icon-svc icon-svc-wifi"></i>
+          chat_together
+          <i class="icon-svc icon-svc-chat-together"></i>
+        -->
+        <i class="icon-svc icon-svc-smart-things"></i>
+      </span>
+      SmartThings
+    </h2>
+    <div class="popup__contents cont-service-app-details">
+      <div class="scroll-area">
+        <div class="info-box">
+          <strong class="date">
+            <em>2022.03.21</em>
+            <span>가입</span>
+          </strong>
+          <p>삼성계정 정보, 단말 정보, 위치 정보, 비디오 및 오디오 클립, 음성 정보, 앱 사용 정보</p>
+        </div>
+      </div><!--// .scroll-area -->
+      <!-- case 신청 전 -->
+      <div class="link-wrap">
+        <button class="cta cta--big cta--icon">
+          데이터 다운로드<!-- 20220712 문구 수정 -->
+          <svg class="icon icon--first" focusable="false">
+            <use href="../images/sprite-svg.svg#information-download"></use>
+          </svg>
+        </button>
+        <button class="cta cta--big cta--icon">
+          데이터 삭제<!-- 20220712 문구 수정 -->
+          <svg class="icon icon--first" focusable="false">
+            <use href="../images/sprite-svg.svg#trash-box"></use>
+          </svg>
+        </button>
+        <button class="cta cta--big cta--icon">
+          수신 동의 취소<!-- 20220712 문구 수정 -->
+          <svg class="icon icon--first" focusable="false">
+            <use href="../images/sprite-svg.svg#no-alarm"></use>
+          </svg>
+        </button>
+      </div>
+      <!--// case 신청 전 -->
+      <!-- case 신청 후 -->
+      <div class="status-info">
+        <!-- 20220712 문구 수정 -->
+        <strong>데이터 다운로드 신청중</strong>
+        <strong>데이터 삭제 신청중</strong>
+        <strong>수신 동의 취소 신청중</strong>
+        <!--// 20220712 문구 수정 -->
+      </div>
+      <!--// case 신청 후 -->
+    </div>
+    <div class="popup__cta-wrap">
+      <button class="cta cta--filled">확인</button>
+    </div>
+    <button class="popup-close">
+      <svg class="icon" focusable="false" aria-label="Close Popup">
+        <use href="../images/sprite-svg.svg#cancel"></use>
+      </svg>
+    </button>
+  </div>
+  <div class="popup__dimmed"><!-- popup dimmed --></div>
+</div><!--// .popup -->
+<!--// 서비스 및 앱 상세보기 팝업 -->
+
+<!-- js -->
+<script src="../js/commonJs.min.js"></script>
+</body>
+</html>

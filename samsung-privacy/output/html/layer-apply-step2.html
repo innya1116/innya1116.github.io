@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" sizes="16x16" href="../images/favicon_16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../images/favicon_32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="../images/favicon_48.png">
+<title>처리중 팝업 | Samsung Privacy</title>
+<!-- css link -->
+<link rel="stylesheet" href="../css/common.css">
+<link rel="stylesheet" href="../css/style.css">
+<script>
+  window.addEventListener('load', function() {
+    // use-guide
+    mvJs.popup.open('#layer-apply-step2');
+  });
+</script>
+</head>
+<body>
+
+<section class="wrap">
+  <button class="cta cta--outlined" data-popup-id="layer-apply-step2">처리중 팝업</button>
+</section><!--// .wrap -->
+
+<!-- 처리중(정보 다운로드/정보 삭제/알림 수신 취소) 팝업 -->
+<div class="popup popup--layer popup--medium" aria-modal="true" role="dialog" aria-hidden="true" aria-labelledby="layer-apply-step2-title" id="layer-apply-step2">
+  <div class="popup__inner popup__inner--full">
+    <h2 class="popup__title" id="layer-apply-step2-title">신청 안내</h2>
+    <div class="popup__contents popup__contents--full">
+      <div class="scroll-area">
+        <div class="step" aria-label="step2">
+          <span class="passed">1</span>
+          <span class="current">2</span>
+          <span>3</span>
+        </div>
+        <div class="apply-info">
+          <div class="apply-info__image"><img src="../images/icon-step2-processing.svg" alt=""></div>
+          <strong class="apply-info__status">처리중</strong><!-- 20220623 클래스명 수정 -->
+          <!-- 20220712 삭제 -->
+          <!-- <div class="apply-info__text"> -->
+            <!-- (dev) case 개인정보 삭제, apply markup below
+              <strong>개인정보 삭제 처리는 2022.03.28 완료 예정이에요.</strong>
+            -->
+            <!-- (dev) case 알림 수신 취소, apply markup below
+              <strong>알림 수신 취소 처리는 2022.03.28 완료 예정이에요.</strong>
+            -->
+            <!-- (dev) case 개인정보 다운로드, apply markup below -->
+           <!-- <strong>개인정보 다운로드 처리는 2022.03.28 완료 예정이에요.</strong>
+            <p>'처리중' 단계에서는 신청 취소가 불가해요.</p>
+          </div> -->
+          <!--// 20220712 삭제 -->
+        </div>
+        <div class="info-box">
+          <ul class="info-box-list">
+            <li>
+              <em>신청 일자</em>
+              <strong class="date">2022.03.22 05:28 PM</strong>
+            </li>
+            <li>
+              <em>신청한 서비스 및 앱</em>
+              <strong>28개</strong>
+              <div class="svc-app-list">
+                <ul>
+                  <li>
+                    <span class="icon-svc-m">
+                      <!--
+                      앱에 따라 클래스 추가
+
+                      account
+                      <i class="icon-svc icon-svc-account"></i>
+                      bixby
+                      <i class="icon-svc icon-svc-bixby"></i>
+                      blockchain wallet
+                      <i class="icon-svc icon-svc-blockchain-wallet"></i>
+                      call
+                      <i class="icon-svc icon-svc-call"></i>
+                      cloud
+                      <i class="icon-svc icon-svc-cloud"></i>
+                      dplug
+                      <i class="icon-svc icon-svc-dplug"></i>
+                      familyhub
+                      <i class="icon-svc icon-svc-familyhub"></i>
+                      find mobile
+                      <i class="icon-svc icon-svc-find-mobile"></i>
+                      galaxy store
+                      <i class="icon-svc icon-svc-galaxy-store"></i>
+                      game launcher
+                      <i class="icon-svc icon-svc-game-launcher"></i>
+                      global goals
+                      <i class="icon-svc icon-svc-global-goals"></i>
+                      health
+                      <i class="icon-svc icon-svc-health"></i>
+                      health platform
+                      <i class="icon-svc icon-svc-health-platform"></i>
+                      hrm
+                      <i class="icon-svc icon-svc-hrm"></i>
+                      members
+                      <i class="icon-svc icon-svc-members"></i>
+                      pass
+                      <i class="icon-svc icon-svc-pass"></i>
+                      pay
+                      <i class="icon-svc icon-svc-pay"></i>
+                      pen
+                      <i class="icon-svc icon-svc-pen"></i>
+                      rewards
+                      <i class="icon-svc icon-svc-rewards"></i>
+                      runestone
+                      <i class="icon-svc icon-svc-runestone"></i>
+                      samsung free
+                      <i class="icon-svc icon-svc-samsung-free"></i>
+                      samsung o
+                      <i class="icon-svc icon-svc-samsung-o"></i>
+                      smart things
+                      <i class="icon-svc icon-svc-smart-things"></i>
+                      smart tv
+                      <i class="icon-svc icon-svc-smart-tv"></i>
+                      social
+                      <i class="icon-svc icon-svc-social"></i>
+                      themes
+                      <i class="icon-svc icon-svc-themes"></i>
+                      tv plus
+                      <i class="icon-svc icon-svc-tv-plus"></i>
+                      visit in
+                      <i class="icon-svc icon-svc-visit-in"></i>
+                      vr
+                      <i class="icon-svc icon-svc-vr"></i>
+                      walkie talkie
+                      <i class="icon-svc icon-svc-walkie-talkie"></i>
+                      wear
+                      <i class="icon-svc icon-svc-wear"></i>
+                      wifi
+                      <i class="icon-svc icon-svc-wifi"></i>
+                      chat_together
+                      <i class="icon-svc icon-svc-chat-together"></i>
+                      -->
+                      <i class="icon-svc icon-svc-smart-things"></i>
+                    </span>
+                    <strong>Samsung Health</strong>
+                  </li>
+                  <li>
+                    <span class="icon-svc-m">
+                      <i class="icon-svc icon-svc-global-goals"></i>
+                    </span>
+                    <strong>Samsung Global Goals</strong>
+                  </li>
+                  <li>
+                    <span class="icon-svc-m">
+                      <i class="icon-svc icon-svc-familyhub"></i>
+                    </span>
+                    <strong>Family Hub</strong>
+                  </li>
+                  <li>
+                    <span class="icon-svc-m">
+                      <i class="icon-svc icon-svc-find-mobile"></i>
+                    </span>
+                    <strong>Find My Mobile</strong>
+                  </li>
+                  <li>
+                    <span class="icon-svc-m">
+                      <i class="icon-svc icon-svc-galaxy-store"></i>
+                    </span>
+                    <strong>Galaxy Store</strong>
+                  </li>
+                  <li>
+                    <span class="icon-svc-m">
+                      <i class="icon-svc icon-svc-smart-tv"></i>
+                    </span>
+                    <strong>Smart TV</strong>
+                  </li>
+                  <li>
+                    <span class="icon-svc-m">
+                      <i class="icon-svc icon-svc-call"></i>
+                    </span>
+                    <strong>Llamadas/mensajes en otros disp</strong>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div><!--// .popup-contents -->
+    <div class="popup__cta-wrap">
+      <button class="cta cta--filled">확인</button>
+    </div>
+    <button class="popup-close">
+      <svg class="icon" focusable="false" aria-label="Close Popup">
+        <use href="../images/sprite-svg.svg#cancel"></use>
+      </svg>
+    </button>
+  </div>
+  <div class="popup__dimmed"><!-- popup dimmed --></div>
+</div><!--// .popup -->
+<!--// 처리중(정보 다운로드/정보 삭제/알림 수신 취소) 팝업 -->
+
+<!-- js -->
+<script src="../js/commonJs.min.js"></script>
+</body>
+</html>

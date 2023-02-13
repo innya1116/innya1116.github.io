@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" sizes="16x16" href="../images/favicon_16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../images/favicon_32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="../images/favicon_48.png">
+<title>Login | Samsung Privacy</title>
+<!-- css link -->
+<link rel="stylesheet" href="../css/common.css">
+<link rel="stylesheet" href="../css/style.css">
+<script>
+  window.addEventListener('load', function() {
+    // use-guide
+    mvJs.popup.open('#layer-login');
+  });
+</script>
+</head>
+<body>
+
+<section class="wrap">
+  <button class="cta cta--big" data-popup-id="layer-login">
+    Login
+  </button>
+</section><!--// .wrap -->
+
+<!-- Login Popup -->
+<div class="popup popup--layer popup--login" aria-modal="true" role="dialog" aria-hidden="true" aria-label="Login" id="layer-login">
+  <div class="popup__inner popup__inner--full">
+    <!-- login iframe area -->
+    <iframe class="ifrm-login" src=""></iframe>
+
+    <button class="popup-close">
+      <svg class="icon" focusable="false" aria-label="Close Popup">
+        <use href="../images/sprite-svg.svg#cancel"></use>
+      </svg>
+    </button>
+  </div>
+  <div class="popup__dimmed"><!-- popup dimmed --></div>
+</div>
+<!--// Login Popup -->
+
+<!-- js -->
+<script src="../js/commonJs.min.js"></script>
+</body>
+</html>

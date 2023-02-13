@@ -1,0 +1,72 @@
+@import '../../common/_global';
+
+html[dir='rtl'] {
+  .cta {
+    .icon {
+      margin: 0 4px 0 0;
+      transform: scaleX(-1);
+
+      &--first {
+        margin: 0 0 0 4px;
+      }
+    }
+
+    &--big {
+      .icon {
+        margin: 0 8px 0 0;
+
+        &--first {
+          margin: 0 0 0 8px;
+        }
+      }
+    }
+  }
+}
+
+@media @media-query--desktop {
+  html[dir='rtl'] {
+    .cta {
+      .icon {
+        .vw-convert-desktop(margin, 0 4px 0 0);
+
+        &--first {
+          .vw-convert-desktop(margin, 0 0 0 4px);
+        }
+      }
+
+      &--big {
+        .icon {
+          .vw-convert-desktop(margin, 0 8px 0 0);
+
+          &--first {
+            .vw-convert-desktop(margin, 0 0 0 8px);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media @media-query--mobile {
+  html[dir='rtl'] {
+    .cta {
+      .icon {
+        .vw-convert-mobile(margin, 0 4px 0 0);
+
+        &--first {
+          .vw-convert-mobile(margin, 0 0 0 4px);
+        }
+      }
+
+      &--big {
+        .icon {
+          .vw-convert-mobile(margin, 0 8px 0 0);
+
+          &--first {
+            .vw-convert-mobile(margin, 0 0 0 8px);
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,507 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" sizes="16x16" href="../images/favicon_16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../images/favicon_32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="../images/favicon_48.png">
+<title>Icons | Publishing Guide | Samsung Privacy</title>
+<!-- css link -->
+<link rel="stylesheet" href="../css/common.css">
+<link rel="stylesheet" href="../css/style.css">
+<!-- guide css link -->
+<link rel="stylesheet" href="./guide.css">
+</head>
+<body>
+<section class="guide">
+  <header class="guide-header">
+    <h1 class="guide-tit1">삼성전자 글로벌 권리대응 사이트 UX개선</h1>
+    <nav class="guide-nav">
+      <div class="nav-depth1">
+        <a href="../index.html">Guide</a>
+        <a class="on" href="../index-en.html">Guide(EN)</a>
+        <a href="../filelist.html">HTML Filelist</a>
+      </div>
+      <div class="nav-depth2">
+        <a href="../index-en.html">General</a>
+        <a href="./button-cta-en.html">Button(CTA)</a>
+        <a href="./form-en.html">Form</a>
+        <a class="on" href="./icons-en.html">Icon</a>
+        <a href="./popup-en.html">Popup</a>
+        <a href="./swiper-en.html">Swiper</a>
+        <a href="./tab-en.html">Tab</a>
+        <a href="./accordion-en.html">Accordion</a>
+        <a href="./tts-en.html">Text to Speech</a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="guide-content">
+    <h2 class="guide-tit2">Icons</h2>
+    <h3 class="guide-tit3">SVG</h3>
+    <p class="guide-txt">If you use the sprite-svg.svg image (divided by id) and use only svg without text, add aria-label to add the contents.</p>
+<pre class="code">
+&lt;svg class="icon" focusable="false" <i>aria-label="close popup"</i>&gt;
+  &lt;use href="../images/sprite-svg.svg#{ICONID}"&gt;&lt;/use&gt;
+&lt;/svg&gt;
+</pre>
+  <!--
+    <div class="guide__icons" style="overflow: hidden">
+      <div>
+        <svg class="icon" focusable="false">
+          <use href="../images/sprite-svg.svg#samsung-privacy"></use>
+        </svg>
+        <span class="icon-txt">samsung-privacy</span>
+      </div>
+      <div>
+        <svg class="icon" focusable="false">
+          <use href="../images/sprite-svg.svg#outlink-bold"></use>
+        </svg>
+        <span class="icon-txt">outlink-bold</span>
+      </div>
+      <div>
+        <svg class="icon" focusable="false">
+          <use href="../images/sprite-svg.svg#open-down-bold"></use>
+        </svg>
+        <span class="icon-txt">open-down-bold</span>
+      </div>
+      <div>
+        <svg class="icon" focusable="false">
+          <use href="../images/sprite-svg.svg#remove-bold"></use>
+        </svg>
+        <span class="icon-txt">remove-bold</span>
+      </div>
+      <div>
+        <svg class="icon" focusable="false">
+          <use href="../images/sprite-svg.svg#next-bold"></use>
+        </svg>
+        <span class="icon-txt">next-bold</span>
+      </div>
+      <div>
+        <svg class="icon" focusable="false">
+          <use href="../images/sprite-svg.svg#cancel"></use>
+        </svg>
+        <span class="icon-txt">cancel</span>
+      </div>
+      <div>
+        <svg class="icon" focusable="false">
+          <use href="../images/sprite-svg.svg#refresh"></use>
+        </svg>
+        <span class="icon-txt">refresh</span>
+      </div>
+      <div>
+        <svg class="icon" focusable="false">
+          <use href="../images/sprite-svg.svg#information"></use>
+        </svg>
+        <span class="icon-txt">information</span>
+      </div>
+      <div>
+        <svg class="icon" focusable="false">
+          <use href="../images/sprite-svg.svg#history"></use>
+        </svg>
+        <span class="icon-txt">history</span>
+      </div>
+      <div>
+        <svg class="icon" focusable="false">
+          <use href="../images/sprite-svg.svg#language"></use>
+        </svg>
+        <span class="icon-txt">language</span>
+      </div>
+      <div>
+        <svg class="icon" focusable="false">
+          <use href="../images/sprite-svg.svg#download"></use>
+        </svg>
+        <span class="icon-txt">download</span>
+      </div>
+      <div>
+        <svg class="icon" focusable="false">
+          <use href="../images/sprite-svg.svg#guide"></use>
+        </svg>
+        <span class="icon-txt">guide</span>
+      </div>
+    </div>
+  -->
+
+    <h3 class="guide-tit3">Service Icons</h3>
+    <b>[Default: icon size 64px]</b><br><br>
+    <div class="guide__icons guide__icons--svc-app">
+      <div>
+        <i class="icon-svc icon-svc-account"></i>
+        <span>Samsung Account - 삼성 계정</span>
+      </div>
+      <div>
+        <i class="icon-svc icon-svc-bixby"></i>
+        <span>Bixby Voice</span>
+      </div>
+      <div>
+        <i class="icon-svc icon-svc-blockchain-wallet"></i>
+        <span>Samsung Blockchain Wallet</span>
+      </div>
+      <div>
+        <i class="icon-svc icon-svc-call"></i>
+        <span>Call & text on other devices - 다른 기기에서도 전화/문자하기</span>
+      </div>
+      <div>
+        <i class="icon-svc icon-svc-cloud"></i>
+        <span>Samsung Cloud - 삼성 클라우드</span>
+      </div>
+      <div>
+        <i class="icon-svc icon-svc-dplug"></i>
+        <span>Smart Appliance</span>
+      </div>
+      <div>
+        <i class="icon-svc icon-svc-familyhub"></i>
+        <span>Family Hub</span>
+      </div>
+      <div>
+        <i class="icon-svc icon-svc-find-mobile"></i>
+        <span>Find My Mobile</span>
+      </div>
+      <div>
+        <i class="icon-svc icon-svc-galaxy-store"></i>
+        <span>Galaxy Store</span>
+      </div>
+      <div>
+        <i class="icon-svc icon-svc-game-launcher"></i>
+        <span>Game Launcher - 게임런처</span>
+      </div>
+      <div>
+        <i class="icon-svc icon-svc-global-goals"></i>
+        <span>Samsung Global Goals</span>
+      </div>
+      <div>
+        <i class="icon-svc icon-svc-health"></i>
+        <span>Samsung Health</span>
+      </div>
+      <div>
+        <i class="icon-svc icon-svc-health-platform"></i>
+        <span>Health Platform - 헬스 플랫폼</span>
+      </div>
+      <div>
+        <i class="icon-svc icon-svc-hrm"></i>
+        <span>HRM</span>
+      </div>
+      <div>
+        <i class="icon-svc icon-svc-members"></i>
+        <span>Samsung Members</span>
+      </div>
+      <div>
+        <i class="icon-svc icon-svc-pass"></i>
+        <span>Samsung Pass</span>
+      </div>
+      <div>
+        <i class="icon-svc icon-svc-pay"></i>
+        <span>Samsung Pay</span>
+      </div>
+      <div>
+        <i class="icon-svc icon-svc-pen"></i>
+        <span>PENUP</span>
+      </div>
+      <div>
+        <i class="icon-svc icon-svc-rewards"></i>
+        <span>Samsung Rewards</span>
+      </div>
+      <div>
+        <i class="icon-svc icon-svc-runestone"></i>
+        <span>Customization Service - 맞춤형 서비스</span>
+      </div>
+      <div>
+        <i class="icon-svc icon-svc-samsung-free"></i>
+        <span>Samsung Free</span>
+      </div>
+      <div>
+        <i class="icon-svc icon-svc-samsung-o"></i>
+        <span>Samsung O</span>
+      </div>
+      <div>
+        <i class="icon-svc icon-svc-smart-things"></i>
+        <span>SmartThings</span>
+      </div>
+      <div>
+        <i class="icon-svc icon-svc-smart-tv"></i>
+        <span>Smart TV</span>
+      </div>
+      <div>
+        <i class="icon-svc icon-svc-social"></i>
+        <span>Samsung Social</span>
+      </div>
+      <div>
+        <i class="icon-svc icon-svc-themes"></i>
+        <span>Samsung Themes</span>
+      </div>
+      <div>
+        <i class="icon-svc icon-svc-tv-plus"></i>
+        <span>Samsung TV Plus</span>
+      </div>
+      <div>
+        <i class="icon-svc icon-svc-visit-in"></i>
+        <span>Samsung Visit In</span>
+      </div>
+      <div>
+        <i class="icon-svc icon-svc-vr"></i>
+        <span>Samsung VR</span>
+      </div>
+      <div>
+        <i class="icon-svc icon-svc-walkie-talkie"></i>
+        <span>Walkie-Talkie - 워키토키</span>
+      </div>
+      <div>
+        <i class="icon-svc icon-svc-wear"></i>
+        <span>Galaxy Wearable</span>
+      </div>
+      <div>
+        <i class="icon-svc icon-svc-wifi"></i>
+        <span>Secure Wi-Fi</span>
+      </div>
+      <div>
+        <i class="icon-svc icon-svc-chat-together"></i>
+        <span>chat_together</span>
+      </div>
+      <div>
+        <i class="icon-svc icon-svc-samsung-com"></i>
+        <span>Samsung.com</span>
+      </div>
+    </div>
+
+    <div class="code-wrap">
+<pre class="code">
+<i>&lt;!--
+  Add classes according to apps/services
+
+  account
+  &lt;i class="icon-svc icon-svc-account"&gt;&lt;/i&gt;
+  bixby
+  &lt;i class="icon-svc icon-svc-bixby"&gt;&lt;/i&gt;
+  blockchain wallet
+  &lt;i class="icon-svc icon-svc-blockchain-wallet"&gt;&lt;/i&gt;
+  call
+  &lt;i class="icon-svc icon-svc-call"&gt;&lt;/i&gt;
+  cloud
+  &lt;i class="icon-svc icon-svc-cloud"&gt;&lt;/i&gt;
+  dplug
+  &lt;i class="icon-svc icon-svc-dplug"&gt;&lt;/i&gt;
+  familyhub
+  &lt;i class="icon-svc icon-svc-familyhub"&gt;&lt;/i&gt;
+  find mobile
+  &lt;i class="icon-svc icon-svc-find-mobile"&gt;&lt;/i&gt;
+  galaxy store
+  &lt;i class="icon-svc icon-svc-galaxy-store"&gt;&lt;/i&gt;
+  game launcher
+  &lt;i class="icon-svc icon-svc-game-launcher"&gt;&lt;/i&gt;
+  global goals
+  &lt;i class="icon-svc icon-svc-global-goals"&gt;&lt;/i&gt;
+  health
+  &lt;i class="icon-svc icon-svc-health"&gt;&lt;/i&gt;
+  health platform
+  &lt;i class="icon-svc icon-svc-health-platform"&gt;&lt;/i&gt;
+  hrm
+  &lt;i class="icon-svc icon-svc-hrm"&gt;&lt;/i&gt;
+  members
+  &lt;i class="icon-svc icon-svc-members"&gt;&lt;/i&gt;
+  muse
+  &lt;i class="icon-svc icon-svc-muse"&gt;&lt;/i&gt;
+  pass
+  &lt;i class="icon-svc icon-svc-pass"&gt;&lt;/i&gt;
+  pay
+  &lt;i class="icon-svc icon-svc-pay"&gt;&lt;/i&gt;
+  pen
+  &lt;i class="icon-svc icon-svc-pen"&gt;&lt;/i&gt;
+  rewards
+  &lt;i class="icon-svc icon-svc-rewards"&gt;&lt;/i&gt;
+  runestone
+  &lt;i class="icon-svc icon-svc-runestone"&gt;&lt;/i&gt;
+  samsung free
+  &lt;i class="icon-svc icon-svc-samsung-free"&gt;&lt;/i&gt;
+  samsung o
+  &lt;i class="icon-svc icon-svc-samsung-o"&gt;&lt;/i&gt;
+  smart things
+  &lt;i class="icon-svc icon-svc-smart-things"&gt;&lt;/i&gt;
+  smart tv
+  &lt;i class="icon-svc icon-svc-smart-tv"&gt;&lt;/i&gt;
+  social
+  &lt;i class="icon-svc icon-svc-social"&gt;&lt;/i&gt;
+  themes
+  &lt;i class="icon-svc icon-svc-themes"&gt;&lt;/i&gt;
+  tv plus
+  &lt;i class="icon-svc icon-svc-tv-plus"&gt;&lt;/i&gt;
+  visit in
+  &lt;i class="icon-svc icon-svc-visit-in"&gt;&lt;/i&gt;
+  vr
+  &lt;i class="icon-svc icon-svc-vr"&gt;&lt;/i&gt;
+  walkie talkie
+  &lt;i class="icon-svc icon-svc-walkie-talkie"&gt;&lt;/i&gt;
+  wear
+  &lt;i class="icon-svc icon-svc-wear"&gt;&lt;/i&gt;
+  wifi
+  &lt;i class="icon-svc icon-svc-wifi"&gt;&lt;/i&gt;
+  chat together
+  &lt;i class="icon-svc icon-svc-chat-together"&gt;&lt;/i&gt;
+  samsung.com
+  &lt;i class="icon-svc icon-svc-samsung-com"&gt;&lt;/i&gt;
+--&gt;</i>
+&lt;i class="icon-svc <b>icon-svc-smart-things</b>"&gt;&lt;/i&gt;
+</pre>
+    </div>
+
+    <hr>
+    <b>[Medium: icon size 40px]</b><br><br>
+    <span class="icon-svc-m"><i class="icon-svc icon-svc-account"></i></span>
+    <span class="icon-svc-m"><i class="icon-svc icon-svc-bixby"></i></span>
+    <span class="icon-svc-m"><i class="icon-svc icon-svc-blockchain-wallet"></i></span>
+    <span class="icon-svc-m"><i class="icon-svc icon-svc-call"></i></span>
+    <span class="icon-svc-m"><i class="icon-svc icon-svc-cloud"></i></span>
+    <span class="icon-svc-m"><i class="icon-svc icon-svc-dplug"></i></span>
+    <span class="icon-svc-m"><i class="icon-svc icon-svc-familyhub"></i></span>
+    <span class="icon-svc-m"><i class="icon-svc icon-svc-find-mobile"></i></span>
+    <span class="icon-svc-m"><i class="icon-svc icon-svc-galaxy-store"></i></span>
+    <span class="icon-svc-m"><i class="icon-svc icon-svc-game-launcher"></i></span>
+    <span class="icon-svc-m"><i class="icon-svc icon-svc-global-goals"></i></span>
+    <span class="icon-svc-m"><i class="icon-svc icon-svc-health"></i></span>
+    <span class="icon-svc-m"><i class="icon-svc icon-svc-health-platform"></i></span>
+    <span class="icon-svc-m"><i class="icon-svc icon-svc-hrm"></i></span>
+    <span class="icon-svc-m"><i class="icon-svc icon-svc-members"></i></span>
+    <span class="icon-svc-m"><i class="icon-svc icon-svc-pass"></i></span>
+    <span class="icon-svc-m"><i class="icon-svc icon-svc-pay"></i></span>
+    <span class="icon-svc-m"><i class="icon-svc icon-svc-pen"></i></span>
+    <span class="icon-svc-m"><i class="icon-svc icon-svc-rewards"></i></span>
+    <span class="icon-svc-m"><i class="icon-svc icon-svc-runestone"></i></span>
+    <span class="icon-svc-m"><i class="icon-svc icon-svc-samsung-free"></i></span>
+    <span class="icon-svc-m"><i class="icon-svc icon-svc-samsung-o"></i></span>
+    <span class="icon-svc-m"><i class="icon-svc icon-svc-smart-things"></i></span>
+    <span class="icon-svc-m"><i class="icon-svc icon-svc-smart-tv"></i></span>
+    <span class="icon-svc-m"><i class="icon-svc icon-svc-social"></i></span>
+    <span class="icon-svc-m"><i class="icon-svc icon-svc-themes"></i></span>
+    <span class="icon-svc-m"><i class="icon-svc icon-svc-tv-plus"></i></span>
+    <span class="icon-svc-m"><i class="icon-svc icon-svc-visit-in"></i></span>
+    <span class="icon-svc-m"><i class="icon-svc icon-svc-vr"></i></span>
+    <span class="icon-svc-m"><i class="icon-svc icon-svc-walkie-talkie"></i></span>
+    <span class="icon-svc-m"><i class="icon-svc icon-svc-wear"></i></span>
+    <span class="icon-svc-m"><i class="icon-svc icon-svc-wifi"></i></span>
+    <span class="icon-svc-m"><i class="icon-svc icon-svc-chat-together"></i></span>
+
+    <div class="code-wrap">
+<pre class="code">
+&lt;span class="<b>icon-svc-m</b>"&gt;
+  &lt;i class="icon-svc ..."&gt;&lt;/i&gt;
+&lt;/span&gt;
+</pre>
+    </div>
+
+    <hr>
+    <b>[Small: icon size 32px]</b><br><br>
+    <span class="icon-svc-s"><i class="icon-svc icon-svc-account"></i></span>
+    <span class="icon-svc-s"><i class="icon-svc icon-svc-bixby"></i></span>
+    <span class="icon-svc-s"><i class="icon-svc icon-svc-blockchain-wallet"></i></span>
+    <span class="icon-svc-s"><i class="icon-svc icon-svc-call"></i></span>
+    <span class="icon-svc-s"><i class="icon-svc icon-svc-cloud"></i></span>
+    <span class="icon-svc-s"><i class="icon-svc icon-svc-dplug"></i></span>
+    <span class="icon-svc-s"><i class="icon-svc icon-svc-familyhub"></i></span>
+    <span class="icon-svc-s"><i class="icon-svc icon-svc-find-mobile"></i></span>
+    <span class="icon-svc-s"><i class="icon-svc icon-svc-galaxy-store"></i></span>
+    <span class="icon-svc-s"><i class="icon-svc icon-svc-game-launcher"></i></span>
+    <span class="icon-svc-s"><i class="icon-svc icon-svc-global-goals"></i></span>
+    <span class="icon-svc-s"><i class="icon-svc icon-svc-health"></i></span>
+    <span class="icon-svc-s"><i class="icon-svc icon-svc-health-platform"></i></span>
+    <span class="icon-svc-s"><i class="icon-svc icon-svc-hrm"></i></span>
+    <span class="icon-svc-s"><i class="icon-svc icon-svc-members"></i></span>
+    <span class="icon-svc-s"><i class="icon-svc icon-svc-pass"></i></span>
+    <span class="icon-svc-s"><i class="icon-svc icon-svc-pay"></i></span>
+    <span class="icon-svc-s"><i class="icon-svc icon-svc-pen"></i></span>
+    <span class="icon-svc-s"><i class="icon-svc icon-svc-rewards"></i></span>
+    <span class="icon-svc-s"><i class="icon-svc icon-svc-runestone"></i></span>
+    <span class="icon-svc-s"><i class="icon-svc icon-svc-samsung-free"></i></span>
+    <span class="icon-svc-s"><i class="icon-svc icon-svc-samsung-o"></i></span>
+    <span class="icon-svc-s"><i class="icon-svc icon-svc-smart-things"></i></span>
+    <span class="icon-svc-s"><i class="icon-svc icon-svc-smart-tv"></i></span>
+    <span class="icon-svc-s"><i class="icon-svc icon-svc-social"></i></span>
+    <span class="icon-svc-s"><i class="icon-svc icon-svc-themes"></i></span>
+    <span class="icon-svc-s"><i class="icon-svc icon-svc-tv-plus"></i></span>
+    <span class="icon-svc-s"><i class="icon-svc icon-svc-visit-in"></i></span>
+    <span class="icon-svc-s"><i class="icon-svc icon-svc-vr"></i></span>
+    <span class="icon-svc-s"><i class="icon-svc icon-svc-walkie-talkie"></i></span>
+    <span class="icon-svc-s"><i class="icon-svc icon-svc-wear"></i></span>
+    <span class="icon-svc-s"><i class="icon-svc icon-svc-wifi"></i></span>
+    <span class="icon-svc-s"><i class="icon-svc icon-svc-chat-together"></i></span>
+    <span class="icon-svc-s"><i class="icon-svc icon-svc-samsung-com"></i></span>
+
+    <div class="code-wrap">
+<pre class="code">
+&lt;span class="<b>icon-svc-s</b>"&gt;
+  &lt;i class="icon-svc ..."&gt;&lt;/i&gt;
+&lt;/span&gt;
+</pre>
+    </div>
+
+    <hr>
+    <b>[XSmall: icon size 24px]</b><br><br>
+    <span class="icon-svc-xs"><i class="icon-svc icon-svc-account"></i></span>
+    <span class="icon-svc-xs"><i class="icon-svc icon-svc-bixby"></i></span>
+    <span class="icon-svc-xs"><i class="icon-svc icon-svc-blockchain-wallet"></i></span>
+    <span class="icon-svc-xs"><i class="icon-svc icon-svc-call"></i></span>
+    <span class="icon-svc-xs"><i class="icon-svc icon-svc-cloud"></i></span>
+    <span class="icon-svc-xs"><i class="icon-svc icon-svc-dplug"></i></span>
+    <span class="icon-svc-xs"><i class="icon-svc icon-svc-familyhub"></i></span>
+    <span class="icon-svc-xs"><i class="icon-svc icon-svc-find-mobile"></i></span>
+    <span class="icon-svc-xs"><i class="icon-svc icon-svc-galaxy-store"></i></span>
+    <span class="icon-svc-xs"><i class="icon-svc icon-svc-game-launcher"></i></span>
+    <span class="icon-svc-xs"><i class="icon-svc icon-svc-global-goals"></i></span>
+    <span class="icon-svc-xs"><i class="icon-svc icon-svc-health"></i></span>
+    <span class="icon-svc-xs"><i class="icon-svc icon-svc-health-platform"></i></span>
+    <span class="icon-svc-xs"><i class="icon-svc icon-svc-hrm"></i></span>
+    <span class="icon-svc-xs"><i class="icon-svc icon-svc-members"></i></span>
+    <span class="icon-svc-xs"><i class="icon-svc icon-svc-pass"></i></span>
+    <span class="icon-svc-xs"><i class="icon-svc icon-svc-pay"></i></span>
+    <span class="icon-svc-xs"><i class="icon-svc icon-svc-pen"></i></span>
+    <span class="icon-svc-xs"><i class="icon-svc icon-svc-rewards"></i></span>
+    <span class="icon-svc-xs"><i class="icon-svc icon-svc-runestone"></i></span>
+    <span class="icon-svc-xs"><i class="icon-svc icon-svc-samsung-free"></i></span>
+    <span class="icon-svc-xs"><i class="icon-svc icon-svc-samsung-o"></i></span>
+    <span class="icon-svc-xs"><i class="icon-svc icon-svc-smart-things"></i></span>
+    <span class="icon-svc-xs"><i class="icon-svc icon-svc-smart-tv"></i></span>
+    <span class="icon-svc-xs"><i class="icon-svc icon-svc-social"></i></span>
+    <span class="icon-svc-xs"><i class="icon-svc icon-svc-themes"></i></span>
+    <span class="icon-svc-xs"><i class="icon-svc icon-svc-tv-plus"></i></span>
+    <span class="icon-svc-xs"><i class="icon-svc icon-svc-visit-in"></i></span>
+    <span class="icon-svc-xs"><i class="icon-svc icon-svc-vr"></i></span>
+    <span class="icon-svc-xs"><i class="icon-svc icon-svc-walkie-talkie"></i></span>
+    <span class="icon-svc-xs"><i class="icon-svc icon-svc-wear"></i></span>
+    <span class="icon-svc-xs"><i class="icon-svc icon-svc-wifi"></i></span>
+    <span class="icon-svc-xs"><i class="icon-svc icon-svc-chat-together"></i></span>
+    <span class="icon-svc-xs"><i class="icon-svc icon-svc-samsung-com"></i></span>
+
+    <div class="code-wrap">
+<pre class="code">
+&lt;span class="<b>icon-svc-xs</b>"&gt;
+  &lt;i class="icon-svc ..."&gt;&lt;/i&gt;
+&lt;/span&gt;
+</pre>
+    </div>
+
+    <h3 class="guide-tit3">Flag</h3>
+    <em class="flag flag--register">접수중</em>
+    <em class="flag flag--processing">처리중</em>
+    <em class="flag flag--complete">완료</em>
+    <em class="flag flag--expiration">기간만료</em>
+    <em class="flag flag--cancel">취소</em>
+
+<div class="code-wrap">
+<pre class="code">
+&lt;em class="flag flag--register"&gt;접수중&lt;/em&gt;
+&lt;em class="flag flag--processing"&gt;처리중&lt;/em&gt;
+&lt;em class="flag flag--complete"&gt;완료&lt;/em&gt;
+&lt;em class="flag flag--expiration"&gt;기간만료&lt;/em&gt;
+&lt;em class="flag flag--cancel"&gt;취소&lt;/em&gt;
+</pre>
+</div>
+
+  </div><!--// .guide-content -->
+</section>
+
+<!-- guide js link -->
+<script src="./guide.js"></script>
+
+<!-- js -->
+<script src="../js/commonJs.min.js"></script>
+</body>
+</html>

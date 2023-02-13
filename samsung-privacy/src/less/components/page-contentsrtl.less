@@ -1,0 +1,47 @@
+@import '../common/_global';
+
+html[dir='rtl'] {
+  .page-top {
+    &__link {
+      .cta ~ .cta {
+        margin-left: 0;
+        margin-right: 16px;
+        padding-left: 0;
+        padding-right: 16px;
+
+        &:before {
+          left: auto;
+          right: 0;
+        }
+      }
+    }
+  }
+}
+
+@media @media-query--desktop {
+  html[dir='rtl'] {
+    .page-top {
+      &__link {
+        .cta ~ .cta {
+          .vw-convert-desktop(margin-right, 16px);
+          .vw-convert-desktop(padding-right, 16px);
+        }
+      }
+    }
+  }
+}
+
+@media @media-query--mobile {
+  html[dir='rtl'] {
+    .page-top {
+      &__link {
+        .cta {
+          & ~ .cta {
+            .vw-convert-mobile(margin-right, 8px);
+            .vw-convert-mobile(padding-right, 8px);
+          }
+        }
+      }
+    }
+  }
+}

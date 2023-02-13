@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="320" viewBox="0 0 320 320">
+    <defs>
+        <clipPath id="cahy6gbyka">
+            <path transform="translate(212 1201)" style="fill:red;opacity:.12" d="M0 0h320v320H0z"/>
+        </clipPath>
+        <clipPath id="bhbguoqrob">
+            <path data-name="사각형 17235" style="fill:#0054b7" d="M0 0h326.696v159.604H0z"/>
+        </clipPath>
+    </defs>
+    <g data-name="illust_320_제3자제공" transform="translate(-212 -1201)" style="clip-path:url(#cahy6gbyka)">
+        <g transform="translate(307.2 1245.8)">
+            <rect data-name="사각형 17224" width="131" height="105" rx="8" transform="translate(-.2 .2)" style="fill:#fff"/>
+            <g data-name="그룹 27012" transform="translate(20 17.6)">
+                <rect data-name="사각형 17225" width="40" height="40" rx="20" transform="translate(-.2 -.4)" style="fill:#51a1ff"/>
+                <g data-name="그룹 27731">
+                    <path transform="translate(9.801 9.6)" style="fill:none" d="M0 0h20v20H0z"/>
+                    <path data-name="Icon / Bold / Human / User_select" d="M1.075 19.778A1.076 1.076 0 0 1 0 18.7v-1.705a6.882 6.882 0 0 1 13.758 0V18.7a1.076 1.076 0 0 1-1.075 1.075zM2.15 4.73a4.729 4.729 0 1 1 4.729 4.729A4.735 4.735 0 0 1 2.15 4.73z" transform="translate(12.872 9.76)" style="fill:#fff"/>
+                </g>
+            </g>
+            <g data-name="그룹 27013">
+                <path data-name="선 155" transform="translate(69.3 30.7)" style="stroke:#eee;stroke-linecap:round;stroke-width:6px;fill:none" d="M0 0h37"/>
+                <path data-name="선 156" transform="translate(69.3 43.7)" style="stroke:#eee;stroke-linecap:round;stroke-width:6px;fill:none" d="M0 0h21"/>
+            </g>
+            <path data-name="선 157" transform="translate(23.3 73.699)" style="stroke:#eee;stroke-linecap:round;stroke-width:6px;fill:none" d="M0 0h86"/>
+            <path data-name="선 158" transform="translate(23.3 89.699)" style="stroke:#eee;stroke-linecap:round;stroke-width:6px;fill:none" d="M0 0h86"/>
+        </g>
+        <g transform="translate(208.797 1329.603)" style="clip-path:url(#bhbguoqrob)">
+            <path data-name="패스 20708" d="M344.646 363.175s-3.965 7.562-1.424 11.49 5.189 7.128 9.962 5.279a10.6 10.6 0 0 1 2.167-2.53c.769-.375 7.175-7.419 7.175-7.419z" transform="translate(-230.52 -244.527)" style="fill:#c89073"/>
+            <path data-name="hand simple light" d="M12979.594-8822.795s10.37 6.638 22.816 6.016 28.832-2.9 33.812-2.074 26.345 8.713 31.945 19.5 26.344 31.53 29.041 35.265 7.675 9.126 3.525 15.142-8.92 4.563-8.92 4.563 1.362 6.6-4.238 9.509-9.037.862-9.037.862.568 4.107-5.861 5.973-8.659-.787-8.659-.787-1.535 3.87-9.512 4.325-14.135-5.776-14.135-5.776-9.336-12.445-20.744-17.217-14.105-4.979-25.1-10.994-10.543-11.393-14.934-14.772-15.352-6.179-15.352-6.179z" transform="translate(-12880.697 8880.63)" style="fill:#ffd8bc"/>
+            <path data-name="패스 20712" d="M420.593 414.191s-.819 6.173 2.651 8.635 7.006 3.185 9.793.578 2.652-5.758 4.411-6.68 4.791-4.675.745-10.52-10.62-.489-12.3 1.225-5.3 6.763-5.3 6.763" transform="translate(-283.13 -271.707)" style="fill:#c89073"/>
+            <path data-name="패스 20713" d="M375.463 395.394s-.18 6.588 2.563 8.943 6.378 5.278 12.229-.142a44.119 44.119 0 0 1 3.679-4.547 7.122 7.122 0 0 0 2.169-7.5 9.359 9.359 0 0 0-9.494-5.983s-1.664-.363-7.631 4.937z" transform="translate(-252.799 -259.977)" style="fill:#c89073"/>
+            <path d="M14217.8-6476.542s-5.6 5.6-11.408 6.015-33.605-7.26-33.605-7.26-10.785-3.733-18.047 1.245-14.965 7.679-17.393 11.993-3.641 8.779-5.01 13.349-4.969 10.921 0 13.863 15.143-14.313 21.572-18.669 17.426 6.638 17.426 6.638l40.035 35.472s8.918-4.357 12.029-10.165 15.766-9.334 15.766-9.334z" transform="translate(-13992.631 6535.627)" style="fill:#c89073"/>
+            <path data-name="패스 20723" d="m556.362 418.779-.044-.041.021.016a.33.33 0 0 1 .023.025" transform="translate(-374.571 -281.938)" style="fill:#935234"/>
+            <path data-name="패스 20727" d="M476.938 449.01s-7.958 7.452-13.857 3.381-3.816-8.937-3.816-8.937l2.307-6.143s5.958-2.026 8.3 1.056 2.279 4.617 2.307 7.284a6.079 6.079 0 0 1 1.322 1.418 4.022 4.022 0 0 0 .62.756 5.452 5.452 0 0 0 2.823 1.186" transform="translate(-308.984 -294.003)" style="fill:#c89073"/>
+            <path data-name="패스 20730" d="m495.058 468.075.091-.157a15.14 15.14 0 0 0 .517-1.018c.102-.221.205-.461.293-.705s.175-.489.247-.722c.038-.116.066-.23.1-.339s.056-.21.076-.306l.061-.261.038-.2c.022-.113.037-.178.037-.178v.181a4.128 4.128 0 0 1-.033.478 2.844 2.844 0 0 1-.048.318c-.022.112-.04.231-.074.351s-.059.247-.1.37-.08.251-.129.374-.1.246-.152.366-.112.233-.167.345a6.134 6.134 0 0 1-.345.584c-.108.166-.213.3-.284.386s-.119.137-.119.137" transform="translate(-333.324 -312.538)" style="fill:#935234"/>
+            <rect data-name="사각형 17231" width="21.829" height="63.656" rx="6" transform="rotate(-23 248.408 -495.686)" style="fill:#fff"/>
+            <rect data-name="사각형 17232" width="21.829" height="63.657" rx="6" transform="rotate(-158 57.257 49.193)" style="fill:#fff"/>
+            <rect data-name="사각형 17233" width="153.739" height="76.87" rx="10" transform="rotate(-23 228.334 -511.102)" style="fill:#b7d8ff"/>
+            <rect data-name="사각형 17234" width="153.739" height="76.87" rx="10" transform="scale(-1) rotate(20.97 282.884 -284.192)" style="fill:#005fd0"/>
+            <path data-name="패스 20733" d="M776.57 313.283a4.668 4.668 0 1 1-4.668-4.668 4.668 4.668 0 0 1 4.668 4.668" transform="translate(-516.582 -207.792)" style="fill:#fff"/>
+            <path data-name="패스 20734" d="M811.6 298.994a4.668 4.668 0 1 1-4.668-4.668 4.668 4.668 0 0 1 4.668 4.668" transform="translate(-540.167 -198.171)" style="fill:#fff"/>
+            <path data-name="패스 20737" d="M180.921 310.055a4.668 4.668 0 1 1-.219-6.6 4.668 4.668 0 0 1 .219 6.6" transform="translate(-115.576 -205.072)" style="fill:#fff"/>
+            <path data-name="패스 20738" d="M216.262 323.557a4.668 4.668 0 1 1-.219-6.6 4.668 4.668 0 0 1 .219 6.6" transform="translate(-139.371 -214.163)" style="fill:#fff"/>
+        </g>
+    </g>
+</svg>

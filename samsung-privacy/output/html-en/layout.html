@@ -1,0 +1,392 @@
+(<!doctype html>
+<!-- (dev) Add dir="rtl" attribute if language code starts with ar, he, ur -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" sizes="16x16" href="../images/favicon_16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../images/favicon_32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="../images/favicon_48.png">
+<title>Samsung Privacy</title>
+<!-- css link -->
+<link rel="stylesheet" href="../css/common.css">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<!-- (dev) If button.high-contrast-btn__on is clicked, add class .high-contrast-mode -->
+<!-- (dev) If button.high-contrast-btn__off is clicked, remove class .high-contrast-mode -->
+<body>
+<div class="skip">
+  <a class="skip__link" href="#content">Skip to content</a>
+</div>
+<header class="header">
+  <div class="header__inner">
+    <nav class="gnb">
+      <div class="gnb__inner">
+        <a class="gnb__logo" href="#">
+          <svg class="icon" focusable="false" aria-label="Samsung Privacy">
+            <use href="../images/sprite-svg.svg#logo"></use>
+          </svg>
+        </a>
+
+        <!-- desktop gnb -->
+        <div class="gnb-menu">
+          <div class="gnb-1depth-wrap">
+            <ul class="gnb-1depth">
+              <!-- (dev) Add activation class: .is-active -->
+              <li class="gnb-1depth__menu"><a href="#">글로벌 권리대응 사이트</a></li>
+              <li class="gnb-1depth__menu"><a href="#">개인정보 처리방침</a>
+                <div class="gnb-2depth-wrap">
+                  <div class="gnb-2depth-inner">
+                    <ul class="gnb-2depth">
+                      <!-- (dev) Add activation class: .is-active -->
+                      <li class="gnb-2depth__menu"><a href="#">개요</a>
+                        <div class="gnb-2depth__feature">
+                          <span class="gnb-2depth__feature-image"><img src="../images/img-gnb-menu2-1-feature.svg" alt=""></span>
+                          <div class="gnb-2depth__feature-text">
+                            <p class="gnb-2depth__description">어떤 정보가 수집/이용되고 안전하게 보관되는지 확인해 보세요.</p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="gnb-2depth__menu"><a href="#">삼성의 개인정보 처리방침</a>
+                        <div class="gnb-2depth__feature">
+                          <span class="gnb-2depth__feature-image"><img src="../images/img-gnb-menu2-2-feature.svg" alt=""></span>
+                          <div class="gnb-2depth__feature-text">
+                            <p class="gnb-2depth__description">개인정보 처리에 대한 상세한 내용을 확인해 보세요.</p>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="gnb-1depth__menu">
+                <!-- (dev) Before Login: Add attribute aria-haspopup="true" title="open login layer popup" data-popup-id="layer-login" role="button" for login popup open -->
+                <a href="#">내 정보 관리</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="gnb-utility gnb-utility--desktop">
+          <!-- (dev) If before Login, add class .before-login--on -->
+          <div class="before-login">
+            <button class="before-login__link" aria-haspopup="true" data-popup-id="layer-login" title="layer popup open">
+              <svg class="icon" focusable="false" aria-label="Login">
+                <use href="../images/sprite-svg.svg#my"></use>
+              </svg>
+            </button>
+          </div>
+          <!-- (dev) If after Login, add class .after-login--on -->
+          <div class="after-login my-info after-login--on">
+            <button class="my-info__btn" aria-haspopup="true" aria-expanded="false">
+              <span><img src="../images/img-profile.png" alt="login user name"></span>
+            </button>
+            <div class="my-info__details" aria-hidden="true">
+              <div class="my-info__user-info">
+                <div class="my-info__image-name">
+                  <span class="my-info__image"><img src="../images/img-profile.png" alt=""></span>
+                  <strong>송oo 님</strong>
+                </div>
+                <div class="my-info__text">
+                  <p>안녕하세요!</p>
+                  <p>오늘도 안전하게 지켜 드릴게요!</p>
+                </div>
+                <a class="my-info__link-account" href="#">test123@samsung.com
+                  <svg class="icon" focusable="false">
+                    <use href="../images/sprite-svg.svg#chevron-right"></use>
+                  </svg>
+                </a>
+              </div>
+              <button class="my-info__btn-logout">로그아웃</button>
+            </div>
+          </div>
+        </div>
+        <!--// desktop gnb -->
+
+        <!-- mobile gnb -->
+        <div class="gnb-mobile-menu">
+          <button class="gnb-mobile-menu__btn" aria-haspopup="true">
+            <svg class="icon" focusable="false" aria-label="전체메뉴 열기">
+              <use href="../images/sprite-svg.svg#hamburger"></use>
+            </svg>
+          </button>
+        </div>
+
+        <div class="gnb-utility gnb-utility--mobile">
+          <!-- (dev) If before Login, add class .before-login--on -->
+          <div class="before-login before-login--on">
+            <button class="before-login__link" aria-haspopup="true" data-popup-id="layer-login" title="layer popup open">
+              <svg class="icon" focusable="false" aria-label="Login">
+                <use href="../images/sprite-svg.svg#my"></use>
+              </svg>
+            </button>
+          </div>
+          <!-- (dev) If after Login, add class .after-login--on -->
+          <div class="after-login my-info">
+            <a href="#" class="after-login__link">
+              <span><img src="../images/img-profile.png" alt="login user name"></span>
+            </a>
+          </div>
+        </div>
+
+        <div class="gnb-mobile-area" aria-hidden="true">
+          <div class="gnb-mobile-area__inner">
+            <!-- (dev) before Login -->
+            <div class="my-info">
+              <div class="my-info__user-info">
+                <button class="my-info__image-name" aria-haspopup="true" data-popup-id="layer-login">
+                  <span class="my-info__image"><img src="../images/img-login.svg" alt=""></span>
+                  <strong>로그인</strong>
+                </button>
+                <div class="my-info__text">
+                  <p>안녕하세요!</p>
+                  <p>오늘도 안전하게 지켜 드릴게요!</p>
+                </div>
+              </div>
+            </div>
+            <!--// (dev) before Login -->
+            <!-- (dev) after Login -->
+            <div class="my-info">
+              <div class="my-info__user-info">
+                <a href="#" class="my-info__image-name">
+                  <span class="my-info__image"><img src="../images/img-profile.png" alt="login user name"></span>
+                  <strong>송ㅇㅇ님</strong>
+                </a>
+                <div class="my-info__text">
+                  <p>안녕하세요!</p>
+                  <p>오늘도 안전하게 지켜 드릴게요!</p>
+                </div>
+                <a class="my-info__link-account" href="#">test123@samsung.com
+                  <svg class="icon" focusable="false">
+                    <use href="../images/sprite-svg.svg#chevron-right"></use>
+                  </svg>
+                </a>
+              </div>
+              <button class="my-info__btn-logout">로그아웃</button>
+            </div>
+            <!--// (dev) after Login -->
+
+            <div class="gnb-menu gnb-menu--mobile">
+              <ul class="gnb-1depth">
+                <!-- (dev) Add activation class: .is-active -->
+                <li class="gnb-1depth__menu">
+                  <a href="#">글로벌 권리대응 사이트</a>
+                </li>
+                <li class="gnb-1depth__menu">
+                  <a href="#">개인정보 처리방침</a>
+                  <div class="tooltip">
+                    <button type="button" class="tooltip-btn" aria-describedby="tooltip-gnb02">
+                      <svg class="icon" focusable="false" aria-label="Tip">
+                        <use href="../images/sprite-svg.svg#info-tip"></use>
+                      </svg>
+                    </button>
+                    <div class="tooltip-txt" id="tooltip-gnb02" role="tooltip">
+                      <div class="tooltip__content">
+                        <strong>개요</strong>
+                        <p>어떤 정보가 수집/이용되고 안전하게 보관되는지 확인해 보세요.</p>
+                        <strong>삼성의 개인정보 처리방침</strong>
+                        <p>개인정보 처리에 대한 상세한 내용을 확인해 보세요.</p>
+                      </div>
+                      <button type="button" class="tooltip-close">
+                        <svg class="icon" focusable="false" aria-label="Close">
+                          <use href="../images/sprite-svg.svg#cancel"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <ul class="gnb-2depth">
+                    <li class="gnb-2depth__menu"><a href="#">개요</a></li>
+                    <li class="gnb-2depth__menu"><a href="#">삼성의 개인정보 처리방침</a></li>
+                  </ul>
+                </li>
+                <li class="gnb-1depth__menu">
+                  <!-- Before Login: Add attribute aria-haspopup="true" title="open login layer popup" data-popup-id="layer-login" role="button" for login popup open -->
+                  <a href="#">내 정보 관리</a>
+                </li>
+              </ul>
+            </div><!-- gnb-menu--mobile -->
+
+            <button class="gnb__close">
+              <svg class="icon" focusable="false" aria-label="Close">
+                <use href="../images/sprite-svg.svg#cancel"></use>
+              </svg>
+            </button>
+          </div>
+        </div><!--// gnb-mobile-area -->
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- To apply skip navigation, id="content" value is fixed (content output area) -->
+<section class="wrap" id="content">
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.<br>
+  contents 영역입니다.
+</section><!--// .wrap -->
+
+<footer class="footer">
+  <div class="footer__inner">
+    <button class="btn-top btn-top--fixed" type="button">
+      <svg class="icon" focusable="false" aria-label="페이지 상단으로 이동">
+        <use href="../images/sprite-svg.svg#up-highest-bold"></use>
+      </svg>
+    </button>
+    <div class="footer__info">
+      <div class="footer__link-wrap">
+        <div class="footer__link-line-wrap">
+          <a class="footer__link" href="#">개인정보 처리방침</a>
+        </div>
+        <button class="footer__link" type="button" aria-haspopup="true" title="layer popup open" data-popup-id="layer-select-language">KOREA / 한국어
+          <svg class="icon" focusable="false">
+            <use href="../images/sprite-svg.svg#next-bold"></use>
+          </svg>
+        </button>
+      </div>
+      <p class="footer__copyright">Copyright © Samsung Electronics Co, Ltd. All Rights Reserved</p>
+      <div class="high-contrast-btn">
+        <!-- (dev) If this button is clicked, add .high-contrast-mode class to body -->
+        <button class="high-contrast-btn__on">
+          <svg class="icon" focusable="false" aria-label="High contrast mode on">
+            <use href="../images/sprite-svg.svg#high-contrast-on"></use>
+          </svg>
+        </button>
+        <!-- (dev) If this button is clicked, remove .high-contrast-mode class to body -->
+        <button class="high-contrast-btn__off">
+          <svg class="icon" focusable="false" aria-label="High contrast mode off">
+            <use href="../images/sprite-svg.svg#high-contrast-off"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</footer><!--// footer -->
+
+<!-- js -->
+<script src="../js/commonJs.min.js"></script>
+
+</body>
+</html>)

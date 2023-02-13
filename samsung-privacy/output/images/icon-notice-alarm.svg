@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96">
+    <g data-name="그룹 26603" transform="translate(-3.919 -3.949)">
+        <rect data-name="사각형 16194" width="13" height="49.998" rx="6.5" transform="rotate(-37 86.745 16.903)" style="fill:#0054b7"/>
+        <circle data-name="타원 146" cx="12" cy="12" r="12" transform="translate(62.763 35.799)" style="fill:#2189ff"/>
+        <path data-name="합치기 9" d="M-15469.465 8480.351c-9.85-4.881-19.139-4.826-26.013-4.768a54.461 54.461 0 0 1-6.4-.172c-6.645-.794-9.865-2.827-13.417-7.687s-3.7-12.872-3.7-12.872h74.771v38.85s-11.835-6.712-25.241-13.351zm-49.533-25.5s.144-8.012 3.7-12.872 6.772-6.895 13.417-7.688a52.812 52.812 0 0 1 6.4-.172c6.874.055 16.163.109 26.013-4.767 13.406-6.641 25.238-13.355 25.238-13.355v38.854z" transform="translate(15523.917 -8407.051)" style="fill:#b7d8ff"/>
+        <rect data-name="사각형 16195" width="3" height="8" rx="1.5" transform="rotate(45 14.77 127.633)" style="fill:#0054b7"/>
+        <rect data-name="사각형 16198" width="3" height="8" rx="1.5" transform="rotate(-45 116.89 -77.333)" style="fill:#0054b7"/>
+        <rect data-name="사각형 16197" width="3" height="8" rx="1.5" transform="rotate(90 27.56 72.359)" style="fill:#0054b7"/>
+        <circle data-name="타원 147" cx="2.5" cy="2.5" r="2.5" transform="translate(34.919 82.752)" style="fill:#fff"/>
+    </g>
+</svg>

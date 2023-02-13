@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" sizes="16x16" href="../images/favicon_16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../images/favicon_32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="../images/favicon_48.png">
+<title>Manage Cookies 팝업 | Samsung Privacy</title>
+<!-- css link -->
+<link rel="stylesheet" href="../css/common.css">
+<link rel="stylesheet" href="../css/style.css">
+<script>
+  window.addEventListener('load', function() {
+    // use-guide
+    mvJs.popup.open('#layer-manage-cookies');
+  });
+</script>
+</head>
+<body>
+
+<section class="wrap">
+  <button class="cta cta--outlined" data-popup-id="layer-manage-cookies">Manage Cookies
+  </button>
+</section><!--// .wrap -->
+
+<!-- Manage Cookies 팝업 -->
+<div class="popup popup--layer" aria-modal="true" role="dialog" aria-hidden="true" aria-labelledby="layer-manage-cookies-title" id="layer-manage-cookies">
+  <div class="popup__inner">
+    <h2 class="popup__title" id="layer-manage-cookies-title">
+      <strong id="ttsSelectLanguage">Manage Cookies</strong>
+      <button class="tts-btn" data-target-id="ttsSelectLanguage"><span class="hidden">Click to start listening</span></button>
+    </h2>
+    <div class="popup__contents cont-check-cookies">
+      <div class="scroll-area">
+        <div class="cookies-item-banner">
+          <strong>We use cookies to improve your experience on our website and to show you relevant ads. You can choose which cookies to allow below.</strong>
+        </div>
+        <div class="cookies-item-wrap">
+          <div class="cookies-item">
+            <div class="cookies-item__title">
+              <strong class="cookies-item__title-text">Essential Cookies</strong>
+            </div>
+            <p>These cookies are required to browse our website. They can’t be disabled.</p>
+            <!-- 220704 view cookies 영역 추가 -->
+            <div class="accordion cookie-accordion" data-options='{
+              "id": "cookie-essential",
+              "openType": "multi"
+            }'>
+              <div class="accordion-item">
+                <div class="accordion-header">
+                  <button type="button" class="accordion-btn" aria-expanded="false"><span data-text='{"text":"View cookies|Hide cookies", "show":1}'>View cookies</span></button>
+                </div>
+                <div class="accordion-panel" aria-hidden="true">
+                  <div class="manage-cookies-item">
+                    <ul>
+                      <li>
+                        <strong>Company</strong>
+                        <span>Samsung Electronics</span>
+                      </li>
+                      <li>
+                        <strong>Domain</strong>
+                        <span>privacy.samsung.com</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div><!--// .accordion-panel -->
+              </div>
+            </div>
+            <!--// 220704 view cookies 영역 추가 -->
+          </div>
+          <div class="cookies-item">
+            <div class="cookies-item__title">
+              <strong>Functionality Cookies</strong>
+              <div class="toggle">
+                <input type="checkbox" id="functionality-cookies">
+                <label for="functionality-cookies" class="toggle__switch"><span class="hidden active">activation</span><span class="hidden inactive">inactivation</span></label>
+              </div>
+            </div>
+            <p>These cookies help us remember the choices you Make and the info you enter (such as your account ID, Language, and region)so we can tailor the features and content you see.</p>
+            <!-- 220704 view cookies 영역 추가 -->
+            <div class="accordion cookie-accordion" data-options='{
+              "id": "cookie-functionality",
+              "openType": "multi"
+            }'>
+              <div class="accordion-item">
+                <div class="accordion-header">
+                  <button type="button" class="accordion-btn" aria-expanded="false"><span data-text='{"text":"View cookies|Hide cookies", "show":1}'>View cookies</span></button>
+                </div>
+                <div class="accordion-panel" aria-hidden="true">
+                  <div class="manage-cookies-item">
+                    <ul>
+                      <li>
+                        <strong>Company</strong>
+                        <span>Samsung Electronics</span>
+                      </li>
+                      <li>
+                        <strong>Domain</strong>
+                        <span>privacy.samsung.com</span>
+                      </li>
+                    </ul>
+                    <div class="toggle">
+                      <input type="checkbox" id="functionality-cookies-item">
+                      <label for="functionality-cookies-item" class="toggle__switch"><span class="hidden active">activation</span><span class="hidden inactive">inactivation</span></label>
+                    </div>
+                  </div>
+                </div><!--// .accordion-panel -->
+              </div>
+            </div>
+            <!--// 220704 view cookies 영역 추가 -->
+          </div>
+          <div class="cookies-item">
+            <div class="cookies-item__title">
+              <strong>Performance Cookies</strong>
+              <div class="toggle">
+                <input type="checkbox" id="performance-cookies" checked>
+                <label for="performance-cookies" class="toggle__switch"><span class="hidden active">activation</span><span class="hidden inactive">inactivation</span></label>
+              </div>
+            </div>
+            <p>These cookies help us understand how you use our site, such as which pages you visit most often, so we can improve the experience for all users.</p>
+            <!-- 220704 view cookies 영역 추가 -->
+            <div class="accordion cookie-accordion" data-options='{
+              "id": "cookie-performance",
+              "openType": "multi"
+            }'>
+              <div class="accordion-item">
+                <div class="accordion-header">
+                  <button type="button" class="accordion-btn" aria-expanded="false"><span data-text='{"text":"View cookies|Hide cookies", "show":1}'>View cookies</span></button>
+                </div>
+                <div class="accordion-panel" aria-hidden="true">
+                  <div class="manage-cookies-item">
+                    <ul>
+                      <li>
+                        <strong>Company</strong>
+                        <span>Google Inc.</span>
+                      </li>
+                      <li>
+                        <strong>Domain</strong>
+                        <span>ssl.google-analytics.com</span>
+                      </li>
+                    </ul>
+                    <div class="toggle">
+                      <input type="checkbox" id="performance-cookies-item">
+                      <label for="performance-cookies-item" class="toggle__switch"><span class="hidden active">activation</span><span class="hidden inactive">inactivation</span></label>
+                    </div>
+                  </div>
+                </div><!--// .accordion-panel -->
+              </div>
+            </div>
+            <!--// 220704 view cookies 영역 추가 -->
+          </div>
+        </div>
+      </div>
+    </div><!--// .popup-contents -->
+    <div class="popup__cta-wrap popup__cta-wrap--mobile-vertical">
+      <button class="cta cta--outlined">Cancel</button>
+      <button class="cta cta--filled">Agree and Continue</button>
+    </div>
+    <button class="popup-close">
+      <svg class="icon" focusable="false" aria-label="Close Popup">
+        <use href="../images/sprite-svg.svg#cancel"></use>
+      </svg>
+    </button>
+  </div>
+  <div class="popup__dimmed"><!-- popup dimmed --></div>
+</div><!--// .popup -->
+<!--// 접수중(정보 다운로드/정보 삭제) 팝업 -->
+
+<!-- js -->
+<script src="../js/commonJs.min.js"></script>
+</body>
+</html>

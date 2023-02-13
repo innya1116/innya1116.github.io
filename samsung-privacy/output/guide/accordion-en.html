@@ -1,0 +1,326 @@
+<!doctype html>
+<!-- (dev) 언어코드가 ar, he, ur로 시작하는 경우 dir="rtl" 속성 추가 -->
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" sizes="16x16" href="../images/favicon_16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../images/favicon_32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="../images/favicon_48.png">
+<title>Accordion | Publishing Guide | Samsung Privacy</title>
+<!-- css link -->
+<link rel="stylesheet" href="../css/common.css">
+<link rel="stylesheet" href="../css/style.css">
+<!-- guide css link -->
+<link rel="stylesheet" href="./guide.css">
+</head>
+<section class="guide">
+  <header class="guide-header">
+    <h1 class="guide-tit1">삼성전자 글로벌 권리대응 사이트 UX개선</h1>
+    <nav class="guide-nav">
+      <div class="nav-depth1">
+        <a href="../index.html">Guide</a>
+        <a class="on" href="../index-en.html">Guide(EN)</a>
+        <a href="../filelist.html">HTML Filelist</a>
+      </div>
+      <div class="nav-depth2">
+        <a href="../index-en.html">General</a>
+        <a href="./button-cta-en.html">Button(CTA)</a>
+        <a href="./form-en.html">Form</a>
+        <a href="./icons-en.html">Icon</a>
+        <a href="./popup-en.html">Popup</a>
+        <a href="./swiper-en.html">Swiper</a>
+        <a href="./tab-en.html">Tab</a>
+        <a class="on" href="./accordion-en.html">Accordion</a>
+        <a href="./tts-en.html">Text to Speech</a>
+      </div>
+    </nav>
+  </header>
+  <div class="guide-content">
+    <h2 class="guide-tit2">Accordion</h2>
+    <h3 class="guide-tit3">Usage</h3>
+    <ul class="guide-info-list">
+      <li>If the default is closed, change the text 'aria-expanded="false" button.accordion__btn > span close' in button.accordion__btn, and apply 'aria-hidden="true" style="height: 0;"' to div.accordion__panel</li>
+      <li>Apply accordion by adding data-options to .acccordion
+<pre class="code">
+  data-options='{
+    "id": "accordion-id", //add id for creation toggle button and creation id/aria attribute js to panel
+    "openType": "multi", //"single" .accordion-item single open / "multi" .accordion-item multiple open
+    "animation": true, //Whether to use slide down motion(true/false)
+    "animationSpeed": 400 //slide down speed
+  }'
+</pre>
+      </li>
+    </ul>
+
+    <div class="code-wrap">
+<pre class="code">
+&lt;div class="accordion" data-options='{
+    "id": "privacyPolicy",
+    "openType" : "multi",
+    "animation": true,
+    "animationSpeed": 0.4
+  }'&gt;
+  <i>&lt;!-- Default Open Item --&gt;</i>
+  &lt;div class="accordion-item"&gt;
+    &lt;div class="accordion-header"&gt;
+      &lt;h2&gt;Default Open Item&lt;/h2&gt;
+      <i>&lt;!-- (dev) Activate accordion button, aria-expanded="true" --&gt;</i>
+      &lt;button type="button" class="accordion-btn" <b>aria-expanded="true"</b>&gt;
+        <i>&lt;!-- (dev) Activate accordion button, &lt;span data-text='{"text":"open|close", "show":2}'&gt;close&lt;/span&gt; --&gt;</i>
+        &lt;span <b>data-text='{"text":"open|close", "show":2}</b>'&gt;<b>close</b>&lt;/span&gt;
+      &lt;/button&gt;
+    &lt;/div&gt;
+    <i>&lt;!-- (dev) Activate accordion contents, aria-hidden="false" --&gt;</i>
+    &lt;div class="accordion-panel" <b>aria-hidden="false"</b>&gt;
+      Item Contents
+    &lt;/div&gt;
+  &lt;/div&gt;
+  <i>&lt;!-- Default Closed Item --&gt;</i>
+  &lt;div class="accordion-item"&gt;
+    &lt;div class="accordion-header"&gt;
+      &lt;h2&gt;Default Item&lt;/h2&gt;
+      &lt;button type="button" class="accordion-btn" <b>aria-expanded="false"</b>&gt;&lt;<b>span data-text='{"text":"open|close", "show":1}</b>'&gt;<b>open</b>&lt;/span&gt;&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class="accordion-panel" <b>aria-hidden="false"</b>&gt;
+      Item Contents
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="accordion-item"&gt;
+    &lt;div class="accordion-header"&gt;
+      &lt;h2&gt;Default Item&lt;/h2&gt;
+      &lt;button type="button" class="accordion-btn" aria-expanded="false"&gt;&lt;span data-text='{"text":"open|close", "show":1}'&gt;open&lt;/span&gt;&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class="accordion-panel" aria-hidden="false"&gt;
+      Item Contents
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;<i>&lt;!--// .accordion --&gt;</i>
+</pre>
+    </div>
+
+    <h3 class="guide-tit3">Privacy Policy</h3>
+    <ul class="guide-info-list">
+      <li>Structure: div.privacy-policy > div.privacy-policy__toggle.accordion > div.accordion-item</li>
+    </ul>
+
+    <div class="privacy-policy">
+      <div class="privacy-policy__toggle accordion" data-options='{
+          "id": "privacyPolicy",
+          "openType" : "multi",
+          "animation": true,
+          "animationSpeed": 0.4
+        }'>
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <h2>Privacy Policy Item (open item)</h2>
+            <button type="button" class="accordion-btn" aria-expanded="true"><span data-text='{"text":"open|close", "show":2}'>close</span></button>
+          </div>
+          <div class="accordion-panel" aria-hidden="false">
+            <div class="privacy-policy__contents">
+              Privacy Policy Contents
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <h2>Privacy Policy Item(closed item)</h2>
+            <button type="button" class="accordion-btn" aria-expanded="false"><span data-text='{"text":"open|close", "show":1}'>open</span></button>
+          </div>
+          <div class="accordion-panel" aria-hidden="true">
+            <div class="privacy-policy__contents">
+              Privacy Policy Contents
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <h2>Privacy Policy Item(closed item)</h2>
+            <button type="button" class="accordion-btn" aria-expanded="false"><span data-text='{"text":"open|close", "show":1}'>open</span></button>
+          </div>
+          <div class="accordion-panel" aria-hidden="true">
+            <div class="privacy-policy__contents">
+              Privacy Policy Contents
+            </div>
+          </div>
+        </div>
+      </div><!--// .accordion -->
+    </div>
+
+    <div class="code-wrap">
+<pre class="code">
+&lt;div class="privacy-policy"&gt;
+  ...
+  &lt;div class="privacy-policy__toggle accordion" data-options='{
+      "id": "privacyPolicy",
+      "openType" : "multi",
+      "animation": true,
+      "animationSpeed": 0.4
+    }'&gt;
+    &lt;div class="accordion-item"&gt;
+      &lt;div class="accordion-header"&gt;
+        &lt;h2&gt;Privacy Policy Item(open item)&lt;/h2&gt;
+        &lt;button type="button" class="accordion-btn" <b>aria-expanded="true"</b>&gt;&lt;span <b>data-text='{"text":"open|close", "show":2}</b>'&gt;<b>close</b>&lt;/span&gt;&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class="accordion-panel" <b>aria-hidden="false"</b>&gt;
+        &lt;div class="privacy-policy__contents"&gt;
+          Privacy Policy Contents
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="accordion-item"&gt;
+      &lt;div class="accordion-header"&gt;
+        &lt;h2&gt;Privacy Policy Item(closed item)&lt;/h2&gt;
+        &lt;button type="button" class="accordion-btn" <b>aria-expanded="false"</b>&gt;&lt;<b>span data-text='{"text":"open|close", "show":1}</b>'&gt;<b>open</b>&lt;/span&gt;&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class="accordion-panel" <b>aria-hidden="true"</b>&gt;
+        &lt;div class="privacy-policy__contents"&gt;
+          Privacy Policy Contents
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="accordion-item"&gt;
+      &lt;div class="accordion-header"&gt;
+        &lt;h2&gt;Privacy Policy Item(closed item)&lt;/h2&gt;
+        &lt;button type="button" class="accordion-btn" aria-expanded="false"&gt;&lt;span data-text='{"text":"open|close", "show":1}'&gt;open&lt;/span&gt;&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class="accordion-panel" aria-hidden="true"&gt;
+        &lt;div class="privacy-policy__contents"&gt;
+          Privacy Policy Contents
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;<i>&lt;!--// .accordion --&gt;</i>
+&lt;/div&gt;
+</pre>
+    </div>
+
+    <h3 class="guide-tit3">Language Selection</h3>
+    <ul class="guide-info-list">
+      <li>Structure: div.popup > div.cont-select-language > div.accordion > div.accordion-item</li>
+    </ul>
+    <br><br>
+
+    <div class="popup" style="display: block;position:static">
+      <div class="cont-select-language">
+        <div class="accordion" data-options='{
+            "id": "selectLanguage",
+            "openType": "multi",
+            "animation": true,
+            "animationSpeed": 0.5
+          }'>
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <h3>Continent</h3>
+              <!-- (dev) Activation accordion button, aria-expanded="true" -->
+              <button type="button" class="accordion-btn" aria-expanded="true">
+                <!-- (dev) Activation accordion button, <span data-text='{"text":"open|close", "show":2}'>close</span> -->
+                <span data-text='{"text":"open|close", "show":2}'>close</span>
+              </button>
+            </div>
+            <!-- (dev) Activation accordion contents, aria-hidden="false" -->
+            <div class="accordion-panel" aria-hidden="false">
+              <ul class="language-list">
+                <li><a href="#" role="button">Country / Language</a></li>
+                <!-- (dev) Country name activation, add class .on -->
+                <li class="on"><a href="#" role="button">Country / Language</a></li>
+                <li><a href="#" role="button">Country / Language</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <h3>Continent</h3>
+              <button type="button" class="accordion-btn" aria-expanded="false"><span data-text='{"text":"open|close", "show":1}'>open</span></button>
+            </div>
+            <div class="accordion-panel" aria-hidden="true">
+              <ul class="language-list">
+                <li><a href="#" role="button">Country / Language</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <h3>Continent</h3>
+              <button type="button" class="accordion-btn" aria-expanded="false"><span data-text='{"text":"open|close", "show":1}'>open</span></button>
+            </div>
+            <div class="accordion-panel" aria-hidden="true">
+              <ul class="language-list">
+                <li><a href="#" role="button">Country / Language</a></li>
+              </ul>
+            </div>
+          </div>
+        </div><!--// .accordion -->
+      </div>
+    </div>
+
+    <div class="code-wrap">
+<pre class="code">
+&lt;div class="popup"&gt;
+  ...
+  &lt;div class="... cont-select-language"&gt;
+    ...
+    &lt;div class="accordion" data-options='{
+        "id": "selectLanguage",
+        "openType": "multi",
+        "animation": true,
+        "animationSpeed": 0.5
+      }'&gt;
+      &lt;div class="accordion-item"&gt;
+        &lt;div class="accordion-header"&gt;
+          &lt;h3&gt;Continent&lt;/h3&gt;
+          <i>&lt;!-- (dev) Activation accordion button, aria-expanded="true" --&gt;</i>
+          &lt;button type="button" class="accordion-btn" <b>aria-expanded="true"</b>&gt;
+            <i>&lt;!-- (dev) Activation accordion button, &lt;span data-text='{"text":"open|close", "show":2}'&gt;close&lt;/span&gt; --&gt;</i>
+            &lt;span <b>data-text='{"text":"open|close", "show":2}</b>'&gt;<b>close</b>&lt;/span&gt;
+          &lt;/button&gt;
+        &lt;/div&gt;
+        <i>&lt;!-- (dev) Activation accordion contents, aria-hidden="false" --&gt;</i>
+        &lt;div class="accordion-panel" <b>aria-hidden="false"</b>&gt;
+          &lt;ul class="language-list"&gt;
+            &lt;li&gt;&lt;a href="#" role="button"&gt;Country / Language&lt;/a&gt;&lt;/li&gt;
+            <i>&lt;!-- (dev) Country name activation, add class .on --&gt;</i>
+            &lt;li<b> class="on"</b>&gt;&lt;a href="#" role="button"&gt;Country / Language&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#" role="button"&gt;Country / Language&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="accordion-item"&gt;
+        &lt;div class="accordion-header"&gt;
+          &lt;h3&gt;Continent&lt;/h3&gt;
+          &lt;button type="button" class="accordion-btn" <b>aria-expanded="false"</b>&gt;&lt;span <b>data-text='{"text":"open|close", "show":1}</b>'&gt;<b>open</b>&lt;/span&gt;&lt;/button&gt;
+        &lt;/div&gt;
+        &lt;div class="accordion-panel" <b>aria-hidden="true"</b>&gt;
+          &lt;ul class="language-list"&gt;
+            &lt;li&gt;&lt;a href="#" role="button"&gt;Country / Language&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="accordion-item"&gt;
+        &lt;div class="accordion-header"&gt;
+          &lt;h3&gt;Continent&lt;/h3&gt;
+          &lt;button type="button" class="accordion-btn" aria-expanded="false"&gt;&lt;span data-text='{"text":"open|close", "show":1}'&gt;open&lt;/span&gt;&lt;/button&gt;
+        &lt;/div&gt;
+        &lt;div class="accordion-panel" aria-hidden="true"&gt;
+          &lt;ul class="language-list"&gt;
+            &lt;li&gt;&lt;a href="#" role="button"&gt;Country / Language&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;!--// .accordion --&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+    </div>
+
+  </div><!--// .guide-content -->
+</section>
+
+<!-- guide js link -->
+<script src="./guide.js"></script>
+
+<!-- js -->
+<script src="../js/commonJs.min.js"></script>
+
+</body>
+</html>

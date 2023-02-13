@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <defs>
+        <clipPath id="k64ygxpn1a">
+            <path transform="translate(26.7 265)" style="opacity:.1;fill:#fff" d="M0 0h24v24H0z"/>
+        </clipPath>
+    </defs>
+    <g data-name="icon_introduction_x24" transform="translate(-26.7 -265)" style="clip-path:url(#k64ygxpn1a)">
+        <g data-name="그룹 26473" transform="translate(25.923 262.5)">
+            <rect width="16" height="15" rx="1" transform="translate(1.776 5.5)" style="fill:#b7d8ff"/>
+            <path d="M13600.775 10171.5a1 1 0 0 1-1-1v-10h5v10a1 1 0 0 1-1 1zm-1-11 2.5-4 2.5 4z" transform="rotate(-45 -5438.736 21488.544)" style="fill:#005fd0"/>
+        </g>
+    </g>
+</svg>

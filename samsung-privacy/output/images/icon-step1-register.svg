@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96">
+    <path data-name="빼기 9" d="M64 96H8a8.009 8.009 0 0 1-8-8V8a8.009 8.009 0 0 1 8-8h47.392L72 16.608V88a8.009 8.009 0 0 1-8 8z" transform="translate(11.999)" style="fill:#b7d8ff"/>
+    <path data-name="다각형 4" d="m12 0 12 13H0z" transform="rotate(-135 42.904 -2.445)" style="fill:#0054b7"/>
+    <g data-name="그룹 27284">
+        <path data-name="패스 19038" d="m100.173 47.388-11.088-8.664 3.733-4.63 11.089 8.663z" transform="translate(-7.907 10.407)" style="fill:#2189ff"/>
+        <path data-name="패스 19039" d="M97.918 48.013 77.842 72.51l-11.088-8.666 20.074-24.5z" transform="translate(-5.66 9.78)" style="fill:#51a1ff"/>
+        <path data-name="패스 19040" d="m64.623 81.826 6.408-2.49-5.462-4.278z" transform="translate(-5.446 5.518)" style="fill:#fff"/>
+        <path data-name="패스 19041" d="m66.645 67.165-.97 6.952 5.462 4.277 6.6-2.564z" transform="translate(-5.552 6.46)" style="fill:#2189ff"/>
+    </g>
+    <path data-name="선 179" transform="translate(32 32)" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-width:3px" d="M0 0h33"/>
+    <path data-name="선 180" transform="translate(32 41)" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-width:3px" d="M0 0h23"/>
+    <path data-name="선 181" transform="translate(32 50)" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-width:3px" d="M0 0h33"/>
+</svg>

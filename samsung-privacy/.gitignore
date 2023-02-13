@@ -1,0 +1,16 @@
+*.css.map
+*.sass.map
+*.scss.map
+/node_modules/
+/q.txt
+/.vscode/
+/output/css/common.css
+/output/css/style.css
+/output/guide/guide.css
+/src/images/sprite/sp-service-app.css
+/src/images/sprite/sp-service-app-2x.css
+*.min.js
+/output/js/commonJs.min.js
+/output/html-high-contrast/
+/output/html-rtl/
+/output/filelist-rtl.html

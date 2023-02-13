@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="63" height="63" viewBox="0 0 63 63">
+  <g id="mail" transform="translate(0.355 0.305)">
+    <path id="패스_21735" data-name="패스 21735" d="M68.646,132.7h0c17.386,0,31,14.614,31,32a30.666,30.666,0,0,1-31,31c-17.386,0-32-13.613-32-31a32.374,32.374,0,0,1,32-32" transform="translate(-37.001 -133)" fill="#faebf6"/>
+    <g id="그룹_27600" data-name="그룹 27600" transform="translate(13.117 18.364)">
+      <rect id="사각형_17542" data-name="사각형 17542" width="30" height="20" transform="translate(-0.473 5.331)" fill="#fff"/>
+      <path id="패스_21736" data-name="패스 21736" d="M68.75,171l-13-9h0l13,8,12-8h0Z" transform="translate(-54.223 -154.671)" fill="#b34f9b"/>
+      <g id="그룹_27616" data-name="그룹 27616">
+        <path id="패스_21737" data-name="패스 21737" d="M95.485,159a5,5,0,1,1-5-5h0a5.059,5.059,0,0,1,5,5" transform="translate(-57.958 -153.668)" fill="#b34f9b"/>
+        <text id="_3" data-name="3" transform="translate(30.527 8.331)" fill="#fff" font-size="8" font-family="SamsungSharpSans-Medium, Samsung Sharp Sans" font-weight="500"><tspan x="0" y="0">3</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>

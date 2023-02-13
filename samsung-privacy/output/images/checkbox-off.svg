@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g transform="translate(-712 -1811)">
+    <circle cx="12" cy="12" r="12" transform="translate(712 1811)" fill="#fff"/>
+    <path d="M12,1A11,11,0,0,0,4.222,19.778,11,11,0,0,0,19.778,4.222,10.928,10.928,0,0,0,12,1m0-1A12,12,0,1,1,0,12,12,12,0,0,1,12,0Z" transform="translate(712 1811)" fill="#ddd"/>
+    <path d="M1082.145,575.187l-5.874-5.874,1.414-1.414,4.46,4.46,7.932-7.932,1.414,1.414Z" transform="translate(-359.881 1253.547)" fill="#ddd"/>
+  </g>
+</svg>

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" sizes="16x16" href="../images/favicon_16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../images/favicon_32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="../images/favicon_48.png">
+<title>신청 취소 alert layer | Samsung Privacy</title>
+<!-- css link -->
+<link rel="stylesheet" href="../css/common.css">
+<link rel="stylesheet" href="../css/style.css">
+<script>
+  window.addEventListener('load', function() {
+    // use-guide
+    mvJs.popup.open('#alert-cancel-apply');
+  });
+</script>
+</head>
+<body>
+
+<section class="wrap">
+  <button class="cta cta--outlined" data-popup-id="alert-cancel-apply">신청 취소 alert layer</button>
+</section><!--// .wrap -->
+
+<!-- 신청 취소 팝업 -->
+<div class="popup popup--alert" aria-modal="true" role="alertdialog" aria-hidden="false" aria-labelledby="alert-cancel-apply-title" id="alert-cancel-apply">
+  <div class="popup__inner">
+    <div class="popup__contents alert">
+      <h2 class="alert__title" id="alert-cancel-apply-title">신청을 취소 하시겠어요?</h2>
+    </div>
+    <div class="popup__cta-wrap">
+      <button class="cta cta--outlined cta--icon">취소</button>
+      <button class="cta cta--filled" data-popup-id="alert-complete-cancel">확인</button>
+    </div>
+    <button class="popup-close">
+      <svg class="icon" focusable="false" aria-label="Close Popup">
+        <use href="../images/sprite-svg.svg#cancel"></use>
+      </svg>
+    </button>
+  </div>
+  <div class="popup__dimmed"><!-- popup dimmed --></div>
+</div><!--// .popup -->
+<!--// 신청 취소 팝업 -->
+
+<!-- js -->
+<script src="../js/commonJs.min.js"></script>
+</body>
+</html>

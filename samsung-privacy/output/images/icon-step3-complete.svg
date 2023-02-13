@@ -1,0 +1,14 @@
+<svg id="icon_96_complete_popup" xmlns="http://www.w3.org/2000/svg" width="96" height="96.001" viewBox="0 0 96 96.001">
+  <rect id="area" width="96" height="96" transform="translate(0 0.001)" fill="#fee1e1" opacity="0"/>
+  <g id="그룹_27349" data-name="그룹 27349" transform="translate(-745 -880.378)">
+    <path id="패스_19073" data-name="패스 19073" d="M73.1,26.3a26.361,26.361,0,1,0-46.33,17.168,31.268,31.268,0,0,1,7.22,15.452l.737,4.547H58.751l.735-4.539A32.642,32.642,0,0,1,66.937,43.2,26.143,26.143,0,0,0,73.1,26.3" transform="translate(746.623 893)" fill="#b7d8ff"/>
+    <path id="패스_19074" data-name="패스 19074" d="M57.7,85.675A10.046,10.046,0,1,1,47.65,75.629,10.047,10.047,0,0,1,57.7,85.675" transform="translate(745.468 880.659)" fill="#0054b7"/>
+    <rect id="사각형_16450" data-name="사각형 16450" width="29.763" height="20.092" rx="4" transform="translate(778.05 951.678)" fill="#006bea"/>
+    <path id="패스_19075" data-name="패스 19075" d="M15889.85-7683.5l8.838,8.667,13.858-16.719" transform="translate(-15108.283 8605.966)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="3"/>
+  </g>
+  <g id="그룹_27350" data-name="그룹 27350" transform="translate(-851.64 -881.853)">
+    <rect id="사각형_16421" data-name="사각형 16421" width="3.5" height="8" rx="1.75" transform="translate(880.64 887.195) rotate(-45)" fill="#005fd0"/>
+    <rect id="사각형_16422" data-name="사각형 16422" width="3.5" height="8" rx="1.75" transform="translate(913.704 892.852) rotate(-135)" fill="#005fd0"/>
+    <rect id="사각형_16423" data-name="사각형 16423" width="3.5" height="8" rx="1.75" transform="translate(898.5 881.853)" fill="#005fd0"/>
+  </g>
+</svg>

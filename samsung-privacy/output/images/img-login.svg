@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+    <defs>
+        <clipPath id="2j3z9b724a">
+            <circle cx="24" cy="24" r="24" transform="translate(24 73)" style="fill:#a5a5a5"/>
+        </clipPath>
+    </defs>
+    <g transform="translate(-24 -73)" style="clip-path:url(#2j3z9b724a)">
+        <circle cx="24" cy="24" r="24" transform="translate(24 73)" style="fill:#f7f7f7"/>
+        <g data-name="그룹 27748">
+            <path transform="translate(37 86)" style="fill:none" d="M0 0h22v22H0z"/>
+            <path data-name="Icon / Bold / Human / User_select" d="M1.142 21.013A1.143 1.143 0 0 1 0 19.871v-1.815a7.312 7.312 0 0 1 14.618 0v1.815a1.143 1.143 0 0 1-1.142 1.142zM2.284 5.025a5.025 5.025 0 1 1 5.025 5.025 5.03 5.03 0 0 1-5.025-5.025z" transform="translate(40.337 86.848)" style="fill:#ddd"/>
+        </g>
+    </g>
+</svg>

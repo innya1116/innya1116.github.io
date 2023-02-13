@@ -1,0 +1,82 @@
+<svg id="illust_320_개인정보제공" xmlns="http://www.w3.org/2000/svg" width="320" height="320" viewBox="0 0 320 320">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: rgba(255,0,0,0.2);
+        opacity: 0;
+      }
+
+      .cls-2 {
+        fill: #eee;
+      }
+
+      .cls-3, .cls-4, .cls-8, .cls-9 {
+        fill: none;
+      }
+
+      .cls-3, .cls-4 {
+        stroke: #ddd;
+      }
+
+      .cls-3, .cls-4, .cls-9 {
+        stroke-width: 4px;
+      }
+
+      .cls-4 {
+        stroke-linejoin: round;
+      }
+
+      .cls-5 {
+        fill: #005fd0;
+      }
+
+      .cls-6 {
+        fill: #fff;
+      }
+
+      .cls-7 {
+        fill: #51a1ff;
+      }
+
+      .cls-9 {
+        stroke: #b7d8ff;
+        stroke-linecap: round;
+      }
+
+      .cls-10 {
+        fill: #b7d8ff;
+      }
+    </style>
+  </defs>
+  <rect id="area" class="cls-1" width="320" height="320"/>
+  <g id="그룹_27571" data-name="그룹 27571" transform="translate(-2153 -2893)">
+    <path id="cloud" class="cls-2" d="M59.027,162.543A58.946,58.946,0,1,1,70.212,45.738,81.071,81.071,0,0,1,199.093,22.4,37.9,37.9,0,0,1,256.944,64.9a50.239,50.239,0,0,1-16.662,97.642Z" transform="translate(2167.688 2912.971)"/>
+    <g id="그룹_27568" data-name="그룹 27568" transform="translate(2167.771 2894.971)">
+      <path id="패스_21121" data-name="패스 21121" class="cls-3" d="M0,0V90.154" transform="translate(145.452 186.611)"/>
+      <path id="패스_21059" data-name="패스 21059" class="cls-4" d="M52.906,258.382V223.14H232.04v35.243" transform="translate(2.804 11.827)"/>
+    </g>
+    <g id="그룹_27570" data-name="그룹 27570" transform="translate(2167.688 2904.971)">
+      <path id="패스_21060" data-name="패스 21060" class="cls-5" d="M214.347,198.051H69.711a8.424,8.424,0,0,1-8.424-8.424v-98.9a8.424,8.424,0,0,1,8.424-8.424H214.347a8.424,8.424,0,0,1,8.424,8.424v98.9a8.424,8.424,0,0,1-8.424,8.424" transform="translate(3.248 4.362)"/>
+      <rect id="사각형_17362" data-name="사각형 17362" class="cls-6" width="146.209" height="90.495" transform="translate(72.172 104.102)"/>
+      <path id="패스_21061" data-name="패스 21061" class="cls-6" d="M77.684,91a2.5,2.5,0,1,1-2.5-2.5,2.5,2.5,0,0,1,2.5,2.5" transform="translate(130.965 4.691)"/>
+      <path id="패스_21062" data-name="패스 21062" class="cls-6" d="M85.067,91a2.5,2.5,0,1,1-2.5-2.5,2.5,2.5,0,0,1,2.5,2.5" transform="translate(133.131 4.691)"/>
+      <path id="패스_21068" data-name="패스 21068" class="cls-6" d="M104.305,133.769a4.594,4.594,0,1,1-4.6-4.594h0a4.594,4.594,0,0,1,4.594,4.594" transform="translate(5.041 6.846)"/>
+      <path id="패스_21069" data-name="패스 21069" class="cls-6" d="M109.919,149.52H89.554a10.183,10.183,0,0,1,20.365,0" transform="translate(4.747 7.385)"/>
+      <g id="그룹_27728" data-name="그룹 27728" transform="translate(87.513 128.43)">
+        <rect id="사각형_17225" data-name="사각형 17225" class="cls-7" width="40" height="40" rx="20" transform="translate(-0.2 -0.4)"/>
+        <g id="그룹_27734" data-name="그룹 27734" transform="translate(5945.392 19856.293)">
+          <rect id="Container" class="cls-8" width="20" height="20" transform="translate(-5935.592 -19846.691)"/>
+          <path id="Icon_Bold_Human_User_select" data-name="Icon / Bold / Human / User_select" class="cls-6" d="M1.075,19.778A1.076,1.076,0,0,1,0,18.7V16.995a6.882,6.882,0,0,1,13.758,0V18.7a1.076,1.076,0,0,1-1.075,1.075ZM2.15,4.73A4.729,4.729,0,1,1,6.879,9.459,4.735,4.735,0,0,1,2.15,4.73Z" transform="translate(-5932.521 -19846.531)"/>
+        </g>
+      </g>
+      <g id="그룹_27856" data-name="그룹 27856">
+        <line id="선_152" data-name="선 152" class="cls-9" x2="43" transform="translate(140.813 133.529)"/>
+        <line id="선_154" data-name="선 154" class="cls-9" x2="48" transform="translate(140.813 161.701)"/>
+        <line id="선_153" data-name="선 153" class="cls-9" x2="56" transform="translate(140.813 147.615)"/>
+      </g>
+    </g>
+    <circle id="타원_2137" data-name="타원 2137" class="cls-10" cx="15" cy="15" r="15" transform="translate(2208 3157)"/>
+    <rect id="사각형_17586" data-name="사각형 17586" class="cls-10" width="30" height="30" rx="2" transform="translate(2388 3157)"/>
+    <path id="다각형_35" data-name="다각형 35" class="cls-10" d="M15.26,3.071a2,2,0,0,1,3.48,0L32.308,27.014A2,2,0,0,1,30.568,30H3.432a2,2,0,0,1-1.74-2.986Z" transform="translate(2296 3157)"/>
+  </g>
+</svg>

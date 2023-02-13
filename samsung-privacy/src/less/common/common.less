@@ -1,0 +1,172 @@
+// variable, mixin
+@import '_global';
+@import url('normalize.css');
+// All Country
+@import '_fonts';
+// Style Reset
+@import '_reset';
+// Country excluding html language 'en', Font setting
+@import '_font-other';
+
+.icon {
+  display: inline-block;
+  vertical-align: top;
+  pointer-events: none;
+}
+
+.info-guide {
+  text-align: center;
+
+  &--only {
+    padding-top: 120px;
+  }
+
+  &__image {
+    display: block;
+    width: 320px;
+    margin: 0 auto;
+
+    img {
+      width: 100%;
+      vertical-align: top;
+    }
+  }
+
+  &__title {
+    display: block;
+    margin-top: 32px;
+    color: @color--black;
+    font-size: 20px;
+  }
+
+  &__description {
+    margin-top: 16px;
+    color: @color--text;
+  }
+
+  &__cta {
+    margin-top: 24px;
+  }
+
+  &__box {
+    width: 448px;
+    padding: 20px 24px;
+    margin: 24px auto 0;
+    border: 1px solid @color--line-1;
+    border-radius: 20px;
+    text-align: center;
+    color: @color--text;
+    font-size: 16px;
+
+    strong {
+      display: block;
+      font-weight: normal;
+    }
+
+    strong + p {
+      margin-top: 6px;
+    }
+  }
+}
+
+.tts-btn {
+  display: none;
+  width: 24px;
+  height: 24px;
+  background: url(../images/icon-speaker.svg) no-repeat;
+  background-size: 100% 100%;
+  vertical-align: middle;
+
+  html[lang^='en'] & {
+    display: inline-block;
+  }
+}
+
+@media @media-query--desktop {
+  .info-guide {
+    &--only {
+      .vw-convert-desktop(padding-top, 120px);
+    }
+
+    &__image {
+      .vw-convert-desktop(width, 320px);
+    }
+
+    &__title {
+      .vw-convert-desktop(margin-top, 32px);
+      .vw-convert-desktop(font-size, 20px);
+    }
+
+    &__description {
+      .vw-convert-desktop(margin-top, 16px);
+    }
+
+    &__cta {
+      .vw-convert-desktop(margin-top, 24px);
+    }
+
+    &__box {
+      .vw-convert-desktop(width, 448px);
+      .vw-convert-desktop(padding, 20px 24px);
+      .vw-convert-desktop(margin-top, 24px);
+      .vw-convert-desktop(border-radius, 20px);
+      .vw-convert-desktop(font-size, 16px);
+
+      strong + p {
+        .vw-convert-desktop(margin-top, 6px);
+      }
+    }
+  }
+
+  .tts-btn {
+    .vw-convert-desktop(width, 24px);
+    .vw-convert-desktop(height, 24px);
+  }
+}
+
+@media @media-query--mobile {
+  .info-guide {
+    &--only {
+      .vw-convert-mobile(padding-top, 120px);
+    }
+
+    &__image {
+      .vw-convert-mobile(width, 180px);
+    }
+
+    &__title {
+      .vw-convert-mobile(margin-top, 24px);
+      .vw-convert-mobile(font-size, 16px);
+    }
+
+    &__description {
+      .vw-convert-mobile(margin-top, 16px);
+    }
+
+    &__cta {
+      .vw-convert-mobile(margin-top, 24px);
+    }
+
+    &__box {
+      width: 100%;
+      .vw-convert-mobile(padding, 16px 24px);
+      .vw-convert-mobile(margin-top, 24px);
+      .vw-convert-mobile(border-radius, 12px);
+      .vw-convert-mobile(font-size, 15px);
+
+      strong + p {
+        .vw-convert-mobile(margin-top, 6px);
+      }
+    }
+  }
+
+  .tts-btn {
+    .vw-convert-mobile(width, 20px);
+    .vw-convert-mobile(height, 20px);
+    .vw-convert-mobile(margin-left, 4px);
+  }
+}
+
+// Definition to layout style
+@import 'layout';
+@import 'layoutrtl';

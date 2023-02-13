@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" sizes="16x16" href="../images/favicon_16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../images/favicon_32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="../images/favicon_48.png">
+<title>Text to Speech | Publishing Guide | Samsung Privacy</title>
+<!-- css link -->
+<link rel="stylesheet" href="../css/common.css">
+<link rel="stylesheet" href="../css/style.css">
+<!-- guide css link -->
+<link rel="stylesheet" href="./guide.css">
+</head>
+<body>
+<section class="guide">
+  <header class="guide-header">
+    <h1 class="guide-tit1">삼성전자 글로벌 권리대응 사이트 UX개선</h1>
+    <nav class="guide-nav">
+      <div class="nav-depth1">
+        <a href="../index.html">Guide</a>
+        <a class="on" href="../index-en.html">Guide(EN)</a>
+        <a href="../filelist.html">HTML Filelist</a>
+      </div>
+      <div class="nav-depth2">
+        <a href="../index-en.html">General</a>
+        <a href="./button-cta-en.html">Button(CTA)</a>
+        <a href="./form-en.html">Form</a>
+        <a href="./icons-en.html">Icon</a>
+        <a href="./popup-en.html">Popup</a>
+        <a href="./swiper-en.html">Swiper</a>
+        <a href="./tab-en.html">Tab</a>
+        <a href="./accordion-en.html">Accordion</a>
+        <a class="on" href="./tts-en.html">Text to Speech</a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="guide-content">
+    <h2 class="guide-tit2">Text to Speech</h2>
+    <ul class="guide-info-list">
+      <li>Add a button to read titles and some text in English</li>
+      <li>Activated only when html language is en (lang="en")</li>
+      <li>After clicking button.tts-btn, the disabled attribute is added during the time when text is output as voice</li>
+    </ul>
+
+    <br><br>
+
+    <h3 class="guide-tit3">Type 1: Use data-target-id(target only one id)</h3>
+    <p class="guide-txt">- Read the text of the target ID</p>
+    <br>
+    <p id="tts-type1">Text to Speech Test1</p>
+    <button class="tts-btn" data-target-id="tts-type1"><span class="hidden">Click to start listening</span></button>
+<pre class="code">
+&lt;p <b>id="tts-type1"</b>&gt;Text to Speech Test1&lt;/p&gt;
+&lt;button class="tts-btn" <b>data-target-id="tts-type1"</b>&gt;&lt;span class="hidden"&gt;Click to start listening&lt;/span&gt;&lt;/button&gt;
+</pre>
+
+    <h3 class="guide-tit3">Type 2: Use data-target-id(target multiple id)</h3>
+    <p class="guide-txt">- Read it in order if there are multiple ids</p>
+    <div class="page-top">
+      <h1 class="page-top__title">
+        <strong id="ttsPi41">Title Text</strong>
+        <button class="tts-btn" data-target-id="ttsPi41 ttsPi42"><span class="hidden">Click to start listening</span></button>
+      </h1>
+      <p class="page-top__description" id="ttsPi42">Description Text</p>
+    </div>
+<pre class="code">
+&lt;div class="page-top"&gt;
+  &lt;h1 class="page-top__title"&gt;
+    &lt;strong <b>id="ttsPi41"</b>&gt;Title Text&lt;/strong&gt;
+    &lt;button class="tts-btn" <b>data-target-id="ttsPi41 ttsPi42"</b>&gt;&lt;span class="hidden"&gt;Click to start listening&lt;/span&gt;&lt;/button&gt;
+  &lt;/h1&gt;
+  &lt;p class="page-top__description" <b>id="ttsPi42"</b>&gt;Description Text&lt;/p&gt;
+&lt;/div>
+</pre>
+
+    <h3 class="guide-tit3">Type 3: data-label</h3>
+    <p class="guide-txt">- Read text of data-label</p>
+    <br>
+    <button class="tts-btn" data-label="Text to Speech Test3"><span class="hidden">Click to start listening</span></button>
+<pre class="code">
+&lt;button class="tts-btn" <b>data-label="Text to Speech Test3"</b>&gt;&lt;span class="hidden"&gt;Click to start listening&lt;/span&gt;&lt;/button&gt;
+</pre>
+  </div><!--// .guide-content -->
+</section>
+
+<!-- guide js link -->
+<script src="./guide.js"></script>
+
+<!-- js -->
+<script src="../js/commonJs.min.js"></script>
+</body>
+</html>

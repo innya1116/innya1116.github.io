@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="279" height="223" viewBox="0 0 279 223">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_17594" data-name="사각형 17594" width="279" height="223" transform="translate(1377 2011)" fill="#fff"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="사각형_17589" data-name="사각형 17589" width="40.11" height="38.509" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-3">
+      <rect id="사각형_17590" data-name="사각형 17590" width="124.765" height="84.663" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-4">
+      <rect id="사각형_17593" data-name="사각형 17593" width="29.987" height="60.551" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="마스크_그룹_1264" data-name="마스크 그룹 1264" transform="translate(-1377 -2011)" clip-path="url(#clip-path)">
+    <g id="desk" transform="translate(1379.129 2098.127)">
+      <rect id="사각형_17587" data-name="사각형 17587" width="275.142" height="12.691" rx="4" transform="translate(0 0)" fill="#d0e6ff"/>
+      <path id="패스_21906" data-name="패스 21906" d="M9.514,221.569H0L31.17,44.981h9.514Z" transform="translate(0 -32.29)" fill="#d0e6ff"/>
+      <path id="패스_21907" data-name="패스 21907" d="M124.592,221.569h9.514L102.937,44.981H93.423Z" transform="translate(141.034 -32.29)" fill="#d0e6ff"/>
+      <path id="패스_21908" data-name="패스 21908" d="M6.824,73.83H247.712L245.26,44.982H9.274Z" transform="translate(10.302 -32.289)" fill="#d0e6ff"/>
+    </g>
+    <g id="work" transform="translate(552.041 1674)">
+      <g id="그룹_27573" data-name="그룹 27573" transform="translate(1028.249 388.617)">
+        <g id="그룹_27572" data-name="그룹 27572" transform="translate(0 0)" clip-path="url(#clip-path-2)">
+          <path id="패스_21909" data-name="패스 21909" d="M12.606,4.991c5.558-1.852,9.449,2.223,8.337,7.041-1.041,4.512-6.67,4.816-9.078,3.147" transform="translate(16.388 6.551)" fill="none" stroke="#ddc8f1" stroke-width="3"/>
+          <path id="사각형_17588" data-name="사각형 17588" d="M2,0H23a2,2,0,0,1,2,2V24a6,6,0,0,1-6,6H6a6,6,0,0,1-6-6V2A2,2,0,0,1,2,0Z" transform="translate(5.711 5.383)" fill="#ddc8f1"/>
+        </g>
+      </g>
+      <g id="그룹_27575" data-name="그룹 27575" transform="translate(900.31 339)">
+        <g id="그룹_27574" data-name="그룹 27574" transform="translate(0 0.5)" clip-path="url(#clip-path-3)">
+          <path id="합치기_76" data-name="합치기 76" d="M6.92,84.666a3.676,3.676,0,1,1,0-7.351h3.7L0,4.2A4.2,4.2,0,0,1,4.205,0H120.91c2.321,0,3.855,2.231,3.855,4.553L113.326,77.315h4.519a3.676,3.676,0,0,1,0,7.351Z" transform="translate(0 -0.001)" fill="#ddd" stroke="rgba(0,0,0,0)" stroke-miterlimit="10" stroke-width="1"/>
+        </g>
+      </g>
+      <g id="그룹_27579" data-name="그룹 27579" transform="translate(862.149 365.576)">
+        <g id="그룹_27578" data-name="그룹 27578" transform="translate(0 0)" clip-path="url(#clip-path-4)">
+          <g id="그룹_27576" data-name="그룹 27576" transform="translate(11.485 4.881)">
+            <path id="합치기_77" data-name="합치기 77" d="M2.22,35.456A3.041,3.041,0,0,1,.115,31.7L4.533,15.977h0l.427-1.523L8.4,2.218a3.042,3.042,0,0,1,5.857,1.648l-.09.323a1.18,1.18,0,0,1,.578,1.356l-2.081,7.4a1.177,1.177,0,0,1-1.2.857l-.645,2.3h0l-.427,1.523h0L5.972,33.352a3.043,3.043,0,0,1-3.752,2.1Z" transform="translate(0 0)" fill="#d4acfc" stroke="rgba(0,0,0,0)" stroke-miterlimit="10" stroke-width="1"/>
+          </g>
+          <path id="합치기_78" data-name="합치기 78" d="M0,11.02H0v0H0L1.526,4.37l1-4.37L3.7,4.328l1.786,6.579.835,38.045L.834,49.06Z" transform="translate(7.295 2.741) rotate(-5)" fill="#859fff" stroke="rgba(0,0,0,0)" stroke-miterlimit="10" stroke-width="1"/>
+          <line id="선_130" data-name="선 130" x2="19.347" transform="translate(4.94 30.911)" fill="#fff"/>
+          <path id="사각형_17592" data-name="사각형 17592" d="M2,0H23a2,2,0,0,1,2,2V26a4,4,0,0,1-4,4H4a4,4,0,0,1-4-4V2A2,2,0,0,1,2,0Z" transform="translate(2.811 28.424)" fill="#bac4e9"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
