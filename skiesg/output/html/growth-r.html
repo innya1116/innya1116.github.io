@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1440">
+<title>Road to Net Zero - SK이노베이션 GROWTH | SK이노베이션 ESG Data Platform</title>
+<!-- css link -->
+<link rel="stylesheet" href="../css/common.css">
+<script>
+  window.onload = () => {
+    // 임시 적용(개발적용x)
+    let growthLinks = document.querySelectorAll('.growth-sticky ul > li > a');
+    growthLinks.forEach(function (item, idx) {
+      let textGrowth = ['g','r','o','w','t','h'];
+      growthLinks[idx].href='growth-' + textGrowth[idx] + '.html';
+    })
+  }
+</script>
+</head>
+
+<body>
+<div class="wrap">
+  <header class="header">
+    <div class="header__inner">
+      <strong class="esg-logo">
+        <a href="#">
+          <span class="esg-logo__image">SK이노베이션</span>
+          <span class="esg-logo__txt">ESG Data Platform</span>
+        </a>
+      </strong>
+
+      <nav class="gnb">
+        <ul class="gnb__menu" role="menubar">
+          <!-- (dev) 활성화 메뉴에 is-active 클래스 추가 -->
+          <li class="is-active" role="none"><a class="gnb__link" href="#" role="menuitem">GROWTH</a></li>
+          <li role="none"><a class="gnb__link" href="#" role="menuitem">ESG Data</a></li>
+        </ul>
+      </nav>
+
+      <div class="select-wrap select-language">
+        <select>
+          <option>KOR</option>
+          <option>ENG</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <!-- (dev) .container--growth 클래스 추가 -->
+  <section class="container container--growth">
+    <!-- (js) scrolldown으로 gnb 하단에 div.growth-sticky 영역이 붙으면 growth-sticky--scroll 클래스 추가
+              scrollup으로 gnb 하단에 div.contents-header 영역이 보이는 순간 growth-sticky--scroll 클래스 삭제
+    -->
+    <div class="growth-sticky">
+      <div class="growth-sticky__inner">
+        <ul>
+          <li><a href="#"><span>Green<br>Innovation</span></a></li>
+          <li class="on"><a href="#"><span>Road to<br>Net Zero</span></a></li>
+          <li><a href="#"><span>Outstanding<br>SHE Mgmt</span></a></li>
+          <li><a href="#"><span>Winning<br>the Trust</span></a></li>
+          <li><a href="#"><span>Together<br>with Society</span></a></li>
+          <li><a href="#"><span>Happiness<br>for All</span></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="contents-header contents-header--r">
+      <div class="contents-header__inner">
+        <strong class="contents-header__eyebrow" aria-label="GROWTH">
+          <span>G</span><span>R</span><span>O</span><span>W</span><span>T</span><span>H</span>
+        </strong>
+        <h1 class="contents-header__headline">Road to Net Zero</h1>
+        <p class="contents-header__description">Net Zero 달성</p>
+      </div>
+    </div>
+
+    <div class="contents-body contents-body--r">
+      <div class="growth-contents">
+        <article class="growth-contents__item">
+          <div class="summary-info">
+            <h2 class="summary-info__title">3. Scope 1&amp;2 배출량 감축</h2>
+            <div class="summary-info__contents">
+              <strong>에너지 &middot; 화학 Biz : 2019년 比 △25%, Green Biz : BAU 比 △42%</strong><!-- 220721 텍스트 수정 --><!-- 220722 텍스트 수정 -->
+              <p>SK이노베이션은 기존 사업과 성장 속도가 빠른 신성장 사업을 이원화하여 탄소 감축 목표를 수립하였으며, 2025년까지 에너지 &middot; 화학 등 기존 사업은 2019년 대비 절대량 기준 25% 감축을, 배터리, 소재 등 그린 사업은 BAU 42% 감축을 달성할 계획입니다.</p><!-- 220722 텍스트 수정 -->
+            </div>
+          </div>
+          <div class="item-contents">
+            <div class="item-contents__current item-contents__current--double">
+              <div class="item-contents__current-half">
+                <div class="item-contents__title-wrap">
+                  <h3 class="item-contents__title">에너지 &middot; 화학 Biz Scope1&middot;2 배출량</h3>
+                </div>
+                <div class="item-contents__chart">
+                  <img src="../images/dummy-growth-r-chart1.gif" alt="">
+                </div>
+              </div>
+              <div class="item-contents__current-half">
+                <div class="item-contents__title-wrap">
+                  <h3 class="item-contents__title">Green Biz Scope1&middot;2 배출량</h3>
+                  <span class="item-contents__unit">(단위 : 만톤)</span>
+                </div>
+                <div class="item-contents__chart">
+                  <img src="../images/dummy-growth-r-chart2.gif" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="item-contents__goals">
+              <h3 class="item-contents__title">달성 전략</h3>
+              <div class="item-contents__details">
+                <div class="achievement-strategy achievement-strategy--r1">
+                  <div class="achievement-strategy__title-wrap">
+                    <span class="achievement-strategy__icon">
+                      <img src="../images/icon-growth-3-1.svg" alt="">
+                    </span>
+                    <strong class="achievement-strategy__title">Green Operation 통한 탄소 저감</strong><!-- 220722 텍스트 수정 --><!-- 220803 텍스트 수정 -->
+                  </div>
+                  <ul class="text-dot-list">
+                    <li>설비 개선을 통한 에너지 효율 향상</li>
+                    <li>저탄소 원료 도입, 공정 운영 최적화</li>
+                    <li>탄소 포집, 저장 등의 CCUS 기술 개발</li>
+                  </ul>
+                  <div class="achievement-strategy__title-wrap">
+                    <span class="achievement-strategy__icon">
+                      <img src="../images/icon-growth-3-2.svg" alt="">
+                    </span>
+                    <strong class="achievement-strategy__title">RE100 조기 확대를 통한 탄소 저감</strong><!-- 220722 텍스트 수정 --><!-- 220803 텍스트 수정 -->
+                  </div>
+                  <ul class="text-dot-list">
+                    <li>녹색요금제, REC 투자 등 RE100 추진 지속</li>
+                  </ul>
+                </div>
+                <div class="item-contents__btn">
+                  <button class="btn btn--outlined">더 알아보기</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="growth-contents__item">
+          <div class="summary-info">
+            <h2 class="summary-info__title">4. Scope 3 배출량 감축</h2>
+            <div class="summary-info__contents">
+              <strong>Financial Intensity △ 75% 이상 감축</strong>
+              <p>SK이노베이션은 고정자산 기준 탄소 집약도(Financial Intensity)를 2019년도 대비 2030년에는 75% 감축, 2050년 이전까지는 90%이상 감축 달성을 목표로 지정하여 지속적으로 관리하고자 합니다.</p>
+              <span class="summary-info__disclaimer">* Financial Intensity 정의에 대한 상세 설명은 '더 알아보기'를 참고하시기 바랍니다.</span>
+            </div>
+          </div>
+          <div class="item-contents">
+            <div class="item-contents__current">
+              <div class="item-contents__title-wrap">
+                <h3 class="item-contents__title">Scope 3 배출량 및 Financial Intensity 목표</h3>
+                <span class="item-contents__unit">(단위 : 만톤, %)</span>
+              </div>
+              <div class="item-contents__chart">
+                <img src="../images/dummy-growth-r-chart3.gif" alt="">
+              </div>
+            </div>
+            <div class="item-contents__goals">
+              <h3 class="item-contents__title">달성 전략</h3>
+              <div class="item-contents__details">
+                <div class="achievement-strategy achievement-strategy--r2">
+                  <div class="achievement-strategy__title-wrap">
+                    <span class="achievement-strategy__icon">
+                      <img src="../images/icon-growth-4.svg" alt="">
+                    </span>
+                    <strong class="achievement-strategy__title">Scope 3 배출량 감축 위한 Beyond Net Zero 전략수립</strong>
+                  </div>
+                  <ul class="text-dot-list">
+                    <li>SK이노베이션 계열 전사 통합 및 회사단위 Scope 3 감축 계획 구체화</li>
+                    <li>글로벌 검증 포인트 관점의 감축옵션 검증 및 보완</li>
+                    <li>2050년까지의 Scope 3 Category 11<br>(제품 사용), Category 12(제품 폐기) 부문 <br>배출량 100% 상쇄</li>
+                  </ul>
+                </div>
+                <div class="item-contents__btn">
+                  <button class="btn btn--outlined">더 알아보기</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="growth-contents__item">
+          <div class="summary-info">
+            <h2 class="summary-info__title">5. 저탄소 R&amp;D 투자</h2>
+            <div class="summary-info__contents">
+              <strong>22~25년 저탄소 R&amp;D 직접 투자 금액 누적 1.2조원 집행</strong>
+              <p>SK이노베이션은 2022~2025년 저탄소 R&amp;D 직접 투자 금액 누적 1.2조원을 바탕으로 글로벌 에너지 믹스의 변화 등 시장 동향을 고려하여 기술 기반 신규 친환경 사업 기회를 탐색하고 지속적으로 포트폴리오를 확장해 나갈 것입니다.</p>
+            </div>
+          </div>
+          <div class="item-contents">
+            <div class="item-contents__current">
+              <div class="item-contents__title-wrap">
+                <h3 class="item-contents__title">저탄소 R&amp;D 투자 누적 목표 달성도</h3>
+                <!-- <span class="item-contents__unit">(2022년 1분기 실적 기준)</span> -->
+              </div>
+              <div class="item-contents__chart">
+                <img src="../images/dummy-growth-r-chart4.gif" alt="">
+              </div>
+            </div>
+            <div class="item-contents__goals">
+              <h3 class="item-contents__title">달성 전략</h3>
+              <div class="item-contents__details">
+                <div class="achievement-strategy achievement-strategy--r3">
+                  <strong class="achievement-strategy__title">주요 연구 개발 테마</strong>
+                  <div class="icon-text-list">
+                    <span class="achievement-strategy__icon">
+                      <img src="../images/icon-growth-5-1.svg" alt="">
+                      <em class="achievement-strategy__icon-text">Green <br>Anchoring</em>
+                    </span>
+                    <ul class="text-dot-list">
+                      <li>전고체 전지 등 차세대 배터리 신기술 확보</li>
+                      <li>폐배터리 재활용 솔루션 개발</li>
+                      <li>정보전자소재 사업 경쟁력 강화 및 신규 성장 기반 마련</li>
+                    </ul>
+                  </div>
+                  <div class="icon-text-list">
+                    <span class="achievement-strategy__icon">
+                      <img src="../images/icon-growth-5-2.svg" alt="">
+                      <em class="achievement-strategy__icon-text">Green <br>Transformation</em>
+                    </span>
+                    <ul class="text-dot-list">
+                      <li>폐플라스틱 재활용 기술 개발 및 확보</li>
+                      <li>폐윤활유 재활용 솔루션 개발</li>
+                      <li>프리미엄 아스팔트, 바이오 연료 등 친환경 원료 및 제품개발</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="item-contents__btn">
+                  <button class="btn btn--outlined">더 알아보기</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <img src="../images/dummy-footer.gif" alt="" style="width:100%;height:163px;"><!-- dummy footer -->
+  </footer>
+</div>
+
+<!-- js link -->
+<script src="../js/commonJs.min.js"></script>
+</body>
+</html>

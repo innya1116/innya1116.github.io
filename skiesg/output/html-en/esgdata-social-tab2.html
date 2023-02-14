@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1440">
+<title>Health and Safety / Ethics - Social - ESG Data | SK innovation ESG Data Platform</title>
+<!-- css link -->
+<link rel="stylesheet" href="../css/common.css">
+</head>
+
+<body>
+<div class="wrap">
+  <header class="header">
+    <div class="header__inner">
+      <strong class="esg-logo">
+        <a href="#">
+          <span class="esg-logo__image">SK innovation</span>
+          <span class="esg-logo__txt">ESG Data Platform</span>
+        </a>
+      </strong>
+
+      <nav class="gnb">
+        <ul class="gnb__menu" role="menubar">
+          <!-- (dev) 활성화 메뉴에 is-active 클래스 추가 -->
+          <li role="none"><a class="gnb__link" href="#" role="menuitem">GROWTH</a></li>
+          <li class="is-active" role="none"><a class="gnb__link" href="#" role="menuitem">ESG Data</a></li>
+        </ul>
+      </nav>
+
+      <div class="select-wrap select-language">
+        <select>
+          <option>KOR</option>
+          <option selected>ENG</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <!-- (js) .dashboard-sticky--scroll 클래스 추가 조건: div.dashboard-sticky 영역이 스크롤되어 top 위치값이 마이너스 값이 되면 추가
+            .dashboard-sticky--scroll 클래스 삭제 조건: div.dashboard-sticky 영역이 스크롤되어 top 위치값이 플러스 값이 되면 삭제
+  -->
+  <div class="dashboard-sticky">
+    <div class="dashboard-sticky__inner">
+      <div class="view-options">
+        <div class="view-options-wrap">
+          <div class="view-options__year">
+            <!-- (js) 버튼을 클릭하여 체크박스 리스트가 열리면 checkbox-list--open 클래스 추가 -->
+            <div class="checkbox-list">
+              <!-- (js) 버튼을 클릭하여 체크박스 리스트가 열리면 aria-expanded="true"로 변경
+                        텍스트 출력 기준:
+                        - 디폴트 3개년 전체 선택 활성화 ( 상단 표기 : 2018 ~ 2020 )
+                        - 최대 선택 3개년 / 최소 1개년
+                        - 연결되는 연도 선택 시 물결표시로 구분 ( 상단표기 : 20XX ~ 20XX )
+                            > 예) 2019 ~ 2020 / 2018 ~ 2019
+                        - 1개년도씩 선택 가능 ( 상단 표기 : 20XX )
+                        - 2개년도 이상 (연결 되지 않는 연도) 선택 시 콤마표시로 구분 ( 상단 표기 : 20XX, 20XX )
+                        - 2개년도 이상 (중복타입) 선택 시 물결, 콤마 사용( 상단 표기 : 20XX ~ 20XX, 20XX / 20XX, 20XX ~ 20XX )
+              -->
+              <button class="checkbox-list__btn" aria-haspopup="true" aria-expanded="false"><span>2018 - 2020</span></button>
+              <!-- (js) 리스트가 열리는 경우, aria-hidden="false"로 변경
+                        리스트가 닫히는 경우, aria-hidden="false"로 변경
+              -->
+              <div class="checkbox-list__items" role="group" aria-label="Select Year" aria-hidden="false">
+                <div class="checkbox">
+                  <input type="checkbox" id="dashboard-year-2021" checked>
+                  <label for="dashboard-year-2021"><span>2021</span></label>
+                </div>
+                <div class="checkbox">
+                  <input type="checkbox" id="dashboard-year-2020" checked>
+                  <label for="dashboard-year-2020"><span>2020</span></label>
+                </div>
+                <div class="checkbox">
+                  <input type="checkbox" id="dashboard-year-2019" checked>
+                  <label for="dashboard-year-2019"><span>2019</span></label>
+                </div>
+                <div class="checkbox">
+                  <input type="checkbox" id="dashboard-year-2018">
+                  <label for="dashboard-year-2018"><span>2018</span></label>
+                </div>
+                <div class="checkbox">
+                  <input type="checkbox" id="dashboard-year-2017">
+                  <label for="dashboard-year-2017"><span>2017</span></label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="view-options__family-site select-wrap">
+            <select data-options='{
+              "maxHeight": "226"
+              }'>
+              <option selected>ALL</option>
+              <option>SK innovation</option>
+              <option>SK energy</option>
+              <option>SK geo centric</option>
+              <option>SK on</option>
+              <option>SK lubriccants</option>
+              <option>SK incheon petrochem</option>
+              <option>SK trading international</option>
+              <option>SK ie technology</option>
+              <option>SK earthon</option>
+            </select>
+          </div>
+          <div class="view-options__esg select-wrap">
+            <select data-options='{
+              "maxHeight": "auto",
+              "direction": "down"
+              }'>
+              <option>Environmental</option><!-- 220803 텍스트 수정 -->
+              <option selected>Social</option>
+              <option>Governance</option>
+            </select>
+          </div>
+          <div class="view-options__btn">
+            <button class="btn">Search</button>
+          </div>
+        </div>
+
+        <button class="btn btn--outlined btn--download" title="Download">Data</button>
+      </div>
+
+    </div>
+  </div><!--// dashboard-sticky -->
+
+  <!-- (dev) .container--esg-data 클래스 추가 -->
+  <section class="container container--esg-data">
+
+    <div class="title-tab-sticky">
+      <div class="title-tab-sticky__inner">
+        <div class="title-tab-area">
+          <h1 class="page-title">Social</h1>
+          <div class="esg-tab">
+            <ul>
+              <!-- (dev) 활성화 탭 on 클래스 추가 및 section.contents > h2.hidden 의 텍스트를 선택된 탭명으로 변경 -->
+              <li><a href="#"><span>Employee / Training</span></a></li>
+              <li class="on"><a href="#"><span>Health and Safety / Ethics</span></a></li>
+              <li><a href="#"><span>Social contribution / Partners</span></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="hidden">Health and Safety / Ethics</h2>
+
+    <!-- (dev) Social : esg-summary--soc 클래스 추가 -->
+    <div class="esg-summary esg-summary--soc esg-chart-grid">
+      <div class="esg-summary__inner">
+        <div class="esg-summary__object">
+          <img src="../images/img-esgdata-s-tab2-object.png" alt="">
+        </div>
+        <div class="esg-chart">
+          <div class="esg-chart__title-wrap">
+            <h3 class="esg-chart__title">Lost Time Incidents(LTI) <br>Lost Time Incident Rate(LTIR)</h3>
+            <span class="esg-chart__unit">(Unit : Cases,Incident per 200 thousand hours)</span>
+          </div>
+          <div class="esg-chart__area">
+            <img src="../images/dummy-esgdata-s-tab2-chart-summary1.gif" alt="">
+          </div>
+        </div>
+        <div class="esg-chart">
+          <div class="esg-chart__title-wrap">
+            <h3 class="esg-chart__title">Ethics training hours</h3>
+            <span class="esg-chart__unit">(Unit : Hours)</span>
+          </div>
+          <div class="esg-chart__area">
+            <img src="../images/dummy-esgdata-s-tab2-chart-summary2.gif" alt="">
+          </div>
+        </div>
+        <!-- 220715 안내문구 추가 -->
+        <div class="esg-summary__notice">
+          <ul>
+            <li>* The data provided through the Dashboard is based on the domestic business sites of SK innovation’s subsidiaries.</li>
+            <li>* You can download the complete ESG data by accessing Data↓(Download) above.</li>
+          </ul>
+        </div>
+        <!--// 220715 안내문구 추가 -->
+      </div>
+    </div>
+
+    <div class="detail-info">
+      <div class="esg-chart-grid">
+        <div class="esg-chart">
+          <div class="esg-chart__title-wrap">
+            <h3 class="esg-chart__title">Total Recordable Incident(TRI) <br>Total Recordable Incident Rate(TRIR)</h3>
+            <span class="esg-chart__unit">(Unit : Cases,Incident per 200 thousand hours)</span>
+          </div>
+          <div class="esg-chart__area">
+            <img src="../images/dummy-esgdata-s-chart-388x294.gif" alt="">
+          </div>
+        </div>
+        <div class="esg-chart">
+          <div class="esg-chart__title-wrap">
+            <h3 class="esg-chart__title">Number of fatalities (employees)
+              <!-- 220715 툴팁 추가 -->
+              <span class="tip">
+                <button class="tip__btn">information</button>
+                <span class="tip__text">
+                  The number of injuries leading to mortality <br>and permanent incapacity caused by occupational accidents.
+                </span>
+              </span>
+              <!--// 220715 툴팁 추가 -->
+            </h3>
+            <span class="esg-chart__unit">(Unit : Number of people)</span>
+          </div>
+          <div class="esg-chart__area">
+            <img src="../images/dummy-esgdata-s-chart-388x294.gif" alt="">
+          </div>
+        </div>
+        <div class="esg-chart">
+          <div class="esg-chart__title-wrap">
+            <h3 class="esg-chart__title">Occupational Illness Frequency Rate (OIFR) (employees)
+              <!-- 220715 툴팁 추가 -->
+              <span class="tip">
+                <button class="tip__btn">information</button>
+                <span class="tip__text tip__text--right">
+                  The number of occupational illness patients recognized by the Korea Workers’ Compensation & Welfare Service<!-- 220803 텍스트 수정 -->
+                </span>
+              </span>
+              <!--// 220715 툴팁 추가 -->
+            </h3>
+            <span class="esg-chart__unit">(Unit : Incident per 200 thousand hours)</span>
+          </div>
+          <div class="esg-chart__area">
+            <img src="../images/dummy-esgdata-s-chart-388x294.gif" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="esg-chart-grid">
+        <div class="esg-chart">
+          <div class="esg-chart__title-wrap">
+            <h3 class="esg-chart__title">Industry safety training hours</h3>
+            <span class="esg-chart__unit">(Unit : Hours)</span>
+          </div>
+          <div class="esg-chart__area">
+            <img src="../images/dummy-esgdata-s-chart-388x294.gif" alt="">
+          </div>
+        </div>
+        <div class="esg-chart">
+          <div class="esg-chart__title-wrap">
+            <h3 class="esg-chart__title">Number of participants in <br>ethics training</h3>
+            <span class="esg-chart__unit">(Unit : Number of people)</span>
+          </div>
+          <div class="esg-chart__area">
+            <img src="../images/dummy-esgdata-s-chart-388x294.gif" alt="">
+          </div>
+        </div>
+        <div class="esg-chart">
+          <div class="esg-chart__title-wrap">
+            <h3 class="esg-chart__title">Status of disciplinary action <br>for breach</h3>
+            <span class="esg-chart__unit">(Unit : Cases)</span>
+          </div>
+          <div class="esg-chart__area">
+            <img src="../images/dummy-esgdata-s-chart-388x294.gif" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <img src="../images/dummy-footer.gif" alt="" style="width:100%;height:163px;"><!-- dummy footer -->
+  </footer>
+</div>
+
+<!-- js link -->
+<script src="../js/commonJs.min.js"></script>
+</body>
+</html>

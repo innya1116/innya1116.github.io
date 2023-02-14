@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1440">
+<title>SK innovation GROWTH | SK innovation ESG Data Platform</title>
+<!-- css link -->
+<link rel="stylesheet" href="../css/common.css">
+<script>
+  window.onload = () => {
+    // 임시 적용(개발적용x)
+    let growthLinks = document.querySelectorAll('.esg-major-part__item > a');
+    growthLinks.forEach(function (item, idx) {
+      let textGrowth = ['g','r','o','w','t','h'];
+      growthLinks[idx].href='growth-' + textGrowth[idx] + '.html';
+    })
+  }
+</script>
+</head>
+
+<body>
+<div class="wrap">
+  <!-- 220721 수정: (dev) growth submain 페이지에서 header에 header--transparent 클래스 추가 -->
+  <header class="header header--transparent">
+    <div class="header__inner">
+      <strong class="esg-logo">
+        <a href="#">
+          <span class="esg-logo__image">SK innovation</span>
+          <span class="esg-logo__txt">ESG Data Platform</span>
+        </a>
+      </strong>
+
+      <nav class="gnb">
+        <ul class="gnb__menu" role="menubar">
+          <!-- (dev) 활성화 메뉴에 is-active 클래스 추가 -->
+          <li class="is-active" role="none"><a class="gnb__link" href="#" role="menuitem">GROWTH</a></li>
+          <li role="none"><a class="gnb__link" href="#" role="menuitem">ESG Data</a></li>
+        </ul>
+      </nav>
+
+      <div class="select-wrap select-language">
+        <select>
+          <option>KOR</option>
+          <option selected>ENG</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <section class="container">
+    <h1 class="hidden">GROWTH</h1>
+    <div class="growth-submain">
+      <div class="growth-submain__text">
+        <h2 class="hidden">SK innovation GROWTH Strategy</h2>
+        <strong class="growth-submain__text-main">Innovate the world <br>with sustainable GROWTH</strong>
+        <p class="growth-submain__text-sub">Under the vision of "Innovate the world with sustainable GROWTH", SK innovation <br>has established a comprehensive ESG master-plan to make systematic and continuous progress on ESG <br>and communicate with internal and external stakeholders based on SK innovation’s exclusive ESG story.</p><!-- 220726 텍스트 수정 -->
+      </div>
+
+      <div class="growth-submain__contents">
+        <h2 class="hidden">Our ESG Focus Areas</h2>
+        <div class="esg-major-part">
+          <ul class="esg-major-part__list">
+            <li class="esg-major-part__item">
+              <a class="esg-major-part__link" href="#">
+                <em class="esg-major-part__letter" aria-hidden="true">G</em>
+                <h3 class="esg-major-part__title">Green Innovation</h3>
+                <p class="esg-major-part__description">Expansion of Green Portfolio/BM</p><!-- 220727 -->
+                <ul class="esg-major-part__ambition">
+                  <li>Expanding Green Portfolio</li>
+                  <li>Increasing Green Products and Services</li><!-- 220727 텍스트 수정 -->
+                </ul>
+              </a>
+            </li>
+            <li class="esg-major-part__item">
+              <a class="esg-major-part__link" href="#">
+                <em class="esg-major-part__letter" aria-hidden="true">R</em>
+                <h3 class="esg-major-part__title">Road to Net Zero</h3>
+                <p class="esg-major-part__description">Accomplishment of Net Zero</p>
+                <ul class="esg-major-part__ambition">
+                  <li>Reducing Scope 1&amp;2 Emissions</li><!-- 220727 텍스트 수정 -->
+                  <li>Reducing Scope 3 Emissions</li><!-- 220727 텍스트 수정 -->
+                  <li>Investing in Low Carbon R&amp;D</li><!-- 220727 텍스트 수정 -->
+                </ul>
+              </a>
+            </li>
+            <li class="esg-major-part__item">
+              <a class="esg-major-part__link" href="#">
+                <em class="esg-major-part__letter" aria-hidden="true">O</em>
+                <h3 class="esg-major-part__title">Outstanding SHE Mgmt</h3>
+                <p class="esg-major-part__description">Global Top Tier SHE Mgmt.</p>
+                <ul class="esg-major-part__ambition">
+                  <li>Recycling Wastes from Business Site</li><!-- 220727 텍스트 수정 --><!-- 220727 -->
+                  <li>Pursuing Zero Safety Accidents</li><!-- 220727 텍스트 수정 -->
+                  <li>Enhancing Employee Health Mgmt.</li><!-- 220727 텍스트 수정 --><!-- 220727 -->
+                </ul>
+              </a>
+            </li>
+            <li class="esg-major-part__item">
+              <a class="esg-major-part__link" href="#">
+                <em class="esg-major-part__letter" aria-hidden="true">W</em>
+                <h3 class="esg-major-part__title">Winning the Trust</h3>
+                <p class="esg-major-part__description">Compliance Risk Mgmt.</p>
+                <ul class="esg-major-part__ambition">
+                  <li>Minimizing <br>Anti-corruption Risks</li><!-- 220727 텍스트 수정 --><!-- 220727 -->
+                  <li>Managing Information Security Risks</li><!-- 220727 텍스트 수정 -->
+                </ul>
+              </a>
+            </li>
+            <li class="esg-major-part__item">
+              <a class="esg-major-part__link" href="#">
+                <em class="esg-major-part__letter" aria-hidden="true">T</em>
+                <h3 class="esg-major-part__title">Together with Society</h3>
+                <p class="esg-major-part__description">Growth with Stakeholders</p>
+                <ul class="esg-major-part__ambition">
+                  <li>Monitoring Supplier ESG Assessment</li><!-- 220727 텍스트 수정 -->
+                  <li>Expanding Social Contributions at Global Sites</li><!-- 220727 텍스트 수정 -->
+                  <li>Strengthening Green Start-up Partnerships</li><!-- 220727 텍스트 수정 -->
+                </ul>
+              </a>
+            </li>
+            <li class="esg-major-part__item">
+              <a class="esg-major-part__link" href="#">
+                <em class="esg-major-part__letter" aria-hidden="true">H</em>
+                <h3 class="esg-major-part__title">Happiness for All</h3><!-- 220727 텍스트 수정 -->
+                <p class="esg-major-part__description">Employee Happiness</p>
+                <ul class="esg-major-part__ambition">
+                  <li>Enhancing Employee Happiness</li><!-- 220727 텍스트 수정 -->
+                  <li>Protecting Human Rights</li>
+                  <li>Reinforcing Diversity &amp; Inclusion</li>
+                </ul>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="growth-submain__info">GROWTH strategy consists of 6 priority areas and 16 core tasks.</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <img src="../images/dummy-footer.gif" alt="" style="width:100%;height:163px;vertical-align:top;"><!-- dummy footer -->
+  </footer>
+</div>
+
+<!-- js link -->
+<script src="../js/commonJs.min.js"></script>
+</body>
+</html>

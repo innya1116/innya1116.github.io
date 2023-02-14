@@ -1,0 +1,9 @@
+*.css.map
+*.sass.map
+*.scss.map
+/node_modules
+/.vscode
+# /output/css/*.css
+# /output/guide/guide.css
+# /output/js/*.js
+/docs

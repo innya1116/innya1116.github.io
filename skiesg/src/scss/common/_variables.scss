@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+// Break Point
+$breakpoint--desktop: 1920px;
+$breakpoint--tablet: 1024px;
+$breakpoint--mobile: 768px;
+
+//color
+$color--black: #000;
+$color--white: #fff;
+
+//font
+$font--default: 'suit';
+
+//url
+$img--url:"../images/";
+
+//placeholder
+%pseudo {
+  content: '';
+  position: absolute;
+  display: inline-block;
+}
+%clearfix {
+  content: '';
+  display: block;
+  clear: both;
+}
+%hidden {
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px !important;
+  clip: rect(0 0 0 0);
+}
+%text-hidden {
+  overflow: hidden;
+  text-indent: -9999px;
+}
+
+

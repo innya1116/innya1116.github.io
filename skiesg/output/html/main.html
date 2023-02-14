@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1440">
+<title>SK이노베이션 ESG Data Platform</title>
+<!-- css link -->
+<link rel="stylesheet" href="../css/common.css">
+</head>
+
+<body>
+<div class="wrap">
+  <!-- (dev) 메인페이지에, header--main 클래스 추가 -->
+  <header class="header header--main">
+    <div class="header__inner">
+      <strong class="esg-logo">
+        <a href="#">
+          <span class="esg-logo__image">SK이노베이션</span>
+          <span class="esg-logo__txt">ESG Data Platform</span>
+        </a>
+      </strong>
+      <div class="select-wrap select-language">
+        <select>
+          <option>KOR</option>
+          <option>ENG</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <section class="main">
+    <h1 class="hidden">SK이노베이션 ESG Data Platform</h1>
+
+    <!-- (js) class 추가
+      default, 추가 클래스 없음
+      growth에 hover 되는 경우, is-left-expand 클래스 추가
+      esgdata에 hover 되는 경우, is-right-expand 클래스 추가
+    -->
+    <div class="main-gate">
+      <!-- (js) class 추가
+        default, 추가 클래스 없음
+        hover 되는 항목, is-expand 클래스 추가
+        hover 된 항목 제외 다른 항목, is-shrink 클래스 추가
+      -->
+      <a class="main-gate__item main-gate__item--growth" href="#">
+        <div class="main-gate__item-text">
+          <h2 class="main-gate__item-title">GROWTH</h2>
+          <p class="main-gate__item-description">SK이노베이션의 ESG 경영체계</p>
+        </div>
+      </a>
+      <a class="main-gate__item main-gate__item--esgdata" href="#">
+        <div class="main-gate__item-text">
+          <h2 class="main-gate__item-title">ESG Data</h2>
+          <p class="main-gate__item-description">SK이노베이션 계열 ESG 현황</p>
+        </div>
+      </a>
+    </div>
+  </section>
+</div>
+
+<!-- js link -->
+<script src="../js/commonJs.min.js"></script>
+</body>
+</html>

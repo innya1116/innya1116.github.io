@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1440">
+<title>SK innovation ESG Data Platform</title>
+<!-- css link -->
+<link rel="stylesheet" href="./css/common.css">
+<!-- guide css link -->
+<link rel="stylesheet" href="./guide/guide.css">
+</head>
+
+<body>
+<section class="guide">
+  <header class="guide-header">
+    <h1 class="guide-tit1">SK innovation ESG Data Platform</h1>
+    <nav class="guide-nav">
+      <div class="nav-depth1">
+        <a class="on" href="./">General</a>
+        <a href="./style-guide.html">Style Guide</a>
+        <a href="./filelist.html">HTML Filelist</a>
+      </div>
+    </nav>
+  </header>
+  <div class="guide-content">
+    <h2 class="guide-tit2">프로젝트 목적</h2>
+    <ul class="guide-info-list">
+      <li>SK innovation ESG Data Platform 구축</li>
+      <li>PC 사이트 제작(1440px 해상도 이상을 기준으로 작업)</li>
+      <li>국문, 영문 사이트 제작</li>
+    </ul>
+
+    <h2 class="guide-tit2">프로젝트 환경</h2>
+    <ul class="guide-info-list">
+      <li><strong>문서 및 버전</strong> : <span>HTML5, CSS3</span></li>
+      <li><strong>인코딩</strong> : <span>utf-8</span></li>
+      <li><strong>브라우저 호환성</strong> : <span>Edge, Chrome, Firefox, Safari 최신 버전 (모바일 버전 없음)</span></li>
+    </ul>
+
+    <h2 class="guide-tit2">HTML 작업 규칙</h2>
+    <ul class="guide-info-list">
+      <li>모든 html 코드는 소문자로 작성한다.</li>
+      <li>들여쓰기는 공백 2칸으로 사용한다.</li>
+      <li>가독성을 고려하여 빈 줄을 추가할 수 있다. 단 연속적으로 1줄을 초과하지 않는다.</li>
+      <li>attribute="value" 작성 시, 반드시 큰따옴표("")를 사용한다.<br>(예외로 사용자 정의 속성(data-)에 중복 옵션 설정을 위해 중괄호({})를 사용할 경우, 작은 따옴표('')를 사용할 수 있다.)</li>
+      <li>자동닫기 요소의 마지막 /는 생략(예. img, input, br 등)</li>
+      <li>차트의 경우 솔루션 차트를 개발에서 적용함(퍼블리싱에서는 차트가 들어갈 영역을 임시이미지로 표기 후 가이드 전달)</li>
+    </ul>
+
+    <h2 class="guide-tit2">CSS 작업 규칙</h2>
+    <h3 class="guide-tit3">Class</h3>
+    <ul class="guide-info-list">
+      <li>BEM 방법론을 따른다 (<a class="guide-link" href="http://getbem.com/naming/" target="_blank">http://getbem.com/naming/</a>)</li>
+      <li>기본정의 : block요소name--Modifier(변형자 or 상태)__Element(자식요소. key와 value는 하이픈(-)사용)</li>
+      <li>--modifier를 사용할 경우 원형이 있는 상태에서 --modifier 형태의 클래스를 추가로 붙여준다.
+<pre class="code">
+&lt;a class="<b>btn btn--outlined</b>" href="#"&gt;버튼입니다.&lt;/a&gt;
+</pre>
+      </li>
+      <li>.부모명__자식, .부모명__자식--확장, .부모명__자식명구분-자식명구분<br>
+<pre class="code">
+&lt;div class="<b>summary-info</b>"&gt;
+  &lt;h2 class="<b>summary-info__title</b>"&gt; ... &lt;/h2&gt;
+  &lt;div class="<b>summary-info__contents summary-info__contents--wide</b>"&gt;
+    ...
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+      </li>
+    </ul>
+
+    <h3 class="guide-tit3">속성 선언 순서</h3>
+    <ol class="guide-info-list">
+      <li>display</li>
+      <li>float</li>
+      <li>position, top, left, right, bottom</li>
+      <li>width, height</li>
+      <li>margin, padding</li>
+      <li>border</li>
+      <li>background</li>
+      <li>color, font, letter-spacing, white-space</li>
+      <li>text-align, vertical-align, text-decoration, text-indent</li>
+      <li>z-index</li>
+      <li>기타(위에 언급하지 않은 나머지 속성들)</li>
+    </ol>
+
+    <h3 class="guide-tit3">영문 CSS</h3>
+    <ul class="guide-info-list">
+      <li>영문은 국문 CSS를 베이스로 적용한다.</li>
+      <li>별도의 스타일 적용이 필요할 경우 html[land='en']을 앞에 붙여 영문페이지에서만 적용되도록 작성한다.</li>
+    </ul>
+
+    <h2 class="guide-tit2">주석 표기</h2>
+    <h3 class="guide-tit3">영역주석</h3>
+    <pre class="code">
+<i>&lt;!-- 영역명 --&gt;</i>
+&lt;div&gt;
+  &lt;p&gt;시작과 끝이 있고, 마크업의 영역을 표시한다.&lt;/p&gt;
+&lt;/div&gt;
+<i>&lt;!--// 영역명 --&gt;</i>
+
+&lt;div class="area"&gt;
+  &lt;p&gt;class의 범위를 표기하는 주석, 영역이 끝나는 마지막 닫기 태그 옆에 표시한다.&lt;/p&gt;
+&lt;/div&gt;<i>&lt;!--// .area --&gt;</i>
+</pre>
+
+    <h3 class="guide-tit3">설명주석</h3>
+    <pre class="code">
+<i>&lt;!-- 설명내용 --&gt;</i>
+&lt;p&gt;시작과 끝이 없고, 설명할 내용을 주석으로 표기한다.&lt;/p&gt;
+</pre>
+
+    <h3 class="guide-tit3">조건주석</h3>
+    <pre class="code">
+<i>&lt;!-- Case 로그인 --&gt;</i>
+&lt;div&gt;
+  Case 로그인 마크업
+&lt;/div&gt;
+<i>&lt;!--// Case 로그인 --&gt;</i>
+
+<i>&lt;!-- Case 로그아웃 --&gt;</i>
+&lt;div&gt;
+  Case 로그아웃 마크업
+&lt;/div&gt;
+<i>&lt;!--// Case 로그아웃 --&gt;</i>
+</pre>
+
+    <h3 class="guide-tit3">기록주석</h3>
+    <pre class="code">
+&lt;div&gt;
+  인라인 주석인 경우 <i>&lt;!-- 220501 이름 설명 수정/추가/삭제 --&gt;</i>
+&lt;/div&gt;
+
+<i>&lt;!-- 220501 이름 설명 수정/추가/삭제 --&gt;</i>
+&lt;div&gt;
+  범위가 단순한 경우 닫기 생략
+&lt;/div&gt;
+
+<i>&lt;!-- 220501 이름 설명 수정/추가/삭제 --&gt;</i>
+&lt;div&gt;
+  범위가 넓은 경우 닫기 표기
+&lt;/div&gt;
+&lt;div&gt;
+  범위가 넓은 경우 닫기 표기
+&lt;/div&gt;
+<i>&lt;!--// 220501 이름 설명 수정/추가/삭제 --&gt;</i>
+</pre>
+
+    <h2 class="guide-tit2">파일 및 폴더 규칙</h2>
+    <table class="guide-table">
+      <thead>
+        <tr>
+          <th scope="col">분류</th>
+          <th scope="col">폴더</th>
+          <th scope="col">파일 이름</th>
+          <th scope="col">파일 설명</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row" rowspan="2">Guide files</th>
+          <td></td>
+          <td>index.html<br>filelist.html<br>style-guide.html</td>
+          <td>가이드 작업 파일<br>html 파일리스트<br>퍼블리싱 스타일 가이드</td>
+        </tr>
+        <tr>
+          <td>guide/</td>
+          <td>guide.css<br>guide.js</td>
+          <td>가이드 리소스 파일</td>
+        </tr>
+        <tr>
+          <th scope="row" rowspan="2">HTML files</th>
+          <td>html/</td>
+          <td>*.html</td>
+          <td>국문 작업 html 파일</td>
+        </tr>
+        <tr>
+          <td>html-en/</td>
+          <td>*.html</td>
+          <td>영문 작업 html 파일</td>
+        </tr>
+        <tr>
+          <th scope="row" rowspan="4">Resource</th>
+          <td>css/</td>
+          <td>common.css</td>
+          <td>css file(국/영문 통합)</td>
+        </tr>
+        <tr>
+          <td>css/font/</td>
+          <td>SUIT-*.woff<br>
+            SUIT-*.woff2
+          </td>
+          <td>suit 웹 폰트 파일</td>
+        </tr>
+        <tr>
+          <td>js/</td>
+          <td>commonJs.min.js</td>
+          <td>js file</td>
+        </tr>
+        <tr>
+          <td>images/</td>
+          <td>*.jpg<br>
+            *.png<br>
+            *.svg<br>
+            *.gif
+          </td>
+          <td>site 작업 이미지</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+</body>
+</html>

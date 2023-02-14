@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1440">
+<title>Together with Society - SK innovation GROWTH | SK innovation ESG Data Platform</title>
+<!-- css link -->
+<link rel="stylesheet" href="../css/common.css">
+<script>
+  window.onload = () => {
+    // 임시 적용(개발적용x)
+    let growthLinks = document.querySelectorAll('.growth-sticky ul > li > a');
+    growthLinks.forEach(function (item, idx) {
+      let textGrowth = ['g','r','o','w','t','h'];
+      growthLinks[idx].href='growth-' + textGrowth[idx] + '.html';
+    })
+  }
+</script>
+</head>
+
+<body>
+<div class="wrap">
+  <header class="header">
+    <div class="header__inner">
+      <strong class="esg-logo">
+        <a href="#">
+          <span class="esg-logo__image">SK innovation</span>
+          <span class="esg-logo__txt">ESG Data Platform</span>
+        </a>
+      </strong>
+
+      <nav class="gnb">
+        <ul class="gnb__menu" role="menubar">
+          <!-- (dev) 활성화 메뉴에 is-active 클래스 추가 -->
+          <li class="is-active" role="none"><a class="gnb__link" href="#" role="menuitem">GROWTH</a></li>
+          <li role="none"><a class="gnb__link" href="#" role="menuitem">ESG Data</a></li>
+        </ul>
+      </nav>
+
+      <div class="select-wrap select-language">
+        <select>
+          <option>KOR</option>
+          <option selected>ENG</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <!-- (dev) .container--growth 클래스 추가 -->
+  <section class="container container--growth">
+    <!-- (js) scrolldown으로 gnb 하단에 div.growth-sticky 영역이 붙으면 growth-sticky--scroll 클래스 추가
+              scrollup으로 gnb 하단에 div.contents-header 영역이 보이는 순간 growth-sticky--scroll 클래스 삭제
+    -->
+    <div class="growth-sticky">
+      <div class="growth-sticky__inner">
+        <ul>
+          <li><a href="#"><span>Green<br>Innovation</span></a></li>
+          <li><a href="#"><span>Road to<br>Net Zero</span></a></li>
+          <li><a href="#"><span>Outstanding<br>SHE Mgmt</span></a></li>
+          <li><a href="#"><span>Winning<br>the Trust</span></a></li>
+          <li class="on"><a href="#"><span>Together<br>with Society</span></a></li>
+          <li><a href="#"><span>Happiness<br>for All</span></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="contents-header contents-header--t">
+      <div class="contents-header__inner">
+        <strong class="contents-header__eyebrow" aria-label="GROWTH">
+          <span>G</span><span>R</span><span>O</span><span>W</span><span>T</span><span>H</span>
+        </strong>
+        <h1 class="contents-header__headline">Together with Society</h1>
+        <p class="contents-header__description">Growth with Stakeholders</p>
+      </div>
+    </div>
+
+    <div class="contents-body contents-body--t">
+      <div class="growth-contents">
+        <article class="growth-contents__item">
+          <div class="summary-info">
+            <h2 class="summary-info__title"><span>11.</span> Monitoring Supplier ESG Assessment</h2><!-- 220726 텍스트 수정 -->
+            <div class="summary-info__contents">
+              <strong>100% key supplier ESG due diligence rate, High score rate in ESG risk assessment of key suppliers : ▲25%</strong><!-- 220803 텍스트 수정 -->
+              <p>SK innovation sets the main goal of 'supplier ESG risk management' as developing 'sustainable supply chain and stable procurement'. To achieve this goal, we will identify and support high-risk suppliers and continuously work with them to foster a sustainable supply chain.</p><!-- 220726 텍스트 수정 -->
+            </div>
+          </div>
+          <div class="item-contents">
+            <div class="item-contents__current">
+              <div class="item-contents__title-wrap">
+                <h3 class="item-contents__title">Key supplier ESG due diligence rate / High score rate</h3><!-- 220726 텍스트 수정 --><!-- 220727 -->
+              </div>
+              <div class="item-contents__chart">
+                <img src="../images/dummy-growth-t-chart1.gif" alt="">
+              </div>
+              <p class="item-contents__disclaimer">* (Reference) Criteria on high-scoring partners: Leader group on ESG regular evaluation criteria (Grades 1 and 2 in ESG evaluation)</p>
+            </div>
+            <div class="item-contents__goals">
+              <h3 class="item-contents__title">Strategy</h3>
+              <div class="item-contents__details">
+                <div class="achievement-strategy achievement-strategy--t1">
+                  <div class="achievement-strategy__title-wrap">
+                    <span class="achievement-strategy__icon">
+                      <img src="../images/icon-growth-11.svg" alt="">
+                    </span>
+                    <strong class="achievement-strategy__title">Advancing a sustainable supply chain  by implementing a customized ESG consulting program based on the regular evaluation of suppliers</strong>
+                  </div>
+                  <ul class="text-dot-list">
+                    <li>Providing in-person/online training customized for the respective ESG evaluation scores</li><!-- 220803 텍스트 수정 -->
+                    <li>Endorsing mid-and long-term ESG performance improvements through consulting services</li><!-- 220726 텍스트 수정 -->
+                  </ul>
+                </div>
+                <div class="item-contents__btn">
+                  <button class="btn btn--outlined">Learn more</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="growth-contents__item">
+          <div class="summary-info">
+            <h2 class="summary-info__title"><span>12.</span> Expanding Social Contributions at Global Sites</h2><!-- 220726 텍스트 수정 -->
+            <div class="summary-info__contents">
+              <strong>CSR Programs by global site <br>: 2 Corporate-wide + 1 Region-specific</strong><!-- 220727 -->
+              <p>SK innovation is committed to establishing a win-win partnership and expanding our CSR programs to the global sites and local communities. We will customize our social contribution programs and embark on collaborative models with each local community.</p><!-- 220726 텍스트 수정 --><!-- 220727 --><!-- 220803 텍스트 수정-->
+            </div>
+          </div>
+          <div class="item-contents item-contents--map">
+            <div class="item-contents__current">
+              <div class="item-contents__title-wrap">
+                <h3 class="item-contents__title">CSR Program status by global site</h3><!-- 220726 텍스트 수정 --><!-- 220727 -->
+              </div>
+              <div class="item-contents__map">
+                <img src="../images/img-growth-12-map-en.jpg" alt="USA, Peru, Poland, Hungary, China, South Korea, Myanmar, Vietnam, India, Singapore">
+              </div>
+            </div>
+            <div class="item-contents__goals">
+              <h3 class="item-contents__title">Strategy</h3>
+              <div class="item-contents__details">
+                <div class="achievement-strategy achievement-strategy--t2">
+                  <div class="achievement-strategy__title-wrap">
+                    <span class="achievement-strategy__icon">
+                      <img src="../images/icon-growth-12.svg" alt="">
+                    </span>
+                    <strong class="achievement-strategy__title">Expanding social contribution by carrying out our CSR programs to global business sites</strong>
+                  </div>
+                  <ul class="text-dot-list">
+                    <li>Scaling up current corporate-wide programs  into global initiatives (Care programs for children with developmental disability, plogging, etc.)</li>
+                    <li>Developing and implementing region-specific programs for the respective global operation sites based on the identification and analysis of social issues, such as recruiting and empowering the marginalized etc.</li>
+                  </ul>
+                </div>
+                <div class="item-contents__btn">
+                  <button class="btn btn--outlined">Learn more</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="growth-contents__item">
+          <div class="summary-info">
+            <h2 class="summary-info__title"><span>13.</span> Strengthening Green Start-up Partnerships</h2><!-- 220726 텍스트 수정 -->
+            <div class="summary-info__contents">
+              <strong>Cumulative number of green start-up partnerships<br>: 100 by 2025</strong><!-- 220726 텍스트 수정 --><!-- 220727 -->
+              <p>Companies play a pivotal role in alleviating pressing issues such as climate change and plastic waste. Transition to a low carbon society can be accelerated when start-ups with innovative solutions expand their businesses. SK innovation has set the goal of fostering 100 cumulative green start-up partnerships by 2025. From 2021 onwards, SK innovation aims to foster 15 to 20 start-ups every year.</p><!-- 220726 텍스트 수정 -->
+            </div>
+          </div>
+          <div class="item-contents">
+            <div class="item-contents__current">
+              <div class="item-contents__title-wrap">
+                <h3 class="item-contents__title">Cumulative number of green start-up partnerships</h3><!-- 220726 텍스트 수정 -->
+                <span class="item-contents__unit">(Unit: Cumulative Number of Start-ups)</span>
+              </div>
+              <div class="item-contents__map">
+                <img src="../images/dummy-growth-t-chart2.gif" alt="">
+              </div>
+            </div>
+            <div class="item-contents__goals">
+              <h3 class="item-contents__title">Strategy</h3>
+              <div class="item-contents__details">
+                <div class="achievement-strategy achievement-strategy--t3">
+                  <div class="achievement-strategy__title-wrap">
+                    <span class="achievement-strategy__icon">
+                      <img src="../images/icon-growth-13.svg" alt="">
+                    </span>
+                    <strong class="achievement-strategy__title">Developing collaborative business models between SK innovation subsidiaries and green start-ups and constantly contributing to the green startup ecosystem</strong><!-- 220727 -->
+                  </div>
+                  <!-- 220726 텍스트 수정 -->
+                  <ul class="text-dot-list">
+                    <li>Establishment of at least 15 to 20  collaborative projects annually to launch new business models</li>
+                    <li>Regular monitoring of partnership performances and management of networks with start-ups</li>
+                  </ul>
+                  <!--// 220726 텍스트 수정 -->
+                </div>
+                <div class="item-contents__btn">
+                  <button class="btn btn--outlined">Learn more</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <img src="../images/dummy-footer.gif" alt="" style="width:100%;height:163px;"><!-- dummy footer -->
+  </footer>
+</div>
+
+<!-- js link -->
+<script src="../js/commonJs.min.js"></script>
+</body>
+</html>

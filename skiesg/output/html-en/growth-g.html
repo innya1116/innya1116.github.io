@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1440">
+<title>Green Innovation - SK innovation GROWTH | SK innovation ESG Data Platform</title>
+<!-- css link -->
+<link rel="stylesheet" href="../css/common.css">
+<script>
+  window.onload = () => {
+    // 임시 적용(개발적용x)
+    let growthLinks = document.querySelectorAll('.growth-sticky ul > li > a');
+    growthLinks.forEach(function (item, idx) {
+      let textGrowth = ['g','r','o','w','t','h'];
+      growthLinks[idx].href='growth-' + textGrowth[idx] + '.html';
+    })
+  }
+</script>
+</head>
+
+<body>
+<div class="wrap">
+  <header class="header">
+    <div class="header__inner">
+      <strong class="esg-logo">
+        <a href="#">
+          <span class="esg-logo__image">SK innovation</span>
+          <span class="esg-logo__txt">ESG Data Platform</span>
+        </a>
+      </strong>
+
+      <nav class="gnb">
+        <ul class="gnb__menu" role="menubar">
+          <!-- (dev) 활성화 메뉴에 is-active 클래스 추가 -->
+          <li class="is-active" role="none"><a class="gnb__link" href="#" role="menuitem">GROWTH</a></li>
+          <li role="none"><a class="gnb__link" href="#" role="menuitem">ESG Data</a></li>
+        </ul>
+      </nav>
+
+      <div class="select-wrap select-language">
+        <select>
+          <option>KOR</option>
+          <option selected>ENG</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <!-- (dev) .container--growth 클래스 추가 -->
+  <section class="container container--growth">
+    <!-- (js) scrolldown으로 gnb 하단에 div.growth-sticky 영역이 붙으면 growth-sticky--scroll 클래스 추가
+              scrollup으로 gnb 하단에 div.contents-header 영역이 보이는 순간 growth-sticky--scroll 클래스 삭제
+    -->
+    <div class="growth-sticky">
+      <div class="growth-sticky__inner">
+        <ul>
+          <li class="on"><a href="#"><span>Green<br>Innovation</span></a></li>
+          <li><a href="#"><span>Road to<br>Net Zero</span></a></li>
+          <li><a href="#"><span>Outstanding<br>SHE Mgmt</span></a></li>
+          <li><a href="#"><span>Winning<br>the Trust</span></a></li>
+          <li><a href="#"><span>Together<br>with Society</span></a></li>
+          <li><a href="#"><span>Happiness<br>for All</span></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="contents-header contents-header--g">
+      <div class="contents-header__inner">
+        <strong class="contents-header__eyebrow" aria-label="GROWTH">
+          <span>G</span><span>R</span><span>O</span><span>W</span><span>T</span><span>H</span>
+        </strong>
+        <h1 class="contents-header__headline">Green Innovation</h1>
+        <p class="contents-header__description">Expansion of Green Portfolio/BM</p>
+      </div>
+    </div>
+
+    <div class="contents-body contents-body--g">
+      <div class="growth-contents">
+        <article class="growth-contents__item">
+          <div class="summary-info">
+            <h2 class="summary-info__title"><span>1.</span> Expanding Green Portfolio</h2>
+            <div class="summary-info__contents">
+              <strong>Business portfolio innovation: Double the ratio of green assets against the Hydrocarbon assets</strong><!-- 220726 텍스트 수정 -->
+              <p>SK innovation intends to maximize corporate value by increasing the ratio of the green portfolio compared to traditional hydrocarbon values through strengthening battery-oriented green portfolio (Green Anchoring) and the transformation (Green Transformation) of the existing hydrocarbon business to green business model until 2025.</p><!-- 220726 텍스트 수정 -->
+            </div>
+          </div>
+          <div class="item-contents">
+            <div class="item-contents__current">
+              <div class="item-contents__title-wrap">
+                <h3 class="item-contents__title">Carbon to Green ratio</h3><!-- 220726 텍스트 수정 -->
+                <span class="item-contents__unit">(Units: KRW 1 Trillion)</span>
+              </div>
+              <div class="item-contents__chart">
+                <img src="../images/dummy-growth-g-chart1.gif" alt="">
+              </div>
+            </div>
+            <div class="item-contents__goals">
+              <h3 class="item-contents__title">Strategy</h3>
+              <div class="item-contents__details">
+                <h4 class="item-contents__sub-title">"Green Energy &amp; Materials Co."</h4><!-- 220726 텍스트 수정 -->
+                <div class="achievement-strategy achievement-strategy--g1">
+                  <div class="graybox">
+                    <span class="achievement-strategy__icon">
+                      <img src="../images/icon-growth-1-1.svg" alt="">
+                    </span>
+                    <strong class="achievement-strategy__title">Green <br>Anchoring</strong>
+                    <p class="achievement-strategy__description">Investment in batteries and LiBS wordwide, making profits in  BMR business</p>
+                  </div>
+                  <span class="plus">+</span>
+                  <div class="graybox">
+                    <span class="achievement-strategy__icon">
+                      <img src="../images/icon-growth-1-2.svg" alt="">
+                    </span>
+                    <strong class="achievement-strategy__title">Green <br>Transformation</strong>
+                    <p class="achievement-strategy__description">Accelerating the transformation to green business model based on the expansion of recycling plastic and fuel cells business</p>
+                  </div>
+                </div>
+                <div class="item-contents__btn">
+                  <button class="btn btn--outlined">Learn more</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="growth-contents__item">
+          <div class="summary-info">
+            <h2 class="summary-info__title"><span>2.</span> Increasing Green Products and Services</h2><!-- 220726 텍스트 수정 -->
+            <div class="summary-info__contents">
+              <strong>Social Value(SV) target of green products and services <br>: ▲600 billion won</strong><!-- 220726 텍스트 수정 --><!-- 220727 -->
+              <p>Through this core task, SK innovation intends to expand green products and services qualitatively and quantitatively, launching innovative green solutions that meet the needs of the Financial Society and stakeholders.</p>
+            </div>
+          </div>
+          <div class="item-contents">
+            <div class="item-contents__current">
+              <div class="item-contents__title-wrap">
+                <h3 class="item-contents__title">SV performance from green products and services</h3><!-- 220726 텍스트 수정 -->
+                <span class="item-contents__unit">(Units: KRW 100 million)</span>
+              </div>
+              <div class="item-contents__chart">
+                <img src="../images/dummy-growth-g-chart2.gif" alt="">
+              </div>
+            </div>
+            <div class="item-contents__goals">
+              <h3 class="item-contents__title">Strategy</h3>
+              <div class="item-contents__details">
+                <h4 class="item-contents__sub-title">Major green products and services of <br>SK innovation subsidiaries</h4><!-- 220726 텍스트 수정 --><!-- 220727 -->
+                <p class="item-contents__sub-description">SK innovation aims to increase SV of green products and services by more than 20% every year.</p><!-- 220726 텍스트 수정 -->
+                <div class="achievement-strategy achievement-strategy--g2">
+                  <div class="graybox">
+                    <strong class="achievement-strategy__title">Expand the performance of <br>green products and services</strong><!-- 220726 텍스트 수정 -->
+                    <ul>
+                      <li>
+                        <span class="achievement-strategy__icon">
+                          <img src="../images/icon-growth-2-3.svg" alt="">
+                        </span>
+                        <p class="achievement-strategy__description">Green lube base oil</p><!-- 220726 텍스트 수정 -->
+                      </li>
+                      <li>
+                        <span class="achievement-strategy__icon">
+                          <img src="../images/icon-growth-2-4.svg" alt="">
+                        </span>
+                        <p class="achievement-strategy__description">Green high-functional packaging material</p><!-- 220726 텍스트 수정 -->
+                      </li>
+                      <li>
+                        <span class="achievement-strategy__icon">
+                          <img src="../images/icon-growth-2-1.svg" alt="">
+                        </span>
+                        <p class="achievement-strategy__description">Solar power business</p><!-- 220726 텍스트 수정 --><!-- 220803 텍스트 수정 -->
+                      </li>
+                      <li>
+                        <span class="achievement-strategy__icon">
+                          <img src="../images/icon-growth-2-2.svg" alt="">
+                        </span>
+                        <p class="achievement-strategy__description">District heating supply of waste heat from the production process</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="item-contents__btn">
+                  <button class="btn btn--outlined">Learn more</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <img src="../images/dummy-footer.gif" alt="" style="width:100%;height:163px;"><!-- dummy footer -->
+  </footer>
+</div>
+
+<!-- js link -->
+<script src="../js/commonJs.min.js"></script>
+</body>
+</html>

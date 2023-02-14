@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1440">
+<title>SK innovation ESG Data Platform</title>
+<!-- css link -->
+<link rel="stylesheet" href="../css/common.css">
+</head>
+
+<body>
+<div class="wrap">
+  <header class="header">
+    <div class="header__inner">
+      <strong class="esg-logo">
+        <a href="#">
+          <span class="esg-logo__image">SK innovation</span>
+          <span class="esg-logo__txt">ESG Data Platform</span>
+        </a>
+      </strong>
+
+      <nav class="gnb">
+        <ul class="gnb__menu" role="menubar">
+          <!-- (dev) 활성화 메뉴에 is-active 클래스 추가 -->
+          <li class="is-active" role="none"><a class="gnb__link" href="#" role="menuitem">GROWTH</a></li>
+          <li role="none"><a class="gnb__link" href="#" role="menuitem">ESG Data</a></li>
+        </ul>
+      </nav>
+
+      <div class="select-wrap select-language">
+        <select>
+          <option>KOR</option>
+          <option selected>ENG</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <section class="container container--error">
+    <h1 class="hidden">SK innovation ESG Platform</h1>
+
+    <div class="info-box">
+      <strong class="info-box__title">The page cannot be displayed properly due to temporary error.</strong>
+      <p class="info-box__description">Please click the button below to return to Main Page.</p>
+      <a href="#" class="info-box__btn">BACK TO HOME</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <!-- (js) footer가 화면에 보이면 btn-top--fixed 클래스 삭제 -->
+    <button class="btn-top btn-top--fixed">
+      <span class="hidden">Move to the top of the page</span>
+    </button>
+    <!-- 220704 footer 링크 영역 삭제 -->
+    <address class="footer__info company-info">
+      <p class="company-info__address">SK innovation Co., Ltd,  26, Jongno, Jongno-gu, Seoul, Korea</p>
+      <p class="company-info__etc">
+        <span>TEL +82-2-2121-5114</span>
+        <span>FAX +82-2-2121-7001</span>
+      </p>
+    </address>
+    <p class="copyright">ⓒ 2022 SK innovation Co., Ltd</p>
+    <div class="select-wrap family-site">
+      <!-- 220802 data-options 영역에 msg 항목 추가 및 option의 패밀리 사이트 삭제 -->
+      <select data-options='{
+        "direction": "up",
+        "msg": "Family Site"
+        }'>
+        <option>SK innovation</option>
+        <option>SK energy</option>
+        <option>SK geo centric</option>
+        <option>SK on</option>
+        <option>SK lubriccants</option>
+        <option>SK incheon petrochem</option>
+        <option>SK trading international</option>
+        <option>SK ie technology</option>
+        <option>SK earthon</option>
+      </select>
+    </div>
+  </footer>
+</div>
+
+<!-- js link -->
+<script src="../js/commonJs.min.js"></script>
+</body>
+</html>

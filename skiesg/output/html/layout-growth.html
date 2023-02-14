@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1440">
+<title>Green Innovation - SK이노베이션 GROWTH | SK이노베이션 ESG Data Platform</title>
+<!-- css link -->
+<link rel="stylesheet" href="../css/common.css">
+</head>
+
+<body>
+<div class="wrap">
+  <header class="header">
+    <div class="header__inner">
+      <strong class="esg-logo">
+        <a href="#">
+          <span class="esg-logo__image">SK이노베이션</span>
+          <span class="esg-logo__txt">ESG Data Platform</span>
+        </a>
+      </strong>
+
+      <nav class="gnb">
+        <ul class="gnb__menu" role="menubar">
+          <!-- (dev) 활성화 메뉴에 is-active 클래스 추가 -->
+          <li class="is-active" role="none"><a class="gnb__link" href="#" role="menuitem">GROWTH</a></li>
+          <li role="none"><a class="gnb__link" href="#" role="menuitem">ESG Data</a></li>
+        </ul>
+      </nav>
+
+      <div class="select-wrap select-language">
+        <select>
+          <option>KOR</option>
+          <option>ENG</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <!-- (dev) .container--growth 클래스 추가 -->
+  <section class="container container--growth">
+    <!-- (js) scrolldown으로 gnb 하단에 div.growth-sticky 영역이 붙으면 growth-sticky--scroll 클래스 추가
+              scrollup으로 gnb 하단에 div.contents-header 영역이 보이는 순간 growth-sticky--scroll 클래스 삭제
+    -->
+    <div class="growth-sticky">
+      <div class="growth-sticky__inner">
+        <ul>
+          <li class="on"><a href="#"><span>Green<br>Innovation</span></a></li>
+          <li><a href="#"><span>Road to<br>Net Zero</span></a></li>
+          <li><a href="#"><span>Outstanding<br>SHE Mgmt</span></a></li>
+          <li><a href="#"><span>Winning<br>the Trust</span></a></li>
+          <li><a href="#"><span>Together<br>with Society</span></a></li>
+          <li><a href="#"><span>Happiness<br>for All</span></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- (dev) 페이지 별로 클래스 추가
+      .contents-header--g, .contents-header--r, .contents-header--o, .contents-header--w, .contents-header--t, .contents-header--h
+    -->
+    <div class="contents-header contents-header--g">
+      <div class="contents-header__inner">
+        <strong class="contents-header__eyebrow" aria-label="GROWTH">
+          <span>G</span><span>R</span><span>O</span><span>W</span><span>T</span><span>H</span>
+        </strong>
+        <h1 class="contents-header__headline">Green Innovation</h1>
+        <p class="contents-header__description">친환경 Impact 확대</p>
+      </div>
+    </div>
+
+    <!-- (dev) 페이지 별로 클래스 추가
+      .contents-body--g, .contents-body--r, .contents-body--o, .contents-body--w, .contents-body--t, .contents-body--h
+    -->
+    <div class="contents-body contents-body--g">
+      growth 콘텐츠 영역
+    </div>
+  </section>
+
+  <footer class="footer">
+    <img src="../images/dummy-footer.gif" alt="" style="width:100%;height:163px;"><!-- dummy footer -->
+  </footer>
+</div>
+
+<!-- js link -->
+<script src="../js/commonJs.min.js"></script>
+</body>
+</html>

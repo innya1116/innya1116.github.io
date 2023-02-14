@@ -1,0 +1,43 @@
+@import './common/_variables';
+
+.container--error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 257px);
+  min-height: 800px;
+  padding: 40px 0 0;
+
+  .info-box {
+    padding-top: 257px;
+    text-align: center;
+    background: url($img--url+'img-error.jpg') no-repeat 50% 0;
+
+    &__title {
+      color: $color--black;
+      font-size: 30px;
+      line-height: 38px;
+      font-weight: 500;
+    }
+
+    &__description {
+      margin-top: 40px;
+      color: #333;
+      font-size: 18px;
+    }
+
+    &__btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 480px;
+      height: 54px;
+      margin-top: 120px;
+      border-radius: 54px;
+      background: #2B7832;
+      color: $color--white;
+      font-weight: 500;
+      font-size: 18px;
+    }
+  }
+}
