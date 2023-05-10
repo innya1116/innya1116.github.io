@@ -2,13 +2,13 @@
 ## 프로젝트 정보
 - 반응형 제작
 - 글로벌 확산을 위한 RTL 언어 사용국가 고려 작업(dir="rtl" 적용하여 테스트)<br>
-  ````html
+  ```html
   <html lang="언어코드" dir="rtl">
-  ````
+  ```
 - 고대비 모드 작업 필요(고대비 모드 적용 클래스: high-contrast-mode)<br>
-  ````html
+  ```html
   <body class="high-contrast-mode">
-  ````
+  ```
 
 ## 작업환경 정보
 ### 1) 사용 프로그램
