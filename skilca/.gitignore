@@ -1,0 +1,9 @@
+*.css.map
+*.sass.map
+*.scss.map
+/node_modules
+/.vscode
+output/css/common.css
+output/guide/guide.css
+output/js/commonJs.min.js
+docs/

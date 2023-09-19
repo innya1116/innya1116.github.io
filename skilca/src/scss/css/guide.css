@@ -1,0 +1,260 @@
+.guide {
+  padding: 24px;
+  font-size: 14px;
+}
+
+.guide-header {
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 24px;
+  padding-bottom: 0;
+  background: #2D2D2D;
+  z-index: 999;
+}
+
+.guide-tit1 {
+  color: #fff;
+  font-size: 32px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.guide-nav .nav-depth1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  margin: 24px -24px 0;
+  padding: 8px 24px 0;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.guide-nav .nav-depth1 a {
+  display: block;
+  padding: 12px 24px;
+  border-radius: 12px 12px 0 0;
+  font-size: 20px;
+}
+
+.guide-nav .nav-depth1 a.on {
+  background: #fff;
+  font-weight: bold;
+}
+
+.guide-nav .nav-depth1 a:hover, .guide-nav .nav-depth1 a:focus {
+  text-decoration: underline;
+}
+
+.guide-nav .nav-depth2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 -24px;
+  padding: 16px 24px 8px;
+  background: #fff;
+  -webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);
+}
+
+.guide-nav .nav-depth2 a {
+  display: block;
+  position: relative;
+  padding: 4px 24px;
+  color: #000;
+  opacity: .7;
+}
+
+.guide-nav .nav-depth2 a:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 1px;
+  height: 16px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background: #ccc;
+}
+
+.guide-nav .nav-depth2 a:last-child:after {
+  content: none;
+}
+
+.guide-nav .nav-depth2 a.on {
+  font-weight: bold;
+  text-decoration: underline;
+  opacity: 1;
+}
+
+.guide-content {
+  padding-top: 140px;
+}
+
+.guide-detail {
+  margin-top: 24px;
+}
+
+.guide-detail > a {
+  text-decoration: underline;
+}
+
+.guide-tit2 {
+  display: block;
+  margin-top: 16px;
+  margin-bottom: 8px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.guide-tit2.anchor-link {
+  text-decoration: underline;
+}
+
+.guide-tit2 ~ .guide-tit2 {
+  margin-top: 52px;
+}
+
+.guide-tit3 {
+  display: block;
+  margin-bottom: 16px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.guide-tit3 ~ .guide-tit3 {
+  margin-top: 32px;
+}
+
+.guide-tit2 + .guide-tit3 {
+  margin-top: 16px;
+}
+
+.guide-info-list {
+  margin: 10px 0 10px 20px;
+}
+
+.guide-info-list li {
+  line-height: 1.5;
+  list-style: disc;
+}
+
+.guide-info-list li:not(:first-child) {
+  margin-top: 4px;
+}
+
+.guide-info-list li ul,
+.guide-info-list li ol {
+  margin: 7px 0 7px 20px;
+}
+
+.guide-info-list li ul li {
+  list-style: circle;
+}
+
+.guide-info-list li ol li {
+  list-style: roman;
+}
+
+.guide table {
+  border-collapse: collapse;
+  table-layout: fixed;
+  border-spacing: 0;
+}
+
+.guide .filelist {
+  margin-top: 16px;
+  width: 100%;
+  counter-reset: row-number;
+}
+
+.guide .filelist th,
+.guide .filelist td {
+  padding: 8px 4px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.guide .filelist th {
+  font-weight: 500;
+}
+
+.guide .filelist thead th {
+  background: #eee;
+}
+
+.guide .filelist tbody tr {
+  counter-increment: row-number;
+}
+
+.guide .filelist tbody tr:hover {
+  background: #f4f7f8;
+}
+
+.guide .filelist tbody tr td:first-child {
+  text-align: center;
+}
+
+.guide .filelist tbody tr td:first-child::before {
+  content: counter(row-number);
+}
+
+.guide .filelist tbody tr td:nth-last-child(2),
+.guide .filelist tbody tr td:nth-last-child(3) {
+  text-align: center;
+}
+
+.guide .code {
+  overflow: auto;
+  margin: 10px 0 15px;
+  padding: 10px;
+  background: #39393A;
+  color: #aaa;
+  font-size: 14px;
+  font-family: Consolas, 'suit', sans-serif;
+  white-space: pre-wrap;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+
+.guide .code span {
+  color: #FF7A00;
+  font-family: inherit;
+}
+
+.guide .code i {
+  color: #74C27B;
+  font-family: inherit;
+}
+
+.guide-table {
+  border-top: 1px solid #ccc;
+}
+
+.guide-table th,
+.guide-table td {
+  padding: 8px;
+  color: #111;
+  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  font-size: 14px;
+}
+
+.guide-table th:last-child,
+.guide-table td:last-child {
+  border-right: none;
+}
+
+.guide-table th {
+  font-weight: 500;
+  background: #f8f8f8;
+}
+
+.guide-table .vt {
+  vertical-align: top !important;
+}
+/*# sourceMappingURL=guide.css.map */

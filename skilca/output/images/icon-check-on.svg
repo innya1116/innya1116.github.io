@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="area" width="20" height="20" transform="translate(555 442)" fill="#fff" stroke="#ddd" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <rect id="off" width="20" height="20" fill="#2b7832"/>
+  <g id="check" transform="translate(-555 -442)" clip-path="url(#clip-path)">
+    <path id="ico" d="M11886.357-11755.918v-5.012h-14.014v-2h16v.035h.035v6.976Z" transform="translate(652.368 -16265.703) rotate(135)" fill="#fff"/>
+  </g>
+</svg>

@@ -1,0 +1,112 @@
+@import '_global';
+
+.bg-gray {
+  background: #f8f8f8;
+}
+
+.login {
+  &-header {
+    position: absolute;
+    top: 15px;
+    left: 70px;
+  }
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  min-height: 700px;
+
+  &__inner {
+    width: 700px;
+    padding: 70px 110px;
+    border-radius: 30px;
+    background: #fff;
+  }
+
+  &__title {
+    margin-bottom: 45px;
+    color: #000;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  &-form {
+    fieldset {
+      border: 0 none;
+    }
+
+    &__input {
+      display: block;
+      width: 100%;
+      height: 54px;
+      padding: 18px 28px;
+      border: 1px solid #ddd;
+      border-radius: 54px;
+      box-sizing: border-box;
+      color: #000;
+      font-size: 14px;
+
+      &::placeholder {
+        color: #cbcbcb;
+      }
+
+      &:focus {
+        border-color: #2B7832;
+      }
+
+      & ~ input {
+        margin-top: 15px;
+      }
+    }
+
+    &__check {
+      margin-top: 8px;
+      padding-left: 30px;
+      font-size: 0;
+
+      input {
+        width: 18px;
+        height: 18px;
+        margin: 0;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 18 18'%3E%3Cg transform='translate(-785 -592.965)'%3E%3Crect width='18' height='18' transform='translate(785 592.965)' fill='none'/%3E%3Cpath d='M4.675,10.407a.6.6,0,0,1-.422-.173L.178,6.2a.6.6,0,0,1,.843-.852l3.635,3.6L12.715.193A.6.6,0,0,1,13.6,1l-8.481,9.21a.6.6,0,0,1-.427.193Z' transform='translate(787.395 596.593)' fill='%23cbcbcb'/%3E%3C/g%3E%3C/svg%3E");
+        vertical-align: top;
+
+        &:checked {
+          background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 18 18'%3E%3Cg transform='translate(-785 -592.965)'%3E%3Crect width='18' height='18' transform='translate(785 592.965)' fill='none'/%3E%3Cpath d='M4.675,10.407a.6.6,0,0,1-.422-.173L.178,6.2a.6.6,0,0,1,.843-.852l3.635,3.6L12.715.193A.6.6,0,0,1,13.6,1l-8.481,9.21a.6.6,0,0,1-.427.193Z' transform='translate(787.395 596.593)' fill='%232B7832'/%3E%3C/g%3E%3C/svg%3E");
+        }
+      }
+
+      label {
+        margin-left: 5px;
+        color: #333;
+        font-size: 14px;
+      }
+    }
+
+    &__txt {
+      padding: 38px 30px 28px;
+      font-size: 14px;
+      line-height: 1.71;
+      color: #b5b5b5;
+    }
+
+    &__btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 54px;
+      border-radius: 54px;
+      background: #2b7832;
+      color: #fff;
+      font-size: 18px;
+      font-weight: 500;
+
+      &:disabled {
+        background: #cbcbcb;
+      }
+    }
+  }
+}

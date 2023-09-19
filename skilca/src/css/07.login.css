@@ -1,0 +1,134 @@
+.bg-gray {
+  background: #f8f8f8;
+}
+
+.login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  min-height: 700px;
+}
+
+.login-header {
+  position: absolute;
+  top: 15px;
+  left: 70px;
+}
+
+.login__inner {
+  width: 700px;
+  padding: 70px 110px;
+  border-radius: 30px;
+  background: #fff;
+}
+
+.login__title {
+  margin-bottom: 45px;
+  color: #000;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.login-form fieldset {
+  border: 0 none;
+}
+
+.login-form__input {
+  display: block;
+  width: 100%;
+  height: 54px;
+  padding: 18px 28px;
+  border: 1px solid #ddd;
+  border-radius: 54px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #000;
+  font-size: 14px;
+}
+
+.login-form__input::-webkit-input-placeholder {
+  color: #cbcbcb;
+}
+
+.login-form__input:-ms-input-placeholder {
+  color: #cbcbcb;
+}
+
+.login-form__input::-ms-input-placeholder {
+  color: #cbcbcb;
+}
+
+.login-form__input::placeholder {
+  color: #cbcbcb;
+}
+
+.login-form__input:focus {
+  border-color: #2B7832;
+}
+
+.login-form__input ~ input {
+  margin-top: 15px;
+}
+
+.login-form__check {
+  margin-top: 8px;
+  padding-left: 30px;
+  font-size: 0;
+}
+
+.login-form__check input {
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 18 18'%3E%3Cg transform='translate(-785 -592.965)'%3E%3Crect width='18' height='18' transform='translate(785 592.965)' fill='none'/%3E%3Cpath d='M4.675,10.407a.6.6,0,0,1-.422-.173L.178,6.2a.6.6,0,0,1,.843-.852l3.635,3.6L12.715.193A.6.6,0,0,1,13.6,1l-8.481,9.21a.6.6,0,0,1-.427.193Z' transform='translate(787.395 596.593)' fill='%23cbcbcb'/%3E%3C/g%3E%3C/svg%3E");
+  vertical-align: top;
+}
+
+.login-form__check input:checked {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 18 18'%3E%3Cg transform='translate(-785 -592.965)'%3E%3Crect width='18' height='18' transform='translate(785 592.965)' fill='none'/%3E%3Cpath d='M4.675,10.407a.6.6,0,0,1-.422-.173L.178,6.2a.6.6,0,0,1,.843-.852l3.635,3.6L12.715.193A.6.6,0,0,1,13.6,1l-8.481,9.21a.6.6,0,0,1-.427.193Z' transform='translate(787.395 596.593)' fill='%232B7832'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.login-form__check label {
+  margin-left: 5px;
+  color: #333;
+  font-size: 14px;
+}
+
+.login-form__txt {
+  padding: 38px 30px 28px;
+  font-size: 14px;
+  line-height: 1.71;
+  color: #b5b5b5;
+}
+
+.login-form__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 54px;
+  border-radius: 54px;
+  background: #2b7832;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.login-form__btn:disabled {
+  background: #cbcbcb;
+}
+/*# sourceMappingURL=07.login.css.map */

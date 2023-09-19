@@ -1,0 +1,22 @@
+<svg id="ico_80_SKE_off" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="72" height="50" viewBox="0 0 72 50">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_14440" data-name="사각형 14440" width="43.917" height="43.724" transform="translate(0 -0.001)" fill="none"/>
+    </clipPath>
+  </defs>
+  <path id="container" d="M.01,0H71.98V50H.01Z" transform="translate(0.02)" fill="red" opacity="0"/>
+  <g id="icon_수정_" data-name="icon(수정)" transform="translate(12.042 3)">
+    <g id="그룹_17913" data-name="그룹 17913" clip-path="url(#clip-path)">
+      <path id="패스_23903" data-name="패스 23903" d="M6.679,42.715,9.374,6.988H16.1l2.565,35.727Z" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="패스_23904" data-name="패스 23904" d="M30.471,25.2h0a6.356,6.356,0,0,0-6.356,6.356v10.8H36.827v-10.8A6.356,6.356,0,0,0,30.471,25.2Z" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <line id="선_342" data-name="선 342" x2="12.712" transform="translate(24.115 31.094)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.5"/>
+      <path id="패스_23905" data-name="패스 23905" d="M31.4,37h0a.359.359,0,0,1-.364-.354h0a.335.335,0,0,1,.007-.071l.38-1.894a.3.3,0,0,0-.527-.252L29.142,36.45a.334.334,0,0,0,.036.471A.338.338,0,0,0,29.4,37a.358.358,0,0,1,.363.352v0a.35.35,0,0,1-.006.072l-.384,1.9a.3.3,0,0,0,.527.252l1.754-2.021A.334.334,0,0,0,31.4,37" fill="#fff"/>
+      <path id="패스_23906" data-name="패스 23906" d="M12.919,4.177V6.988H11.95V4.177C5.69,4.647,6.211,0,6.211,0c4.094-.059,5.541,2.253,6.018,3.439a.5.5,0,0,1,.409,0c.47-1.189,1.915-3.5,6.018-3.439,0,0,.52,4.645-5.739,4.176" fill="#fff"/>
+      <line id="선_343" data-name="선 343" x2="8.866" transform="translate(8.329 15.807)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.5"/>
+      <line id="선_344" data-name="선 344" x2="8.866" transform="translate(8.329 24.366)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.5"/>
+      <line id="선_345" data-name="선 345" x2="10.671" transform="translate(7.426 32.926)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.5"/>
+      <line id="선_346" data-name="선 346" x2="42.417" transform="translate(0.75 42.973)" fill="#fff"/>
+      <line id="선_347" data-name="선 347" x2="42.417" transform="translate(0.75 42.973)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    </g>
+  </g>
+</svg>

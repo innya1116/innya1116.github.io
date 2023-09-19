@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin | SK Innovation LCA</title>
+<link rel="stylesheet" href="../css/common.css">
+<script src="../js/commonJs.min.js"></script>
+</head>
+<body>
+<div class="wrap wrap--admin">
+  <header class="header">
+    <div class="header__inner">
+      <strong class="lca-logo">
+        <a href="#" class="lca-logo__link">
+          <span class="lca-logo__image"><span class="hidden">SK 이노베이션</span></span>
+          <span class="lca-logo__txt">LCA Infra</span>
+        </a>
+      </strong>
+
+      <div class="select-wrap select-company">
+        <select>
+          <option selected>SK이노베이션</option>
+          <option>SK에너지</option>
+          <option>SK지오센트릭</option>
+          <option>SK루브리컨츠</option>
+          <option>SK인천석유화학</option>
+          <option>SK어스온</option>
+          <option>SK온</option>
+          <option>SK아이테크놀로지</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <section class="contents contents--admin">
+    <h1 class="admin-title">SK LCA Infra Admin</h1>
+
+    <div class="admin-table admin-table--regist">
+      <table>
+        <caption>지표 등록</caption>
+        <colgroup><col style="width:15%"><col style="width:35%"><col style="width:15%"><col></colgroup>
+        <tbody>
+          <tr>
+            <th scope="row">노출 여부</th>
+            <td>
+              <span class="radio">
+                <input type="radio" name="frontView" id="frontView-on">
+                <label for="frontView-on">노출</label>
+              </span>
+              <span class="radio">
+                <input type="radio" name="frontView" id="frontView-off">
+                <label for="frontView-off">비노출</label>
+              </span>
+            </td>
+            <th scope="row">등록일</th>
+            <td>YYYY-MM-DD</td>
+          </tr>
+          <tr>
+            <th scope="row">영역</th>
+            <td>
+              <div class="select-wrap">
+                <select>
+                  <option>Story Line</option>
+                  <option>Dashbaord</option>
+                  <option>Scope 1&amp;2</option>
+                  <option>Scope3</option>
+                </select>
+              </div>
+            </td>
+            <th scope="row">회사</th>
+            <td>
+              <div class="select-wrap">
+                <select>
+                  <option selected>SK이노베이션</option>
+                  <option>SK에너지</option>
+                  <option>SK지오센트릭</option>
+                  <option>SK루브리컨츠</option>
+                  <option>SK인천석유화학</option>
+                  <option>SK어스온</option>
+                  <option>SK온</option>
+                  <option>SK아이테크놀로지</option>
+                </select>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">지표 제목</th>
+            <td colspan="3">
+              <span class="input"><input class="admin-input" type="text" placeholder="지표 제목을 입력하세요."></span>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">지표 내용</th>
+            <td colspan="3">
+              <textarea placeholder="지표 내용을 입력하세요." rows="15"></textarea>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="admin-btn">
+      <div class="admin-btn__left">
+        <button class="btn-list">목록</button>
+      </div>
+      <div class="admin-btn__right">
+        <button class="btn-delete">삭제</button>
+        <button class="btn-confirm">저장</button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p class="copyright">© 2022 SK innovation.Co.,Ltd</p>
+  </footer>
+</div>
+</body>
+</html>
+
+
+

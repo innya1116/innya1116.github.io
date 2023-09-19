@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scope 3 | SK Innovation LCA</title>
+<!-- css link -->
+<link rel="stylesheet" href="../css/common.css">
+<script src="../js/commonJs.min.js"></script>
+</head>
+<body>
+
+<div class="wrap">
+  <header class="header">
+    <div class="header__inner">
+      <strong class="lca-logo">
+        <!-- 220609 로고영역 링크 추가 -->
+        <a href="#" class="lca-logo__link">
+          <span class="lca-logo__image"><span class="hidden">SK 이노베이션</span></span>
+          <span class="lca-logo__txt">LCA Infra</span>
+        </a>
+        <!--// 220609 로고영역 링크 추가 -->
+      </strong>
+      <!-- (js) btn-menu 활성화 시 .is-active 적용 -->
+      <div class="header__util">
+        <a href="#" class="btn-assessment">Assessment</a><!-- 220624 assessment 버튼 추가 -->
+        <div class="user-info"><strong>SKI_김선경</strong>님<br> 오늘도 좋은하루 되세요!</div>
+        <!-- (js) btn-menu 활성화 시 aria-expanded="true" 적용 -->
+        <button class="btn-menu" aria-haspopup="true" aria-expanded="false">
+          <span class="hidden">View Menu</span>
+        </button>
+        <!-- (js) btn-menu 활성화 시 aria-hidden="false" 적용 -->
+        <div class="menu" role="dialog" aria-hidden="true">
+          <nav class="menu__inner">
+            <div class="menu__user-info">안녕하세요, 김선경님</div>
+            <div class="menu__pin">
+              <button class="menu__pin-btn" type="button"><span class="hidden">pin</span></button>
+            </div>
+            <ul role="menubar">
+              <li role="presentatio n">
+                <!-- (js) 메뉴 활성화 시 .is-active 추가 -->
+                <a class="menu__depth1 menu__depth1--dashboard" href="#" role="menuitem">Dashboard</a>
+                <ul class="menu__depth2" role="menu">
+                  <li role="presentation">
+                    <!-- (D) 메뉴 활성화 시 .is-active 추가 -->
+                    <a class="icon-company icon-company--ski is-active" href="#" role="menuitem"><span>SKI</span></a>
+                  </li>
+                  <li role="presentation"><a class="icon-company icon-company--ske" href="#" role="menuitem"><span>SKE(w/TI)</span></a></li>
+                  <li role="presentation"><a class="icon-company icon-company--skgc" href="#" role="menuitem"><span>SKGC</span></a></li>
+                  <li role="presentation"><a class="icon-company icon-company--sko" href="#" role="menuitem"><span>SKO</span></a></li>
+                  <li role="presentation"><a class="icon-company icon-company--skl" href="#" role="menuitem"><span>SKL</span></a></li>
+                  <li role="presentation"><a class="icon-company icon-company--skipc" href="#" role="menuitem"><span>SKIPC</span></a></li>
+                  <li role="presentation"><a class="icon-company icon-company--skiet" href="#" role="menuitem"><span>SKIET</span></a></li>
+                  <li role="presentation"><a class="icon-company icon-company--skeo" href="#" role="menuitem"><span>SKEO</span></a></li>
+                </ul>
+              </li>
+              <li role="presentation">
+                <a class="menu__depth1 menu__depth1--scope12 is-active" href="#" role="menuitem">Scope 1/2</a>
+                <ul class="menu__depth2" role="menu">
+                  <li role="presentation">
+                    <!-- (D) 메뉴 활성화 시 .is-active 추가 -->
+                    <a class="icon-company icon-company--ski is-active" href="#" role="menuitem"><span>SKI</span></a>
+                  </li>
+                  <li role="presentation"><a class="icon-company icon-company--ske" href="#" role="menuitem"><span>SKE(w/TI)</span></a></li>
+                  <li role="presentation"><a class="icon-company icon-company--skgc" href="#" role="menuitem"><span>SKGC</span></a></li>
+                  <li role="presentation"><a class="icon-company icon-company--sko" href="#" role="menuitem"><span>SKO</span></a></li>
+                  <li role="presentation"><a class="icon-company icon-company--skl" href="#" role="menuitem"><span>SKL</span></a></li>
+                  <li role="presentation"><a class="icon-company icon-company--skipc" href="#" role="menuitem"><span>SKIPC</span></a></li>
+                  <li role="presentation"><a class="icon-company icon-company--skiet" href="#" role="menuitem"><span>SKIET</span></a></li>
+                </ul>
+              </li>
+              <li role="presentation">
+                <a class="menu__depth1 menu__depth1--scope3" href="#" role="menuitem">Scope 3</a>
+                <ul class="menu__depth2" role="menu">
+                  <li role="presentation">
+                    <!-- (D) 메뉴 활성화 시 .is-active 추가 -->
+                    <a class="icon-company icon-company--ski is-active" href="#" role="menuitem"><span>SKI</span></a>
+                  </li>
+                  <li role="presentation"><a class="icon-company icon-company--ske" href="#" role="menuitem"><span>SKE(w/TI)</span></a></li>
+                  <li role="presentation"><a class="icon-company icon-company--skgc" href="#" role="menuitem"><span>SKGC</span></a></li>
+                  <li role="presentation"><a class="icon-company icon-company--sko" href="#" role="menuitem"><span>SKO</span></a></li>
+                  <li role="presentation"><a class="icon-company icon-company--skl" href="#" role="menuitem"><span>SKL</span></a></li>
+                  <li role="presentation"><a class="icon-company icon-company--skipc" href="#" role="menuitem"><span>SKIPC</span></a></li>
+                  <li role="presentation"><a class="icon-company icon-company--skiet" href="#" role="menuitem"><span>SKIET</span></a></li>
+                  <li role="presentation"><a class="icon-company icon-company--skeo" href="#" role="menuitem"><span>SKEO</span></a></li>
+                </ul>
+              </li>
+            </ul>
+            <!-- 220624 assessment 버튼 삭제 -->
+          </nav>
+          <button class="menu__close" type="button"><span class="hidden">menu close</span></button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="contents">
+    <div class="page-top">
+      <div class="page-top__header">
+        <h1 class="page-top__title">Scope 3</h1>
+        <h2 class="page-top__sub-title"><strong>SK 이노베이션</strong><span>2022.04</span></h2>
+      </div>
+      <div class="view-options">
+        <div class="view-options-wrap">
+          <div class="view-options__year select-wrap">
+            <select id="selectYear" data-options='{
+              "maxHeight": "226",
+              "msg": "년도"
+              }'>
+              <option>2011년</option>
+              <option>2012년</option>
+              <option>2013년</option>
+              <option>2014년</option>
+              <option>2015년</option>
+              <option>2016년</option>
+              <option>2017년</option>
+              <option>2018년</option>
+              <option>2019년</option>
+              <option>2020년</option>
+              <option>2021년</option>
+              <option>2022년</option>
+            </select>
+            <!-- select 초기화:
+              select 영역에 id 값을 추가하고 해당 id로 초기화
+              mvJs.selectmenu.update('#{select에 부여한 id}');
+
+              mvJs.selectmenu.update('#selectYear');
+            -->
+          </div>
+          <div class="view-options__month select-wrap">
+            <select data-options='{
+              "maxHeight": "226",
+              "msg": "월"
+              }'>
+              <option>1월</option>
+              <option>2월</option>
+              <option>3월</option>
+              <option>4월</option>
+              <option>5월</option>
+              <option>6월</option>
+              <option>7월</option>
+              <option>8월</option>
+              <option>9월</option>
+              <option>10월</option>
+              <option>11월</option>
+              <option>12월</option>
+            </select>
+          </div>
+          <div class="view-options__btn">
+            <button class="btn">확인</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Chart Grid -->
+    <!-- div.swiper-slide 개수가 1개 일 경우 .swiper 클래스 삭제 -->
+    <div class="lca-chart-grid swiper" data-options='{
+      "autoplay": "0",
+      "pagination": "bullet"
+    }'>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="lca-chart">
+              <div class="lca-chart__title-wrap">
+                <h3 class="lca-chart__title">카테고리별 Scope 3 배출량</h3>
+              </div>
+              <div class="lca-chart__area">
+                <img src="../images/dummy-chart-1440x296.gif" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="lca-chart">
+              <div class="lca-chart__title-wrap">
+                <h3 class="lca-chart__title">카테고리별 Scope 3 배출량</h3>
+              </div>
+              <div class="lca-chart__area">
+                <img src="../images/dummy-chart-1440x296.gif" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="lca-chart">
+              <div class="lca-chart__title-wrap">
+                <h3 class="lca-chart__title">카테고리별 Scope 3 배출량</h3>
+              </div>
+              <div class="lca-chart__area">
+                <img src="../images/dummy-chart-1440x296.gif" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <!--// Chart Grid -->
+
+    <!-- 220610 수정 -->
+    <!-- Chart Grid -->
+    <!-- div.swiper-slide 개수가 1개 일 경우 .swiper 클래스 삭제 -->
+    <div class="lca-chart-grid swiper" data-options='{
+      "slidesPerView": 2,
+      "spaceBetween": 120,
+      "autoplay": "0",
+      "pagination": "bullet"
+    }'>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide lca-chart">
+            <div class="lca-chart__title-wrap">
+              <h3 class="lca-chart__title">Category별 배출 현황</h3>
+            </div>
+            <div class="lca-chart__area">
+              <img src="../images/dummy-chart-660x414-2.gif" alt="">
+            </div>
+          </div>
+          <div class="swiper-slide lca-chart">
+            <div class="lca-chart__title-wrap">
+              <h3 class="lca-chart__title">사업회사별 Scope 3 배출 현황</h3>
+            </div>
+            <div class="lca-chart__area">
+              <img src="../images/dummy-chart-660x414-2.gif" alt="">
+            </div>
+          </div>
+          <div class="swiper-slide lca-chart">
+            <div class="lca-chart__title-wrap">
+              <h3 class="lca-chart__title">Category별 배출 현황</h3>
+            </div>
+            <div class="lca-chart__area">
+              <img src="../images/dummy-chart-660x414-2.gif" alt="">
+            </div>
+          </div>
+          <div class="swiper-slide lca-chart">
+            <div class="lca-chart__title-wrap">
+              <h3 class="lca-chart__title">사업회사별 Scope 3 배출 현황</h3>
+            </div>
+            <div class="lca-chart__area">
+              <img src="../images/dummy-chart-660x414-2.gif" alt="">
+            </div>
+          </div>
+          <div class="swiper-slide lca-chart">
+            <div class="lca-chart__title-wrap">
+              <h3 class="lca-chart__title">Category별 배출 현황</h3>
+            </div>
+            <div class="lca-chart__area">
+              <img src="../images/dummy-chart-660x414-2.gif" alt="">
+            </div>
+          </div>
+          <div class="swiper-slide lca-chart">
+            <div class="lca-chart__title-wrap">
+              <h3 class="lca-chart__title">사업회사별 Scope 3 배출 현황</h3>
+            </div>
+            <div class="lca-chart__area">
+              <img src="../images/dummy-chart-660x414-2.gif" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <!--// Chart Grid -->
+
+    <!-- Chart Grid -->
+    <!-- div.swiper-slide 개수가 1개 일 경우 .swiper 클래스 삭제 -->
+    <div class="lca-chart-grid swiper" data-options='{
+      "slidesPerView": 2,
+      "spaceBetween": 120,
+      "autoplay": "0",
+      "pagination": "bullet"
+    }'>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide lca-chart">
+            <div class="lca-chart__title-wrap">
+              <h3 class="lca-chart__title">Cat 1 주요 배출 계수</h3>
+            </div>
+            <div class="lca-chart__area">
+              <img src="../images/dummy-chart-660x296.gif" alt="">
+            </div>
+          </div>
+          <div class="swiper-slide lca-chart">
+            <div class="lca-chart__title-wrap">
+              <h3 class="lca-chart__title">Cat 11 주요 배출 계수</h3>
+            </div>
+            <div class="lca-chart__area">
+              <img src="../images/dummy-chart-660x296.gif" alt="">
+            </div>
+          </div>
+          <div class="swiper-slide lca-chart">
+            <div class="lca-chart__title-wrap">
+              <h3 class="lca-chart__title">Cat 1 주요 배출 계수</h3>
+            </div>
+            <div class="lca-chart__area">
+              <img src="../images/dummy-chart-660x296.gif" alt="">
+            </div>
+          </div>
+          <div class="swiper-slide lca-chart">
+            <div class="lca-chart__title-wrap">
+              <h3 class="lca-chart__title">Cat 11 주요 배출 계수</h3>
+            </div>
+            <div class="lca-chart__area">
+              <img src="../images/dummy-chart-660x296.gif" alt="">
+            </div>
+          </div>
+          <div class="swiper-slide lca-chart">
+            <div class="lca-chart__title-wrap">
+              <h3 class="lca-chart__title">Cat 1 주요 배출 계수</h3>
+            </div>
+            <div class="lca-chart__area">
+              <img src="../images/dummy-chart-660x296.gif" alt="">
+            </div>
+          </div>
+          <div class="swiper-slide lca-chart">
+            <div class="lca-chart__title-wrap">
+              <h3 class="lca-chart__title">Cat 11 주요 배출 계수</h3>
+            </div>
+            <div class="lca-chart__area">
+              <img src="../images/dummy-chart-660x296.gif" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <!--// Chart Grid -->
+    <!--// 220610 수정 -->
+  </section>
+
+  <footer class="footer">
+    <img src="../images/dummy-footer.gif" alt="" style="width:100%;height:73px;"><!-- dummy footer -->
+  </footer>
+</div>
+</body>
+</html>

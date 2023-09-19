@@ -1,0 +1,49 @@
+
+@charset "utf-8";
+
+// Stroke
+@mixin stroke($stroke-width, $stroke-color) {
+  -webkit-text-stroke: #{$stroke-width} #{$stroke-color};
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  @media all and (-ms-high-contrast:none) {
+    background-image: none;
+    color: #{$stroke-color};
+  }
+}
+
+// Ellipsis
+@mixin ellipsis($line, $height) {
+  @if ($line == 1) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  } @else {
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: $line;
+    height:$height;
+  }
+}
+
+// Media queries
+
+@mixin desktop {
+  @media only screen and (min-width:#{$breakpoint--mobile}) and (max-width:#{$breakpoint--desktop}) {
+    @content;
+  }
+}
+
+@mixin desktop-portrait {
+  @media only screen and (min-width: #{$breakpoint--mobile}) and (orientation: portrait) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media only screen and (max-width:#{$breakpoint--mobile - 1px}) {
+    @content;
+  }
+}

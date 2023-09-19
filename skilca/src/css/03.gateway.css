@@ -1,0 +1,259 @@
+.gateway {
+  width: 100%;
+  min-width: 1440px;
+  overflow: hidden;
+}
+
+.gateway__menu {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  left: 50%;
+  width: 150%;
+  height: 100vh;
+  background: #000;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-transition: -webkit-transform .7s ease-in-out;
+  transition: -webkit-transform .7s ease-in-out;
+  transition: transform .7s ease-in-out;
+  transition: transform .7s ease-in-out, -webkit-transform .7s ease-in-out;
+}
+
+.gateway__menu.left {
+  -webkit-transform: translateX(-35%);
+          transform: translateX(-35%);
+}
+
+.gateway__menu.right {
+  -webkit-transform: translateX(-65%);
+          transform: translateX(-65%);
+}
+
+.gateway__link {
+  overflow: hidden;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 0 80px 180px;
+  color: #fff;
+  vertical-align: bottom;
+}
+
+.gateway__link:before, .gateway__link:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.gateway__link:after {
+  opacity: 1;
+  -webkit-transition: opacity .7s ease-out;
+  transition: opacity .7s ease-out;
+}
+
+.gateway__link:before {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.gateway__link:hover, .gateway__link:focus {
+  text-decoration: none;
+  z-index: 100;
+}
+
+.gateway__link.expand:after {
+  opacity: 0;
+}
+
+.gateway__link--monitoring {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  text-align: right;
+}
+
+.gateway__link--monitoring:before {
+  background-image: url("../images/bg-gateway-monitoring.jpg");
+  background-position: 100% 50%;
+}
+
+.gateway__link--monitoring.expand:after {
+  -webkit-animation: dimmed-change .7s ease-out forwards;
+          animation: dimmed-change .7s ease-out forwards;
+}
+
+@-webkit-keyframes dimmed-change {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    top: 50%;
+    left: 50%;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    opacity: 0;
+  }
+  51% {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 400px;
+    width: 1000px;
+    background: linear-gradient(340deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.4) 120%);
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    opacity: 0;
+  }
+  100% {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 400px;
+    width: 1000px;
+    background: linear-gradient(340deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.4) 120%);
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes dimmed-change {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    top: 50%;
+    left: 50%;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    opacity: 0;
+  }
+  51% {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 400px;
+    width: 1000px;
+    background: linear-gradient(340deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.4) 120%);
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    opacity: 0;
+  }
+  100% {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 400px;
+    width: 1000px;
+    background: linear-gradient(340deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.4) 120%);
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+.gateway__link--monitoring.reduce .gateway__txt {
+  -webkit-transform: translateX(55px);
+          transform: translateX(55px);
+}
+
+.gateway__link--monitoring .gateway__tit {
+  -webkit-transform-origin: 100% 50%;
+          transform-origin: 100% 50%;
+}
+
+.gateway__link--assessment:before {
+  background-image: url("../images/bg-gateway-assessment.jpg");
+  background-position: 0% 50%;
+}
+
+.gateway__link--assessment.reduce .gateway__txt {
+  -webkit-transform: translateX(-55px);
+          transform: translateX(-55px);
+}
+
+.gateway__link--assessment .gateway__tit {
+  -webkit-transform-origin: 0 50%;
+          transform-origin: 0 50%;
+}
+
+.gateway__txt {
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+  -webkit-transition: -webkit-transform .7s ease-in-out;
+  transition: -webkit-transform .7s ease-in-out;
+  transition: transform .7s ease-in-out;
+  transition: transform .7s ease-in-out, -webkit-transform .7s ease-in-out;
+}
+
+.gateway__desc {
+  display: block;
+  font-size: 18px;
+  line-height: 1.67;
+}
+
+.gateway__tit {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 8px;
+  font-size: 50px;
+  line-height: 62px;
+  -webkit-transition: -webkit-transform .7s ease-in-out;
+  transition: -webkit-transform .7s ease-in-out;
+  transition: transform .7s ease-in-out;
+  transition: transform .7s ease-in-out, -webkit-transform .7s ease-in-out;
+}
+
+.gateway__tit:after {
+  content: '';
+  width: 32px;
+  height: 32px;
+  margin: 0 8px 0 6px;
+  background: url("../images/icon-gateway-arrow.png") no-repeat 0 0;
+}
+
+.gateway__link--monitoring .gateway__tit:after {
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.reduce .gateway__tit {
+  -webkit-transform: scale(0.7) !important;
+          transform: scale(0.7) !important;
+}
+/*# sourceMappingURL=03.gateway.css.map */

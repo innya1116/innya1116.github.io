@@ -1,0 +1,41 @@
+@import '_global';
+
+.info-box {
+  text-align: center;
+
+  &__title {
+    color: $color--black;
+    font-size: 30px;
+    line-height: 38px;
+    font-weight: 500;
+  }
+
+  &__description {
+    margin-top: 40px;
+    color: #333;
+    font-size: 18px;
+  }
+
+  &__btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 480px;
+    height: 54px;
+    margin-top: 120px;
+    border-radius: 54px;
+    background: #2B7832;
+    color: $color--white;
+    font-weight: 500;
+    font-size: 18px;
+  }
+}
+
+.contents--error {
+  padding: 220px 0 290px;
+
+  .info-box {
+    padding-top: 257px;
+    background: url($img--url+'img-error.jpg') no-repeat 50% 0;
+  }
+}

@@ -1,0 +1,361 @@
+@import '_global';
+
+.wrap {
+  width: 100%;
+  margin: 0 auto;
+  transition: padding-right .5s cubic-bezier(.15,1,.2,1);
+
+  &.pin-fixed {
+    padding-right: 368px;
+  }
+}
+
+.header {
+  height: 80px;
+
+  &__inner {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 16px 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background: #fff;
+  }
+
+  &--transparent &__inner {
+    background: transparent;
+  }
+
+  .lca-logo {
+    display: block;
+
+    &__link {
+      display: inline-flex;
+      align-items: flex-end;
+      vertical-align: top;
+    }
+
+    &__image {
+      display: inline-block;
+      width: 115px;
+      height: 48px;
+      background: url($img--url+'logo-ski.png') no-repeat 0 0;
+    }
+
+    &__txt {
+      margin-left: 12px;
+      font-size: 15px;
+      font-weight: 500;
+      color: #222;
+    }
+  }
+
+  &__util {
+    display: inline-flex;
+    align-items: flex-end;
+
+    .user-info {
+      display: inline-block;
+      text-align: right;
+
+      strong {
+        font-weight: 500;
+      }
+
+      .header--transparent & {
+        color: $color--white;
+      }
+    }
+
+    // &.is-active {
+    //   .user-info {
+    //     display: none;
+    //   }
+    // }
+
+    .btn {
+      &-menu {
+        display: inline-block;
+        width: 28px;
+        height: 28px;
+        margin-left: 34px;
+        background: url($img--url+'icon-menu.png') no-repeat 0 50%;
+        order: 2;
+
+        .header--transparent & {
+          background-image: url($img--url+'icon-menu-w.png');
+        }
+      }
+
+      &-monitoring {
+        display: inline-block;
+        margin-right: 30px;
+        padding: 6px 23px 6px 46px;
+        border: 1px solid $color--black;
+        border-radius: 17px;
+        background: url($img--url+'icon-monitoring.svg') no-repeat 24px 50%;
+        font-weight: 500;
+      }
+
+      &-assessment {
+        display: inline-block;
+        margin-right: 30px;
+        padding: 6px 23px 6px 46px;
+        border: 1px solid $color--black;
+        border-radius: 17px;
+        background: url($img--url+'icon-assessment.svg') no-repeat 24px 50%;
+        font-weight: 500;
+        transition: transform 0.5s cubic-bezier(0.15, 1, 0.2, 1);
+
+        .pin-fixed & {
+          transform: translateX(-124px);
+        }
+      }
+    }
+  }
+
+  &--transparent {
+    height: auto;
+
+    .lca-logo {
+      &__image {
+        background-image: url($img--url+'logo-ski-w.png');
+      }
+
+      &__txt {
+        color: $color--white;
+      }
+    }
+  }
+}
+
+.menu {
+  position: fixed;
+  right: -368px;
+  top: 0;
+  width: 260px;
+  height: 100vh;
+  color: $color--white;
+  background: #222;
+  z-index: 200;
+  transition: right .5s cubic-bezier(.15,1,.2,1);
+
+  .is-active & {
+    right: 0;
+  }
+
+  &__user-info {
+    padding: 32px 90px 0 43px;
+    font-size: 15px;
+  }
+
+  &__util {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 16px;
+    padding: 48px 28px 20px 43px;
+    border-bottom: 1px solid #6b6b6b;
+
+    &-btn {
+      width: 30px;
+      height: 30px;
+
+      &--setting {
+        margin-right: 49px;
+        background: url($img--url+'icon-setting.svg');
+      }
+
+      &--pin {
+        background: url($img--url+'sp-menu.png') -90px 0;
+
+        .pin-fixed & {
+          transform: rotate(-45deg);
+        }
+      }
+    }
+  }
+
+  &__depth1 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4px;
+    padding: 16px 0 15px 43px;
+    font-size: 16px;
+    font-weight: 500;
+    opacity: .5;
+
+    &.is-active {
+      opacity: 1;
+    }
+
+    &:before {
+      content: '';
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      margin-right: 40px;
+      background: url($img--url+'sp-menu.png') 0 -30px;
+    }
+
+    &--scope12:before {
+      background-position: -30px -30px;
+    }
+
+    &--scope3:before {
+      background-position: -60px -30px;
+    }
+  }
+
+  &__assessment {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0 20px 43px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #ff7a00;
+    border-top: 1px solid #6b6b6b;
+    opacity: 1;
+
+    &:before {
+      content: '';
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      margin-right: 40px;
+      background: url($img--url+'sp-menu.png') -90px -30px;
+    }
+  }
+
+  &__depth2 {
+    overflow-y: auto;
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 260px;
+    height: 100vh;
+    padding: 132px 9px 0;
+    background: #39393a;
+
+    &::-webkit-scrollbar {
+      display:none;
+    }
+
+    li {
+      margin-top: 40px;
+      width: 90px;
+    }
+
+    .icon-company {
+      padding-top: 56px;
+      font-size: 12px;
+      color: $color--white;
+      background-size: 72px 50px;
+      opacity: .5;
+
+      &.is-active {
+        color: #74c27b;
+        font-weight: 500;
+        opacity: 1;
+
+        &:before {
+          background-position-x: -90px;
+        }
+      }
+    }
+
+    .is-active + & {
+      display: block;
+    }
+  }
+
+  &__close {
+    position: absolute;
+    top: 26px;
+    right: 28px;
+    width: 30px;
+    height: 30px;
+    background: url($img--url+'sp-menu.png') 0 0;
+
+    .pin-fixed & {
+      opacity: .5;
+    }
+  }
+}
+
+.icon-company {
+  display: block;
+  background: no-repeat 50% 0;
+  text-align: center;
+
+  @each $company-icon in $company-icons {
+    &--#{$company-icon} {
+      background-image: url($img--url+'icon-#{$company-icon}-off.svg');
+    }
+  }
+
+  @each $company-icon in $company-icons {
+    &--#{$company-icon}.is-active {
+      background-image: url($img--url+'icon-#{$company-icon}-on.svg');
+    }
+  }
+}
+
+.contents {
+  width: 1440px;
+  margin: 0 auto;
+  padding: 160px 0 230px;
+}
+
+.footer {
+  min-width: 1440px;
+  padding: 47px 70px 50px;
+  background: #000;
+
+  & > img {
+    vertical-align: top;
+  }
+
+  .company-info {
+    ul {
+      display: flex;
+    }
+
+    li {
+      color: #999;
+      font-size: 18px;
+
+      &:not(:first-child) {
+        position: relative;
+        margin-left: 10px;
+        padding-left: 11px;
+
+        &:before {
+          content: '';
+          display: block;
+          position: absolute;
+          left: 0;
+          top: 50%;
+          width: 1px;
+          height: 16px;
+          margin-top: -8px;
+          background: #555;
+        }
+      }
+    }
+  }
+
+  .copyright {
+    margin-top: 30px;
+    color: #999;
+    font-size: 16px;
+  }
+}

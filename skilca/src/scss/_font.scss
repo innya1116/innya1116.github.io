@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: 'suit';
+  font-style: normal;
+  font-weight: 400;
+  src: url(./font/SUIT-Regular.woff2) format("woff2"),
+       url(./font/SUIT-Regular.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'suit';
+  font-style: normal;
+  font-weight: normal;
+  src: url(./font/SUIT-Regular.woff2) format("woff2"),
+       url(./font/SUIT-Regular.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'suit';
+  font-style: normal;
+  font-weight: 500;
+  src: url(./font/SUIT-SemiBold.woff2) format("woff2"),
+       url(./font/SUIT-SemiBold.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'suit';
+  font-style: normal;
+  font-weight: 700;
+  src: url(./font/SUIT-ExtraBold.woff2) format("woff2"),
+       url(./font/SUIT-ExtraBold.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'suit';
+  font-style: normal;
+  font-weight: bold;
+  src: url(./font/SUIT-ExtraBold.woff2) format("woff2"),
+       url(./font/SUIT-ExtraBold.woff) format("woff");
+}

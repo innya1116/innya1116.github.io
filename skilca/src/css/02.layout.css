@@ -1,0 +1,447 @@
+.wrap {
+  width: 100%;
+  margin: 0 auto;
+  -webkit-transition: padding-right 0.5s cubic-bezier(0.15, 1, 0.2, 1);
+  transition: padding-right 0.5s cubic-bezier(0.15, 1, 0.2, 1);
+}
+
+.wrap.pin-fixed {
+  padding-right: 368px;
+}
+
+.header {
+  height: 80px;
+}
+
+.header__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 16px 70px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background: #fff;
+}
+
+.header--transparent .header__inner {
+  background: transparent;
+}
+
+.header .lca-logo {
+  display: block;
+}
+
+.header .lca-logo__link {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  vertical-align: top;
+}
+
+.header .lca-logo__image {
+  display: inline-block;
+  width: 115px;
+  height: 48px;
+  background: url("../images/logo-ski.png") no-repeat 0 0;
+}
+
+.header .lca-logo__txt {
+  margin-left: 12px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #222;
+}
+
+.header__util {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.header__util .user-info {
+  display: inline-block;
+  text-align: right;
+}
+
+.header__util .user-info strong {
+  font-weight: 500;
+}
+
+.header--transparent .header__util .user-info {
+  color: #fff;
+}
+
+.header__util .btn-menu {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  margin-left: 34px;
+  background: url("../images/icon-menu.png") no-repeat 0 50%;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.header--transparent .header__util .btn-menu {
+  background-image: url("../images/icon-menu-w.png");
+}
+
+.header__util .btn-monitoring {
+  display: inline-block;
+  margin-right: 30px;
+  padding: 6px 23px 6px 46px;
+  border: 1px solid #000;
+  border-radius: 17px;
+  background: url("../images/icon-monitoring.svg") no-repeat 24px 50%;
+  font-weight: 500;
+}
+
+.header__util .btn-assessment {
+  display: inline-block;
+  margin-right: 30px;
+  padding: 6px 23px 6px 46px;
+  border: 1px solid #000;
+  border-radius: 17px;
+  background: url("../images/icon-assessment.svg") no-repeat 24px 50%;
+  font-weight: 500;
+  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.15, 1, 0.2, 1);
+  transition: -webkit-transform 0.5s cubic-bezier(0.15, 1, 0.2, 1);
+  transition: transform 0.5s cubic-bezier(0.15, 1, 0.2, 1);
+  transition: transform 0.5s cubic-bezier(0.15, 1, 0.2, 1), -webkit-transform 0.5s cubic-bezier(0.15, 1, 0.2, 1);
+}
+
+.pin-fixed .header__util .btn-assessment {
+  -webkit-transform: translateX(-124px);
+          transform: translateX(-124px);
+}
+
+.header--transparent {
+  height: auto;
+}
+
+.header--transparent .lca-logo__image {
+  background-image: url("../images/logo-ski-w.png");
+}
+
+.header--transparent .lca-logo__txt {
+  color: #fff;
+}
+
+.menu {
+  position: fixed;
+  right: -368px;
+  top: 0;
+  width: 260px;
+  height: 100vh;
+  color: #fff;
+  background: #222;
+  z-index: 200;
+  -webkit-transition: right 0.5s cubic-bezier(0.15, 1, 0.2, 1);
+  transition: right 0.5s cubic-bezier(0.15, 1, 0.2, 1);
+}
+
+.is-active .menu {
+  right: 0;
+}
+
+.menu__user-info {
+  padding: 32px 90px 0 43px;
+  font-size: 15px;
+}
+
+.menu__util {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 16px;
+  padding: 48px 28px 20px 43px;
+  border-bottom: 1px solid #6b6b6b;
+}
+
+.menu__util-btn {
+  width: 30px;
+  height: 30px;
+}
+
+.menu__util-btn--setting {
+  margin-right: 49px;
+  background: url("../images/icon-setting.svg");
+}
+
+.menu__util-btn--pin {
+  background: url("../images/sp-menu.png") -90px 0;
+}
+
+.pin-fixed .menu__util-btn--pin {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.menu__depth1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 4px;
+  padding: 16px 0 15px 43px;
+  font-size: 16px;
+  font-weight: 500;
+  opacity: .5;
+}
+
+.menu__depth1.is-active {
+  opacity: 1;
+}
+
+.menu__depth1:before {
+  content: '';
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-right: 40px;
+  background: url("../images/sp-menu.png") 0 -30px;
+}
+
+.menu__depth1--scope12:before {
+  background-position: -30px -30px;
+}
+
+.menu__depth1--scope3:before {
+  background-position: -60px -30px;
+}
+
+.menu__assessment {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 20px 0 20px 43px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #ff7a00;
+  border-top: 1px solid #6b6b6b;
+  opacity: 1;
+}
+
+.menu__assessment:before {
+  content: '';
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-right: 40px;
+  background: url("../images/sp-menu.png") -90px -30px;
+}
+
+.menu__depth2 {
+  overflow-y: auto;
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 260px;
+  height: 100vh;
+  padding: 132px 9px 0;
+  background: #39393a;
+}
+
+.menu__depth2::-webkit-scrollbar {
+  display: none;
+}
+
+.menu__depth2 li {
+  margin-top: 40px;
+  width: 90px;
+}
+
+.menu__depth2 .icon-company {
+  padding-top: 56px;
+  font-size: 12px;
+  color: #fff;
+  background-size: 72px 50px;
+  opacity: .5;
+}
+
+.menu__depth2 .icon-company.is-active {
+  color: #74c27b;
+  font-weight: 500;
+  opacity: 1;
+}
+
+.menu__depth2 .icon-company.is-active:before {
+  background-position-x: -90px;
+}
+
+.is-active + .menu__depth2 {
+  display: block;
+}
+
+.menu__close {
+  position: absolute;
+  top: 26px;
+  right: 28px;
+  width: 30px;
+  height: 30px;
+  background: url("../images/sp-menu.png") 0 0;
+}
+
+.pin-fixed .menu__close {
+  opacity: .5;
+}
+
+.icon-company {
+  display: block;
+  background: no-repeat 50% 0;
+  text-align: center;
+}
+
+.icon-company--ski {
+  background-image: url("../images/icon-ski-off.svg");
+}
+
+.icon-company--ske {
+  background-image: url("../images/icon-ske-off.svg");
+}
+
+.icon-company--skgc {
+  background-image: url("../images/icon-skgc-off.svg");
+}
+
+.icon-company--sko {
+  background-image: url("../images/icon-sko-off.svg");
+}
+
+.icon-company--skl {
+  background-image: url("../images/icon-skl-off.svg");
+}
+
+.icon-company--skipc {
+  background-image: url("../images/icon-skipc-off.svg");
+}
+
+.icon-company--skiet {
+  background-image: url("../images/icon-skiet-off.svg");
+}
+
+.icon-company--skeo {
+  background-image: url("../images/icon-skeo-off.svg");
+}
+
+.icon-company--ske {
+  background-image: url("../images/icon-ske-off.svg");
+}
+
+.icon-company--ski.is-active {
+  background-image: url("../images/icon-ski-on.svg");
+}
+
+.icon-company--ske.is-active {
+  background-image: url("../images/icon-ske-on.svg");
+}
+
+.icon-company--skgc.is-active {
+  background-image: url("../images/icon-skgc-on.svg");
+}
+
+.icon-company--sko.is-active {
+  background-image: url("../images/icon-sko-on.svg");
+}
+
+.icon-company--skl.is-active {
+  background-image: url("../images/icon-skl-on.svg");
+}
+
+.icon-company--skipc.is-active {
+  background-image: url("../images/icon-skipc-on.svg");
+}
+
+.icon-company--skiet.is-active {
+  background-image: url("../images/icon-skiet-on.svg");
+}
+
+.icon-company--skeo.is-active {
+  background-image: url("../images/icon-skeo-on.svg");
+}
+
+.icon-company--ske.is-active {
+  background-image: url("../images/icon-ske-on.svg");
+}
+
+.contents {
+  width: 1440px;
+  margin: 0 auto;
+  padding: 160px 0 230px;
+}
+
+.footer {
+  min-width: 1440px;
+  padding: 47px 70px 50px;
+  background: #000;
+}
+
+.footer > img {
+  vertical-align: top;
+}
+
+.footer .company-info ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer .company-info li {
+  color: #999;
+  font-size: 18px;
+}
+
+.footer .company-info li:not(:first-child) {
+  position: relative;
+  margin-left: 10px;
+  padding-left: 11px;
+}
+
+.footer .company-info li:not(:first-child):before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 1px;
+  height: 16px;
+  margin-top: -8px;
+  background: #555;
+}
+
+.footer .copyright {
+  margin-top: 30px;
+  color: #999;
+  font-size: 16px;
+}
+/*# sourceMappingURL=02.layout.css.map */

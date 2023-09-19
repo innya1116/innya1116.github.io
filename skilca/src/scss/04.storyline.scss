@@ -1,0 +1,198 @@
+@import '_global';
+
+.lca-tab {
+  ul {
+    display: flex;
+
+    li {
+      flex: 1;
+
+      a {
+        display: block;
+        height: 54px;
+        padding-top: 16px;
+        color: #222;
+        font-size: 18px;
+        text-align: center;
+        border-bottom: 1.5px solid rgba(#222,.44);
+      }
+
+      span {
+        font-weight: inherit;
+      }
+
+      &.is-active a {
+        font-weight: 700;
+        border-bottom: 3px solid #000;
+      }
+    }
+  }
+}
+
+.icon-tab {
+  height: 80px;
+
+  ul {
+    display: flex;
+    align-items: center;
+
+    li {
+      flex: 1;
+
+      &.is-active {
+        color: #2b7832;
+        font-size: 14px;
+        font-weight: 500;
+
+        &:before {
+          background-position-x: -90px;
+        }
+      }
+    }
+  }
+
+  .icon-company {
+    padding-top: 62px;
+    font-size: 14px;
+    color: #333;
+    background-size: 80px 56px;
+
+    @each $company-icon in $company-icons {
+      &--#{$company-icon} {
+        background-image: url($img--url+'icon-tab-#{$company-icon}-off.svg');
+      }
+    }
+
+    @each $company-icon in $company-icons {
+      &--#{$company-icon}.is-active {
+        background-image: url($img--url+'icon-tab-#{$company-icon}-on.svg');
+      }
+    }
+
+    &.is-active span {
+      font-size: 14px;
+      font-weight: 500;
+      color: #2b7832;
+    }
+  }
+}
+
+.storyline {
+  padding-top: 57px;
+  min-width: 1440px;
+
+  .contents {
+    padding: 0;
+  }
+
+  &__message {
+    margin: 90px 0 115px;
+    color: #222;
+
+    strong {
+      font-size: 60px;
+      font-weight: 700;
+    }
+
+    p {
+      margin-top: 17px;
+      font-size: 30px;
+      line-height: 1.67;
+      font-weight: 700;
+
+      em {
+        display: inline-block;
+        font-weight: inherit;
+        background: linear-gradient(to top, rgba(#bac8a6,.5) 50%, transparent 50%);
+      }
+    }
+  }
+
+  &__chart {
+    position: relative;
+    min-height: 802px;
+    margin-top: 88px;
+    padding-top: 136px;
+    background: url($img--url + 'bg-storyline-scope1and2.jpg') no-repeat 50% 50%;
+    background-size: cover;
+
+    &--scope3 {
+      background-image: url($img--url + 'bg-storyline-scope3.jpg');
+    }
+
+    &--net-zero {
+      background-image: url($img--url + 'bg-storyline-net-zero.jpg');
+    }
+
+    .swiper-pagination {
+      &-bullet {
+        background: none;
+        border: 1px solid $color--white;
+
+        &-active {
+          background: $color--white;
+        }
+      }
+    }
+
+    .lca-chart-grid {
+      padding: 0;
+      border-bottom: 0;
+
+      .lca-chart {
+        &:only-child {
+          margin: 0 260px;
+          padding: 0;
+          border: 0;
+        }
+
+        &--wide,
+        &--wide ~ .lca-chart {
+          .lca-chart__area {
+            height: 416px;
+          }
+        }
+
+        &__title {
+          font-size: 18px;
+          font-weight: 700;
+          color: $color--white;
+
+          &-wrap {
+            margin-bottom: 22px;
+            text-align: left;
+          }
+        }
+
+        &__area {
+          height: 440px;
+        }
+      }
+    }
+  }
+
+  .scroll-icon {
+    position: absolute;
+    right: 120px;
+    top: 236px;
+    display: inline-block;
+    padding: 30px 0 0 102px;
+    color: $color--white;
+    font-size: 14px;
+    font-weight: 700;
+    border-top: 1px solid rgba($color--white,.35);
+    transform: rotate(90deg);
+    transform-origin: 100% 100%;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: -1px;
+      left: 0;
+      display: inline-block;
+      width: 40px;
+      height: 1px;
+      background: $color--white;
+    }
+  }
+}

@@ -1,0 +1,184 @@
+@import '_global';
+
+.gateway {
+  width: 100%;
+  min-width: 1440px;
+  overflow: hidden;
+
+  &__menu {
+    position: relative;
+    display: flex;
+    align-items: stretch;
+    left: 50%;
+    width: 150%;
+    height: 100vh;
+    background: $color--black;
+    transform: translateX(-50%);
+    transition: transform .7s ease-in-out;
+
+    &.left {
+      transform: translateX(-35%);
+    }
+
+    &.right {
+      transform: translateX(-65%);
+    }
+  }
+
+  &__link {
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    width: 50%;
+    align-items: flex-end;
+    padding: 0 80px 180px;
+    color: $color--white;
+    vertical-align: bottom;
+
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      height: 100%;
+      display: inline-block;
+      background: rgba($color--black,.5);
+      transform: translate(-50%,-50%);
+    }
+
+    &:after {
+      opacity: 1;
+      transition: opacity .7s ease-out;
+    }
+
+    &:before {
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+      z-index: 100;
+    }
+
+    &.expand:after {
+      opacity: 0;
+    }
+
+    &--monitoring {
+      justify-content: flex-end;
+      text-align: right;
+
+      &:before {
+        background-image: url($img--url+'bg-gateway-monitoring.jpg');
+        background-position: 100% 50%;
+      }
+
+      &.expand:after {
+        animation: dimmed-change .7s ease-out forwards;
+
+        @keyframes dimmed-change {
+          0% {
+            opacity: 1;
+          }
+          50% {
+            top: 50%;
+            left: 50%;
+            height: 100%;
+            width: 100%;
+            background: rgba($color--black,.5);
+            transform: translate(-50%,-50%);
+            opacity: 0;
+          }
+          51% {
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 400px;
+            width: 1000px;
+            background: linear-gradient(340deg, rgba(#000, 0) 50%, rgba(#000, .4) 120%);
+            transform: translate(0, 0);
+            opacity: 0;
+          }
+          100% {
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 400px;
+            width: 1000px;
+            background: linear-gradient(340deg, rgba(#000, 0) 50%, rgba(#000, .4) 120%);
+            transform: translate(0, 0);
+            opacity: 1;
+          }
+        }
+      }
+
+      &.reduce .gateway__txt {
+        transform: translateX(55px);
+      }
+
+      .gateway__tit {
+        transform-origin: 100% 50%;
+      }
+    }
+
+    &--assessment {
+      &:before {
+        background-image: url($img--url+'bg-gateway-assessment.jpg');
+        background-position: 0% 50%;
+      }
+
+      &.reduce .gateway__txt {
+        transform: translateX(-55px);
+      }
+
+      .gateway__tit {
+        transform-origin: 0 50%;
+      }
+    }
+  }
+
+  &__txt {
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+    transition: transform .7s ease-in-out;
+  }
+
+  &__desc {
+    display: block;
+    font-size: 18px;
+    line-height: 1.67;
+  }
+
+  &__tit {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 8px;
+    font-size: 50px;
+    line-height: 62px;
+    transition: transform .7s ease-in-out;
+
+    &:after {
+      content: '';
+      width: 32px;
+      height: 32px;
+      margin: 0 8px 0 6px;
+      background: url($img--url+'icon-gateway-arrow.png') no-repeat 0 0;
+
+      .gateway__link--monitoring & {
+        order: -1;
+        transform: rotate(180deg);
+      }
+    }
+
+    .reduce & {
+      transform: scale(.7) !important;
+    }
+  }
+}

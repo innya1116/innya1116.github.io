@@ -1,0 +1,254 @@
+.guide {
+  padding: 24px;
+  font-size: 14px;
+
+  &-header {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 24px;
+    padding-bottom: 0;
+    background: #2D2D2D;
+    z-index: 999;
+  }
+
+  &-tit1 {
+    color: #fff;
+    font-size: 32px;
+    line-height: 1.2;
+    font-weight: 700;
+  }
+
+  &-nav {
+    .nav-depth1 {
+      display: flex;
+      position: relative;
+      margin: 24px -24px 0;
+      padding: 8px 24px 0;
+      background: rgba(255,255,255,.7);
+
+      a {
+        display: block;
+        padding: 12px 24px;
+        border-radius: 12px 12px 0 0;
+        font-size: 20px;
+
+        &.on {
+          background: #fff;
+          font-weight: bold;
+        }
+
+        &:hover,
+        &:focus {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .nav-depth2 {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 -24px;
+      padding: 16px 24px 8px;
+      background: #fff;
+      box-shadow: 0 1px 8px rgba(0,0,0,.15);
+
+      a {
+        display: block;
+        position: relative;
+        padding: 4px 24px;
+        color: #000;
+        opacity: .7;
+
+        &:after {
+          content: '';
+          position: absolute;
+          right: 0;
+          top: 50%;
+          width: 1px;
+          height: 16px;
+          transform: translateY(-50%);
+          background: #ccc;
+        }
+
+        &:last-child:after{
+          content: none;
+        }
+
+        &.on {
+          font-weight: bold;
+          text-decoration: underline;
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  &-content {
+    padding-top: 140px;
+  }
+
+  &-detail {
+    margin-top: 24px;
+
+    & > a {
+      text-decoration: underline;
+    }
+  }
+
+  &-tit2 {
+    display: block;
+    margin-top: 16px;
+    margin-bottom: 8px;
+    font-size: 20px;
+    font-weight: bold;
+
+    &.anchor-link {
+      text-decoration: underline;
+    }
+
+    & ~ & {
+      margin-top: 52px;
+    }
+  }
+
+  &-tit3 {
+    display: block;
+    margin-bottom: 16px;
+    font-size: 16px;
+    font-weight: 500;
+
+    & ~ & {
+      margin-top: 32px;
+    }
+  }
+
+  &-tit2 + &-tit3 {
+    margin-top: 16px;
+  }
+
+  &-info-list {
+    margin: 10px 0 10px 20px;
+
+    li {
+      line-height: 1.5;
+      list-style: disc;
+
+      &:not(:first-child) {
+        margin-top: 4px;
+      }
+
+      ul,
+      ol {
+        margin: 7px 0 7px 20px;
+      }
+
+      ul li {
+        list-style: circle;
+      }
+
+      ol li {
+        list-style: roman;
+      }
+    }
+  }
+
+  table {
+    border-collapse: collapse;
+    table-layout: fixed;
+    border-spacing: 0;
+  }
+
+  .filelist {
+    margin-top: 16px;
+    width: 100%;
+    counter-reset: row-number;
+
+    th,
+    td {
+      padding: 8px 4px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+    }
+
+    th {
+      font-weight: 500;
+    }
+
+    thead th {
+      background: #eee;
+    }
+
+    tbody tr {
+      counter-increment: row-number;
+
+      &:hover {
+        background: #f4f7f8;
+      }
+
+      td:first-child {
+        text-align: center;
+
+        &::before {
+          content: counter(row-number);
+        }
+      }
+
+      td:nth-last-child(2),
+      td:nth-last-child(3) {
+        text-align: center;
+      }
+    }
+  }
+
+  .code {
+    overflow: auto;
+    margin: 10px 0 15px;
+    padding: 10px;
+    background: #39393A;
+    color: #aaa;
+    font-size: 14px;
+    font-family: Consolas, 'suit', sans-serif;
+    white-space: pre-wrap;
+    word-break: break-all;
+    word-wrap: break-word;
+
+    span {
+      color: #FF7A00;
+      font-family: inherit;
+    }
+
+    i {
+      color: #74C27B;
+      font-family: inherit;
+    }
+  }
+
+  &-table {
+    border-top:1px solid #ccc;
+
+    th,
+    td {
+      padding:8px;
+      color:#111;
+      border-bottom:1px solid #ddd;
+      border-right:1px solid #ddd;
+      font-size:14px;
+
+      &:last-child {
+        border-right:none
+      }
+    }
+
+    th {
+      font-weight:500;
+      background:#f8f8f8;
+    }
+
+    .vt {
+      vertical-align: top !important;
+    }
+  }
+}

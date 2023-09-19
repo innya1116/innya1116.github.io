@@ -1,0 +1,43 @@
+======== 공통 ========
+[범례-Text]
+color: #000
+font-weight: 500
+font-size: 16px
+font-family: 'suit'
+
+[Hover영역 범례-Text]
+color: #000
+font-size: 16px
+font-family: 'suit'
+타이틀(있으면) - font-weight: bold
+범례 - font-weight: 500
+
+======== 도넛차트 ========
+[범례-Color]
+Color1: #d9745f / RGB(217,116,95)
+Color2: #d9895f / RGB(217,137,95)
+Color3: #e69b50 / RGB(230,155,80)
+Color4: #e9b150 / RGB(233,177,80)
+Color5: #f3c848 / RGB(243,200,72)
+Color6: #d1cead / RGB(209,206,173)
+Color7: #e8e5d3 / RGB(232,229,211)
+Color8: #c0d4c2 / RGB(192,212,194)
+Color9: #97afac / RGB(151,175,172)
+Color10: #a29183 / RGB(162,145,131)
+
+======== 막대차트 ========
+[범례-Color]
+범례없이 차트 컬러 적용 시 Color2 값 적용
+Color1: #e8e5d3 / RGB(232,229,211)
+Color2: #f3c848 / RGB(243,200,72)
+Color3: #e69b50 / RGB(230,155,80)
+
+[차트 내 Trend Text]
+color: #FF7A00
+font-weight: normal
+font-size: 14px
+font-family: 'suit'
+
+======== 맵차트 ========
+[차트 컬러]
+Color: #f3c848
