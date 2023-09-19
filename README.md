@@ -5,8 +5,8 @@
 삼성닷컴 글로벌 AEM 컴포넌트 마크업 개발/운영(2022.09 ~ 2023.02, 참여율 80%) - 마크업파트 PL<br>
 삼성닷컴 P6 About Samsung, B2B 확산(2021.01 ~ 2021.11, 참여율 50%) - 마크업파트 PL<br>
 삼성닷컴 P6 글로벌 사이트 구축(2019.12 ~ 2020.12, 참여율 30%) - 마크업파트 PA
-1. 사이트 url: 삼성닷컴(https://www.samsung.com/uk/),
-Bespoke Design Studio(https://www.samsung.com/uk/home-appliances/bespoke-design-studio/)
+1. 사이트 url: 삼성닷컴(<https://www.samsung.com/uk/>),
+Bespoke Design Studio(<https://www.samsung.com/uk/home-appliances/bespoke-design-studio/>)
 2. 담당업무: 삼성닷컴 AEM Component 신규 제작, 운영 및 Bespoke Design Studio 구축, 마크업 가이드 작성 및 신규 투입인력 교육
 3. 작업환경
 - HTML5(handlebars, yaml), CSS3(less) - Fractal build tool사용
