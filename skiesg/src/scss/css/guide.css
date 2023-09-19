@@ -1,0 +1,337 @@
+@charset "UTF-8";
+body {
+  min-width: 1440px;
+}
+
+.guide {
+  padding: 24px;
+  font-size: 15px;
+}
+
+.guide .tc {
+  text-align: center !important;
+}
+
+.guide .tl {
+  text-align: left !important;
+}
+
+.guide .tr {
+  text-align: right !important;
+}
+
+.guide .vt {
+  vertical-align: top !important;
+}
+
+.guide-header {
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 24px;
+  padding-bottom: 0;
+  background: #2D2D2D;
+  z-index: 999;
+}
+
+.guide-tit1 {
+  color: #fff;
+  font-size: 32px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.guide-nav .nav-depth1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  margin: 24px -24px 0;
+  padding: 8px 24px 0;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.guide-nav .nav-depth1 a {
+  display: block;
+  padding: 12px 24px;
+  border-radius: 12px 12px 0 0;
+  font-size: 20px;
+}
+
+.guide-nav .nav-depth1 a.on {
+  background: #fff;
+  font-weight: bold;
+}
+
+.guide-nav .nav-depth1 a:hover, .guide-nav .nav-depth1 a:focus {
+  text-decoration: underline;
+}
+
+.guide-nav .nav-depth2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 -24px;
+  padding: 15px 24px 8px;
+  background: #fff;
+  -webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);
+}
+
+.guide-nav .nav-depth2 a {
+  display: block;
+  position: relative;
+  padding: 4px 24px;
+  color: #000;
+  opacity: .7;
+}
+
+.guide-nav .nav-depth2 a:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 1px;
+  height: 15px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background: #ccc;
+}
+
+.guide-nav .nav-depth2 a:last-child:after {
+  content: none;
+}
+
+.guide-nav .nav-depth2 a.on {
+  font-weight: bold;
+  text-decoration: underline;
+  opacity: 1;
+}
+
+.guide-content {
+  padding-top: 150px;
+}
+
+.guide-section:not(:first-child) {
+  margin-top: 48px;
+}
+
+.guide-tit2 {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 24px;
+}
+
+.guide-tit2 ~ .guide-tit2 {
+  margin-top: 32px;
+}
+
+.guide-tit3 {
+  display: block;
+  margin-top: 24px;
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+
+.guide-tit3:before {
+  content: '[';
+}
+
+.guide-tit3:after {
+  content: ']';
+}
+
+.guide-info-list {
+  margin: 10px 0;
+}
+
+.guide-info-list li {
+  padding-left: 15px;
+  text-indent: -15px;
+  line-height: 1.5;
+}
+
+.guide-info-list li * {
+  text-indent: 0;
+}
+
+.guide-info-list li:before {
+  content: '-\00a0\00a0';
+}
+
+.guide-info-list li:not(:first-child) {
+  margin-top: 4px;
+}
+
+.guide-info-list li ul,
+.guide-info-list li ol {
+  margin: 7px 0;
+}
+
+.guide-info-list li ul li {
+  padding-left: 11px;
+  text-indent: -11px;
+}
+
+.guide-info-list li ul li:before {
+  content: '· ';
+}
+
+.guide-info-list li ol li {
+  list-style: roman;
+}
+
+.guide .guide-link {
+  text-decoration: underline;
+}
+
+.guide .guide-link:hover, .guide .guide-link:focus {
+  font-weight: bold;
+  color: #2B7832;
+}
+
+.guide-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.guide-grid > div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.guide table {
+  border-collapse: collapse;
+  table-layout: fixed;
+  border-spacing: 0;
+}
+
+.guide .filelist {
+  width: 100%;
+  counter-reset: row-number;
+}
+
+.guide .filelist th,
+.guide .filelist td {
+  padding: 8px 4px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  font-family: 'malgun gothic', sans-serif;
+}
+
+.guide .filelist th a,
+.guide .filelist td a {
+  font-size: 14px;
+  font-family: 'malgun gothic', sans-serif;
+}
+
+.guide .filelist thead th {
+  background: #eee;
+}
+
+.guide .filelist tbody tr {
+  counter-increment: row-number;
+}
+
+.guide .filelist tbody tr:hover {
+  background: #f4f7f8;
+}
+
+.guide .filelist tbody tr td:first-child {
+  text-align: center;
+}
+
+.guide .filelist tbody tr td:first-child::before {
+  content: counter(row-number);
+}
+
+.guide .filelist tbody tr td:nth-last-child(2),
+.guide .filelist tbody tr td:nth-last-child(3) {
+  text-align: center;
+}
+
+.guide .filelist tbody tr.del th,
+.guide .filelist tbody tr.del td {
+  text-decoration: line-through;
+  background: #eaeaea;
+}
+
+.guide .code {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  overflow: auto;
+  margin: 10px 0 20px;
+  padding: 10px;
+  background: #39393A;
+  color: #aaa;
+  font-size: 15px;
+  font-family: Consolas, 'suit', sans-serif;
+  white-space: pre-wrap;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+
+.guide .code b {
+  color: #f9ee98;
+  font-style: italic;
+  font-family: inherit;
+}
+
+.guide .code span {
+  color: #FF7A00;
+  font-family: inherit;
+}
+
+.guide .code i {
+  color: #74C27B;
+  font-family: inherit;
+}
+
+.guide .code em {
+  color: #ffe600;
+  font-family: inherit;
+}
+
+.guide-table {
+  border: 2px solid #ddd;
+  border-width: 2px 0;
+}
+
+.guide-table th,
+.guide-table td {
+  padding: 8px;
+  color: #111;
+  border: 1px solid #ddd;
+  font-size: 15px;
+}
+
+.guide-table tr > td:first-child,
+.guide-table tr > th:first-child {
+  border-left: none;
+}
+
+.guide-table tr > td:last-child,
+.guide-table tr > th:last-child {
+  border-right: none;
+}
+
+.guide-table th {
+  font-weight: 500;
+  background: #f8f8f8;
+}
+
+.guide-table thead th {
+  border-width: 2px 1px;
+}
+
+.guide-table tbody + tbody tr:first-child td {
+  border-top: 2px solid #ddd;
+}
+/*# sourceMappingURL=guide.css.map */

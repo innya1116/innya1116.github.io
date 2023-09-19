@@ -1,0 +1,54 @@
+.container--error {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: calc(100vh - 257px);
+  min-height: 800px;
+  padding: 40px 0 0;
+}
+
+.container--error .info-box {
+  padding-top: 257px;
+  text-align: center;
+  background: url("../images/img-error.jpg") no-repeat 50% 0;
+}
+
+.container--error .info-box__title {
+  color: #000;
+  font-size: 30px;
+  line-height: 38px;
+  font-weight: 500;
+}
+
+.container--error .info-box__description {
+  margin-top: 40px;
+  color: #333;
+  font-size: 18px;
+}
+
+.container--error .info-box__btn {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 480px;
+  height: 54px;
+  margin-top: 120px;
+  border-radius: 54px;
+  background: #2B7832;
+  color: #fff;
+  font-weight: 500;
+  font-size: 18px;
+}
+/*# sourceMappingURL=error.css.map */
