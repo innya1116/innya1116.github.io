@@ -1,4 +1,4 @@
-(function ($, window) {
+ï»¿(function ($, window) {
     var common = {
         el: {
             doc: $(document),
@@ -22,7 +22,7 @@
                     popup.basic.init($(el));
                 });
 
-                //±âÅ¸
+                //ê¸°íƒ€
                 etc.init();
 
                 //sms
@@ -52,11 +52,11 @@
         scrollEnabled: function () {
             common.el.body.css('overflow', '');
         },
-        //µõ show
+        //ë”¤ show
         dimmedShow: function () {
             var dimmed = $(common.selector.dimmed);
         },
-        //µõ hide
+        //ë”¤ hide
         dimmedHide: function () {
             var dimmed = $(common.selector.dimmed);
         },
@@ -90,7 +90,7 @@
                 var $this = $(e.currentTarget);
                 var strJumin1 = $this.val().length;
 
-                // ¼ºº° ¶óµğ¿À ÀÎÇ²¿¡¼­  backspace Å° ÀÔ·Â ½Ã Æ÷Ä¿½º ÀÚµ¿ÀÌµ¿ ¸·±â
+                // ì„±ë³„ ë¼ë””ì˜¤ ì¸í’‹ì—ì„œ  backspace í‚¤ ì…ë ¥ ì‹œ í¬ì»¤ìŠ¤ ìë™ì´ë™ ë§‰ê¸°
                 if (strJumin1 >= 6 && e.keyCode != 9 && e.keyCode != 16) {
                     $this.closest('.input').nextAll('.genderSelection').find('input').eq(0).focus();
                 }
@@ -141,11 +141,11 @@
             },
         },
         bind: function () {
-            // [¹ıÁ¤»ı³â¿ùÀÏ ÀÔ·Â] ¹ıÁ¤»ı³â¿ùÀÏ ÀÔ·Â ÈÄ ¼ºº° ¶óµğ¿À ÀÎÇ²À¸·Î Æ÷Ä¿½º ÀÌµ¿
+            // [ë²•ì •ìƒë…„ì›”ì¼ ì…ë ¥] ë²•ì •ìƒë…„ì›”ì¼ ì…ë ¥ í›„ ì„±ë³„ ë¼ë””ì˜¤ ì¸í’‹ìœ¼ë¡œ í¬ì»¤ìŠ¤ ì´ë™
             // $(sendFrmSms.selector.authPop).find(sendFrmSms.selector.frmJumin).eq(0).unbind('keyup.frmJumin1').bind('keyup.frmJumin1', $.proxy(this.handler.keyupFrmNJumin1, this));
         },
         CheckBtnAuth: function () {
-            // .inPop  > ³»ºÎ input ÀÔ·Â °ª ¸ğµÎ Ã¼Å© µÇ¾î ÀÖÀ» °æ¿ì button È°¼ºÈ­
+            // .inPop  > ë‚´ë¶€ input ì…ë ¥ ê°’ ëª¨ë‘ ì²´í¬ ë˜ì–´ ìˆì„ ê²½ìš° button í™œì„±í™”
             $(sendFrmSms.selector.authInPop)
                 .find('input[type=text]')
                 .unbind('keyup.checkBtnAuth')
@@ -171,11 +171,11 @@
         },
         methodes: {
             setStyleInp: function () {
-                //div.input > button.btnDel CSS Ãß°¡
+                //div.input > button.btnDel CSS ì¶”ê°€
                 etc.methodes.setCssBtnDel();
             },
             setCssBtnDel: function () {
-                // button.btnDel css right °ª ¼³Á¤ : div.rightBox°¡ ÀÖÀ¸¸é rightBox width°ª + 16 / ¾øÀ¸¸é 0
+                // button.btnDel css right ê°’ ì„¤ì • : div.rightBoxê°€ ìˆìœ¼ë©´ rightBox widthê°’ + 16 / ì—†ìœ¼ë©´ 0
                 var $rightBox;
                 $('.input button.btnDel').each(function () {
                     // $(this).css('right')
@@ -192,7 +192,7 @@
             addDashVal: function (e) {
                 var $this = $(this);
 
-                // .input.editable °æ¿ì »èÁ¦ ½Ã ÀüÃ¼  °ª »èÁ¦
+                // .input.editable ê²½ìš° ì‚­ì œ ì‹œ ì „ì²´  ê°’ ì‚­ì œ
                 if ($this.parent().hasClass('editable') && e.keyCode === 8) {
                     $(this).siblings('.cancel').trigger('click');
                 }
@@ -210,7 +210,7 @@
                 if ($this.prop('readonly') || $this.closest('.input').hasClass('editable')) {
                     return;
                 }
-                //ÀÔ·Â ³»¿ë »èÁ¦ ¹öÆ° È°¼ºÈ­
+                //ì…ë ¥ ë‚´ìš© ì‚­ì œ ë²„íŠ¼ í™œì„±í™”
                 if ($(this).val() == '') {
                     $this.siblings('button.btnDel').hide();
                 } else {
@@ -229,26 +229,26 @@
                     target = document.activeElement;
                 }
 
-                //ÀÔ·Â ³»¿ë »èÁ¦ ¹öÆ° ¼û±è
+                //ì…ë ¥ ë‚´ìš© ì‚­ì œ ë²„íŠ¼ ìˆ¨ê¹€
                 setTimeout(function () {
                     if ($this.siblings('button.btnDel').is(':visible') && !$(target).hasClass('btnDel')) {
                         $this.siblings('button.btnDel').hide();
                     }
-                }, 0); //Ãë¼Ò ¹öÆ° click ÀÌº¥Æ®°¡ ¸ÕÀú ½ÇÇà µÈ ÈÄ ¼³Á¤ ÇØ¾ß ÇÔ
+                }, 0); //ì·¨ì†Œ ë²„íŠ¼ click ì´ë²¤íŠ¸ê°€ ë¨¼ì € ì‹¤í–‰ ëœ í›„ ì„¤ì • í•´ì•¼ í•¨
             },
             keydownBtnCancel: function (e) {
                 var $this = $(this);
                 if (e.keyCode === 9 && e.shiftKey === false && !$this.parent('.input').hasClass('editable')) {
                     setTimeout(function () {
                         $this.hide();
-                    }, 0); //ie11¿¡¼­  Ãë¼Ò ¹öÆ°¿¡¼­ ÅÇÀ¸·Î ´ÙÀ½ ¿µ¿ª ÀÌµ¿½Ã Æ÷Ä¿½º ÀÒ¾î ½Ã°£ µÒ
+                    }, 0); //ie11ì—ì„œ  ì·¨ì†Œ ë²„íŠ¼ì—ì„œ íƒ­ìœ¼ë¡œ ë‹¤ìŒ ì˜ì—­ ì´ë™ì‹œ í¬ì»¤ìŠ¤ ìƒì–´ ì‹œê°„ ë‘ 
                 }
             },
             clickBtnAcco: function (e) {
                 var $this = $(this);
                 $this.closest('.accoBox').toggleClass('open');
 
-                //ÆË¾÷ ³ôÀÌ º¯°æ µÉ °æ¿ì scroll Å¬·¡½º Ã¼Å©
+                //íŒì—… ë†’ì´ ë³€ê²½ ë  ê²½ìš° scroll í´ë˜ìŠ¤ ì²´í¬
                 common.el.win.trigger('resize.pop');
             },
             changeAllAgreeInp: function (e) {
@@ -297,13 +297,13 @@
             },
         },
         bind: function () {
-            // ÈŞ´ëÆù ¹øÈ£ ÀÔ·Â ½Ã ÀÚµ¿À¸·Î dash(-) ÀÔ·Â
+            // íœ´ëŒ€í° ë²ˆí˜¸ ì…ë ¥ ì‹œ ìë™ìœ¼ë¡œ dash(-) ì…ë ¥
             $(etc.selector.inpDash).each(function () {
                 var $this = $(this);
                 $this.unbind('keyup.inpDash').bind('keyup.inpDash', $.proxy(etc.handler.addDashVal, this));
             });
 
-            //input class°¡ .inpNumber ÀÎ °æ¿ì ¼ıÀÚ¸¸ ÀÔ·Â
+            //input classê°€ .inpNumber ì¸ ê²½ìš° ìˆ«ìë§Œ ì…ë ¥
             $(etc.selector.inpNumber)
                 .not(etc.selector.frmPhoneNum)
                 .each(function () {
@@ -311,8 +311,8 @@
                     $this.unbind('keyup.inpNum').bind('keyup.inpNum', $.proxy(etc.handler.keyupInpNum, this));
                 });
 
-            // widget.js ¸ğ¹ÙÀÏ ³»¿ë
-            // input ³»¿ë ÀÔ·Â½Ã »èÁ¦ ¹öÆ° È°¼ºÈ­
+            // widget.js ëª¨ë°”ì¼ ë‚´ìš©
+            // input ë‚´ìš© ì…ë ¥ì‹œ ì‚­ì œ ë²„íŠ¼ í™œì„±í™”
             $('.input > input').each(function () {
                 var bt = $(this).parent().find('.btnDel'),
                     field = $(this),
@@ -325,10 +325,10 @@
                     label.hide();
                 }
                 bt.click(function (e) {
-                    //@ÅØ½ºÆ® »èÁ¦ ¹öÆ° ¼öÁ¤
+                    //@í…ìŠ¤íŠ¸ ì‚­ì œ ë²„íŠ¼ ìˆ˜ì •
                     var $this = $(this);
                     if ($this.hasClass('stop-bubble') == true) {
-                        e.stopPropagation(); //@2019-03-12 stop-bubble Å¬·¡½º Ãß°¡ ( Ã¼Å©¹Ú½º¾È¿¡ »èÁ¦ ¹öÆ°ÀÌ ÀÖ´Â °æ¿ì )
+                        e.stopPropagation(); //@2019-03-12 stop-bubble í´ë˜ìŠ¤ ì¶”ê°€ ( ì²´í¬ë°•ìŠ¤ì•ˆì— ì‚­ì œ ë²„íŠ¼ì´ ìˆëŠ” ê²½ìš° )
                     }
                     field.val('').focus();
                     bt.hide();
@@ -344,25 +344,25 @@
                     }
                 });
 
-                //input »èÁ¦ ¹öÆ° >  focusin ½Ã È°¼ºÈ­
+                //input ì‚­ì œ ë²„íŠ¼ >  focusin ì‹œ í™œì„±í™”
                 field.focusin(etc.handler.focusInpCl);
 
-                //input »èÁ¦ ¹öÆ° >  focusout ½Ã È°¼ºÈ­
+                //input ì‚­ì œ ë²„íŠ¼ >  focusout ì‹œ í™œì„±í™”
                 field.blur(etc.handler.focusOutInpCl);
 
-                //input »èÁ¦ ¹öÆ° > ÅÇÀÌµ¿ focusout ½Ã ¹öÆ° ºñÈ°¼³È­
+                //input ì‚­ì œ ë²„íŠ¼ > íƒ­ì´ë™ focusout ì‹œ ë²„íŠ¼ ë¹„í™œì„¤í™”
                 bt.keydown(etc.handler.keydownBtnCancel);
             });
 
-            //¾ÆÄÚµğ¾ğ
+            //ì•„ì½”ë””ì–¸
             $('.accoBox .accoTit button').unbind('click.btnAcco').bind('click.btnAcco', etc.handler.clickBtnAcco);
 
-            //ÀüÃ¼µ¿ÀÇ ¹öÆ° Å¬¸¯ ½Ã ÇÏÀ§ µ¿ÀÇ Ã¼Å©
+            //ì „ì²´ë™ì˜ ë²„íŠ¼ í´ë¦­ ì‹œ í•˜ìœ„ ë™ì˜ ì²´í¬
             $(etc.selector.allAgreeInp)
                 .unbind('change.allAgreeInp')
                 .bind('change.allAgreeInp', $.proxy(etc.handler.changeAllAgreeInp, this));
 
-            //ÇÏÀ§ µ¿ÀÇ Ã¼Å© ½Ã ¸ğµÎ Ã¼Å© µÇ¾î ÀÖÀ¸¸é ÀüÃ¼µ¿ÀÇ Ã¼Å©
+            //í•˜ìœ„ ë™ì˜ ì²´í¬ ì‹œ ëª¨ë‘ ì²´í¬ ë˜ì–´ ìˆìœ¼ë©´ ì „ì²´ë™ì˜ ì²´í¬
             $(etc.selector.subAgreeInp)
                 .unbind('change.subAgreeInp')
                 .bind('change.subAgreeInp', $.proxy(etc.handler.changeSubAgreeInp, this));
@@ -394,12 +394,12 @@
             },
             handler: {
                 resizePop: function (e) {
-                    //.authPopupInner ³ôÀÌ°¡ 615 ÀÌ»óÀÏ °æ¿ì div.authPopup ¿µ¿ª¿¡ scroll Å¬·¡½º Ãß°¡
+                    //.authPopupInner ë†’ì´ê°€ 615 ì´ìƒì¼ ê²½ìš° div.authPopup ì˜ì—­ì— scroll í´ë˜ìŠ¤ ì¶”ê°€
                     popup.basic.methodes.setClScrollpopLayer();
                 },
             },
             bind: function () {
-                //È­¸é »çÀÌÁî º¯°æ ½Ã div.authPopup scroll Å¬·¡½º Ã¼Å©
+                //í™”ë©´ ì‚¬ì´ì¦ˆ ë³€ê²½ ì‹œ div.authPopup scroll í´ë˜ìŠ¤ ì²´í¬
                 common.el.win.unbind('resize.pop').bind('resize.pop', $.proxy(popup.basic.handler.resizePop, this));
             },
             setProperty: function ($el) {
@@ -415,12 +415,12 @@
 
     // mvJs interface
     var mvJs = {
-        // js ÃÊ±âÈ­
+        // js ì´ˆê¸°í™”
         init: common.handler.ready,
         utils: {
-            //window ½ºÅ©·Ñ ºñÈ°¼ºÈ­
+            //window ìŠ¤í¬ë¡¤ ë¹„í™œì„±í™”
             scrollDisabled: utils.scrollDisabled,
-            //window ½ºÅ©·Ñ È°¼ºÈ­
+            //window ìŠ¤í¬ë¡¤ í™œì„±í™”
             scrollEnabled: utils.scrollEnabled,
             dimmedShow: utils.dimmedShow,
             dimmedHide: utils.dimmedHide,

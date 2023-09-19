@@ -1,4 +1,4 @@
-@charset 'euc-kr';
+ï»¿@charset 'euc-kr';
 
 .authPopup{overflow:hidden !important;letter-spacing:-1px}
 body.typeAuthPopup{overflow:hidden !important}
@@ -163,7 +163,7 @@ body.typeAuthPopup{overflow:hidden !important}
 .auth_waySelect > ul > li.cert a:before{background-image:url(/poc/img/auth/icon-certification-48px.png)}
 .auth_waySelect > ul > li.passPhone a:before{background-image:url(/poc/img/auth/icon-pass-phone.png)}
 
-/* 20220204 Ãß°¡ [OP002-18487] pass ÀÎÁõ¼­ ¾ÆÀÌÄÜ */
+/* 20220204 ì¶”ê°€ [OP002-18487] pass ì¸ì¦ì„œ ì•„ì´ì½˜ */
 .d_listType1 .pass{background:url(/poc/img/auth/bg-pass.gif) no-repeat 50% 50px}
 .d_listType1.type2 .pass{background:url(/poc/img/auth/bg-pass2.gif) no-repeat 50% 50px}
 .meCert .certList li.pass a{background:url(/poc/img/auth/bg-pass.png) no-repeat 30px 50%}

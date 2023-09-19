@@ -1,7 +1,7 @@
-/*청구요금*/
+﻿/*泥援ъ湲*/
 .charge_info .module{padding-bottom:30px}
 .charge_info .btnMore{margin:0 0 30px}
-.charge_info .module .en{font-family:'verdana','Malgun Gothic','맑은 고딕','돋움',Dotum,'굴림',Gulim, helvetica, Apple SD Gothic Neo, sans-serif !important}/* 190222_mac */
+.charge_info .module .en{font-family:'verdana','Malgun Gothic','留? 怨?','??',Dotum,'援대┝',Gulim, helvetica, Apple SD Gothic Neo, sans-serif !important}/* 190222_mac */
 .charge_info .module>dt{overflow:hidden}
 .charge_info .module>dt a{display:block;height:60px;line-height:58px;padding:0 80px 0 30px;background:#434159 url(/poc/img/myt/btn_open_close.gif) no-repeat 100% -60px}
 .charge_info .module.open>dt a{background-position:100% 0}
@@ -62,13 +62,13 @@ dd.detail .lineInfo .btnMore{padding-top:0;margin-top:-1px}
 .childFee .monthlyPrice .con{width:1114px}
 .childFee .totalInfo .monthlyPrice a.recently{margin-left:380px;margin-left:379px\9;*margin-left:380px}
 
-/*아이콘 정의*/
+/*??댁? ??*/
 .module>dt strong{display:inline-block;padding:0 0 0 33px;background:url(/poc/img/myt/ico_product_type.png) no-repeat}
-.module>dt strong.internet, dd.detail .module.on dt strong.internet{background-position:0 -82px}/* 인터넷 */
+.module>dt strong.internet, dd.detail .module.on dt strong.internet{background-position:0 -82px}/* ?명곕?*/
 dd.detail .module>dt strong.internet{background-position:0 18px}
-.module>dt strong.mobile, dd.detail .module.on dt strong.mobile{background-position:0 -282px}/* 휴대폰 */
+.module>dt strong.mobile, dd.detail .module.on dt strong.mobile{background-position:0 -282px}/* ?대??*/
 dd.detail .module>dt strong.mobile{background-position:0 -182px}
-.module>dt strong.phone, dd.detail .module.on dt strong.phone{background-position:0 -482px}/* 집전화 */
+.module>dt strong.phone, dd.detail .module.on dt strong.phone{background-position:0 -482px}/* 吏?? */
 dd.detail .module>dt strong.phone{background-position:0 -382px}
 .module>dt strong.btv, dd.detail .module.on dt strong.btv{background-position:0 -682px}/* IPTV */
 dd.detail .module>dt strong.btv{background-position:0 -582px}
@@ -80,21 +80,21 @@ dd.detail .module>dt strong.pocketfi{background-position:0 -982px}
 dd.detail .module>dt strong.tlogin{background-position:0 -1182px}
 .module>dt strong.pps, dd.detail .module.on dt strong.pps{background-position:0 -1482px}/* PPS */
 dd.detail .module>dt strong.pps{background-position:0 -1382px}
-.module>dt strong.smarthome, dd.detail .module.on dt strong.smarthome{background-position:0 -1682px}/* 스마트홈 */
+.module>dt strong.smarthome, dd.detail .module.on dt strong.smarthome{background-position:0 -1682px}/* ?ㅻ??명 */
 dd.detail .module>dt strong.smarthome{background-position:0 -1582px}
-.module>dt strong.tablet, dd.detail .module.on dt strong.tablet{background-position:0 -1882px}/* 태블릿 */
+.module>dt strong.tablet, dd.detail .module.on dt strong.tablet{background-position:0 -1882px}/* ?釉由?*/
 dd.detail .module>dt strong.tablet{background-position:0 -1782px}
 .module>dt strong.company_product, .module>dt strong.oksusu, .module>dt strong.nugu, .module>dt strong.microtransactions{background:url(/poc/img/myt/ico_product_type2.png) no-repeat}
-.module>dt strong.company_product, dd.detail .module.on dt strong.company_product{background-position:0 -575px}/* 기업상품 */
+.module>dt strong.company_product, dd.detail .module.on dt strong.company_product{background-position:0 -575px}/* 湲곗?? */
 dd.detail .module>dt strong.company_product{background-position:0 18px}
-.module>dt strong.oksusu, dd.detail .module.on dt strong.oksusu{background-position:0 -698px}/* 옥수수 */
+.module>dt strong.oksusu, dd.detail .module.on dt strong.oksusu{background-position:0 -698px}/* ?μ? */
 dd.detail .module>dt strong.oksusu{background-position:0 -118px}
 .module>dt strong.nugu, dd.detail .module.on dt strong.nugu{background-position:0 -821px}/* NUGU */
 dd.detail .module>dt strong.nugu{background-position:0 -245px}
-.module>dt strong.microtransactions, dd.detail .module.on dt strong.microtransactions{background-position:0 -947px}/* 법인소액결제 */
+.module>dt strong.microtransactions, dd.detail .module.on dt strong.microtransactions{background-position:0 -947px}/* 踰?몄?↔껐? */
 dd.detail .module>dt strong.microtransactions{background-position:0 -391px}
 
-/*상세내역*/
+/*??몃댁*/
 dd.detail .totalInfo{*zoom:1;background:#f3f3f5}
 dd.detail.total .totalInfo{border:2px solid #434159;border-width:0 2px}
 dd.detail .totalInfo:after{content:'';display:block;clear:both}
@@ -104,7 +104,7 @@ dd.detail .totalInfo:after{content:'';display:block;clear:both}
 .totalInfo .chrgDlType1 dt{color:#333;font-size:24px;line-height:30px}
 .totalInfo .chrgDlType1 dd{padding-top:10px}
 .totalInfo .chrgDlType1 dd strong{display:block;color:#ea002c;font-size:20px;line-height:26px}
-.totalInfo .chrgDlType1 dd strong .en{margin-right:5px;font-weight:normal; font-size:50px; line-height:60px; font-family:'verdana','Malgun Gothic','맑은 고딕','돋움',Dotum,'굴림',Gulim, helvetica, Apple SD Gothic Neo, sans-serif;letter-spacing:-5px;vertical-align:-4px}/* 190222_mac */
+.totalInfo .chrgDlType1 dd strong .en{margin-right:5px;font-weight:normal; font-size:50px; line-height:60px; font-family:'verdana','Malgun Gothic','留? 怨?','??',Dotum,'援대┝',Gulim, helvetica, Apple SD Gothic Neo, sans-serif;letter-spacing:-5px;vertical-align:-4px}/* 190222_mac */
 .totalInfo .chrgDlType1 dd p{padding-top:7px;font-size:16px;line-height:22px}
 .totalInfo .chrgDlType1 dd a{margin-top:25px;border-color:#ccc}
 .totalInfo .txtInfo{*zoom:1}
@@ -117,14 +117,14 @@ dd.detail .totalInfo:after{content:'';display:block;clear:both}
 .totalInfo [class*='chrgListType'] li em{float:left;font-size:16px}
 .totalInfo [class*='chrgListType'] li strong{float:right;max-width:220px;font-size:18px;text-align:right}
 .totalInfo [class*='chrgListType'] li img{vertical-align:middle}
-.totalInfo [class*='chrgListType'] li strong .en{margin-right:2px;font-size:19px;vertical-align:-2px;letter-spacing:-1px;font-family:'verdana','Malgun Gothic','맑은 고딕','돋움',Dotum,'굴림',Gulim, helvetica, Apple SD Gothic Neo, sans-serif}/* 190222_mac */
+.totalInfo [class*='chrgListType'] li strong .en{margin-right:2px;font-size:19px;vertical-align:-2px;letter-spacing:-1px;font-family:'verdana','Malgun Gothic','留? 怨?','??',Dotum,'援대┝',Gulim, helvetica, Apple SD Gothic Neo, sans-serif}/* 190222_mac */
 .totalInfo .chrgListType1 li .btnChg{display:inline-block;height:28px;margin-left:5px;padding:0 10px;border:1px solid #e4e4e4;background:#fff;font-size:13px;line-height:26px;text-align:center}
 .totalInfo .chrgListType1 li .btnChg:hover{color:#333;text-decoration:none}
 .totalInfo .chrgListType2{width:100%;margin:0;background:none}
 .totalInfo .chrgListType2 li{width:auto}
 .totalInfo .chrgListType2 li strong{max-width:380px;font-size:16px}
 .totalInfo .monthlyPrice{position:relative;margin-top:-51px;background:url(/poc/img/myt/bg_bar3.gif) repeat-x 0 51px}
-.totalInfo .monthlyPrice .en{font-family:'verdana','Malgun Gothic','맑은 고딕','돋움',Dotum,'굴림',Gulim, helvetica, Apple SD Gothic Neo, sans-serif}/* 190222_mac */
+.totalInfo .monthlyPrice .en{font-family:'verdana','Malgun Gothic','留? 怨?','??',Dotum,'援대┝',Gulim, helvetica, Apple SD Gothic Neo, sans-serif}/* 190222_mac */
 .totalInfo .monthlyPrice a.recently{display:block;position:relative;margin-left:390px;margin-left:389px\9;*margin-left:390px;z-index:10;height:50px;padding-right:1px;border:1px solid #ccc;border-right:0 none;background:#f9f9f9;color:#333;font-size:16px;line-height:48px;text-align:center;letter-spacing:-1px}
 .total .totalInfo .monthlyPrice a.recently{border-bottom:0 none}
 .totalInfo .monthlyPrice a.recently:hover{text-decoration:none}
@@ -205,7 +205,7 @@ dd.detail .b_checkPoint .fLeft .moreBtn{width:195px}
 .amountDetail .b_con .b_checkPoint .b_cp .fLeft{width:258px}
 .amountDetail .b_con .b_checkPoint .b_cp .b_cpCont{width:788px}
 
-/*로밍 청구요금 조회*/
+/*濡諛 泥援ъ湲 議고*/
 .roamingCon{padding:30px 28px 0}
 .roamingCon .contentsSearch{padding:25px 30px}
 .roamingCon .contentsSearch dt{font-weight:bold}
@@ -224,12 +224,12 @@ dd.detail .b_checkPoint .fLeft .moreBtn{width:195px}
 .roamingCon .amountList dl dd{width:50%}
 .roamingCon .amountList dl dd>ul>li>em{width:auto}
 
-/*연체요금조회*/
+/*?곗껜?湲議고*/
 .conBox4{position:relative;overflow:hidden;padding:25px 70px;margin-top:20px;border:1px solid #ccc}
 .conBox4 strong{display:block;min-height:72px;padding:8px 0 0 120px;background:url(/poc/img/myt/ico_more_view.png) no-repeat 0 0;color:#333;font-weight:normal; font-size:22px; line-height:30px; letter-spacing:-2px}/* 190222_mac */
 .conBox4 a{position:absolute;right:70px;top:50%;margin-top:-20px}
 
-/*조회 사용요금*/
+/*議고 ?ъ⑹湲*/
 .myt_product1.useFareList .lineInfo>li>a strong,.myt_product1.useFareList .lineInfo>li>a>span{float:left;cursor:pointer}
 .useFareList dd.detail{display:block}
 .useFareList .btn_close{background:#434159}
@@ -263,7 +263,7 @@ dd.detail .b_checkPoint .fLeft .moreBtn{width:195px}
 .useFareList .radioArea{display:inline-block;*display:inline;*zoom:1;padding:8px 20px 0 0}
 .useFareList .info_add>dl>dd.ppsTable{padding-bottom:50px}
 
-/*청구요금 팝업*/
+/*泥援ъ湲 ??*/
 .popCon .charge_info .module{padding-bottom:0}
 .popCon .charge_info .module>dt>span{display:block;height:60px;line-height:58px;padding:0 30px;background:#434159}
 .popCon .charge_info .module>dt .lCon>span{margin-left:10px;padding-left:11px}
@@ -285,7 +285,7 @@ dd.detail .b_checkPoint .fLeft .moreBtn{width:195px}
 .popCon .totalInfo.roaming table td>strong .en{font-size:30px;font-weight:normal;line-height:48px;letter-spacing:-3px;vertical-align:-4px}
 .popCon .totalInfo.roaming .chrgListType1 li{padding:5px 0 18px;margin:0}
 .popCon .totalInfo.roaming .chrgListType1 li+li{padding:18px 0 0;background:none}
-.popCon .totalInfo.roaming .chrgListType1 li strong{font-weight:bold; font-size:19px; font-family:'verdana', 'Malgun Gothic','맑은 고딕','돋움',Dotum,'굴림',Gulim, helvetica, Apple SD Gothic Neo, sans-serif; max-width:100%}/* 190222_mac */
+.popCon .totalInfo.roaming .chrgListType1 li strong{font-weight:bold; font-size:19px; font-family:'verdana', 'Malgun Gothic','留? 怨?','??',Dotum,'援대┝',Gulim, helvetica, Apple SD Gothic Neo, sans-serif; max-width:100%}/* 190222_mac */
 .popCon [class*='dtTit1_']{height:50px;font-size:16px;line-height:48px}
 .popCon .amountDetail{padding:30px 0 0;margin-top:0;border:0 none}
 .popCon .amountList dl{background-position:230px 0}
@@ -305,7 +305,7 @@ dd.detail .b_checkPoint .fLeft .moreBtn{width:195px}
 .feeInfoPop .amountList dl dd{width:543px}
 .feeInfoPop .amountList dl dd>ul>li>strong{width:167px}
 
-/*사용요금 팝업*/
+/*?ъ⑹湲 ??*/
 .cllQty{*zoom:1;margin:20px 0;border:1px solid #ccc;border-left:none}
 .cllQty:after{display:block;clear:both;content:''}
 .cllQty li{float:left;width:33%;padding:80px 0 28px;border-left:1px solid #ccc;background:url(/poc/img/myt/ico_callqty1.gif) no-repeat 50% 29px;text-align:center;font-size:16px;font-weight:bold;color:#333}
@@ -313,19 +313,19 @@ dd.detail .b_checkPoint .fLeft .moreBtn{width:195px}
 .cllQty li.qty3{background-image:url(/poc/img/myt/ico_callqty3.gif)}
 .cllQty li em{color:#f65d00}
 
-/*요금청구 팝업*/
+/*?湲泥援???*/
 .choiceBox{*zoom:1;padding:20px 0 20px 0;border:1px solid #e4e4e4}
 .choiceBox:after{display:block;clear:both;content:''}
 .choiceBox li{float:left;width:133px;margin-left:20px}
 .choiceBox li+li+li+li+li+li{margin-top:15px}
 
-/*납부내역*/
+/*?⑸??댁*/
 .payHistory .myt_product1 .lineInfo li>a>strong,.payHistory .myt_product1 .lineInfo li>a>span{float:left;cursor:pointer}
 .payHistory .myt_product1 .b_con .btn_close{border-color:#434159;background:#434159}
 .myt_product1 .lineInfo li>a em.total{float:right;height:59px;padding-right:80px;font-size:16px;color:#f65d00}
 .myt_product1 .lineInfo li>a em span{padding:0;margin:0 0 0 15px;background:none}
 .myt_product1 .lineInfo li>a em span.ko{color:#333;margin-top:-3px}
-.myt_product1 .lineInfo li>a em span.en{margin-right:2px;background:none;font-size:19px;font-family:'verdana','Malgun Gothic','맑은 고딕','돋움',Dotum,'굴림',Gulim, helvetica, Apple SD Gothic Neo, sans-serif;vertical-align:-2px}/* 190222_mac */
+.myt_product1 .lineInfo li>a em span.en{margin-right:2px;background:none;font-size:19px;font-family:'verdana','Malgun Gothic','留? 怨?','??',Dotum,'援대┝',Gulim, helvetica, Apple SD Gothic Neo, sans-serif;vertical-align:-2px}/* 190222_mac */
 .myt_product1 .lineInfo li.on>a em.total,.myt_product1 .lineInfo li.on a em span.ko{color:#fff;background:none}
 .payHistory .totalInfo{border-bottom:1px solid #ccc;background:#f3f3f5}
 .payHistory .totalInfo td{padding:40px}
@@ -334,14 +334,14 @@ dd.detail .b_checkPoint .fLeft .moreBtn{width:195px}
 .payHistory .totalInfo .chrgDlType1 dd a{margin-top:20px;border-color:#ccc}
 .payHistory .totalInfo td .period{overflow:hidden;padding-bottom:15px;margin-bottom:15px;background:url(/poc/img/myt/line_dashed.gif) repeat-x 0 100%;color:#333;line-height:24px}
 .payHistory .totalInfo td .period em{float:left;font-size:16px}
-.payHistory .totalInfo td .period strong{float:right;font-size:20px;font-family:'verdana','Malgun Gothic','맑은 고딕','돋움',Dotum,'굴림',Gulim, helvetica, Apple SD Gothic Neo, sans-serif;letter-spacing:-1px}/* 190222_mac */
+.payHistory .totalInfo td .period strong{float:right;font-size:20px;font-family:'verdana','Malgun Gothic','留? 怨?','??',Dotum,'援대┝',Gulim, helvetica, Apple SD Gothic Neo, sans-serif;letter-spacing:-1px}/* 190222_mac */
 [class*='paymentCon']{padding:40px 28px}
 [class*='paymentCon'] ~ [class*='paymentCon']{padding-top:0}
 .myt_product1 .paymentCon .tableType1 td:first-child{padding-right:0}
 [class*='paymentCon'] .titDep2, [class*='paymentCon'] .titDep3{display:inline-block;font-weight:normal}
 .paymentCon table td{padding-left:20px;padding-right:20px;letter-spacing:0;word-break:break-all}
 .paymentCon td.right{color:#333;font-weight:bold;letter-spacing:-1px}
-.paymentCon td .en{margin-right:2px;font-size:19px;font-family:'verdana','Malgun Gothic','맑은 고딕','돋움',Dotum,'굴림',Gulim, helvetica, Apple SD Gothic Neo, sans-serif;vertical-align:-2px}/* 190222_mac */
+.paymentCon td .en{margin-right:2px;font-size:19px;font-family:'verdana','Malgun Gothic','留? 怨?','??',Dotum,'援대┝',Gulim, helvetica, Apple SD Gothic Neo, sans-serif;vertical-align:-2px}/* 190222_mac */
 .paymentCon .checkbox label{padding-left:24px}
 .paymentCon dl dd{padding-bottom:1px}
 .paymentCon .refund .tableType1 th,.paymentCon .refund .tableType1 td{padding-left:10px !important;padding-right:10px !important}
@@ -353,7 +353,7 @@ dd.detail .b_checkPoint .fLeft .moreBtn{width:195px}
 .addRecord .module>dt a>span.month{color:#00a49a;background:url(/poc/img/myt/line_product1.gif) no-repeat 100% 20px}
 .addRecord .module>dt a em{float:right;font-size:16px;color:#f56d00;line-height:56px}
 .addRecord .module>dt a em span.ko{color:#333 !important;margin-right:15px}
-.addRecord .module>dt a em .en{margin-right:2px;font-size:19px;font-family:'verdana','Malgun Gothic','맑은 고딕','돋움',Dotum,'굴림',Gulim, helvetica, Apple SD Gothic Neo, sans-serif;vertical-align:-2px}/* 190222_mac */
+.addRecord .module>dt a em .en{margin-right:2px;font-size:19px;font-family:'verdana','Malgun Gothic','留? 怨?','??',Dotum,'援대┝',Gulim, helvetica, Apple SD Gothic Neo, sans-serif;vertical-align:-2px}/* 190222_mac */
 .addRecord .module.on>dt{background-color:#f3f3f5;background-position:100% -81px}
 .addRecord .module.on>dt a>span.month{color:#333}
 .addRecord .module .con{display:none;border:1px solid #ccc;border-width:0 1px 1px}
@@ -389,12 +389,12 @@ dd.detail .b_checkPoint .fLeft .moreBtn{width:195px}
 .priceTxt{margin:10px 0 -20px;text-align:right}
 .priceTxt>strong{font-size:16px;color:#333;vertical-align:5px}
 .priceTxt .price{display:inline-block;padding-left:20px;font-size:18px;font-weight:bold;color:#eb002d}
-.priceTxt .price em{font-weight:normal; font-size:40px; font-family:'Verdana','Malgun Gothic','맑은 고딕','돋움',Dotum,'굴림',Gulim, helvetica, Apple SD Gothic Neo, sans-serif; letter-spacing:-3px;vertical-align:-4px}/* 190222_mac */
+.priceTxt .price em{font-weight:normal; font-size:40px; font-family:'Verdana','Malgun Gothic','留? 怨?','??',Dotum,'援대┝',Gulim, helvetica, Apple SD Gothic Neo, sans-serif; letter-spacing:-3px;vertical-align:-4px}/* 190222_mac */
 .myt_product1 .childFee dd.detail{display:block;border:none}
 .myt_product1 .childFee dd.detail .con2{padding:20px 0 0}
 .myt_product1 .childFee dd.detail .con2 .tableType1{margin:0 15px}
 
-/*납부내역 팝업*/
+/*?⑸??댁 ??*/
 .infoTxtBox{*zoom:1;table-layout:fixed}
 .infoTxtBox.type1 th{color:#333;font-size:13px;padding:18px 18px 0 18px}
 .infoTxtBox.type1 th+th{border-left:1px solid #ccc}
@@ -411,7 +411,7 @@ dd.detail .b_checkPoint .fLeft .moreBtn{width:195px}
 .logoImg img{vertical-align:bottom}
 .logoImg img+img{margin-left:55px}
 
-/*사용요금*/
+/*?ъ⑹湲*/
 .amountUse table{text-align:center;border:1px solid #ccc}
 .amountUse td{border-left:1px solid #ccc}
 .amountUse td{padding:80px 0 30px}
@@ -422,7 +422,7 @@ dd.detail .b_checkPoint .fLeft .moreBtn{width:195px}
 .amountUse td dd{font-size:16px;font-weight:bold;color:#333}
 .amountUse td dd span{font-size:13px;font-weight:normal;color:#666}
 
-/*사용패턴*/
+/*?ъ⑺⑦?/
 .paymentCon .graphView .graphCont{border-bottom:0 none}
 .graph_barType1{text-align:center;background:url(/poc/img/myt/bg_graph_bar1.gif) repeat-x 0 107px}
 .graph_barType1 .graphArea{display:inline-block;*display:inline;*zoom:1;text-align:center}
@@ -430,7 +430,7 @@ dd.detail .b_checkPoint .fLeft .moreBtn{width:195px}
 .graph_barType1 .graphArea dl{float:left;position:relative;width:220px;height:410px;padding-top:60px}
 .graph_barType1 .graphArea dl+dl{margin-left:140px}
 .graph_barType1 .graphArea dt{position:absolute;left:50%;bottom:50px;width:220px;margin-left:-110px}
-.graph_barType1 .graphArea dt>strong{display:block;padding-bottom:12px;color:#333;font-weight:normal; font-size:30px; line-height:38px; font-family:'verdana','Malgun Gothic','맑은 고딕','돋움',Dotum,'굴림',Gulim, helvetica, Apple SD Gothic Neo, sans-serif;letter-spacing:-3px}/* 190222_mac */
+.graph_barType1 .graphArea dt>strong{display:block;padding-bottom:12px;color:#333;font-weight:normal; font-size:30px; line-height:38px; font-family:'verdana','Malgun Gothic','留? 怨?','??',Dotum,'援대┝',Gulim, helvetica, Apple SD Gothic Neo, sans-serif;letter-spacing:-3px}/* 190222_mac */
 .graph_barType1 .graphArea .graphBar{display:block;position:absolute;left:0;width:100px}
 .graph_barType1 .graphArea .totalBar{position:relative;height:250px;color:#f65d00}
 .graph_barType1 .graphArea .totalBar .graphBar{bottom:0;border-bottom:1px solid #f65d00;background:url(/poc/img/myt/bg_graph_bar1_1.png) no-repeat 50% 0}
@@ -439,7 +439,7 @@ dd.detail .b_checkPoint .fLeft .moreBtn{width:195px}
 .graph_barType1 .graphArea .barInfo{display:block;position:absolute;top:-60px;left:50%;width:140px;height:60px;margin-left:-70px;text-align:center}
 .graph_barType1 .graphArea .barInfo strong{display:block;color:#333;font-size:13px}
 .graph_barType1 .graphArea .barInfo em{font-weight:bold;font-size:18px;line-height:26px}
-.graph_barType1 .graphArea .barInfo em .en{margin-right:2px;font-weight:normal;font-size:22px;font-family:'verdana','Malgun Gothic','맑은 고딕','돋움',Dotum,'굴림',Gulim, helvetica, Apple SD Gothic Neo, sans-serif;letter-spacing:-2px;vertical-align:-2px}/* 190222_mac */
+.graph_barType1 .graphArea .barInfo em .en{margin-right:2px;font-weight:normal;font-size:22px;font-family:'verdana','Malgun Gothic','留? 怨?','??',Dotum,'援대┝',Gulim, helvetica, Apple SD Gothic Neo, sans-serif;letter-spacing:-2px;vertical-align:-2px}/* 190222_mac */
 .graph_barType1 .graphArea .btns{margin-top:60px}
 .useRateDetail{margin-top:40px;padding-top:35px;border-top:1px solid #e4e4e4}
 .graph_barType2{position:relative;padding-top:20px}
@@ -461,7 +461,7 @@ dd.detail .b_checkPoint .fLeft .moreBtn{width:195px}
 .graph_barType2 .graphArea .detailGraph dl.pat2 dd .gp{background-image:url(/poc/img/myt/bg_dgraph2.png);border-color:#666;color:#333}
 .graph_barType2 .graphArea .detailGraph dl.pat3 dd .gp{background-image:url(/poc/img/myt/bg_dgraph3.png);border-color:#f65d00;color:#f65d00}
 .graph_barType2 .graphArea .detailGraph dl dd .price{position:absolute;top:-30px;left:50%;width:90px;margin-left:-45px;font-size:16px;font-weight:bold;text-align:center;line-height:22px}
-.graph_barType2 .graphArea .detailGraph dl dd .price em{display:inline-block;margin-right:2px;font-size:19px;font-family:'verdana','Malgun Gothic','맑은 고딕','돋움',Dotum,'굴림',Gulim, helvetica, Apple SD Gothic Neo, sans-serif;font-weight:normal;letter-spacing:-2px;vertical-align:-2px}/* 190222_mac */
+.graph_barType2 .graphArea .detailGraph dl dd .price em{display:inline-block;margin-right:2px;font-size:19px;font-family:'verdana','Malgun Gothic','留? 怨?','??',Dotum,'援대┝',Gulim, helvetica, Apple SD Gothic Neo, sans-serif;font-weight:normal;letter-spacing:-2px;vertical-align:-2px}/* 190222_mac */
 
 .paymentCon.dayTimeUse{overflow:hidden;padding:40px 28px 50px;margin-bottom:43px;border:1px solid #ccc;border-width:1px 0}
 .paymentCon.dayTimeUse .txtInfo{clear:both}
@@ -480,7 +480,7 @@ dd.detail .b_checkPoint .fLeft .moreBtn{width:195px}
 .graph_barType3 ul li.fri .graphBar{border-color:#eb274c;background-image:url(/poc/img/myt/bg_graph_bar3_5.png)}
 .graph_barType3 ul li.sat .graphBar{border-color:#e91039;background-image:url(/poc/img/myt/bg_graph_bar3_6.png)}
 .graph_barType3 ul li.sun .graphBar{border-color:#de002a;background-image:url(/poc/img/myt/bg_graph_bar3_7.png)}
-.graph_barType3 ul li .graphBar .barInfo{position:absolute;top:-30px;left:50%;width:70px;height:30px;margin-left:-35px;color:#333;font-weight:normal;font-size:18px;line-height:26px;letter-spacing:-2px;font-family:'verdana','Malgun Gothic','맑은 고딕','돋움',Dotum,'굴림',Gulim, helvetica, Apple SD Gothic Neo, sans-serif}/* 190222_mac */
+.graph_barType3 ul li .graphBar .barInfo{position:absolute;top:-30px;left:50%;width:70px;height:30px;margin-left:-35px;color:#333;font-weight:normal;font-size:18px;line-height:26px;letter-spacing:-2px;font-family:'verdana','Malgun Gothic','留? 怨?','??',Dotum,'援대┝',Gulim, helvetica, Apple SD Gothic Neo, sans-serif}/* 190222_mac */
 .graph_barType3 ul li .graphBar .barInfo .num{margin-right:2px}
 .graph_barType4 ul{height:200px;padding-top:20px;margin-top:24px;background:url(/poc/img/myt/bg_bar.gif) repeat-y 70px 0}
 .graph_barType4 ul li{*zoom:1}
@@ -504,7 +504,7 @@ dd.detail .b_checkPoint .fLeft .moreBtn{width:195px}
 .excelDown .txt{padding-top:15px}
 .excelDown a{position:absolute;top:50%;right:70px;margin-top:-20px}
 
-/*상품자세히보기*/
+/*????명蹂닿린*/
 .fNomal{font-weight:normal}
 .DetailBox{border:1px solid #ccc;padding-left:165px}
 .DetailBox.bg1{background:url(/poc/img/myt/bg_detail01.gif) no-repeat 60px 50%}
@@ -531,7 +531,7 @@ dd.detail .b_checkPoint .fLeft .moreBtn{width:195px}
 .DetailBoxList .bg4 dt{background-position:50% -331px}
 .DetailBoxList dd{margin-top:10px;letter-spacing:-1px}
 
-/*납부내역*/
+/*?⑸??댁*/
 .total .totalTxt{border-left:2px solid #434159;border-right:2px solid #434159}
 .totalTxt{font-size:20px;letter-spacing:-1px;padding-top:20px}
 .totalTxt div{border-top:1px solid #ccc;background:#f5f5f5;padding:30px 0 30px;text-align:center}
@@ -540,7 +540,7 @@ dd.detail .b_checkPoint .fLeft .moreBtn{width:195px}
 .priceTxt.line{padding-top:10px;border-bottom:1px solid #ccc;line-height:65px;margin:0}
 
 
-/* 보관함 - 스와이프 공통 */
+/* 蹂닿???- ?ㅼ?댄 怨듯?*/
 .slideBox2{position:relative}
 .slideBox2>button{position:absolute;top:50%;margin-top:-20px;width:23px;height:41px;background:url(/poc/img/myt/sp_coupon.png) no-repeat}
 .slideBox2 .btnPrev{left:0}
@@ -551,18 +551,18 @@ dd.detail .b_checkPoint .fLeft .moreBtn{width:195px}
 .slideBox2 .slideCon2>ul>li>div{display:inline-block;*display:inline;*zoom:1;vertical-align:middle}
 .slideBox2 .slideCon2>ul>li>div+div{margin-left:15px}
 
-/* 보관함 - 담은 상품 */
+/* 蹂닿???- ?댁 ?? */
 .lockerTop{overflow:hidden;width:1098px;height:159px;padding:30px 40px;border:1px solid #ccc;background:#f5f5f5}
 .lockerTop .tit{float:left;width:370px;padding-top:50px}
 .lockerTop .tit h2{color:#333;font-size:30px;line-height:35px}
 .lockerTop .tit p{padding-top:20px;color:#666;font-size:16px}
-.lockerTop .list{float:left;width:728px} /* 200325 [OP002-7436] 수정_01 */
+.lockerTop .list{float:left;width:728px} /* 200325 [OP002-7436] ??_01 */
 .lockerTop .list li{position:relative;display:inline-block;*display:inline;*zoom:1;margin-left:30px}
 .lockerTop .list li strong{display:block;width:120px;height:50px;padding-top:70px;background:url(/poc/img/myt/bg_loocker_ico.png) no-repeat 0 0;font-weight:bold;font-size:14px;color:#666;text-align:center;letter-spacing:-1px}
 .lockerTop .list li+li strong{background-position:-120px 0}
 .lockerTop .list li+li+li strong{background-position:-240px 0}
 .lockerTop .list li+li+li+li strong{background-position:-360px 0}
-.lockerTop .list li .num{display:block;position:absolute;right:0;top:67px;width:50px;height:50px;text-align:center;background:url(/poc/img/myt/bg_using_list2.png) no-repeat;font-size:24px;font-family:'verdana','Malgun Gothic','맑은 고딕','돋움',Dotum,'굴림',Gulim, helvetica, Apple SD Gothic Neo, sans-serif;color:#fff;line-height:50px}/* 190222_mac */
+.lockerTop .list li .num{display:block;position:absolute;right:0;top:67px;width:50px;height:50px;text-align:center;background:url(/poc/img/myt/bg_using_list2.png) no-repeat;font-size:24px;font-family:'verdana','Malgun Gothic','留? 怨?','??',Dotum,'援대┝',Gulim, helvetica, Apple SD Gothic Neo, sans-serif;color:#fff;line-height:50px}/* 190222_mac */
 .lockerTop .list li .btn{display:inline-block;margin-top:10px;min-width:110px;height:30px;padding:0 15px;line-height:28px;background:#757380;color:#fff;line-height:27px\0IE;*line-height:30px;text-align:center;font-size:13px;font-weight:bold;vertical-align:middle}
 
 .serviceList .resultTxt{padding:60px 0 30px;font-size:30px;line-height:35px;color:#333;text-align:center}
@@ -582,16 +582,16 @@ dd.detail .b_checkPoint .fLeft .moreBtn{width:195px}
 
 .productBox{position:relative;width:329px;height:358px;padding:40px 10px 50px;border:1px solid #ccc;text-align:center}
 .productBox dt{padding-bottom:20px}
-.productBox dt .tit{display:block;height:64px;padding-top:20px}/* 180130 TWD 메뉴 순서 변경 요청_수정 */
+.productBox dt .tit{display:block;height:64px;padding-top:20px}/* 180130 TWD 硫???? 蹂寃??泥_?? */
 .productBox dt .tit:hover{color:#333}
 .productBox dt .tit strong{display:block;font-size:14px;color:#333}
-.productBox dt .tit em{padding-top:6px;display:block;font-size:24px;color:#333;line-height:30px}/* 180130 TWD 메뉴 순서 변경 요청_수정 */
+.productBox dt .tit em{padding-top:6px;display:block;font-size:24px;color:#333;line-height:30px}/* 180130 TWD 硫???? 蹂寃??泥_?? */
 .productBox dd .img{padding-bottom:10px}
 .productBox dd .img img{width:110px;height:110px}
 .productBox dd .conTxt{height:73px;padding-top:10px;font-size:16px;line-height:22px;text-align:center}
 .productBox dd .txt{padding:10px 0 30px;font-size:16px;line-height:20px;font-weight:bold;color:#f65d00}
 .productBox dd .price{padding:30px 0;color:#f65d00}
-.productBox dd .price strong{display:block;font-weight:normal; font-size:30px; line-height:35px; font-family:  'Verdana','Malgun Gothic','맑은 고딕','돋움',Dotum,'굴림',Gulim, helvetica, Apple SD Gothic Neo, sans-serif; letter-spacing:-2px}/* 190222_mac */
+.productBox dd .price strong{display:block;font-weight:normal; font-size:30px; line-height:35px; font-family:  'Verdana','Malgun Gothic','留? 怨?','??',Dotum,'援대┝',Gulim, helvetica, Apple SD Gothic Neo, sans-serif; letter-spacing:-2px}/* 190222_mac */
 .productBox dd .price em{margin-left:2px;font-size:18px;font-weight:bold;vertical-align:middle}
 .productBox dd .price span{font-size:16px;font-weight:bold}
 .productBox dd .btnS{border:1px solid #757380}
@@ -637,7 +637,7 @@ dd.detail .b_checkPoint .fLeft .moreBtn{width:195px}
 .phoneBox .volumeInfo{display:inline-block;*display:inline;*zoom:1;width:65px;height:25px;line-height:25px;background:url(/poc/img/util/bg_volume.png) no-repeat 0 0;color:#666;font-size:13px;text-align:center}
 .phoneBox .color li{border:1px solid #cfcfcf;-webkit-border-radius:50px;-moz-border-radius:50px;-o-border-radius:50px;border-radius:50px;text-indent:-9999em;*text-indent:0;font-size:0;line-height:0}
 .phoneBox dd .price{padding:30px 0;color:#f65d00}
-.phoneBox dd .price strong{display:block;font-weight:normal; font-size:30px; line-height:35px; font-family:'verdana','Malgun Gothic','맑은 고딕','돋움',Dotum,'굴림',Gulim, helvetica, Apple SD Gothic Neo, sans-serif;letter-spacing:-2px}/* 190222_mac */
+.phoneBox dd .price strong{display:block;font-weight:normal; font-size:30px; line-height:35px; font-family:'verdana','Malgun Gothic','留? 怨?','??',Dotum,'援대┝',Gulim, helvetica, Apple SD Gothic Neo, sans-serif;letter-spacing:-2px}/* 190222_mac */
 .phoneBox dd .price em{margin-left:2px;font-size:18px;font-weight:bold;vertical-align:middle}
 .phoneBox dd .price span{font-size:16px;font-weight:bold}
 .phoneBox dd .price{padding:50px 0 15px}
@@ -645,11 +645,11 @@ dd.detail .b_checkPoint .fLeft .moreBtn{width:195px}
 .phoneBox dd .price .saleCost{padding-left:15px;background:url(/poc/img/myt/bg_ico_sale.png) no-repeat 0 10px;font-size:24px;font-weight:bold;color:#ea002c}
 .phoneBox dd .price .saleCost2{padding-left:15px;background:url(/poc/img/myt/bg_ico_sale2.png) no-repeat 0 10px;font-size:24px;font-weight:bold;color:#ea002c}
 .phoneBox dd .price2{padding-bottom:25px;font-size:18px;font-weight:bold;color:#f65d00}
-.phoneBox dd .price2 em{font-weight:normal; font-size:30px; font-family:'verdana','Malgun Gothic','맑은 고딕','돋움',Dotum,'굴림',Gulim, helvetica, Apple SD Gothic Neo, sans-serif;letter-spacing:-2px;vertical-align:-2px}/* 190222_mac */
+.phoneBox dd .price2 em{font-weight:normal; font-size:30px; font-family:'verdana','Malgun Gothic','留? 怨?','??',Dotum,'援대┝',Gulim, helvetica, Apple SD Gothic Neo, sans-serif;letter-spacing:-2px;vertical-align:-2px}/* 190222_mac */
 .phoneBox dd .price3{padding:50px 0 13px}
 .phoneBox dd .price3 .txt{display:block;padding:10px 0;font-size:15px;color:#666}
 .phoneBox dd .price3 .txt+strong{}
-.phoneBox dd .price3 strong{display:block; font-weight:normal; font-size:30px; line-height:35px; font-family:'verdana','Malgun Gothic','맑은 고딕','돋움',Dotum,'굴림',Gulim, helvetica, Apple SD Gothic Neo, sans-serif;letter-spacing:-2px;color:#f65d00}/* 190222_mac */
+.phoneBox dd .price3 strong{display:block; font-weight:normal; font-size:30px; line-height:35px; font-family:'verdana','Malgun Gothic','留? 怨?','??',Dotum,'援대┝',Gulim, helvetica, Apple SD Gothic Neo, sans-serif;letter-spacing:-2px;color:#f65d00}/* 190222_mac */
 .phoneBox dd .price3 em{margin-left:2px;font-size:18px;font-weight:bold;vertical-align:middle}
 .phoneBox dd .btnS{border:1px solid #757380}
 .phoneBox .endTxt{display:block;position:absolute;top:50%;left:50%;width:170px;height:105px;margin:-85px 0 0 -85px;padding-top:65px;background:url(/poc/img/myt/bg_end.png) no-repeat;z-index:1;color:#fff;text-align:center;font-size:20px;letter-spacing:-1px}
@@ -665,7 +665,7 @@ dd.detail .b_checkPoint .fLeft .moreBtn{width:195px}
 .cholateBox .price .firstCost{font-size:16px;text-decoration:line-through}
 .cholateBox .price .saleCost{padding-left:15px;background:url(/poc/img/myt/bg_ico_sale.png) no-repeat 0 10px;font-size:24px;font-weight:bold;color:#ea002c}
 .cholateBox .price2{padding-bottom:20px;font-size:16px;font-weight:bold;color:#f65d00}
-.cholateBox .price2 em{font-weight:normal; font-size:30px; font-family:'verdana','Malgun Gothic','맑은 고딕','돋움',Dotum,'굴림',Gulim, helvetica, Apple SD Gothic Neo, sans-serif;letter-spacing:-2px}/* 190222_mac */
+.cholateBox .price2 em{font-weight:normal; font-size:30px; font-family:'verdana','Malgun Gothic','留? 怨?','??',Dotum,'援대┝',Gulim, helvetica, Apple SD Gothic Neo, sans-serif;letter-spacing:-2px}/* 190222_mac */
 .cholateBox dd .btnS{border:1px solid #757380}
 .cholateBox .endTxt{display:block;position:absolute;top:50%;left:50%;width:170px;height:105px;margin:-85px 0 0 -85px;padding-top:65px;background:url(/poc/img/myt/bg_end.png) no-repeat;z-index:1;color:#fff;text-align:center;font-size:20px;letter-spacing:-1px}
 .cholateBox .dimed{display:none;position:absolute;top:0;left:0;width:100%}
@@ -684,7 +684,7 @@ dd.detail .b_checkPoint .fLeft .moreBtn{width:195px}
 .lockerInfoBox dl dt{font-size:16px}
 .lockerInfoBox dl dd{padding-top:15px}
 
-/* 보관함 - 나의 쿠폰 */
+/* 蹂닿???- ?? 荑??*/
 .myCoupon .sorting{background:#f7f7f7;text-align:center;border:1px solid #ccc;padding:15px 0}
 .myCoupon .slideNavi{bottom:-45px}
 .myCoupon .couponList{width:1120px;height:315px;overflow:hidden;margin:0 auto;*zoom:1}  
@@ -699,7 +699,7 @@ dd.detail .b_checkPoint .fLeft .moreBtn{width:195px}
 .myCoupon .couponType1 .wCircle.oneLine{height:40px;padding-top:22px}
 .myCoupon .couponType1 .wCircle.twoLine{height:48px;padding-top:14px;line-height:17px}
 .myCoupon .couponType1 .tit{display:block;font-size:18px;color:#111;margin-bottom:5px}
-.myCoupon .couponType1 [class^='saleTxt'] em{font-weight:normal; font-size:60px; font-family:'verdana','Malgun Gothic','맑은 고딕','돋움',Dotum,'굴림',Gulim, helvetica, Apple SD Gothic Neo, sans-serif;line-height:65px}/* 190222_mac */
+.myCoupon .couponType1 [class^='saleTxt'] em{font-weight:normal; font-size:60px; font-family:'verdana','Malgun Gothic','留? 怨?','??',Dotum,'援대┝',Gulim, helvetica, Apple SD Gothic Neo, sans-serif;line-height:65px}/* 190222_mac */
 .myCoupon .couponType1 .saleTxt1{font-size:50px;line-height:55px;color:#111;letter-spacing:-5px}
 .myCoupon .couponType1 .saleTxt1 em{vertical-align:-8px}
 .myCoupon .couponType1 .saleTxt2{font-size:18px;line-height:23px;color:#111;letter-spacing:-5px}
@@ -717,7 +717,7 @@ dd.detail .b_checkPoint .fLeft .moreBtn{width:195px}
 .myCoupon .couponType2{position:relative;height:235px;padding:40px 50px 40px 150px}
 .myCoupon .couponType2 .cardNumber strong{display:inline-block;*display:inline;*zoom:1;vertical-align:middle;font-size:18px;line-height:23px;background:url(/poc/img/myt/ico_card.gif) no-repeat 0 50%;padding-left:35px}
 .myCoupon .couponType2 .cardNumber .flag{display:inline-block;*display:inline;*zoom:1;vertical-align:middle;margin-left:5px}
-.myCoupon .couponType2 .cardNumber em{display:block;font-size:18px;line-height:23px;font-family:'verdana','Malgun Gothic','맑은 고딕','돋움',Dotum,'굴림',Gulim, helvetica, Apple SD Gothic Neo, sans-serif;margin-top:5px}/* 190222_mac */
+.myCoupon .couponType2 .cardNumber em{display:block;font-size:18px;line-height:23px;font-family:'verdana','Malgun Gothic','留? 怨?','??',Dotum,'援대┝',Gulim, helvetica, Apple SD Gothic Neo, sans-serif;margin-top:5px}/* 190222_mac */
 .myCoupon .couponType2 .couponCont{padding-top:20px}
 .myCoupon .couponType2 .couponCont strong{display:block;font-size:26px;line-height:31px;color:#111;font-weight:normal;letter-spacing:-2px}
 .myCoupon .couponType2 .couponCont em{display:block;font-size:14px;line-height:19px;margin-top:10px;letter-spacing:-1px}
@@ -781,17 +781,17 @@ dd.detail .b_checkPoint .fLeft .moreBtn{width:195px}
 .myCoupon.pmCp .checkbox label{width:40px;height:40px;background:url(/poc/img/common/sp_input3.png) no-repeat -60px 0;padding:0}
 .myCoupon.pmCp .checkbox.checked label{background-position:0 0}
 
-/* 소셜 쿠폰 사용안내 팝업*/
+/* ?? 荑???ъ⑹????*/
 .promotionCode{border:1px solid #ccc;text-align:center;padding:15px 0;color:#333}
 .promotionCode strong{font-size:18px;line-height:23px;margin-left:5px}
 a.socialLink{display:inline-block;*display:inline;*zoom:1;margin-top:5px;color:#4131d3;text-decoration:underline;line-height:19px}
 
-/* 적용대상 보기 팝업 */
+/* ??⑸? 蹂닿린 ?? */
 .discountCoupon{width:379px;height:183px;margin:0 auto;background:url(/poc/img/myt/bg_discount_coupon.gif) no-repeat 0 0;text-align:center}
 .discountCoupon dl{padding-top:30px}
 .discountCoupon dl dt{font-size:18px;line-height:23px;color:#111;font-weight:bold}
 .discountCoupon dl dd.price{font-size:18px;line-height:23px;color:#f65d00;font-weight:bold}
-.discountCoupon dl dd.price strong{font-weight:normal; font-size:40px; font-family:'verdana','Malgun Gothic','맑은 고딕','돋움',Dotum,'굴림',Gulim, helvetica, Apple SD Gothic Neo, sans-serif; line-height:45px;letter-spacing:-4px;vertical-align:-4px;margin-right:5px}/* 190222_mac */
+.discountCoupon dl dd.price strong{font-weight:normal; font-size:40px; font-family:'verdana','Malgun Gothic','留? 怨?','??',Dotum,'援대┝',Gulim, helvetica, Apple SD Gothic Neo, sans-serif; line-height:45px;letter-spacing:-4px;vertical-align:-4px;margin-right:5px}/* 190222_mac */
 .discountCoupon dl dd.couponInfor{padding-top:20px}
 .discountCoupon dl dd.couponInfor ul{display:inline-block;*display:inline;*zoom:1;margin:0 auto}
 .discountCoupon dl dd.couponInfor ul li{text-align:left}
@@ -803,7 +803,7 @@ a.socialLink{display:inline-block;*display:inline;*zoom:1;margin-top:5px;color:#
 .appliesList ul li .txt{float:left;color:#333;line-height:23px}
 .appliesList ul li a{float:right}
 
-/*보관함_폰꾸미기*/
+/*蹂닿????곌씀誘멸린*/
 .playonList{overflow:hidden}
 .playonList ul{width:1200px;margin-left:-20px;*zoom:1}
 .playonList ul:after{display:block;content:'';clear:both}
@@ -814,13 +814,13 @@ a.socialLink{display:inline-block;*display:inline;*zoom:1;margin-top:5px;color:#
 .playonList li dt+dd{height:70px;margin-top:20px}
 .playonList li dt+dd.noTax{height:60px;margin-top:30px}
 .playonList li dd{font-size:18px;font-weight:bold;color:#f65d00}
-.playonList li dd em{font-weight:normal; font-size:30px; line-height:34px; font-family:'verdana','Malgun Gothic','맑은 고딕','돋움',Dotum,'굴림',Gulim, helvetica, Apple SD Gothic Neo, sans-serif;letter-spacing:-2px;vertical-align:-3px;}/* 190222_mac */
+.playonList li dd em{font-weight:normal; font-size:30px; line-height:34px; font-family:'verdana','Malgun Gothic','留? 怨?','??',Dotum,'援대┝',Gulim, helvetica, Apple SD Gothic Neo, sans-serif;letter-spacing:-2px;vertical-align:-3px;}/* 190222_mac */
 .playonList li dd span{display:block;margin-top:8px;font-size:16px;line-height:18px}
 .playonList li dd.downDate{font-size:13px;font-weight:normal;color:#666}
 .playonList li .btnDel{position:absolute;top:25px;right:25px;width:20px;height:20px;background:url(/poc/img/myt/btn_del_coupon.gif) no-repeat 0 0}
 .playonList li .btnDel span{overflow:hidden;width:100%;height:1px;*height:0px;margin-top:-1px;font-size:0;line-height:0;text-indent:-9999px}
 
- /*다이렉트샵 */
+ /*?ㅼ대?몄?*/
 .sortingBox .selectTab{overflow:hidden;width:1178px;margin-bottom:20px;padding:15px 0;background:#f7f7f7;border:1px solid #ccc;text-align:center} 
 .sortingBox .selectTab .checkbox{margin-left:30px}
 .sortingBox .selectTab .checkbox:first-child{margin-left:0}
@@ -864,17 +864,17 @@ a.socialLink{display:inline-block;*display:inline;*zoom:1;margin-top:5px;color:#
 .PurchaseList table tr.total dl dd{position:absolute;top:-18px;*top:-9px;right:0;font-size:16px}
 .PurchaseList table tr.total dl dd span{font-size:40px;color:#ea002c}
 .PurchaseList table tr.total dl dd em{font-size:18px;color:#ea002c;font-weight:bold}
-.PurchaseList strong.internet{background-position:0 -80px}/* 인터넷 */
-.PurchaseList strong.mobile{background-position:0 -280px}/* 휴대폰 */
-.PurchaseList strong.phone{background-position:0 -480px}/* 집전화 */
+.PurchaseList strong.internet{background-position:0 -80px}/* ?명곕?*/
+.PurchaseList strong.mobile{background-position:0 -280px}/* ?대??*/
+.PurchaseList strong.phone{background-position:0 -480px}/* 吏?? */
 .PurchaseList strong.btv{background-position:0 -680px}/* IPTV */
 .PurchaseList strong.wibro{background-position:0 -880px}/* T WiBro */
 .PurchaseList strong.pocketfi{background-position:0 -1080px}/* T pocket-Fi */
 .PurchaseList strong.tlogin{background-position:0 -1280px}/* T login */
 .PurchaseList strong.pps{background-position:0 -1480px}/* PPS */
-.PurchaseList strong.smarthome{background-position:0 -1680px}/* 스마트홈 */
-.PurchaseList strong.tablet{background-position:0 -1880px}/* 태블릿 */
-.PurchaseList strong.accessory{background-position:0 -2080px}/* 액세서리 */
+.PurchaseList strong.smarthome{background-position:0 -1680px}/* ?ㅻ??명 */
+.PurchaseList strong.tablet{background-position:0 -1880px}/* ?釉由?*/
+.PurchaseList strong.accessory{background-position:0 -2080px}/* ?≪몄由?*/
 
 .popGuidTable{border:1px solid #e4e4e4}
 .popGuidTable td:first-child{padding:0;text-align:center}
@@ -903,7 +903,7 @@ a.socialLink{display:inline-block;*display:inline;*zoom:1;margin-top:5px;color:#
 .StarScoreList .star4{background-position:0 -31px}
 .StarScoreList .star5{background-position:0 0}
 
-/*나의 쇼핑 상세*/
+/*?? ?쇳 ???/
 .PurchaseList table .grayType{background:#fcfcfc}
 .PurchaseList table .grayType .addLine{border-right:1px solid #e4e4e4}
 .PurchaseList table .grayType td{padding:10px 38px  10px 38px}
@@ -990,7 +990,7 @@ a.socialLink{display:inline-block;*display:inline;*zoom:1;margin-top:5px;color:#
 .textBox3{position:relative;padding:35px 50px 40px;border:1px solid #e9e9e9}
 .textBox3 ul{padding:10px 0 0 75px;background:url(/poc/img/myt/bg_textBox3.gif) no-repeat 0 50%;height:50px;font-size:16px}
 
-/* myT 서브메인 */
+/* myT ?釉硫??*/
 .myt_section1{position:relative;z-index:3}
 .myt_section1 .myt1_wrap{height:377px;background:url(/poc/img/myt/bg_submain1.png) no-repeat center bottom}
 .myt_section1 .conBox_center{margin:0 auto;padding:0;padding-top:50px}
@@ -1001,13 +1001,13 @@ a.socialLink{display:inline-block;*display:inline;*zoom:1;margin-top:5px;color:#
 .myt_section1 .dlType1{position:relative;padding:40px 30px 55px 40px}
 .myt_section1 .dlType1 dt{color:#fefefe;font-size:24px;line-height:29px;letter-spacing:-1px;word-break:break-all}
 .myt_section1 .dlType1 dt span{color:#fff}
-.myt_section1 .dlType1 dd.date{display:block;color:#fff;font-size:16px;line-height:21px;padding-bottom:20px;margin-top:15px;background:url(/poc/img/myt/bg_myt_top1.gif) no-repeat 0 100%}/* 191114 [OP002-4827] 수정_01 */
+.myt_section1 .dlType1 dd.date{display:block;color:#fff;font-size:16px;line-height:21px;padding-bottom:20px;margin-top:15px;background:url(/poc/img/myt/bg_myt_top1.gif) no-repeat 0 100%}/* 191114 [OP002-4827] ??_01 */
 .myt_section1 .dlType1 dd.lineInfor{position:relative;font-size:16px;color:#fff;margin-top:35px}
 .myt_section1 .dlType1 dd.lineInfor .lineType{display:inline-block}
 .myt_section1 .dlType1 dd.lineInfor .lineType strong{display:inline-block;height:60px;padding:0 3px 0px 33px;background:url(/poc/img/myt/sp_major_type1.png) no-repeat;line-height:58px}
-.myt_section1 .dlType1 dd.lineInfor .lineType .cell{background-position:0 18px}/* 휴대폰 */
-.myt_section1 .dlType1 dd.lineInfor .lineType .internet{background-position:0 -82px}/* 인터넷 */
-.myt_section1 .dlType1 dd.lineInfor .lineType .phone{background-position:0 -182px}/* 집전화 */
+.myt_section1 .dlType1 dd.lineInfor .lineType .cell{background-position:0 18px}/* ?대??*/
+.myt_section1 .dlType1 dd.lineInfor .lineType .internet{background-position:0 -82px}/* ?명곕?*/
+.myt_section1 .dlType1 dd.lineInfor .lineType .phone{background-position:0 -182px}/* 吏?? */
 .myt_section1 .dlType1 dd.lineInfor .lineType .tv{background-position:0 -282px}/* IPTV */
 .myt_section1 .dlType1 dd.lineInfor .lineType .wibro{background-position:0 -382px}/* wibro */ 
 .myt_section1 .dlType1 dd.lineInfor .lineType .tlogin{background-position:0 -482px}/* T login */
@@ -1035,7 +1035,7 @@ a.socialLink{display:inline-block;*display:inline;*zoom:1;margin-top:5px;color:#
 .myt_section1 .dlType2 dd.price strong{display:block;margin-bottom:5px;font-size:20px;line-height:25px}
 .myt_section1 .dlType2 dd.price strong em{font-weight:normal;font-size:50px;line-height:55px;letter-spacing:-1px;vertical-align:-3px}
 .myt_section1 .dlType2 dd.price .period{font-weight:bold;font-size:14px}
-.myt_section1 .dlType2 dd.price .period em{font-weight:bold; font-size:14px; font-family:'verdana','Malgun Gothic','맑은 고딕','돋움',Dotum,'굴림',Gulim, helvetica, Apple SD Gothic Neo, sans-serif; background:url(/poc/img/myt/bg_submain_period.png) no-repeat 0 50%;padding-left:5px;margin-left:5px}/* 190222_mac */
+.myt_section1 .dlType2 dd.price .period em{font-weight:bold; font-size:14px; font-family:'verdana','Malgun Gothic','留? 怨?','??',Dotum,'援대┝',Gulim, helvetica, Apple SD Gothic Neo, sans-serif; background:url(/poc/img/myt/bg_submain_period.png) no-repeat 0 50%;padding-left:5px;margin-left:5px}/* 190222_mac */
 .myt_section1 .dlType2 dd.noObject{background:url(/poc/img/myt/bg_no_object.png) no-repeat center 28px;font-size:18px;line-height:23px;color:#fff;text-align:center;padding-top:95px}
 .myt_section1 .dlType2 dd.btnView{position:absolute;right:50px;top:41px}
 .myt_section1 .dlType2 dd.btnView a{display:block;width:103px;height:40px;line-height:40px;text-align:center;color:#fff;background:url(/poc/img/myt/bg_submain_btn.png) no-repeat 0 0;text-decoration:none;font-size:14px;font-weight:bold}
@@ -1049,7 +1049,7 @@ a.socialLink{display:inline-block;*display:inline;*zoom:1;margin-top:5px;color:#
 .myt_section2 .notiList1>li dl{padding:0 0 0 40px}
 .myt_section2 .notiList1>li dl dt{float:left;width:314px;background:url(/poc/img/myt/bg_red_dot.png) no-repeat right 40px;padding-top:20px}
 .myt_section2 .notiList1>li dl dt .sTit{display:inline-block;*display:inline;*zoom:1;vertical-align:middle;width:171px;height:50px;line-height:50px;text-align:center;font-size:16px;color:#333;font-weight:normal;background:url(/poc/img/myt/bg_submain_stit.png) no-repeat 0 0}
-.myt_section2 .notiList1>li dl dt .date{display:inline-block;*display:inline;*zoom:1;vertical-align:middle;font-weight:normal; font-size:20px; font-family:'verdana','Malgun Gothic','맑은 고딕','돋움',Dotum,'굴림',Gulim, helvetica, Apple SD Gothic Neo, sans-serif; color:#333;margin-left:10px}/* 190222_mac */
+.myt_section2 .notiList1>li dl dt .date{display:inline-block;*display:inline;*zoom:1;vertical-align:middle;font-weight:normal; font-size:20px; font-family:'verdana','Malgun Gothic','留? 怨?','??',Dotum,'援대┝',Gulim, helvetica, Apple SD Gothic Neo, sans-serif; color:#333;margin-left:10px}/* 190222_mac */
 .myt_section2 .notiList1>li dl dd{overflow:hidden;padding-left:50px}
 .myt_section2 .notiList1>li dl dd .contArea{border-bottom:1px dashed #cfcfcf;padding:25px 0 30px}
 .myt_section2 .notiList1>li dl dd .contArea .contTit{display:inline-block;*display:inline;*zoom:1;font-size:28px;line-height:33px;color:#333;background:url(/poc/img/myt/bg_arrow5.gif) no-repeat right 10px;padding-right:20px}
@@ -1087,13 +1087,13 @@ a.socialLink{display:inline-block;*display:inline;*zoom:1;margin-top:5px;color:#
 .myt_section2 .notiList1>li dl dd .contArea .tglCon{border:1px solid #434159;background:#f9f9f9}
 */
 
-/*SK텔레콤의 추천 부가서비스*/
+/*SK??肄ㅼ 異泥 遺媛?鍮??/
 
 .tglCon ul.offerList1.col1 a{padding:0}
 
 
 
-/* 멤버십 제휴처 Top3 */
+/* 硫ㅻ?? ??댁? Top3 */
 .top3Con{overflow:hidden;padding:0;}
 .top3Con>div{width:50%;text-align:center;padding-top:50px;min-height:282px}
 .top3Con .fLeft{border-right:1px solid #e4e4e4;margin-right:-1px}
@@ -1104,7 +1104,7 @@ a.socialLink{display:inline-block;*display:inline;*zoom:1;margin-top:5px;color:#
 .top3Con .top3List ul{display:inline-block;*display:inline;*zoom:1;margin:50px auto 0}
 .top3Con .top3List ul li{float:left;margin-left:30px}
 .top3Con .top3List ul li em{display:block;font-size:14px;color:#3f3f3f;margin:10px 0} 
-.top3Con .top3List ul li span{font-family:'verdana','Malgun Gothic','맑은 고딕','돋움',Dotum,'굴림',Gulim, helvetica, Apple SD Gothic Neo, sans-serif;font-size:26px;color:#111}/* 190222_mac */
+.top3Con .top3List ul li span{font-family:'verdana','Malgun Gothic','留? 怨?','??',Dotum,'援대┝',Gulim, helvetica, Apple SD Gothic Neo, sans-serif;font-size:26px;color:#111}/* 190222_mac */
 
 
 
@@ -1139,11 +1139,11 @@ a.socialLink{display:inline-block;*display:inline;*zoom:1;margin-top:5px;color:#
 .myt_section3 .mytFare2 dd .base li .nodata{color:#666}
 .myt_section3 .mytFare3{height:406px}
 .myt_section3 .mytFare3 dd{position:relative}
-/* 180713 수정 */
+/* 180713 ?? */
 .myt_section3 .mytFare3 .dlType3 {padding-top:0;}
 .myt_section3 .mytFare3 .dlType3 dt{height:auto;text-align:left;}
 .myt_section3 .mytFare3 .dlType3 dd{margin-top:0;border:none;}
-/* //180713 수정 */
+/* //180713 ?? */
 .myt_section3 .mytFare3 .schTxt{padding:30px 0 0 24px}
 .myt_section3 .mytFare3 .schTxt li{margin-top:5px}
 .myt_section3 .mytFare3 .schTxt li:first-child{margin-top:0}
@@ -1162,22 +1162,22 @@ a.socialLink{display:inline-block;*display:inline;*zoom:1;margin-top:5px;color:#
 .myt_section3 .cGraph.red{background:url(/poc/img/common/bg_graph1.png) no-repeat 0 0}
 .myt_section3 .cGraph.green{background:url(/poc/img/common/bg_graph2.png) no-repeat 0 0}
 .myt_section3 .cGraph.blue{background:url(/poc/img/common/bg_graph3.png) no-repeat 0 0}
-.myt_section3 .cGraph.none{background:url(/poc/img/common/bg_graph_none.png) no-repeat 0 0} /* 180829 추가 */
+.myt_section3 .cGraph.none{background:url(/poc/img/common/bg_graph_none.png) no-repeat 0 0} /* 180829 異媛 */
 .myt_section3 .cGraphTxt{position:absolute;left:50%;top:55px;margin-left:-100px;text-align:center;width:100%;color:#ea002c}
 .myt_section3 .cGraphTxt strong{display:block;font-size:30px;line-height:35px;font-weight:normal;letter-spacing:-3px}
 .myt_section3 .cGraphTxt strong em{display:inline-block;margin-right:2px;font-size:60px;line-height:65px}
 .myt_section3 .cGraphTxt p{position:absolute;left:23px;top:67px;width:153px;text-align:center;font-size:18px;line-height:23px;font-weight:bold;color:#333}
-.myt_section3 .cGraphTxt img.tIcon{margin:-3px 0 0;} /* 180821 추가 */
+.myt_section3 .cGraphTxt img.tIcon{margin:-3px 0 0;} /* 180821 異媛 */
 .myt_section3 .max{display:none;position:absolute;right:0;top:0}
 .myt_section3 .usedInfor{text-align:center;margin-top:18px}
-/* 191218 수정 [OP002-5886] */
+/* 191218 ?? [OP002-5886] */
 .myt_section3 .usedInfor ul, .myt_section3 .usedInfor .list-wrap{display:inline-block;*display:inline;*zoom:1;margin:0 auto;overflow:hidden}
 .myt_section3 .usedInfor ul li, .myt_section3 .usedInfor .list-item{position:relative;float:left;height:auto;min-height:50px;width:160px;text-align:center;background:none}
 .myt_section3 .usedInfor ul li strong, .myt_section3 .usedInfor .list-item strong{display:block;font-weight:normal;font-size:22px;line-height:29px;color:#ea002c}
 .myt_section3 .usedInfor ul li span, .myt_section3 .usedInfor .list-item span{position:absolute;left:0;top:29px;width:100%;font-size:14px}
 .myt_section3 .usedInfor ul li+li, .myt_section3 .usedInfor .list-item+.list-item {background:url(/poc/img/myt/bg_used_infor_bar.gif) no-repeat 0 50%}
 .myt_section3 .usedInfor ul li+li strong, .myt_section3 .usedInfor .list-item+.list-item strong{color:#00a49a}
-/* //191218 수정 [OP002-5886] */
+/* //191218 ?? [OP002-5886] */
 .myt_section3 .linkArea{background:#fff;overflow:hidden}
 .myt_section3 .offering{width:1180px;margin-top:10px}
 .myt_section3 .offering .offerTit>a>span{display:inline-block;padding-left:32px;background:url(/poc/img/myt/ico_product_offering.png) no-repeat 0 50%;color:#f65d00}
@@ -1189,7 +1189,7 @@ a.socialLink{display:inline-block;*display:inline;*zoom:1;margin-top:5px;color:#
 .myt_section3 .offering .mySubmain_offer .offer_txt{font-size:16px;line-height:21px}
 .myt_section3 .offering .mySubmain_offer .fee{position:absolute;right:60px;top:95px;color:#333}
 .myt_section3 .offering .mySubmain_offer .fee strong{font-size:16px;line-height:21px}
-.myt_section3 .offering .mySubmain_offer .fee strong em{font-weight:normal; font-size:30px; font-family:'verdana','Malgun Gothic','맑은 고딕','돋움',Dotum,'굴림',Gulim, helvetica, Apple SD Gothic Neo, sans-serif; line-height:35px;letter-spacing:-3px;margin-right:3px;vertical-align:-2px}/* 190222_mac */
+.myt_section3 .offering .mySubmain_offer .fee strong em{font-weight:normal; font-size:30px; font-family:'verdana','Malgun Gothic','留? 怨?','??',Dotum,'援대┝',Gulim, helvetica, Apple SD Gothic Neo, sans-serif; line-height:35px;letter-spacing:-3px;margin-right:3px;vertical-align:-2px}/* 190222_mac */
 .myt_section3 .offering .mySubmain_offer .fee span{display:block;text-align:right;font-size:16px;line-height:21px;font-weight:bold}
 .myt_section3 .myLocker{margin-top:60px}
 .myt_section3 .myLocker .lockerList{overflow:hidden;width:1200px;margin:30px 0 0 -20px}
@@ -1232,7 +1232,7 @@ a.socialLink{display:inline-block;*display:inline;*zoom:1;margin-top:5px;color:#
 .myt_section3 .mytFare4 .stickGraph .ratio li+li div{background:url(/poc/img/myt/graph_pattern_3_1.gif) repeat-y center 0}
 .myt_section3 .mytFare4 .stickGraph .ratio li+li+li div{background:url(/poc/img/myt/graph_pattern_4_1.gif) repeat-y center 0}
 .myt_section3 .mytFare4 .stickGraph .ratio em{display:inline-block;position:absolute;left:-15px;top:-40px;font-size:19px;line-height:24px;font-weight:bold;color:#333}
-.myt_section3 .mytFare4 .stickGraph .ratio em span{font-weight:normal; font-size:24px; font-family:'verdana','Malgun Gothic','맑은 고딕','돋움',Dotum,'굴림',Gulim, helvetica, Apple SD Gothic Neo, sans-serif; letter-spacing:-2px;margin-right:3px;vertical-align:-3px}/* 190222_mac */
+.myt_section3 .mytFare4 .stickGraph .ratio em span{font-weight:normal; font-size:24px; font-family:'verdana','Malgun Gothic','留? 怨?','??',Dotum,'援대┝',Gulim, helvetica, Apple SD Gothic Neo, sans-serif; letter-spacing:-2px;margin-right:3px;vertical-align:-3px}/* 190222_mac */
 .myt_section3 .mytFare4 .detailView{position:absolute;right:10px;top:-89px}
 .myt_section3 .mytFare4 .noObject{background:url(/poc/img/myt/bg_no_object2.png) no-repeat center 88px;text-align:center;color:#333;padding-top:195px}
 .myt_section3 .mytFare4 .noObject strong{display:block;font-size:24px;line-height:29px;font-weight:normal}
@@ -1250,7 +1250,7 @@ a.socialLink{display:inline-block;*display:inline;*zoom:1;margin-top:5px;color:#
 .myt_section4 .myBenefit li+li{width:394px;border-left:1px solid #565469;margin-left:-1px}
 .myt_section4 .myBenefit li+li+li{width:393px}
 .myt_section4 .myBenefit li h3{font-size:18px;line-height:23px;color:#fff;margin:10px 0 30px}
-.myt_section4 .myBenefit li .benefitCont1 strong{display:inline-block;*display:inline;*zoom:1;vertical-align:middle;font-weight:normal; font-size:30px; font-family:'verdana','Malgun Gothic','맑은 고딕','돋움',Dotum,'굴림',Gulim, helvetica, Apple SD Gothic Neo, sans-serif; color:#ff7e6a;line-height:35px;letter-spacing:-2px}/* 190222_mac */
+.myt_section4 .myBenefit li .benefitCont1 strong{display:inline-block;*display:inline;*zoom:1;vertical-align:middle;font-weight:normal; font-size:30px; font-family:'verdana','Malgun Gothic','留? 怨?','??',Dotum,'援대┝',Gulim, helvetica, Apple SD Gothic Neo, sans-serif; color:#ff7e6a;line-height:35px;letter-spacing:-2px}/* 190222_mac */
 .myt_section4 .myBenefit li .benefitCont1 strong em{font-size:60px;line-height:65px}
 .myt_section4 .myBenefit li .benefitCont1 strong em span{font-weight:normal; font-size:50px; line-height:55px; vertical-align:6px}/* 190222_mac */
 .myt_section4 .myBenefit li .benefitCont1 [class^='benefitTxt']{display:inline-block;*display:inline;*zoom:1;vertical-align:middle;font-size:22px;line-height:27px;*line-height:29px;word-break:break-all}
@@ -1277,7 +1277,7 @@ a.socialLink{display:inline-block;*display:inline;*zoom:1;margin-top:5px;color:#
 .myt_section1.type2 [class^='less'] p{font-size:14px;line-height:19px;margin-top:15px;font-weight:bold}
 .myt_section1.type2 [class^='less'] a{display:block;width:218px;height:48px;line-height:48px;color:#fff;font-size:16px;font-weight:bold;margin:30px auto 0}
 .myt_section1.type2 .lessType1{background:url(/poc/img/myt/bg_less1.png) no-repeat center 50px}
-.myt_section1.type2 .lessType1 a{border:1px solid #fff}/* 191114 [OP002-4827] 수정_02 */
+.myt_section1.type2 .lessType1 a{border:1px solid #fff}/* 191114 [OP002-4827] ??_02 */
 .myt_section1.type2 .lessType2{background:url(/poc/img/myt/bg_less2.png) no-repeat center 50px}
 .myt_section1.type2 .lessType2 a{border:1px solid #fd9d9b}
 .myt_section1.type2 .lessType3{background:url(/poc/img/myt/bg_less3.png) no-repeat center 50px}
@@ -1304,7 +1304,7 @@ a.socialLink{display:inline-block;*display:inline;*zoom:1;margin-top:5px;color:#
 .myt_section3.type2 .benefit1 ul li:first-child{margin-left:-2px}
 .myt_section3.type2 .benefit1 ul li em{display:block;font-size:18px;line-height:23px;font-weight:bold;color:#f65d00}
 .myt_section3.type2 .benefit1 ul li strong{display:block;font-size:16px;line-height:21px;color:#333;margin-top:7px}
-.myt_section3.type2 .benefit1 ul li strong span{font-weight:normal; font-size:30px; font-family:'verdana','Malgun Gothic','맑은 고딕','돋움',Dotum,'굴림',Gulim, helvetica, Apple SD Gothic Neo, sans-serif; line-height:35px;letter-spacing:-2px;vertical-align:-3px;margin-right:3px}/* 190222_mac */
+.myt_section3.type2 .benefit1 ul li strong span{font-weight:normal; font-size:30px; font-family:'verdana','Malgun Gothic','留? 怨?','??',Dotum,'援대┝',Gulim, helvetica, Apple SD Gothic Neo, sans-serif; line-height:35px;letter-spacing:-2px;vertical-align:-3px;margin-right:3px}/* 190222_mac */
 .myt_section3.type2 .benefit1 ul li .sTxt{font-size:24px;line-height:29px;font-weight:normal}
 .myt_section3.type2 .benefit1 ul li .sum{display:block;position:absolute;left:-21px;top:55px;width:40px;height:40px;background:url(/poc/img/myt/bg_sum.gif) no-repeat 0 0}
 .myt_section3.type2 .benefit2{width:1180px;height:128px;background:url(/poc/img/myt/bg_benefit3.png) no-repeat 0 0}
@@ -1379,7 +1379,7 @@ a.socialLink{display:inline-block;*display:inline;*zoom:1;margin-top:5px;color:#
 .benefitFloating{position:absolute;right:0;top:498px;width:124px;height:122px}
 .benefitFloating .view{display:block;width:100px;height:100px;margin:0 auto 5px;background:url(/poc/img/myt/btn_benefit.png) no-repeat;font-size:0;line-height:0;text-indent:-9999em}
 .benefitFloating .close{display:block;position:absolute;right:8px;top:0;width:30px;height:30px;background:url(/poc/img/myt/btn_benefit_close.png) no-repeat;font-size:0;line-height:0;text-indent:-9999em}
-.benefitFloating label{color:#333;font-weight:normal; font-size:11px; font-family:'돋움',Dotum,'굴림',Gulim, '맑은 고딕', helvetica, Apple SD Gothic Neo, sans-serif}/* 190222_mac */
+.benefitFloating label{color:#333;font-weight:normal; font-size:11px; font-family:'??',Dotum,'援대┝',Gulim, '留? 怨?', helvetica, Apple SD Gothic Neo, sans-serif}/* 190222_mac */
 #layerBenefit{background:#fff}
 #layerBenefit h2{height:59px;line-height:59px;text-align:center;border-bottom:1px dashed #ccc;font-size:20px}
 #layerBenefit .popClose{right:20px !important;top:17px !important;width:24px !important;height:24px !important;background:url(/poc/img/myt/btn_benefit_close2.gif) no-repeat !important}
@@ -1390,7 +1390,7 @@ a.socialLink{display:inline-block;*display:inline;*zoom:1;margin-top:5px;color:#
 .myt_section2.noData dl dd{color:#666}
 .myt_section2.noData .info_Txt{position:absolute;right:0;top:70px}
 
-/*혜택보기팝업 재정의*/
+/*??蹂닿린?? ?ъ?*/
 .popCon .fareBenefit .only{margin-left:15%;text-align:left;zoom:1}
 .popCon .fareBenefit .only:after{content:'';display:block;clear:both}
 .popCon .fareBenefit .only .img{float:left;width:290px;margin:0;padding:0}
@@ -1402,7 +1402,7 @@ a.socialLink{display:inline-block;*display:inline;*zoom:1;margin-top:5px;color:#
 .popCon .fareBenefit .only.type2 .fLeft .listType1 li{font-size:16px}
 .popCon .fareBenefit .only.type2 .fLeft .listType2 li{font-size:13px}
 
-/*다이렉트샵 문의*/
+/*?ㅼ대?몄?臾몄*/
 .question{padding:60px 0;margin-top:60px;background:#f9f9f9}
 .questionList{overflow:hidden;width:1180px}
 .questionList dl{float:left;width:340px;height:222px;padding:154px 28px 0;text-align:center;background:url(/poc/img/direct/bg_ico_question.png) no-repeat 140px 0}
@@ -1411,7 +1411,7 @@ a.socialLink{display:inline-block;*display:inline;*zoom:1;margin-top:5px;color:#
 .questionList dl+dl+dl{width:334px;background-position:-710px 0}
 .questionList dl dt{padding-bottom:30px;font-weight:bold;font-size:18px;color:#333;letter-spacing:-1px}
 .questionList dl .tel span{display:block;font-size:14px;color:#666}
-.questionList dl .tel span em{padding-right:5px;font-family:'verdana','Malgun Gothic','맑은 고딕','돋움',Dotum,'굴림',Gulim, helvetica, Apple SD Gothic Neo, sans-serif;font-size:24px;line-height:30px;color:#f65d00;letter-spacing:-1px}/* 190222_mac */
+.questionList dl .tel span em{padding-right:5px;font-family:'verdana','Malgun Gothic','留? 怨?','??',Dotum,'援대┝',Gulim, helvetica, Apple SD Gothic Neo, sans-serif;font-size:24px;line-height:30px;color:#f65d00;letter-spacing:-1px}/* 190222_mac */
 .questionList dl .time{padding:10px 0;*padding:10px 0 5px}
 .questionList dl .time strong{display:inline-block;*display:inline;*zoom:1;vertical-align:top;padding-right:5px;font-size:16px;line-height:20px;color:#333}
 .questionList dl.list2 .time strong{padding-right:0}
@@ -1419,7 +1419,7 @@ a.socialLink{display:inline-block;*display:inline;*zoom:1;margin-top:5px;color:#
 .questionList dl .time ul li{padding-bottom:5px;font-size:16px;line-height:20px}
 .questionList dl .time ul li span{width:53px;display:inline-block;*display:inline;*zoom:1}
 .questionList dl.list2 .time ul li span{width:35px}
-.questionList dl .time ul li em{font-family:'verdana','Malgun Gothic','맑은 고딕','돋움',Dotum,'굴림',Gulim, helvetica, Apple SD Gothic Neo, sans-serif} /* 190222_mac */
+.questionList dl .time ul li em{font-family:'verdana','Malgun Gothic','留? 怨?','??',Dotum,'援대┝',Gulim, helvetica, Apple SD Gothic Neo, sans-serif} /* 190222_mac */
 .questionList dl .txt{padding-bottom:38px;font-size:16px;color:#333}
 .questionList dl.list3 .subTxt{padding-bottom:18px;font-size:24px;line-height:30px;color:#f65d00}
 
@@ -1445,7 +1445,7 @@ a.socialLink{display:inline-block;*display:inline;*zoom:1;margin-top:5px;color:#
 .centerInfo.col4 .bg_faq2{background-position:50% -675px}
 .centerInfo.col4 .bg_faq3{background-position:50% -900px}
 
-/*청구내역 인쇄팝업 고객정보*/
+/*泥援щ댁 ?몄?? 怨媛?蹂?/
 .charge_infoTit{display:block;padding:0 0 20px;font-size:18px;color:#333}
 
 
@@ -1467,7 +1467,7 @@ a.socialLink{display:inline-block;*display:inline;*zoom:1;margin-top:5px;color:#
 .donateCon .amountList dl dd{width:50%}
 .donateCon .amountList dl dd>ul>li>em{width:auto}
 .donateCon .paymentCon{padding:0}
-.donateCon .paymentCon tfoot td .en{margin-right:2px;font-size:30px;font-family:'verdana','Malgun Gothic','맑은 고딕','돋움',Dotum,'굴림',Gulim, helvetica, Apple SD Gothic Neo, sans-serif;font-weight:normal;vertical-align:-2px}/* 190222_mac */
+.donateCon .paymentCon tfoot td .en{margin-right:2px;font-size:30px;font-family:'verdana','Malgun Gothic','留? 怨?','??',Dotum,'援대┝',Gulim, helvetica, Apple SD Gothic Neo, sans-serif;font-weight:normal;vertical-align:-2px}/* 190222_mac */
 
 
 .fastBill {padding:0 40px}
@@ -1493,7 +1493,7 @@ a.socialLink{display:inline-block;*display:inline;*zoom:1;margin-top:5px;color:#
 .popCon .fastBillbtn p{position:static;margin-bottom:20px}
 
 
-/* myt 서브메인 띠베너(오퍼링) */
+/* myt ?釉硫???踰?(?ㅽ쇰?) */
 .myt_section2 .myt2_offer{position:relative;background: url(/poc/img/myt/bg_offer.png) no-repeat 320px 0;padding-top:65px;margin:-45px 0 44px}
 .myt_section2 .myt2_offer .notiList1{margin-top:-5px}
 .myt_section2 .myt2_offer .notiList1>li dl dt{float:left;width:314px;background:url(/poc/img/myt/bg_blue_dot.png) no-repeat right 40px;padding-top:20px}
@@ -1535,7 +1535,7 @@ a.socialLink{display:inline-block;*display:inline;*zoom:1;margin-top:5px;color:#
 .myt_section2 .myt2_offer .notiList1>li dl dd .contArea.bgType5 span+span+span {max-width:240px;padding-top:15px;}
 .myt_section2 .myt2_offer .notiList1>li dl dd .contArea.bgType5 .arrow{top:40px;width:35px;height:23px;background:url('/poc/img/myt/icon_t_offer.png') no-repeat;padding-top:0;}
 
-/* 나의 알림 띠베너 (오퍼링) */
+/* ?? ?由??踰? (?ㅽ쇰?) */
 .myMessage>.newMessage .mTitle, .myMessage>.offerMessage .mTitle{position:relative;left:-44px;display:inline-block;*display:inline;*zoom:1;width:820px;padding-left:44px;font-size:16px;color:#333;line-height:20px;background:url(/poc/img/myt/bg_my1_6_5_3_1.gif) no-repeat 0 3px;vertical-align:middle;letter-spacing:-1px}
 .myMessage>.offerMessage .mTitle{background:url(/poc/img/myt/bg_my1_6_5_3_2.gif) no-repeat 0 3px}
 .myMessage .offerMessage{margin-top:0}
@@ -1583,7 +1583,7 @@ a.socialLink{display:inline-block;*display:inline;*zoom:1;margin-top:5px;color:#
 .myMessage .offerMessage .mTitle .contArea.bgType5 span+span+span {max-width:240px;padding-top:15px;}
 .myMessage .offerMessage .mTitle .contArea.bgType5 .arrow{top:40px;width:35px;height:23px;background:url('/poc/img/myt/icon_t_offer.png') no-repeat;padding-top:0;}
 
-/* myT 요금제 마케팅 value up [s] */
+/* myT ?湲? 留耳? value up [s] */
 .myt_m_marketing {position:absolute;top:128px;left:352px;width:418px;height:404px;background:url('/poc/img/myt/bg_m_marketing.png') no-repeat;z-index:20}
 .myt_m_marketing .in_Cont{position:relative;text-align:center;padding:30px 0 0 0}
 .myt_m_marketing .in_Cont .txt1{color:#434159;font-size:14px;line-height:14px;margin-bottom:15px}
@@ -1626,7 +1626,7 @@ a.socialLink{display:inline-block;*display:inline;*zoom:1;margin-top:5px;color:#
 .myt_marketing2 .priceBenefit .priceBenefit_list ul li .type10 span{background-position:-50px -100px}
 .myt_marketing2 .priceBenefit .priceBenefit_list ul li strong{display:block;color:#333;font-size:16px;font-weight:bold;letter-spacing:-1px;padding-bottom:9px}
 .myt_marketing2 .priceBenefit .priceBenefit_list ul li p{color:#666;font-size:13px}
-/* myT 요금제 마케팅 value up [e] */
+/* myT ?湲? 留耳? value up [e] */
 
 
 .tabType1.New>li.on>a{background:#45454c;border-color:#45454c;text-decoration:none;font-weight:bold;color:#fff}
@@ -1637,9 +1637,9 @@ a.socialLink{display:inline-block;*display:inline;*zoom:1;margin-top:5px;color:#
 .newMajorInfo ul li{float:left;color:#333;font-size:20px;line-height:24px;background:url(/poc/img/myt/bg_new_majorinfo_bar1.png) no-repeat 0 5px;padding:0 15px 2px 16px}
 .newMajorInfo ul li a.chg_line{display:inline-block;*display:inline;*zoom:1;height:26px;color:#ea002c;font-size:20px;text-decoration:none;background:url(/poc/img/myt/bg_new_majorinfo_bar2.png) no-repeat 0 4px;padding:0 0 0 24px}
 .newMajorInfo ul li.type{background:url(/poc/img/myt/ico_product_type.png) no-repeat;padding-left:55px;}
-.newMajorInfo ul li.type.mobile{background-position:20px -199px} /* 휴대폰 */
-.newMajorInfo ul li.type.phone{background-position:20px -398px} /* 집전화 */
-.newMajorInfo ul li.type.internet{background-position:20px 2px} /* 인터넷 */
+.newMajorInfo ul li.type.mobile{background-position:20px -199px} /* ?대??*/
+.newMajorInfo ul li.type.phone{background-position:20px -398px} /* 吏?? */
+.newMajorInfo ul li.type.internet{background-position:20px 2px} /* ?명곕?*/
 .newMajorInfo ul li.type.tlogin{background-position:20px -1199px} /* T login */
 .newMajorInfo ul li.type.wibro{background-position:20px -800px} /* T WiBro */
 .newMajorInfo ul li.type.pocketfi{background-position:20px -997px} /* T pocket-Fi */
@@ -1653,18 +1653,18 @@ a.socialLink{display:inline-block;*display:inline;*zoom:1;margin-top:5px;color:#
 .newChargeInfo .areaInfo{float:left;width:440px;min-height:400px;}
 .newChargeInfo .areaInfo .chargeTopTitle{color:#333333;font-size:36px;font-weight:bold;line-height:36px;margin:-5px 0 34px 0;*margin:0 0 34px 0}
 .newChargeInfo .areaInfo .chargeTopTitle strong{display:block;letter-spacing:-5px;margin-bottom:19px}
-.newChargeInfo .areaInfo .chargeTopTitle strong em{color:#e3002b;letter-spacing:-3px;font-family:'verdana','Malgun Gothic','맑은 고딕','돋움',Dotum,'굴림',Gulim, helvetica, Apple SD Gothic Neo, sans-serif;}/* 190222_mac */
-.newChargeInfo .areaInfo .chargeTopTitle span{display:block;color:#333333;font-size:18px;font-weight:bold;font-family:'verdana','Malgun Gothic','맑은 고딕','돋움',Dotum,'굴림',Gulim, helvetica, Apple SD Gothic Neo, sans-serif;line-height:18px;letter-spacing:-1px;}
+.newChargeInfo .areaInfo .chargeTopTitle strong em{color:#e3002b;letter-spacing:-3px;font-family:'verdana','Malgun Gothic','留? 怨?','??',Dotum,'援대┝',Gulim, helvetica, Apple SD Gothic Neo, sans-serif;}/* 190222_mac */
+.newChargeInfo .areaInfo .chargeTopTitle span{display:block;color:#333333;font-size:18px;font-weight:bold;font-family:'verdana','Malgun Gothic','留? 怨?','??',Dotum,'援대┝',Gulim, helvetica, Apple SD Gothic Neo, sans-serif;line-height:18px;letter-spacing:-1px;}
 .newChargeInfo .areaInfo .chargePay{*zoom:1;background:url(/poc/img/myt/line_dashed.gif) repeat-x left bottom;}/* 190222_mac */
 .newChargeInfo .areaInfo .chargePay:after{content:"";display:block;clear:both;*zoom:1}
 .newChargeInfo .areaInfo .chargePay dt{float:left;color:#333;font-size:16px;letter-spacing:-1px;padding:26px 0 27px 0}
 .newChargeInfo .areaInfo .chargePay dd{float:right;color:#333;font-size:20px;font-weight:bold;letter-spacing:-1px;padding:26px 0 27px 0}
-.newChargeInfo .areaInfo .chargePay dd strong{font-family:'verdana','Malgun Gothic','맑은 고딕','돋움',Dotum,'굴림',Gulim, helvetica, Apple SD Gothic Neo, sans-serif;letter-spacing:-1px;vertical-align:-2px;}/* 190222_mac */
+.newChargeInfo .areaInfo .chargePay dd strong{font-family:'verdana','Malgun Gothic','留? 怨?','??',Dotum,'援대┝',Gulim, helvetica, Apple SD Gothic Neo, sans-serif;letter-spacing:-1px;vertical-align:-2px;}/* 190222_mac */
 .newChargeInfo .areaInfo .chargePay dd.discount{color:#ea002c;}
 .newChargeInfo .areaInfo .chargeTotalPay{color:#fff;background:#ea002c;padding:17px 20px 15px 20px}
 .newChargeInfo .areaInfo .chargeTotalPay p{display:block;font-size:16px;}
 .newChargeInfo .areaInfo .chargeTotalPay span{display:block;text-align:right;font-size:24px;padding-top:39px;}
-.newChargeInfo .areaInfo .chargeTotalPay span strong{font-size:46px;line-height:46px;font-weight:bold;font-family:'verdana','Malgun Gothic','맑은 고딕','돋움',Dotum,'굴림',Gulim, helvetica, Apple SD Gothic Neo, sans-serif;letter-spacing:-2px;vertical-align:-2px;}/* 190222_mac */
+.newChargeInfo .areaInfo .chargeTotalPay span strong{font-size:46px;line-height:46px;font-weight:bold;font-family:'verdana','Malgun Gothic','留? 怨?','??',Dotum,'援대┝',Gulim, helvetica, Apple SD Gothic Neo, sans-serif;letter-spacing:-2px;vertical-align:-2px;}/* 190222_mac */
 .newChargeInfo .areaInfo .txtChargePay{color:#333;font-size:22px;font-weight:bold;line-height:36px;letter-spacing:-1px;padding-top:10px}
 .newChargeInfo a.btnMontOpen{position:absolute;top:70px;right:80px;display:inline-block;*display:inline;*zoom:1;width:46px;height:46px;text-decoration:none;background:url(/poc/img/myt/bg_new_majorinfo_month.png) no-repeat 0 0}
 .newChargeInfo .monthLayer{display:block;position:absolute;z-index:1010;top:0;bottom:0;left:0;right:0;}
@@ -1687,13 +1687,13 @@ a.socialLink{display:inline-block;*display:inline;*zoom:1;margin-top:5px;color:#
 .newChargeInfo .contMonthList .contMonthTitle a{display:inline-block;*display:inline;*zoom:1;color:#333;line-height:46px;text-decoration:none;padding:0 5px 0 0;border-bottom:2px solid #323040;cursor:pointer}
 .newChargeInfo .contMonthList .contMonthTitle a strong{color:#333;}
 .newChargeInfo .contMonthList .contMonthTitle strong{color:#ea002c;font-size:34px;line-height:44px;*line-height:46px;font-weight:bold;letter-spacing:-3px;margin-bottom:16px;}
-.newChargeInfo .contMonthList .contMonthTitle strong em{font-size:40px;font-family:'verdana','Malgun Gothic','맑은 고딕','돋움',Dotum,'굴림',Gulim, helvetica, Apple SD Gothic Neo, sans-serif;letter-spacing:-5px;vertical-align:-4px;padding-right:2px;}/* 190222_mac */
+.newChargeInfo .contMonthList .contMonthTitle strong em{font-size:40px;font-family:'verdana','Malgun Gothic','留? 怨?','??',Dotum,'援대┝',Gulim, helvetica, Apple SD Gothic Neo, sans-serif;letter-spacing:-5px;vertical-align:-4px;padding-right:2px;}/* 190222_mac */
 .newChargeInfo .contMonthList .contMonthDay{display:block;color:#666;font-size:16px;letter-spacing:-1px;margin-bottom:16px;}
 .newChargeInfo .contMonthList .contMonthPay{*zoom:1;background:url(/poc/img/myt/line_dashed.gif) repeat-x left bottom;}
 .newChargeInfo .contMonthList .contMonthPay:after{content:"";display:block;clear:both;*zoom:1}
 .newChargeInfo .contMonthList .contMonthPay dt{float:left;color:#333;font-size:16px;letter-spacing:-1px;padding:10px 0}
 .newChargeInfo .contMonthList .contMonthPay dd{float:right;color:#ea002c;font-size:16px;font-weight:bold;letter-spacing:-1px;padding:10px 0}
-.newChargeInfo .contMonthList .contMonthPay dd strong{font-family:'verdana','Malgun Gothic','맑은 고딕','돋움',Dotum,'굴림',Gulim, helvetica, Apple SD Gothic Neo, sans-serif;letter-spacing:-1px;vertical-align:-2px;}/* 190222_mac */
+.newChargeInfo .contMonthList .contMonthPay dd strong{font-family:'verdana','Malgun Gothic','留? 怨?','??',Dotum,'援대┝',Gulim, helvetica, Apple SD Gothic Neo, sans-serif;letter-spacing:-1px;vertical-align:-2px;}/* 190222_mac */
 .newChargeInfo .contMonthList ul li dl:last-child{background:none;}
 .newChargeInfo .monthLayer .inMonthLayer .contMonthLayer a.btnMontClose{position:absolute;top:70px;right:80px;display:inline-block;*display:inline;*zoom:1;width:46px;height:46px;text-decoration:none;background:url(/poc/img/myt/bg_new_majorinfo_month.png) no-repeat 0 bottom}
 .newChargeInfo .contKindInfo{*zoom:1;background:#fff;padding:0 40px;margin-bottom:30px;}
@@ -1730,23 +1730,23 @@ a.socialLink{display:inline-block;*display:inline;*zoom:1;margin-top:5px;color:#
 .newChargeInfo .newChargeList.open{margin-bottom:20px;}
 .newChargeInfo .newChargeList.open dt a{background:#e1e0e4 url(/poc/img/myt/sp_product_a1.png) no-repeat right -75px;}
 .newChargeInfo .newChargeList.open dd{display:block;background:#fff;padding:50px 40px 40px 40px;}
-.newChargeInfo .newChargeList dt a strong.totalPay, .newChargeInfo .newChargeList.open dt a strong.totalPay{background:none;padding-left:0;}/* 통합청구요금 */
-.newChargeInfo .newChargeList dt a strong.internet, .newChargeInfo .newChargeList.open dt a strong.internet{background-position:0 26px} /* 인터넷 */
-.newChargeInfo .newChargeList dt a strong.mobile, .newChargeInfo .newChargeList.open dt a strong.mobile{background-position:0 -175px} /* 휴대폰 */
-.newChargeInfo .newChargeList dt a strong.phone, .newChargeInfo .newChargeList.open dt a strong.phone{background-position:0 -375px} /* 집전화 */
+.newChargeInfo .newChargeList dt a strong.totalPay, .newChargeInfo .newChargeList.open dt a strong.totalPay{background:none;padding-left:0;}/* ?듯⑹껌援ъ湲 */
+.newChargeInfo .newChargeList dt a strong.internet, .newChargeInfo .newChargeList.open dt a strong.internet{background-position:0 26px} /* ?명곕?*/
+.newChargeInfo .newChargeList dt a strong.mobile, .newChargeInfo .newChargeList.open dt a strong.mobile{background-position:0 -175px} /* ?대??*/
+.newChargeInfo .newChargeList dt a strong.phone, .newChargeInfo .newChargeList.open dt a strong.phone{background-position:0 -375px} /* 吏?? */
 .newChargeInfo .newChargeList dt a strong.btv, .newChargeInfo .newChargeList.open dt a strong.btv{background-position:0 -575px} /* IPTV */
 .newChargeInfo .newChargeList dt a strong.tlogin, .newChargeInfo .newChargeList.open dt a strong.tlogin{background-position:0 -1176px} /* T login */
 .newChargeInfo .newChargeList dt a strong.wibro, .newChargeInfo .newChargeList.open dt a strong.wibro{background-position:0 -776px} /* T WiBro */
 .newChargeInfo .newChargeList dt a strong.pocketfi, .newChargeInfo .newChargeList.open dt a strong.pocketfi{background-position:0 -973px} /* T pocket-Fi */
-.newChargeInfo .newChargeList dt a strong.companyProduct, .newChargeInfo .newChargeList.open dt a strong.companyProduct{background:url(/poc/img/myt/ico_product_type2.png) no-repeat 0 23px}/* 기업상품 */
-.newChargeInfo .newChargeList dt a strong.appService, .newChargeInfo .newChargeList.open dt a strong.appService{background:url(/poc/img/myt/ico_product_type2.png) no-repeat 0 -112px}/* 앱서비스 */ 
-.newChargeInfo .newChargeList dt a strong.hdWare, .newChargeInfo .newChargeList.open dt a strong.hdWare{background:url(/poc/img/myt/ico_product_type2.png) no-repeat 0 -240px} /* 하드웨어 */
-.newChargeInfo .newChargeList dt a strong.etcService, .newChargeInfo .newChargeList.open dt a strong.etcService{background:url(/poc/img/myt/ico_product_type2.png) no-repeat 0 -386px} /* 기타서비스 */
+.newChargeInfo .newChargeList dt a strong.companyProduct, .newChargeInfo .newChargeList.open dt a strong.companyProduct{background:url(/poc/img/myt/ico_product_type2.png) no-repeat 0 23px}/* 湲곗?? */
+.newChargeInfo .newChargeList dt a strong.appService, .newChargeInfo .newChargeList.open dt a strong.appService{background:url(/poc/img/myt/ico_product_type2.png) no-repeat 0 -112px}/* ?깆鍮??*/ 
+.newChargeInfo .newChargeList dt a strong.hdWare, .newChargeInfo .newChargeList.open dt a strong.hdWare{background:url(/poc/img/myt/ico_product_type2.png) no-repeat 0 -240px} /* ???⑥?*/
+.newChargeInfo .newChargeList dt a strong.etcService, .newChargeInfo .newChargeList.open dt a strong.etcService{background:url(/poc/img/myt/ico_product_type2.png) no-repeat 0 -386px} /* 湲고?鍮??*/
 .newChargeInfo .newChargeList .chargeListTit{color:#333;font-size:16px;font-weight:bold;letter-spacing:-2px;margin-bottom:30px;}
 .newChargeInfo .newChargeList .chargeListTit span{color:#ea002c;}
 .newChargeInfo .newChargeList .chargeListStit{position:relative;color:#333;font-size:20px;font-weight:bold;letter-spacing:-2px;padding:4px 0 20px 0;}
 .newChargeInfo .newChargeList .chargeListStit span{position:absolute;top:0;right:0;color:#eb002d;font-size:18px;font-weight:bold;}
-.newChargeInfo .newChargeList .chargeListStit span strong{font-size:34px;font-family:'verdana','Malgun Gothic','맑은 고딕','돋움',Dotum,'굴림',Gulim, helvetica, Apple SD Gothic Neo, sans-serif;line-height:34px;*line-height:42px;letter-spacing:-3px;vertical-align:-3px;}/* 190222_mac */
+.newChargeInfo .newChargeList .chargeListStit span strong{font-size:34px;font-family:'verdana','Malgun Gothic','留? 怨?','??',Dotum,'援대┝',Gulim, helvetica, Apple SD Gothic Neo, sans-serif;line-height:34px;*line-height:42px;letter-spacing:-3px;vertical-align:-3px;}/* 190222_mac */
 .newChargeInfo .newChargeList .newChargeTable{width:100%;border-collapse:collapse;border-spacing:0;border:0;border-top:1px solid #666666;}
 .newChargeInfo .newChargeList .newChargeTable dl{*zoom:1;border-bottom:1px solid #ededed;}
 .newChargeInfo .newChargeList .newChargeTable dl:after{content:"";display:block;clear:both;*zoom:1}
@@ -1755,10 +1755,10 @@ a.socialLink{display:inline-block;*display:inline;*zoom:1;margin-top:5px;color:#
 .newChargeInfo .newChargeList .newChargeTable dd ul{}
 .newChargeInfo .newChargeList .newChargeTable dd ul li{position:relative;color:#333;font-size:16px;padding:11px 0 11px 0;}
 .newChargeInfo .newChargeList .newChargeTable dd ul li span{position:absolute;top:9px;right:0;font-weight:bold;}
-.newChargeInfo .newChargeList .newChargeTable dd ul li span strong{font-size:18px;line-height:20px;*line-height:28px;font-family:'verdana','Malgun Gothic','맑은 고딕','돋움',Dotum,'굴림',Gulim, helvetica, Apple SD Gothic Neo, sans-serif;letter-spacing:-2px;vertical-align:-1px;}/* 190222_mac */
+.newChargeInfo .newChargeList .newChargeTable dd ul li span strong{font-size:18px;line-height:20px;*line-height:28px;font-family:'verdana','Malgun Gothic','留? 怨?','??',Dotum,'援대┝',Gulim, helvetica, Apple SD Gothic Neo, sans-serif;letter-spacing:-2px;vertical-align:-1px;}/* 190222_mac */
 .newChargeInfo .newChargeList .newChargeTable dd ul li+li{background:url(/poc/img/myt/line_dashed.gif) repeat-x 0 0;}
 
-/*나의 쇼핑 상세*/
+/*?? ?쇳 ???/
 .PurchaseList table .grayType td.type2 .oneMoreWrap .addType.coupon dl dt span{border-left:1px solid #e4e4e4;padding-left:10px;margin-left:10px;color:#ea002c}
 .PurchaseList table td.type2 .oneMoreWrap .addType dt{padding:0 0 0 12px;background:url(/poc/img/myt/bg_direct_add.png) no-repeat 0 15px}
 .PurchaseList table .grayType td.type2 dd.fColor1 span {color:#ea002c;}
@@ -1768,7 +1768,7 @@ a.socialLink{display:inline-block;*display:inline;*zoom:1;margin-top:5px;color:#
 .PurchaseList table td.type2 .oneMoreWrap .addType.coupon dl {padding-bottom:0;}
 .PurchaseList table td.type2 .oneMoreWrap .addType dl + dl {margin-top:0;}
 
-/* 라이트 할부 (개선) */
+/* ?쇱댄??遺 (媛?) */
 .shortLine.light_I {padding: 17px 38px 17px 38px;}
 .shortLine.light_I dt {margin-top: 11px}
 .shortLine .shorInfo {text-align: right; line-height: 32px;}
@@ -1784,12 +1784,12 @@ a.socialLink{display:inline-block;*display:inline;*zoom:1;margin-top:5px;color:#
 .rltxt {margin-top: 5px; text-align: left; font-size: 12px; color: #666;}
 .PurchaseList table dl+div.rlbox {margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px dashed #e4e4e4;}
 
-/* 쓰던 폰 반납 (개선) */
+/* ?곕 ??諛??(媛?) */
 .PurchaseList table td.type2 dl.qTitPopup {overflow: visible; height: 40px;}
 .PurchaseList table td.type2 a.qTit {padding-right: 0; background: url('/poc/img/common/ico_qmark.png') no-repeat; color: #333;}
 .PurchaseList table td.type2 a.btnClose {padding-right: 0; background: url('/poc/img/common/btn_qinfo_close.gif') no-repeat; color: #333;}
 
-/* 라이트 할부 서비스 개선 팝업 */
+/* ?쇱댄??遺 ?鍮??媛? ?? */
 .btnBuy{display: inline-block; height: 28px ;padding: 0 13px; background: #fff; border:1px solid #434159; line-height: 28px; text-align: center; font-size: 13px;color: #333; font-weight: bold;}
 .list_info4>li{margin-top: 6px;padding: 0 0 0 16px;}
 .list_info4>li:first-child{margin-top: 0;}
@@ -1798,7 +1798,7 @@ a.socialLink{display:inline-block;*display:inline;*zoom:1;margin-top:5px;color:#
 .r_Installment p.r_price {padding-bottom: 5px; font-size: 15px; font-weight: bold;}
 .r_Installment p.r_price span {display: inline-block; float: right; color: #000;}
 
-/* 180731 가족공유데이터 */
+/* 180731 媛議깃났??곗댄?*/
 .myt_section3 .cGraphTxt strong.txtGreen{color:#00a49a}
 .myt_section3 .usedInforWrap{position:relative;width:100%;margin-top:4px}
 .myt_section3 .usedInforWrap:after{display:block;content:"";clear:both}
@@ -1812,10 +1812,10 @@ a.socialLink{display:inline-block;*display:inline;*zoom:1;margin-top:5px;color:#
 .myt_section3 .usedInfor2 ul li .txtGreen{color:#4fa49a}
 .myt_section3 .usedInforWrap .infoGraphDash{position:absolute;top:4px;left:50%;width:1px;height:51px;margin-left:-1px;background-color:#e4e4e4}
 
-/* 180904 수정 - T 가족모아 데이터 */
+/* 180904 ?? - T 媛議깅え? ?곗댄?*/
 .guideBox2.currentInfo.myFamDataStat .infoList{padding-left:70px}
 .guideBox2.currentInfo.myFamDataStat .infoList li.bdNone ~ li{overflow:visible}
-.guideBox2.currentInfo.myFamDataStat .infoList li.hasInfo{overflow:visible}	/* //181025 T가족모아 추가 */
+.guideBox2.currentInfo.myFamDataStat .infoList li.hasInfo{overflow:visible}	/* //181025 T媛議깅え? 異媛 */
 .guideBox2.currentInfo.myFamDataStat .infoList .qInfo{float:left;margin-left:-32px}
 .guideBox2.currentInfo.myFamDataStat .infoList .qInfo .con{width:295px}
 .guideBox2.currentInfo.myFamDataStat .infoList .qInfo .tit{float:none}
@@ -1830,7 +1830,7 @@ a.socialLink{display:inline-block;*display:inline;*zoom:1;margin-top:5px;color:#
 .qInfo-area .qInfo-setting .checkbox label{min-height:20px;font-size:13px;line-height:20px;color:#333;background-image:url(/poc/img/myt/sp_input_off.gif)}
 .qInfo-area .qInfo-setting .checkbox.checked label{background-image:url(/poc/img/myt/sp_input_on.gif);background-position:0 0}
 
-/* 180914 웹회원 가입 없는 해지 신청 */
+/* 180914 ?뱁? 媛? ?? ?댁? ?泥 */
 .qInfo-area.table-top .qInfo{top:-37px}
 .qInfo-area.table-top .qInfo .qTit{width:auto;padding-left:34px;color:#666;font-size:16px;line-height:19px;text-indent:0;text-decoration:none}
 .qInfo-area .qInfo .qTxt dl{display:table}
@@ -1843,12 +1843,12 @@ a.socialLink{display:inline-block;*display:inline;*zoom:1;margin-top:5px;color:#
 .commPossible.radio-type{overflow:visible}
 .commPossible.radio-type:after{content:'';display:block;clear:both;zoom:1}
 
-/* 180921 추가 - text input 공통 *//* 190823 삭제 [OP002-3314] (myt2.css -> common.css로 이동) */
+/* 180921 異媛 - text input 怨듯?*//* 190823 ?? [OP002-3314] (myt2.css -> common.css濡 ?대) */
 /* .clearSetForm {position:relative;display:inline-block;margin-right:4px;}
 .clearSetForm input[type=text], .clearSetForm input[type=password] {*margin-right:0;padding-right:32px;}
 .clearSetForm .btnDel {position:absolute;top:50%;right:6px;width:16px;height:16px;margin:-8px 0 0;background:url(/poc/img/common/btn_ico_del.png) no-repeat 0 0;vertical-align:top;text-indent:-9999px;} */
 
-/* 고도화 모바일회선관리 MYT [s] */
+/* 怨?? 紐⑤??쇳?愿由?MYT [s] */
 .mln-base {margin:15px 0 0;}
 .mln-check {padding:10px 30px; background-color:#f5f5f5;}
 .mln-base .mln-list {padding:0 0;}
@@ -1894,9 +1894,9 @@ a.socialLink{display:inline-block;*display:inline;*zoom:1;margin-top:5px;color:#
 .mln-setName .error + .txtInfo {color:#ea002c;}
 .mln-corpField .txtInfo {font-size:11px !important;}
 .mln-corpField input[type='text'] {color:#666;}
-/* 고도화 모바일회선관리 MYT [e] */
+/* 怨?? 紐⑤??쇳?愿由?MYT [e] */
 
-/* 190611 추가 [OP002-1200] */
+/* 190611 異媛 [OP002-1200] */
 .charges .fRight .totalBill.prTy2 {padding-right:20px;}
 .useInfor2 .inforCont dl.bgIco {background:none; background-repeat:no-repeat; background-position:center 30px;}
 .useInfor2 .inforCont dl.bgIco01 {background-image:url(/poc/img/myt/bg_use_infor2_1.gif);}
@@ -1909,15 +1909,15 @@ a.socialLink{display:inline-block;*display:inline;*zoom:1;margin-top:5px;color:#
 .useInfor2 .inforCont.colTy4 dl dd.txtInfo {left:20px; right:20px; font-size:12px !important;}
 .selectItem1 li[class*='immediatePay'].immediatePay5 {background-position:50% -1448px}
 .selectItem1 li[class*='immediatePay'].immediatePay5.on {background-position:50% -1632px}
-/* //190611 추가 [OP002-1200] */
+/* //190611 異媛 [OP002-1200] */
 
-/* 190716 추가 [OP002-2473] */
+/* 190716 異媛 [OP002-2473] */
 .selectItem1 li[class*='payCard'].payCard3{background-position:50% -586px;}
 .selectItem1 li[class*='payCard'].payCard3.on{background-position:50% -740px;}
 .selectItem1 li[class*='payCard'].payCard4{background-position:50% -894px;}
 .selectItem1 li[class*='payCard'].payCard4.on{background-position:50% -1048px;}
 
-/* 190723 추가 [OP002-2577] */
+/* 190723 異媛 [OP002-2577] */
 .selectItem1 li[class*='refill'].refillCard3{background-position:50% -1172px;}
 .selectItem1 li[class*='refill'].refillCard3.on{background-position:50% -1322px;}
 .grayBox2.colTy3>div {width:33.3333%;}
@@ -1934,13 +1934,13 @@ a.socialLink{display:inline-block;*display:inline;*zoom:1;margin-top:5px;color:#
 .grayBox2.colTy3 dl.bgIco02 {background-image:url(/poc/img/myt/bg_myt2_2_2_s.png);}
 .grayBox2.colTy3 dl.bgIco05 {background-image:url(/poc/img/myt/bg_myt2_2_5_s.png);}
 
-/* 190726 추가 [OP002-2534] T high5 적금 */
+/* 190726 異媛 [OP002-2534] T high5 ?湲 */
 .small_pop_barGraph .pop_bar_wrap .pop_graph_info .pop_date_txt {margin-bottom:10px; position:relative;}
 .small_pop_barGraph .pop_bar_wrap .pop_graph_info .pop_date_txt .pop_graph_tit {font-size: 16px;}
 .small_pop_barGraph .pop_bar_wrap .pop_graph_info .pop_date_txt .pop_graph_txt {position:absolute; right:0; font-size:18px; color:#333;}
 .small_pop_barGraph .pop_bar_wrap .pop_graph_info .pop_date_txt .pop_graph_txt em {font-size:26px; display:inline-block; vertical-align:top;}
 
-/* 190918 추가 [OP002-3625] */
+/* 190918 異媛 [OP002-3625] */
 .guideBox2.currentInfo.my5gxDataStat .info5gxData {display:inline-block; padding:4px 106px;}
 .guideBox2.currentInfo.my5gxDataStat .info5gxData >li {padding:24px 0; border-top:1px dashed #d6d6d9; white-space:nowrap; font-size:18px; line-height:26px;}
 .guideBox2.currentInfo.my5gxDataStat .info5gxData >li:first-child {border-top:0;}
@@ -1970,7 +1970,7 @@ a.socialLink{display:inline-block;*display:inline;*zoom:1;margin-top:5px;color:#
 .infoBox.type5gx, .infoBox.type5gx .selectBox .tit>span {font-size:16px;}
 .infoBox.type5gx .selectBox {margin-left:10px;}
 
-/* 191007 OP002-4244 추가 */
+/* 191007 OP002-4244 異媛 */
 .myt_product2 dd .list2.family li {height:250px;}
 .myt_product2 dd .list2.family li div {height:auto; padding: 96px 0 95px;}
 .myt_product2 dd .list2.family li.term strong,
@@ -1984,20 +1984,20 @@ a.socialLink{display:inline-block;*display:inline;*zoom:1;margin-top:5px;color:#
 .combineList .item3 .numBox2 ul {padding-bottom:53px;}
 .combineList .item3 .percent {height:196px; padding-top:52px;}
 
-/* 191022 추가 [OP002-4365] */
+/* 191022 異媛 [OP002-4365] */
 .titDep_wrap [class^="titDep"], .titDep_wrap [class*=" titDep"] {display:inline-block; vertical-align:top;}
 .small_pop_barGraph .pop_bar_wrap .graphType1 .wAction.cGray {background-image:url('/poc/img/myt/pop_bg_igraph3.png'); background-repeat:no-repeat;}
 .small_pop_barGraph .pop_bar_wrap .graphType1 .wAction.cGreen {background-image:url('/poc/img/myt/pop_bg_igraph4.png'); background-repeat:no-repeat;}
 
-/* 200109 추가 [OP002-3835] 가족모아 화면 개선 요청 */
+/* 200109 異媛 [OP002-3835] 媛議깅え? ?硫?媛? ?泥 */
 .circuitGroupWrap .circuitGroupTable .leave-member-td .txtUserInfo, 
 .leave-member-td .graphView .cGraphTxt strong em{color:#888}
 
-/* 200923 [OP002-10693] 추가 */
+/* 200923 [OP002-10693] 異媛 */
 .contBox-gray{background-color: #f7f7f7; padding: 20px; margin-bottom: 40px; text-align: center;}
 .contBox-gray .txt-nomal{font-size: 16px; line-height: 1.2; color:#000;}
 
-/* 201008 [OP002-10790] 추가 : 미리납부하신 금액 */
+/* 201008 [OP002-10790] 異媛 : 誘몃━?⑸??? 湲??*/
 .miri-bill-summary{position:relative; background: #f8f8f8; padding: 15px;}
 .miri-bill-summary .miri-tit{display: inline-block; width: 40px; height: 17px; background: url(/poc/img/myt/tit_miri.png) no-repeat 0 0;}
 .miri-bill-summary .miri-txt{margin-top: 15px;}
@@ -2005,13 +2005,13 @@ a.socialLink{display:inline-block;*display:inline;*zoom:1;margin-top:5px;color:#
 .miriPop-inquiry-wrap .num{height: 30px; font-size: 18px; line-height: 30px;}
 .miriPop-inquiry-tbl .data{display: block;}
 
-/* 210107 [OP002-12612] 추가 : 보관함 > 담은 보관함 > 기기상품 보관함 삭제 요청 */ 
+/* 210107 [OP002-12612] 異媛 : 蹂닿???> ?댁 蹂닿???> 湲곌린?? 蹂닿????? ?泥 */ 
 .lockerInfoBox.col2 div{width:47%}
 .lockerInfoBox.feeInfoBox div dl{height:80px;padding:40px 10px 30px 160px;background:url(/poc/img/myt/bg_ico_addinfo.png) no-repeat 40px 40px}
 .lockerInfoBox.feeInfoBox div dl{background-position:60px -1165px}
 .lockerInfoBox.feeInfoBox div+div dl{background-position:60px -1365px}
 
-/* 210119 [OP002-12778] 추가 : 담은 보관함에서 OSMU상품도 조회되도록 개선 */ 
+/* 210119 [OP002-12778] 異媛 : ?댁 蹂닿??⑥? OSMU??? 議고??濡 媛? */ 
 .keepList.hType1{height:500px}
 .keepList.hType1 .productBox .bandData{padding-bottom:20px}
 .keepList.hType1 .productBox{height:408px;}
@@ -2024,7 +2024,7 @@ a.socialLink{display:inline-block;*display:inline;*zoom:1;margin-top:5px;color:#
 .keepList.hType1 .productBox .list1 li+li{height:115px;background:none;border-left:1px solid #eaeaec;}
 .keepList.hType1 .productBox .price.one{height:58px;}
 
-/* 210412 [OP002-14171] 추가 */
+/* 210412 [OP002-14171] 異媛 */
 .myt-radio-group-01{font-size:0;}
 .myt-radio-group-01 .radio-square{margin-left:12px;width:32%;}
 .myt-radio-group-01 .radio-square:first-child{margin-left:0;}
@@ -2049,13 +2049,13 @@ a.socialLink{display:inline-block;*display:inline;*zoom:1;margin-top:5px;color:#
 .myt_paylist-wrap .myt_product1 .lineInfo .checkbox-pos{position:relative;float:left;margin:20px 0 0 0;}
 .myt_paylist-wrap .myt_product1 .lineInfo .checkbox-pos .checkbox{margin-left:20px;}
 
-/* 211020 [OP002-17426] [PUB] [myT] (O-2110-028-01) T월드 청구요금 내역 내 회선 정보 노출 영역에 [콜기프트] 뱃지 변경 요청 */
+/* 211020 [OP002-17426] [PUB] [myT] (O-2110-028-01) T?? 泥援ъ湲 ?댁 ???? ?蹂??몄? ??? [肄湲고?? 諭吏 蹂寃??泥 */
 .newMajorInfo .lock{display:inline-block;overflow:hidden;width:14px;height:0;padding-top:16px;margin-left:3px;background:url(/poc/img/common/ico_line_lock.png) no-repeat 0 0;text-indent:-9999px;font-size:0;line-height:0;vertical-align:2px;}
 
-/* 211028 [OP002-17574] [PUB] [myT] (O-2110-082-04) T분실케어센터 관련 내용 삭제 */
+/* 211028 [OP002-17574] [PUB] [myT] (O-2110-082-04) T遺?ㅼ??댁쇳?愿???댁??? */
 .addition.col2 li dl.ico-circle, .addition.col2 li dl.ico-siren {background-position-x:40px;}
 
-/* 211109 [OP002-17815] [MP] 멤버십개편 T world 반영의 건(개발용) */
+/* 211109 [OP002-17815] [MP] 硫ㅻ??媛??T world 諛?? 嫄?媛諛?? */
 body>.myt_section1 .dlType2{padding-bottom:44px;} /* iframe ie */
 .myt_section1 .dlType2 dd.subInfo{min-height:21px;}
 .myt_section1 .dlType2 dd.rate>div{color:#fff;margin-top:27px;text-align:right;}

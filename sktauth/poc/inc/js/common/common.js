@@ -1,717 +1,717 @@
-/*
+ï»¿/*
 #2021.06.17
-[OP002-15046] [myT] [PUB] (O-2106-032-01) [À¥Á¢±Ù¼º] 2021³âµµ ¿Â¶óÀÎT À¥Á¢±Ù¼º ÀÎÁõ ¸¶Å© °»½ÅÀ» À§ÇÑ »ùÇÃ¸µ Áß myT °Ë¼ö °á°ú ¹İ¿µ
+[OP002-15046] [myT] [PUB] (O-2106-032-01) [ì›¹ì ‘ê·¼ì„±] 2021ë…„ë„ ì˜¨ë¼ì¸T ì›¹ì ‘ê·¼ì„± ì¸ì¦ ë§ˆí¬ ê°±ì‹ ì„ ìœ„í•œ ìƒ˜í”Œë§ ì¤‘ myT ê²€ìˆ˜ ê²°ê³¼ ë°˜ì˜
 
 #2021.05.31
-[OP002-14702] [UX/PUB] [myT] (O-2105-016-01) T¿ùµå(À¥/¾Û) À¯¼± ÇØÁö ½ÅÃ» ÇÁ·Î¼¼½º º¯°æ 
+[OP002-14702] [UX/PUB] [myT] (O-2105-016-01) Tì›”ë“œ(ì›¹/ì•±) ìœ ì„  í•´ì§€ ì‹ ì²­ í”„ë¡œì„¸ìŠ¤ ë³€ê²½ 
 
 #2020.07.27
-¸â¹ö½±°ü·Ã À¥Á¢±Ù¼º ¼öÁ¤
+ë©¤ë²„ì‰½ê´€ë ¨ ì›¹ì ‘ê·¼ì„± ìˆ˜ì •
 
 #2020.07.13
-[OP002-9544] °ü·Ã ¼öÁ¤
+[OP002-9544] ê´€ë ¨ ìˆ˜ì •
 
 #2020.07.02
-2020³â À¥Á¢±Ù¼º ÀÎÁõ¸¶Å© °»½Å ¼öÁ¤
+2020ë…„ ì›¹ì ‘ê·¼ì„± ì¸ì¦ë§ˆí¬ ê°±ì‹  ìˆ˜ì •
 
-#2020.04.08 Á¢±Ù¼º ¼öÁ¤
+#2020.04.08 ì ‘ê·¼ì„± ìˆ˜ì •
 
 #2019.10.29
-191029 [OP002-4801] À¥Á¢±Ù¼º ¼öÁ¤
+191029 [OP002-4801] ì›¹ì ‘ê·¼ì„± ìˆ˜ì •
 
 #2019.10.11
-191011 [OP002-4495] À¥Á¢±Ù¼º ¼öÁ¤
+191011 [OP002-4495] ì›¹ì ‘ê·¼ì„± ìˆ˜ì •
 
 #2019.09.18
-190918 2019 À¥Á¢±Ù¼º ½É»ç ¼öÁ¤
+190918 2019 ì›¹ì ‘ê·¼ì„± ì‹¬ì‚¬ ìˆ˜ì •
 
 #2019.09.04
-190904 À¥Á¢±Ù¼º ¼öÁ¤
+190904 ì›¹ì ‘ê·¼ì„± ìˆ˜ì •
 
 #2019.07.12
-190712 2019À¥Á¢±Ù¼º ¼öÁ¤ START
+190712 2019ì›¹ì ‘ê·¼ì„± ìˆ˜ì • START
 
 #2019.05.10
-[#OP002-351] [PUB] [VOC ´ëÀÀ] ¹øÈ£º¯°æ ½Ã Á¶È¸¹øÈ£ ¼±ÅÃ½Ã°£ ´ÜÃà
+[#OP002-351] [PUB] [VOC ëŒ€ì‘] ë²ˆí˜¸ë³€ê²½ ì‹œ ì¡°íšŒë²ˆí˜¸ ì„ íƒì‹œê°„ ë‹¨ì¶•
 
-#2019.03.26 À¥Á¢±Ù¼º ¼öÁ¤
-WA Á¢±Ù¼º ¼öÁ¤
+#2019.03.26 ì›¹ì ‘ê·¼ì„± ìˆ˜ì •
+WA ì ‘ê·¼ì„± ìˆ˜ì •
 
-#2019.02.28 À¥Á¢±Ù¼º ¼öÁ¤
-WA Á¢±Ù¼º ¼öÁ¤
+#2019.02.28 ì›¹ì ‘ê·¼ì„± ìˆ˜ì •
+WA ì ‘ê·¼ì„± ìˆ˜ì •
 
 #2019.02.26
-¸â¹ö½± HTTPS Àû¿ë PJT(2018.11.22) Àû¿ë Ãß°¡
-Xtractor ±èÇü·¡ ¼ö¼® ¼öÁ¤ ¿äÃ»
+ë©¤ë²„ì‰½ HTTPS ì ìš© PJT(2018.11.22) ì ìš© ì¶”ê°€
+Xtractor ê¹€í˜•ë˜ ìˆ˜ì„ ìˆ˜ì • ìš”ì²­
 
 #2019.02.15
-20190213 TOSÃß°¡ - ±èÇü·¡ ¼ö¼® ¿äÃ»
+20190213 TOSì¶”ê°€ - ê¹€í˜•ë˜ ìˆ˜ì„ ìš”ì²­
 
 #2019.02.08
-GNB ¼öÁ¤À¸·Î ÀÎÇÑ ÇÃ·ÎÆÃ ¼öÄ¡ Á¶Á¤
+GNB ìˆ˜ì •ìœ¼ë¡œ ì¸í•œ í”Œë¡œíŒ… ìˆ˜ì¹˜ ì¡°ì •
 
 #2018.11.01
-·Î¹Ö¸ŞÀÎ ´º½º ¿µ¿ª Á¢±Ù¼º ¼öÁ¤ - ·Î¹Ö¿¡¼­ Àü´Ş
-À¥Á¢±Ù¼º ¼öÁ¤
+ë¡œë°ë©”ì¸ ë‰´ìŠ¤ ì˜ì—­ ì ‘ê·¼ì„± ìˆ˜ì • - ë¡œë°ì—ì„œ ì „ë‹¬
+ì›¹ì ‘ê·¼ì„± ìˆ˜ì •
 
 #2018.10.24
-[#7106][T apps] T map ÅÃ½Ã »óÇ°¿øÀå - Á¢±Ù¼º ¼öÁ¤
+[#7106][T apps] T map íƒì‹œ ìƒí’ˆì›ì¥ - ì ‘ê·¼ì„± ìˆ˜ì •
 
 #2018.10.17
-[#6927] [myT] ³ªÀÇ °¡ÀÔÁ¤º¸ ³» ¼öÁ¤»çÇ× - PC È­¸é title ¼Ó¼º ÅØ½ºÆ® Ãß°¡
+[#6927] [myT] ë‚˜ì˜ ê°€ì…ì •ë³´ ë‚´ ìˆ˜ì •ì‚¬í•­ - PC í™”ë©´ title ì†ì„± í…ìŠ¤íŠ¸ ì¶”ê°€
 
 #2018.10.01
-[#6973] [°í°´¼¾ÅÍ] ¿Â¶óÀÎ »ó´ã/¹®ÀÇ ´ÙÀÌ·ºÆ®¼¥ ¹®ÀÇÀ¯Çü ºĞ¸® - ÅÇ ¼±ÅÃµÊ Ãß°¡
+[#6973] [ê³ ê°ì„¼í„°] ì˜¨ë¼ì¸ ìƒë‹´/ë¬¸ì˜ ë‹¤ì´ë ‰íŠ¸ìƒµ ë¬¸ì˜ìœ í˜• ë¶„ë¦¬ - íƒ­ ì„ íƒë¨ ì¶”ê°€
 
 #2018.09.03
-[#6998] [myT] À¥Á¢±Ù¼º ÀÎÁõ¸¶Å© °»½ÅÀ» À§ÇÑ ¼öÁ¤ (¿À·ù¼öÁ¤)
+[#6998] [myT] ì›¹ì ‘ê·¼ì„± ì¸ì¦ë§ˆí¬ ê°±ì‹ ì„ ìœ„í•œ ìˆ˜ì • (ì˜¤ë¥˜ìˆ˜ì •)
 
 #2018.06.20
-[#6811] [°øÅë] ¸ŞÀÎ½½¶óÀÌµå ÀÎµğÄÉÀÌÅÍ ¿À·ù ¼öÁ¤ °ü·Ã (¿À·ù¼öÁ¤)
+[#6811] [ê³µí†µ] ë©”ì¸ìŠ¬ë¼ì´ë“œ ì¸ë””ì¼€ì´í„° ì˜¤ë¥˜ ìˆ˜ì • ê´€ë ¨ (ì˜¤ë¥˜ìˆ˜ì •)
 
 #2018.06.08
-[#6785] [¸ŞÀÎ] T world ¸ŞÀÎ ¹è³Ê ·Ñ¸µ ¼Óµµ Á¶Á¤ ¿äÃ»ÀÇ °Ç (¿ä°ÇÃß°¡)
+[#6785] [ë©”ì¸] T world ë©”ì¸ ë°°ë„ˆ ë¡¤ë§ ì†ë„ ì¡°ì • ìš”ì²­ì˜ ê±´ (ìš”ê±´ì¶”ê°€)
 
 #2018.06.07
-[#6783] [°øÅë] 2018À¥Á¢±Ù¼º»ùÇÃ¸µ°Ë¼ö°á°ú¹İ¿µ_°øÅë¼­ºñ½º¿µ¿ª (¿À·ù¼öÁ¤)
+[#6783] [ê³µí†µ] 2018ì›¹ì ‘ê·¼ì„±ìƒ˜í”Œë§ê²€ìˆ˜ê²°ê³¼ë°˜ì˜_ê³µí†µì„œë¹„ìŠ¤ì˜ì—­ (ì˜¤ë¥˜ìˆ˜ì •)
 
 #2018.04.03
-[#6338] [T apps] T apps index ÆäÀÌÁö ½½¶óÀÌµå ¿µ¿ª ¿À·ù È®ÀÎ ¿äÃ» (¿À·ù¼öÁ¤)
+[#6338] [T apps] T apps index í˜ì´ì§€ ìŠ¬ë¼ì´ë“œ ì˜ì—­ ì˜¤ë¥˜ í™•ì¸ ìš”ì²­ (ì˜¤ë¥˜ìˆ˜ì •)
 
 #2018.02.22
-console.log °´Ã¼ »ı¼º ÄÚµå Ãß°¡
+console.log ê°ì²´ ìƒì„± ì½”ë“œ ì¶”ê°€
 
-#2018.01.15 È­¸é¿¡ º¸ÀÌ´Â Æ÷Ä¿½º °¡´ÉÇÑ ¿ä¼Ò¸¸ °Ë»ö ÇÔ¼ö Ãß°¡
-#2018.01.15 À¥Á¢±Ù¼º º»¹® ¹Ù·Î°¡±â ¼öÁ¤
+#2018.01.15 í™”ë©´ì— ë³´ì´ëŠ” í¬ì»¤ìŠ¤ ê°€ëŠ¥í•œ ìš”ì†Œë§Œ ê²€ìƒ‰ í•¨ìˆ˜ ì¶”ê°€
+#2018.01.15 ì›¹ì ‘ê·¼ì„± ë³¸ë¬¸ ë°”ë¡œê°€ê¸° ìˆ˜ì •
 
-#2018.01.12 ´Ş·Â ·¹ÀÌ¾î GNB Ãæµ¹ Çö»ó Á¦°Å
-´Ş·Â ·¹ÀÌ¾î GNB Ãæµ¹ Çö»ó Á¦°Å
+#2018.01.12 ë‹¬ë ¥ ë ˆì´ì–´ GNB ì¶©ëŒ í˜„ìƒ ì œê±°
+ë‹¬ë ¥ ë ˆì´ì–´ GNB ì¶©ëŒ í˜„ìƒ ì œê±°
 
-#2018.01.09 IE11 Å°º¸µå »ç¿ë¼º ¼öÁ¤
-IE11¿¡¼­ Å°º¸µå·Î ¶óµğ¿À¹Ú½º°¡ ÀÌµ¿µÇÁö ¾Ê´Â ¹ö±× ¼öÁ¤
+#2018.01.09 IE11 í‚¤ë³´ë“œ ì‚¬ìš©ì„± ìˆ˜ì •
+IE11ì—ì„œ í‚¤ë³´ë“œë¡œ ë¼ë””ì˜¤ë°•ìŠ¤ê°€ ì´ë™ë˜ì§€ ì•ŠëŠ” ë²„ê·¸ ìˆ˜ì •
 
-#2018.01.09 À¥Á¢±Ù¼º°ü·Ã ¼öÁ¤
-»óÇ°¼­ºñ½º > ¸ğ¹ÙÀÏÀü¿ë¼­ºñ½º > T apps ÆäÀÌÁö ¿¡µğÅÍ°¡ ÃßÃµÇÏ´Â ¾Û ½½¶óÀÌµå ¿µ¿ªÀÇ À¥Á¢±Ù¼º°ü·Ã ¼öÁ¤
+#2018.01.09 ì›¹ì ‘ê·¼ì„±ê´€ë ¨ ìˆ˜ì •
+ìƒí’ˆì„œë¹„ìŠ¤ > ëª¨ë°”ì¼ì „ìš©ì„œë¹„ìŠ¤ > T apps í˜ì´ì§€ ì—ë””í„°ê°€ ì¶”ì²œí•˜ëŠ” ì•± ìŠ¬ë¼ì´ë“œ ì˜ì—­ì˜ ì›¹ì ‘ê·¼ì„±ê´€ë ¨ ìˆ˜ì •
 
 #2017.11.30
 
-//#myT>Á¶È¸>±âº»Á¤º¸>³ªÀÇ °¡ÀÔÁ¤º¸ *ÀÚµ¿½ºÅ©·Ñ Á¦°Å
+//#myT>ì¡°íšŒ>ê¸°ë³¸ì •ë³´>ë‚˜ì˜ ê°€ì…ì •ë³´ *ìë™ìŠ¤í¬ë¡¤ ì œê±°
 
 #2017.10.10
-[#5219] myT ÁÖ¿ä Á¶È¸ ¸Ş´º UI °³¼± (¿ä°ÇÃß°¡)
-#myt°³¼±
+[#5219] myT ì£¼ìš” ì¡°íšŒ ë©”ë‰´ UI ê°œì„  (ìš”ê±´ì¶”ê°€)
+#mytê°œì„ 
 
 #2017.09.19
-[#5259] [°í°´¼¾ÅÍ] ³ªÀÇ¹®ÀÇ³»¿ª ÆîÄ§¸Ş´º ¿À·ù ¼öÁ¤ (¿À·ù¼öÁ¤)
-[´ñ±Ûµî·Ï] #5298 [°øÅë] ¸¶ÄÉÆÃ¿µ¿ª Ò® Åë°èÄÚµå Àû¿ë°Ç (¿ä°ÇÃß°¡)
+[#5259] [ê³ ê°ì„¼í„°] ë‚˜ì˜ë¬¸ì˜ë‚´ì—­ í¼ì¹¨ë©”ë‰´ ì˜¤ë¥˜ ìˆ˜ì • (ì˜¤ë¥˜ìˆ˜ì •)
+[ëŒ“ê¸€ë“±ë¡] #5298 [ê³µí†µ] ë§ˆì¼€íŒ…ì˜ì—­ å…§ í†µê³„ì½”ë“œ ì ìš©ê±´ (ìš”ê±´ì¶”ê°€)
 
 #2017.07.17
-WA Á¢±Ù¼º ¼öÁ¤
+WA ì ‘ê·¼ì„± ìˆ˜ì •
 
 #2017.07.13
-[#5238] ³»°Ô¸Â´Â ¿ä±İÁ¦Ã£±â_¿À·ù ¼öÁ¤ (¿À·ù¼öÁ¤)
+[#5238] ë‚´ê²Œë§ëŠ” ìš”ê¸ˆì œì°¾ê¸°_ì˜¤ë¥˜ ìˆ˜ì • (ì˜¤ë¥˜ìˆ˜ì •)
 
 #2017.07.13  #WA ver2.0
-[#5223] [myT] Å©·Ò ¿ÍÀÌÆÄÀÌ°èÁ¤ °¡ÀÔÁ¤º¸ È¸¼±ÆîÄ¡±â ¹«µ¿ÀÛ (¿ä°ÇÃß°¡)
+[#5223] [myT] í¬ë¡¬ ì™€ì´íŒŒì´ê³„ì • ê°€ì…ì •ë³´ íšŒì„ í¼ì¹˜ê¸° ë¬´ë™ì‘ (ìš”ê±´ì¶”ê°€)
 
 #2017.06.09
-//#WA Á¢±Ù¼º ¼öÁ¤
-[À¥Á¢±Ù¼º] #ÀÌº¥Æ® WA
-[À¥Á¢±Ù¼º] #myT WA
-[À¥Á¢±Ù¼º] #°í°´¼¾ÅÍ WA
-[À¥Á¢±Ù¼º] #°øÅë WA
+//#WA ì ‘ê·¼ì„± ìˆ˜ì •
+[ì›¹ì ‘ê·¼ì„±] #ì´ë²¤íŠ¸ WA
+[ì›¹ì ‘ê·¼ì„±] #myT WA
+[ì›¹ì ‘ê·¼ì„±] #ê³ ê°ì„¼í„° WA
+[ì›¹ì ‘ê·¼ì„±] #ê³µí†µ WA
 
 #2017.06.08
-[#5099] [»óÇ°] ¼­ºê¸ŞÀÎ > T¶ó¼­°¡´ÉÇÑ,T³ª´ÂSKT¶óÀÌÇÁ 6¿ù ¾÷µ¥ÀÌÆ® (¿ä°ÇÃß°¡)
+[#5099] [ìƒí’ˆ] ì„œë¸Œë©”ì¸ > Të¼ì„œê°€ëŠ¥í•œ,Të‚˜ëŠ”SKTë¼ì´í”„ 6ì›” ì—…ë°ì´íŠ¸ (ìš”ê±´ì¶”ê°€)
 
 #2017.05.18
-[#5086] [ÀÌº¥Æ®] ÁøÇàÁßÀÎ ÀÌº¥Æ® »ó¼¼ ÇÃ·ÎÆÃ ·¹ÀÌ¾î À§Ä¡ Á¶Á¤ (¿À·ù¼öÁ¤)
+[#5086] [ì´ë²¤íŠ¸] ì§„í–‰ì¤‘ì¸ ì´ë²¤íŠ¸ ìƒì„¸ í”Œë¡œíŒ… ë ˆì´ì–´ ìœ„ì¹˜ ì¡°ì • (ì˜¤ë¥˜ìˆ˜ì •)
 
 #2017.04.17
-À¥Á¢±Ù¼º ¼öÁ¤Áß.  setWebAccessibilityFunc
+ì›¹ì ‘ê·¼ì„± ìˆ˜ì •ì¤‘.  setWebAccessibilityFunc
 
 #2017.02.13
-[#4870] [°øÅë] Ã¤³Îº° ÀÚµ¿·Î±×¾Æ¿ô ºĞ±âÃ³¸® °ü·Ã (¿À·ù¼öÁ¤)
+[#4870] [ê³µí†µ] ì±„ë„ë³„ ìë™ë¡œê·¸ì•„ì›ƒ ë¶„ê¸°ì²˜ë¦¬ ê´€ë ¨ (ì˜¤ë¥˜ìˆ˜ì •)
 
 #2016.12.22
-[#4753] [°øÅë] common.js ¼öÁ¤ °ü·Ã (¿À·ù¼öÁ¤)
+[#4753] [ê³µí†µ] common.js ìˆ˜ì • ê´€ë ¨ (ì˜¤ë¥˜ìˆ˜ì •)
 
-16.12.20¼öÁ¤
-[#4750] [°øÅë] »óÇ°¼­ºñ½º ¼­ºê¸ŞÀÎ ¹× T apps ÀÎµ¦½º ÆäÀÌÁö ¼Ò½º¿À·ù ¼öÁ¤ ¿äÃ» °Ç (¿À·ù¼öÁ¤)
+16.12.20ìˆ˜ì •
+[#4750] [ê³µí†µ] ìƒí’ˆì„œë¹„ìŠ¤ ì„œë¸Œë©”ì¸ ë° T apps ì¸ë±ìŠ¤ í˜ì´ì§€ ì†ŒìŠ¤ì˜¤ë¥˜ ìˆ˜ì • ìš”ì²­ ê±´ (ì˜¤ë¥˜ìˆ˜ì •)
 
-#2016.12.02 ÀÚµ¿ ·Î±×¾Æ¿ô Ã³¸® ¼öÁ¤
-µ¿ÀÏ ºê¶ó¿ìÀú ¼¼¼Ç ³» °øÀ¯ÇÏ´Â ±âÁØ½Ã°£ Ãß°¡
+#2016.12.02 ìë™ ë¡œê·¸ì•„ì›ƒ ì²˜ë¦¬ ìˆ˜ì •
+ë™ì¼ ë¸Œë¼ìš°ì € ì„¸ì…˜ ë‚´ ê³µìœ í•˜ëŠ” ê¸°ì¤€ì‹œê°„ ì¶”ê°€
 
-#2016.11.24ÀÏ À¥Á¢±Ù¼º¼öÁ¤.
+#2016.11.24ì¼ ì›¹ì ‘ê·¼ì„±ìˆ˜ì •.
 
-16.11.24À¥Á¢±Ù¼±¼±ÇüÈ­°ü·Ã¼öÁ¤
-//Á¢±Ù¼º¼öÁ¤ÇÏ¸é¼­¼öÁ¤Åä±Û¹öÆ°ÃÖ»ó´Ü¾ÕÀ¸·Î
+16.11.24ì›¹ì ‘ê·¼ì„ ì„ í˜•í™”ê´€ë ¨ìˆ˜ì •
+//ì ‘ê·¼ì„±ìˆ˜ì •í•˜ë©´ì„œìˆ˜ì •í† ê¸€ë²„íŠ¼ìµœìƒë‹¨ì•ìœ¼ë¡œ
 
-#2016.11.24ÀÏ À¥Á¢±Ù¼º¼öÁ¤.
-//setCommon()  http://www.tworld.co.kr/normal.do?serviceId=S_PROD6040&viewId=V_CENT6040  À§Ä¡ÀÌµ¿ ready -> load ·Î ÀÌµ¿
+#2016.11.24ì¼ ì›¹ì ‘ê·¼ì„±ìˆ˜ì •.
+//setCommon()  http://www.tworld.co.kr/normal.do?serviceId=S_PROD6040&viewId=V_CENT6040  ìœ„ì¹˜ì´ë™ ready -> load ë¡œ ì´ë™
 
-[#4577] [¸ŞÀÎ] °øÁöÆË¾÷_µ¿ÀÇÀÇ°á¾È ·¹ÀÌ¾îÆË¾÷ ºñ°Ô½Ã ¹èÆ÷ (¿ä°ÇÃß°¡)
+[#4577] [ë©”ì¸] ê³µì§€íŒì—…_ë™ì˜ì˜ê²°ì•ˆ ë ˆì´ì–´íŒì—… ë¹„ê²Œì‹œ ë°°í¬ (ìš”ê±´ì¶”ê°€)
 //
-@Data:2016.11.09 ¿ù¿äÀÏ
+@Data:2016.11.09 ì›”ìš”ì¼
 
 #2016.11.09
-setSlidingContent function Ãß°¡  (setCommon¿¡¼­ ºĞ¸® ajax ·ÎµåÈÄ bindingµÇÁö¾Ê´Â¹®Á¦)
-setBinding function Ãß°¡
+setSlidingContent function ì¶”ê°€  (setCommonì—ì„œ ë¶„ë¦¬ ajax ë¡œë“œí›„ bindingë˜ì§€ì•ŠëŠ”ë¬¸ì œ)
+setBinding function ì¶”ê°€
 #2016.11.07
-[#4577] [¸ŞÀÎ] °øÁöÆË¾÷_µ¿ÀÇÀÇ°á¾È ·¹ÀÌ¾îÆË¾÷ ºñ°Ô½Ã ¹èÆ÷ (¿ä°ÇÃß°¡)
+[#4577] [ë©”ì¸] ê³µì§€íŒì—…_ë™ì˜ì˜ê²°ì•ˆ ë ˆì´ì–´íŒì—… ë¹„ê²Œì‹œ ë°°í¬ (ìš”ê±´ì¶”ê°€)
 #2016.11.03
-#µ¿ÀÇÀÇ°á ÆË¾÷ ¼öÁ¤¹× ie7_w550 Å¬·¡½ºÃß°¡
+#ë™ì˜ì˜ê²° íŒì—… ìˆ˜ì •ë° ie7_w550 í´ë˜ìŠ¤ì¶”ê°€
 #2016.10.26
-#µ¿ÀÇÀÇ°á °ü·Ã ¿ä±İÁ¦ Á¦ÇÑ»çÇ× °íÁö°ü·ÃÆË¾÷
+#ë™ì˜ì˜ê²° ê´€ë ¨ ìš”ê¸ˆì œ ì œí•œì‚¬í•­ ê³ ì§€ê´€ë ¨íŒì—…
 -----------------------------------------------------------------------
  * 2016.03.14
- * -MY2.2.2.1T.1.html Ãß°¡ (441)
- * -radio ¹öÆ°ÀÇ °æ¿ì °°Àº ±×·ìÀÇ ¶óµğ¿À ¹öÆ°Àº nameÀ» ¼³Á¤ÇØ Áà¾ß Å°º¸µåÁ¦¾î°¡ Á¤»óÀûÀ¸·Î ÀÛµ¿ÇÑ´Ù.(¶óµğ¿À ¹öÆ° °øÅë»çÇ×)
- * -MY2.2.5.3T.1.html ÃæÀü¼±ÅÃ Ãß°¡
- * -@setUlSlide ½½¶óÀÌµå ±â´É ÇÔ¼ö Ãß°¡(MY2.2.5.3T.1.html)
+ * -MY2.2.2.1T.1.html ì¶”ê°€ (441)
+ * -radio ë²„íŠ¼ì˜ ê²½ìš° ê°™ì€ ê·¸ë£¹ì˜ ë¼ë””ì˜¤ ë²„íŠ¼ì€ nameì„ ì„¤ì •í•´ ì¤˜ì•¼ í‚¤ë³´ë“œì œì–´ê°€ ì •ìƒì ìœ¼ë¡œ ì‘ë™í•œë‹¤.(ë¼ë””ì˜¤ ë²„íŠ¼ ê³µí†µì‚¬í•­)
+ * -MY2.2.5.3T.1.html ì¶©ì „ì„ íƒ ì¶”ê°€
+ * -@setUlSlide ìŠ¬ë¼ì´ë“œ ê¸°ëŠ¥ í•¨ìˆ˜ ì¶”ê°€(MY2.2.5.3T.1.html)
  *
  * 2016.03.15
- * -@setUlSlide ÇÔ¼ö ¼öÁ¤
- * -@setUlSlide each() Ãß°¡
- * -MY2.2.3.1T.1.html ÃæÀüÇÒµ¥ÀÌÅÍ ¼±ÅÃ Ãß°¡(.moneySelect)
- * -.moneySelect½ºÅ©¸³Æ® »èÁ¦ .dataSelect·Î ÅëÇÕ//ul.dataSelect>ul>li>a //myt ÀÌ¿Ü¿¡ Ãß°¡½Ã °øÅëÀ¸·Î ÀÌµ¿
- * -@setCenter °¡ÀÔÀÚÀ¯Çü ¼±ÅÃ ½ºÅ©¸³Æ® Ãß°¡ //CS3.1.1.1T.1T.html
- * -@setTlive Ãß°¡ //www/poc/tlive/
- * -@setTlive ÁøÇàÁßÀÎ ÀÌº¥Æ® TL1.1.1.html ½ºÅ©·Ñ ºñÀ² ÀÌµ¿ !!!º¸·ù!!!
- * -MY2.2.5.3T.1.html ÃæÀüÇÒ µ¥ÀÌÅÍ ¼±ÅÃ (Á¤º¸¸¦ ÀÔ·ÂÇØ ÁÖ¼¼¿ä ÅÇ¿¡ ÃæÀü±İ¾× °ªº¯°æ Ãß°¡)
+ * -@setUlSlide í•¨ìˆ˜ ìˆ˜ì •
+ * -@setUlSlide each() ì¶”ê°€
+ * -MY2.2.3.1T.1.html ì¶©ì „í• ë°ì´í„° ì„ íƒ ì¶”ê°€(.moneySelect)
+ * -.moneySelectìŠ¤í¬ë¦½íŠ¸ ì‚­ì œ .dataSelectë¡œ í†µí•©//ul.dataSelect>ul>li>a //myt ì´ì™¸ì— ì¶”ê°€ì‹œ ê³µí†µìœ¼ë¡œ ì´ë™
+ * -@setCenter ê°€ì…ììœ í˜• ì„ íƒ ìŠ¤í¬ë¦½íŠ¸ ì¶”ê°€ //CS3.1.1.1T.1T.html
+ * -@setTlive ì¶”ê°€ //www/poc/tlive/
+ * -@setTlive ì§„í–‰ì¤‘ì¸ ì´ë²¤íŠ¸ TL1.1.1.html ìŠ¤í¬ë¡¤ ë¹„ìœ¨ ì´ë™ !!!ë³´ë¥˜!!!
+ * -MY2.2.5.3T.1.html ì¶©ì „í•  ë°ì´í„° ì„ íƒ (ì •ë³´ë¥¼ ì…ë ¥í•´ ì£¼ì„¸ìš” íƒ­ì— ì¶©ì „ê¸ˆì•¡ ê°’ë³€ê²½ ì¶”ê°€)
  *
  * 2016.03.16
- * [1]. @setCenter ¿øÇÏ½Ã´Â ÀÌ¿ë¾È³»¸¦ Â÷Áö ¸øÇÏ¼Ì³ª¿ä? open/close //CS3.2.1T.html
- * [2]. [1]¹ø ½ºÅ©¸³Æ® »èÁ¦, ÅÇ ¿­°í ´İ±â('open' Å¬·¡½º Ãß°¡/Á¦°Å ¹öÆ°) ½ºÅ©¸³Æ® Ãß°¡ // CS3.2.1T.html
- * setRadioBox , setCheckBox ¶óµğ¿À ¹öÆ°°ú Ã¼Å© ¹Ú½º¸¦ µğÀÚÀÎÀÌ Àû¿ë µÇÁö ¾È´Â °æ¿ì´Â ½ºÅ©¸³Æ®°¡ Àû¿ëµÇÁö ¾ÈÅä·Ï ¼öÁ¤
+ * [1]. @setCenter ì›í•˜ì‹œëŠ” ì´ìš©ì•ˆë‚´ë¥¼ ì°¨ì§€ ëª»í•˜ì…¨ë‚˜ìš”? open/close //CS3.2.1T.html
+ * [2]. [1]ë²ˆ ìŠ¤í¬ë¦½íŠ¸ ì‚­ì œ, íƒ­ ì—´ê³  ë‹«ê¸°('open' í´ë˜ìŠ¤ ì¶”ê°€/ì œê±° ë²„íŠ¼) ìŠ¤í¬ë¦½íŠ¸ ì¶”ê°€ // CS3.2.1T.html
+ * setRadioBox , setCheckBox ë¼ë””ì˜¤ ë²„íŠ¼ê³¼ ì²´í¬ ë°•ìŠ¤ë¥¼ ë””ìì¸ì´ ì ìš© ë˜ì§€ ì•ˆëŠ” ê²½ìš°ëŠ” ìŠ¤í¬ë¦½íŠ¸ê°€ ì ìš©ë˜ì§€ ì•ˆí† ë¡ ìˆ˜ì •
  *
  * 2016.03.17
- * @setCommon Ãß°¡
- * @setCommon ¸»Ç³¼± click¹öÀü div.qInfo_c Ãß°¡
- * calrendar ±¸ÇöºÎºĞ ¼öÁ¤
- * @setMyt dataSelect »èÁ¦b
- * @setCommon ¶óµğ¿À ¼¿·ºÆ® ¹Ú½º Ãß°¡ //ex. www/poc/myt/MY2.2.5.3T.3.html
- * @setCommon ¶óµğ¿À ¼¿·ºÆ® ¹Ú½º ul>li>ul ±¸Á¶¿¡¼­ Àû¿ëµÇ°Ô ¼öÁ¤ //ex. www/poc/myt/MY2.2.4.2T.2T.1.html
- * @setCommon ¶óµğ¿À ¼¿·ºÆ® ¹Ú½º Å°º¸µå ÀÌµ¿ liµµ Àû¿ëµÇ°Ô ¼öÁ¤ //ex. www/poc/myt/MY2.2.4.2T.2T.1.html
+ * @setCommon ì¶”ê°€
+ * @setCommon ë§í’ì„  clickë²„ì „ div.qInfo_c ì¶”ê°€
+ * calrendar êµ¬í˜„ë¶€ë¶„ ìˆ˜ì •
+ * @setMyt dataSelect ì‚­ì œb
+ * @setCommon ë¼ë””ì˜¤ ì…€ë ‰íŠ¸ ë°•ìŠ¤ ì¶”ê°€ //ex. www/poc/myt/MY2.2.5.3T.3.html
+ * @setCommon ë¼ë””ì˜¤ ì…€ë ‰íŠ¸ ë°•ìŠ¤ ul>li>ul êµ¬ì¡°ì—ì„œ ì ìš©ë˜ê²Œ ìˆ˜ì • //ex. www/poc/myt/MY2.2.4.2T.2T.1.html
+ * @setCommon ë¼ë””ì˜¤ ì…€ë ‰íŠ¸ ë°•ìŠ¤ í‚¤ë³´ë“œ ì´ë™ lië„ ì ìš©ë˜ê²Œ ìˆ˜ì • //ex. www/poc/myt/MY2.2.4.2T.2T.1.html
  *
  *
  * 2016.03.18
- * @setCommon ¸»Ç³¼± click¹öÀü ¼öÁ¤ ¹× tapkeyÃß°¡ ¹× Å¬·¡½º¸í qInfo º¯°æ
- * @setCommon ¶óµğ¿À ¼¿·ºÆ® ¹Ú½º liOnEvt·Î ¼öÁ¤
- * @setCommon ÃæÀü±İ¾× ½ºÅ©¸³Æ® MY2.2.4.2T.2T.1.html, MY2.2.4.1T.2T.1.html Ãß°¡
+ * @setCommon ë§í’ì„  clickë²„ì „ ìˆ˜ì • ë° tapkeyì¶”ê°€ ë° í´ë˜ìŠ¤ëª… qInfo ë³€ê²½
+ * @setCommon ë¼ë””ì˜¤ ì…€ë ‰íŠ¸ ë°•ìŠ¤ liOnEvtë¡œ ìˆ˜ì •
+ * @setCommon ì¶©ì „ê¸ˆì•¡ ìŠ¤í¬ë¦½íŠ¸ MY2.2.4.2T.2T.1.html, MY2.2.4.1T.2T.1.html ì¶”ê°€
  *
  * 2016.03.21
- * myt Á¢±Ù¼º ÀÌ½´·Î <span>ÅÂ±×¿¡ ¼±ÅÃÀÌ¶õ ¹®±¸°¡ Ãß°¡ µÇµµ·Ï ÀÛ¾÷  MY3.5.2.1.1.html
- * common Å¬·¡½º InfoÅøÆÁ¹Ú½º °ü·Ã
- * common Å¬·¡½º InfoÅøÆÁ¹Ú½º qIdx ·¡½º Ãß°¡ ¹× ÁöÁ¤µÈ Å¬·¡½º°£ z-indexÁ¶Á¤
- * radio ¹öÆ° µğÀÚÀÎ Àû¿ë ÃÊ±âÈ­ ¼öÁ¤
+ * myt ì ‘ê·¼ì„± ì´ìŠˆë¡œ <span>íƒœê·¸ì— ì„ íƒì´ë€ ë¬¸êµ¬ê°€ ì¶”ê°€ ë˜ë„ë¡ ì‘ì—…  MY3.5.2.1.1.html
+ * common í´ë˜ìŠ¤ Infoíˆ´íŒë°•ìŠ¤ ê´€ë ¨
+ * common í´ë˜ìŠ¤ Infoíˆ´íŒë°•ìŠ¤ qIdx ë˜ìŠ¤ ì¶”ê°€ ë° ì§€ì •ëœ í´ë˜ìŠ¤ê°„ z-indexì¡°ì •
+ * radio ë²„íŠ¼ ë””ìì¸ ì ìš© ì´ˆê¸°í™” ìˆ˜ì •
  *
  * 2016.03.22
- * setTapJs ¼öÁ¤()
+ * setTapJs ìˆ˜ì •()
  *
  * 2016.03.24
- * @setTglClsOpen close¹öÆ° ¾ø´Â °æ¿ì µ¿ÀÛ°¡´ÉÇÏµµ·Ï ¼öÁ¤
- * @setCenter ±¸ºñ¼­·ù ¾È³» ½ºÅ©¸³Æ® Ãß°¡ CS3.3.1T.html
+ * @setTglClsOpen closeë²„íŠ¼ ì—†ëŠ” ê²½ìš° ë™ì‘ê°€ëŠ¥í•˜ë„ë¡ ìˆ˜ì •
+ * @setCenter êµ¬ë¹„ì„œë¥˜ ì•ˆë‚´ ìŠ¤í¬ë¦½íŠ¸ ì¶”ê°€ CS3.3.1T.html
  *
  * 2016.03.25
- * @setCenter ±¸ºñ¼­·ù ¾È³» CS3.3.1T.html ÁÖ¼®Ã³¸®
- * @setProduct ½ºÅ©·Ñ ÇÏ´Ü ¼±ÅÃ ¿ä±İ»óÇ° ¹Ù product_templete.html Ãß°¡
+ * @setCenter êµ¬ë¹„ì„œë¥˜ ì•ˆë‚´ CS3.3.1T.html ì£¼ì„ì²˜ë¦¬
+ * @setProduct ìŠ¤í¬ë¡¤ í•˜ë‹¨ ì„ íƒ ìš”ê¸ˆìƒí’ˆ ë°” product_templete.html ì¶”ê°€
  *
  * 2016.03.28
- * @setProduct ½ºÅ©·Ñ ÇÏ´Ü ¼±ÅÃ ¿ä±İ»óÇ° ¹Ù product_templete.html ¼öÁ¤
- * @setGuide CHECK POINT ¸ñ·Ï ´õº¸±â ¹öÆ° layout_common.html Ãß°¡
- * @setUlLi_TglOn °øÅë ½ºÅ©¸³Æ® Ãß°¡ //MY1.2.5.1T.html
+ * @setProduct ìŠ¤í¬ë¡¤ í•˜ë‹¨ ì„ íƒ ìš”ê¸ˆìƒí’ˆ ë°” product_templete.html ìˆ˜ì •
+ * @setGuide CHECK POINT ëª©ë¡ ë”ë³´ê¸° ë²„íŠ¼ layout_common.html ì¶”ê°€
+ * @setUlLi_TglOn ê³µí†µ ìŠ¤í¬ë¦½íŠ¸ ì¶”ê°€ //MY1.2.5.1T.html
  *
  * 2016.03.29
- * @setUlSlide nodata ¹× auto slide ±â´É Ãß°¡
- * @setCommon arcBox ¼öÁ¤
- * @setTabJs tabAll ±â´É Ãß°¡
- * @setUlSlide Ã¹¹øÂ° ½½¶óÀÌµå·Î ÃÊ±âÈ­ Ãß°¡
- * var commonJs Ãß°¡
- * @setUlLi_TglOn <span class="hidden">¼±ÅÃ</span>»ğÀÔ ½ºÅ©¸³Æ® Ãß°¡
- * @setTlive !!º¸·ùÇØÁ¦!! ¿À¸¥ÂÊ ÀÌº¥Æ®¹Ù ½ºÅ©·Ñ ÀÌº¥Æ® Ãß°¡
+ * @setUlSlide nodata ë° auto slide ê¸°ëŠ¥ ì¶”ê°€
+ * @setCommon arcBox ìˆ˜ì •
+ * @setTabJs tabAll ê¸°ëŠ¥ ì¶”ê°€
+ * @setUlSlide ì²«ë²ˆì§¸ ìŠ¬ë¼ì´ë“œë¡œ ì´ˆê¸°í™” ì¶”ê°€
+ * var commonJs ì¶”ê°€
+ * @setUlLi_TglOn <span class="hidden">ì„ íƒ</span>ì‚½ì… ìŠ¤í¬ë¦½íŠ¸ ì¶”ê°€
+ * @setTlive !!ë³´ë¥˜í•´ì œ!! ì˜¤ë¥¸ìª½ ì´ë²¤íŠ¸ë°” ìŠ¤í¬ë¡¤ ì´ë²¤íŠ¸ ì¶”ê°€
  *
  * 2016.03.30
- * @setCenter ±¸ºñ¼­·ù ¾È³» li³ôÀÌ Á¤·Ä ½ºÅ©¸³Æ® Ãß°¡.
- * @setCommon arcBox2 li>a ÀÌº¥Æ® ¿ÀºêÁ§Æ® º¯°æ /myt/MY1.5.1.1T.html
- * @setMyt  missStopList>li ¹öÆ° °³¼ö È®ÀÎ //MY4.1.2.1.html
- * @setProduct startTopº¸´Ù scrollTop°ªÀÌ ÀÛÀ»°æ¿ì  pr_floatingDiv display:noneÃ³¸® ½ºÅ©¸³Æ® ¼öÁ¤ product_templete.html
+ * @setCenter êµ¬ë¹„ì„œë¥˜ ì•ˆë‚´ lië†’ì´ ì •ë ¬ ìŠ¤í¬ë¦½íŠ¸ ì¶”ê°€.
+ * @setCommon arcBox2 li>a ì´ë²¤íŠ¸ ì˜¤ë¸Œì íŠ¸ ë³€ê²½ /myt/MY1.5.1.1T.html
+ * @setMyt  missStopList>li ë²„íŠ¼ ê°œìˆ˜ í™•ì¸ //MY4.1.2.1.html
+ * @setProduct startTopë³´ë‹¤ scrollTopê°’ì´ ì‘ì„ê²½ìš°  pr_floatingDiv display:noneì²˜ë¦¬ ìŠ¤í¬ë¦½íŠ¸ ìˆ˜ì • product_templete.html
  *
  * 2016.04.01
- * @setProduct dummy.hide() Ãß°¡
- * @setTglClsOpen chkTitle Ãß°¡ //MY2.1.3.1.3.1.html
+ * @setProduct dummy.hide() ì¶”ê°€
+ * @setTglClsOpen chkTitle ì¶”ê°€ //MY2.1.3.1.3.1.html
  *
  * 2016.04.04
- * @setCenter ´ë¸®Á¡ ¿¬°üÅ°¿öµå °¡¿îµ¥ Á¤·Ä ½ºÅ©¸³Æ® Ãß°¡//www/poc/center/´ë¸®Á¡.html
- * @setGuide checkPoint each·Î ¼öÁ¤
- * @setTglClsOpen a.tglBtn Ãß°¡ // MY1.1.1.2.html
- * @setMyt myt_product1 »ç¿ëÁßÀÎ »óÇ° ÀÌº¥Æ® Ãß°¡ // MY1.1.1.1.html, MY1.1.1.2.html
- * @setMyt myt_product1 »ç¿ëÁßÀÎ »óÇ° ÀÌº¥Æ® //ÇÏ´Ü¿¡¼­ ´İ±â ¹öÆ° Å¬¸¯½Ã ½ºÅ©·Ñ¸µ Ãß°¡ // MY1.1.1.1.html, MY1.1.1.2.html
- * @setPopup a.id_layerOpen ·¹ÀÌ¾îÆË¾÷ ¿­±â ¹öÆ°ÀÌ ºÒ¸®µÈ °æ¿ì id°ªÀ¸·Î ¿©´Â ±â´É Ãß°¡ // MY1.1.1.2.html
- * @setPopup a.id_layerOpen ·¹ÀÌ¾îÆË¾÷ ¿­±â ¹öÆ°ÀÌ ºÒ¸®µÈ °æ¿ì ·¹ÀÌ¾îÆË¾÷À» ´İÀ»°æ¿ì ¿­±â¹öÆ°À¸·Î Æ÷Ä¿½º ±â´É Ãß°¡ //MY1.1.1.2.html
+ * @setCenter ëŒ€ë¦¬ì  ì—°ê´€í‚¤ì›Œë“œ ê°€ìš´ë° ì •ë ¬ ìŠ¤í¬ë¦½íŠ¸ ì¶”ê°€//www/poc/center/ëŒ€ë¦¬ì .html
+ * @setGuide checkPoint eachë¡œ ìˆ˜ì •
+ * @setTglClsOpen a.tglBtn ì¶”ê°€ // MY1.1.1.2.html
+ * @setMyt myt_product1 ì‚¬ìš©ì¤‘ì¸ ìƒí’ˆ ì´ë²¤íŠ¸ ì¶”ê°€ // MY1.1.1.1.html, MY1.1.1.2.html
+ * @setMyt myt_product1 ì‚¬ìš©ì¤‘ì¸ ìƒí’ˆ ì´ë²¤íŠ¸ //í•˜ë‹¨ì—ì„œ ë‹«ê¸° ë²„íŠ¼ í´ë¦­ì‹œ ìŠ¤í¬ë¡¤ë§ ì¶”ê°€ // MY1.1.1.1.html, MY1.1.1.2.html
+ * @setPopup a.id_layerOpen ë ˆì´ì–´íŒì—… ì—´ê¸° ë²„íŠ¼ì´ ë¶ˆë¦¬ëœ ê²½ìš° idê°’ìœ¼ë¡œ ì—¬ëŠ” ê¸°ëŠ¥ ì¶”ê°€ // MY1.1.1.2.html
+ * @setPopup a.id_layerOpen ë ˆì´ì–´íŒì—… ì—´ê¸° ë²„íŠ¼ì´ ë¶ˆë¦¬ëœ ê²½ìš° ë ˆì´ì–´íŒì—…ì„ ë‹«ì„ê²½ìš° ì—´ê¸°ë²„íŠ¼ìœ¼ë¡œ í¬ì»¤ìŠ¤ ê¸°ëŠ¥ ì¶”ê°€ //MY1.1.1.2.html
  *
  * 2016.04.05
- * @setPopup °¡¿îµ¥Á¤·Ä ¼öÁ¤
- * @setMyt myt_product1 liÅ¬¸¯À¸·Î ¿­ °æ¿ì ½ºÅ©·Ñ¸µ Ãß°¡ // MY1.1.1.1.html, MY1.1.1.2.html
- * @center  CS3.1.6.1T.html , CS3.1.6.2T.html ÇÚµåÆù ÇüÅÂÀÇ ¸Ş´º Å¬¸¯½Ã ÁÂÃø ÄÁÅÙÃ÷ º¯°æ±â´É Ãß°¡
- * @setTglClsOpen chkClose Ãß°¡
- * @setPopup popShow() focus±â´É Ãß°¡
+ * @setPopup ê°€ìš´ë°ì •ë ¬ ìˆ˜ì •
+ * @setMyt myt_product1 lií´ë¦­ìœ¼ë¡œ ì—´ ê²½ìš° ìŠ¤í¬ë¡¤ë§ ì¶”ê°€ // MY1.1.1.1.html, MY1.1.1.2.html
+ * @center  CS3.1.6.1T.html , CS3.1.6.2T.html í•¸ë“œí° í˜•íƒœì˜ ë©”ë‰´ í´ë¦­ì‹œ ì¢Œì¸¡ ì»¨í…ì¸  ë³€ê²½ê¸°ëŠ¥ ì¶”ê°€
+ * @setTglClsOpen chkClose ì¶”ê°€
+ * @setPopup popShow() focusê¸°ëŠ¥ ì¶”ê°€
  *
  * 2016.04.06
- * @setMyt ¼±¹°ÇÒ µ¥ÀÌÅÍ·® ¼±ÅÃ ±×·¡ÇÁ 1GBÀÏ¶§ wPoint 100%·Î ¼öÁ¤//MY2.2.2.1T.1.html
- * @setMyt ¿­±â ´İ±â residualCall Ãß°¡ //MY1.2.2.1.html#
- * @setMyt ·¹ÀÌ¾î ÆË¾÷ ´İ±â Æ÷Ä¿½º ½ºÅ©¸³Æ® ¼öÁ¤
- * @setMyt ¿­±â ´İ±â residualCall ¼öÁ¤ //MY1.2.2.1.html#
+ * @setMyt ì„ ë¬¼í•  ë°ì´í„°ëŸ‰ ì„ íƒ ê·¸ë˜í”„ 1GBì¼ë•Œ wPoint 100%ë¡œ ìˆ˜ì •//MY2.2.2.1T.1.html
+ * @setMyt ì—´ê¸° ë‹«ê¸° residualCall ì¶”ê°€ //MY1.2.2.1.html#
+ * @setMyt ë ˆì´ì–´ íŒì—… ë‹«ê¸° í¬ì»¤ìŠ¤ ìŠ¤í¬ë¦½íŠ¸ ìˆ˜ì •
+ * @setMyt ì—´ê¸° ë‹«ê¸° residualCall ìˆ˜ì • //MY1.2.2.1.html#
  *
  * 2016.04.07
- * @setPopup ·¹ÀÌ¾î ÆË¾÷ ½ºÅ©¸³Æ® ¼öÁ¤
- * @setPopup $(window).load ·Î ÀÌµ¿
- * @setMyt MY1.1.5.html »çÀÌÁî º¯°æµÇ´Â ¸Ş´º Ãß°¡
- * @setPopup div[tabindex=0] focus Ãß°¡ //MY1.1.1.2.html
- * tab focus °üÇö ÇÔ¼ö Ãß°¡ ¹× º¯°æ
- * @setCenter FAQ ÀÚÁÖÃ£´ÂÁú¹® Ä«Å×°í¸® ¼³Á¤ ¼öÁ¤ //CS2.1.1T.html
- * @setCenter FAQ ÀÚÁÖÃ£´ÂÁú¹® Ä«Å×°í¸® ¼³Á¤ °Ë»ö¹öÆ° ½ºÅ©¸³Æ® Ãß°¡ //CS2.1.1T.html
- * @setMyt col4¸¦ ul·Î º¯°æ//MY3.5.2.1.1.html
+ * @setPopup ë ˆì´ì–´ íŒì—… ìŠ¤í¬ë¦½íŠ¸ ìˆ˜ì •
+ * @setPopup $(window).load ë¡œ ì´ë™
+ * @setMyt MY1.1.5.html ì‚¬ì´ì¦ˆ ë³€ê²½ë˜ëŠ” ë©”ë‰´ ì¶”ê°€
+ * @setPopup div[tabindex=0] focus ì¶”ê°€ //MY1.1.1.2.html
+ * tab focus ê´€í˜„ í•¨ìˆ˜ ì¶”ê°€ ë° ë³€ê²½
+ * @setCenter FAQ ìì£¼ì°¾ëŠ”ì§ˆë¬¸ ì¹´í…Œê³ ë¦¬ ì„¤ì • ìˆ˜ì • //CS2.1.1T.html
+ * @setCenter FAQ ìì£¼ì°¾ëŠ”ì§ˆë¬¸ ì¹´í…Œê³ ë¦¬ ì„¤ì • ê²€ìƒ‰ë²„íŠ¼ ìŠ¤í¬ë¦½íŠ¸ ì¶”ê°€ //CS2.1.1T.html
+ * @setMyt col4ë¥¼ ulë¡œ ë³€ê²½//MY3.5.2.1.1.html
  *
  * 2016.04.11
- * @setCenter FAQ Ä«Å×°í¸® ÀÌµ¿½Ã Æ÷Ä¿½º ÀÌµ¿ ¹× hover¼ıÀÚ ÀÌ¹ÌÁö on/off ±â´É Ãß°¡//CS2.1.1T.html
- * @setPurchase Ãß°¡ //www/poc/purchase/
- * @setPurchase À¯Çü¼±ÅÃ »ç¿ëÁßÀÎ/º¯°æ ¿ä±Ø»óÇ° È­¸é ³ôÀÌ Á¶Àı ½ºÅ©¸³Æ® Ãß°¡//PJ1.1.1.html
- *	commonJs ¼¿·ºÆ® ¹Ú½º °ü·Ã ÇÔ¼ö Ãß°¡ ( ÇöÀç ¹®¼­ ·Îµå ¼ø¼­°¡ ¼¿·ºÆ®¹Ú½º°¡ ³ªÁß¿¡ ·ÎµåµÇ±â ¶§¹®¿¡ ¼¿·ºÆ® ¹Ú½ºÀÇ
- * 	»ı¼ºÀÌ ¿Ï·áµÈ ÈÄ¿¡ Äİ¹éÀ» ¹ŞÀ»¼ö ÀÖµµ·Ï Ãß°¡ )
- *	@setutil ¼¿·ºÆ® ¹Ú½º¹× ½½¶óÀÌµå Ãß°¡
+ * @setCenter FAQ ì¹´í…Œê³ ë¦¬ ì´ë™ì‹œ í¬ì»¤ìŠ¤ ì´ë™ ë° hoverìˆ«ì ì´ë¯¸ì§€ on/off ê¸°ëŠ¥ ì¶”ê°€//CS2.1.1T.html
+ * @setPurchase ì¶”ê°€ //www/poc/purchase/
+ * @setPurchase ìœ í˜•ì„ íƒ ì‚¬ìš©ì¤‘ì¸/ë³€ê²½ ìš”ê·¹ìƒí’ˆ í™”ë©´ ë†’ì´ ì¡°ì ˆ ìŠ¤í¬ë¦½íŠ¸ ì¶”ê°€//PJ1.1.1.html
+ *	commonJs ì…€ë ‰íŠ¸ ë°•ìŠ¤ ê´€ë ¨ í•¨ìˆ˜ ì¶”ê°€ ( í˜„ì¬ ë¬¸ì„œ ë¡œë“œ ìˆœì„œê°€ ì…€ë ‰íŠ¸ë°•ìŠ¤ê°€ ë‚˜ì¤‘ì— ë¡œë“œë˜ê¸° ë•Œë¬¸ì— ì…€ë ‰íŠ¸ ë°•ìŠ¤ì˜
+ * 	ìƒì„±ì´ ì™„ë£Œëœ í›„ì— ì½œë°±ì„ ë°›ì„ìˆ˜ ìˆë„ë¡ ì¶”ê°€ )
+ *	@setutil ì…€ë ‰íŠ¸ ë°•ìŠ¤ë° ìŠ¬ë¼ì´ë“œ ì¶”ê°€
  *
  * 2016.04.12
- * @setPurchase div ³ôÀÌÁ¶Àı ½ºÅ©¸³Æ® ¼öÁ¤ //PJ1.5.1.html
- * new SliderObject ½½¶óÀÌµå Ãß°¡
- * @setUtil UT10.8L.html È¸¼±º¯°æ Ãß°¡
- * @setProduct display:none;ÀÏ¶§ selectBox spanÀÇ width°ªÀÌ 0À¸·Î ÀÎ½ÄµÇ¾î show&hideÈ¿°ú¸¦ margin-left°ªÀÇ º¯È­·Î(0px[show]>-10000px[hide]) ´ëÃ¼.//TS1.1.2.8.html#
+ * @setPurchase div ë†’ì´ì¡°ì ˆ ìŠ¤í¬ë¦½íŠ¸ ìˆ˜ì • //PJ1.5.1.html
+ * new SliderObject ìŠ¬ë¼ì´ë“œ ì¶”ê°€
+ * @setUtil UT10.8L.html íšŒì„ ë³€ê²½ ì¶”ê°€
+ * @setProduct display:none;ì¼ë•Œ selectBox spanì˜ widthê°’ì´ 0ìœ¼ë¡œ ì¸ì‹ë˜ì–´ show&hideíš¨ê³¼ë¥¼ margin-leftê°’ì˜ ë³€í™”ë¡œ(0px[show]>-10000px[hide]) ëŒ€ì²´.//TS1.1.2.8.html#
  *
  * 2016.04.14
- * new SliderObject Æ÷Ä¿½º °ü·Ã (tabkey ÀÌº¥Æ® º¸´Ù keyDown ÀÌ ¿ì¼±ÇÏ±â ¶§¹®¿¡ ÀÌº¥Æ®¸¦ ¹Ş¾Æ¼­ ¼± Ã³¸® ÇÏ´Â ¹æ½Ä)
+ * new SliderObject í¬ì»¤ìŠ¤ ê´€ë ¨ (tabkey ì´ë²¤íŠ¸ ë³´ë‹¤ keyDown ì´ ìš°ì„ í•˜ê¸° ë•Œë¬¸ì— ì´ë²¤íŠ¸ë¥¼ ë°›ì•„ì„œ ì„  ì²˜ë¦¬ í•˜ëŠ” ë°©ì‹)
  *
  * 2016.04.15
- * setCheckbox ÄÚµå¼öÁ¤
- * @setCommon »çÀÌµå ¹è³Ê ´İ±â Ãß°¡//www/poc/util/common/UT8.3.1L.html#
- * commonJs.checkLogin Ãß°¡
- * commonJs.setSlider Ãß°¡
- * @setCommon onÅ¬·¡½º Åä±Û ±â´É Ãß°¡//www/poc/purchase/PJ2.2.1.2P.html#
- * @setPurchase ÄÑ±â/²ô±â ÅØ½ºÆ® Åä±Û Ãß°¡ //www/poc/purchase/PJ2.2.1.2P.html#
+ * setCheckbox ì½”ë“œìˆ˜ì •
+ * @setCommon ì‚¬ì´ë“œ ë°°ë„ˆ ë‹«ê¸° ì¶”ê°€//www/poc/util/common/UT8.3.1L.html#
+ * commonJs.checkLogin ì¶”ê°€
+ * commonJs.setSlider ì¶”ê°€
+ * @setCommon oní´ë˜ìŠ¤ í† ê¸€ ê¸°ëŠ¥ ì¶”ê°€//www/poc/purchase/PJ2.2.1.2P.html#
+ * @setPurchase ì¼œê¸°/ë„ê¸° í…ìŠ¤íŠ¸ í† ê¸€ ì¶”ê°€ //www/poc/purchase/PJ2.2.1.2P.html#
  *
  * 2016.04.18
- * @setmyt cubeResize ¸Ş´º ¼±ÅÃ½Ã scrollTo ÇÔ¼ö Ãß°¡
- * @setProduct ·Î±×ÀÎ È®ÀÎ //www/poc/product/TS1.1.4.html
- * commonJs.setSlider Ãß°¡ Å°º¸µå ÀÔ·Â ÄÁÆ®·Ñ Ãß°¡.
- * @setProduct ·Î±×ÀÎ È®ÀÎ Å¬·¡½º¸í º¯°æ loginAfter, beforeLogin
- * @setProduct TS1.1.1.html Ãß°¡
+ * @setmyt cubeResize ë©”ë‰´ ì„ íƒì‹œ scrollTo í•¨ìˆ˜ ì¶”ê°€
+ * @setProduct ë¡œê·¸ì¸ í™•ì¸ //www/poc/product/TS1.1.4.html
+ * commonJs.setSlider ì¶”ê°€ í‚¤ë³´ë“œ ì…ë ¥ ì»¨íŠ¸ë¡¤ ì¶”ê°€.
+ * @setProduct ë¡œê·¸ì¸ í™•ì¸ í´ë˜ìŠ¤ëª… ë³€ê²½ loginAfter, beforeLogin
+ * @setProduct TS1.1.1.html ì¶”ê°€
  *
  * 2016.04.19
- * @setProduct TS1.1.3.html »óÇ°¸®½ºÆ®¿¡ mbRouter Å¬·¡½º Ãß°¡
+ * @setProduct TS1.1.3.html ìƒí’ˆë¦¬ìŠ¤íŠ¸ì— mbRouter í´ë˜ìŠ¤ ì¶”ê°€
  *
  * 2016.04.20
- * @setPopup ·¹ÀÌ¾îÆË¾÷ ÀÚµ¿top¼³Á¤ ½ºÅ©¸³Æ® pop.height()->target.height() º¯°æ
- * @setPopup commonJs.setPopCloseAndTabFocus Ãß°¡
- * @setCalendar -> @commonJs.setCalendar º¯°æ
- * @setProduct <span class="hidden">¼±ÅÃµÈ ¿ä±İ»óÇ°</span> ¹®±¸ Ãß°¡
+ * @setPopup ë ˆì´ì–´íŒì—… ìë™topì„¤ì • ìŠ¤í¬ë¦½íŠ¸ pop.height()->target.height() ë³€ê²½
+ * @setPopup commonJs.setPopCloseAndTabFocus ì¶”ê°€
+ * @setCalendar -> @commonJs.setCalendar ë³€ê²½
+ * @setProduct <span class="hidden">ì„ íƒëœ ìš”ê¸ˆìƒí’ˆ</span> ë¬¸êµ¬ ì¶”ê°€
  *
  * 2016.04.21
- * @setUpDownSlide »óÇÏ ÀÌµ¿ ½½¶óÀÌµå Ãß°¡ //www/poc/product/TS5.1.html
- * @setUlSlide ÀÚµ¿½½¶óÀÌµå Play/Stop ¹öÆ° ¼öÁ¤
+ * @setUpDownSlide ìƒí•˜ ì´ë™ ìŠ¬ë¼ì´ë“œ ì¶”ê°€ //www/poc/product/TS5.1.html
+ * @setUlSlide ìë™ìŠ¬ë¼ì´ë“œ Play/Stop ë²„íŠ¼ ìˆ˜ì •
  *
  * 2016.04.22
- * @setmyt ¿­±â/´İ±â memeberSbox //membership_search.html
+ * @setmyt ì—´ê¸°/ë‹«ê¸° memeberSbox //membership_search.html
  *
  * 2016.04.25
- * @setProduct ½½¶óÀÌµå³×ºñ prev/next¹öÆ° ÀÌµ¿ È¿°ú Ãß°¡ //www/poc/product/TS5.2.html
- * @setUlslide ÀÚµ¿½½¶óÀÌµå ÅÇÀÌµ¿ ½ºÅ©¸³Æ®
- * @setProduct ¾Û ÅÜÀÌµ¿ ½ºÅ©¸³Æ® /www/poc/product/TS5.2.html
- * @setUlslide ÅÇÀÌµ¿½Ã aÅÂ±×¸¸ ½½¶óÀÌµå ÀÌµ¿ÇÏ°Ô º¯°æ
+ * @setProduct ìŠ¬ë¼ì´ë“œë„¤ë¹„ prev/nextë²„íŠ¼ ì´ë™ íš¨ê³¼ ì¶”ê°€ //www/poc/product/TS5.2.html
+ * @setUlslide ìë™ìŠ¬ë¼ì´ë“œ íƒ­ì´ë™ ìŠ¤í¬ë¦½íŠ¸
+ * @setProduct ì•± í…ì´ë™ ìŠ¤í¬ë¦½íŠ¸ /www/poc/product/TS5.2.html
+ * @setUlslide íƒ­ì´ë™ì‹œ aíƒœê·¸ë§Œ ìŠ¬ë¼ì´ë“œ ì´ë™í•˜ê²Œ ë³€ê²½
  *
  * 2016.04.26
- * @setMyt ¾ÆÄÚµğ¾ğ ¿­±â/´İ±â //MY1.2.3.1T.1.html
- * @setProduct ½ºÅ©·Ñ ÇÏ´Ü ¼±ÅÃ ¿ä±İ»óÇ° ¹Ù ¼öÁ¤(prContTop Ãß°¡)//TS5.2.7.1.html
- * @setMyt dl.module ¿­±â/´İ±â Ãß°¡ //MY1.2.4.1T.1.html
+ * @setMyt ì•„ì½”ë””ì–¸ ì—´ê¸°/ë‹«ê¸° //MY1.2.3.1T.1.html
+ * @setProduct ìŠ¤í¬ë¡¤ í•˜ë‹¨ ì„ íƒ ìš”ê¸ˆìƒí’ˆ ë°” ìˆ˜ì •(prContTop ì¶”ê°€)//TS5.2.7.1.html
+ * @setMyt dl.module ì—´ê¸°/ë‹«ê¸° ì¶”ê°€ //MY1.2.4.1T.1.html
  *
  * 2016.04.27
- * @setMyt dl.module ¿­±â/´İ±â btnClose > btn_close_module º¯°æ //MY1.2.4.1T.1.html,MY1.2.3.1T.1.html
- * @setMyt MY1.2.4.5T.1.html ¿ù,ºĞ±â,¹İ±â ¼±ÅÃ ¿µ¿ª ¼±ÅÃ Ãß°¡
+ * @setMyt dl.module ì—´ê¸°/ë‹«ê¸° btnClose > btn_close_module ë³€ê²½ //MY1.2.4.1T.1.html,MY1.2.3.1T.1.html
+ * @setMyt MY1.2.4.5T.1.html ì›”,ë¶„ê¸°,ë°˜ê¸° ì„ íƒ ì˜ì—­ ì„ íƒ ì¶”ê°€
  *
  * 2016.04.28
- * @setMyt dl.module ÀüÃ¼´İ±â À§Ä¡ ÀÌµ¿ ¼öÁ¤ //MY1.2.3.1T.1.html
+ * @setMyt dl.module ì „ì²´ë‹«ê¸° ìœ„ì¹˜ ì´ë™ ìˆ˜ì • //MY1.2.3.1T.1.html
  *
  * 2016.04.29
- * @setCalendar ¿ÜºÎ¿¬°á ÇÔ¼ö Ãß°¡ selectDate,getDate,setup
+ * @setCalendar ì™¸ë¶€ì—°ê²° í•¨ìˆ˜ ì¶”ê°€ selectDate,getDate,setup
  *
  * 2016.05.02
- * @setTabJs ¼öÁ¤ #¿¡·¯ ¼öÁ¤.
+ * @setTabJs ìˆ˜ì • #ì—ëŸ¬ ìˆ˜ì •.
  *
  * 2016.05.10
- * @setTlive ÀÚ¸· ÇÔ²²º¸±â //poc/tlive/TL2.1.1L.html
+ * @setTlive ìë§‰ í•¨ê»˜ë³´ê¸° //poc/tlive/TL2.1.1L.html
  *
  * 2016.05.18
- * @setMyt '.myt_product1'¾ÆÄÚµğ¾ğ ½ºÅ©¸³Æ® '.sub' ¿¹¿ÜÃ³¸® Ãß°¡
- * @setMyt '.childFee' .sub¾ÆÄÚµğ¾ğ ¿­±â´İ±â ½ºÅ©¸³Æ® Ãß°¡//MY1.2.1.1T.html#
+ * @setMyt '.myt_product1'ì•„ì½”ë””ì–¸ ìŠ¤í¬ë¦½íŠ¸ '.sub' ì˜ˆì™¸ì²˜ë¦¬ ì¶”ê°€
+ * @setMyt '.childFee' .subì•„ì½”ë””ì–¸ ì—´ê¸°ë‹«ê¸° ìŠ¤í¬ë¦½íŠ¸ ì¶”ê°€//MY1.2.1.1T.html#
  *
  * 2016.05.19
- * @setCommon °øÀ¯ÇÏ±â ¹öÆ° Ãß°¡//poc/guide/etc.html
- * @setUlSlide eventType2 ½½¶óÀÌµå Ä«µå¼±ÅÃ('.selectCard')/paging Ãß°¡ poc/myt/MY1.1.1a.1.3P.html
+ * @setCommon ê³µìœ í•˜ê¸° ë²„íŠ¼ ì¶”ê°€//poc/guide/etc.html
+ * @setUlSlide eventType2 ìŠ¬ë¼ì´ë“œ ì¹´ë“œì„ íƒ('.selectCard')/paging ì¶”ê°€ poc/myt/MY1.1.1a.1.3P.html
  *
  * 2016.05.24
- * @setCenter ARS°í°´¼¾ÅÍ ¹®ÀÇ·® ±ŞÁõ ¿¹»ó Ä¶¸°´õ ½ºÅ©¸³Æ® //poc/center/CS.1T.html
+ * @setCenter ARSê³ ê°ì„¼í„° ë¬¸ì˜ëŸ‰ ê¸‰ì¦ ì˜ˆìƒ ìº˜ë¦°ë” ìŠ¤í¬ë¦½íŠ¸ //poc/center/CS.1T.html
  *
  * 2016.05.26
- * arcbox , arcbox2 a ÅÂ±× preventdefault Á¦°Å Å©¸¯½Ã ½ºÅ©·ÑÀÌ Æ¢´Â °æ¿ì¿¡´ëÇØ¼­ ¿äÃ»ÀÌ ¿À¸é °³¹ßÂÊ¿¡ Ã³¸® ¿äÃ» ÇÏµµ·Ï
- * @setTglClsOpen  'div.tglClsOpen>a.tglBtn'  ->  'div.tglClsOpen a.tglBtn' º¯°æ
+ * arcbox , arcbox2 a íƒœê·¸ preventdefault ì œê±° í¬ë¦­ì‹œ ìŠ¤í¬ë¡¤ì´ íŠ€ëŠ” ê²½ìš°ì—ëŒ€í•´ì„œ ìš”ì²­ì´ ì˜¤ë©´ ê°œë°œìª½ì— ì²˜ë¦¬ ìš”ì²­ í•˜ë„ë¡
+ * @setTglClsOpen  'div.tglClsOpen>a.tglBtn'  ->  'div.tglClsOpen a.tglBtn' ë³€ê²½
  *
  * 2016.05.30
- * @setUtil µğÀÚÀÎ º¯°æÀ¸·Î ¼¿·ºÆ®¹Ú½º À§Ä¡º¯°æ 'div.changeLine>div.con>.selectBox' -> 'div.changeLine>div.title>.selectBox' // UT10.8P.html È¸¼±Á¤º¸ º¯°æ
- * @setCenter FAQ Ä«Å×°í¸® ¼±ÅÃ ½Ã ´õº¸±â Ä«Å×°í¸® ¼û±â±â ½ºÅ©¸³Æ® Ãß°¡
+ * @setUtil ë””ìì¸ ë³€ê²½ìœ¼ë¡œ ì…€ë ‰íŠ¸ë°•ìŠ¤ ìœ„ì¹˜ë³€ê²½ 'div.changeLine>div.con>.selectBox' -> 'div.changeLine>div.title>.selectBox' // UT10.8P.html íšŒì„ ì •ë³´ ë³€ê²½
+ * @setCenter FAQ ì¹´í…Œê³ ë¦¬ ì„ íƒ ì‹œ ë”ë³´ê¸° ì¹´í…Œê³ ë¦¬ ìˆ¨ê¸°ê¸° ìŠ¤í¬ë¦½íŠ¸ ì¶”ê°€
  *
  * 2016.06.01
- * @setTabJs tabJsÇÏÀ§ aÅÂ±× ¿¹¿ÜÃ³¸® //poc/center/CS.html#
- * @setTabJs li¿¡ clickÀÌº¥Æ® li>a·Î ÀÌº¥Æ® ¹ß»ı À§Ä¡ º¯°æ
- * resizeObject Ãß°¡
- * @setUlSlide fullSize Å¬·¡½º Ãß°¡½Ã ¸®»çÀÌÂ¡ µÇµµ·Ï Ãß°¡
- * @setUlSlide ¸®»çÀÌÂ¡ ¾Ö´Ï¸ŞÀÌ¼Ç È¿°ú Ãë¼Ò ½ºÅ©¸³Æ® Ãß°¡
+ * @setTabJs tabJsí•˜ìœ„ aíƒœê·¸ ì˜ˆì™¸ì²˜ë¦¬ //poc/center/CS.html#
+ * @setTabJs liì— clickì´ë²¤íŠ¸ li>aë¡œ ì´ë²¤íŠ¸ ë°œìƒ ìœ„ì¹˜ ë³€ê²½
+ * resizeObject ì¶”ê°€
+ * @setUlSlide fullSize í´ë˜ìŠ¤ ì¶”ê°€ì‹œ ë¦¬ì‚¬ì´ì§• ë˜ë„ë¡ ì¶”ê°€
+ * @setUlSlide ë¦¬ì‚¬ì´ì§• ì• ë‹ˆë©”ì´ì…˜ íš¨ê³¼ ì·¨ì†Œ ìŠ¤í¬ë¦½íŠ¸ ì¶”ê°€
  *
  * 2016.06.02
- * @setCommon 'arcBox2' bind ÀÌº¥Æ® live·Î º¯°æ // myt/MY4.1.3.2T.2.html /myt/MY1.5.1.1T.html
+ * @setCommon 'arcBox2' bind ì´ë²¤íŠ¸ liveë¡œ ë³€ê²½ // myt/MY4.1.3.2T.2.html /myt/MY1.5.1.1T.html
  *
  * 2016.06.02
- * @setUlSlide .slidebox ¿¡ .slideNavi2 Å¬·¡½º Ãß°¡
- * @setUtil ÅëÇÕ°Ë»ö ¼­ºêÅÇ ¹× °Ë»ö¾î ÅÇ ½ºÅ©·Ñ Ã³¸®//poc/util/common/UT1.3.1.html //poc/util/common/UT1.3.2.1.html
+ * @setUlSlide .slidebox ì— .slideNavi2 í´ë˜ìŠ¤ ì¶”ê°€
+ * @setUtil í†µí•©ê²€ìƒ‰ ì„œë¸Œíƒ­ ë° ê²€ìƒ‰ì–´ íƒ­ ìŠ¤í¬ë¡¤ ì²˜ë¦¬//poc/util/common/UT1.3.1.html //poc/util/common/UT1.3.2.1.html
  *
  * 2016.06.07
- * @setMyt ³ªÀÇÇıÅÃ ÆäÀÌÁö »ó¼¼Á¤º¸ÅÇ ½ºÅ©¸³Æ® ¼öÁ¤//myt/MY1.1.5.html
- * @setUtil "ÅëÇÕ°Ë»ö ¼­ºêÅÇ ¹× °Ë»ö¾î ÅÇ ½ºÅ©·Ñ Ã³¸®" ÅÇ°íÁ¤ ½ÃÀÛ ½ÃÁ¡ºÎÅÍ °Ë»ö¾îÅÇ Á¢±â ±â´É Ãß°¡//poc/util/common/UT1.3.1.html //poc/util/common/UT1.3.2.1.html
- * @setMyt "³ªÀÇÇıÅÃ ÆäÀÌÁö »ó¼¼Á¤º¸ÅÇ" ÀÍ½ºÇÃ·Î·¯¿¡¼­ ±ôºıÀÌ´Â Çö»ó ¼öÁ¤//myt/MY1.1.5.html
- * @setUtil "ÅëÇÕ°Ë»ö ¼­ºêÅÇ ¹× °Ë»ö¾î ÅÇ ½ºÅ©·Ñ Ã³¸®" ie7¿¡¼­ ÅÇ°íÁ¤ ½ÃÀÛ ½ÃÁ¡ ¿¡·¯ ¼öÁ¤//poc/util/common/UT1.3.1.html //poc/util/common/UT1.3.2.1.html
+ * @setMyt ë‚˜ì˜í˜œíƒ í˜ì´ì§€ ìƒì„¸ì •ë³´íƒ­ ìŠ¤í¬ë¦½íŠ¸ ìˆ˜ì •//myt/MY1.1.5.html
+ * @setUtil "í†µí•©ê²€ìƒ‰ ì„œë¸Œíƒ­ ë° ê²€ìƒ‰ì–´ íƒ­ ìŠ¤í¬ë¡¤ ì²˜ë¦¬" íƒ­ê³ ì • ì‹œì‘ ì‹œì ë¶€í„° ê²€ìƒ‰ì–´íƒ­ ì ‘ê¸° ê¸°ëŠ¥ ì¶”ê°€//poc/util/common/UT1.3.1.html //poc/util/common/UT1.3.2.1.html
+ * @setMyt "ë‚˜ì˜í˜œíƒ í˜ì´ì§€ ìƒì„¸ì •ë³´íƒ­" ìµìŠ¤í”Œë¡œëŸ¬ì—ì„œ ê¹œë¹¡ì´ëŠ” í˜„ìƒ ìˆ˜ì •//myt/MY1.1.5.html
+ * @setUtil "í†µí•©ê²€ìƒ‰ ì„œë¸Œíƒ­ ë° ê²€ìƒ‰ì–´ íƒ­ ìŠ¤í¬ë¡¤ ì²˜ë¦¬" ie7ì—ì„œ íƒ­ê³ ì • ì‹œì‘ ì‹œì  ì—ëŸ¬ ìˆ˜ì •//poc/util/common/UT1.3.1.html //poc/util/common/UT1.3.2.1.html
  *
  * 2016.06.08
- * @setCalendar>selectDate "setCurrentDate"->"setDate" º¯°æ
- * @setCalendar ÃÊ±â ±âº»°ª º¯°æ(ÇöÀçÀÏ:»ç¿ëÀÚPC ±âÁØ ¿À´Ã ³¯Â¥, ½ÃÀÛÀÏ:ÇöÀçÀÏ 30ÀÏ Àü,  ¸¶Áö¸·ÀÏ:ÇöÀçÀÏ 30ÀÏ ÈÄ)
- * @setCheckBox, @setRadioBox .attr('checked')->.prop('checked')À¸·Îº¯°æ (ie7¿¡¼­ Ä³½¬µÇ´Â °ª ¼±ÅÃ)
- * @setCommon footer familysite # Æ¢´Â ºÎ¹® ¼öÁ¤
- * @setCalendar ÀüÃ¼º¯°æ ½ºÅ©¸³Æ® »èÁ¦
+ * @setCalendar>selectDate "setCurrentDate"->"setDate" ë³€ê²½
+ * @setCalendar ì´ˆê¸° ê¸°ë³¸ê°’ ë³€ê²½(í˜„ì¬ì¼:ì‚¬ìš©ìPC ê¸°ì¤€ ì˜¤ëŠ˜ ë‚ ì§œ, ì‹œì‘ì¼:í˜„ì¬ì¼ 30ì¼ ì „,  ë§ˆì§€ë§‰ì¼:í˜„ì¬ì¼ 30ì¼ í›„)
+ * @setCheckBox, @setRadioBox .attr('checked')->.prop('checked')ìœ¼ë¡œë³€ê²½ (ie7ì—ì„œ ìºì‰¬ë˜ëŠ” ê°’ ì„ íƒ)
+ * @setCommon footer familysite # íŠ€ëŠ” ë¶€ë¬¸ ìˆ˜ì •
+ * @setCalendar ì „ì²´ë³€ê²½ ìŠ¤í¬ë¦½íŠ¸ ì‚­ì œ
  *
  * 2016.06.13
- * @setUtil »çÀÌÆ®¸Ê °Ë»ö ±â´É Ãß°¡//poc/util/common/UT6.html
- * @setProduct '.userData'¿¤¸®¸ÕÆ®°¡ ¾ø´Â °æ¿ì ¿¹¿ÜÃ³¸® Ãß°¡//product/TS1.1.1.html
- * @setUtil »çÀÌÆ®¸Ê °Ë»ö ÃÊ±âÈ­ ¼öÁ¤//poc/util/common/UT6.html
- * @setUtil »çÀÌÆ®¸Ê °Ë»ö Å°º¸µå ÀÔ·Â ½Ã °Ë»ö ±â´É Ãß°¡//poc/util/common/UT6.html
- * @setCenter FAQ ÀÚÁÖÃ£´ÂÁú¹® Ä«Å×°í¸® ¼³Á¤ ±¸Á¶º¯°æ td->li·Î º¯°æ //CS2.1.1T.html
- * @tabJs Ãß°¡ product/TS2a.3.1T.html tabjs Ãß°¡
+ * @setUtil ì‚¬ì´íŠ¸ë§µ ê²€ìƒ‰ ê¸°ëŠ¥ ì¶”ê°€//poc/util/common/UT6.html
+ * @setProduct '.userData'ì—˜ë¦¬ë¨¼íŠ¸ê°€ ì—†ëŠ” ê²½ìš° ì˜ˆì™¸ì²˜ë¦¬ ì¶”ê°€//product/TS1.1.1.html
+ * @setUtil ì‚¬ì´íŠ¸ë§µ ê²€ìƒ‰ ì´ˆê¸°í™” ìˆ˜ì •//poc/util/common/UT6.html
+ * @setUtil ì‚¬ì´íŠ¸ë§µ ê²€ìƒ‰ í‚¤ë³´ë“œ ì…ë ¥ ì‹œ ê²€ìƒ‰ ê¸°ëŠ¥ ì¶”ê°€//poc/util/common/UT6.html
+ * @setCenter FAQ ìì£¼ì°¾ëŠ”ì§ˆë¬¸ ì¹´í…Œê³ ë¦¬ ì„¤ì • êµ¬ì¡°ë³€ê²½ td->lië¡œ ë³€ê²½ //CS2.1.1T.html
+ * @tabJs ì¶”ê°€ product/TS2a.3.1T.html tabjs ì¶”ê°€
  *
  * 2016.06.14
- * @setPurchase À¯Çü¼±ÅÃ »ç¿ëÁßÀÎ/º¯°æ ¿ä±Ø»óÇ° È­¸é ³ôÀÌ Á¶Àı ½ºÅ©¸³Æ® °øÅëÇÔ¼ö(commonJs.setHeight_changeCont())·Î º¯°æ//PJ1.1.1.html //poc/product/TS1.1.2.8.html
- * @setUlSlide Å¬·¡½º Ãß°¡
+ * @setPurchase ìœ í˜•ì„ íƒ ì‚¬ìš©ì¤‘ì¸/ë³€ê²½ ìš”ê·¹ìƒí’ˆ í™”ë©´ ë†’ì´ ì¡°ì ˆ ìŠ¤í¬ë¦½íŠ¸ ê³µí†µí•¨ìˆ˜(commonJs.setHeight_changeCont())ë¡œ ë³€ê²½//PJ1.1.1.html //poc/product/TS1.1.2.8.html
+ * @setUlSlide í´ë˜ìŠ¤ ì¶”ê°€
  *
  * 2016.06.16
- * @setMyt ³³ºÎ³»¿ª ±â°£¼±ÅÃ Ãß°¡//poc/myt/MY1.2.4.5T.1.html
- * @setUlSlide "IETester IE7" ³ôÀÌ ¼³Á¤ ½ºÅ©¸³Æ® Ãß°¡
+ * @setMyt ë‚©ë¶€ë‚´ì—­ ê¸°ê°„ì„ íƒ ì¶”ê°€//poc/myt/MY1.2.4.5T.1.html
+ * @setUlSlide "IETester IE7" ë†’ì´ ì„¤ì • ìŠ¤í¬ë¦½íŠ¸ ì¶”ê°€
  *
  * 2016.06.17
- * @setUlSlide eventType2 ÆäÀÌÂ¡ ÃÊ±â°ª ¼öÁ¤//poc/myt/MY1.1.1a.1.3P.html
- * @setUlSlide eventType1 conSize ½½¶óÀÌµå »èÁ¦ ±â´É Ãß°¡
+ * @setUlSlide eventType2 í˜ì´ì§• ì´ˆê¸°ê°’ ìˆ˜ì •//poc/myt/MY1.1.1a.1.3P.html
+ * @setUlSlide eventType1 conSize ìŠ¬ë¼ì´ë“œ ì‚­ì œ ê¸°ëŠ¥ ì¶”ê°€
  *
  * 2016.06.20
- * @setUlSlide eventType1 conSize ½½¶óÀÌµå »èÁ¦ ±â´É ¹× »çÀÌÁî ¼öÁ¤
- * @setUlSlide eventType1 dynamicHeight ½½¶óÀÌµå µ¿Àû ³ôÀÌ ½ºÅ©¸³Æ® Ãß°¡//poc/util/common/UT8.1.html#
+ * @setUlSlide eventType1 conSize ìŠ¬ë¼ì´ë“œ ì‚­ì œ ê¸°ëŠ¥ ë° ì‚¬ì´ì¦ˆ ìˆ˜ì •
+ * @setUlSlide eventType1 dynamicHeight ìŠ¬ë¼ì´ë“œ ë™ì  ë†’ì´ ìŠ¤í¬ë¦½íŠ¸ ì¶”ê°€//poc/util/common/UT8.1.html#
  *
  * 2016.06.21
- * @setMyt ³ªÀÇÇıÅÃ ÆäÀÌÁö »ó¼¼ Á¤º¸ÅÇ ½ºÅ©¸³Æ® live º¯°æ ¹× IE7 ¹®Á¦ ¼öÁ¤//myt/MY1.1.5.html
- * @setMembership Ãß°¡
- * @setMembership Á¦ÈŞ»ç ÇıÅÃ ¾ÆÀÌÄÜ hoverÈ¿°ú Ãß°¡//poc/membership/MS.html
- * @setMembership ¸â¹ö½Ê Ä«µå ÀÚ¼¼È÷ º¸±â Ãß°¡//poc/membership/MS.html
- * @setMembership ¸â¹ö½Ê Ä«µå ÀÚ¼¼È÷ º¸±â ÀÌµ¿ -> @setCommon
- * @setCommon ÀÚ¼¼È÷º¸±â ¼öÁ¤ //poc/membership/MS.html //poc/product/TS.html
+ * @setMyt ë‚˜ì˜í˜œíƒ í˜ì´ì§€ ìƒì„¸ ì •ë³´íƒ­ ìŠ¤í¬ë¦½íŠ¸ live ë³€ê²½ ë° IE7 ë¬¸ì œ ìˆ˜ì •//myt/MY1.1.5.html
+ * @setMembership ì¶”ê°€
+ * @setMembership ì œíœ´ì‚¬ í˜œíƒ ì•„ì´ì½˜ hoveríš¨ê³¼ ì¶”ê°€//poc/membership/MS.html
+ * @setMembership ë©¤ë²„ì‹­ ì¹´ë“œ ìì„¸íˆ ë³´ê¸° ì¶”ê°€//poc/membership/MS.html
+ * @setMembership ë©¤ë²„ì‹­ ì¹´ë“œ ìì„¸íˆ ë³´ê¸° ì´ë™ -> @setCommon
+ * @setCommon ìì„¸íˆë³´ê¸° ìˆ˜ì • //poc/membership/MS.html //poc/product/TS.html
  *
  * 2016.06.22
- * @setDirect Ãß°¡
- * @setCommon ÀÚ¼¼È÷º¸±â li³ĞÀÌ °ª ¼³Á¤ÇÏ´Â ½ºÅ©¸³Æ® »èÁ¦//poc/membership/MS.html //poc/product/TS.html
- * @setCommon ÀÚ¼¼È÷º¸±â left°ª ¼¼ÆÃ ¼öÁ¤//poc/membership/MS.html //poc/product/TS.html
- * @setCommon ÀÚ¼¼È÷º¸±â IE7 z-index ¹ö±× ¼öÁ¤//poc/membership/MS.html //poc/product/TS.html
- * @setMyt ³³ºÎ³»¿ª ±â°£¼±ÅÃ ±¸Á¶º¯°æÀ¸·Î ¼¿·ºÅÍ ¼öÁ¤//poc/myt/MY1.2.4.5T.1.html
+ * @setDirect ì¶”ê°€
+ * @setCommon ìì„¸íˆë³´ê¸° lië„“ì´ ê°’ ì„¤ì •í•˜ëŠ” ìŠ¤í¬ë¦½íŠ¸ ì‚­ì œ//poc/membership/MS.html //poc/product/TS.html
+ * @setCommon ìì„¸íˆë³´ê¸° leftê°’ ì„¸íŒ… ìˆ˜ì •//poc/membership/MS.html //poc/product/TS.html
+ * @setCommon ìì„¸íˆë³´ê¸° IE7 z-index ë²„ê·¸ ìˆ˜ì •//poc/membership/MS.html //poc/product/TS.html
+ * @setMyt ë‚©ë¶€ë‚´ì—­ ê¸°ê°„ì„ íƒ êµ¬ì¡°ë³€ê²½ìœ¼ë¡œ ì…€ë ‰í„° ìˆ˜ì •//poc/myt/MY1.2.4.5T.1.html
  *
  * 2016.06.24
- * @setBanner Ãß°¡
+ * @setBanner ì¶”ê°€
  *
  * 2016.06.27
- * @commonJs.dsPopOpen Ãß°¡ direct/DS.html Àû¿ë
+ * @commonJs.dsPopOpen ì¶”ê°€ direct/DS.html ì ìš©
  *
  * 2016.06.29
- * @setProduct ¿ä±İ»óÇ° live·Î º¯°æ// product/TS1.1.1.html
- * @setBanner ÀÌ¹ÌÁö ÅÂ±× »ğÀÔ½Ã ³ôÀÌ Á¶Àı ½ºÅ©¸³Æ® Ãß°¡
- * @setMain Ãß°¡
+ * @setProduct ìš”ê¸ˆìƒí’ˆ liveë¡œ ë³€ê²½// product/TS1.1.1.html
+ * @setBanner ì´ë¯¸ì§€ íƒœê·¸ ì‚½ì…ì‹œ ë†’ì´ ì¡°ì ˆ ìŠ¤í¬ë¦½íŠ¸ ì¶”ê°€
+ * @setMain ì¶”ê°€
  *
  * 2016.06.30
- * @setProduct ·Î±×ÀÎ È®ÀÎ ½ºÅ©¸³Æ® »èÁ¦//www/poc/product/TS1.1.4.html
+ * @setProduct ë¡œê·¸ì¸ í™•ì¸ ìŠ¤í¬ë¦½íŠ¸ ì‚­ì œ//www/poc/product/TS1.1.4.html
  *
  * 2016.07.01
- * @setUtil Á¦ÈŞ»ç¾È³» ¹Ú½º ³ôÀÌ Á¶Àı ½ºÅ©¸³Æ® Ãß°¡ //poc/util/common/UT1.3.1.html#
- * @setWindowLoad ($(window).load¿¡¼­ ½ÇÇà) Ãß°¡
- * Á¦ÈŞ»ç¾È³»/°í°´¼¾ÅÍ ¹Ú½º ½ºÅ©¸³Æ® @setWindowLoad·Î ÀÌµ¿
+ * @setUtil ì œíœ´ì‚¬ì•ˆë‚´ ë°•ìŠ¤ ë†’ì´ ì¡°ì ˆ ìŠ¤í¬ë¦½íŠ¸ ì¶”ê°€ //poc/util/common/UT1.3.1.html#
+ * @setWindowLoad ($(window).loadì—ì„œ ì‹¤í–‰) ì¶”ê°€
+ * ì œíœ´ì‚¬ì•ˆë‚´/ê³ ê°ì„¼í„° ë°•ìŠ¤ ìŠ¤í¬ë¦½íŠ¸ @setWindowLoadë¡œ ì´ë™
  *
  * 2016.07.04
- * @getInstance Ãß°¡
- * @setSlider ¿ÜºÎ ¸®¼Â ÇÔ¼ö Ãß°¡(resetSlider(curVal, max, hasPoint, hasCurVal))
+ * @getInstance ì¶”ê°€
+ * @setSlider ì™¸ë¶€ ë¦¬ì…‹ í•¨ìˆ˜ ì¶”ê°€(resetSlider(curVal, max, hasPoint, hasCurVal))
  * //poc/util/common/UT6.html
- * »çÀÌÆ®¸Ê ucodeµî·Ï¹× ÀÚ¹Ù½ºÅ©¸³Æ® µî·Ï Ãß°¡
- * @setUtil "»çÀÌÆ®¸Ê °Ë»ö" °Ë»ö°ªÀÌ ºó("")¹®ÀÚ ÀÏ¶§ ÃÊ±âÈ­±â´É Ãß°¡ //poc/util/common/UT6.html
+ * ì‚¬ì´íŠ¸ë§µ ucodeë“±ë¡ë° ìë°”ìŠ¤í¬ë¦½íŠ¸ ë“±ë¡ ì¶”ê°€
+ * @setUtil "ì‚¬ì´íŠ¸ë§µ ê²€ìƒ‰" ê²€ìƒ‰ê°’ì´ ë¹ˆ("")ë¬¸ì ì¼ë•Œ ì´ˆê¸°í™”ê¸°ëŠ¥ ì¶”ê°€ //poc/util/common/UT6.html
  *
  *
  * 2016.07.05
- * @setPopu ÆË¾÷Ã¢ Á¤·Ä º¯°æ
- * @setUtil ÅëÇÕ°Ë»ö ¼­ºêÅÇ ¹× °Ë»ö¾î ÅÇ ½ºÅ©·Ñ Ã³¸® gnb³ôÀÌ°ª Ã³¸® Ãß°¡.
- * @setUlslide deleteLi ½½¶óÀÌµå ¼ö°¡ 1°³ÀÌÇÏÀÏ¶§ ÁÂ¿ì¹öÆ° ¹× ºÒ¸´ ¾Èº¸ÀÌ´Â ±â´É Ãß°¡
+ * @setPopu íŒì—…ì°½ ì •ë ¬ ë³€ê²½
+ * @setUtil í†µí•©ê²€ìƒ‰ ì„œë¸Œíƒ­ ë° ê²€ìƒ‰ì–´ íƒ­ ìŠ¤í¬ë¡¤ ì²˜ë¦¬ gnbë†’ì´ê°’ ì²˜ë¦¬ ì¶”ê°€.
+ * @setUlslide deleteLi ìŠ¬ë¼ì´ë“œ ìˆ˜ê°€ 1ê°œì´í•˜ì¼ë•Œ ì¢Œìš°ë²„íŠ¼ ë° ë¶ˆë¦¿ ì•ˆë³´ì´ëŠ” ê¸°ëŠ¥ ì¶”ê°€
  *
  * 2016.07.07
- * ±¸ºñ¼­·ù ¾È³» commonJs.setHeight_groupList·Î ÇÔ¼öÈ­
- * @commonJs.trimLR ÁÂ¿ì°ø¹éÁ¦°Å °øÅë ÇÔ¼ö Ãß°¡
- * @trimLF -> @commonJs.trimLR º¯°æ
- * @setUtil ÅëÇÕ°Ë»ö °Ë»ö ÀÚµ¿¿Ï¼º ÅÇ Ãß°¡//poc/util/common/UT1.3.1.html
+ * êµ¬ë¹„ì„œë¥˜ ì•ˆë‚´ commonJs.setHeight_groupListë¡œ í•¨ìˆ˜í™”
+ * @commonJs.trimLR ì¢Œìš°ê³µë°±ì œê±° ê³µí†µ í•¨ìˆ˜ ì¶”ê°€
+ * @trimLF -> @commonJs.trimLR ë³€ê²½
+ * @setUtil í†µí•©ê²€ìƒ‰ ê²€ìƒ‰ ìë™ì™„ì„± íƒ­ ì¶”ê°€//poc/util/common/UT1.3.1.html
  *
  *
  * 2016.07.08
- * @setMembership Æ÷Ä¿½º Á¦¾î Ãß°¡¹× ÄÚµåº¯°æ
+ * @setMembership í¬ì»¤ìŠ¤ ì œì–´ ì¶”ê°€ë° ì½”ë“œë³€ê²½
  *
  * 2016.07.11
- * @setCommon .qInfo ¶óÀÌºê ÀÌº¥Æ®·Î º¯°æ
- * @setCalendar end¹öÆ° first¹öÆ° ½ÇÇàÇÔ¼ö º¯°æ (prevYear(), nextYear())
- * @setCommon qIdx z-index ÃÊ±âÈ­ Ãß°¡
+ * @setCommon .qInfo ë¼ì´ë¸Œ ì´ë²¤íŠ¸ë¡œ ë³€ê²½
+ * @setCalendar endë²„íŠ¼ firstë²„íŠ¼ ì‹¤í–‰í•¨ìˆ˜ ë³€ê²½ (prevYear(), nextYear())
+ * @setCommon qIdx z-index ì´ˆê¸°í™” ì¶”ê°€
  *
  * 2016.07.12
- * @setUtil ÅëÇÕ°Ë»ö °Ë»ö ÀÚµ¿¿Ï¼º ÅÇ ¼±ÅÃµÈ ÅØ½ºÆ® »ğÀÔ ½ºÅ©¸³Æ® »èÁ¦.
+ * @setUtil í†µí•©ê²€ìƒ‰ ê²€ìƒ‰ ìë™ì™„ì„± íƒ­ ì„ íƒëœ í…ìŠ¤íŠ¸ ì‚½ì… ìŠ¤í¬ë¦½íŠ¸ ì‚­ì œ.
  *
  * 2016.07.13
- * @setUtil ÅëÇÕ°Ë»ö °Ë»ö ÀÚµ¿¿Ï¼º ÅÇ °Ë»ö¸ñ·Ï(li)°³¼ö È®ÀÎ ÈÄ ¿ÀÇÂ ½ºÅ©¸³Æ® Ãß°¡.
+ * @setUtil í†µí•©ê²€ìƒ‰ ê²€ìƒ‰ ìë™ì™„ì„± íƒ­ ê²€ìƒ‰ëª©ë¡(li)ê°œìˆ˜ í™•ì¸ í›„ ì˜¤í”ˆ ìŠ¤í¬ë¦½íŠ¸ ì¶”ê°€.
  *
  * 2016.07.18
- * @commonJs.loadMainNotice ¸ŞÀÎÆäÀÌÁö °øÁö»çÇ× ½ºÅ©¸³Æ® Ãß°¡
+ * @commonJs.loadMainNotice ë©”ì¸í˜ì´ì§€ ê³µì§€ì‚¬í•­ ìŠ¤í¬ë¦½íŠ¸ ì¶”ê°€
  *
  * 2016.07.19
- * lib.js () new commonJs.Jessture ) Å¬·¡½º Ãß°¡
- * @ setUlSlide Á¦½ºÃÄ Ãß°¡
- * @setMain >  alphaMn ¼öÁ¤
+ * lib.js () new commonJs.Jessture ) í´ë˜ìŠ¤ ì¶”ê°€
+ * @ setUlSlide ì œìŠ¤ì³ ì¶”ê°€
+ * @setMain >  alphaMn ìˆ˜ì •
  *
  * 2016.07.20
- * @setMain >  alphaMn ¼öÁ¤
- * @setUtil ÅëÇÕ°Ë»ö °Ë»ö ÀÚµ¿¿Ï¼º ÅÇ ½ºÅ©¸³Æ® »èÁ¦(°³¹ßÆÀ ¿äÃ»)
+ * @setMain >  alphaMn ìˆ˜ì •
+ * @setUtil í†µí•©ê²€ìƒ‰ ê²€ìƒ‰ ìë™ì™„ì„± íƒ­ ìŠ¤í¬ë¦½íŠ¸ ì‚­ì œ(ê°œë°œíŒ€ ìš”ì²­)
  *
  * 2016.07.25
- * @setMyt ¿­±â/´İ±â liveÀÌº¥Æ®·Î º¯°æ //MY1.1.1.1.html, MY1.1.1.2.html, MY1.2.4.1T.1.html
- * @setRadioBox ¶óµğ¿À ¼¿·ºÆ® ¹Ú½º liOnEvt Æ®¸®°Å ÁÖ¼® Á¦°Å
+ * @setMyt ì—´ê¸°/ë‹«ê¸° liveì´ë²¤íŠ¸ë¡œ ë³€ê²½ //MY1.1.1.1.html, MY1.1.1.2.html, MY1.2.4.1T.1.html
+ * @setRadioBox ë¼ë””ì˜¤ ì…€ë ‰íŠ¸ ë°•ìŠ¤ liOnEvt íŠ¸ë¦¬ê±° ì£¼ì„ ì œê±°
  *
  * 2016.07.27
- * @setMyt ¿­±â/´İ±â ÃÊ±âÈ­ ¼öÁ¤ //MY1.1.1.1.html, MY1.1.1.2.html, MY1.2.4.1T.1.html
- * Å¸ÀÌ¸Ó ½Ã°£ ¼³Á¤ 20ºĞ ¼³Á¤ ½ºÅ©¸³Æ® Ãß°¡(°³¹ßÆÀ ¿äÃ» »ğÀÔ ½ºÅ©¸³Æ®)
- * @setBanner ¸ŞÀÎ ¹è³Ê Ãß°¡ ¼öÁ¤
+ * @setMyt ì—´ê¸°/ë‹«ê¸° ì´ˆê¸°í™” ìˆ˜ì • //MY1.1.1.1.html, MY1.1.1.2.html, MY1.2.4.1T.1.html
+ * íƒ€ì´ë¨¸ ì‹œê°„ ì„¤ì • 20ë¶„ ì„¤ì • ìŠ¤í¬ë¦½íŠ¸ ì¶”ê°€(ê°œë°œíŒ€ ìš”ì²­ ì‚½ì… ìŠ¤í¬ë¦½íŠ¸)
+ * @setBanner ë©”ì¸ ë°°ë„ˆ ì¶”ê°€ ìˆ˜ì •
  *
  * 2016.07.28
- * °³¹ßÆÀ¿äÃ» document.domain = 'tworld.co.kr'; Ãß°¡
- * @commonJs.closeLayerPop Ãß°¡
- * @setBanner ¾ËÆÄ³»ºñ°ÔÀÌ¼Ç loadMain(); Ãß°¡
+ * ê°œë°œíŒ€ìš”ì²­ document.domain = 'tworld.co.kr'; ì¶”ê°€
+ * @commonJs.closeLayerPop ì¶”ê°€
+ * @setBanner ì•ŒíŒŒë‚´ë¹„ê²Œì´ì…˜ loadMain(); ì¶”ê°€
  *
  * 2016.07.29
- * @commonJs.setSlider reset¿ÜºÎ ÇÔ¼ö ¼öÁ¤
- * @setBanner ½½¶óÀÌµå¹è³Ê ajax µ¿±â½ÄÀ¸·Î º¯°æ (async:false)
- * @setBanner ¾ËÆÄ³×ºñ°ÔÀÌ¼Ç ajax µ¿±â½ÄÀ¸·Î º¯°æ (async:false)
- * @setBanner ajax ÀÎÄÚµù Ã³¸® Ãß°¡
- * @setBanner ½½¶óÀÌµå³×ºñ Á¤Áö/ÇÃ·¹ÀÌ ¹öÆ° »ğÀÔ ½ºÅ©¸³Æ® Ãß°¡
- * @setBanner ¹è³Ê Àü¿ªº¯¼ö length Ã¼Å© Ãß°¡
+ * @commonJs.setSlider resetì™¸ë¶€ í•¨ìˆ˜ ìˆ˜ì •
+ * @setBanner ìŠ¬ë¼ì´ë“œë°°ë„ˆ ajax ë™ê¸°ì‹ìœ¼ë¡œ ë³€ê²½ (async:false)
+ * @setBanner ì•ŒíŒŒë„¤ë¹„ê²Œì´ì…˜ ajax ë™ê¸°ì‹ìœ¼ë¡œ ë³€ê²½ (async:false)
+ * @setBanner ajax ì¸ì½”ë”© ì²˜ë¦¬ ì¶”ê°€
+ * @setBanner ìŠ¬ë¼ì´ë“œë„¤ë¹„ ì •ì§€/í”Œë ˆì´ ë²„íŠ¼ ì‚½ì… ìŠ¤í¬ë¦½íŠ¸ ì¶”ê°€
+ * @setBanner ë°°ë„ˆ ì „ì—­ë³€ìˆ˜ length ì²´í¬ ì¶”ê°€
  *
  * 2016.08.01
- * TSguide.html ÅØ½ºÆ® ¼¼·Î Á¤·Ä
+ * TSguide.html í…ìŠ¤íŠ¸ ì„¸ë¡œ ì •ë ¬
  *
  * 2016.08.02
- * @setPopup ·¹ÀÌ¾îÆË¾÷ ´İ±â ¹öÆ° ½ºÅ©¸³Æ® Ãß°¡ ".subClose"
- * @setMain IE check ½ºÅ©¸³Æ® Ãß°¡
- * TSguide.html ÅØ½ºÆ® ¼¼·Î Á¤·Ä ½ºÅ©¸³Æ® »èÁ¦
+ * @setPopup ë ˆì´ì–´íŒì—… ë‹«ê¸° ë²„íŠ¼ ìŠ¤í¬ë¦½íŠ¸ ì¶”ê°€ ".subClose"
+ * @setMain IE check ìŠ¤í¬ë¦½íŠ¸ ì¶”ê°€
+ * TSguide.html í…ìŠ¤íŠ¸ ì„¸ë¡œ ì •ë ¬ ìŠ¤í¬ë¦½íŠ¸ ì‚­ì œ
  *
  * 2016.08.03
- * @setUlSlide ".promotionSlide"¾È¿¡¼­¸¸ Á¦½ºÃÄ µÇµµ·Ï º¯°æ
- * @setCenter ÃÖ½ÅÀÌ¿ëÀÚ ÇÇÇØ¿¹¹æ Á¤º¸ ´õº¸±â ¹öÆ° Ãß°¡//poc/html/center/CS6.1.1T.html#
+ * @setUlSlide ".promotionSlide"ì•ˆì—ì„œë§Œ ì œìŠ¤ì³ ë˜ë„ë¡ ë³€ê²½
+ * @setCenter ìµœì‹ ì´ìš©ì í”¼í•´ì˜ˆë°© ì •ë³´ ë”ë³´ê¸° ë²„íŠ¼ ì¶”ê°€//poc/html/center/CS6.1.1T.html#
  *
  * 2016.08.04
- * @setBanner ajax euc-kr->utf-8À¸·Î º¯°æ
+ * @setBanner ajax euc-kr->utf-8ìœ¼ë¡œ ë³€ê²½
  *
  * 2016.08.06
- * ".graphtype2" ¶óµğ¿À ¹öÆ° ±×·¡ÇÁ ½ºÅ©¸³Æ® ¼öÁ¤(VIPÇÒÀÎÀ² ¼³Á¤ ±×·¡ÇÁ)
- * @setProduct ¿ä±İ»óÇ° ÃÖ´ë3°³±îÁö¸¸ ¼±ÅÃ°¡´ÉÇÏ°Ô º¯°æ// product/TS1.1.1.html
- * @setBanner ¼­ºê¸ŞÀÎ(¿ä±İ»óÇ°,T¶óÀÌºê,·Î¹Ö) ¹è³Ê Ãß°¡
+ * ".graphtype2" ë¼ë””ì˜¤ ë²„íŠ¼ ê·¸ë˜í”„ ìŠ¤í¬ë¦½íŠ¸ ìˆ˜ì •(VIPí• ì¸ìœ¨ ì„¤ì • ê·¸ë˜í”„)
+ * @setProduct ìš”ê¸ˆìƒí’ˆ ìµœëŒ€3ê°œê¹Œì§€ë§Œ ì„ íƒê°€ëŠ¥í•˜ê²Œ ë³€ê²½// product/TS1.1.1.html
+ * @setBanner ì„œë¸Œë©”ì¸(ìš”ê¸ˆìƒí’ˆ,Të¼ì´ë¸Œ,ë¡œë°) ë°°ë„ˆ ì¶”ê°€
  *
  * 2016.08.07
- * @setBanner ¾ËÆÄ³×ºñ°ÔÀÌ¼Ç »ğÀÔ ÅÂ±× ¾ÆÀÌµğ ¼öÁ¤
- * @setBanner ½½¶óÀÌµå ÇÁ·Î¸ğ¼Ç ¹è³Ê Á¤Áö,½ÃÀÛ ¹öÆ° »ğÀÔ ½ºÅ©¸³Æ® ¼öÁ¤
- * setIdAndHeadersToTables nullÃ³¸®
- * @setMyt ³ªÀÇÇıÅÃ ÀÚ¼¼È÷º¸±â ¼öÁ¤
- * @setBanner _banner_1002_F  µ¿¿µ»ó ÆË¾÷¹è³Ê ÀÓ½Ã¸·À½
+ * @setBanner ì•ŒíŒŒë„¤ë¹„ê²Œì´ì…˜ ì‚½ì… íƒœê·¸ ì•„ì´ë”” ìˆ˜ì •
+ * @setBanner ìŠ¬ë¼ì´ë“œ í”„ë¡œëª¨ì…˜ ë°°ë„ˆ ì •ì§€,ì‹œì‘ ë²„íŠ¼ ì‚½ì… ìŠ¤í¬ë¦½íŠ¸ ìˆ˜ì •
+ * setIdAndHeadersToTables nullì²˜ë¦¬
+ * @setMyt ë‚˜ì˜í˜œíƒ ìì„¸íˆë³´ê¸° ìˆ˜ì •
+ * @setBanner _banner_1002_F  ë™ì˜ìƒ íŒì—…ë°°ë„ˆ ì„ì‹œë§‰ìŒ
  *
  * 2016.08.08
- * cnt 1200 -> 1800 º¯°æ
- * @setPopup ·¹ÀÌ¾îÆË¾÷ ¿ÀÇÂ½Ã GNBµõÃ³¸® ¹× ¹Ùµğ ½ºÅ©·Ñ ¹æÁö Ãß°¡
+ * cnt 1200 -> 1800 ë³€ê²½
+ * @setPopup ë ˆì´ì–´íŒì—… ì˜¤í”ˆì‹œ GNBë”¤ì²˜ë¦¬ ë° ë°”ë”” ìŠ¤í¬ë¡¤ ë°©ì§€ ì¶”ê°€
  *
  * 2016.08.09
- * @setPopup ·¹ÀÌ¾îÆË¾÷ ¿ÀÇÂ½Ã GNBµõÃ³¸® ¹× ¹Ùµğ ½ºÅ©·Ñ ¹æÁö ¼öÁ¤
+ * @setPopup ë ˆì´ì–´íŒì—… ì˜¤í”ˆì‹œ GNBë”¤ì²˜ë¦¬ ë° ë°”ë”” ìŠ¤í¬ë¡¤ ë°©ì§€ ìˆ˜ì •
  *
  * 2016.08.10
- * @setProduct ¿ä±İ»óÇ° userData ½ºÅ©·Ñ/¼±ÅÃ ÀÌº¥Æ® ¼öÁ¤
- * @setBanner ÇÁ·Î¸ğ¼Ç¹è³Ê ÀÌ¹ÌÁö »ğÀÔ ¼öÁ¤
+ * @setProduct ìš”ê¸ˆìƒí’ˆ userData ìŠ¤í¬ë¡¤/ì„ íƒ ì´ë²¤íŠ¸ ìˆ˜ì •
+ * @setBanner í”„ë¡œëª¨ì…˜ë°°ë„ˆ ì´ë¯¸ì§€ ì‚½ì… ìˆ˜ì •
  *
  * 2016.08.11
- * @setCalendar ´Ş·Â ¿À´Ã ¹öÆ° ¼öÁ¤
- * @setMyt myt_product1 ³³ºÎ³»¿ª openTab ÀÌº¥Æ® Ãß°¡ ¹× À§Ä¡ ÀÌµ¿ ¼öÁ¤
+ * @setCalendar ë‹¬ë ¥ ì˜¤ëŠ˜ ë²„íŠ¼ ìˆ˜ì •
+ * @setMyt myt_product1 ë‚©ë¶€ë‚´ì—­ openTab ì´ë²¤íŠ¸ ì¶”ê°€ ë° ìœ„ì¹˜ ì´ë™ ìˆ˜ì •
  *
  * 2016.08.12
- * @setMain, @setBanner ½ºÇÁ·¹µå ¹è³Ê 1ÀÏ°£ ¿­Áö ¾Ê±â ½ºÅ©¸³Æ® Ãß°¡
+ * @setMain, @setBanner ìŠ¤í”„ë ˆë“œ ë°°ë„ˆ 1ì¼ê°„ ì—´ì§€ ì•Šê¸° ìŠ¤í¬ë¦½íŠ¸ ì¶”ê°€
  *
  * 2016.08.15
- * @setPopup iframeµ¿¿µ»ó ·¹ÀÌ¾îÆË¾÷ ´İÀ» ½Ã ¸®·Îµå ½ºÅ©¸³Æ® Ãß°¡(iframe.videoFrame)
+ * @setPopup iframeë™ì˜ìƒ ë ˆì´ì–´íŒì—… ë‹«ì„ ì‹œ ë¦¬ë¡œë“œ ìŠ¤í¬ë¦½íŠ¸ ì¶”ê°€(iframe.videoFrame)
  *
  * 2016.08.16
- * @setPopup commonJs.closeLayerPop ¼öÁ¤
- * ie6/7È®ÀÎ ½ºÅ©¸³Æ® ¼öÁ¤ ¹× setMain -> setWindowLoad·Î ÀÌµ¿
- * @setTabJs live ÀÌº¥Æ®·Î º¯°æ
- * @setWindowLoad ÆË¾÷ Â÷´Ü ¼³Á¤ ÇØÁ¦ ¾È³» ´õÀÌ»ó º¸Áö¾Ê±â ½ºÅ©¸³Æ® Ãß°¡
- * @setMyt myt_product1 .sub ¿­±â/´İ±â live ÀÌº¥Æ®·Î º¯°æ
+ * @setPopup commonJs.closeLayerPop ìˆ˜ì •
+ * ie6/7í™•ì¸ ìŠ¤í¬ë¦½íŠ¸ ìˆ˜ì • ë° setMain -> setWindowLoadë¡œ ì´ë™
+ * @setTabJs live ì´ë²¤íŠ¸ë¡œ ë³€ê²½
+ * @setWindowLoad íŒì—… ì°¨ë‹¨ ì„¤ì • í•´ì œ ì•ˆë‚´ ë”ì´ìƒ ë³´ì§€ì•Šê¸° ìŠ¤í¬ë¦½íŠ¸ ì¶”ê°€
+ * @setMyt myt_product1 .sub ì—´ê¸°/ë‹«ê¸° live ì´ë²¤íŠ¸ë¡œ ë³€ê²½
  *
  * 2016.08.17
- * setFamilySiteTglClsOn ½ºÅ©¸³Æ® »èÁ¦(gnb.js Áßº¹)
+ * setFamilySiteTglClsOn ìŠ¤í¬ë¦½íŠ¸ ì‚­ì œ(gnb.js ì¤‘ë³µ)
  *
  * 2016.08.18
- * @setDirect ('img[src]') null Ã³¸® Ãß°¡
- * @setGuide ( layout_product.html ) .basicProvide_tab li¿¡ ³ôÀÌ°ª Ã³¸®
- * _banner_1002_F ÁÖ¼® Á¦°Å (TÄ·ÆäÀÎ ¹è³Ê)
- * @setMain ½ºÇÁ·¹µå ¹è³Ê ´İ±â ¹× 1ÀÏ°£ º¸ÀÌÁö ¾Ê±â ¼öÁ¤
+ * @setDirect ('img[src]') null ì²˜ë¦¬ ì¶”ê°€
+ * @setGuide ( layout_product.html ) .basicProvide_tab liì— ë†’ì´ê°’ ì²˜ë¦¬
+ * _banner_1002_F ì£¼ì„ ì œê±° (Tìº í˜ì¸ ë°°ë„ˆ)
+ * @setMain ìŠ¤í”„ë ˆë“œ ë°°ë„ˆ ë‹«ê¸° ë° 1ì¼ê°„ ë³´ì´ì§€ ì•Šê¸° ìˆ˜ì •
  *
  * 2016.08.19
- * ÇÁ·Î¸ğ¼Ç¹è³Ê ¹è°æ¼Ó¼º repeat -> repeat-x·Îº¯°æ
- * @setBanner background »ğÀÔ ½ºÅ©¸³Æ® ¼öÁ¤
+ * í”„ë¡œëª¨ì…˜ë°°ë„ˆ ë°°ê²½ì†ì„± repeat -> repeat-xë¡œë³€ê²½
+ * @setBanner background ì‚½ì… ìŠ¤í¬ë¦½íŠ¸ ìˆ˜ì •
  *
  * 2016.08.22
- * @setBanner background »ğÀÔ ½ºÅ©¸³Æ® ¼öÁ¤
+ * @setBanner background ì‚½ì… ìŠ¤í¬ë¦½íŠ¸ ìˆ˜ì •
  *
  * 2016.08.23
- * @setUlSlide IE8ÀÌÇÏ ¹öÀü Á¦½ºÃÄ ¹ÌÀû¿ë
+ * @setUlSlide IE8ì´í•˜ ë²„ì „ ì œìŠ¤ì³ ë¯¸ì ìš©
  *
  * 2016.08.24
- * @setBanner ¾ËÆÄ ³×ºñ°ÔÀÌ¼Ç »ğÀÔ ½ºÅ©¸³Æ® º¯°æ(jsº¯¼ö ÆÄ½Ì°ªÀ¸·Î ´Ü¼ø html »ğÀÔ -> jsº¯¼ö ÆÄ½Ì°ªÀ¸·Î ±âº»ÅÂ±× »ğÀÔ ÈÄ »ó¼¼³»¿ª html»ğÀÔÀ¸·Î º¯°æ)
- * @setUlSlide Jessture ¹æÇâ ¼öÁ¤
+ * @setBanner ì•ŒíŒŒ ë„¤ë¹„ê²Œì´ì…˜ ì‚½ì… ìŠ¤í¬ë¦½íŠ¸ ë³€ê²½(jsë³€ìˆ˜ íŒŒì‹±ê°’ìœ¼ë¡œ ë‹¨ìˆœ html ì‚½ì… -> jsë³€ìˆ˜ íŒŒì‹±ê°’ìœ¼ë¡œ ê¸°ë³¸íƒœê·¸ ì‚½ì… í›„ ìƒì„¸ë‚´ì—­ htmlì‚½ì…ìœ¼ë¡œ ë³€ê²½)
+ * @setUlSlide Jessture ë°©í–¥ ìˆ˜ì •
  *
  * 2016.08.25
- * @setGuide CHECK POINT ¸ñ·Ï ´õº¸±â ¹öÆ° ¶óÀÌºê ÀÌº¥Æ®·Î º¯°æ ¹× ¹öÆ° Á¦°Å ±â´É »èÁ¦
+ * @setGuide CHECK POINT ëª©ë¡ ë”ë³´ê¸° ë²„íŠ¼ ë¼ì´ë¸Œ ì´ë²¤íŠ¸ë¡œ ë³€ê²½ ë° ë²„íŠ¼ ì œê±° ê¸°ëŠ¥ ì‚­ì œ
  *
  * 2016.08.26
- * mobile Ã¼Å© ¹Ìµğ¾îÄõ¸® Ãß°¡
+ * mobile ì²´í¬ ë¯¸ë””ì–´ì¿¼ë¦¬ ì¶”ê°€
  *
  * 2016.08.29
- * cmnJquery Ã³¸® (º¯°æ ºÎºĞ "cmnJquery"·Î °Ë»ö)
- * @setPopup ¿­±â/´İ±â Å¬¸¯ ÀÌº¥Æ® ¿ÜºÎ jQuery Á¢±Ù °¡´ÉÇÏ°Ô º¯°æ
+ * cmnJquery ì²˜ë¦¬ (ë³€ê²½ ë¶€ë¶„ "cmnJquery"ë¡œ ê²€ìƒ‰)
+ * @setPopup ì—´ê¸°/ë‹«ê¸° í´ë¦­ ì´ë²¤íŠ¸ ì™¸ë¶€ jQuery ì ‘ê·¼ ê°€ëŠ¥í•˜ê²Œ ë³€ê²½
  *
  * 2016.08.30
- * @setPopup id_layerOpen ¼öÁ¤
- * @setMain ¾ËÆÄ³»ºñ°ÔÀÌ¼Ç Å¬¸¯½Ã È°¼ºÈ­µÇ´Â ÁÂ¿ì ¹öÆ° nodata È®ÀÎ Ãß°¡
+ * @setPopup id_layerOpen ìˆ˜ì •
+ * @setMain ì•ŒíŒŒë‚´ë¹„ê²Œì´ì…˜ í´ë¦­ì‹œ í™œì„±í™”ë˜ëŠ” ì¢Œìš° ë²„íŠ¼ nodata í™•ì¸ ì¶”ê°€
  *
  * 2016.09.01
- * @setUlSlide À¥ Á¢±Ù¼º Æ÷Ä¿½º ÀÌµ¿ ¼öÁ¤
+ * @setUlSlide ì›¹ ì ‘ê·¼ì„± í¬ì»¤ìŠ¤ ì´ë™ ìˆ˜ì •
  *
  * 2016.09.04
- * @setBanner promotion (ul>li) imgÇüÅÂ ¹è³Ê °ª »ğÀÔ ¼öÁ¤
- * @setRadioBox ¶óµğ¿À¹öÆ° ÀÌº¥Æ® ¶óÀÌºê·Î º¯°æ
- * @setTlive ÀÚ¸· ÇÔ²²º¸±â ¶óÀÌºê ÀÌº¥Æ®·Î º¯°æ
- * @setPopup ·¹ÀÌ¾îÆË¾÷ ÅÇÀÌµ¿ ¹× ´İ±â ÀÌº¥Æ® µ¿ÀûÀÌº¥Æ®·Î º¯°æ
+ * @setBanner promotion (ul>li) imgí˜•íƒœ ë°°ë„ˆ ê°’ ì‚½ì… ìˆ˜ì •
+ * @setRadioBox ë¼ë””ì˜¤ë²„íŠ¼ ì´ë²¤íŠ¸ ë¼ì´ë¸Œë¡œ ë³€ê²½
+ * @setTlive ìë§‰ í•¨ê»˜ë³´ê¸° ë¼ì´ë¸Œ ì´ë²¤íŠ¸ë¡œ ë³€ê²½
+ * @setPopup ë ˆì´ì–´íŒì—… íƒ­ì´ë™ ë° ë‹«ê¸° ì´ë²¤íŠ¸ ë™ì ì´ë²¤íŠ¸ë¡œ ë³€ê²½
  *
  * 2016.09.05
- * @setRadioBox ¶óµğ¿À¹Ú½º disabled Ã³¸®
- * window load //'after_setPopup' Æ®¸®°Å ½ÇÇà Ãß°¡
- * @setUlSlide $('div.slideBox,div.slideBox2').each(); --> commonJs.setSlideBox ¿ÜºÎÇÔ¼ö·Î º¯°æ
+ * @setRadioBox ë¼ë””ì˜¤ë°•ìŠ¤ disabled ì²˜ë¦¬
+ * window load //'after_setPopup' íŠ¸ë¦¬ê±° ì‹¤í–‰ ì¶”ê°€
+ * @setUlSlide $('div.slideBox,div.slideBox2').each(); --> commonJs.setSlideBox ì™¸ë¶€í•¨ìˆ˜ë¡œ ë³€ê²½
  *
  * 2016.09.06
- * @setCheckBox "no_checkbox_evt" Ã¼Å©¹Ú½º ÀÌº¥Æ® ¿¹¿Ü Ã³¸®
- * @setMain ¾ËÆÄ³»ºñ Á¦½ºÃÄ IE8¹öÀü ÀÌÇÏ ºĞ±â Ã³¸®
- * @setProduct ½ºÅ©·Ñ ÇÏ´Ü ¼±ÅÃ ¿ä±İ»óÇ° ¹Ù ÃÖÁ¾ À§Ä¡¼öÁ¤//TS5.2.7.1.html
- * @setBanner htmlÇü½Ä promotion banner »ğÀÔ ¼öÁ¤
+ * @setCheckBox "no_checkbox_evt" ì²´í¬ë°•ìŠ¤ ì´ë²¤íŠ¸ ì˜ˆì™¸ ì²˜ë¦¬
+ * @setMain ì•ŒíŒŒë‚´ë¹„ ì œìŠ¤ì³ IE8ë²„ì „ ì´í•˜ ë¶„ê¸° ì²˜ë¦¬
+ * @setProduct ìŠ¤í¬ë¡¤ í•˜ë‹¨ ì„ íƒ ìš”ê¸ˆìƒí’ˆ ë°” ìµœì¢… ìœ„ì¹˜ìˆ˜ì •//TS5.2.7.1.html
+ * @setBanner htmlí˜•ì‹ promotion banner ì‚½ì… ìˆ˜ì •
  *
  * 2016.09.08
- * @setBanner img Çü½Ä promotion banner »ğÀÔ ¼öÁ¤
- * @setMyt ¾ÆÄÚµğ¾ğ ÀüÃ¼´İ±â ¹öÆ° ¼öÁ¤
+ * @setBanner img í˜•ì‹ promotion banner ì‚½ì… ìˆ˜ì •
+ * @setMyt ì•„ì½”ë””ì–¸ ì „ì²´ë‹«ê¸° ë²„íŠ¼ ìˆ˜ì •
  *
  * 2016.09.12
- * commonJs.event.SELECTBOX_INIT ÇÒ´ç nullÃ¼Å© Ãß°¡
- * sitemap text->html º¯°æ
+ * commonJs.event.SELECTBOX_INIT í• ë‹¹ nullì²´í¬ ì¶”ê°€
+ * sitemap text->html ë³€ê²½
  *
  * 2016.09.17
- * º»¹®¹Ù·Î°¡±â fixedÃ³¸® Ãß°¡
+ * ë³¸ë¬¸ë°”ë¡œê°€ê¸° fixedì²˜ë¦¬ ì¶”ê°€
  *
  * 2016.09.18
- * @setBanner ¾ËÆÄ³»ºñ°ÔÀÌ¼Ç ¿ÀÆÛ¸µ¿µ¿ªÀ» ¾ÕÀ¸·Î ¿À°Ô ¼öÁ¤
- * @setMyt 'myt_product1' ÀüÃ¼´İ±â '.addType2.tglClsOpen' ´İ±â Ãß°¡
- * @setBanner ÇÁ·Î¸ğ¼Ç¹è³Ê ¼öÁ¤
+ * @setBanner ì•ŒíŒŒë‚´ë¹„ê²Œì´ì…˜ ì˜¤í¼ë§ì˜ì—­ì„ ì•ìœ¼ë¡œ ì˜¤ê²Œ ìˆ˜ì •
+ * @setMyt 'myt_product1' ì „ì²´ë‹«ê¸° '.addType2.tglClsOpen' ë‹«ê¸° ì¶”ê°€
+ * @setBanner í”„ë¡œëª¨ì…˜ë°°ë„ˆ ìˆ˜ì •
  *
  * 2016.09.19
- * @setMyt cubeResizeMenu ³ªÀÇÇıÅÃ ´õº¸±â ¹öÆ° Å¬¸¯½Ã »çÀÌÁî Àç¼³Á¤ ½ºÅ©¸³Æ® Ãß°¡
- * @setBanner ÇÁ·Î¸ğ¼Ç¹è³Ê ¼öÁ¤
+ * @setMyt cubeResizeMenu ë‚˜ì˜í˜œíƒ ë”ë³´ê¸° ë²„íŠ¼ í´ë¦­ì‹œ ì‚¬ì´ì¦ˆ ì¬ì„¤ì • ìŠ¤í¬ë¦½íŠ¸ ì¶”ê°€
+ * @setBanner í”„ë¡œëª¨ì…˜ë°°ë„ˆ ìˆ˜ì •
  *
  * 2016.09.20
- * @setBanner ÇÁ·Î¸ğ¼Ç¹è³Ê ÀÌ¹ÌÁö ÅÂ±× ÇüÅÂ ¼öÁ¤
- * @resizePopupWindow ÆË¾÷ À©µµ¿ìÃ¢ »çÀÌÁî Á¶Àı ½ºÅ©¸³Æ® Ãß°¡
+ * @setBanner í”„ë¡œëª¨ì…˜ë°°ë„ˆ ì´ë¯¸ì§€ íƒœê·¸ í˜•íƒœ ìˆ˜ì •
+ * @resizePopupWindow íŒì—… ìœˆë„ìš°ì°½ ì‚¬ì´ì¦ˆ ì¡°ì ˆ ìŠ¤í¬ë¦½íŠ¸ ì¶”ê°€
  *
  * 2016.09.21
- * @setBanner ºñµğ¿À ÀÚ¸· tabindex»ğÀÔ
- * @setBanner ½Ì±Û¹è³Ê ÀÌ¹ÌÁö »ğÀÔ ¼öÁ¤
- * @setMain ¾ËÆÄ³»ºñ ÀÎµ¦½º aÅÂ±× ¼¿·ºÅÍ ¼öÁ¤
+ * @setBanner ë¹„ë””ì˜¤ ìë§‰ tabindexì‚½ì…
+ * @setBanner ì‹±ê¸€ë°°ë„ˆ ì´ë¯¸ì§€ ì‚½ì… ìˆ˜ì •
+ * @setMain ì•ŒíŒŒë‚´ë¹„ ì¸ë±ìŠ¤ aíƒœê·¸ ì…€ë ‰í„° ìˆ˜ì •
  *
  * 2016.09.22
- * ºñµğ¿À ÀÚ¸· tabindex»ğÀÔ @setWindowLoad·Î ÀÌµ¿
- * commonJs.setHeight_changeCont ³ôÀÌ°ª ÃÊ±âÈ­ Ãß°¡
+ * ë¹„ë””ì˜¤ ìë§‰ tabindexì‚½ì… @setWindowLoadë¡œ ì´ë™
+ * commonJs.setHeight_changeCont ë†’ì´ê°’ ì´ˆê¸°í™” ì¶”ê°€
  *
  * 2016.09.24
- * @setPopup ·¹ÀÌ¾îÆË¾÷ ´İÀ» ½Ã arcBox ÃÊ±âÈ­ ±â´É
- * commonJs.closeLayerPop container ·¹ÀÌ¾îÆË¾÷ ´İÈú¶§ z-index:;
- * commonJs.closeLayerPop fix_scrollTop ½ºÅ©·Ñ ÀÌµ¿ ¹æÁö ±â´É Ãß°¡
+ * @setPopup ë ˆì´ì–´íŒì—… ë‹«ì„ ì‹œ arcBox ì´ˆê¸°í™” ê¸°ëŠ¥
+ * commonJs.closeLayerPop container ë ˆì´ì–´íŒì—… ë‹«íë•Œ z-index:;
+ * commonJs.closeLayerPop fix_scrollTop ìŠ¤í¬ë¡¤ ì´ë™ ë°©ì§€ ê¸°ëŠ¥ ì¶”ê°€
  *
  * 2016.09.29
- * @sltByNumKey ¼¿·ºÆ®¹Ú½º ¼ıÀÚ ÀÔ·Â ¼±ÅÃ ±â´É Ãß°¡
- * @setPopup È­¸é¿¡ ·¹ÀÌ¾îÆË¾÷ÀÌ ¾ø´Â °æ¿ì ½ÇÇà ¾ÈÇÏ°í return½ÃÅ°´Â ºĞ±â Ã³¸® »èÁ¦(ÆË¾÷À» µ¿ÀûÀ¸·Î ºÒ·¯¿À´Â °æ¿ì)
+ * @sltByNumKey ì…€ë ‰íŠ¸ë°•ìŠ¤ ìˆ«ì ì…ë ¥ ì„ íƒ ê¸°ëŠ¥ ì¶”ê°€
+ * @setPopup í™”ë©´ì— ë ˆì´ì–´íŒì—…ì´ ì—†ëŠ” ê²½ìš° ì‹¤í–‰ ì•ˆí•˜ê³  returnì‹œí‚¤ëŠ” ë¶„ê¸° ì²˜ë¦¬ ì‚­ì œ(íŒì—…ì„ ë™ì ìœ¼ë¡œ ë¶ˆëŸ¬ì˜¤ëŠ” ê²½ìš°)
  *
  * 2016.09.30
- * @setPopup ·¹ÀÌ¾î ÆË¾÷ ¾Èº¸ÀÌ´Â ÅÂ±× Æ÷Ä¿½º ¼±ÅÃ ½Ã ¿¹¿Ü Ã³¸®(Á¢±Ù¼º)
+ * @setPopup ë ˆì´ì–´ íŒì—… ì•ˆë³´ì´ëŠ” íƒœê·¸ í¬ì»¤ìŠ¤ ì„ íƒ ì‹œ ì˜ˆì™¸ ì²˜ë¦¬(ì ‘ê·¼ì„±)
  *
  * 2016.10.03
- * @setMain ¸ŞÀÎ ¾ËÆÄ³»ºñ°ÔÀÌ¼Ç ÅÇÀÌµ¿ ¹× Æ÷Ä¿½º ÀÌµ¿ ¼öÁ¤(Á¢±Ù¼º)
- * @setUlSlide ÅÇÀÌµ¿/Æ÷Ä¿½º ÀÌµ¿ ¼öÁ¤(Á¢±Ù¼º)
+ * @setMain ë©”ì¸ ì•ŒíŒŒë‚´ë¹„ê²Œì´ì…˜ íƒ­ì´ë™ ë° í¬ì»¤ìŠ¤ ì´ë™ ìˆ˜ì •(ì ‘ê·¼ì„±)
+ * @setUlSlide íƒ­ì´ë™/í¬ì»¤ìŠ¤ ì´ë™ ìˆ˜ì •(ì ‘ê·¼ì„±)
  *
  * 2016.10.04
- * commonJs.openLayerPop ÆË¾÷¿­±â ¿ÜºÎÇÔ¼ö °³¹ß ¿äÃ» Ãß°¡
+ * commonJs.openLayerPop íŒì—…ì—´ê¸° ì™¸ë¶€í•¨ìˆ˜ ê°œë°œ ìš”ì²­ ì¶”ê°€
  *
  * 2016.10.06
- * @setUlSlide ÅÇÀÌµ¿/Æ÷Ä¿½º ÀÌµ¿ Ãß°¡¼öÁ¤(Á¢±Ù¼º)
- * @setUlSlide isConSize ÅÇÀÌµ¿/Æ÷Ä¿½º ÀÌµ¿ ¼öÁ¤(Á¢±Ù¼º)
+ * @setUlSlide íƒ­ì´ë™/í¬ì»¤ìŠ¤ ì´ë™ ì¶”ê°€ìˆ˜ì •(ì ‘ê·¼ì„±)
+ * @setUlSlide isConSize íƒ­ì´ë™/í¬ì»¤ìŠ¤ ì´ë™ ìˆ˜ì •(ì ‘ê·¼ì„±)
  *
  * 2016.10.10
- * °³¹ßÆÀ¿äÃ» ÀÚµ¿·Î±×¾Æ¿ô Å¸ÀÌ¸Ó ½ºÅ©¸³Æ® ¼öÁ¤
- * @setTglClsOpen ÃÊ±â openµÇ¾îÀÖ´Â °æ¿ì Å¸ÀÌÆ² ¼±ÅÃ »ğÀÔ ±â´É Ãß°¡ (Á¢±Ù¼º)
- * @setUlSlide ÅÇÀÌµ¿/Æ÷Ä¿½º ÀÌµ¿ Ãß°¡¼öÁ¤(Á¢±Ù¼º)
+ * ê°œë°œíŒ€ìš”ì²­ ìë™ë¡œê·¸ì•„ì›ƒ íƒ€ì´ë¨¸ ìŠ¤í¬ë¦½íŠ¸ ìˆ˜ì •
+ * @setTglClsOpen ì´ˆê¸° openë˜ì–´ìˆëŠ” ê²½ìš° íƒ€ì´í‹€ ì„ íƒ ì‚½ì… ê¸°ëŠ¥ ì¶”ê°€ (ì ‘ê·¼ì„±)
+ * @setUlSlide íƒ­ì´ë™/í¬ì»¤ìŠ¤ ì´ë™ ì¶”ê°€ìˆ˜ì •(ì ‘ê·¼ì„±)
  *
  * 2016.10.12
- * sitemap ¸µÅ©x ¸Ş´º¸í ¼³Á¤ Ãß°¡
+ * sitemap ë§í¬x ë©”ë‰´ëª… ì„¤ì • ì¶”ê°€
  *
  * 2016.10.13
- * @timeCheck ½Ã°£ È®ÀÎ
- * @setBanner ¹è³Ê ¿¹¾à ½Ã°£ Ãß°¡
- * sitemap .onlyLink ¸Ş´º¸í º¯°æ¾øÀÌ ¸µÅ©¸¸ »ğÀÔÇÏ´Â ±â´É Ãß°¡
- * incomplete ¹Ì¿Ï¼º ¸Ş´º¸í (*) Ãß°¡
+ * @timeCheck ì‹œê°„ í™•ì¸
+ * @setBanner ë°°ë„ˆ ì˜ˆì•½ ì‹œê°„ ì¶”ê°€
+ * sitemap .onlyLink ë©”ë‰´ëª… ë³€ê²½ì—†ì´ ë§í¬ë§Œ ì‚½ì…í•˜ëŠ” ê¸°ëŠ¥ ì¶”ê°€
+ * incomplete ë¯¸ì™„ì„± ë©”ë‰´ëª… (*) ì¶”ê°€
  *
  */
 
 
 
-/************* °³¹ßÆÀ ¿äÃ» ½ºÅ©¸³Æ® *************/
+/************* ê°œë°œíŒ€ ìš”ì²­ ìŠ¤í¬ë¦½íŠ¸ *************/
 
 // if(document.domain && document.domain!="localhost") document.domain='tworld.co.kr';
 if( window.console == undefined ){ console = { log : function(){} }; }
 
-//ÄíÅ° Á¶È¸
+//ì¿ í‚¤ ì¡°íšŒ
 function _poc_GetCookie(cookName) {
 	var aCookie = document.cookie.split("; ");
 	for (var i = 0; i < aCookie.length; i++) {
@@ -724,18 +724,18 @@ function _poc_GetCookie(cookName) {
 	return "";
 }
 
-//ÀÚµ¿ ·Î±×¾Æ¿ô Ã³¸®
-var pocTimerCnt = parseInt(1800);	 //ÇöÀçÆäÀÌÁö 30ºĞ °æ°ú Ã¼Å©
-var pocTimerStart= parseInt(new Date().getTime()); //ÇöÀçÆäÀÌÁö È£Ãâ ½Ã°£
+//ìë™ ë¡œê·¸ì•„ì›ƒ ì²˜ë¦¬
+var pocTimerCnt = parseInt(1800);	 //í˜„ì¬í˜ì´ì§€ 30ë¶„ ê²½ê³¼ ì²´í¬
+var pocTimerStart= parseInt(new Date().getTime()); //í˜„ì¬í˜ì´ì§€ í˜¸ì¶œ ì‹œê°„
 
 function timer_start(siteCd) {
 
-	//·Î±×ÀÎÇÑ °æ¿ì¿¡¸¸ ¼öÇà
+	//ë¡œê·¸ì¸í•œ ê²½ìš°ì—ë§Œ ìˆ˜í–‰
 	var isLogin = _poc_GetCookie("SKTSSO");
 	if (isLogin == "Y") {
 
-		if(typeof(localStorage) !='undefined' ){ //localStroge Áö¿ø ºê¶ó¿ìÀú
-			localStorage.setItem('pocTimerStart', pocTimerStart);		//ÇöÀçÆäÀÌÁö È£Ãâ½Ã°£À¸·Î ±âÁØ½Ã°£ °»½Å
+		if(typeof(localStorage) !='undefined' ){ //localStroge ì§€ì› ë¸Œë¼ìš°ì €
+			localStorage.setItem('pocTimerStart', pocTimerStart);		//í˜„ì¬í˜ì´ì§€ í˜¸ì¶œì‹œê°„ìœ¼ë¡œ ê¸°ì¤€ì‹œê°„ ê°±ì‹ 
 		}
 
 		setInterval("counter_run()", 1000);
@@ -746,21 +746,21 @@ function counter_run(siteCd) {
 	pocTimerCnt--;
 
 	if (pocTimerCnt < 0)  {
-		if(typeof(localStorage) !='undefined' ){ //localStroge Áö¿ø ºê¶ó¿ìÀú
-			pocTimerStart = parseInt(localStorage.getItem('pocTimerStart')); //ºê¶ó¿ìÀúÀÇ ±âÁØ½Ã°£À¸·Î Ãß°¡ ºñ±³
+		if(typeof(localStorage) !='undefined' ){ //localStroge ì§€ì› ë¸Œë¼ìš°ì €
+			pocTimerStart = parseInt(localStorage.getItem('pocTimerStart')); //ë¸Œë¼ìš°ì €ì˜ ê¸°ì¤€ì‹œê°„ìœ¼ë¡œ ì¶”ê°€ ë¹„êµ
 		}
 
 		if (parseInt(new Date().getTime())- pocTimerStart>parseInt(1800*1000)){
 
-			// ¿µ¹® ÆäÀÌÁö ¿©ºÎ Ã¼Å©
+			// ì˜ë¬¸ í˜ì´ì§€ ì—¬ë¶€ ì²´í¬
 			if (location.href.indexOf("/poc/eng") > 0 || location.href.indexOf("V_FORE") > 0) {
 				siteCd = "ENG";
 			}
-			// Tmembership ÆäÀÌÁö ¿©ºÎ(Ãß°¡)
+			// Tmembership í˜ì´ì§€ ì—¬ë¶€(ì¶”ê°€)
 			if (location.hostname == 'tmembership.tworld.co.kr') {
 				siteCd = "MBR";
 			}
-			// TDirectShop ÆäÀÌÁö ¿©ºÎ(Ãß°¡)
+			// TDirectShop í˜ì´ì§€ ì—¬ë¶€(ì¶”ê°€)
 			if (location.hostname == 'shop.tworld.co.kr') {
 				siteCd = "TSP";
 			}
@@ -768,16 +768,16 @@ function counter_run(siteCd) {
 			if (siteCd == 'EVT') {
 				parent.location = location.protocol + "//www.tworld.co.kr/poc/common/loginout/control/LogoutServlet.jsp ";
 			} else if (siteCd == 'MBR') {
-				// 2019.02.26 - ¸â¹ö½± HTTPS Àû¿ë PJT(2018.11.22) Àû¿ë Ãß°¡
-				//HTTPS Àû¿ë PJT(2018.11.22)
-				//parent.location = location.protocol + "//tmembership.tworld.co.kr/web/html/logout/LogoutServlet.jsp"; // Tmembership ·Î±×¾Æ¿ô ÆäÀÌÁö
+				// 2019.02.26 - ë©¤ë²„ì‰½ HTTPS ì ìš© PJT(2018.11.22) ì ìš© ì¶”ê°€
+				//HTTPS ì ìš© PJT(2018.11.22)
+				//parent.location = location.protocol + "//tmembership.tworld.co.kr/web/html/logout/LogoutServlet.jsp"; // Tmembership ë¡œê·¸ì•„ì›ƒ í˜ì´ì§€
 				if(parent.location.protocol == 'https:') {
-					parent.location = location.protocol + "//tmembership.tworld.co.kr:8000/web/html/logout/LogoutServlet.jsp"; // Tmembership ·Î±×¾Æ¿ô ÆäÀÌÁö
+					parent.location = location.protocol + "//tmembership.tworld.co.kr:8000/web/html/logout/LogoutServlet.jsp"; // Tmembership ë¡œê·¸ì•„ì›ƒ í˜ì´ì§€
 				}else{
-					parent.location = location.protocol + "//tmembership.tworld.co.kr/web/html/logout/LogoutServlet.jsp"; // Tmembership ·Î±×¾Æ¿ô ÆäÀÌÁö
+					parent.location = location.protocol + "//tmembership.tworld.co.kr/web/html/logout/LogoutServlet.jsp"; // Tmembership ë¡œê·¸ì•„ì›ƒ í˜ì´ì§€
 				}
 			} else if (siteCd == 'TSP') {
-				parent.location = location.protocol + "//shop.tworld.co.kr/handler/Member-Logout"; // TDirectShop ·Î±×¾Æ¿ô ÆäÀÌÁö
+				parent.location = location.protocol + "//shop.tworld.co.kr/handler/Member-Logout"; // TDirectShop ë¡œê·¸ì•„ì›ƒ í˜ì´ì§€
 			} else if (siteCd == "ENG") {
 				self.location = location.protocol + "//www.tworld.co.kr/poc/common/loginout/control/LogoutServlet.jsp?returnURL=http://www.tworld.co.kr/poc/eng/logout.jsp ";
 			} else {
@@ -799,14 +799,14 @@ timer_start();
 	{
 		window.commonJs = {};
 	}
-	var commonJs = window.commonJs; // ¿ÜºÎ ÇÔ¼ö
+	var commonJs = window.commonJs; // ì™¸ë¶€ í•¨ìˆ˜
 
-	commonJs.HEIGHT = 0;	// Ã¢ ³ôÀÌ
-	commonJs.WIDTH = 0;		// Ã¢ ³ĞÀÌ
+	commonJs.HEIGHT = 0;	// ì°½ ë†’ì´
+	commonJs.WIDTH = 0;		// ì°½ ë„“ì´
 
-	var resizeObject = {}; // resize ÀÌº¥Æ® ¿ÀºêÁ§Æ® (È­¸é »çÀÌÁî È®ÀÎ ÈÄ)
+	var resizeObject = {}; // resize ì´ë²¤íŠ¸ ì˜¤ë¸Œì íŠ¸ (í™”ë©´ ì‚¬ì´ì¦ˆ í™•ì¸ í›„)
 
-	//È­¸é resize ÀÌº¥Æ®
+	//í™”ë©´ resize ì´ë²¤íŠ¸
 	$( window ).resize(function()
 	{
 		commonJs.WIDTH = $(window).width();
@@ -818,13 +818,13 @@ timer_start();
 	var content = null;
 
 	// const variable
-	var TABKEY_CODE = 9;		// tab key Å°ÄÚµå
+	var TABKEY_CODE = 9;		// tab key í‚¤ì½”ë“œ
 
-	// ¼¿·ºÆ® ¹Ú½º °ü·Ã Ãß°¡
+	// ì…€ë ‰íŠ¸ ë°•ìŠ¤ ê´€ë ¨ ì¶”ê°€
 	var selectBox = $({});
 	commonJs.selectBox = selectBox;
 
-	// ¼¿·ºÆ® ¹Ú½º ÃÊ±âÈ­ ÀÌº¥Æ®¸í
+	// ì…€ë ‰íŠ¸ ë°•ìŠ¤ ì´ˆê¸°í™” ì´ë²¤íŠ¸ëª…
 	if(!commonJs.event){
 		commonJs.event = {
 			SELECTBOX_INIT : 'selectBoxInit'
@@ -843,14 +843,14 @@ timer_start();
 		}
 	};
 
-	// ¸ğ¹ÙÀÏ Á¢¼Ó È®ÀÎ
+	// ëª¨ë°”ì¼ ì ‘ì† í™•ì¸
 	var mobileCheck = (function(){
 		return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)?true:false;
 	})();
-	//---------------------------°øÅëÇÔ¼ö
+	//---------------------------ê³µí†µí•¨ìˆ˜
 
-	//main page °øÁö»çÇ×
-	//# ¸ŞÀÎ°³¼±»èÁ¦¿¹Á¤
+	//main page ê³µì§€ì‚¬í•­
+	//# ë©”ì¸ê°œì„ ì‚­ì œì˜ˆì •
 	commonJs.loadMainNotice=function(){
 		if(typeof _noticeXml=='undefined'||!_noticeXml) return;
 
@@ -879,7 +879,7 @@ timer_start();
 		});
 	};
 
-	//½½¶óÀÌ´õ ex)//www/poc/product/TS1.1.4.html
+	//ìŠ¬ë¼ì´ë” ex)//www/poc/product/TS1.1.4.html
 	commonJs.setSlider=function(_sltr, _curVal, _max, _hasPoint, _hasCurVal){
 		$(_sltr).each(function(){
 			var sltr=_sltr;
@@ -902,7 +902,7 @@ timer_start();
 			var currPointLeft;
 			var ctrlEmVal;
 
-			// ÃÊ±âÈ­ ½ÃÀÛ
+			// ì´ˆê¸°í™” ì‹œì‘
 			var init=function(_curVal, _max, _hasPoint, _hasCurVal){
 				curVal=_curVal;
 				max=_max;
@@ -914,14 +914,14 @@ timer_start();
 					customUsage=slider.find('.customUsage');
 					ctrlEmVal=ctrl.find('em>span');
 					ctrlEmVal.text(0);
-					//#2107.07.15 ¼öÁ¤½ÃÀÛ
-					//[#5238] ³»°Ô¸Â´Â ¿ä±İÁ¦Ã£±â_¿À·ù ¼öÁ¤ (¿À·ù¼öÁ¤)
+					//#2107.07.15 ìˆ˜ì •ì‹œì‘
+					//[#5238] ë‚´ê²Œë§ëŠ” ìš”ê¸ˆì œì°¾ê¸°_ì˜¤ë¥˜ ìˆ˜ì • (ì˜¤ë¥˜ìˆ˜ì •)
 
 					if(_curVal>_max){
 						var _tempC=Math.round((_max-_curVal)*10)/10+"";
 						$('#fee_dataUsedAdd').text(_tempC);
 					}
-					//#¼öÁ¤³¡
+					//#ìˆ˜ì •ë
 				}
 				if(curVal>=max){
 					ctrl.css("left", maxLeft+"px");
@@ -964,7 +964,7 @@ timer_start();
 
 			init(_curVal, _max, _hasPoint, _hasCurVal);
 
-			// ¼±ÅÃ°ª ¼¼ÆÃ
+			// ì„ íƒê°’ ì„¸íŒ…
 			var fn_result=function(x, isKeyDown){
 				var curLeft=Number(ctrl.css("left").replace("px",""));
 				var resLeft=curLeft-curX+x;
@@ -989,7 +989,7 @@ timer_start();
 						ctrlVal.text(max);
 						if(hasPoint) ctrlEmVal.text(""+Math.round((max-curVal)*10)/10);
 						else ctrlEmVal.text(""+Math.round(max-curVal));
-						/*#¼öÁ¤
+						/*#ìˆ˜ì •
 						if(hasPoint) ctrlEmVal.text("+"+Math.round((max-curVal)*10)/10);
 						else ctrlEmVal.text("+"+Math.round(max-curVal));
 						*/
@@ -1055,7 +1055,7 @@ timer_start();
 				}
 			};
 
-			//ºí·Ï µå·¡±× ¹æÁö ie7/8
+			//ë¸”ë¡ ë“œë˜ê·¸ ë°©ì§€ ie7/8
 			ctrl.bind("dragstart",function(e){
 				e.preventDefault ? e.preventDefault() : e.returnValue = false;
 			});
@@ -1066,7 +1066,7 @@ timer_start();
 				sliderHandle=this;
 			});
 
-			//a ÅÂ±× Å¬¸¯ ÀÌº¥Æ® ¹æÁö.
+			//a íƒœê·¸ í´ë¦­ ì´ë²¤íŠ¸ ë°©ì§€.
 			ctrl.bind("click",function(e){
 				e.preventDefault();
 			});
@@ -1084,7 +1084,7 @@ timer_start();
 			});
 
 
-			//Å°º¸µå ÄÁÆ®·Ñ
+			//í‚¤ë³´ë“œ ì»¨íŠ¸ë¡¤
 			ctrl.bind('keydown',function(e){
 				if(e.keyCode==39||e.keyCode==38){
 					e.preventDefault();
@@ -1107,7 +1107,7 @@ timer_start();
 			//--------------------------------------------------------------------------
 			//mobile touch event
 			ctrl.bind("touchstart",function(e){
-				e.preventDefault ? e.preventDefault() : e.returnValue = false;//¸ğ¹ÙÀÏ È­¸é µå·¡±× ¹æÁö
+				e.preventDefault ? e.preventDefault() : e.returnValue = false;//ëª¨ë°”ì¼ í™”ë©´ ë“œë˜ê·¸ ë°©ì§€
 				curX=e.originalEvent.touches[0].clientX;
 				sliderHandle=this;
 			});
@@ -1125,7 +1125,7 @@ timer_start();
 			});
 			//--------------------------------------------------------------------------
 
-			//¿ÜºÎ ¿¬°á
+			//ì™¸ë¶€ ì—°ê²°
 			slider.data('cmn_scope',{
 				resetSlider:function(curVal, max, hasPoint, hasCurVal){
 					init(curVal, max, hasPoint, hasCurVal);
@@ -1135,27 +1135,27 @@ timer_start();
 	};
 	//----------------------
 
-	// string ÁÂ¿ì °ø¹é Á¦°Å
+	// string ì¢Œìš° ê³µë°± ì œê±°
 	commonJs.trimLR=function(str){
 		return str.replace(/(^\s*)|(\s*$)/g,'');
 	};
 
-	// Æ÷Ä¿½º °¡´ÉÇÑ ¿¤¸®¸ÕÆ® Ã£±â
+	// í¬ì»¤ìŠ¤ ê°€ëŠ¥í•œ ì—˜ë¦¬ë¨¼íŠ¸ ì°¾ê¸°
 	commonJs.findFocusElements = function( target )
 	{
 		//div[tabindex="0"], a, button, input, textarea
 		return target.find('div[tabindex="0"], a, button, input, textarea');
 	}
 
-	// 2018.01.15 È­¸é¿¡ º¸ÀÌ´Â Æ÷Ä¿½º °¡´ÉÇÑ ¿ä¼Ò¸¸ °Ë»ö START
+	// 2018.01.15 í™”ë©´ì— ë³´ì´ëŠ” í¬ì»¤ìŠ¤ ê°€ëŠ¥í•œ ìš”ì†Œë§Œ ê²€ìƒ‰ START
 	commonJs.visibleFindFocusElements = function ( target )
 	{
 		//div[tabindex="0"], a, button, input, textarea
 		return target.find('div[tabindex="0"]:visible:enabled, a:visible:enabled, button:visible:enabled, input:visible:enabled, textarea:visible:enabled');
 	}
-	// 2018.01.15 È­¸é¿¡ º¸ÀÌ´Â Æ÷Ä¿½º °¡´ÉÇÑ ¿ä¼Ò¸¸ °Ë»ö END
+	// 2018.01.15 í™”ë©´ì— ë³´ì´ëŠ” í¬ì»¤ìŠ¤ ê°€ëŠ¥í•œ ìš”ì†Œë§Œ ê²€ìƒ‰ END
 
-	// ÅÇÅ° Æ÷Ä¿½º ÀÌµ¿ ÇÔ¼ö
+	// íƒ­í‚¤ í¬ì»¤ìŠ¤ ì´ë™ í•¨ìˆ˜
 	commonJs.closeTabkeyFocus = function( obj )
 	{
 		var first = obj.eq(0);
@@ -1191,7 +1191,7 @@ timer_start();
 				$(end).unbind('keydown');
 			};
 
-			// ÆË¾÷Ã¢ ÀÌµ¿ÇüÅÂ°¡ È°¼ºÈ­µÈ Ã¢¿¡¼­¸¸ µµ´Â °æ¿ì¿¡´Â ÇÊ¿ä°¡ ¾÷À¸³ª ÆË¾÷Ã¢ÀÌ ´İÈ÷°í ´Ù¸¥ ÀÌº¥Æ®°¡ ¹ß»ıÇÏ¿©¾ß ÇÏ´Â °æ¿ì¿¡´Â »ç¿ë ÇÒ¼öµµ ÀÖÀ½
+			// íŒì—…ì°½ ì´ë™í˜•íƒœê°€ í™œì„±í™”ëœ ì°½ì—ì„œë§Œ ë„ëŠ” ê²½ìš°ì—ëŠ” í•„ìš”ê°€ ì—…ìœ¼ë‚˜ íŒì—…ì°½ì´ ë‹«íˆê³  ë‹¤ë¥¸ ì´ë²¤íŠ¸ê°€ ë°œìƒí•˜ì—¬ì•¼ í•˜ëŠ” ê²½ìš°ì—ëŠ” ì‚¬ìš© í• ìˆ˜ë„ ìˆìŒ
 			_this.off = function(){ };
 			_this.on = function(){ };
 			_this.bind = function( evt , func)
@@ -1202,25 +1202,25 @@ timer_start();
 		return new focusObj();
 	};
 
-	//caledndar »ı¼º ÇÔ¼ö
+	//caledndar ìƒì„± í•¨ìˆ˜
 	/*
 	parameters
-	slt:(ÇÊ¼ö°ª)´Ş·ÂÀÌ »ı¼ºµÇ´Â ÃÖ»óÀ§ ¿ä¼Ò(µÎ°³ÀÌ»óÀÇ ´Ş·Â »ı¼º °¡´É)
+	slt:(í•„ìˆ˜ê°’)ë‹¬ë ¥ì´ ìƒì„±ë˜ëŠ” ìµœìƒìœ„ ìš”ì†Œ(ë‘ê°œì´ìƒì˜ ë‹¬ë ¥ ìƒì„± ê°€ëŠ¥)
 	opt:{
-			start:¼±ÅÃÇÒ¼ö ÀÖ´Â ³¯Â¥ ÃÖ¼Ò °ª,
-			current:¿À´Ã ³¯Â¥ °ª,
-			end:¼±ÅÃÇÒ¼ö ÀÖ´Â ³¯Â¥ ÃÖ´ë °ª
+			start:ì„ íƒí• ìˆ˜ ìˆëŠ” ë‚ ì§œ ìµœì†Œ ê°’,
+			current:ì˜¤ëŠ˜ ë‚ ì§œ ê°’,
+			end:ì„ íƒí• ìˆ˜ ìˆëŠ” ë‚ ì§œ ìµœëŒ€ ê°’
 		}
-	 	³¯Â¥(start, current, end)°ª Çü½Ä { year:2015, month:1, day:1 }
-	ex.) commonJs.setCalendar('div.calendar'); //¿É¼Çx
-		 commonJs.setCalendar('div.calendar', //¿É¼ÇO
+	 	ë‚ ì§œ(start, current, end)ê°’ í˜•ì‹ { year:2015, month:1, day:1 }
+	ex.) commonJs.setCalendar('div.calendar'); //ì˜µì…˜x
+		 commonJs.setCalendar('div.calendar', //ì˜µì…˜O
 	 		{ start:{ year:2015, month:1, day:1 },
 			  current:{ year:2015, month:1, day:1 },
 			  end:{ year:2015, month:1, day:1 } }
 		 );
 	*/
 
-	// ´Ş·Â ¼¼ÆÃ
+	// ë‹¬ë ¥ ì„¸íŒ…
 	function setCalendar()
 	{
 
@@ -1231,7 +1231,7 @@ timer_start();
 			return;
 		}
 
-		// ÇÑÀÚ¸® ¼ıÀÚ ¾ÕÀÚ¸® 0 »ğÀÔ
+		// í•œìë¦¬ ìˆ«ì ì•ìë¦¬ 0 ì‚½ì…
 		function addZero( n )
 		{
 			return (String(n).length < 2)? '0'+n:n;
@@ -1242,12 +1242,12 @@ timer_start();
 		var endD=new Date(Date.parse(curD) + 30 * 1000 * 60 * 60 * 24);
 
 		var option={
-			start 	: { year : stD.getFullYear(), month : stD.getMonth()+1, day : stD.getDate() }, 		//´Ş·Â ½ÃÀÛÀÏ
-			current : { year : curD.getFullYear(), month : curD.getMonth()+1, day : curD.getDate() },	//´Ş·Â ÇöÀçÀÏ
-			end 	: { year : endD.getFullYear(), month : endD.getMonth()+1, day : endD.getDate() }	//´Ş·Â ¸¶Áö¸·
+			start 	: { year : stD.getFullYear(), month : stD.getMonth()+1, day : stD.getDate() }, 		//ë‹¬ë ¥ ì‹œì‘ì¼
+			current : { year : curD.getFullYear(), month : curD.getMonth()+1, day : curD.getDate() },	//ë‹¬ë ¥ í˜„ì¬ì¼
+			end 	: { year : endD.getFullYear(), month : endD.getMonth()+1, day : endD.getDate() }	//ë‹¬ë ¥ ë§ˆì§€ë§‰
 		};
 
-		//Ä«·»´õ Á¦¾î °´Ã¼ Àü´Ş.
+		//ì¹´ë Œë” ì œì–´ ê°ì²´ ì „ë‹¬.
 		window.$.fn.getCalrendar = function() //cmnJquery
 		{
 			return $(this).data('calrendar');
@@ -1260,17 +1260,17 @@ timer_start();
 			var box = cal.children('div.calBox');
 			var calObj = box.calendarInit({
 				target : box.children('.calTop'),
-				year : box.find('p>.year'),			// ´ŞÇ¥½Ã
-				month :box.find('p>.month') ,		// ¿ùÇ¥½Ã
-				start 	: option.start, 			//´Ş·Â ½ÃÀÛÀÏ
-				current : option.current,			//´Ş·Â ÇöÀçÀÏ
-				end 	: option.end				//´Ş·Â ¸¶Áö¸·
+				year : box.find('p>.year'),			// ë‹¬í‘œì‹œ
+				month :box.find('p>.month') ,		// ì›”í‘œì‹œ
+				start 	: option.start, 			//ë‹¬ë ¥ ì‹œì‘ì¼
+				current : option.current,			//ë‹¬ë ¥ í˜„ì¬ì¼
+				end 	: option.end				//ë‹¬ë ¥ ë§ˆì§€ë§‰
 			});
 			cal.data('calrendar',calObj);
 			calObj.setVisible( false );
 
 			var input =  cal.children('input');
-			// 2021.05.31 ¼öÁ¤
+			// 2021.05.31 ìˆ˜ì •
 			if (cal.attr("data-selected-day") !== undefined && calendar.attr("data-selected-day") !== '') {
 				var selectedDay = cal.attr("data-selected-day").split(',')[0];
 				input.attr('value', selectedDay.substring(0, 4) + '.' + selectedDay.substring(4, 6) + '.' + selectedDay.substring(6, 8));
@@ -1278,7 +1278,7 @@ timer_start();
 				input.attr('value',option.current.year+'.'+addZero( option.current.month )+'.'+addZero( option.current.day ));
 			}
 
-			// ´Ş·Â Æ÷Ä¿½º Á¦¾î
+			// ë‹¬ë ¥ í¬ì»¤ìŠ¤ ì œì–´
 			var first = commonJs.findFocusElements( box );
 			commonJs.closeTabkeyFocus( first );
 
@@ -1288,28 +1288,28 @@ timer_start();
 				this.setVisible(false);
 			};
 
-			//³¯Â¥ ¼±ÅÃ ÇÔ¼ö.
-			//ex. $(»ı¼ºµÈ´Ş·Â¼¿·ºÅÍ[ex.='.calendar:eq(0)']).getCalrendar().selectDate({year:2015,month:5,day:21});
+			//ë‚ ì§œ ì„ íƒ í•¨ìˆ˜.
+			//ex. $(ìƒì„±ëœë‹¬ë ¥ì…€ë ‰í„°[ex.='.calendar:eq(0)']).getCalrendar().selectDate({year:2015,month:5,day:21});
 			calObj.selectDate = function(d){
 				if(!d) return;
 				calObj.setDate(d);
 				input.attr('value',d.year+'.'+addZero( d.month )+'.'+addZero( d.day ));
 			};
 
-			//´Ş·Â ¿­±â
+			//ë‹¬ë ¥ ì—´ê¸°
 			calObj.calrendarOpen = function()
 			{
 				cal.css('z-index',1000);
 				this.setVisible(true);
 			};
 
-			//´Ş·Â ³¯Â¥ ¼±ÅÃ
+			//ë‹¬ë ¥ ë‚ ì§œ ì„ íƒ
 			calObj.bind( calObj.EVENTS.SELECT , function( evt , date )
 			{
 				input.attr('value',date.year+'.'+addZero( date.month )+'.'+addZero( date.day ));
 			});
 
-			//´Ş·Â Æ÷Ä¿½º ¾Æ¿ô
+			//ë‹¬ë ¥ í¬ì»¤ìŠ¤ ì•„ì›ƒ
 			calObj.bind(calObj.EVENTS.FOCUSOUT , function( evt ){
 				$(evt.target).parent().removeClass('on');
 			});
@@ -1320,7 +1320,7 @@ timer_start();
 				calendar.css('z-index',1);
 				calendar.removeClass('on');
 				//cal.css('z-index',10000);
-				cal.css('z-index',4999);	// 2018.01.12 ´Ş·Â ·¹ÀÌ¾î GNB Ãæµ¹ Çö»ó Á¦°Å
+				cal.css('z-index',4999);	// 2018.01.12 ë‹¬ë ¥ ë ˆì´ì–´ GNB ì¶©ëŒ í˜„ìƒ ì œê±°
 				cal.addClass('on');
 
 				$.each( calendar , function( idx , value)
@@ -1337,44 +1337,44 @@ timer_start();
 			var top = box.children('div.calTop');
 
 
-			top.children('button.first').text('ÀÌÀü ¿¬µµ');
-			// ÀÌÀü ¿¬µµ ¹öÆ°
+			top.children('button.first').text('ì´ì „ ì—°ë„');
+			// ì´ì „ ì—°ë„ ë²„íŠ¼
 			top.children('button.first').bind('click', function(evt)
 			{
 				calObj.prevYear();
 			});
 
-			top.children('button.prev').text('ÀÌÀü ´Ş');
-			// ÀÌÀü ´Ş ¹öÆ°
+			top.children('button.prev').text('ì´ì „ ë‹¬');
+			// ì´ì „ ë‹¬ ë²„íŠ¼
 			top.children('button.prev').bind('click', function(evt)
 			{
 				calObj.prev();
 			});
 
-			top.children('button.next').text('´ÙÀ½ ´Ş');
-			// ´ÙÀ½ ´Ş ¹öÆ°
+			top.children('button.next').text('ë‹¤ìŒ ë‹¬');
+			// ë‹¤ìŒ ë‹¬ ë²„íŠ¼
 			top.children('button.next').bind('click', function(evt)
 			{
 				calObj.next();
 			});
 
-			top.children('button.end').text('´ÙÀ½ ¿¬µµ');
-			// ´ÙÀ½ ¿¬µµ ¹öÆ°
+			top.children('button.end').text('ë‹¤ìŒ ì—°ë„');
+			// ë‹¤ìŒ ì—°ë„ ë²„íŠ¼
 			top.children('button.end').bind('click', function(evt)
 			{
 				calObj.nextYear();
 			});
 
-			// ÇÏ´Ü ¹öÆ° ¿µ¿ª
+			// í•˜ë‹¨ ë²„íŠ¼ ì˜ì—­
 			var btn = box.children('div.btn');
 			btn.children('button.close').bind('click' , function( evt )
 			{
 				cal.removeClass('on');
 				calObj.setVisible(false);
-				cal.css('z-index','');	// 2018.01.12 ´Ş·Â ·¹ÀÌ¾î GNB Ãæµ¹ Çö»ó Á¦°Å
+				cal.css('z-index','');	// 2018.01.12 ë‹¬ë ¥ ë ˆì´ì–´ GNB ì¶©ëŒ í˜„ìƒ ì œê±°
 			});
 
-			// ¿À´Ã ¹öÆ°
+			// ì˜¤ëŠ˜ ë²„íŠ¼
 			btn.children('button.today').bind('click' , function( evt )
 			{
 				var td=calObj.getToday();
@@ -1385,24 +1385,24 @@ timer_start();
 		});
 
 
-		// ÀüÃ¼º¯°æ
+		// ì „ì²´ë³€ê²½
 		// $('div.calendar:eq(0)').getCalrendar().setup({
 		// 		start 	: { year : 2015 , month : 1, day : 1 },
 		// 		current : { year : 2016 , month : 4, day : 6 },
 		// 		end 	: { year : 2017 , month : 8, day : 1 }
 		// });
-		// ´ÜÀÏ°ª º¯°æ
+		// ë‹¨ì¼ê°’ ë³€ê²½
 		//$('div.calendar:eq(0)').getCalrendar().setToday(
 		//	{
 		//		year : 2016 , month : 4, day : 3
 		//	}
 		//);
-		// ´ÜÀÏ ´Ş·Â Á¢±Ù
-		//$('div.calendar:eq(0)').getCalrendar().calrendarOpen();		// ¿­±â
-		//$('div.calendar:eq(0)').getCalrendar().calrendarClose();		// ´İ±â
+		// ë‹¨ì¼ ë‹¬ë ¥ ì ‘ê·¼
+		//$('div.calendar:eq(0)').getCalrendar().calrendarOpen();		// ì—´ê¸°
+		//$('div.calendar:eq(0)').getCalrendar().calrendarClose();		// ë‹«ê¸°
 	};
 
-	//ÄíÅ° ¼³Á¤
+	//ì¿ í‚¤ ì„¤ì •
 	function setCookie(key, value, days) {
 		var date, expires;
 		if (days) {
@@ -1415,7 +1415,7 @@ timer_start();
 		document.cookie = key + "=" + value + expires + "; path=/";
 	}
 
-	//ÄíÅ° °ª ¾ò¾î¿À±â
+	//ì¿ í‚¤ ê°’ ì–»ì–´ì˜¤ê¸°
 	function getCookie(key) {
 		var results = document.cookie.match('(^|;) ?' + key + '=([^;]*)(;|$)');
 		if (results) {
@@ -1425,10 +1425,10 @@ timer_start();
 		}
 	}
 
-	// ¸ŞÀÎ ¼³Á¤
+	// ë©”ì¸ ì„¤ì •
 	function setMain()
 	{
-		//½ºÇÁ·¹µå ¹è³Ê ´İ±â ¹× 1ÀÏ°£ º¸ÀÌÁö ¾Ê±â
+		//ìŠ¤í”„ë ˆë“œ ë°°ë„ˆ ë‹«ê¸° ë° 1ì¼ê°„ ë³´ì´ì§€ ì•Šê¸°
 		doc.find('div.ma_notice>div.notice_set>div.set>a').bind('click', function( evt )
 		{
 			evt.preventDefault();
@@ -1446,7 +1446,7 @@ timer_start();
 			});
 		});
 
-		// ¾ËÆÄ³×ºñ°ÔÀÌ¼Ç
+		// ì•ŒíŒŒë„¤ë¹„ê²Œì´ì…˜
 		doc.find('div.alpha_menu>div.conBox_center>div.alphaMn').each(function( idx )
 		{
 			var alphMn = $(this);
@@ -1484,7 +1484,7 @@ timer_start();
 				{
 					// cn = $(evt.target).closest('li').index();
 
-					if(evt.keyCode == TABKEY_CODE && !evt.shiftKey){//shift+tab ÀÌµ¿
+					if(evt.keyCode == TABKEY_CODE && !evt.shiftKey){//shift+tab ì´ë™
 						cn++;
 						if( cn > ttn)
 						{
@@ -1499,7 +1499,7 @@ timer_start();
 						}
 						listBox.css({'margin-left':pos()+'px'});
 					}
-				}else if(evt.keyCode == TABKEY_CODE && evt.shiftKey){//shift+tab ÀÌµ¿
+				}else if(evt.keyCode == TABKEY_CODE && evt.shiftKey){//shift+tab ì´ë™
 					var tcn = cn;
 					cn--;
 					if( cn < 0){
@@ -1546,7 +1546,7 @@ timer_start();
 
 			var ieVer=ieVerCheck();
 			if(ieVer>8||ieVer==-1){
-				// ¸ğ¹ÙÀÏ ´ëÀÀ Á¦½ºÃÄ Ãß°¡
+				// ëª¨ë°”ì¼ ëŒ€ì‘ ì œìŠ¤ì³ ì¶”ê°€
 				var je = new commonJs.Jessture( alphMn );
 				je.bind( je.RIGHT , function()
 				{
@@ -1660,7 +1660,7 @@ timer_start();
 		if(IEVer=="7"){
 			$('#agree_pop').removeClass('w550').addClass('ie7_w550');
 		}
-		if(getCookie('MAIN_AGREE_POP')=="Y"){//µ¿ÀÇÀÇ°á °ú·Ã ¿ä±İÁ¦ Á¦ÇÑ»çÇ× °íÁö°ü·ÃÆË
+		if(getCookie('MAIN_AGREE_POP')=="Y"){//ë™ì˜ì˜ê²° ê³¼ë ¨ ìš”ê¸ˆì œ ì œí•œì‚¬í•­ ê³ ì§€ê´€ë ¨íŒ
 			$('#agree_pop').hide();
 		}else{
 			$('#agree_pop').show();
@@ -1680,7 +1680,7 @@ timer_start();
 	}
 
 	//----------------------------------------
-	// ½½¶óÀÌµå ¹è³Ê¸¦ ¼³Á¤ Å¬·¡½º ÇüÅÂÀÇ »ç¿ëÀ» »óÁ¤Çß±â ¶§¹®¿¡ new·Î »ı¼ºÀ» ÇØ¾ß ÇÑ´Ù.
+	// ìŠ¬ë¼ì´ë“œ ë°°ë„ˆë¥¼ ì„¤ì • í´ë˜ìŠ¤ í˜•íƒœì˜ ì‚¬ìš©ì„ ìƒì •í–ˆê¸° ë•Œë¬¸ì— newë¡œ ìƒì„±ì„ í•´ì•¼ í•œë‹¤.
 	function SliderObject( _opt )
 	{
 		var option ={
@@ -1701,7 +1701,7 @@ timer_start();
 		var ul = slide.children('ul');
 		var li = ul.children('li');
 		var _this = this;
-		// ÇÑÆäÀÌÁö¿¡ º¸¿©Áö´Â °¹¼ö
+		// í•œí˜ì´ì§€ì— ë³´ì—¬ì§€ëŠ” ê°¯ìˆ˜
 		var vCnt = Math.floor(slideW/li.width());
 
 		prev.bind('click',clickF);
@@ -1799,12 +1799,12 @@ timer_start();
 		};
 	}
 
-	// ¶óµğ¿À¹Ú½º ¼¼ÆÃ
+	// ë¼ë””ì˜¤ë°•ìŠ¤ ì„¸íŒ…
 	function setRadioBox()
 	{
-		// basicType = ±âº» ¶óµğ¿À ¹Ú½º (½ºÅ©¸³Æ® Àû¿ë ¾ÊµÊ)
+		// basicType = ê¸°ë³¸ ë¼ë””ì˜¤ ë°•ìŠ¤ (ìŠ¤í¬ë¦½íŠ¸ ì ìš© ì•Šë¨)
 
-		// ÃÊ±âÈ­
+		// ì´ˆê¸°í™”
 		$('input:radio:not(.basicType)').each(function(){
 			var ta=$(this);
 			if(ta.is(':checked')){
@@ -1816,18 +1816,18 @@ timer_start();
 			}
 		});
 
-		// Å¬¸¯ ÀÌº¥Æ®
-		$('input:radio:not(.basicType)').live('click change',function(e){	// 2018.01.09 IE11 Å°º¸µå »ç¿ë¼º ¼öÁ¤
+		// í´ë¦­ ì´ë²¤íŠ¸
+		$('input:radio:not(.basicType)').live('click change',function(e){	// 2018.01.09 IE11 í‚¤ë³´ë“œ ì‚¬ìš©ì„± ìˆ˜ì •
 			var $this=$(this);
 			if(!$this.parent().hasClass('disabled')){
 				var inPop=$('.inPop');
 
 				var nm=$this.attr('name');
 				var isChecked=$this.is(':checked');
-				var isCheckClass=$this.hasClass('nochecked'); // 2019.05.10 [#OP002-351] [PUB] [VOC ´ëÀÀ] ¹øÈ£º¯°æ ½Ã Á¶È¸¹øÈ£ ¼±ÅÃ½Ã°£ ´ÜÃà
+				var isCheckClass=$this.hasClass('nochecked'); // 2019.05.10 [#OP002-351] [PUB] [VOC ëŒ€ì‘] ë²ˆí˜¸ë³€ê²½ ì‹œ ì¡°íšŒë²ˆí˜¸ ì„ íƒì‹œê°„ ë‹¨ì¶•
 				$('input:radio[name='+nm+']').each(function(){
 					var target=$(this);
-					!isCheckClass && target.attr("checked",false); // 2019.05.10 [#OP002-351] [PUB] [VOC ´ëÀÀ] ¹øÈ£º¯°æ ½Ã Á¶È¸¹øÈ£ ¼±ÅÃ½Ã°£ ´ÜÃà
+					!isCheckClass && target.attr("checked",false); // 2019.05.10 [#OP002-351] [PUB] [VOC ëŒ€ì‘] ë²ˆí˜¸ë³€ê²½ ì‹œ ì¡°íšŒë²ˆí˜¸ ì„ íƒì‹œê°„ ë‹¨ì¶•
 					target.parent().removeClass('checked');
 					if(target.parent().hasClass('bgOn'))
 					{
@@ -1839,17 +1839,17 @@ timer_start();
 					$this.parent().parent().addClass('on');
 				}
 				$this.parent().addClass('checked');
-				!isCheckClass && $this.attr("checked",true); // 2019.05.10 [#OP002-351] [PUB] [VOC ´ëÀÀ] ¹øÈ£º¯°æ ½Ã Á¶È¸¹øÈ£ ¼±ÅÃ½Ã°£ ´ÜÃà
+				!isCheckClass && $this.attr("checked",true); // 2019.05.10 [#OP002-351] [PUB] [VOC ëŒ€ì‘] ë²ˆí˜¸ë³€ê²½ ì‹œ ì¡°íšŒë²ˆí˜¸ ì„ íƒì‹œê°„ ë‹¨ì¶•
 				$this.trigger("liOnEvt");
 				$this.focus();
 			}
 		});
 	}
 
-	// Ã¼Å©¹Ú½º ¼¼ÆÃ
+	// ì²´í¬ë°•ìŠ¤ ì„¸íŒ…
 	function setCheckBox()
 	{
-		// ÃÊ±âÈ­
+		// ì´ˆê¸°í™”
 		var chkBox = doc.find('.checkbox>input:checkbox');
 		chkBox.each(function(idx)
 		{
@@ -1869,7 +1869,7 @@ timer_start();
 
 		});
 
-		// Å¬¸¯ ÀÌº¥Æ® (.no_checkbox_evt ÇØ´ç ÀÌº¥Æ® ¿¹¿Ü Ã³¸®)
+		// í´ë¦­ ì´ë²¤íŠ¸ (.no_checkbox_evt í•´ë‹¹ ì´ë²¤íŠ¸ ì˜ˆì™¸ ì²˜ë¦¬)
 		$('.checkbox>input:checkbox:not(.no_checkbox_evt)').live( 'click' , function()
 		{
 			var target = $(this);
@@ -1887,7 +1887,7 @@ timer_start();
 		});
 	}
 
-	// ·¹ÀÌ¾î ÆË¾÷ ¼³Á¤
+	// ë ˆì´ì–´ íŒì—… ì„¤ì •
 	function  setPopup()
 	{
 		var zindexTmp=0;
@@ -1896,18 +1896,18 @@ timer_start();
 			e.stopPropagation();
 			$('div.layerPop1').each(function(){
 				if($(this).data('openBy')){
-					// Ã¹ Æ÷Ä¿½º °Ë»ö
+					// ì²« í¬ì»¤ìŠ¤ ê²€ìƒ‰
 					commonJs.findFocusElements($(this)).eq(0).focus();
 					return false;
 				}
 			});
 		});
 
-		// ·¹ÀÌ¾îÆË¾÷ ´İ±â
-		// target = ·¹ÀÌ¾îÆË¾÷ ¼¿·ºÅÍ , fix_scrollTop = true ÇöÀç ½ºÅ©·Ñ À§Ä¡·Î °íÁ¤
+		// ë ˆì´ì–´íŒì—… ë‹«ê¸°
+		// target = ë ˆì´ì–´íŒì—… ì…€ë ‰í„° , fix_scrollTop = true í˜„ì¬ ìŠ¤í¬ë¡¤ ìœ„ì¹˜ë¡œ ê³ ì •
 		commonJs.closeLayerPop=function(target, fix_scrollTop){
 			var curTop;
-			if(fix_scrollTop) curTop=$(window).scrollTop(); //½ºÅ©·Ñ ÀÌµ¿¹æÁö
+			if(fix_scrollTop) curTop=$(window).scrollTop(); //ìŠ¤í¬ë¡¤ ì´ë™ë°©ì§€
 
 			var tpop=$(target).closest('div.layerPop1');
 			tpop.css('display' , 'none');
@@ -1924,7 +1924,7 @@ timer_start();
 			$('body').css('overflow-y','');
 			$("#header").css('z-index','5000');
 			/////////////////////////////////////////////////////////////
-			// ´ÙÁß¹öÆ°Ã³¸®
+			// ë‹¤ì¤‘ë²„íŠ¼ì²˜ë¦¬
 			var openBy=tpop.data('openBy');
 			if(openBy&&openBy.is(':visible')){
 				openBy.focus();//focusBtn.focus();
@@ -1932,13 +1932,13 @@ timer_start();
 			}
 			/////////////////////////////////////////////////////////////
 
-			tpop.find('ul.arcBox>li.on').removeClass('on'); //arcBox ÃÊ±âÈ­
+			tpop.find('ul.arcBox>li.on').removeClass('on'); //arcBox ì´ˆê¸°í™”
 
-			if(fix_scrollTop) $(window).scrollTop(curTop); //½ºÅ©·Ñ ÀÌµ¿¹æÁö
+			if(fix_scrollTop) $(window).scrollTop(curTop); //ìŠ¤í¬ë¡¤ ì´ë™ë°©ì§€
 		};
 
-		// ·¹ÀÌ¾îÆË¾÷ ÅÇ ÀÌµ¿
-		$('div.layerPop1').live( 'keydown' , function( e ) //ÅÇ, shiftÅÇ
+		// ë ˆì´ì–´íŒì—… íƒ­ ì´ë™
+		$('div.layerPop1').live( 'keydown' , function( e ) //íƒ­, shiftíƒ­
 		{
 			var obj=commonJs.findFocusElements($(this)).filter(':visible');
 			var first=obj.eq(0);
@@ -1960,8 +1960,8 @@ timer_start();
 			}
 		});
 
-		// ÆË¾÷ ¿­±â
-		// target = ·¹ÀÌ¾îÆË¾÷ ¼¿·ºÅÍ, openBy = ÆË¾÷ È£ÃâÇÏ´Â ¹öÆ° ¼¿·ºÅÍ( ´İÀ» ½Ã ÇØ´ç ¹öÆ°À¸·Î Æ÷Ä¿½º ÀÌµ¿ )
+		// íŒì—… ì—´ê¸°
+		// target = ë ˆì´ì–´íŒì—… ì…€ë ‰í„°, openBy = íŒì—… í˜¸ì¶œí•˜ëŠ” ë²„íŠ¼ ì…€ë ‰í„°( ë‹«ì„ ì‹œ í•´ë‹¹ ë²„íŠ¼ìœ¼ë¡œ í¬ì»¤ìŠ¤ ì´ë™ )
 		function popShow(target,openBy)
 		{
 			target.data('openBy',openBy);
@@ -1987,17 +1987,17 @@ timer_start();
 			$('body').css('overflow-y','hidden');
 			//
 
-			// Ã¹ Æ÷Ä¿½º °Ë»ö
+			// ì²« í¬ì»¤ìŠ¤ ê²€ìƒ‰
 			commonJs.findFocusElements(target).filter(':visible').eq(0).focus();
 		}
 
-		commonJs.openLayerPop=popShow;// ¿ÜºÎÇÔ¼ö ¿¬°á
+		commonJs.openLayerPop=popShow;// ì™¸ë¶€í•¨ìˆ˜ ì—°ê²°
 
 
-		// ¿ÜºÎ jquery ¹öÀü¿¡ µû¶ó ÀÌº¥Æ® ¹ÙÀÎµå
-		if(window.$.fn.live){ // live ¹ÙÀÎµå
+		// ì™¸ë¶€ jquery ë²„ì „ì— ë”°ë¼ ì´ë²¤íŠ¸ ë°”ì¸ë“œ
+		if(window.$.fn.live){ // live ë°”ì¸ë“œ
 			window.$('div.layerPop1 button.popClose').live( 'click' , function( e )
-			{//´İ±â
+			{//ë‹«ê¸°
 				if($(this).hasClass('fix_scrollTop')) commonJs.closeLayerPop(this,true);
 				else commonJs.closeLayerPop(this);
 
@@ -2020,9 +2020,9 @@ timer_start();
 				e.preventDefault();
 				popShow($($(this).attr('href')),$(this));
 			});
-		}else if(window.$.fn.on){ // on ¹ÙÀÎµå
+		}else if(window.$.fn.on){ // on ë°”ì¸ë“œ
 			window.$(document).on('click' ,'div.layerPop1 button.popClose', function( e )
-			{//´İ±â
+			{//ë‹«ê¸°
 				if($(this).hasClass('fix_scrollTop')) commonJs.closeLayerPop(this,true);
 				else commonJs.closeLayerPop(this);
 			});
@@ -2040,7 +2040,7 @@ timer_start();
 				else commonJs.closeLayerPop(this);
 			});
 
-			window.$(document).on('click','a.id_layerOpen',function(e){	//a.id_layerOpen ·¹ÀÌ¾îÆË¾÷ ¿­±â ¹öÆ°ÀÌ ºÒ¸®µÈ °æ¿ì id°ªÀ¸·Î ¿­±â // MY1.1.1.2.html
+			window.$(document).on('click','a.id_layerOpen',function(e){	//a.id_layerOpen ë ˆì´ì–´íŒì—… ì—´ê¸° ë²„íŠ¼ì´ ë¶ˆë¦¬ëœ ê²½ìš° idê°’ìœ¼ë¡œ ì—´ê¸° // MY1.1.1.2.html
 
 				e.preventDefault();
 				popShow($($(this).attr('href')),$(this));
@@ -2050,7 +2050,7 @@ timer_start();
 
 	}
 
-	// ½½¶óÀÌµå ¼¼ÆÃ
+	// ìŠ¬ë¼ì´ë“œ ì„¸íŒ…
 	function setUlSlide(){
 
 		// eventType1
@@ -2064,22 +2064,22 @@ timer_start();
 
 				var slideBullet=slideBox.find(".slideNavi , div.slideNavi2");
 				var slideBulletLi=slideBullet.find("ul>li");
-				var btnPrev=slideBox.find("button.btnPrev"); // ÀÌÀü¹öÆ°
-				var btnNext=slideBox.find("button.btnNext"); // ´ÙÀ½¹öÆ°
-				var btnPlay=slideBox.find("button.btnPlay"); // play¹öÆ°
-				var btnStop=slideBox.find("button.btnStop"); // stop¹öÆ°
+				var btnPrev=slideBox.find("button.btnPrev"); // ì´ì „ë²„íŠ¼
+				var btnNext=slideBox.find("button.btnNext"); // ë‹¤ìŒë²„íŠ¼
+				var btnPlay=slideBox.find("button.btnPlay"); // playë²„íŠ¼
+				var btnStop=slideBox.find("button.btnStop"); // stopë²„íŠ¼
 				var liCnt=slideLi.length; // li length
-				var w=slideCon.width();	// ÄÁÅÙÃ÷ ³ĞÀÌ
+				var w=slideCon.width();	// ì»¨í…ì¸  ë„“ì´
 				//startSlideW = w;
-				var h=slideCon.height(); // ÄÁÅÙÃ÷ ³ôÀÌ
-				var duration=300; // animate ½Ã°£
-				var curIdx=0; // ÇöÀç li ÀÎµ¦½º
-				var isAnimating=false; // ½½¶óÀÌµå È¿°ú ½ÇÇàÁß flag
-				var arrLeft=new Array(); // °¢ li À§Ä¡(left)
-				var isHideContent = (slideCon.hasClass('slideCon2') || slideCon.hasClass('notVisible')) ? false : true;  // 2020.07.13 ÄÉÀÌ½º Ãß°¡
-				var chkArray = new Array();   // [20190213 TOSÃß°¡] ½½¶óÀÌµù ¹è³ÊÀÇ ¹İº¹·çÇÎÀÌ 2È¸ÀÌ»ó ³Ñ¾î°¥¶§ºÎÅÍ Xtractor¿¡ ½ºÅ©¸³Æ® ¼Û½ÅÇÏÁö ¾Êµµ·ÏÇÏ´Â ¹è¿­°ª ¼±¾ğ
+				var h=slideCon.height(); // ì»¨í…ì¸  ë†’ì´
+				var duration=300; // animate ì‹œê°„
+				var curIdx=0; // í˜„ì¬ li ì¸ë±ìŠ¤
+				var isAnimating=false; // ìŠ¬ë¼ì´ë“œ íš¨ê³¼ ì‹¤í–‰ì¤‘ flag
+				var arrLeft=new Array(); // ê° li ìœ„ì¹˜(left)
+				var isHideContent = (slideCon.hasClass('slideCon2') || slideCon.hasClass('notVisible')) ? false : true;  // 2020.07.13 ì¼€ì´ìŠ¤ ì¶”ê°€
+				var chkArray = new Array();   // [20190213 TOSì¶”ê°€] ìŠ¬ë¼ì´ë”© ë°°ë„ˆì˜ ë°˜ë³µë£¨í•‘ì´ 2íšŒì´ìƒ ë„˜ì–´ê°ˆë•Œë¶€í„° Xtractorì— ìŠ¤í¬ë¦½íŠ¸ ì†¡ì‹ í•˜ì§€ ì•Šë„ë¡í•˜ëŠ” ë°°ì—´ê°’ ì„ ì–¸
 
-				//ÀÌÀü,´ÙÀ½ ¹öÆ° ºñÈ°¼ºÈ­/È°¼ºÈ­
+				//ì´ì „,ë‹¤ìŒ ë²„íŠ¼ ë¹„í™œì„±í™”/í™œì„±í™”
 				var checkNodata=function (){
 					if(curIdx==0){
 						btnPrev.addClass('nodata');
@@ -2109,7 +2109,7 @@ timer_start();
 					});
 				}
 
-				var isConSize=slideBox.hasClass('conSize'); //slideCon¾È¿¡ li 2°³ÀÌ»óÀÎ °æ¿ì
+				var isConSize=slideBox.hasClass('conSize'); //slideConì•ˆì— li 2ê°œì´ìƒì¸ ê²½ìš°
 				var oneSlideLi=0;
 				var liWidth=0;
 
@@ -2154,7 +2154,7 @@ timer_start();
 					});
 				}
 
-				var isDynamicHeight=slideBox.hasClass('dynamicHeight'); //³ôÀÌ°ªÀÌ ÀÏÁ¤ÇÏÁö ¾ÊÀº °æ¿ì
+				var isDynamicHeight=slideBox.hasClass('dynamicHeight'); //ë†’ì´ê°’ì´ ì¼ì •í•˜ì§€ ì•Šì€ ê²½ìš°
 				var resizeHeight;
 				var slideBulletHeight=slideBullet.outerHeight(true);
 				if(isDynamicHeight){
@@ -2166,7 +2166,7 @@ timer_start();
 					};
 				}
 
-				// reisze ½Ã »çÀÌÁî Á¶Àı
+				// reisze ì‹œ ì‚¬ì´ì¦ˆ ì¡°ì ˆ
 				var resizeFunc = function(ul_left){
 					slideCon.css({
 						"overflow":"hidden",
@@ -2175,9 +2175,9 @@ timer_start();
 						"height":h+"px"
 					});
 
-					for(var i=0;i<liCnt;i++) arrLeft[i] = (i*(-w)); // 2018.06.20 [#6811] [°øÅë] ¸ŞÀÎ½½¶óÀÌµå ÀÎµğÄÉÀÌÅÍ ¿À·ù ¼öÁ¤ °ü·Ã (¿À·ù¼öÁ¤)
+					for(var i=0;i<liCnt;i++) arrLeft[i] = (i*(-w)); // 2018.06.20 [#6811] [ê³µí†µ] ë©”ì¸ìŠ¬ë¼ì´ë“œ ì¸ë””ì¼€ì´í„° ì˜¤ë¥˜ ìˆ˜ì • ê´€ë ¨ (ì˜¤ë¥˜ìˆ˜ì •)
 
-					if(ul_left || curIdx){ // 2018.06.20 [#6811] [°øÅë] ¸ŞÀÎ½½¶óÀÌµå ÀÎµğÄÉÀÌÅÍ ¿À·ù ¼öÁ¤ °ü·Ã (¿À·ù¼öÁ¤)
+					if(ul_left || curIdx){ // 2018.06.20 [#6811] [ê³µí†µ] ë©”ì¸ìŠ¬ë¼ì´ë“œ ì¸ë””ì¼€ì´í„° ì˜¤ë¥˜ ìˆ˜ì • ê´€ë ¨ (ì˜¤ë¥˜ìˆ˜ì •)
 						slideUl.css({
 							"display":"block",
 							"position":"absolute",
@@ -2232,7 +2232,7 @@ timer_start();
 							'left' , arrLeft[n]+"px"
 						);
 					});
-					isHideContent && slideLi.css('visibility', 'hidden').eq(0).css('visibility', 'visible');	// 2018.01.09 À¥Á¢±Ù¼º°ü·Ã ¼öÁ¤
+					isHideContent && slideLi.css('visibility', 'hidden').eq(0).css('visibility', 'visible');	// 2018.01.09 ì›¹ì ‘ê·¼ì„±ê´€ë ¨ ìˆ˜ì •
 
 					if(slideLi.length>0&&isConSize){
 						var m=w/oneSlideLi-liWidth;
@@ -2269,7 +2269,7 @@ timer_start();
 
 				btnPrev.addClass('nodata');
 
-				// ½½¶óÀÌµå ÀÌµ¿(¸ñÇ¥index,È¿°ú À¯¹«, !!ÇöÀç »ç¿ë ¾ÈÇÔ!!)
+				// ìŠ¬ë¼ì´ë“œ ì´ë™(ëª©í‘œindex,íš¨ê³¼ ìœ ë¬´, !!í˜„ì¬ ì‚¬ìš© ì•ˆí•¨!!)
 				var slideTo=function(i,noAnimate,fromBtn){
 					if(isAnimating) return;
 					isAnimating=true;
@@ -2279,7 +2279,7 @@ timer_start();
 						isAnimating=false;
 						if(isAuto&&!isPause) startSlide();
 					}else{
-						slideUl.find('li').css('visibility', 'visible'); // 2018.04.03 [#6338] [T apps] T apps index ÆäÀÌÁö ½½¶óÀÌµå ¿µ¿ª ¿À·ù È®ÀÎ ¿äÃ» (¿À·ù¼öÁ¤)
+						slideUl.find('li').css('visibility', 'visible'); // 2018.04.03 [#6338] [T apps] T apps index í˜ì´ì§€ ìŠ¬ë¼ì´ë“œ ì˜ì—­ ì˜¤ë¥˜ í™•ì¸ ìš”ì²­ (ì˜¤ë¥˜ìˆ˜ì •)
 						slideUl.animate({
 							"left": arrLeft[i]+"px"
 						},duration,function (){
@@ -2287,7 +2287,7 @@ timer_start();
 							if(isAuto&&!isPause) {
 								startSlide();
 							}
-							isHideContent && slideUl.find('li').css('visibility', 'hidden').eq(i).css('visibility', 'visible'); // 2018.04.03 [#6338] [T apps] T apps index ÆäÀÌÁö ½½¶óÀÌµå ¿µ¿ª ¿À·ù È®ÀÎ ¿äÃ» (¿À·ù¼öÁ¤)
+							isHideContent && slideUl.find('li').css('visibility', 'hidden').eq(i).css('visibility', 'visible'); // 2018.04.03 [#6338] [T apps] T apps index í˜ì´ì§€ ìŠ¬ë¼ì´ë“œ ì˜ì—­ ì˜¤ë¥˜ í™•ì¸ ìš”ì²­ (ì˜¤ë¥˜ìˆ˜ì •)
 						});
 					}
 					curIdx=i;
@@ -2301,25 +2301,25 @@ timer_start();
 					if(isDynamicHeight) resizeHeight();
 				};
 
-				var prev=function(){ //ÀÌÀü
+				var prev=function(){ //ì´ì „
 					if(curIdx<=0) return;
 					if(!isAnimating) btnPrev.trigger("prev_slide_evt");
 					slideTo(curIdx-1,false,"btnPrev");
 
 				};
 
-				var next=function(){ //´ÙÀ½
+				var next=function(){ //ë‹¤ìŒ
 					if(curIdx>=(liCnt-1)) return;
 					if(!isAnimating) btnNext.trigger("next_slide_evt");
 					slideTo(curIdx+1,false,"btnNext");
 
 				};
 
-				btnPrev.bind('click',function(){//ÀÌÀü ¹öÆ° ÀÌº¥Æ®
+				btnPrev.bind('click',function(){//ì´ì „ ë²„íŠ¼ ì´ë²¤íŠ¸
 					prev();
 				});
 
-				btnNext.bind('click',function(){//´ÙÀ½ ¹öÆ° ÀÌº¥Æ®
+				btnNext.bind('click',function(){//ë‹¤ìŒ ë²„íŠ¼ ì´ë²¤íŠ¸
 					next();
 				});
 				if(slideBulletLi.length>0){
@@ -2336,7 +2336,7 @@ timer_start();
 					});
 				}
 
-				// ¸ğ¹ÙÀÏ ´ëÀÀ Á¦½ºÃÄ Ãß°¡
+				// ëª¨ë°”ì¼ ëŒ€ì‘ ì œìŠ¤ì³ ì¶”ê°€
 				var ieVer=ieVerCheck();
 				if(slideBox.closest('.promotionSlide').length>0&&(ieVer>8||ieVer==-1)){
 					var je = new commonJs.Jessture( slideBox );
@@ -2352,19 +2352,19 @@ timer_start();
 
 
 				//auto slide
-				var startSlide; //Å¸ÀÌ¸Ó ½ÃÀÛ function
-				var stopSlide;	//Å¸ÀÌ¸Ó ¸ØÃã function
-				var aDuration=6000; // 2018.06.08 [#6785] [¸ŞÀÎ] T world ¸ŞÀÎ ¹è³Ê ·Ñ¸µ ¼Óµµ Á¶Á¤ ¿äÃ»ÀÇ °Ç (¿ä°ÇÃß°¡) -> 3000¿¡¼­ 6000À¸·Î Á¶Á¤
+				var startSlide; //íƒ€ì´ë¨¸ ì‹œì‘ function
+				var stopSlide;	//íƒ€ì´ë¨¸ ë©ˆì¶¤ function
+				var aDuration=6000; // 2018.06.08 [#6785] [ë©”ì¸] T world ë©”ì¸ ë°°ë„ˆ ë¡¤ë§ ì†ë„ ì¡°ì • ìš”ì²­ì˜ ê±´ (ìš”ê±´ì¶”ê°€) -> 3000ì—ì„œ 6000ìœ¼ë¡œ ì¡°ì •
 				var timer=0;
-				var isAuto=slideBox.hasClass('autoSlide'); // ÀÚµ¿ ½½¶óÀÌµå À¯/¹« flag
-				var isPause=false; // ½½¶óÀÌµå ¸ØÃã flag
-				var stopBtn=true; //¹öÆ° ¸ØÃã or Æ÷Ä¿½º ¸ØÃã
+				var isAuto=slideBox.hasClass('autoSlide'); // ìë™ ìŠ¬ë¼ì´ë“œ ìœ /ë¬´ flag
+				var isPause=false; // ìŠ¬ë¼ì´ë“œ ë©ˆì¶¤ flag
+				var stopBtn=true; //ë²„íŠ¼ ë©ˆì¶¤ or í¬ì»¤ìŠ¤ ë©ˆì¶¤
 				if(isAuto){
 					btnPlay.hide();
 					btnStop.show();
 
 					startSlide=function(){
-						// [20190213 TOSÃß°¡] ½½¶óÀÌµù ¹è³Ê Ã³À½¿¡ ·ÎµùµÉ¶§(curIdx°¡ 0ÀÏ¶§), Xtractor¿¡ expand ½ºÅ©¸³Æ® ¼Û½Å
+						// [20190213 TOSì¶”ê°€] ìŠ¬ë¼ì´ë”© ë°°ë„ˆ ì²˜ìŒì— ë¡œë”©ë ë•Œ(curIdxê°€ 0ì¼ë•Œ), Xtractorì— expand ìŠ¤í¬ë¦½íŠ¸ ì†¡ì‹ 
 						xtractorCall(slideUl, curIdx, chkArray);
 						if(!timer) timer=setInterval(function(){
 							if(curIdx==(liCnt-1)){
@@ -2386,7 +2386,7 @@ timer_start();
 							isPause=false;
 							stopBtn=true;
 							btnPlay.hide();
-							btnStop.show().focus(); // 2020.04.08 Á¢±Ù¼º ¼öÁ¤
+							btnStop.show().focus(); // 2020.04.08 ì ‘ê·¼ì„± ìˆ˜ì •
 						});
 					}
 
@@ -2395,7 +2395,7 @@ timer_start();
 							stopSlide();
 							isPause=true;
 							stopBtn=false;
-							btnPlay.show().focus(); // 2020.04.08 Á¢±Ù¼º ¼öÁ¤
+							btnPlay.show().focus(); // 2020.04.08 ì ‘ê·¼ì„± ìˆ˜ì •
 							btnStop.hide();
 						});
 					}
@@ -2403,7 +2403,7 @@ timer_start();
 					startSlide();
 				}
 
-				// Å°º¸µå Á¦¾î Á¢±Ù¼º
+				// í‚¤ë³´ë“œ ì œì–´ ì ‘ê·¼ì„±
 				var focusEl=commonJs.findFocusElements(slideLi);
 				// focusEl=focusEl.filter('a');
 				focusEl.addClass('fcEl_'+sl_idx);
@@ -2413,7 +2413,7 @@ timer_start();
 				if(isAuto){
 					focusEl_slideBox.bind('blur',function(e){
 						if(isPause&&stopBtn){
-							//Æ÷Ä¿½º ¿ÀÅä½½¶óÀÌµå Àç½ÃÀÛ
+							//í¬ì»¤ìŠ¤ ì˜¤í† ìŠ¬ë¼ì´ë“œ ì¬ì‹œì‘
 							startSlide();
 							isPause=false;
 						}
@@ -2421,14 +2421,14 @@ timer_start();
 
 					focusEl_slideBox.bind('focus',function(e){
 						if(!isPause&&stopBtn){
-							//Æ÷Ä¿½º ¿ÀÅä½½¶óÀÌµå ¸ØÃã
+							//í¬ì»¤ìŠ¤ ì˜¤í† ìŠ¬ë¼ì´ë“œ ë©ˆì¶¤
 							stopSlide();
 							isPause=true;
 						}
 					});
 				}
-				//#WA Á¢±Ù¼º ¼öÁ¤
-				// focusEl.bind('keydown',function(e){// Á¢±Ù¼º ÅÇÀÌµ¿
+				//#WA ì ‘ê·¼ì„± ìˆ˜ì •
+				// focusEl.bind('keydown',function(e){// ì ‘ê·¼ì„± íƒ­ì´ë™
 				// 	if( !e.shiftKey && e.keyCode == TABKEY_CODE){
 				// 		//test
 				// 		var n=$(this).index(focusElCls)+1
@@ -2472,7 +2472,7 @@ timer_start();
 
 
 				/*
-				btnNext.bind('keydown',function(e){// Á¢±Ù¼º ÅÇÀÌµ¿
+				btnNext.bind('keydown',function(e){// ì ‘ê·¼ì„± íƒ­ì´ë™
 					if( !e.shiftKey && e.keyCode == TABKEY_CODE){
 						e.preventDefault();
 						slideTo(0,true);
@@ -2480,7 +2480,7 @@ timer_start();
 					}
 				});
 
-				btnNext.bind('keydown',function(e){// Á¢±Ù¼º ÅÇÀÌµ¿
+				btnNext.bind('keydown',function(e){// ì ‘ê·¼ì„± íƒ­ì´ë™
 					if( e.shiftKey && e.keyCode == TABKEY_CODE){
 						e.preventDefault();
 
@@ -2490,7 +2490,7 @@ timer_start();
 				});
 				*/
 				/*
-				btnNext.bind('blur',function(e){// Á¢±Ù¼º ÅÇÀÌµ¿
+				btnNext.bind('blur',function(e){// ì ‘ê·¼ì„± íƒ­ì´ë™
 					e.preventDefault();
 					focusEl.eq(1).find('button').focus();
 				});
@@ -2501,10 +2501,10 @@ timer_start();
 
 		};
 
-		commonJs.setSlideBox('div.slideBox,div.slideBox2'); // ½½¶óÀÌµå ÃÊ±âÈ­ ½ÇÇà
+		commonJs.setSlideBox('div.slideBox,div.slideBox2'); // ìŠ¬ë¼ì´ë“œ ì´ˆê¸°í™” ì‹¤í–‰
 
 		// eventType2
-		//product/TS3.1.html# ½½¶óÀÌµå ¸Ş´º ¼³Á¤
+		//product/TS3.1.html# ìŠ¬ë¼ì´ë“œ ë©”ë‰´ ì„¤ì •
 		$("div.slideArea").each(function()
 		{
 
@@ -2516,14 +2516,14 @@ timer_start();
 				var total = 2;
 				var viewW = 1000;
 
-				// ÆäÀÌÁö ÇÏ´Ü¿¡ ÀÌº¥Æ® ¿µ¿ª ¹è³Ê
+				// í˜ì´ì§€ í•˜ë‹¨ì— ì´ë²¤íŠ¸ ì˜ì—­ ë°°ë„ˆ
 				if( $this.hasClass('event'))
 				{
 					total = (li.length / 2)-1;
 					viewW = 980;
 				}
 
-				//Ä«µå¼±ÅÃ poc/myt/MY1.1.1a.1.3P.html
+				//ì¹´ë“œì„ íƒ poc/myt/MY1.1.1a.1.3P.html
 				if( $this.hasClass('selectCard')){
 					total=(li.length)-1;
 					viewW=li.outerWidth(true);
@@ -2553,7 +2553,7 @@ timer_start();
 
 	}
 
-	//»óÇÏ ÀÌµ¿ ½½¶óÀÌµå //www/poc/product/TS5.1.html
+	//ìƒí•˜ ì´ë™ ìŠ¬ë¼ì´ë“œ //www/poc/product/TS5.1.html
 	function setUpDownSlide(){
 		$('div.slideUp').each(function(){
 			var slideUp=$(this);
@@ -2609,7 +2609,7 @@ timer_start();
 					currentIdx=destIdx;
 					isMoving=false;
 				});
-				// [20190213 TOSÃß°¡] ½½¶óÀÌµù ¹è³Ê°¡ µ¹¾Æ°¥¶§, Xtractor¿¡ expand ½ºÅ©¸³Æ® ¼Û½Å
+				// [20190213 TOSì¶”ê°€] ìŠ¬ë¼ì´ë”© ë°°ë„ˆê°€ ëŒì•„ê°ˆë•Œ, Xtractorì— expand ìŠ¤í¬ë¦½íŠ¸ ì†¡ì‹ 
 				xtractorCall(slideUl, curIdx, chkArray);
 			};
 
@@ -2626,8 +2626,8 @@ timer_start();
 				else destIdx=currentIdx+1;
 				slideTo(destIdx,"D");
 			});
-			// 2018.11.01 ·Î¹Ö¸ŞÀÎ ´º½º ¿µ¿ª Á¢±Ù¼º ¼öÁ¤ - ·Î¹Ö¿¡¼­ Àü´Ş
-			// Á¢±Ù¼º ¼öÁ¤ 181031
+			// 2018.11.01 ë¡œë°ë©”ì¸ ë‰´ìŠ¤ ì˜ì—­ ì ‘ê·¼ì„± ìˆ˜ì • - ë¡œë°ì—ì„œ ì „ë‹¬
+			// ì ‘ê·¼ì„± ìˆ˜ì • 181031
 			li.find('a').keydown(function(e){
 				var $focusEl = $(this).parent('li');
 				var focusIdx = $focusEl.index()+1;
@@ -2665,7 +2665,7 @@ timer_start();
 					}
 				}
 			});
-			// Á¢±Ù¼º ¼öÁ¤ 181031
+			// ì ‘ê·¼ì„± ìˆ˜ì • 181031
 		});
 	}
 
@@ -2700,12 +2700,12 @@ timer_start();
 				list.find('span.hidden').remove();
 				var p =$(evt.target).parent();
 				p.addClass('on');
-				p.append('<span class="hidden">¼±ÅÃµÊ</span>');
+				p.append('<span class="hidden">ì„ íƒë¨</span>');
 			});
 		});
 
 
-		// µ¥ÀÌÅÍ¼±¹° ¹®ÀÚ SMS(¹®ÀÚ¸Ş¼¼Áö)º¸³»±â ¹Ú½º ¹öÆ° MY2.2.2.1T.2.html
+		// ë°ì´í„°ì„ ë¬¼ ë¬¸ì SMS(ë¬¸ìë©”ì„¸ì§€)ë³´ë‚´ê¸° ë°•ìŠ¤ ë²„íŠ¼ MY2.2.2.1T.2.html
 		$("div.send_message>a").bind("click",function(e){
 			//e.preventDefault();
 			//e.stopPropagation();
@@ -2719,7 +2719,7 @@ timer_start();
 		});
 		///////////////////////////////////////////////////////////////////////////
 
-		// ÇÏ´Ü µ¥ÀÌÅÍ ¸®ÇÊ ºÎºĞ Ç¥½Ã MY2.2.1.1T.6.html
+		// í•˜ë‹¨ ë°ì´í„° ë¦¬í•„ ë¶€ë¶„ í‘œì‹œ MY2.2.1.1T.6.html
 		content.find('.tipBox').children('a').bind('click' , function( e )
 		{
 			e.preventDefault();
@@ -2738,7 +2738,7 @@ timer_start();
 		});
 		///////////////////////////////////////////////////////////////////////////
 
-		// MY3.2.2.3.html ¶óµğ¿À ¹öÆ° Ãß°¡
+		// MY3.2.2.3.html ë¼ë””ì˜¤ ë²„íŠ¼ ì¶”ê°€
 		var radio =content.find('div.use_type>span.radio');
 		radio.each(function(index)
 		{
@@ -2764,7 +2764,7 @@ timer_start();
 		//MY0.1.html
 
 		// MY2.2.2.1T.1.html
-		$("div.graphType2 input[type='radio']").bind("click",function(){//¼±¹°ÇÒ µ¥ÀÌÅÍ·® ¼±ÅÃ
+		$("div.graphType2 input[type='radio']").bind("click",function(){//ì„ ë¬¼í•  ë°ì´í„°ëŸ‰ ì„ íƒ
 			var thisGraphType2=$(this).closest('div.graphType2');
 			var wPoint=$(this).siblings("span.wPoint");
 			//var percentage=$(this).index("input[type='radio']")*10+10;
@@ -2784,10 +2784,10 @@ timer_start();
 			}else {
 				thisGraphType2.find(".wAction").css("width",percentage+20+'px');
 			}
-			wPoint.find("em").html('<span class="hidden">µ¥ÀÌÅÍ·®</span>'+txt.substr(0,txt.length-2)+'<span class="capacity">'+txt.substr(txt.length-2,2)+'</span>');
+			wPoint.find("em").html('<span class="hidden">ë°ì´í„°ëŸ‰</span>'+txt.substr(0,txt.length-2)+'<span class="capacity">'+txt.substr(txt.length-2,2)+'</span>');
 		});
 
-		//³ªÀÇÇıÅÃ ÆäÀÌÁö »ó¼¼ Á¤º¸ÅÇ ½ºÅ©¸³Æ®//myt/MY1.1.5.html
+		//ë‚˜ì˜í˜œíƒ í˜ì´ì§€ ìƒì„¸ ì •ë³´íƒ­ ìŠ¤í¬ë¦½íŠ¸//myt/MY1.1.5.html
 		if($('.cubeResizeMenu').length>0){
 			$('.cubeResizeMenu').data('focusObj',null);
 
@@ -2808,7 +2808,7 @@ timer_start();
 				var targetTop=target.offset().top+target.height()-plistUl.offset().top;
 				var targetLeft=target.css('margin-left').replace('px','');
 
-				/* #DEL #±âÁ¸¼Ò½º »èÁ¦ ·¹ÀÌ¾îÆË¾÷À§Ä¡°ü·Ã
+				/* #DEL #ê¸°ì¡´ì†ŒìŠ¤ ì‚­ì œ ë ˆì´ì–´íŒì—…ìœ„ì¹˜ê´€ë ¨
 				targetPop.css({
 					'top':targetTop+'px',
 					'left':targetLeft+'px'
@@ -2823,8 +2823,8 @@ timer_start();
 				}else{
 					target.find('div').remove();
 				}
-				/* #±âÁ¸¼Ò½º »èÁ¦ ·¹ÀÌ¾îÆË¾÷À§Ä¡°ü·Ã
-				if(target.hasClass('on')){//¿­±â
+				/* #ê¸°ì¡´ì†ŒìŠ¤ ì‚­ì œ ë ˆì´ì–´íŒì—…ìœ„ì¹˜ê´€ë ¨
+				if(target.hasClass('on')){//ì—´ê¸°
 					var tempIdx=target.index();
 					var tIndex=tempIdx;
 					plistUl.children('li').each(function(i){
@@ -2834,7 +2834,7 @@ timer_start();
 					var first = commonJs.findFocusElements( target.children('div').eq(1) );
 					first.eq(0).focus();
 					p.data('focusObj',commonJs.closeTabkeyFocus( first ));
-					//#myt°³¼±
+					//#mytê°œì„ 
 					doc.scrollTop( target.offset().top+200 );
 					//doc.scrollTop( target.offset().top );
 					p.css('height',(pHeight+targetPop.outerHeight(true))+'px');
@@ -2859,7 +2859,7 @@ timer_start();
 						plistli.eq(tIndex-2).css('padding-bottom',(targetPop.outerHeight(true)-2)+'px');
 					}
 
-				}else{//´İ±â
+				}else{//ë‹«ê¸°
 					target.removeClass('on');
 					commonJs.findFocusElements(target).eq(0).focus();
 					p.data('focusObj').clear();
@@ -2879,8 +2879,8 @@ timer_start();
 				target.css('height',sumH+'px');
 			});
 
-			// plistli.find('a.close').bind('click',function(e){//´İ±â
-			$('.cubeResizeMenu .benefitCon a.close').live('click',function(e){//´İ±â
+			// plistli.find('a.close').bind('click',function(e){//ë‹«ê¸°
+			$('.cubeResizeMenu .benefitCon a.close').live('click',function(e){//ë‹«ê¸°
 				e.preventDefault();
 				var target=$(this).closest('li');
 				var p=target.closest('.cubeResizeMenu');
@@ -2933,26 +2933,26 @@ timer_start();
 		//MY2.2.4.2T.2T.1.html
 		///////////////////////////////////////////////////////////////////////////
 
-		//MY3.5.2.1.1.html  Á¢±Ù¼º ÀÌ½´·Î <span>ÅÂ±×¿¡ ¼±ÅÃÀÌ¶õ ¹®±¸°¡ Ãß°¡ µÇµµ·Ï ÀÛ¾÷
+		//MY3.5.2.1.1.html  ì ‘ê·¼ì„± ì´ìŠˆë¡œ <span>íƒœê·¸ì— ì„ íƒì´ë€ ë¬¸êµ¬ê°€ ì¶”ê°€ ë˜ë„ë¡ ì‘ì—…
 		var itemList =  content.find('.conBox_center>.billCon>.chgTab>.tabMulti2>ul>li');
 		itemList.each(function( idx )
 		{
-			// 191011 [OP002-4495] À¥Á¢±Ù¼º ¼öÁ¤ START
+			// 191011 [OP002-4495] ì›¹ì ‘ê·¼ì„± ìˆ˜ì • START
 			var a = $(this).children('div').children('a');
-			a.attr('title', $(this).hasClass('on')? '¼±ÅÃ µÊ' : '');
+			a.attr('title', $(this).hasClass('on')? 'ì„ íƒ ë¨' : '');
 			a.bind('click',function( e )
 			{
 				e.preventDefault();
 				var p = a.parent('div');
 				p.parent('li').addClass('on').siblings().removeClass('on');
 				itemList.children('div').children('a').attr('title', '');
-				$(this).attr('title', '¼±ÅÃ µÊ');
+				$(this).attr('title', 'ì„ íƒ ë¨');
 			});
-			// 191011 [OP002-4495] À¥Á¢±Ù¼º ¼öÁ¤ END
+			// 191011 [OP002-4495] ì›¹ì ‘ê·¼ì„± ìˆ˜ì • END
 		});
 		///////////////////////////////////////////////////////////////////////////
 
-		//MY4.1.2.1.html missStopList>li ¹öÆ° °³¼ö È®ÀÎ
+		//MY4.1.2.1.html missStopList>li ë²„íŠ¼ ê°œìˆ˜ í™•ì¸
 		$("ul.missStopList>li").each(function(){
 			var btnDiv=$(this).find("div.btn");
 			if(btnDiv.children("a").length==2){
@@ -2961,7 +2961,7 @@ timer_start();
 		});
 		///////////////////////////////////////////////////////////////////////////
 
-		//¿­±â/´İ±â //MY1.1.1.1.html, MY1.1.1.2.html, MY1.2.4.1T.1.html
+		//ì—´ê¸°/ë‹«ê¸° //MY1.1.1.1.html, MY1.1.1.2.html, MY1.2.4.1T.1.html
 		if($('.myt_product1').not('.sub').length>0){
 			var initMytProduct1=function(target){
 				var myt_product1=$('.myt_product1:not(".sub")');
@@ -2970,14 +2970,14 @@ timer_start();
 				var prd1_module=myt_product1.find('dl.module').not('.sub');
 
 				myt_product1.find('.addType2.tglClsOpen').removeClass('open');
-				allLi.removeClass('on').find('> a').attr('title', '¿­±â'); // 2019.02.28 À¥Á¢±Ù¼º ¼öÁ¤
+				allLi.removeClass('on').find('> a').attr('title', 'ì—´ê¸°'); // 2019.02.28 ì›¹ì ‘ê·¼ì„± ìˆ˜ì •
 				allLineType_info.removeClass('open');
-				prd1_module.removeClass('on').find('> a').attr('title', '¿­±â'); // 2019.02.28 À¥Á¢±Ù¼º ¼öÁ¤
+				prd1_module.removeClass('on').find('> a').attr('title', 'ì—´ê¸°'); // 2019.02.28 ì›¹ì ‘ê·¼ì„± ìˆ˜ì •
 			};
 			var htmlAndBody=$('html, body');
-			//[#5223] [myT] Å©·Ò ¿ÍÀÌÆÄÀÌ°èÁ¤ °¡ÀÔÁ¤º¸ È¸¼±ÆîÄ¡±â ¹«µ¿ÀÛ (¿ä°ÇÃß°¡)
+			//[#5223] [myT] í¬ë¡¬ ì™€ì´íŒŒì´ê³„ì • ê°€ì…ì •ë³´ íšŒì„ í¼ì¹˜ê¸° ë¬´ë™ì‘ (ìš”ê±´ì¶”ê°€)
 			$('.myt_product1:not(".sub") ul.lineInfo>li:not("ul.sub>li")>a').die().live('click',function(e){
-				//#myt°³¼±
+				//#mytê°œì„ 
 				if( $(this).parents('.myt_product1').hasClass('ui_myt') ){
 					return false;
 				}
@@ -2985,11 +2985,11 @@ timer_start();
 				var thisLi=$(this).parent('li');
 				if(thisLi.hasClass('on')){
 					thisLi.removeClass('on');
-					thisLi.find('>a').attr('title', '¿­±â'); // 2018.10.17 [#6927] '[myT] ³ªÀÇ °¡ÀÔÁ¤º¸ ³» ¼öÁ¤»çÇ×' - PC È­¸é title ¼Ó¼º ÅØ½ºÆ® Ãß°¡
-					//#myt°³¼±
-					//»ç¿ëÁßÀÎ »óÇ°¼­ºñ½º ÀÏ¶§ Ã¼Å©Æ÷ÀÎÆ® ¿­¸®°Ô
+					thisLi.find('>a').attr('title', 'ì—´ê¸°'); // 2018.10.17 [#6927] '[myT] ë‚˜ì˜ ê°€ì…ì •ë³´ ë‚´ ìˆ˜ì •ì‚¬í•­' - PC í™”ë©´ title ì†ì„± í…ìŠ¤íŠ¸ ì¶”ê°€
+					//#mytê°œì„ 
+					//ì‚¬ìš©ì¤‘ì¸ ìƒí’ˆì„œë¹„ìŠ¤ ì¼ë•Œ ì²´í¬í¬ì¸íŠ¸ ì—´ë¦¬ê²Œ
 					var _dl = $(this).parents('dl.lineType_info');
-					if(document.title.indexOf('< »ç¿ëÁßÀÎ »óÇ°¼­ºñ½º < ±âº»Á¤º¸ < Á¶È¸ < my T | T world')!=-1){
+					if(document.title.indexOf('< ì‚¬ìš©ì¤‘ì¸ ìƒí’ˆì„œë¹„ìŠ¤ < ê¸°ë³¸ì •ë³´ < ì¡°íšŒ < my T | T world')!=-1){
 						return true;
 					}
 					if(_dl.hasClass('open')){
@@ -2999,26 +2999,26 @@ timer_start();
 				}else{
 					initMytProduct1($(this));
 					thisLi.addClass('on');
-					thisLi.find('>a').attr('title', '´İ±â'); // 2018.10.17 [#6927] '[myT] ³ªÀÇ °¡ÀÔÁ¤º¸ ³» ¼öÁ¤»çÇ×' - PC È­¸é title ¼Ó¼º ÅØ½ºÆ® Ãß°¡
+					thisLi.find('>a').attr('title', 'ë‹«ê¸°'); // 2018.10.17 [#6927] '[myT] ë‚˜ì˜ ê°€ì…ì •ë³´ ë‚´ ìˆ˜ì •ì‚¬í•­' - PC í™”ë©´ title ì†ì„± í…ìŠ¤íŠ¸ ì¶”ê°€
 					thisLi.closest('.myt_product1:not(".sub")').find('.lineType_info:not(".sub")').addClass('open');
 					window.$(this).trigger('openTab'); //cmnJquery
-					//#myT>Á¶È¸>±âº»Á¤º¸>³ªÀÇ °¡ÀÔÁ¤º¸ *ÀÚµ¿½ºÅ©·Ñ Á¦°Å
+					//#myT>ì¡°íšŒ>ê¸°ë³¸ì •ë³´>ë‚˜ì˜ ê°€ì…ì •ë³´ *ìë™ìŠ¤í¬ë¡¤ ì œê±°
 					//htmlAndBody.stop().animate({scrollTop : thisLi.offset().top-$('#header').outerHeight(true)}, 200);
 				}
 			});
 
-			$('.myt_product1:not(".sub") ul.lineInfo>li:not("ul.sub>li") a.btn_close:not(".sub")').live('click',function(e){//li ³»ºÎ ÇÏ´Ü ´İ±â ¹öÆ°
+			$('.myt_product1:not(".sub") ul.lineInfo>li:not("ul.sub>li") a.btn_close:not(".sub")').live('click',function(e){//li ë‚´ë¶€ í•˜ë‹¨ ë‹«ê¸° ë²„íŠ¼
 				e.preventDefault();
 				$(this).closest('li.on').not('.sub').removeClass('on');
 				htmlAndBody.stop().animate({scrollTop : $(this).closest('.myt_product1').not('.sub').offset().top-$('#header').outerHeight(true)}, 200);
 			});
 
-			$('.myt_product1:not(".sub") a.btn_close_top:not(".sub")').live('click',function(e){//ÃÖ»ó´Ü ´İ±â ¹öÆ°
+			$('.myt_product1:not(".sub") a.btn_close_top:not(".sub")').live('click',function(e){//ìµœìƒë‹¨ ë‹«ê¸° ë²„íŠ¼
 				e.preventDefault();
 				initMytProduct1($(this));
 			});
 
-			$('.myt_product1:not(".sub") .b_con>a.btn_close:not(".sub")').live('click',function(e){//CHECK POINT ÀüÃ¼ ´İ±â
+			$('.myt_product1:not(".sub") .b_con>a.btn_close:not(".sub")').live('click',function(e){//CHECK POINT ì „ì²´ ë‹«ê¸°
 				e.preventDefault();
 				initMytProduct1($(this));
 				$('html, body').animate({scrollTop : $(this).closest('.myt_product1').not('.sub').offset().top-$('#header').outerHeight(true)}, 200);
@@ -3029,11 +3029,11 @@ timer_start();
 				var target=$(this).closest('.module');
 
 				if(target.hasClass('on')){
-					target.removeClass('on').find('> dt > a').attr('title', '¿­±â'); // 2020.07.02 À¥Á¢±Ù¼º ¼öÁ¤
+					target.removeClass('on').find('> dt > a').attr('title', 'ì—´ê¸°'); // 2020.07.02 ì›¹ì ‘ê·¼ì„± ìˆ˜ì •
 				}else{
 					target.closest('.myt_product1').not('.sub').removeClass('on');
-					target.addClass('on').find('> dt > a').attr('title', '´İ±â'); // 2020.07.02 À¥Á¢±Ù¼º ¼öÁ¤
-					target.siblings('dl.module').removeClass('on').find('> dt > a').attr('title', '¿­±â'); // 2020.07.02 À¥Á¢±Ù¼º ¼öÁ¤
+					target.addClass('on').find('> dt > a').attr('title', 'ë‹«ê¸°'); // 2020.07.02 ì›¹ì ‘ê·¼ì„± ìˆ˜ì •
+					target.siblings('dl.module').removeClass('on').find('> dt > a').attr('title', 'ì—´ê¸°'); // 2020.07.02 ì›¹ì ‘ê·¼ì„± ìˆ˜ì •
 					window.$(this).trigger('openTab'); //cmnJquery
 				}
 				$('html, body').animate({scrollTop : target.offset().top-$('#header').outerHeight(true)}, 200);
@@ -3047,32 +3047,32 @@ timer_start();
 		}
 		///////////////////////////////////////////////////////////////////////////
 
-		//.sub ¿­±â/´İ±â //MY1.2.1.1T.html
+		//.sub ì—´ê¸°/ë‹«ê¸° //MY1.2.1.1T.html
 		$('.childFee ul.lineInfo.sub>li>a').live('click',function(e){
 			e.preventDefault();
 			var lineType_info=$(this).closest('.childFee').find('.lineType_info.sub');
 			var thisLi=$(this).parent('li');
 
 			if(thisLi.hasClass('on')){
-				thisLi.removeClass('on').find('> a').attr('title', '¿­±â'); // 2021.06.17 À¥Á¢±Ù¼º ¼öÁ¤
+				thisLi.removeClass('on').find('> a').attr('title', 'ì—´ê¸°'); // 2021.06.17 ì›¹ì ‘ê·¼ì„± ìˆ˜ì •
 			}else{
 				//initChildFee
-				$('.childFee ul.lineInfo.sub>li').removeClass('on').find('> a').attr('title', '¿­±â'); // 2021.06.17 À¥Á¢±Ù¼º ¼öÁ¤
+				$('.childFee ul.lineInfo.sub>li').removeClass('on').find('> a').attr('title', 'ì—´ê¸°'); // 2021.06.17 ì›¹ì ‘ê·¼ì„± ìˆ˜ì •
 				$('.childFee .lineType_info.sub').removeClass('open');
 				//
-				thisLi.addClass('on').find('> a').attr('title', '´İ±â'); // 2021.06.17 À¥Á¢±Ù¼º ¼öÁ¤
+				thisLi.addClass('on').find('> a').attr('title', 'ë‹«ê¸°'); // 2021.06.17 ì›¹ì ‘ê·¼ì„± ìˆ˜ì •
 				lineType_info.addClass('open');
 				$('html, body').stop().animate({scrollTop : thisLi.offset().top-$('#header').outerHeight(true)}, 200);
 			}
 		});
 
-		$('.childFee ul.lineInfo.sub>li a.btn_close.sub').live('click',function(e){//li ³»ºÎ ÇÏ´Ü ´İ±â ¹öÆ°
+		$('.childFee ul.lineInfo.sub>li a.btn_close.sub').live('click',function(e){//li ë‚´ë¶€ í•˜ë‹¨ ë‹«ê¸° ë²„íŠ¼
 			e.preventDefault();
 			$(this).closest('li.on').filter('ul.sub>li').removeClass('on');
 			$('html, body').stop().animate({scrollTop : $(this).closest('.childFee').offset().top-$('#header').outerHeight(true)}, 200);
 		});
 
-		$('.childFee a.btn_close_top.sub').bind('click',function(e){//ÃÖ»ó´Ü ´İ±â ¹öÆ°
+		$('.childFee a.btn_close_top.sub').bind('click',function(e){//ìµœìƒë‹¨ ë‹«ê¸° ë²„íŠ¼
 			e.preventDefault();
 			//initChildFee
 			$('.childFee ul.lineInfo.sub>li').removeClass('on');
@@ -3080,7 +3080,7 @@ timer_start();
 			//
 		});
 
-		$('.childFee .b_con>a.btn_close.sub').bind('click',function(e){//CHECK POINT ÀüÃ¼ ´İ±â
+		$('.childFee .b_con>a.btn_close.sub').bind('click',function(e){//CHECK POINT ì „ì²´ ë‹«ê¸°
 			e.preventDefault();
 			//initChildFee
 			$('.childFee ul.lineInfo.sub>li').removeClass('on');
@@ -3090,7 +3090,7 @@ timer_start();
 		});
 		///////////////////////////////////////////////////////////////////////////
 
-		//¿­±â ´İ±â residualCall //MY1.2.2.1.html#
+		//ì—´ê¸° ë‹«ê¸° residualCall //MY1.2.2.1.html#
 		var residualCall=$('.residualCall');
 		residualCall.each(function(){
 			var target=$(this);
@@ -3098,50 +3098,50 @@ timer_start();
 				var gnbH = $("#header").height(); //#myT WA
 				if(target.hasClass('open')){
 					target.removeClass('open');
-					$(this).attr('title', '¿­±â'); // 2019.03.26 À¥Á¢±Ù¼º ¼öÁ¤
+					$(this).attr('title', 'ì—´ê¸°'); // 2019.03.26 ì›¹ì ‘ê·¼ì„± ìˆ˜ì •
 				}else{
-					residualCall.removeClass('open').find('.residualTit>a').attr('title', '¿­±â'); // 2019.03.26 À¥Á¢±Ù¼º ¼öÁ¤
+					residualCall.removeClass('open').find('.residualTit>a').attr('title', 'ì—´ê¸°'); // 2019.03.26 ì›¹ì ‘ê·¼ì„± ìˆ˜ì •
 					target.addClass('open');
 					$('html, body').animate({scrollTop : $(this).closest('.residualCall').offset().top - gnbH}, 200);
-					$(this).attr('title', '´İ±â'); // 2019.03.26 À¥Á¢±Ù¼º ¼öÁ¤
+					$(this).attr('title', 'ë‹«ê¸°'); // 2019.03.26 ì›¹ì ‘ê·¼ì„± ìˆ˜ì •
 				}
 			});
 			target.find('a.btn_close').bind('click',function(){
 				target.removeClass('open');
-				target.find('.residualTit>a').attr('title', '¿­±â').focus(); // 2019.03.26 À¥Á¢±Ù¼º ¼öÁ¤
+				target.find('.residualTit>a').attr('title', 'ì—´ê¸°').focus(); // 2019.03.26 ì›¹ì ‘ê·¼ì„± ìˆ˜ì •
 				$('html, body').animate({scrollTop : $(this).closest('.residualCall').offset().top - gnbH}, 200);
 			});
 		});
 		///////////////////////////////////////////////////////////////////////////
 
-		//¿­±â ´İ±â memeberSbox //membership_search.html
+		//ì—´ê¸° ë‹«ê¸° memeberSbox //membership_search.html
 		var memeberSbox=$('.memeberSbox');
 		memeberSbox.each(function(){
 			var target=$(this);
-			target.find('>dl>dt>a').bind('click',function(){ // 2020.07.27 À¥Á¢±Ù¼º ¼öÁ¤
+			target.find('>dl>dt>a').bind('click',function(){ // 2020.07.27 ì›¹ì ‘ê·¼ì„± ìˆ˜ì •
 				var gnbH = $("#header").height(); //#myT WA
 				if(target.hasClass('open')){
 					target.removeClass('open');
-					$(this).attr('title', '¿­±â'); // 190918 2019 À¥Á¢±Ù¼º ½É»ç ¼öÁ¤
+					$(this).attr('title', 'ì—´ê¸°'); // 190918 2019 ì›¹ì ‘ê·¼ì„± ì‹¬ì‚¬ ìˆ˜ì •
 				}else{
 					memeberSbox.removeClass('open');
-					memeberSbox.find('>dl>dt>a').attr('title', '¿­±â'); // 2020.07.27 À¥Á¢±Ù¼º ¼öÁ¤
+					memeberSbox.find('>dl>dt>a').attr('title', 'ì—´ê¸°'); // 2020.07.27 ì›¹ì ‘ê·¼ì„± ìˆ˜ì •
 					target.addClass('open');
-					$(this).attr('title', '´İ±â'); // 190918 2019 À¥Á¢±Ù¼º ½É»ç ¼öÁ¤
+					$(this).attr('title', 'ë‹«ê¸°'); // 190918 2019 ì›¹ì ‘ê·¼ì„± ì‹¬ì‚¬ ìˆ˜ì •
 					$('html, body').animate({scrollTop : $(this).closest('.memeberSbox').offset().top - gnbH}, 200);
 				}
 			});
 			target.find('a.btn_close').bind('click',function(){
 				target.removeClass('open');
-				target.find('>dl>dt>a').attr('title', '¿­±â'); // 2020.07.27 À¥Á¢±Ù¼º ¼öÁ¤
+				target.find('>dl>dt>a').attr('title', 'ì—´ê¸°'); // 2020.07.27 ì›¹ì ‘ê·¼ì„± ìˆ˜ì •
 				$('html, body').animate({scrollTop : $(this).closest('.memeberSbox').offset().top - gnbH}, 200);
 			});
 
-			target.find('>dl>dt>a').attr('title', target.hasClass('open') ? '´İ±â' : '¿­±â'); // 2020.07.27 À¥Á¢±Ù¼º ¼öÁ¤
+			target.find('>dl>dt>a').attr('title', target.hasClass('open') ? 'ë‹«ê¸°' : 'ì—´ê¸°'); // 2020.07.27 ì›¹ì ‘ê·¼ì„± ìˆ˜ì •
 		});
 		///////////////////////////////////////////////////////////////////////////
 
-		//¿­±â ´İ±â //MY1.2.3.1T.1.html
+		//ì—´ê¸° ë‹«ê¸° //MY1.2.3.1T.1.html
 		$('.charge_info>dl.module>dt>a').live('click',function(e){
 			e.preventDefault();
 			var target=$(this).closest('.module');
@@ -3183,7 +3183,7 @@ timer_start();
 		});
 		///////////////////////////////////////////////////////////////////////////
 
-		//³³ºÎ³»¿ª ±â°£¼±ÅÃ//poc/myt/MY1.2.4.5T.1.html
+		//ë‚©ë¶€ë‚´ì—­ ê¸°ê°„ì„ íƒ//poc/myt/MY1.2.4.5T.1.html
 		$('div.contentsSearch.tax').each(function(){
 			var tarLi=$(this).find('ul.dateSel>li');
 			var tarA=tarLi.children('a');
@@ -3198,7 +3198,7 @@ timer_start();
 	}
 
 
-	// ÅÇÀ» Á¦¾îÇÒ½Ã¿¡ tabJs Å¬·¡½º°¡ µé¾î¿À¸é ÀÛµ¿À» ÇÏ°Ô ÇÑ´Ù.
+	// íƒ­ì„ ì œì–´í• ì‹œì— tabJs í´ë˜ìŠ¤ê°€ ë“¤ì–´ì˜¤ë©´ ì‘ë™ì„ í•˜ê²Œ í•œë‹¤.
 	//
 	function setTabJs()
 	{
@@ -3206,12 +3206,12 @@ timer_start();
 			var thisTabJs=$(this).closest('.tabJs');
 			//thisTabJs.data('objArr',new Array());
 
-			//var p = $(this).children('li'); // ¹Ù·Î ¾Æ·¡°¡ li°¡ ¾Æ´Ñ°æ¿ìµµ Àâ¾Æ ³»±â À§ÇØ º¯°æ
+			//var p = $(this).children('li'); // ë°”ë¡œ ì•„ë˜ê°€ liê°€ ì•„ë‹Œê²½ìš°ë„ ì¡ì•„ ë‚´ê¸° ìœ„í•´ ë³€ê²½
 			var p = thisTabJs.find('li');
 			var t = $(this).parent('li');
 
 			if(t.closest('.s_con').length>0&&t.closest('.s_con').closest('.cs_list1.tabJs').length>0) {
-				//tabJsÇÏÀ§ aÅÂ±× ¿­¿Ü //poc/center/CS.html#
+				//tabJsí•˜ìœ„ aíƒœê·¸ ì—´ì™¸ //poc/center/CS.html#
 				return true;
 			}
 
@@ -3232,10 +3232,10 @@ timer_start();
 			e.preventDefault();
 			// e.stopPropagation();
 
-			// 190712 2019À¥Á¢±Ù¼º ¼öÁ¤ START 
-			p.removeClass('on').find('a:not(.a11y-notit)').attr('title', ''); // 2018.10.01 [#6973] [°í°´¼¾ÅÍ] ¿Â¶óÀÎ »ó´ã/¹®ÀÇ ´ÙÀÌ·ºÆ®¼¥ ¹®ÀÇÀ¯Çü ºĞ¸®
-			t.addClass('on').find('a:not(.a11y-notit)').attr('title', '¼±ÅÃµÊ'); // 2018.10.01 [#6973] [°í°´¼¾ÅÍ] ¿Â¶óÀÎ »ó´ã/¹®ÀÇ ´ÙÀÌ·ºÆ®¼¥ ¹®ÀÇÀ¯Çü ºĞ¸®
-			// 190712 2019À¥Á¢±Ù¼º ¼öÁ¤ END
+			// 190712 2019ì›¹ì ‘ê·¼ì„± ìˆ˜ì • START 
+			p.removeClass('on').find('a:not(.a11y-notit)').attr('title', ''); // 2018.10.01 [#6973] [ê³ ê°ì„¼í„°] ì˜¨ë¼ì¸ ìƒë‹´/ë¬¸ì˜ ë‹¤ì´ë ‰íŠ¸ìƒµ ë¬¸ì˜ìœ í˜• ë¶„ë¦¬
+			t.addClass('on').find('a:not(.a11y-notit)').attr('title', 'ì„ íƒë¨'); // 2018.10.01 [#6973] [ê³ ê°ì„¼í„°] ì˜¨ë¼ì¸ ìƒë‹´/ë¬¸ì˜ ë‹¤ì´ë ‰íŠ¸ìƒµ ë¬¸ì˜ìœ í˜• ë¶„ë¦¬
+			// 190712 2019ì›¹ì ‘ê·¼ì„± ìˆ˜ì • END
 
 			$.each( objArr, function(index, value)
 			{
@@ -3244,7 +3244,7 @@ timer_start();
 				}
 			});
 			if(objArr[i]=='#tabAll'){
-				// product/TS2a.3.1T.html tabjs Ãß°¡
+				// product/TS2a.3.1T.html tabjs ì¶”ê°€
 				if( $(e.target).closest('.pkgTab').length>0 ){
 					doc.find('.pkgTabCon').addClass('pkgAll');
 				}
@@ -3254,7 +3254,7 @@ timer_start();
 					if(index!=i&&value!='#'&&value!='') doc.find(value).css('display','block');
 				});
 			}else{
-				// product/TS2a.3.1T.html tabjs Ãß°¡
+				// product/TS2a.3.1T.html tabjs ì¶”ê°€
 				if( $(e.target).closest('.pkgTab').length>0 ){
 					doc.find('.pkgTabCon').removeClass('pkgAll');
 				}
@@ -3266,14 +3266,14 @@ timer_start();
 	}
 
 
-	//ÅÇ ¿­°í ´İ±â('open' Å¬·¡½º Ãß°¡/Á¦°Å ¹öÆ°) // CS3.2.1T.html // MY3.5.1.html
+	//íƒ­ ì—´ê³  ë‹«ê¸°('open' í´ë˜ìŠ¤ ì¶”ê°€/ì œê±° ë²„íŠ¼) // CS3.2.1T.html // MY3.5.1.html
 	function setTglClsOpen(){
 		$(".tglClsOpen").each(function(){
 			var target=$(this);
 
 			target.find('a.title').each(function(){
 				var clsOpen=$(this).closest('.tglClsOpen');
-				if(clsOpen.hasClass('open')) $(this).attr('title','¼±ÅÃ');
+				if(clsOpen.hasClass('open')) $(this).attr('title','ì„ íƒ');
 				else $(this).attr('title','');
 			});
 
@@ -3281,7 +3281,7 @@ timer_start();
 				target.find('a.title').bind("click",function(e){
 					e.preventDefault();
 					$(this).closest('.tglClsOpen').addClass("open");
-					$(this).attr('title','¼±ÅÃ');
+					$(this).attr('title','ì„ íƒ');
 				});
 				target.find('a.close').bind("click",function(e){
 					e.preventDefault();
@@ -3298,7 +3298,7 @@ timer_start();
 						clsOpen.find('a.title').attr('title','');
 					}else{
 						clsOpen.addClass('open');
-						clsOpen.find('a.title').attr('title','¼±ÅÃ');
+						clsOpen.find('a.title').attr('title','ì„ íƒ');
 					}
 				});
 			}else if(target.find('a.chkClose').length>0){//MY2.1.3.1.3.1.html
@@ -3327,33 +3327,33 @@ timer_start();
 				 **/
 			}
 		});
-		// MY0.1.html µ¿Àû ºÎºĞÀÏ°Í °°¾Æ¼­ °°ÀÌ Àû¿ë ÇÏ¸ç div »èÁ¦
-		// myt/MY1.2.1.1T.html °³¹ßÂÊÀÇ µ¿Àû Ã³¸® ºÎ¹®
-		// 190712 2019À¥Á¢±Ù¼º ¼öÁ¤ START
-		$('.tglClsOpen a.tglBtn').each(function(){// ÃÊ±âÈ­
+		// MY0.1.html ë™ì  ë¶€ë¶„ì¼ê²ƒ ê°™ì•„ì„œ ê°™ì´ ì ìš© í•˜ë©° div ì‚­ì œ
+		// myt/MY1.2.1.1T.html ê°œë°œìª½ì˜ ë™ì  ì²˜ë¦¬ ë¶€ë¬¸
+		// 190712 2019ì›¹ì ‘ê·¼ì„± ìˆ˜ì • START
+		$('.tglClsOpen a.tglBtn').each(function(){// ì´ˆê¸°í™”
 			var clsOpen=$(this).closest('.tglClsOpen'),
-				closeTitle = $(this).data('type') === 'add' ? 'ÇØÁ¦' : '´İ±â',
-				openTitle = $(this).data('type') === 'add' ? 'Ãß°¡' : '¿­±â';
-			if(clsOpen.hasClass('open')) $(this).attr('title', closeTitle); // 2018.09.03 [#6998] [myT] À¥Á¢±Ù¼º ÀÎÁõ¸¶Å© °»½ÅÀ» À§ÇÑ ¼öÁ¤ (¿À·ù¼öÁ¤)
-			else $(this).attr('title', openTitle); // 2018.09.03 [#6998] [myT] À¥Á¢±Ù¼º ÀÎÁõ¸¶Å© °»½ÅÀ» À§ÇÑ ¼öÁ¤ (¿À·ù¼öÁ¤)
+				closeTitle = $(this).data('type') === 'add' ? 'í•´ì œ' : 'ë‹«ê¸°',
+				openTitle = $(this).data('type') === 'add' ? 'ì¶”ê°€' : 'ì—´ê¸°';
+			if(clsOpen.hasClass('open')) $(this).attr('title', closeTitle); // 2018.09.03 [#6998] [myT] ì›¹ì ‘ê·¼ì„± ì¸ì¦ë§ˆí¬ ê°±ì‹ ì„ ìœ„í•œ ìˆ˜ì • (ì˜¤ë¥˜ìˆ˜ì •)
+			else $(this).attr('title', openTitle); // 2018.09.03 [#6998] [myT] ì›¹ì ‘ê·¼ì„± ì¸ì¦ë§ˆí¬ ê°±ì‹ ì„ ìœ„í•œ ìˆ˜ì • (ì˜¤ë¥˜ìˆ˜ì •)
 		});
 		$('.tglClsOpen a.tglBtn').live('click' , function(e)
 		{
 			e.preventDefault();
 			var clsOpen=$(this).closest('.tglClsOpen'),
-				closeTitle = $(this).data('type') === 'add' ? 'ÇØÁ¦' : '´İ±â',
-				openTitle = $(this).data('type') === 'add' ? 'Ãß°¡' : '¿­±â';
+				closeTitle = $(this).data('type') === 'add' ? 'í•´ì œ' : 'ë‹«ê¸°',
+				openTitle = $(this).data('type') === 'add' ? 'ì¶”ê°€' : 'ì—´ê¸°';
 			clsOpen.toggleClass("open");
-			if(clsOpen.hasClass('open')) $(this).attr('title', closeTitle); // [#6998] [myT] À¥Á¢±Ù¼º ÀÎÁõ¸¶Å© °»½ÅÀ» À§ÇÑ ¼öÁ¤ (¿À·ù¼öÁ¤)
-			else $(this).attr('title', openTitle); // 2018.09.03 [#6998] [myT] À¥Á¢±Ù¼º ÀÎÁõ¸¶Å© °»½ÅÀ» À§ÇÑ ¼öÁ¤ (¿À·ù¼öÁ¤)
+			if(clsOpen.hasClass('open')) $(this).attr('title', closeTitle); // [#6998] [myT] ì›¹ì ‘ê·¼ì„± ì¸ì¦ë§ˆí¬ ê°±ì‹ ì„ ìœ„í•œ ìˆ˜ì • (ì˜¤ë¥˜ìˆ˜ì •)
+			else $(this).attr('title', openTitle); // 2018.09.03 [#6998] [myT] ì›¹ì ‘ê·¼ì„± ì¸ì¦ë§ˆí¬ ê°±ì‹ ì„ ìœ„í•œ ìˆ˜ì • (ì˜¤ë¥˜ìˆ˜ì •)
 
 		});
-		// 190712 2019À¥Á¢±Ù¼º ¼öÁ¤ END
+		// 190712 2019ì›¹ì ‘ê·¼ì„± ìˆ˜ì • END
 	}
 
 	//ul>li>a li toggle 'on' //www/poc/myt/MY1.2.5.1T.html#
 	function setUlLi_TglOn(){
-		var hSpan="<span class='hidden'>¼±ÅÃ</span>";
+		var hSpan="<span class='hidden'>ì„ íƒ</span>";
 
 		$("ul.tglOn").each(function(){
 			var target=$(this);
@@ -3372,7 +3372,7 @@ timer_start();
 	}
 
 
-	//±¸ºñ¼­·ù ¾È³» CS3.3.1T.html
+	//êµ¬ë¹„ì„œë¥˜ ì•ˆë‚´ CS3.3.1T.html
 	commonJs.setHeight_groupList=function(){
 		var mHeight=0;
 		var li=$('div.groupBox>.groupList>.clearfix>li');
@@ -3494,7 +3494,7 @@ timer_start();
 
 		});
 
-		// FAQ ÀÚÁÖÃ£´ÂÁú¹® Ä«Å×°í¸® ¼³Á¤ //CS2.1.1T.html
+		// FAQ ìì£¼ì°¾ëŠ”ì§ˆë¬¸ ì¹´í…Œê³ ë¦¬ ì„¤ì • //CS2.1.1T.html
 		var centerTable=$("div.centerTable, div.centerTable2");
 		if(centerTable.length>0){
 			var selectedCtgr=$("div.selectedCtgr");
@@ -3531,10 +3531,10 @@ timer_start();
 				centerTable.eq(0).show();
 				selectedCtgr.hide();
 				$('a.btnMore').show();
-				selectedCtgr.html("<span>¼±ÅÃÇÏ½Å Ä«Å×°í¸®</span>");
+				selectedCtgr.html("<span>ì„ íƒí•˜ì‹  ì¹´í…Œê³ ë¦¬</span>");
 			});
 
-			//¼ıÀÚ img _on _off
+			//ìˆ«ì img _on _off
 			centerTable.find('li').bind('mouseenter',function(){
 				var target=$(this).find('img');
 				var imgSrc=target.attr('src');
@@ -3618,7 +3618,7 @@ timer_start();
 					centerTable.eq(0).show();
 					selectedCtgr.hide();
 					$('a.btnMore').show();
-					selectedCtgr.html("<span>¼±ÅÃÇÏ½Å Ä«Å×°í¸®</span>");
+					selectedCtgr.html("<span>ì„ íƒí•˜ì‹  ì¹´í…Œê³ ë¦¬</span>");
 					centerTable.eq(0).find('a').eq(0).focus();
 				}
 
@@ -3626,7 +3626,7 @@ timer_start();
 		}
 		///////////////////////////////////////////////////////////////////////////
 
-		//´ë¸®Á¡ ¿¬°üÅ°¿öµå °¡¿îµ¥ Á¤·Ä www/poc/center/´ë¸®Á¡.html
+		//ëŒ€ë¦¬ì  ì—°ê´€í‚¤ì›Œë“œ ê°€ìš´ë° ì •ë ¬ www/poc/center/ëŒ€ë¦¬ì .html
 		$('div.keyWord').each(function(){
 			var target=$(this);
 			var targetSpan=target.find('span');
@@ -3638,7 +3638,7 @@ timer_start();
 		});
 		///////////////////////////////////////////////////////////////////////////
 
-		// CS3.1.6.1T.html , CS3.1.6.2T.html ÇÚµåÆù ÇüÅÂÀÇ ¸Ş´º Å¬¸¯½Ã ÁÂÃø ÄÁÅÙÃ÷ º¯°æ
+		// CS3.1.6.1T.html , CS3.1.6.2T.html í•¸ë“œí° í˜•íƒœì˜ ë©”ë‰´ í´ë¦­ì‹œ ì¢Œì¸¡ ì»¨í…ì¸  ë³€ê²½
 
 		doc.find('div.conBoxType>div.conInfo>div.arsMenu').each(function( idx )
 		{
@@ -3659,13 +3659,13 @@ timer_start();
 		});
 
 
-		//±¸ºñ¼­·ù ¾È³» CS3.3.1T.html
+		//êµ¬ë¹„ì„œë¥˜ ì•ˆë‚´ CS3.3.1T.html
 		if($('div.groupBox>.groupList>.clearfix>li').length>0){
 			commonJs.setHeight_groupList();
 		}
 		///////////////////////////////////////////////////////////////////////////
 
-		//ARS°í°´¼¾ÅÍ ¹®ÀÇ·® ±ŞÁõ ¿¹»ó Ä¶¸°´õ ½ºÅ©¸³Æ® //poc/center/CS.1T.html
+		//ARSê³ ê°ì„¼í„° ë¬¸ì˜ëŸ‰ ê¸‰ì¦ ì˜ˆìƒ ìº˜ë¦°ë” ìŠ¤í¬ë¦½íŠ¸ //poc/center/CS.1T.html
 		$('.cs_calendar').each(function(){
 			var $this=$(this);
 			var li=$this.find('.cal_con>ul>li');
@@ -3694,7 +3694,7 @@ timer_start();
 		///////////////////////////////////////////////////////////////////////////
 
 
-		//ÃÖ½ÅÀÌ¿ëÀÚ ÇÇÇØ¿¹¹æ Á¤º¸ ´õº¸±â ¹öÆ°//poc/html/center/CS6.1.1T.html#
+		//ìµœì‹ ì´ìš©ì í”¼í•´ì˜ˆë°© ì •ë³´ ë”ë³´ê¸° ë²„íŠ¼//poc/html/center/CS6.1.1T.html#
 		$('.linkList1More .btnMore').bind('click',function(e){
 			e.preventDefault();
 			$(this).closest('.linkList1More').addClass('on');
@@ -3705,7 +3705,7 @@ timer_start();
 	//www/poc/util/
 	function setUtil()
 	{
-		// UT10.8L.html È¸¼±Á¤º¸ º¯°æ
+		// UT10.8L.html íšŒì„ ì •ë³´ ë³€ê²½
 		doc.find('div.changeLine>div.title>.selectBox').each(function(index)
 		{
 			var paging , nowTxt , totalTxt , slider = null;
@@ -3762,7 +3762,7 @@ timer_start();
 
 					var tn = list.length;
 					slider.setTotal( tn-1 );
-					// ÃÊ±âÈ­
+					// ì´ˆê¸°í™”
 					//slider.setCurrent( 0 );
 					//slider.moveTo(0);
 					var cn = 0;
@@ -3780,15 +3780,15 @@ timer_start();
 			});
 		});
 
-		//ÃÊ°í¼ÓÀÎÅÍ³İ ÀÌ¿ë¾à°üÀÇ ÁÖ¿ä³»¿ë ¼³¸í¼­ www/poc/util/member_policy/UT2.1.2.1T.3T.1T.1P.html#term6
-		/*2016.03.07 Ãß°¡*/
+		//ì´ˆê³ ì†ì¸í„°ë„· ì´ìš©ì•½ê´€ì˜ ì£¼ìš”ë‚´ìš© ì„¤ëª…ì„œ www/poc/util/member_policy/UT2.1.2.1T.3T.1T.1P.html#term6
+		/*2016.03.07 ì¶”ê°€*/
 		$('.termsInfo li').bind('click',function(e){
 			$(this).addClass('on');
 			$(this).siblings().removeClass('on');
 		});
 		///////////////////////////////////////////////////////////////////////////
 
-		//ÅëÇÕ°Ë»ö ¼­ºêÅÇ ¹× °Ë»ö¾î ÅÇ ½ºÅ©·Ñ Ã³¸®//poc/util/common/UT1.3.1.html //poc/util/common/UT1.3.2.1.html
+		//í†µí•©ê²€ìƒ‰ ì„œë¸Œíƒ­ ë° ê²€ìƒ‰ì–´ íƒ­ ìŠ¤í¬ë¡¤ ì²˜ë¦¬//poc/util/common/UT1.3.1.html //poc/util/common/UT1.3.2.1.html
 		var keywordPack=$("div.keywordPack");
 		if(keywordPack.length>0){
 			keywordPack.find('dl').addClass('on');
@@ -3917,7 +3917,7 @@ timer_start();
 			$(window).bind('scroll',fn_scroll);
 		}
 
-		//»çÀÌÆ®¸Ê °Ë»ö //poc/util/common/UT6.html - »èÁ¦ ¹× ÀüÃ¼¸Ş´º ÇØ´ç È­¸éÀ¸·Î ÀÌµ¿//»çÀÌÆ®¸Ê °Ë»ö //poc/util/common/UT6.html
+		//ì‚¬ì´íŠ¸ë§µ ê²€ìƒ‰ //poc/util/common/UT6.html - ì‚­ì œ ë° ì „ì²´ë©”ë‰´ í•´ë‹¹ í™”ë©´ìœ¼ë¡œ ì´ë™//ì‚¬ì´íŠ¸ë§µ ê²€ìƒ‰ //poc/util/common/UT6.html
 		$('div.sitemap').each(function(){
 			var sitemap=$(this);
 			var conWrap=sitemap.children('div.conBox_center');
@@ -3956,10 +3956,10 @@ timer_start();
 
 			var isEmpty=true;
 			var iptSearch=sitemap.find('.search2>input[type="text"]');
-			iptSearch.val('°Ë»ö¾î¸¦ ÀÔ·ÂÇÏ¼¼¿ä.');
+			iptSearch.val('ê²€ìƒ‰ì–´ë¥¼ ì…ë ¥í•˜ì„¸ìš”.');
 			iptSearch.bind('focusin',function(){
 				if(isEmpty){
-					iptSearch.val('').select(); // 2018.06.07 À¥Á¢±Ù¼º °Ë¼ö ¼öÁ¤ - ie¿¡¼­ ÅÇÀÌµ¿½Ã Ä¿¼­ ²­¹÷ÀÓÀÌ ¾ø¾î¼­ °­Á¦·Î select ½ÃÄÑÁØ´Ù.
+					iptSearch.val('').select(); // 2018.06.07 ì›¹ì ‘ê·¼ì„± ê²€ìˆ˜ ìˆ˜ì • - ieì—ì„œ íƒ­ì´ë™ì‹œ ì»¤ì„œ ê»Œë²…ì„ì´ ì—†ì–´ì„œ ê°•ì œë¡œ select ì‹œì¼œì¤€ë‹¤.
 					isEmpty=false;
 				}
 			});
@@ -3967,7 +3967,7 @@ timer_start();
 			iptSearch.bind('focusout',function(){
 				var chkVal=commonJs.trimLR(iptSearch.val());
 				if(!isEmpty&&(!chkVal||chkVal=='')){
-					iptSearch.val('°Ë»ö¾î¸¦ ÀÔ·ÂÇÏ¼¼¿ä.');
+					iptSearch.val('ê²€ìƒ‰ì–´ë¥¼ ì…ë ¥í•˜ì„¸ìš”.');
 					isEmpty=true;
 				}
 			});
@@ -3990,7 +3990,7 @@ timer_start();
 
 			init();
 
-			// ¸Ş´º¸í ¹× ¸µÅ© ¼³Á¤
+			// ë©”ë‰´ëª… ë° ë§í¬ ì„¤ì •
 			sitemap.find('a[ucode]:not(.onlyNm)').each(function( idx )
 			{
 				var _this = $(this);
@@ -4008,7 +4008,7 @@ timer_start();
 							if(n){
 								var ta = n.split('$');
 
-								if(_this.hasClass('icomplete')) ta[1]+=' (*)'; // ¸Ş´º¸í¿¡  "(*)" Ãß°¡
+								if(_this.hasClass('icomplete')) ta[1]+=' (*)'; // ë©”ë‰´ëª…ì—  "(*)" ì¶”ê°€
 
 								if( _this.find('img').length == 0){
 									_this.html( ta[1] );
@@ -4021,7 +4021,7 @@ timer_start();
 				}
 			});
 
-			// ¸µÅ©x ¸Ş´º¸í ¼³Á¤
+			// ë§í¬x ë©”ë‰´ëª… ì„¤ì •
 			sitemap.find('[ucode].onlyNm').each(function( idx )
 			{
 				var _this = $(this);
@@ -4038,7 +4038,7 @@ timer_start();
 							var n = window['n'+arr[0]];
 							if(n){
 								var ta = n.split('$');
-								if(_this.hasClass('incomplete')) ta[1]+=' (*)'; // ¸Ş´º¸í¿¡  "(*)" Ãß°¡
+								if(_this.hasClass('incomplete')) ta[1]+=' (*)'; // ë©”ë‰´ëª…ì—  "(*)" ì¶”ê°€
 
 								if( _this.find('img').length == 0){
 									_this.html( ta[1] );
@@ -4053,17 +4053,17 @@ timer_start();
 		});
 
 		function replaceSCtoCode(str){
-			//html Ä¡È¯
+			//html ì¹˜í™˜
 			var retVal=str.replace(/\&/gi,'&amp;');
-			var arr=retVal.split('&amp;');// & Ä¡È¯
-			for(var i=0; i<arr.length;i++){// ; Ä¡È¯
+			var arr=retVal.split('&amp;');// & ì¹˜í™˜
+			for(var i=0; i<arr.length;i++){// ; ì¹˜í™˜
 				arr[i]=arr[i].replace(/\;/gi,'&#59;');
 			}
 			retVal=arr.join('&amp;');
 
 			retVal.replace(/\</gi,'&lt;').replace(/\>/gi,'&rt;');
 
-			//Á¤±Ô½ÄÆ¯¼ö¹®ÀÚ Ä¡È¯ \ ^ . [ ] $ ( ) | * + ? { }
+			//ì •ê·œì‹íŠ¹ìˆ˜ë¬¸ì ì¹˜í™˜ \ ^ . [ ] $ ( ) | * + ? { }
 			retVal=retVal.replace(/\\/gi,'\\\\').replace(/\^/gi,'\\^').replace(/\./gi,'\\.').replace(/\[/gi,'\\[').replace(/\]/gi,'\\]').replace(/\$/gi,'\\$').replace(/\(/gi,'\\(').replace(/\)/gi,'\\)').replace(/\|/gi,'\\|').replace(/\*/gi,'\\*').replace(/\+/gi,'\\+').replace(/\?/gi,'\\?').replace(/\{/gi,'\\{').replace(/\}/gi,'\\}');
 			return retVal;
 		}
@@ -4073,15 +4073,15 @@ timer_start();
 	//www/poc/tlive/
 	function setTlive()
 	{
-		//ÁøÇàÁß ÀÌº¥Æ® ÆäÀÌÁö ±¤°í ¹Ù ÀÌµ¿ TL1.1.1.html
+		//ì§„í–‰ì¤‘ ì´ë²¤íŠ¸ í˜ì´ì§€ ê´‘ê³  ë°” ì´ë™ TL1.1.1.html
 		var eventView=$("div.event_view");
 		if(eventView.length>0){
 
 			var leftCon=eventView.children(".left_con");
 			var rightCon=eventView.children(".right_con");
 			var evt_fltDiv=rightCon.children(".evt_floatingDiv");
-			// gnb header ³ôÀÌ º¯¼öÃß°¡
-			//[#5086] [ÀÌº¥Æ®] ÁøÇàÁßÀÎ ÀÌº¥Æ® »ó¼¼ ÇÃ·ÎÆÃ ·¹ÀÌ¾î À§Ä¡ Á¶Á¤ (¿À·ù¼öÁ¤)
+			// gnb header ë†’ì´ ë³€ìˆ˜ì¶”ê°€
+			//[#5086] [ì´ë²¤íŠ¸] ì§„í–‰ì¤‘ì¸ ì´ë²¤íŠ¸ ìƒì„¸ í”Œë¡œíŒ… ë ˆì´ì–´ ìœ„ì¹˜ ì¡°ì • (ì˜¤ë¥˜ìˆ˜ì •)
 			var fixedHeader=$('#header').height();
 
 			rightCon.css("position","relative");
@@ -4089,7 +4089,7 @@ timer_start();
 
 			var leftConHeight=leftCon.height();
 			var evt_fltDivHeight=evt_fltDiv.height();
-			var startTop=leftCon.offset().top - fixedHeader -10; // gnb header³ôÀÌ + 10px ¿©¹éÀ¸·Î ½ºÅ©·Ñ½ÃÀÛ Top°ª ³ôÀÌº¯°æ
+			var startTop=leftCon.offset().top - fixedHeader -10; // gnb headerë†’ì´ + 10px ì—¬ë°±ìœ¼ë¡œ ìŠ¤í¬ë¡¤ì‹œì‘ Topê°’ ë†’ì´ë³€ê²½
 			var endTop=startTop+leftConHeight-evt_fltDivHeight;
 
 			$(window).bind('scroll',function(){
@@ -4105,7 +4105,7 @@ timer_start();
 		}
 		///////////////////////////////////////////////////////////////////////////
 
-		//ÀÚ¸· ÇÔ²²º¸±â //poc/tlive/TL2.1.1L.html
+		//ìë§‰ í•¨ê»˜ë³´ê¸° //poc/tlive/TL2.1.1L.html
 		$('.btn_script>a').live('click',function(e){
 			var target=$(this).parent().siblings('.popCon').find('.inPop>.video_script');
 			$(this).hide();
@@ -4122,7 +4122,7 @@ timer_start();
 	//www/poc/product/
 	function setProduct()
 	{
-		// ¿ä±İ»óÇ° // product/TS1.1.1.html
+		// ìš”ê¸ˆìƒí’ˆ // product/TS1.1.1.html
 		if($('div.prSrchResult').length>0){
 			var data=$('div.prSrchResult .userData');
 			if(data.length>0){
@@ -4134,11 +4134,11 @@ timer_start();
 
 				$(window).bind('scroll',function( e )
 				{
-					setTimeout(function () { // 2019.02.08 GNB ¼öÁ¤À¸·Î ÀÎÇÑ ÇÃ·ÎÆÃ ¼öÄ¡ Á¶Á¤
-						var headerH=$('#header > .header_con').height() - 2; // 2019.02.08 GNB ¼öÁ¤À¸·Î ÀÎÇÑ ÇÃ·ÎÆÃ ¼öÄ¡ Á¶Á¤
+					setTimeout(function () { // 2019.02.08 GNB ìˆ˜ì •ìœ¼ë¡œ ì¸í•œ í”Œë¡œíŒ… ìˆ˜ì¹˜ ì¡°ì •
+						var headerH=$('#header > .header_con').height() - 2; // 2019.02.08 GNB ìˆ˜ì •ìœ¼ë¡œ ì¸í•œ í”Œë¡œíŒ… ìˆ˜ì¹˜ ì¡°ì •
 						var userDataTop = dummy.offset().top;
 
-						if(cfareList.height()<=data.height()+324){//¸®½ºÆ®°¡ ÂªÀ» °æ¿ì
+						if(cfareList.height()<=data.height()+324){//ë¦¬ìŠ¤íŠ¸ê°€ ì§§ì„ ê²½ìš°
 							data.css('position','relative');
 							data.css('top','0px');
 
@@ -4178,20 +4178,20 @@ timer_start();
 
 				var fareList=thisChkBox.closest('.fareList');
 				var fLParent=fareList.parent();
-				if(fLParent.hasClass('userData')){//·Î±×ÀÎ »ç¿ëÀÚ Á¤º¸ ¸®½ºÆ®
+				if(fLParent.hasClass('userData')){//ë¡œê·¸ì¸ ì‚¬ìš©ì ì •ë³´ ë¦¬ìŠ¤íŠ¸
 					var this_li=li.data('this_li');
 					li.remove();
 
 					var chkbox=this_li.find('input:checkbox');
 					chkbox.click();
-				}else{//ÀÏ¹İ ¸®½ºÆ®
+				}else{//ì¼ë°˜ ë¦¬ìŠ¤íŠ¸
 					var userDataUl=thisChkBox.closest('div.prSrchResult').find('.userData>.fareList>ul');
 
 					if(userDataUl.length>0){
 						if(userDataUl.find('li.compare').length>=3&& $("#"+$(this).attr("id")+"_ud").length<1){
 							thisChkBox.attr('checked',false);
 							thisChkBox.parent().removeClass('checked');
-							alert('¿ä±İ»óÇ° ºñ±³´Â ÃÖ´ë 3°³±îÁö °¡´ÉÇÕ´Ï´Ù.');
+							alert('ìš”ê¸ˆìƒí’ˆ ë¹„êµëŠ” ìµœëŒ€ 3ê°œê¹Œì§€ ê°€ëŠ¥í•©ë‹ˆë‹¤.');
 						}else{
 							var this_li=li.data('this_li');
 							if(this_li){
@@ -4215,7 +4215,7 @@ timer_start();
 			});
 		}
 
-		//½ºÅ©·Ñ ÇÏ´Ü ¼±ÅÃ ¿ä±İ»óÇ° ¹Ù product_templete.html,TS5.2.7.1.html
+		//ìŠ¤í¬ë¡¤ í•˜ë‹¨ ì„ íƒ ìš”ê¸ˆìƒí’ˆ ë°” product_templete.html,TS5.2.7.1.html
 		var floatingDiv=$('.pr_floatingDiv');
 		var footerDiv=$('#footer');
 
@@ -4224,7 +4224,7 @@ timer_start();
 			$('#footer').after("<div id='pr_dummy'></div>");
 			var  dummy=$('#pr_dummy');
 			dummy.hide();
-			floatingDiv.show();//.pr_floatingDivÀÌ display:noneÀ» blockÀ¸·Î º¯°æ
+			floatingDiv.show();//.pr_floatingDivì´ display:noneì„ blockìœ¼ë¡œ ë³€ê²½
 			// var selectBoxInitFlag=true;
 			$(window).bind('scroll_pr_floatingDiv',function(e){
 				var startTop;
@@ -4255,7 +4255,7 @@ timer_start();
 				// if(startTop<=curScTop&&curScTop<=endTop){
 				if(startTop<=curScTop){
 					// floatingDiv.show();
-					floatingDiv.css('margin-left','0px');//selectBox·Î ÀÎÇØ show&hide ´ëÃ¼(show)
+					floatingDiv.css('margin-left','0px');//selectBoxë¡œ ì¸í•´ show&hide ëŒ€ì²´(show)
 					floatingDiv.css('position','fixed');
 					dummy.show();
 					dummy.css('height',floatingDiv.height()+'px');
@@ -4264,11 +4264,11 @@ timer_start();
 
 				}else if(startTop>curScTop){
 					// floatingDiv.hide();
-					floatingDiv.css('margin-left','-10000px');//selectBox·Î ÀÎÇØ show&hide ´ëÃ¼(hide)
+					floatingDiv.css('margin-left','-10000px');//selectBoxë¡œ ì¸í•´ show&hide ëŒ€ì²´(hide)
 					// dummy.hide();
 				}else{
 					// floatingDiv.show();
-					floatingDiv.css('margin-left','0px');//selectBox·Î ÀÎÇØ show&hide ´ëÃ¼(show)
+					floatingDiv.css('margin-left','0px');//selectBoxë¡œ ì¸í•´ show&hide ëŒ€ì²´(show)
 					floatingDiv.css('position','relative');
 					$('#pr_dummy').hide();
 
@@ -4343,7 +4343,7 @@ timer_start();
 
 
 			if(li.length>6){
-				//¾Û ÅÜÀÌµ¿ ½ºÅ©¸³Æ®
+				//ì•± í…ì´ë™ ìŠ¤í¬ë¦½íŠ¸
 				var focusLi=commonJs.findFocusElements(li);
 				$('.slideBox button.btnNext').eq(0).bind('keydown',function(e){
 					if( !e.shiftKey && e.keyCode == TABKEY_CODE){
@@ -4382,7 +4382,7 @@ timer_start();
 
 	//www/poc/guide/
 	function setGuide(){
-		//CHECK POINT ¸ñ·Ï ´õº¸±â ¹öÆ° //layout_common.html
+		//CHECK POINT ëª©ë¡ ë”ë³´ê¸° ë²„íŠ¼ //layout_common.html
 		$('.b_checkPoint>.b_cp .fLeft>a.moreBtn').live('click',function(e){
 			e.preventDefault();
 			var checkPoint=$(this).closest('.b_cp');
@@ -4390,11 +4390,11 @@ timer_start();
 
 			if(checkPoint.hasClass('open')){
 				checkPoint.removeClass('open');
-				$(this).children('span').text('´õº¸±â');
+				$(this).children('span').text('ë”ë³´ê¸°');
 				hiddenLi.hide();
 			}else{
 				checkPoint.addClass('open');
-				$(this).children('span').text('´İ±â');
+				$(this).children('span').text('ë‹«ê¸°');
 				hiddenLi.show();
 				hiddenLi.eq(0).children('a').focus();
 			}
@@ -4412,14 +4412,14 @@ timer_start();
 	}
 
 	commonJs.setHeight_changeCont=function(){
-		//À¯Çü¼±ÅÃ »ç¿ëÁßÀÎ/º¯°æ ¿ä±Ø»óÇ° È­¸é ³ôÀÌ Á¶Àı ½ºÅ©¸³Æ®//PJ1.1.1.html //poc/product/TS1.1.2.8.html
+		//ìœ í˜•ì„ íƒ ì‚¬ìš©ì¤‘ì¸/ë³€ê²½ ìš”ê·¹ìƒí’ˆ í™”ë©´ ë†’ì´ ì¡°ì ˆ ìŠ¤í¬ë¦½íŠ¸//PJ1.1.1.html //poc/product/TS1.1.2.8.html
 		var chgCon=$('.changeProduct>.changeCont');
 		chgCon.each(function(){
 			var leftDiv=$(this).find('.fLeft>.division');
 			var rightDiv=$(this).find('.fRight>.division');
 			var len=leftDiv.length;
 
-			for(var i=0;i<len;i++){//³ôÀÌ°ª ÃÊ±âÈ­
+			for(var i=0;i<len;i++){//ë†’ì´ê°’ ì´ˆê¸°í™”
 				rightDiv.eq(i).css('height','');
 				leftDiv.eq(i).css('height','');
 			}
@@ -4440,15 +4440,15 @@ timer_start();
 	function setPurchase(){
 		commonJs.setHeight_changeCont();
 
-		//ÄÑ±â/²ô±â ÅØ½ºÆ® Åä±Û www/poc/purchase/PJ2.2.1.2P.html#
+		//ì¼œê¸°/ë„ê¸° í…ìŠ¤íŠ¸ í† ê¸€ www/poc/purchase/PJ2.2.1.2P.html#
 		$('.btnSafe').each(function(){
 			$(this).bind('click',function(e){
 				e.preventDefault();
 				var target=$(this).find('span');
 				if($(this).hasClass("on")){
-					target.text(target.text().replace(" ÄÑ±â"," ²ô±â"));
+					target.text(target.text().replace(" ì¼œê¸°"," ë„ê¸°"));
 				}else{
-					target.text(target.text().replace(" ²ô±â"," ÄÑ±â"));
+					target.text(target.text().replace(" ë„ê¸°"," ì¼œê¸°"));
 
 				}
 			});
@@ -4458,8 +4458,8 @@ timer_start();
 
 	function setCommon()
 	{
-		//¸»Ç³¼± click¹öÀü div.qInfo
-		// tapkey keyCode == 9 ÀÌ¸ç ÅÇÅ°·Î ÀÌµ¿½Ã¿¡¸¸ Á¦¾î µÇµµ·Ï ÇÑ´Ù.
+		//ë§í’ì„  clickë²„ì „ div.qInfo
+		// tapkey keyCode == 9 ì´ë©° íƒ­í‚¤ë¡œ ì´ë™ì‹œì—ë§Œ ì œì–´ ë˜ë„ë¡ í•œë‹¤.
 		//
 
 		$('.qInfo a.qTit').live('click',function(e){
@@ -4472,7 +4472,7 @@ timer_start();
 			qInfo.css('z-index',1);
 			$this.css('z-index',1000);
 
-			// ºÎ¸ğ¿ä¼ÒÁß .qIdx Å¬·¡½º°¡ ÀÖ´Â °æ¿ì´Â z-index¸¦ ¿Ã·ÁÁÖµµ·Ï ¼³Á¤ ÇÏ¿´´Ù.
+			// ë¶€ëª¨ìš”ì†Œì¤‘ .qIdx í´ë˜ìŠ¤ê°€ ìˆëŠ” ê²½ìš°ëŠ” z-indexë¥¼ ì˜¬ë ¤ì£¼ë„ë¡ ì„¤ì • í•˜ì˜€ë‹¤.
 			$this.parents('.qIdx').each(function()
 			{
 				$(this).css('z-index',1);
@@ -4534,12 +4534,12 @@ timer_start();
 				//e.preventDefault();
 				var thisLi=$(this).parent();
 				if(thisLi.hasClass('on')){
-					thisLi.removeClass('on').find('> a').attr('title', '¿­±â'); // 2018.11.01 À¥Á¢±Ù¼º ¼öÁ¤
+					thisLi.removeClass('on').find('> a').attr('title', 'ì—´ê¸°'); // 2018.11.01 ì›¹ì ‘ê·¼ì„± ìˆ˜ì •
 				}else{
-					thisLi.closest('ul.arcBox').find("li.on").removeClass('on').find('> a').attr('title', '¿­±â'); // 2018.11.01 À¥Á¢±Ù¼º ¼öÁ¤
-					thisLi.addClass('on').find('> a').attr('title', '´İ±â'); // 2018.11.01 À¥Á¢±Ù¼º ¼öÁ¤
+					thisLi.closest('ul.arcBox').find("li.on").removeClass('on').find('> a').attr('title', 'ì—´ê¸°'); // 2018.11.01 ì›¹ì ‘ê·¼ì„± ìˆ˜ì •
+					thisLi.addClass('on').find('> a').attr('title', 'ë‹«ê¸°'); // 2018.11.01 ì›¹ì ‘ê·¼ì„± ìˆ˜ì •
 				}
-				//#°³¼± UI
+				//#ê°œì„  UI
 				var _href=$(this).attr('href');
 				if(_href=="#"){
 					e.preventDefault();
@@ -4551,11 +4551,11 @@ timer_start();
 		///////////////////////////////////////////////////////////////////////////
 		$('ul.arcBox2>li a.more').live('click' ,  function( e )
 		{
-			// 2019.03.26 À¥Á¢±Ù¼º ¼öÁ¤ START
+			// 2019.03.26 ì›¹ì ‘ê·¼ì„± ìˆ˜ì • START
 			var thisLi = $(this).closest('li'),
 				thisUl = $(this).closest('ul'),
 				isType1 = thisUl.hasClass('type1'),
-				hiddenText = thisLi.hasClass('on') ? '»ó¼¼º¸±â' : '»ó¼¼´İ±â';
+				hiddenText = thisLi.hasClass('on') ? 'ìƒì„¸ë³´ê¸°' : 'ìƒì„¸ë‹«ê¸°';
 
 			/*if(thisLi.hasClass('on')){
 				thisLi.removeClass('on');
@@ -4566,23 +4566,23 @@ timer_start();
 			if (isType1) {
 				thisLi.toggleClass('on', !thisLi.hasClass('on')).find('a.more').attr('title', hiddenText);
 			} else {
-				if (thisLi.hasClass('on')) { //#°øÅë WA
+				if (thisLi.hasClass('on')) { //#ê³µí†µ WA
 					if (thisLi.find("a.more").children().length >= 1) {
-						thisLi.removeClass('on').find('.clearfix > a.more').text('»ó¼¼º¸±â');
+						thisLi.removeClass('on').find('.clearfix > a.more').text('ìƒì„¸ë³´ê¸°');
 					} else {
-						thisLi.removeClass('on').find(".clearfix > a.more").text('»ó¼¼º¸±â');
+						thisLi.removeClass('on').find(".clearfix > a.more").text('ìƒì„¸ë³´ê¸°');
 					}
 				} else {
 					if (thisLi.find("a.more").children().length >= 1) {
 						thisLi.siblings('li').removeClass('on');
-						thisLi.addClass('on').find('.clearfix > a.more').text('»ó¼¼´İ±â');
+						thisLi.addClass('on').find('.clearfix > a.more').text('ìƒì„¸ë‹«ê¸°');
 					} else {
-						thisLi.siblings('li').removeClass('on').find(".clearfix > a.more").text("»ó¼¼º¸±â"); // 190904 À¥Á¢±Ù¼º ¼öÁ¤
-						thisLi.addClass('on').find(".clearfix > a.more").text("»ó¼¼´İ±â");
+						thisLi.siblings('li').removeClass('on').find(".clearfix > a.more").text("ìƒì„¸ë³´ê¸°"); // 190904 ì›¹ì ‘ê·¼ì„± ìˆ˜ì •
+						thisLi.addClass('on').find(".clearfix > a.more").text("ìƒì„¸ë‹«ê¸°");
 					}
 				}
 			}
-			// 2019.03.26 À¥Á¢±Ù¼º ¼öÁ¤ END
+			// 2019.03.26 ì›¹ì ‘ê·¼ì„± ìˆ˜ì • END
 		});
 
 		//SelectBox // [Ex.] www/poc/myt/MY2.2.5.3T.3.html
@@ -4605,7 +4605,7 @@ timer_start();
 				var target=$(this);
 				li.removeClass('on');
 				target.closest('li').addClass('on');
-				//ÃæÀü±İ¾× ½ºÅ©¸³Æ® MY2.2.4.2T.2T.1.html, MY2.2.4.1T.2T.1.html
+				//ì¶©ì „ê¸ˆì•¡ ìŠ¤í¬ë¦½íŠ¸ MY2.2.4.2T.2T.1.html, MY2.2.4.1T.2T.1.html
 				var chTxt=$('span.chTxt');
 				var em=target.next('label').find('em');
 				if(chTxt.length>0&&em.length>0){
@@ -4633,7 +4633,7 @@ timer_start();
 		radioSelect2.each(fn_liOnEvt);
 		///////////////////////////////////////////////////////////////////////////
 
-		//»çÀÌµå ¹è³Ê ´İ±â //www/poc/util/common/UT8.3.1L.html#
+		//ì‚¬ì´ë“œ ë°°ë„ˆ ë‹«ê¸° //www/poc/util/common/UT8.3.1L.html#
 		$('.flt_bnr').each(function(){
 			var target=$(this);
 			target.children('.btnClose').bind('click',function(){
@@ -4642,14 +4642,14 @@ timer_start();
 		});
 		///////////////////////////////////////////////////////////////////////////
 
-		//onÅ¬·¡½º Åä±Û ±â´É //www/poc/purchase/PJ2.2.1.2P.html#
+		//oní´ë˜ìŠ¤ í† ê¸€ ê¸°ëŠ¥ //www/poc/purchase/PJ2.2.1.2P.html#
 		$(".selfTglOn").bind('click',function(e){
 			e.preventDefault();
 			$(this).toggleClass('on');
 		});
 		///////////////////////////////////////////////////////////////////////////
 
-		//°øÀ¯ÇÏ±â ¹öÆ° //poc/guide/etc.html
+		//ê³µìœ í•˜ê¸° ë²„íŠ¼ //poc/guide/etc.html
 		var snsDiv=$('.sns');
 		snsDiv.each(function(){
 			var target=$(this);
@@ -4661,12 +4661,12 @@ timer_start();
 			target.find('.btn_close').bind('click',function(e){
 				e.preventDefault();
 				target.removeClass('on');
-				target.children('.btn_sns').focus(); // 2018.10.24 [#7106][T apps] T map ÅÃ½Ã »óÇ°¿øÀå - Á¢±Ù¼º ¼öÁ¤
+				target.children('.btn_sns').focus(); // 2018.10.24 [#7106][T apps] T map íƒì‹œ ìƒí’ˆì›ì¥ - ì ‘ê·¼ì„± ìˆ˜ì •
 			});
 		});
 		///////////////////////////////////////////
 
-		//ÀÚ¼¼È÷º¸±â //poc/membership/MS.html //poc/product/TS.html
+		//ìì„¸íˆë³´ê¸° //poc/membership/MS.html //poc/product/TS.html
 		/*
 		$('div.sliding').each(function(){
 
@@ -4674,7 +4674,7 @@ timer_start();
 		*/
 		///////////////////////////////////////////
 
-		//º»¹®¹Ù·Î±â±â fixedÃ³¸® Ãß°¡
+		//ë³¸ë¬¸ë°”ë¡œê¸°ê¸° fixedì²˜ë¦¬ ì¶”ê°€
 		$('.accessbility>a').live('focus',function(){
 			var tar=$(this).parent();
 			tar.css({'position':'fixed', 'z-index':'5001'});
@@ -4688,7 +4688,7 @@ timer_start();
 		});
 		///////////////////////////////////////////
 	}
-	//ÀÚ¼¼È÷º¸±âÁÂ¿ìÆîÄ§¹è³Ê //poc/membership/MS.html //poc/product/TS.html
+	//ìì„¸íˆë³´ê¸°ì¢Œìš°í¼ì¹¨ë°°ë„ˆ //poc/membership/MS.html //poc/product/TS.html
 	function setSlidingContent(){
 		$('div.sliding').each(function(){
 			var targetUl=$(this).children('ul');
@@ -4785,10 +4785,10 @@ timer_start();
 				var targetBtn=$(this);
 				var target=targetBtn.closest('li');
 
-				if(target.hasClass('on')){//´İ±â
-					if(animateLi(target.index(),false))	targetBtn.text('ÀÚ¼¼È÷ º¸±â');
-				}else{//ÀÚ¼¼È÷ º¸±â
-					if(animateLi(target.index(),true)) targetBtn.text('´İ±â');
+				if(target.hasClass('on')){//ë‹«ê¸°
+					if(animateLi(target.index(),false))	targetBtn.text('ìì„¸íˆ ë³´ê¸°');
+				}else{//ìì„¸íˆ ë³´ê¸°
+					if(animateLi(target.index(),true)) targetBtn.text('ë‹«ê¸°');
 				}
 			});
 
@@ -4796,13 +4796,13 @@ timer_start();
 				e.preventDefault();
 				var target=$(this).closest('li');
 				animateLi(target.index(),false);
-				detailBtn.text('ÀÚ¼¼È÷ º¸±â');
+				detailBtn.text('ìì„¸íˆ ë³´ê¸°');
 			});
 		});
 	}
 	//poc/membership/
 	function setMembership(){
-		//Á¦ÈŞ»ç ÇıÅÃ ¾ÆÀÌÄÜ hoverÈ¿°ú //poc/membership/MS.html
+		//ì œíœ´ì‚¬ í˜œíƒ ì•„ì´ì½˜ hoveríš¨ê³¼ //poc/membership/MS.html
 		$('ul.hoverLi').each(function(){
 			var ulList=$(this);
 
@@ -5010,9 +5010,9 @@ timer_start();
 		});
 	}
 
-	// ¹è³Ê °Ô½Ã ½Ã°£ ¹®ÀÚ¿­ ÇöÀç½Ã°£ ºñ±³
+	// ë°°ë„ˆ ê²Œì‹œ ì‹œê°„ ë¬¸ìì—´ í˜„ì¬ì‹œê°„ ë¹„êµ
 	function timeCheck(strTime){
-		if(!strTime) return true; // °ªÀÌ ¾ø´Â °æ¿ì ½Ã°£ »ó°ü¾øÀÌ °Ô½Ã
+		if(!strTime) return true; // ê°’ì´ ì—†ëŠ” ê²½ìš° ì‹œê°„ ìƒê´€ì—†ì´ ê²Œì‹œ
 
 		var y=Number(strTime.substr(0,4));
 		var m=Number(strTime.substr(4,2));
@@ -5028,7 +5028,7 @@ timer_start();
 		else return false;
 	}
 
-	// ¹è³Ê »ğÀÔ
+	// ë°°ë„ˆ ì‚½ì…
 	function setBanner()
 	{
 		//promotion banner (ul>li) // H[5],I[7]
@@ -5049,11 +5049,11 @@ timer_start();
 						var arrTmp=val[j].split('||');
 						var tmpHtml="";
 
-						// ¹è³Ê °Ô½Ã ½Ã°£ È®ÀÎ
+						// ë°°ë„ˆ ê²Œì‹œ ì‹œê°„ í™•ì¸
 						if(arrTmp[1]=="I"&&!timeCheck(arrTmp[7])) continue;
 						else if(!timeCheck(arrTmp[5])) continue;
 
-						sldNaviUl.append('<li><a href="#ProMotion'+(j+1)+'">ÇÁ·Î¸ğ¼Ç '+(j+1)+'</a></li>');
+						sldNaviUl.append('<li><a href="#ProMotion'+(j+1)+'">í”„ë¡œëª¨ì…˜ '+(j+1)+'</a></li>');
 
 						if(arrTmp[1]=="I"){// img
 
@@ -5099,7 +5099,7 @@ timer_start();
 								dataType: "html",
 								url: arrTmp[2], //html url
 								data: { },
-								async: false, //µ¿±â Ã³¸®
+								async: false, //ë™ê¸° ì²˜ë¦¬
 								beforeSend : function( xhr ){
 									xhr.overrideMimeType('text/html; charset=UTF-8');
 									// xhr.overrideMimeType('text/html; charset=EUC-KR');
@@ -5127,10 +5127,10 @@ timer_start();
 							});
 						}
 					}
-					//@½ÃÀÛ/Á¤ÁöÀÌµ¿
+					//@ì‹œì‘/ì •ì§€ì´ë™
 					//test
-					//[#4750] [°øÅë] »óÇ°¼­ºñ½º ¼­ºê¸ŞÀÎ ¹× T apps ÀÎµ¦½º ÆäÀÌÁö ¼Ò½º¿À·ù ¼öÁ¤ ¿äÃ» °Ç (¿À·ù¼öÁ¤);
-					$('ul#'+targetId).closest('.slideBox').find('.slideNavi').prepend('<button style="margin:-21px 5px 0 0;" type="button" class="btnStop">Á¤Áö</button><button type="button" class="btnPlay" style="display:none; margin:-21px 5px 0 0; ">Àç»ı</button>');
+					//[#4750] [ê³µí†µ] ìƒí’ˆì„œë¹„ìŠ¤ ì„œë¸Œë©”ì¸ ë° T apps ì¸ë±ìŠ¤ í˜ì´ì§€ ì†ŒìŠ¤ì˜¤ë¥˜ ìˆ˜ì • ìš”ì²­ ê±´ (ì˜¤ë¥˜ìˆ˜ì •);
+					$('ul#'+targetId).closest('.slideBox').find('.slideNavi').prepend('<button style="margin:-21px 5px 0 0;" type="button" class="btnStop">ì •ì§€</button><button type="button" class="btnPlay" style="display:none; margin:-21px 5px 0 0; ">ì¬ìƒ</button>');
 				}
 			}
 		};
@@ -5153,7 +5153,7 @@ timer_start();
 					var arrTmp=val[0].split('||');
 					var tmpHtml="";
 
-					// ¹è³Ê °Ô½Ã ½Ã°£ È®ÀÎ
+					// ë°°ë„ˆ ê²Œì‹œ ì‹œê°„ í™•ì¸
 					if(arrTmp[1]=="I"&&!timeCheck(arrTmp[7])) return;
 					else if(!timeCheck(arrTmp[5])) return;
 
@@ -5192,7 +5192,7 @@ timer_start();
 								if(result){
 
 									wrap.html(result);
-									$('.video_script').attr('tabindex','0');//ºñµğ¿À ÀÚ¸· tabindex»ğÀÔ
+									$('.video_script').attr('tabindex','0');//ë¹„ë””ì˜¤ ìë§‰ tabindexì‚½ì…
 									customBinding();
 								}
 							}
@@ -5220,7 +5220,7 @@ timer_start();
 					var arrTmp=val[0].split('||');
 					var tmpHtml="";
 
-					// ¹è³Ê °Ô½Ã ½Ã°£ È®ÀÎ
+					// ë°°ë„ˆ ê²Œì‹œ ì‹œê°„ í™•ì¸
 					if(!timeCheck(arrTmp[5])) continue;
 
 					if(arrTmp[1]=="I"){// img
@@ -5247,7 +5247,7 @@ timer_start();
 							dataType: "html",
 							url: arrTmp[2], //html url
 							data: { },
-							async: false, //µ¿±â Ã³¸®
+							async: false, //ë™ê¸° ì²˜ë¦¬
 							beforeSend : function( xhr ){
 								xhr.overrideMimeType('text/html; charset=UTF-8');
 								// xhr.overrideMimeType('text/html; charset=EUC-KR');
@@ -5286,15 +5286,15 @@ timer_start();
 						if(arrTmp[1]) strHtml+=arrTmp[1];
 						strHtml+='</span><span class="pointer"></span></strong><span class="aTxt">';
 						if(arrTmp[2]) strHtml+=arrTmp[2];
-						strHtml+='</span></a><div class="sCon"><button type="button" class="btnClose">´İ±â</button></div></li>';
-						wrap.append(strHtml);//±âº»ÅÂ±× »ğÀÔ
+						strHtml+='</span></a><div class="sCon"><button type="button" class="btnClose">ë‹«ê¸°</button></div></li>';
+						wrap.append(strHtml);//ê¸°ë³¸íƒœê·¸ ì‚½ì…
 
 						if(arrTmp[3]){
 							$.ajax({
 								type: "get",
 								dataType: "html",
 								url: arrTmp[3], //html url
-								async: false, //µ¿±â Ã³¸®
+								async: false, //ë™ê¸° ì²˜ë¦¬
 								data: { },
 								beforeSend : function( xhr ){
 									xhr.overrideMimeType('text/html; charset=UTF-8');
@@ -5302,7 +5302,7 @@ timer_start();
 								},
 								success: function( result )
 								{
-									if(result){//»ó¼¼³»¿ª »ğÀÔ
+									if(result){//ìƒì„¸ë‚´ì—­ ì‚½ì…
 										wrap.children('li:last').find('div.sCon').prepend(result);
 									}
 								}
@@ -5314,7 +5314,7 @@ timer_start();
 		}
 	}
 
-	//IE ¹öÀü È®ÀÎ
+	//IE ë²„ì „ í™•ì¸
 	function ieVerCheck() {
 		var _ver = -1;
 		var ua, re;
@@ -5334,7 +5334,7 @@ timer_start();
 	}
 
 	function setWindowLoad(){
-		// Á¦ÈŞ»ç¾È³»/°í°´¼¾ÅÍ ¹Ú½º ³ôÀÌ Á¶Àı //poc/util/common/UT1.3.1.html#
+		// ì œíœ´ì‚¬ì•ˆë‚´/ê³ ê°ì„¼í„° ë°•ìŠ¤ ë†’ì´ ì¡°ì ˆ //poc/util/common/UT1.3.1.html#
 		$("ul.partnerList, ul.wayTip").each(function(){
 			var li=$(this).children('li');
 			var h=0;
@@ -5346,7 +5346,7 @@ timer_start();
 			if(h!=0) li.css("height",h+"px");
 		});
 
-		//¸ŞÀÎ ÆäÀÌÁö ie6/7 Ã¼Å©
+		//ë©”ì¸ í˜ì´ì§€ ie6/7 ì²´í¬
 		var chkUnderIE7=$("#chkUnderIE7");
 		if(chkUnderIE7.length>0){
 			var IEVer=ieVerCheck();
@@ -5366,10 +5366,10 @@ timer_start();
 			}
 		}
 
-		$('.video_script').attr('tabindex','0');//ºñµğ¿À ÀÚ¸· tabindex»ğÀÔ
+		$('.video_script').attr('tabindex','0');//ë¹„ë””ì˜¤ ìë§‰ tabindexì‚½ì…
 	}
 
-	//ÆË¾÷À©µµ¿ìÃ¢ »çÀÌÁî Á¶Àı ½ºÅ©¸³Æ®
+	//íŒì—…ìœˆë„ìš°ì°½ ì‚¬ì´ì¦ˆ ì¡°ì ˆ ìŠ¤í¬ë¦½íŠ¸
 	function resizePopupWindow() {
 		var agent = navigator.userAgent.toLowerCase();
 
@@ -5383,7 +5383,7 @@ timer_start();
 			var strWidth;
 			var strHeight;
 
-			//innerWidth / innerHeight / outerWidth / outerHeight Áö¿ø ºê¶ó¿ìÀú
+			//innerWidth / innerHeight / outerWidth / outerHeight ì§€ì› ë¸Œë¼ìš°ì €
 			if (window.innerWidth && window.innerHeight && window.outerWidth && window.outerHeight) {
 				strWidth = divPopup.outerWidth() + (window.outerWidth - window.innerWidth);
 				strHeight = divPopup.outerHeight() + (window.outerHeight - window.innerHeight);
@@ -5405,10 +5405,10 @@ timer_start();
 		}
 	}
 
-	// Å°º¸µå ¼ıÀÚ Å°·Î selectbox °Ë»ö ¼±ÅÃ
+	// í‚¤ë³´ë“œ ìˆ«ì í‚¤ë¡œ selectbox ê²€ìƒ‰ ì„ íƒ
 	function sltByNumKey(){
 		$('.selectBox.sltByNumKey>div.select:not(.selDisabled)>a').live('keyup',function(e){
-			//¼ıÀÚ¿­ 0 ~ 9 : 48 ~ 57 //Å°ÆĞµå 0 ~ 9 : 96 ~ 105
+			//ìˆ«ìì—´ 0 ~ 9 : 48 ~ 57 //í‚¤íŒ¨ë“œ 0 ~ 9 : 96 ~ 105
 			if((!e.shiftKey && e.keyCode>=48&&e.keyCode<=57)||(e.keyCode>=96&&e.keyCode<=105)){
 				var target=$(this);
 				var num=e.keyCode;
@@ -5442,24 +5442,24 @@ timer_start();
 		});
 	}
 	//##yeshtml5
-	//¹ÙÀÎµùÀÌ ¾ÈµÇ°Å³ª, load½ÃÁ¡¿¡ °­Á¦¹ÙÀÎµùÃß°¡
+	//ë°”ì¸ë”©ì´ ì•ˆë˜ê±°ë‚˜, loadì‹œì ì— ê°•ì œë°”ì¸ë”©ì¶”ê°€
 	function customBinding(){
 		setSlidingContent();
 	}
-	//##À¥Á¢±Ù¼º
-	function setWebAccessibilityFunc(){ //#ÀÌº¥Æ® WA
+	//##ì›¹ì ‘ê·¼ì„±
+	function setWebAccessibilityFunc(){ //#ì´ë²¤íŠ¸ WA
 		$('body > div.accessbility a').bind('keyDown click',function(event){
 			var _cont = $("#content");
 
 			$('html , body').stop().animate({scrollTop : 0});
 			//commonJs.findFocusElements( _cont )[0].focus();
-			_cont.attr('tabIndex', -1).focus();  // 2018.01.15 À¥Á¢±Ù¼º º»¹® ¹Ù·Î°¡±â ¼öÁ¤
+			_cont.attr('tabIndex', -1).focus();  // 2018.01.15 ì›¹ì ‘ê·¼ì„± ë³¸ë¬¸ ë°”ë¡œê°€ê¸° ìˆ˜ì •
 
 			return false;
 		});
 
-		//#WA Á¢±Ù¼º ¼öÁ¤
-		//#ÅÇ Æ÷Ä¿½ºÀÌµ¿ tabindex ¼öÁ¤
+		//#WA ì ‘ê·¼ì„± ìˆ˜ì •
+		//#íƒ­ í¬ì»¤ìŠ¤ì´ë™ tabindex ìˆ˜ì •
 		$('ul[class^="tabType"] > li > a').bind('keyDown click', function(event){
 			var _href = $(this).attr('href');
 			var _tabCont = $('div'+_href);
@@ -5467,7 +5467,7 @@ timer_start();
 			_tabCont.attr('tabindex','0');
 		});
 
-		//# ÀÌ¿ë¾à°ü ½ºÅ©·Ñ¸µ(_¸ğ¹ÙÀÏ¿¡¼­ iframeÀ¸·Î ºÒ·¯¿À´Â ±¸Á¶¶ó ÀÌ°÷¿¡ ½ºÅ©¸³Æ®¸¦ ³ÖÀ½.)
+		//# ì´ìš©ì•½ê´€ ìŠ¤í¬ë¡¤ë§(_ëª¨ë°”ì¼ì—ì„œ iframeìœ¼ë¡œ ë¶ˆëŸ¬ì˜¤ëŠ” êµ¬ì¡°ë¼ ì´ê³³ì— ìŠ¤í¬ë¦½íŠ¸ë¥¼ ë„£ìŒ.)
 		$("ul.termsInfo>li>a").bind("click",function(e){
 			var _href =$(this).attr('href');
 
@@ -5478,28 +5478,28 @@ timer_start();
 		});
 	}
 
-	/* [20190213 TOSÃß°¡] Start */
-	// [20190213 TOSÃß°¡] ½½¶óÀÌµù ¹è³Ê¿¡¼­ Xtractor¿¡ ½ºÅ©¸³Æ® ¼Û½Å
+	/* [20190213 TOSì¶”ê°€] Start */
+	// [20190213 TOSì¶”ê°€] ìŠ¬ë¼ì´ë”© ë°°ë„ˆì—ì„œ Xtractorì— ìŠ¤í¬ë¦½íŠ¸ ì†¡ì‹ 
 	function AjaxGet(xtractorurl, cmpgnNum,execSchdNum, cellNum,msgSerNum,action){
-		var reqCookie = document.cookie;			// 2019.02.26 - Xtractor ±èÇü·¡ ¼ö¼® ¼öÁ¤ ¿äÃ»
-		var hostname = window.location.hostname;	// 2019.02.26 - Xtractor ±èÇü·¡ ¼ö¼® ¼öÁ¤ ¿äÃ»
+		var reqCookie = document.cookie;			// 2019.02.26 - Xtractor ê¹€í˜•ë˜ ìˆ˜ì„ ìˆ˜ì • ìš”ì²­
+		var hostname = window.location.hostname;	// 2019.02.26 - Xtractor ê¹€í˜•ë˜ ìˆ˜ì„ ìˆ˜ì • ìš”ì²­
 
 		$.ajax({
 			url: xtractorurl,
 			type:"GET",
-			data:{"CMPGN_NUM":cmpgnNum, "EXEC_SCHD_NUM":execSchdNum, "CELL_NUM":cellNum, "MSG_SER_NUM":msgSerNum, "ACTION":action, "domain":hostname, "req_cookie":encodeURIComponent(reqCookie) },	// 2019.02.26 - Xtractor ±èÇü·¡ ¼ö¼® ¼öÁ¤ ¿äÃ»
+			data:{"CMPGN_NUM":cmpgnNum, "EXEC_SCHD_NUM":execSchdNum, "CELL_NUM":cellNum, "MSG_SER_NUM":msgSerNum, "ACTION":action, "domain":hostname, "req_cookie":encodeURIComponent(reqCookie) },	// 2019.02.26 - Xtractor ê¹€í˜•ë˜ ìˆ˜ì„ ìˆ˜ì • ìš”ì²­
 			dataType:"jsonp",
 			sucess:function(data){ },
 			error:function(jqXHR, textStatus, errorThrown){ }
 		});
 	}
 
-	// [20190213 TOSÃß°¡] ½½¶óÀÌµù ¹è³Ê¿¡¼­ Xtractor¿¡ ½ºÅ©¸³Æ® ¼Û½Å
+	// [20190213 TOSì¶”ê°€] ìŠ¬ë¼ì´ë”© ë°°ë„ˆì—ì„œ Xtractorì— ìŠ¤í¬ë¦½íŠ¸ ì†¡ì‹ 
 	function xtractorCall(slideUl, curIdx, chkArray){
 		var $li = slideUl.find($('#promotion'+(Number(curIdx)+1)) );
 		var $cmpgnNum = $li.find('input[name="CMPGN_NUM"]');
 
-		if($cmpgnNum.length > 0){    // CMPGN_NUMÀÌ ¾øÀ» °æ¿ì(=TOS Ä·ÆäÀÎÀÌ ¾Æ´Ò°æ¿ì) ¾Æ·¡ ³»¿ë SKIPÇÔ
+		if($cmpgnNum.length > 0){    // CMPGN_NUMì´ ì—†ì„ ê²½ìš°(=TOS ìº í˜ì¸ì´ ì•„ë‹ê²½ìš°) ì•„ë˜ ë‚´ìš© SKIPí•¨
 			var xtractor_url  = "https://xtr.tos.sktelecom.com/xtractor/userScript/TOSCampaignRequest?";
 			var cmpgnNum      = $li.find('input[name="CMPGN_NUM"]').val();
 			var execSchdNum   = $li.find('input[name="EXEC_SCHD_NUM"]').val();
@@ -5508,7 +5508,7 @@ timer_start();
 			var parameter = "CMPGN_NUM="+cmpgnNum+"&EXEC_SCHD_NUM="+execSchdNum+"&CELL_NUM="+cellNum+"&MSG_SER_NUM ="+msgSerNum+"&ACTION=Exp";
 			var check = true;
 
-			for(var i=0;i<chkArray.length;i++){   // ½½¶óÀÌµù ¹è³Ê°¡ 2È¸Â÷ ÀÌ»ó ·Ñ¸µ½Ã¿¡´Â Xtractor ½ºÅ©¸³Æ®¸¦ È£ÃâÇÏÁö ¾Êµµ·Ï Ã³¸®
+			for(var i=0;i<chkArray.length;i++){   // ìŠ¬ë¼ì´ë”© ë°°ë„ˆê°€ 2íšŒì°¨ ì´ìƒ ë¡¤ë§ì‹œì—ëŠ” Xtractor ìŠ¤í¬ë¦½íŠ¸ë¥¼ í˜¸ì¶œí•˜ì§€ ì•Šë„ë¡ ì²˜ë¦¬
 				if(chkArray[i] == cmpgnNum){
 					check = false;
 					break;
@@ -5519,11 +5519,11 @@ timer_start();
 
 			if(check){
 				chkArray[chkArray.length] = cmpgnNum;
-				AjaxGet(xtractor_url, cmpgnNum, execSchdNum, cellNum, msgSerNum, "Exp");	// 2019.02.26 - Xtractor ±èÇü·¡ ¼ö¼® ¼öÁ¤ ¿äÃ»
+				AjaxGet(xtractor_url, cmpgnNum, execSchdNum, cellNum, msgSerNum, "Exp");	// 2019.02.26 - Xtractor ê¹€í˜•ë˜ ìˆ˜ì„ ìˆ˜ì • ìš”ì²­
 			}
 		}
 	}
-	/* [20190213 TOSÃß°¡] END */
+	/* [20190213 TOSì¶”ê°€] END */
 
 	$(window).ready(function()
 	{
@@ -5538,7 +5538,7 @@ timer_start();
 		}
 
 		//libs
-		if($.setIdAndHeadersToTables) $.setIdAndHeadersToTables();//Á¢±Ù¼º °ü·Ã talbe ID/Header ¼¼ÆÃ.
+		if($.setIdAndHeadersToTables) $.setIdAndHeadersToTables();//ì ‘ê·¼ì„± ê´€ë ¨ talbe ID/Header ì„¸íŒ….
 		//
 		setBanner();
 
@@ -5583,16 +5583,16 @@ timer_start();
 
 	$(window).load(function()
 	{
-		//ÀÌ¹ÌÁö ·Îµù ÈÄ µ¿ÀÛ
+		//ì´ë¯¸ì§€ ë¡œë”© í›„ ë™ì‘
 		setUlSlide();
 		setTlive();
-		setPopup(); //selectBox¸¦ Ã¹¹øÂ° Æ÷Ä¿½º ¿ä¼Ò·Î ÀÎ½ÄÇÏÁö¸øÇØ load·Î ÀÌµ¿.
+		setPopup(); //selectBoxë¥¼ ì²«ë²ˆì§¸ í¬ì»¤ìŠ¤ ìš”ì†Œë¡œ ì¸ì‹í•˜ì§€ëª»í•´ loadë¡œ ì´ë™.
 		window.$(window).trigger('after_setPopup');
 		setProduct();
 		setWindowLoad();
 		// setMain();
 		resizePopupWindow();
-		//setCommon()  http://www.tworld.co.kr/normal.do?serviceId=S_PROD6040&viewId=V_CENT6040  À§Ä¡ÀÌµ¿ ready -> load ·Î ÀÌµ¿
+		//setCommon()  http://www.tworld.co.kr/normal.do?serviceId=S_PROD6040&viewId=V_CENT6040  ìœ„ì¹˜ì´ë™ ready -> load ë¡œ ì´ë™
 		//setCommon();
 	});
 

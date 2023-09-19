@@ -1,73 +1,73 @@
-// 
+ï»¿// 
 //#2021.05.31
-//[OP002-14702] [UX/PUB] [myT] (O-2105-016-01) T¿ùµå(À¥/¾Û) À¯¼± ÇØÁö ½ÅÃ» ÇÁ·Î¼¼½º º¯°æ 
+//[OP002-14702] [UX/PUB] [myT] (O-2105-016-01) Tì›”ë“œ(ì›¹/ì•±) ìœ ì„  í•´ì§€ ì‹ ì²­ í”„ë¡œì„¸ìŠ¤ ë³€ê²½ 
 
 //#2019.10.22
-//2019.10.22 À¥Á¢±Ù¼º ¼öÁ¤
+//2019.10.22 ì›¹ì ‘ê·¼ì„± ìˆ˜ì •
 
 //#2019.09.16
-//2019.09.16 À¥Á¢±Ù¼º ¼öÁ¤
+//2019.09.16 ì›¹ì ‘ê·¼ì„± ìˆ˜ì •
 
 //#2019.09.03
-//[OP002-3723][myT] [UX/PUB] (O-1909-013-01) myT À¯¼± ¼³Ä¡Àå¼Ò º¯°æ ½Ã, ¼³Ä¡Èñ¸ÁÀÏÀÚ ´Ş·Â ¹Ì³ëÃâ ¿À·ù ¼öÁ¤
+//[OP002-3723][myT] [UX/PUB] (O-1909-013-01) myT ìœ ì„  ì„¤ì¹˜ì¥ì†Œ ë³€ê²½ ì‹œ, ì„¤ì¹˜í¬ë§ì¼ì ë‹¬ë ¥ ë¯¸ë…¸ì¶œ ì˜¤ë¥˜ ìˆ˜ì •
 
 //#2019.07.17
-//2019.07.17 À¥Á¢±Ù¼º ¼öÁ¤
+//2019.07.17 ì›¹ì ‘ê·¼ì„± ìˆ˜ì •
 
 //#2017.12.11
-//[#5510] [myT] 17³â Åë½Å°ú±İ¼­ºñ½º °íµµÈ­ ÇÁ·ÎÁ§Æ® °³¹ß ¿äÃ» (¿ä°ÇÃß°¡) - ¿øº¹Ã³¸®µÊ
+//[#5510] [myT] 17ë…„ í†µì‹ ê³¼ê¸ˆì„œë¹„ìŠ¤ ê³ ë„í™” í”„ë¡œì íŠ¸ ê°œë°œ ìš”ì²­ (ìš”ê±´ì¶”ê°€) - ì›ë³µì²˜ë¦¬ë¨
 
 
 //#2017.08.21
-// [#5306] [myT] ¼³Ä¡Àå¼Ò º¯°æ ½ÅÃ» È­¸é Ä¶¸°´õ ¿À·ù ¼öÁ¤ (¿ä°ÇÃß°¡)
+// [#5306] [myT] ì„¤ì¹˜ì¥ì†Œ ë³€ê²½ ì‹ ì²­ í™”ë©´ ìº˜ë¦°ë” ì˜¤ë¥˜ ìˆ˜ì • (ìš”ê±´ì¶”ê°€)
 
 //#2017.08.04
-//[#5269] [°øÅë] 8/10ÀÏ À¥Á¢±Ù¼º Àû¿ë °øÅëÆÄÀÏ ¹èÆ÷ (¿À·ù¼öÁ¤)
+//[#5269] [ê³µí†µ] 8/10ì¼ ì›¹ì ‘ê·¼ì„± ì ìš© ê³µí†µíŒŒì¼ ë°°í¬ (ì˜¤ë¥˜ìˆ˜ì •)
 
 
 // #2017.06.09
-// [À¥Á¢±Ù¼º] #myT WA
+// [ì›¹ì ‘ê·¼ì„±] #myT WA
 /*
 $(document).ready(function(){
 	$.setIdAndHeadersToTables();
 });
 */
 /*
-¹èÆ÷¹öÁ¯ 17.01.10
+ë°°í¬ë²„ì ¼ 17.01.10
 */
-//17.01.10 [#4730] [myT]»ç¿ë·®±×·¡ÇÁ°¡³ëÃâµÇÁö¾Ê´Â¿¡·¯ (¿ä°ÇÃß°¡)
+//17.01.10 [#4730] [myT]ì‚¬ìš©ëŸ‰ê·¸ë˜í”„ê°€ë…¸ì¶œë˜ì§€ì•ŠëŠ”ì—ëŸ¬ (ìš”ê±´ì¶”ê°€)
 
 //http://code.jquery.com/jquery-1.11.3.min.js
 
-// 2016.03.23 ¼öÁ¤
-//114 ¼öÁ¤ hdrs °¡ ³ÎÀÎ°æ¿ì¿¡ ie7¿¡¼­ ¿¡·¯ ¹ß»ı ÇØ¼­ if¹®À» °É¾ú´Ù.
+// 2016.03.23 ìˆ˜ì •
+//114 ìˆ˜ì • hdrs ê°€ ë„ì¸ê²½ìš°ì— ie7ì—ì„œ ì—ëŸ¬ ë°œìƒ í•´ì„œ ifë¬¸ì„ ê±¸ì—ˆë‹¤.
 
-// 2016.04.20 $.fn.calendarInit setCurrentDate Ãß°¡
+// 2016.04.20 $.fn.calendarInit setCurrentDate ì¶”ê°€
 
 // 2016.04.29
-// $.fn.calendarInit setCurrentDate > setDate º¯°æ
-// $.fn.calendarInit setToday ¼öÁ¤
+// $.fn.calendarInit setCurrentDate > setDate ë³€ê²½
+// $.fn.calendarInit setToday ìˆ˜ì •
 
 // 2016.07.11
-// prevYear, nextYear Ãß°¡
+// prevYear, nextYear ì¶”ê°€
 
 // 2016.08.05
-// commonJs.Jessture ÀÌº¥Æ® º¯°æ
+// commonJs.Jessture ì´ë²¤íŠ¸ ë³€ê²½
 
 // 2016.08.11
-// getToday Ãß°¡
+// getToday ì¶”ê°€
 
 // 2016.09.30
-// ¼±ÅÃµÈ ³¯Â¥¿¡ title="¼±ÅÃ" »ğÀÔ Ãß°¡
+// ì„ íƒëœ ë‚ ì§œì— title="ì„ íƒ" ì‚½ì… ì¶”ê°€
 
 (function ($, window)
 {
 
-//class°ª¿¡ tableJs°¡ ÀÖ´Â Å×ÀÌºí¸¸ °ª¼¼ÆÃ.(param°ªÀÌ ¾øÀ» ½Ã)
-//Àû¿ëÇÒ table class°ª º¯°æ ½Ã param¿¡ class¸íÀ» ³Ñ±è.
-//ÄÚµù ½Ã th/td ±¸ºĞ ¹× scope, colspan, rowspan °ªÀ» Á¤È®È÷ ¼¼ÆÃ.
-//ÄÚµù ½Ã th¿¡ id°ªÀ» ³ÖÀ¸¸é ±× °ªÀ¸·Î ¼¼ÆÃµÊ.
-//table¿¡ headers,id »ğÀÔ
+//classê°’ì— tableJsê°€ ìˆëŠ” í…Œì´ë¸”ë§Œ ê°’ì„¸íŒ….(paramê°’ì´ ì—†ì„ ì‹œ)
+//ì ìš©í•  table classê°’ ë³€ê²½ ì‹œ paramì— classëª…ì„ ë„˜ê¹€.
+//ì½”ë”© ì‹œ th/td êµ¬ë¶„ ë° scope, colspan, rowspan ê°’ì„ ì •í™•íˆ ì„¸íŒ….
+//ì½”ë”© ì‹œ thì— idê°’ì„ ë„£ìœ¼ë©´ ê·¸ ê°’ìœ¼ë¡œ ì„¸íŒ…ë¨.
+//tableì— headers,id ì‚½ì…
 	$.setIdAndHeadersToTables=function(param){
 		var prefixId="tb"// id = prefixId-tbIdx-thIdx
 		var tbIdx=0;
@@ -96,7 +96,7 @@ $(document).ready(function(){
 			});
 			//-------------------------------------------------
 
-			//--- ÃÊ±âÈ­ table array ----------------------------
+			//--- ì´ˆê¸°í™” table array ----------------------------
 			var tableArr=new Array(rowCnt);
 			for(var i=0;i<rowCnt;i++) tableArr[i]=new Array(colCnt);
 			//-------------------------------------------------
@@ -145,7 +145,7 @@ $(document).ready(function(){
 
 			//--- set headers ---------------------------------
 			var setHeaders=function(id,scp,i,j){
-				var arrIndexOf=function(arr,str){//ie7 array¿¡¼­ indexOf ÀÛµ¿¾ÈÇÔ.
+				var arrIndexOf=function(arr,str){//ie7 arrayì—ì„œ indexOf ì‘ë™ì•ˆí•¨.
 					for(var i=0;i<arr.length;i++){
 						if(arr[i]==str) return true;
 					}
@@ -157,7 +157,7 @@ $(document).ready(function(){
 							if(tableArr[i][k].tagName=="TH" || tableArr[i][k].tagName=="th") {
 								var childScp=$(tableArr[i][k]).attr("scope");
 								if(childScp&&childScp.indexOf("row")==-1) {
-									setHeaders(id+" "+tableArr[i][k].id,childScp,i,k); //Àç±Í
+									setHeaders(id+" "+tableArr[i][k].id,childScp,i,k); //ì¬ê·€
 								}
 								continue;
 							}
@@ -167,7 +167,7 @@ $(document).ready(function(){
 
 						for(var x=0;x<idArr.length;x++)
 						{
-							// ¼öÁ¤ hdrs °¡ ³ÎÀÎ°æ¿ì¿¡ ie7¿¡¼­ ¿¡·¯ ¹ß»ı ÇØ¼­ if¹®À» °É¾ú´Ù.
+							// ìˆ˜ì • hdrs ê°€ ë„ì¸ê²½ìš°ì— ie7ì—ì„œ ì—ëŸ¬ ë°œìƒ í•´ì„œ ifë¬¸ì„ ê±¸ì—ˆë‹¤.
 							if( hdrs )
 							{
 								if(hdrs && arrIndexOf(hdrs.split(" "),idArr[x])){
@@ -190,7 +190,7 @@ $(document).ready(function(){
 						if(tableArr[k][j].tagName=="TH" || tableArr[k][j].tagName=="th") {
 							var childScp=$(tableArr[k][j]).attr("scope");
 							if(childScp&&childScp.indexOf("col")==-1) {
-								setHeaders(id+" "+tableArr[k][j].id,childScp,k,j); //Àç±Í
+								setHeaders(id+" "+tableArr[k][j].id,childScp,k,j); //ì¬ê·€
 							}
 							continue;
 						}
@@ -239,23 +239,23 @@ $(document).ready(function(){
  @since		:
 
  $.fn.calendarInit({
-		target : ÁöÁ¤ ¿ä¼Ò ´ÙÀ½¿¡ ÀÏÀÚ°¡ Ç¥½ÃµÇ´Â Å×ÀÌºíÀÌ »ı¼ºµÈ´Ù
+		target : ì§€ì • ìš”ì†Œ ë‹¤ìŒì— ì¼ìê°€ í‘œì‹œë˜ëŠ” í…Œì´ë¸”ì´ ìƒì„±ëœë‹¤
 		start 	: { year : 2015 , month : 1, day : 1 },
 		current : { year : 2016 , month : 1, day : 10 },
-		end 	: { year : 2017 , month : 8, day : 1 } })	:	Ä¶¸°´õ »ı¼º ÇÔ¼ö optionÀ¸·Î ½ÃÀÛ°ª ÇöÀç°ª ¸¶Áö¸· °ªÀÌ µé¾î°£´Ù.
- first													:	optionÀÇ ½ÃÀÛ°ª ÀÏ·Î ÀÌµ¿
- end														:	optionÀÇ ¸¶Áö¸· ÀÏ·Î ÀÌµ¿
- prev													:	optionÀÇ ÇöÀçÀÇ ÀÌÀü´Ş ÀÌµ¿
- next													:	optionÀÇ ÇöÀçÀÇ ´ÙÀ½´Ş ÀÌµ¿
- setVisible((true&false))								:	´Ş·ÂÀÇ Ç¥½Ã ¿©ºÎ¸¦ ¼³Á¤(true,false)
- getVisible() return (true&false)						:	´Ş·ÂÀÇ Ç¥½Ã ¿©ºÎ¸¦ ¸®ÅÏ(true,false)
+		end 	: { year : 2017 , month : 8, day : 1 } })	:	ìº˜ë¦°ë” ìƒì„± í•¨ìˆ˜ optionìœ¼ë¡œ ì‹œì‘ê°’ í˜„ì¬ê°’ ë§ˆì§€ë§‰ ê°’ì´ ë“¤ì–´ê°„ë‹¤.
+ first													:	optionì˜ ì‹œì‘ê°’ ì¼ë¡œ ì´ë™
+ end														:	optionì˜ ë§ˆì§€ë§‰ ì¼ë¡œ ì´ë™
+ prev													:	optionì˜ í˜„ì¬ì˜ ì´ì „ë‹¬ ì´ë™
+ next													:	optionì˜ í˜„ì¬ì˜ ë‹¤ìŒë‹¬ ì´ë™
+ setVisible((true&false))								:	ë‹¬ë ¥ì˜ í‘œì‹œ ì—¬ë¶€ë¥¼ ì„¤ì •(true,false)
+ getVisible() return (true&false)						:	ë‹¬ë ¥ì˜ í‘œì‹œ ì—¬ë¶€ë¥¼ ë¦¬í„´(true,false)
  **/
 
 (function ($, window)
 {
 	// var str =
-	// '<table summary="ÀÏ,¿ù,È­,¼ö,¸ñ,±İ,Åä µî ´Ş·ÂÁ¤º¸¸¦ È®ÀÎÇÏ½Ç ¼ö ÀÖ½À´Ï´Ù.">'+
-	// 	'<caption>´Ş·Â Á¤º¸</caption>'+
+	// '<table summary="ì¼,ì›”,í™”,ìˆ˜,ëª©,ê¸ˆ,í†  ë“± ë‹¬ë ¥ì •ë³´ë¥¼ í™•ì¸í•˜ì‹¤ ìˆ˜ ìˆìŠµë‹ˆë‹¤.">'+
+	// 	'<caption>ë‹¬ë ¥ ì •ë³´</caption>'+
 	// 	'<colgroup>'+
 	// 		'<col style="width:15%">'+
 	// 		'<col style="width:14%">'+
@@ -267,13 +267,13 @@ $(document).ready(function(){
 	// 	'</colgroup>'+
 	// 	'<thead>'+
 	// 		'<tr>'+
-	// 			'<th scope="col">ÀÏ</th>'+
-	// 			'<th scope="col">¿ù</th>'+
-	// 			'<th scope="col">È­</th>'+
-	// 			'<th scope="col">¼ö</th>'+
-	// 			'<th scope="col">¸ñ</th>'+
-	// 			'<th scope="col">±İ</th>'+
-	// 			'<th scope="col">Åä</th>'+
+	// 			'<th scope="col">ì¼</th>'+
+	// 			'<th scope="col">ì›”</th>'+
+	// 			'<th scope="col">í™”</th>'+
+	// 			'<th scope="col">ìˆ˜</th>'+
+	// 			'<th scope="col">ëª©</th>'+
+	// 			'<th scope="col">ê¸ˆ</th>'+
+	// 			'<th scope="col">í† </th>'+
 	// 		'</tr>'+
 	// 	'</thead>'+
 	// 	'<tbody>'+
@@ -335,8 +335,8 @@ $(document).ready(function(){
 	// '</table>';
 
 	function str(order){ //#myT WA
-		var str = '<table summary="ÀÏ,¿ù,È­,¼ö,¸ñ,±İ,Åä µî ' + order +' ´Ş·ÂÁ¤º¸¸¦ È®ÀÎÇÏ½Ç ¼ö ÀÖ½À´Ï´Ù.">'+
-			'<caption>'+ order +' ´Ş·Â Á¤º¸</caption>'+
+		var str = '<table summary="ì¼,ì›”,í™”,ìˆ˜,ëª©,ê¸ˆ,í†  ë“± ' + order +' ë‹¬ë ¥ì •ë³´ë¥¼ í™•ì¸í•˜ì‹¤ ìˆ˜ ìˆìŠµë‹ˆë‹¤.">'+
+			'<caption>'+ order +' ë‹¬ë ¥ ì •ë³´</caption>'+
 			'<colgroup>'+
 			'<col style="width:15%">'+
 			'<col style="width:14%">'+
@@ -348,13 +348,13 @@ $(document).ready(function(){
 			'</colgroup>'+
 			'<thead>'+
 			'<tr>'+
-			'<th scope="col">ÀÏ</th>'+
-			'<th scope="col">¿ù</th>'+
-			'<th scope="col">È­</th>'+
-			'<th scope="col">¼ö</th>'+
-			'<th scope="col">¸ñ</th>'+
-			'<th scope="col">±İ</th>'+
-			'<th scope="col">Åä</th>'+
+			'<th scope="col">ì¼</th>'+
+			'<th scope="col">ì›”</th>'+
+			'<th scope="col">í™”</th>'+
+			'<th scope="col">ìˆ˜</th>'+
+			'<th scope="col">ëª©</th>'+
+			'<th scope="col">ê¸ˆ</th>'+
+			'<th scope="col">í† </th>'+
 			'</tr>'+
 			'</thead>'+
 			'<tbody>'+
@@ -432,14 +432,14 @@ $(document).ready(function(){
 			target		: 	null,
 			year		: 	null ,
 			month		: 	null,
-			start 	: {  }, 		//´Ş·Â ½ÃÀÛÀÏ
-			current : {},		//´Ş·Â ÇöÀçÀÏ
+			start 	: {  }, 		//ë‹¬ë ¥ ì‹œì‘ì¼
+			current : {},		//ë‹¬ë ¥ í˜„ì¬ì¼
 			end 	: {},
 			selectedDay : [], // 2021.05.31
 			isLimit : false // 2021.05.31
 		};
 
-		// 2021.05.31 Ãß°¡ START
+		// 2021.05.31 ì¶”ê°€ START
 		if (calendar.attr("data-selected-day") !== undefined && calendar.attr("data-selected-day") !== '') {
 			_option.selectedDay = calendar.attr("data-selected-day").split(',');
 			_option.isLimit = true;
@@ -457,27 +457,27 @@ $(document).ready(function(){
 			calendar.find('.btn.clearfix > .today').remove();
 			calendar.find('.btn.clearfix > .close').css({'width' : '100%'});
 		}
-		// 2021.05.31 Ãß°¡ END
+		// 2021.05.31 ì¶”ê°€ END
 
 		var option = $.extend(defaults, _option);
-		var _cy = option.current.year;		//	ÇöÀç ³âµµ
-		var _cm = option.current.month;		//	ÇöÀç ´Ş
-		var _cd = option.current.day;		//	ÇöÀç ÀÏ
+		var _cy = option.current.year;		//	í˜„ì¬ ë…„ë„
+		var _cm = option.current.month;		//	í˜„ì¬ ë‹¬
+		var _cd = option.current.day;		//	í˜„ì¬ ì¼
 		var _ty = _cy;
 		var _tm = _cm;
 		var _td = _cd;
 
 		var _sy , _sm , _sd = null;
 		if( option.start ){
-			_sy = option.start.year;		//	½ÃÀÛ ³âµµ
-			_sm = option.start.month;		//	½ÃÀÛ ´Ş
-			_sd = option.start.day;			//	½ÃÀÛ ÀÏ
+			_sy = option.start.year;		//	ì‹œì‘ ë…„ë„
+			_sm = option.start.month;		//	ì‹œì‘ ë‹¬
+			_sd = option.start.day;			//	ì‹œì‘ ì¼
 		}
 		var _ey , _em , _ed = null;
 		if( option.end ){
-			_ey = option.end.year;			//	¸¶Áö¸· ³âµµ
-			_em = option.end.month;			//	¸¶Áö¸· ´Ş
-			_ed = option.end.day;			//	¸¶Áö¸· ÀÏ
+			_ey = option.end.year;			//	ë§ˆì§€ë§‰ ë…„ë„
+			_em = option.end.month;			//	ë§ˆì§€ë§‰ ë‹¬
+			_ed = option.end.day;			//	ë§ˆì§€ë§‰ ì¼
 		}
 
 		var _today = 0;
@@ -486,11 +486,11 @@ $(document).ready(function(){
 		var _target = option.target;
 		//#myT WA
 		if (calIdx == "cal-idx0") {
-			_target.after(str('½ÃÀÛÀÏ'));
+			_target.after(str('ì‹œì‘ì¼'));
 		} else if (calIdx == "cal-idx1") {
-			_target.after(str('Á¾·áÀÏ'));
+			_target.after(str('ì¢…ë£Œì¼'));
 		} else {
-			_target.after(str('')); // [OP002-3723][myT] [UX/PUB] (O-1909-013-01) myT À¯¼± ¼³Ä¡Àå¼Ò º¯°æ ½Ã, ¼³Ä¡Èñ¸ÁÀÏÀÚ ´Ş·Â ¹Ì³ëÃâ ¿À·ù ¼öÁ¤
+			_target.after(str('')); // [OP002-3723][myT] [UX/PUB] (O-1909-013-01) myT ìœ ì„  ì„¤ì¹˜ì¥ì†Œ ë³€ê²½ ì‹œ, ì„¤ì¹˜í¬ë§ì¼ì ë‹¬ë ¥ ë¯¸ë…¸ì¶œ ì˜¤ë¥˜ ìˆ˜ì •
 		}
 
 		// if( _target ){
@@ -540,13 +540,13 @@ $(document).ready(function(){
 					cal.find('tbody>tr:eq('+(row-1)+')').each(function()
 					{
 						var cc = $(this).find('td:eq('+(column-1)+')');
-						// 2021.05.31 º¯°æ START
+						// 2021.05.31 ë³€ê²½ START
 						if (option.isLimit) {
 							if (option.selectedDay.indexOf(''.concat(y, _numCheck(m), _numCheck(d))) !== -1) {
 								if (option.selectedDay[0] == y + _numCheck(m) + _numCheck(d)) {
 									_checkToday(cc);
 									cc.empty();
-									cc.html('<a href="#" title="¼±ÅÃµÊ">' + d + '</a>');
+									cc.html('<a href="#" title="ì„ íƒë¨">' + d + '</a>');
 								} else {
 									cc.empty();
 									cc.html('<a href="#" title="">' + d + '</a>');
@@ -556,19 +556,19 @@ $(document).ready(function(){
 								cc.html(d);
 							}
 						} else {
-							// today ¼³Á¤À» ¾î¶»°Ô ÇÏ³Ä¿¡ µû¶ó ´Ş¶óÁü?
+							// today ì„¤ì •ì„ ì–´ë–»ê²Œ í•˜ëƒì— ë”°ë¼ ë‹¬ë¼ì§?
 							if (d == day) {
 								_checkToday(cc);
 								//tClass = false;
 								//cc.addClass('today');
 								cc.empty();
-								cc.html('<a href="#" title="¼±ÅÃµÊ">' + d + '</a>'); // 2019.10.22 À¥Á¢±Ù¼º ¼öÁ¤
+								cc.html('<a href="#" title="ì„ íƒë¨">' + d + '</a>'); // 2019.10.22 ì›¹ì ‘ê·¼ì„± ìˆ˜ì •
 							} else {
 								cc.empty();
-								cc.html('<a href="#" title="">' + d + '</a>'); // 2019.10.22 À¥Á¢±Ù¼º ¼öÁ¤
+								cc.html('<a href="#" title="">' + d + '</a>'); // 2019.10.22 ì›¹ì ‘ê·¼ì„± ìˆ˜ì •
 							}
 						}
-						// 2021.05.31 º¯°æ END
+						// 2021.05.31 ë³€ê²½ END
 
 						var a = cc.children('a');
 						a.unbind().bind( 'click' , function( e )
@@ -603,7 +603,7 @@ $(document).ready(function(){
 			}
 			_today = to;
 			to.addClass('today');
-			to.find('a').attr('title','¼±ÅÃµÊ'); // 2019.09.16 À¥Á¢±Ù¼º ¼öÁ¤
+			to.find('a').attr('title','ì„ íƒë¨'); // 2019.09.16 ì›¹ì ‘ê·¼ì„± ìˆ˜ì •
 			//to.focus();
 		};
 
@@ -701,23 +701,23 @@ $(document).ready(function(){
 
 		var _setStartDay = function( option )
 		{
-			_sy = option.year;			//	½ÃÀÛ ³âµµ
-			_sm = option.month;		//	½ÃÀÛ ´Ş
-			_sd = option.day;			//	½ÃÀÛ ÀÏ
+			_sy = option.year;			//	ì‹œì‘ ë…„ë„
+			_sm = option.month;		//	ì‹œì‘ ë‹¬
+			_sd = option.day;			//	ì‹œì‘ ì¼
 		};
 
 		var _setEndDay = function( option )
 		{
-			_ey = option.year;			//	¸¶Áö¸· ³âµµ
-			_em = option.month;		//	¸¶Áö¸· ´Ş
-			_ed = option.day;			//	¸¶Áö¸· ÀÏ
+			_ey = option.year;			//	ë§ˆì§€ë§‰ ë…„ë„
+			_em = option.month;		//	ë§ˆì§€ë§‰ ë‹¬
+			_ed = option.day;			//	ë§ˆì§€ë§‰ ì¼
 		};
 
 		var _setToday = function( option )
 		{
-			_ty = option.year;			//¿À´Ã ³âµµ
-			_tm = option.month;			//¿À´Ã ´Ş
-			_td = option.day;			//¿À´Ã ÀÏ
+			_ty = option.year;			//ì˜¤ëŠ˜ ë…„ë„
+			_tm = option.month;			//ì˜¤ëŠ˜ ë‹¬
+			_td = option.day;			//ì˜¤ëŠ˜ ì¼
 			_todayfunc();
 		};
 
@@ -750,13 +750,13 @@ $(document).ready(function(){
 		//	},1);
 		//});
 
-		// 2021.05.31 º¯°æ START
+		// 2021.05.31 ë³€ê²½ START
 		if (option.isLimit) {
 			calView( _sy , _sm , _sd);
 		} else {
 			calView( _cy , _cm , _cd);
 		}
-		// 2021.05.31 º¯°æ END
+		// 2021.05.31 ë³€ê²½ END
 
 		_setVisible(true);
 
@@ -808,7 +808,7 @@ $(document).ready(function(){
 	}
 	commonJs = window.commonJs;
 
-	// ¿øÇü Â÷Æ® /poc/myt/MY1.2.2.1.html
+	// ì›í˜• ì°¨íŠ¸ /poc/myt/MY1.2.2.1.html
 	commonJs.pieChart = function( target , cn , total )
 	{
 		var cGraph = $(target).children('.cGraph');
@@ -827,14 +827,14 @@ $(document).ready(function(){
 		if( cn == total ){
 			n = 0;
 		}
-		//17.01.10 [#4730] [myT]»ç¿ë·®±×·¡ÇÁ°¡³ëÃâµÇÁö¾Ê´Â¿¡·¯ (¿ä°ÇÃß°¡)
+		//17.01.10 [#4730] [myT]ì‚¬ìš©ëŸ‰ê·¸ë˜í”„ê°€ë…¸ì¶œë˜ì§€ì•ŠëŠ”ì—ëŸ¬ (ìš”ê±´ì¶”ê°€)
 		if( n > 0 ){
 			n = 0;
 		}
 		cGraph.css({'background-position':'0px '+n+'px'});
 	};
 
-	//ÄŞ¸¶Âï±â
+	//ì½¤ë§ˆì°ê¸°
 	function numberFormat(num)
 	{
 		var pattern = /(-?[0-9]+)([0-9]{3})/;
@@ -844,15 +844,15 @@ $(document).ready(function(){
 		return num;
 	}
 
-	//ÄŞ¸¶Á¦°Å
+	//ì½¤ë§ˆì œê±°
 	function unNumberFormat(num)
 	{
 		return (num.replace(/\,/g,""));
 	}
 
-	// ¸·´ë±×·¡ÇÁ myt/MY1.2.5.1T.html
+	// ë§‰ëŒ€ê·¸ë˜í”„ myt/MY1.2.5.1T.html
 	var imgArr = [];
-	// ÆĞÅÏ °æ·Î
+	// íŒ¨í„´ ê²½ë¡œ
 	imgArr[0] = '/poc/img/myt/graph_pattern_1.png';
 	imgArr[1] = '/poc/img/myt/graph_pattern_2.png';
 	imgArr[2] = '/poc/img/myt/graph_pattern_3.png';
@@ -869,7 +869,7 @@ $(document).ready(function(){
 	commonJs.useListChart = function(  arr )
 	{
 		if( !document.createElement('canvas').getContext ) {
-			// Äµ¹ö½º »ç¿ë °¡´É
+			// ìº”ë²„ìŠ¤ ì‚¬ìš© ê°€ëŠ¥
 			return;
 		}
 		var limit = arguments[1];
@@ -884,7 +884,7 @@ $(document).ready(function(){
 			obj['m'+i].src = imgArr[i];
 			obj['m'+i].onload = endF;
 		}
-		// ÀÌ¹ÌÁö·Îµå ¹× ·Îµå ¿Ï·áÈÄ ½ÇÇà
+		// ì´ë¯¸ì§€ë¡œë“œ ë° ë¡œë“œ ì™„ë£Œí›„ ì‹¤í–‰
 		var cc = 0;
 		function endF(){
 			cc++;
@@ -897,7 +897,7 @@ $(document).ready(function(){
 		var can = target[0];
 		var context = can.getContext("2d");
 
-		// ÃÊ±âÈ­
+		// ì´ˆê¸°í™”
 		context.clearRect(0, 0, can.width, can.height);
 		function drawShape(ctx, xoff, yoff , th, tw, num)
 		{
@@ -911,16 +911,16 @@ $(document).ready(function(){
 			context.font="bold 14px Malgun Gothic";
 			context.textAlign = 'center';
 
-			context.fillText(numberFormat( String(tw) )+"¿ø",xoff+205, (curveMax-th)+textH , 100);
-			// µ¥ÀÌÅÍ°¡ 0ÀÌ¸é ±×¸®Áö ¾Ê´Â´Ù.
+			context.fillText(numberFormat( String(tw) )+"ì›",xoff+205, (curveMax-th)+textH , 100);
+			// ë°ì´í„°ê°€ 0ì´ë©´ ê·¸ë¦¬ì§€ ì•ŠëŠ”ë‹¤.
 			if( th == 0){
 				//return;
 			}
 
-			// th´Â Â÷Æ®ÀÇ ³ôÀÌ°ªÀ» º¯¼ö·Î ¹Ş¾Æ¼­ º¯È­ ½ÃÅ°¸ç ±âÁ¸ Ä¿ºê °è»ê°ª¿¡ Ãß°¡
+			// thëŠ” ì°¨íŠ¸ì˜ ë†’ì´ê°’ì„ ë³€ìˆ˜ë¡œ ë°›ì•„ì„œ ë³€í™” ì‹œí‚¤ë©° ê¸°ì¡´ ì»¤ë¸Œ ê³„ì‚°ê°’ì— ì¶”ê°€
 
 			/*
-            // 12¿ù ¹öÀü »ó¿ë ¹èÆ÷ Àü ¿øº¹µÊ.
+            // 12ì›” ë²„ì „ ìƒìš© ë°°í¬ ì „ ì›ë³µë¨.
             var _mx=144;
               ctx.moveTo(118 + xoff, 501 + yoff);
               ctx.bezierCurveTo(_mx + xoff, 501 + yoff, _mx + xoff, _mx + yoff+(curveMax-th), 173 + xoff, _mx + yoff+(curveMax-th));
@@ -934,12 +934,12 @@ $(document).ready(function(){
 			context.fillStyle=context.createPattern( obj['m'+num] , "repeat");
 			context.fill();
 		}
-		//#¿øº» var mtx = 90;
+		//#ì›ë³¸ var mtx = 90;
 		var mtx = 90;
 		var mty = 94;
-		// ±âÈ¹ÂÊ¿¡¼­ ¾Ö±âÇÏ±æ ±İ¾×Àº 50¸¸¿øÀ» ³Ñ±æ¼ö ¾ø´Ù°í ÇÔ
+		// ê¸°íšìª½ì—ì„œ ì• ê¸°í•˜ê¸¸ ê¸ˆì•¡ì€ 50ë§Œì›ì„ ë„˜ê¸¸ìˆ˜ ì—†ë‹¤ê³  í•¨
 		var maxPoint = 500000;
-		// °î¼±ÀÌ ±×·ÁÁö´Â ³ôÀÌÀÇ ÃÖ´ëÄ¡°¡ 360ÀÌ´Ù ÀÌ°ªÀ» ±âÁØÀ¸·Î °è»êÀÌ ÀÌ·ç¾îÁø´Ù.
+		// ê³¡ì„ ì´ ê·¸ë ¤ì§€ëŠ” ë†’ì´ì˜ ìµœëŒ€ì¹˜ê°€ 360ì´ë‹¤ ì´ê°’ì„ ê¸°ì¤€ìœ¼ë¡œ ê³„ì‚°ì´ ì´ë£¨ì–´ì§„ë‹¤.
 		var curveMax = 360;
 
 		function drawStart()
@@ -952,11 +952,11 @@ $(document).ready(function(){
 				if( won <= 100000){
 					tmp = ((won/100000)*257);
 				}else if( won <= 300000 ){
-					// Â÷Æ®ÀÇ ´«±İ°£ °£°İÀ» °è»êÇÏ±â À§ÇØ¼­ °ªÀ» »«´Ù (ÀüÃ¼ ºñÀ²ÀÌ ´Ù¸§)
+					// ì°¨íŠ¸ì˜ ëˆˆê¸ˆê°„ ê°„ê²©ì„ ê³„ì‚°í•˜ê¸° ìœ„í•´ì„œ ê°’ì„ ëº€ë‹¤ (ì „ì²´ ë¹„ìœ¨ì´ ë‹¤ë¦„)
 					won -=100000;
 					tmp = ((won/200000)*52)+257;
 					won += 100000;
-					// Â÷Æ®¿¡ Ç¥½ÃµÇ´Â ±İ¾×¶§¹®¿¡ »« ±İ¾×À» ´Ù½Ã ´õÇØÁØ´Ù. (ÀüÃ¼ ºñÀ²ÀÌ ´Ù¸§)
+					// ì°¨íŠ¸ì— í‘œì‹œë˜ëŠ” ê¸ˆì•¡ë•Œë¬¸ì— ëº€ ê¸ˆì•¡ì„ ë‹¤ì‹œ ë”í•´ì¤€ë‹¤. (ì „ì²´ ë¹„ìœ¨ì´ ë‹¤ë¦„)
 				}else{
 					won -=300000;
 					tmp = ((won/200000)*52)+307;
@@ -967,15 +967,15 @@ $(document).ready(function(){
 					mty = 264;
 					tmp = (won/limit)*207;
 				}
-				//#¿øº» drawShape(context,(i*170),0,tmp,won,i);
-				// 12°³¿ù drawShape(context,(i*90),0,tmp,won,i);
+				//#ì›ë³¸ drawShape(context,(i*170),0,tmp,won,i);
+				// 12ê°œì›” drawShape(context,(i*90),0,tmp,won,i);
 				drawShape(context,(i*170),0,tmp,won,i);
 			}
 		}
 	};
 
 	/*
-	// common graph Ãß°¡
+	// common graph ì¶”ê°€
 	$.fn.pieChart = function( cn , total)
 	{
 		var cGraph = $(this).children('.cGraph');
@@ -1001,7 +1001,7 @@ $(document).ready(function(){
 		target.bind('touchstart , mousedown' , function(e)
 		{
 			if(e.type == 'mousedown'){
-				// input ÇÊµå Ã¼Å©
+				// input í•„ë“œ ì²´í¬
 				if( $(e.target).filter('input').length == 0){
 					e.preventDefault();
 				}
