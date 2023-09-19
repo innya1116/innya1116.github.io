@@ -18,7 +18,7 @@ Bespoke Design Studio(<https://www.samsung.com/uk/home-appliances/bespoke-design
 - 글로벌 웹 접근성(WCAG2.1)을 준수하여 마크업
 
 ### 삼성전자 글로벌 권리대응 사이트 UX개선(2022.05~2022.08, 참여율 80%) - 퍼블리싱 PL
-1. 퍼블리싱 산출물: https://innya1116.github.io/samsung-privacy/output/
+1. 퍼블리싱 산출물: <https://innya1116.github.io/samsung-privacy/output/>
 2. 담당업무: 사이트 전체 퍼블리싱, 퍼블리싱 가이드 작성
 3. 작업환경
 - HTML5, CSS3(Less 사용 - Gulp Build Setting)
@@ -28,8 +28,8 @@ Bespoke Design Studio(<https://www.samsung.com/uk/home-appliances/bespoke-design
 - Git, Abobe XD, Zeplin 사용
 
 ### SK이노베이션 ESG Platform 구축(2022.05~2022.08, 참여율 80%) - 퍼블리싱 PL
-1. 퍼블리싱 산출물: https://innya1116.github.io/skiesg/output/
-2. 사이트 url: https://esg.skinnovation.com/ko, https://esg.skinnovation.com/en
+1. 퍼블리싱 산출물: <https://innya1116.github.io/skiesg/output/>
+2. 사이트 url: <https://esg.skinnovation.com/ko>, <https://esg.skinnovation.com/en>
 3. 담당업무: 사이트 전체 퍼블리싱, 퍼블리싱 가이드 작성
 4. 작업환경
 - HTML5, CSS3(Scss 사용 - Gulp Build Setting)
@@ -38,7 +38,7 @@ Bespoke Design Studio(<https://www.samsung.com/uk/home-appliances/bespoke-design
 - Git, Abobe XD, Zeplin 사용
 
 ### SK이노베이션 LCA Infra 구축(2022.05~2022.07, 참여율 80%) - 퍼블리싱 PL
-1. 퍼블리싱 산출물: https://innya1116.github.io/skilca/output/
+1. 퍼블리싱 산출물: <https://innya1116.github.io/skilca/output/>
 2. 담당업무: 사이트 전체 퍼블리싱, 퍼블리싱 가이드 작성
 3. 작업환경
 - HTML5, CSS3(Scss 사용 - Gulp Build Setting)
@@ -47,8 +47,8 @@ Bespoke Design Studio(<https://www.samsung.com/uk/home-appliances/bespoke-design
 - Git, Abobe XD, Zeplin 사용
 
 ### SKT Tworld 본인인증 프로세스 개선(2021.11 ~ 2022.03, 참여율 100%) - 퍼블리싱 PL
-1. 퍼블리싱 산출물: https://innya1116.github.io/sktauth/index.html
-2. 사이트 url: https://www.tworld.co.kr/web/info/refund > 조회하기 선택 > PASS 인증서 선택
+1. 퍼블리싱 산출물: <https://innya1116.github.io/sktauth/index.html>
+2. 사이트 url: <https://www.tworld.co.kr/web/info/refund> > 조회하기 선택 > PASS 인증서 선택
 3. 담당업무: 본인인증 개선 프로세스 화면 퍼블리싱(PC - PASS 인증서/Mobile - 인증타입 전체), 퍼블리싱 가이드 작성
 4. 작업환경
 - HTML5, CSS3
