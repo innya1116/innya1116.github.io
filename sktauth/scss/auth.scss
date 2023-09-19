@@ -89,7 +89,7 @@
         width: $px7;
         height: $px12;
         margin-left: $px6;
-        background: url('/img/auth/icon-arrow.svg');
+        background: url('../img/auth/icon-arrow.svg');
         background-size: 100%;
       }
     }
@@ -219,7 +219,7 @@
             // }
 
             .cancel {
-              background: url('/img/auth/icon-cancel.svg');
+              background: url('../img/auth/icon-cancel.svg');
               background-size: $px24;
             }
           }
@@ -583,7 +583,7 @@
           width: $px48 !important;
           height: $px48 !important;
           padding: 0 !important;
-          background: url('/img/auth/icon-open-down.svg') no-repeat 100% 50%;
+          background: url('../img/auth/icon-open-down.svg') no-repeat 100% 50%;
           background-size: 50% 50%;
           transform: translateY(-50%);
 
@@ -597,7 +597,7 @@
         }
 
         &.on .acco-btn {
-          background-image: url('/img/auth/icon-close-up.svg');
+          background-image: url('../img/auth/icon-close-up.svg');
         }
       }
 

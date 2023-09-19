@@ -15,7 +15,7 @@ body.typeAuthPopup{overflow:hidden !important}
 .authPopup .popBottom .btnArea > span:only-child button{display:inline-block;width:130px}
 .authPopup .popBottom .btnArea span.lArea{display:block;width:130px}
 .authPopup .popBottom .btnArea span.rArea{position:absolute;right:0;top:0;width:262px}
-.authPopup.scroll .popBottom:before{content:'';display:block;position:absolute;left:0;right:0;bottom:100%;height:28px;background:url(/poc/img/auth/bg-popup-bottom.png) repeat-x}
+.authPopup.scroll .popBottom:before{content:'';display:block;position:absolute;left:0;right:0;bottom:100%;height:28px;background:url(../../img/auth/bg-popup-bottom.png) repeat-x}
 .authPopup .h12{margin-top:12px !important}
 .authPopup .h16{margin-top:16px !important}
 .authPopup .h24{margin-top:24px !important}
@@ -30,7 +30,7 @@ body.typeAuthPopup{overflow:hidden !important}
 .authPopup .authBtnM.cancel{border-color:#e5e5e5;font-weight:normal}
 .authPopup .authBtnS{padding:6px 15px 7px;border:1px solid #d8d8d8;border-radius:32px;-webkit-box-sizing:border-box;box-sizing:border-box;background:#fff;font-weight:bold;font-size:13px;line-height:17px;letter-spacing:-1.5px}
 .authPopup .authBtnArrow{display:inline-block;position:relative;padding-right:13px;color:#222;font-size:15px;line-height:20px;letter-spacing:-2px}
-.authPopup .authBtnArrow:after{content:'';display:block;position:absolute;right:0;top:50%;width:7px;height:12px;background:url(/poc/img/auth/icon-arrow.png) no-repeat;-webkit-transform:translateY(-50%);transform:translateY(-50%)}
+.authPopup .authBtnArrow:after{content:'';display:block;position:absolute;right:0;top:50%;width:7px;height:12px;background:url(../../img/auth/icon-arrow.png) no-repeat;-webkit-transform:translateY(-50%);transform:translateY(-50%)}
 .authPopup button[class*='authBtn']:disabled{border-color:#dcdcdc;background:#dcdcdc;color:#fff;cursor:auto}
 .authPopup button[class*='authBtn'] span{position:relative}
 .authPopup .inputbox, .authPopup .inputbox .input{position:relative}
@@ -39,7 +39,7 @@ body.typeAuthPopup{overflow:hidden !important}
 .authPopup .inputbox .authInput:focus, .authPopup .inputbox .authInput:active, .authPopup .inputbox .input .authInput:focus, .authPopup .inputbox .input .authInput:active{color:#000;border-bottom-color:#000}
 .authPopup .inputbox .authInput:disabled, .authPopup .inputbox .input .authInput:disabled{color:#919191 !important;border-bottom-color:#e5e5e5 !important;background:#fff}
 .authPopup .inputbox .placeholder, .authPopup .inputbox .input .placeholder{position:absolute;left:0;top:0;height:48px;font-size:18px;line-height:48px;color:#919191}
-.authPopup .inputbox .btnDel, .authPopup .inputbox .input .btnDel{display:none !important;position:absolute;right:0;top:25px;width:24px;height:24px;margin-top:-12px;background:url(/poc/img/auth/icon-cancel.png) no-repeat}
+.authPopup .inputbox .btnDel, .authPopup .inputbox .input .btnDel{display:none !important;position:absolute;right:0;top:25px;width:24px;height:24px;margin-top:-12px;background:url(../../img/auth/icon-cancel.png) no-repeat}
 .authPopup .inputbox .rightBox, .authPopup .inputbox .input .rightBox{position:absolute;right:0;top:25px;height:32px;margin-top:-16px;font-size:0}
 .authPopup .inputbox .rightBox .smsTime, .authPopup .inputbox .input .rightBox .smsTime{margin-right:8px;color:#f76252;font-size:15px;font-weight:bold}
 .authPopup .inputbox .inputWrap.error .authInput, .authPopup .inputbox .input.error .authInput{border-bottom-color:#ef4b49}
@@ -50,10 +50,10 @@ body.typeAuthPopup{overflow:hidden !important}
 .authPopup .auth_numberSelector li{border:1px solid #f2f2f2;border-width:1px 0}
 .authPopup .auth_numberSelector li + li{margin-top:-1px}
 .authPopup .auth_numberSelector li .radio{display:block}
-.authPopup .auth_numberSelector li .radio label{display:block;width:100%;padding:16px 36px 16px 0;-webkit-box-sizing:border-box;box-sizing:border-box;background:url(/poc/img/auth/icon-radio-off.png) no-repeat 100% 50%;font-size:0}
+.authPopup .auth_numberSelector li .radio label{display:block;width:100%;padding:16px 36px 16px 0;-webkit-box-sizing:border-box;box-sizing:border-box;background:url(../../img/auth/icon-radio-off.png) no-repeat 100% 50%;font-size:0}
 .authPopup .auth_numberSelector li .radio label .name{display:inline-block;overflow:hidden;text-overflow:ellipsis;max-width:265px;color:#000;font-weight:normal;font-size:20px;line-height:1.3;white-space:nowrap}
 .authPopup .auth_numberSelector li .radio label .number{margin-left:8px;color:#919191;font-size:15px;line-height:1.73}
-.authPopup .auth_numberSelector li .radio.checked label{background-image:url(/poc/img/auth/icon-radio-on.png)}
+.authPopup .auth_numberSelector li .radio.checked label{background-image:url(../../img/auth/icon-radio-on.png)}
 .authPopup .auth_numberSelector li.disabled .radio label{background:none}
 .authPopup .auth_numberSelector li.disabled .radio label strong.name{color:#919191}
 .authPopup .auth_waySelect{overflow:hidden}
@@ -71,12 +71,12 @@ body.typeAuthPopup{overflow:hidden !important}
 .authPopup .auth_waySelect.type2 > ul > li > a:hover strong,
 .authPopup .auth_waySelect.type2 > ul > li > a:focus strong{text-decoration:underline}
 .authPopup .auth_waySelect.type2 > ul > li > a:before{position:static;display:inline-block;width:32px;height:32px;margin-right:8px;vertical-align:top}
-.authPopup .auth_waySelect.type2 > ul > li.passCert > a:before{background-image:url(/poc/img/auth/icon-pass-32px.png)}
-.authPopup .auth_waySelect.type2 > ul > li.cert > a:before{background-image:url(/poc/img/auth/icon-certification-32px.png)}
+.authPopup .auth_waySelect.type2 > ul > li.passCert > a:before{background-image:url(../../img/auth/icon-pass-32px.png)}
+.authPopup .auth_waySelect.type2 > ul > li.cert > a:before{background-image:url(../../img/auth/icon-certification-32px.png)}
 .authPopup .residentNumber .inputWrap{font-size:0}
 .authPopup .residentNumber .inputWrap > div, .authPopup .residentNumber .inputWrap > span{display:inline-block;-webkit-box-sizing:border-box;box-sizing:border-box}
 .authPopup .residentNumber .inputWrap .input{width:187px}
-.authPopup .residentNumber .inputWrap .input ~ .input{background:url(/poc/img/auth/bg-resident-number.png) no-repeat 100% 50%}
+.authPopup .residentNumber .inputWrap .input ~ .input{background:url(../../img/auth/bg-resident-number.png) no-repeat 100% 50%}
 .authPopup .residentNumber .inputWrap .input ~ .input input{width:100%;padding-right:120px;-webkit-box-sizing:border-box;box-sizing:border-box;background:transparent}
 .authPopup .residentNumber .inputWrap .bar{width:26px;text-align:center}
 .authPopup .residentNumber .inputWrap .bar:before{content:'';display:inline-block;width:6px;height:2px;background:#151515}
@@ -86,8 +86,8 @@ body.typeAuthPopup{overflow:hidden !important}
 .authPopup .radio input:checked + label{position:relative;margin:0;border-color:#000 !important}
 .authPopup .radio input:focus + label{margin:0;border:1px solid #d8d8d8}
 .authPopup .radio input:focus + label:before{content:'';position:absolute;left:-2px;top:-2px;right:-2px;bottom:-2px;border:1px dotted #000}
-.authPopup .checkbox label{width:100%;padding:0 0 0 36px;-webkit-box-sizing:border-box;box-sizing:border-box;background:url(/poc/img/auth/icon-check-off.png) no-repeat 0 50%;color:#666;font-size:15px;line-height:24px}
-.authPopup .checkbox.checked label{background-image:url(/poc/img/auth/icon-check-on.png)}
+.authPopup .checkbox label{width:100%;padding:0 0 0 36px;-webkit-box-sizing:border-box;box-sizing:border-box;background:url(../../img/auth/icon-check-off.png) no-repeat 0 50%;color:#666;font-size:15px;line-height:24px}
+.authPopup .checkbox.checked label{background-image:url(../../img/auth/icon-check-on.png)}
 .authPopup .radio + .radio{margin-left:8px}
 .authPopup .genderSelection{width:196px;font-size:0}
 .authPopup .genderSelection .radio input + label{width:92px}
@@ -99,7 +99,7 @@ body.typeAuthPopup{overflow:hidden !important}
 .authPopup .agencySelection .mvnoInfoTip{margin-top:8px;text-align:right}
 .authPopup .agencySelection .mvnoInfoTip .tipTxt{vertical-align:middle}
 .authPopup .agencySelection .mvnoInfoTip .con b{color:#333;letter-spacing:-1px}
-.authPopup .agencySelection .qInfo.dirLeft.on .qTxt{left:auto;right:30px;background-image:url(/poc/img/auth/bg_question.png)}
+.authPopup .agencySelection .qInfo.dirLeft.on .qTxt{left:auto;right:30px;background-image:url(../../img/auth/bg_question.png)}
 .authPopup .agencySelection .qInfo.dirLeft.on .qTxt .pointer{left:auto;right:-3px;transform:scaleX(-1)}
 .authPopup .agencySelection .qInfo .qTxt .con{width:400px}
 .authPopup .auth_captcha .captcha_area{position:relative;padding-right:52px;margin-bottom:8px}
@@ -107,16 +107,16 @@ body.typeAuthPopup{overflow:hidden !important}
 .authPopup .auth_captcha .captcha_area .captcha_image{width:100%;height:88px}
 .authPopup .auth_captcha .captcha_area .captcha_image img{width:100%;height:100%}
 .authPopup .auth_captcha .captcha_area .captcha_btn > button{overflow:hidden;position:absolute;right:0;width:40px;height:40px;margin:0;border-radius:40px;background-color:#ebf4fd;background-position:50% 50%}
-.authPopup .auth_captcha .captcha_area .captcha_btn .captcha_sound{bottom:0;background-image:url(/poc/img/auth/icon-sound.png)}
-.authPopup .auth_captcha .captcha_area .captcha_btn .captcha_refresh{top:0;background-image:url(/poc/img/auth/icon-refresh.png)}
+.authPopup .auth_captcha .captcha_area .captcha_btn .captcha_sound{bottom:0;background-image:url(../../img/auth/icon-sound.png)}
+.authPopup .auth_captcha .captcha_area .captcha_btn .captcha_refresh{top:0;background-image:url(../../img/auth/icon-refresh.png)}
 .authPopup .infoList li{position:relative;padding-left:8px;color:#666;font-size:13px;line-height:20px}
 .authPopup .infoList li:before{content:'';display:block;position:absolute;left:0;top:8px;width:3px;height:3px;border-radius:3px;background:#6d6d6d}
 .authPopup .infoList li + li{margin-top:8px}
 .authPopup .infoList li a{text-decoration:underline}
 .authPopup .accordion .accoList .accoBox .accoTit .accoBtn{display:block;position:relative;width:100%;padding:12px 36px 12px 0;font-weight:bold;font-size:16px;text-align:left;color:#222;background:none}
-.authPopup .accordion .accoList .accoBox .accoTit .accoBtn:after{content:'';position:absolute;right:-8px;top:50%;width:24px;height:24px;background:url(/poc/img/auth/icon-open-down.png) no-repeat 100% 50%;-webkit-transform:translateY(-50%);transform:translateY(-50%)}
+.authPopup .accordion .accoList .accoBox .accoTit .accoBtn:after{content:'';position:absolute;right:-8px;top:50%;width:24px;height:24px;background:url(../../img/auth/icon-open-down.png) no-repeat 100% 50%;-webkit-transform:translateY(-50%);transform:translateY(-50%)}
 .authPopup .accordion .accoList .accoBox .accoTit .accoBtn:hover, .authPopup .accordion .accoList .accoBox .accoTit .accoBtn:focus{text-decoration:none}
-.authPopup .accordion .accoList .accoBox.open .accoBtn:after{background-image:url(/poc/img/auth/icon-close-up.png)}
+.authPopup .accordion .accoList .accoBox.open .accoBtn:after{background-image:url(../../img/auth/icon-close-up.png)}
 .authPopup .accordion .accoList .accoBox .accoCont{overflow:hidden;max-height:0;padding:0;border:0 none}
 .authPopup .accordion .accoList .accoBox.open .accoCont{max-height:none;font-size:13px;line-height:1.6}
 .authPopup .accordion .accoList .accoBox.open .accoCont .listType1 li{position:relative;margin-top:8px;padding-left:8px;line-height:20px;background:none !important}
@@ -141,14 +141,14 @@ body.typeAuthPopup{overflow:hidden !important}
 .authPopup .authTerms .accoList .accoBox{padding:16px 0;border-bottom:2px solid #e5e5e5}
 .authPopup .authTerms .accoList .accoBox + li{margin-top:-2px}
 .authPopup .authTerms .accoList .accoBox .accoTit{position:relative}
-.authPopup .authTerms .accoList .accoBox .accoTit .accoBtn{display:block;position:absolute;top:0;right:0;bottom:0;width:36px;background:url(/poc/img/auth/icon-accordion-open.png) no-repeat 100% 50%}
+.authPopup .authTerms .accoList .accoBox .accoTit .accoBtn{display:block;position:absolute;top:0;right:0;bottom:0;width:36px;background:url(../../img/auth/icon-accordion-open.png) no-repeat 100% 50%}
 .authPopup .authTerms .accoList .accoBox .accoTit .accoBtn:after{content:none}
 .authPopup .authTerms .accoList .accoBox.open{padding-bottom:0;border:0 none}
-.authPopup .authTerms .accoList .accoBox.open .accoBtn{background-image:url(/poc/img/auth/icon-accordion-close.png)}
+.authPopup .authTerms .accoList .accoBox.open .accoBtn{background-image:url(../../img/auth/icon-accordion-close.png)}
 .authPopup .authTerms .accoList .accoBox.open .accoCont.auth_contBox{margin-top:12px;padding:16px 36px 16px 16px;border:1px solid #e5e8eb}
 .authPopup .auth_contBox{padding:16px;border:1px solid #e5e8eb;border-radius:8px;background:#f6f8fa;font-size:13px;line-height:1.62}
 .authPopup .passInfo .authTime{display:block;color:#178bce;font-size:15px;line-height:1.4;text-align:center}
-.authPopup .passInfo .authTime:before{content:'';display:inline-block;width:15px;height:15px;margin-right:4px;background:url(/poc/img/auth/icon-clock.png) no-repeat;vertical-align:middle}
+.authPopup .passInfo .authTime:before{content:'';display:inline-block;width:15px;height:15px;margin-right:4px;background:url(../../img/auth/icon-clock.png) no-repeat;vertical-align:middle}
 .authPopup .passInfo .passTxt{margin-top:20px;color:#333;font-size:13px;line-height:1.62}
 .authPopup .auth_numList{margin-top:12px;counter-reset:number 0}
 .authPopup .auth_numList li{position:relative;padding-left:14px;color:#8f8f8f;font-size:12px;line-height:1.75}
@@ -157,13 +157,13 @@ body.typeAuthPopup{overflow:hidden !important}
 .auth_waySelect > ul > li > a{position:relative;padding-bottom:40px !important}
 .auth_waySelect > ul > li > a:before{content:'';display:block;position:absolute;top:40px;left:50%;width:110px;height:110px;margin-left:-55px;border-radius:110px;background:#f5f5f5 no-repeat 50% 50%}
 .auth_waySelect > ul > li > a strong{padding:170px 0 0 !important;line-height:1.33}
-.auth_waySelect > ul > li.sktPhone a:before{background-image:url(/poc/img/auth/icon-sktphone.png)}
-.auth_waySelect > ul > li.ipin a:before{background-image:url(/poc/img/auth/icon-ipin.png)}
-.auth_waySelect > ul > li.passCert a:before{background-image:url(/poc/img/auth/icon-pass-48px.png)}
-.auth_waySelect > ul > li.cert a:before{background-image:url(/poc/img/auth/icon-certification-48px.png)}
-.auth_waySelect > ul > li.passPhone a:before{background-image:url(/poc/img/auth/icon-pass-phone.png)}
+.auth_waySelect > ul > li.sktPhone a:before{background-image:url(../../img/auth/icon-sktphone.png)}
+.auth_waySelect > ul > li.ipin a:before{background-image:url(../../img/auth/icon-ipin.png)}
+.auth_waySelect > ul > li.passCert a:before{background-image:url(../../img/auth/icon-pass-48px.png)}
+.auth_waySelect > ul > li.cert a:before{background-image:url(../../img/auth/icon-certification-48px.png)}
+.auth_waySelect > ul > li.passPhone a:before{background-image:url(../../img/auth/icon-pass-phone.png)}
 
 /* 20220204 추가 [OP002-18487] pass 인증서 아이콘 */
-.d_listType1 .pass{background:url(/poc/img/auth/bg-pass.gif) no-repeat 50% 50px}
-.d_listType1.type2 .pass{background:url(/poc/img/auth/bg-pass2.gif) no-repeat 50% 50px}
-.meCert .certList li.pass a{background:url(/poc/img/auth/bg-pass.png) no-repeat 30px 50%}
+.d_listType1 .pass{background:url(../../img/auth/bg-pass.gif) no-repeat 50% 50px}
+.d_listType1.type2 .pass{background:url(../../img/auth/bg-pass2.gif) no-repeat 50% 50px}
+.meCert .certList li.pass a{background:url(../../img/auth/bg-pass.png) no-repeat 30px 50%}

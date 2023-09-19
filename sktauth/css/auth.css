@@ -1026,7 +1026,7 @@
   width: 0.9375rem;
   height: 0.9375rem;
   margin-right: 0.25rem;
-  background: url(/img/auth/icon-clock.svg) no-repeat 50% 50%;
+  background: url(../img/auth/icon-clock.svg) no-repeat 50% 50%;
   vertical-align: middle;
 }
 

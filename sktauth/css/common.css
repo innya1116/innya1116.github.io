@@ -386,7 +386,7 @@ input[type=tel] {
   width: 1rem;
   height: 1rem;
   margin: -0.5rem 0 0 0;
-  background: url(/img/svg/icon_32px_calender.svg) no-repeat 0 0;
+  background: url(../img/svg/icon_32px_calender.svg) no-repeat 0 0;
   background-size: 100% 100%; }
 
 .inputbox .input input[type=month]::-webkit-calendar-picker-indicator,
@@ -435,7 +435,7 @@ input[type=tel] {
   margin-top: -0.81rem;
   width: 1.56rem;
   height: 1.56rem;
-  background-image: url(/img/ico/ico-group.png);
+  background-image: url(../img/ico/ico-group.png);
   background-size: 50px; }
 
 .inputbox .input input {
@@ -449,7 +449,7 @@ input[type=tel] {
   margin: -0.81rem 0 0 0;
   width: 1.56rem;
   height: 1.56rem;
-  background: url(/img/ico/ico-group.png) no-repeat -1.56rem -32.81rem;
+  background: url(../img/ico/ico-group.png) no-repeat -1.56rem -32.81rem;
   background-size: 50px; }
 
 .inputbox .input textarea.text-auto-expand {
@@ -647,7 +647,7 @@ input[type=tel] {
   margin: -0.78rem 0 0 -0.78rem;
   width: 1.56rem;
   height: 1.56rem;
-  background: url(/img/ico/ico-group.png) no-repeat 0 -59.38rem;
+  background: url(../img/ico/ico-group.png) no-repeat 0 -59.38rem;
   background-size: 3.13rem; }
 
 .inputbox .guide-byte {
@@ -1227,7 +1227,7 @@ a.bt-link-tx.disabled:before {
 
 button.bt-link-tx.disabled .ico,
 a.bt-link-tx.disabled .ico {
-  background: url(/img/ico/ico-group.png) no-repeat -1.75rem -11.88rem;
+  background: url(../img/ico/ico-group.png) no-repeat -1.75rem -11.88rem;
   background-size: 2.88rem; }
 
 button.bt-link-tx .ico,
@@ -1238,7 +1238,7 @@ a.bt-link-tx .ico {
   margin-top: 0.19rem;
   margin-left: 0.31rem;
   vertical-align: top;
-  background: url(/img/ico/ico-group.png) no-repeat -0.44rem -11.88rem;
+  background: url(../img/ico/ico-group.png) no-repeat -0.44rem -11.88rem;
   background-size: 2.88rem; }
 
 button.bt-link-tx.white,
@@ -1252,7 +1252,7 @@ a.bt-link-tx.white .ico {
   width: 0.94rem;
   height: 0.94rem;
   margin-left: 0.63rem;
-  background: url(/img/ico/ico-group.png) no-repeat -0.44rem -51.88rem;
+  background: url(../img/ico/ico-group.png) no-repeat -0.44rem -51.88rem;
   background-size: 3.13rem;
   opacity: .6; }
 
@@ -1413,7 +1413,7 @@ a.bt-link-tx.red:before {
   top: 0.94rem;
   width: 1.56rem;
   height: 1.56rem;
-  background-image: url(/img/ico/ico-group.png);
+  background-image: url(../img/ico/ico-group.png);
   background-repeat: no-repeat;
   background-position: 0 -17.19rem;
   background-size: 3.13rem;
@@ -1425,7 +1425,7 @@ a.bt-link-tx.red:before {
   width: 1.25rem;
   height: 1.25rem;
   margin-right: 0.63rem;
-  background-image: url(/img/ico/ico-group2.png);
+  background-image: url(../img/ico/ico-group2.png);
   background-size: 3.13rem;
   background-position: -0.13rem -17.38rem;
   vertical-align: middle; }
@@ -1436,7 +1436,7 @@ a.bt-link-tx.red:before {
   width: 1.5rem;
   height: 1.5rem;
   margin-right: 0.63rem;
-  background-image: url(/img/ico/ico-group2.png);
+  background-image: url(../img/ico/ico-group2.png);
   background-size: 3.13rem;
   background-position: 0 -20.31rem;
   vertical-align: middle; }
@@ -1451,7 +1451,7 @@ a.bt-link-tx.red:before {
   width: 1.25rem;
   height: 1.25rem;
   margin-right: 0.63rem;
-  background-image: url(/img/ico/ico-group2.png);
+  background-image: url(../img/ico/ico-group2.png);
   background-size: 3.13rem;
   background-position: -0.13rem -18.75rem; }
 
@@ -1541,7 +1541,7 @@ a.bt-link-tx.red:before {
   margin: -0.78rem 0 0;
   width: 1.56rem;
   height: 1.56rem;
-  background-image: url(/img/ico/ico-group.png);
+  background-image: url(../img/ico/ico-group.png);
   background-repeat: no-repeat;
   background-position: -1.56rem -70.31rem;
   background-size: 3.13rem; }
@@ -2485,7 +2485,7 @@ h6.blind {
   display: inline-block;
   width: 1.56rem;
   height: 1.56rem;
-  background: url(/img/ico/ico-group.png) no-repeat -1.56rem -45.38rem;
+  background: url(../img/ico/ico-group.png) no-repeat -1.56rem -45.38rem;
   background-size: 3.13rem; }
 
 /* 첨부파일 리스트 */
@@ -2565,7 +2565,7 @@ h6.blind {
   display: inline-block;
   width: 1.56rem;
   height: 1.56rem;
-  background: url(/img/ico/ico-group.png) no-repeat -1.56rem -46.88rem;
+  background: url(../img/ico/ico-group.png) no-repeat -1.56rem -46.88rem;
   background-size: 3.13rem; }
 
 .box-file-addlist .file-addlist li .addlist-cell .bt-file-del {
@@ -2573,7 +2573,7 @@ h6.blind {
   width: 1.56rem;
   height: 1.56rem;
   vertical-align: middle;
-  background: url(/img/ico/ico-group.png) no-repeat -1.56rem -48.44rem;
+  background: url(../img/ico/ico-group.png) no-repeat -1.56rem -48.44rem;
   background-size: 3.13rem; }
 
 /*! jQuery UI - v1.12.1 - 2018-10-21
@@ -4274,7 +4274,7 @@ a.ui-button:active,
   top: 0.94rem;
   width: 1.56rem;
   height: 1.56rem;
-  background: url(/img/ico/ico-group.png) no-repeat 0 -29.69rem;
+  background: url(../img/ico/ico-group.png) no-repeat 0 -29.69rem;
   background-size: 3.13rem; }
 
 .bt-slice.item-two li {
@@ -4662,7 +4662,7 @@ a.ui-button:active,
   width: 0.75rem;
   height: 0.44rem;
   margin: 0;
-  background: url(/img/ico/btn-select.png) repeat;
+  background: url(../img/ico/btn-select.png) repeat;
   background-size: 0.75rem; }
 
 .bt-dropdown.big:disabled {
@@ -4679,7 +4679,7 @@ a.ui-button:active,
   width: 0.75rem;
   height: 0.44rem;
   margin: 0;
-  background: url(/img/ico/bt-btn-disable.png) repeat;
+  background: url(../img/ico/bt-btn-disable.png) repeat;
   background-size: 0.75rem; }
 
 .bt-dropdown.sbig {
@@ -4700,7 +4700,7 @@ a.ui-button:active,
   width: 1.56rem;
   height: 1.56rem;
   margin: 0;
-  background: url(/img/ico/ico-group.png) no-repeat 0 -85.94rem;
+  background: url(../img/ico/ico-group.png) no-repeat 0 -85.94rem;
   background-size: 3.13rem; }
 
 .bt-dropdown.sbig:disabled {
@@ -4717,7 +4717,7 @@ a.ui-button:active,
   width: 0.75rem;
   height: 0.44rem;
   margin: 0;
-  background: url(/img/ico/ico-group.png) no-repeat -1.94rem -59.88rem;
+  background: url(../img/ico/ico-group.png) no-repeat -1.94rem -59.88rem;
   background-size: 3.13rem;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg); }
@@ -4765,7 +4765,7 @@ a.ui-button:active,
   width: 0.94rem;
   height: 0.94rem;
   margin: -0.5rem 0 0 0;
-  background: url(/img/ico/ico-group.png) no-repeat -0.94rem -6.56rem;
+  background: url(../img/ico/ico-group.png) no-repeat -0.94rem -6.56rem;
   background-size: 1.88rem; }
 
 .bt-dropdown.selected {
@@ -4830,7 +4830,7 @@ a.ui-button:active,
   width: 1.56rem;
   height: 1.56rem;
   margin: -0.75rem 0 0 0;
-  background: url(/img/ico/ico-group2.png) no-repeat 0 -6.25rem;
+  background: url(../img/ico/ico-group2.png) no-repeat 0 -6.25rem;
   background-size: 3.13rem; }
 
 .tx-dropdown-box .tx-dropdown:disabled {
@@ -5040,7 +5040,7 @@ a.ui-button:active,
   left: -20px;
   bottom: -26px;
   padding: 0 1.25rem;
-  background: transparent url(/img/etc/ico-shadow-pop.png) repeat-x 0 0;
+  background: transparent url(../img/etc/ico-shadow-pop.png) repeat-x 0 0;
   background-size: 0.06rem 0.88rem; }
 
 .popup .popup-info .popup-header .ico {
@@ -5048,7 +5048,7 @@ a.ui-button:active,
   margin: 0.5rem 0 1.5rem;
   width: 3.13rem;
   height: 3.13rem;
-  background: url(/img/ico/ico-popup.png) no-repeat 0 0;
+  background: url(../img/ico/ico-popup.png) no-repeat 0 0;
   background-size: 3.13rem; }
 
 .popup .popup-info .popup-header .ico.type1 {
@@ -5103,7 +5103,7 @@ a.ui-button:active,
   top: 8px;
   width: 0.75rem;
   height: 0.75rem;
-  background: url(/img/common/pop-tooltip-close.png) no-repeat right center;
+  background: url(../img/common/pop-tooltip-close.png) no-repeat right center;
   background-size: 0.75rem 0.75rem; }
 
 .popup .popup-info.scrolling {
@@ -5337,7 +5337,7 @@ a.ui-button:active,
   width: 2rem;
   height: 2rem;
   vertical-align: top;
-  background: url(/img/ico/ico-group.png) no-repeat 0.19rem -9.19rem;
+  background: url(../img/ico/ico-group.png) no-repeat 0.19rem -9.19rem;
   background-size: 3.13rem; }
 
 .popup .popup-info .btn-box {
@@ -5416,7 +5416,7 @@ a.ui-button:active,
   display: inline-block;
   width: 42px;
   height: 42px;
-  background: url(/img/ico/ico-sns-l.png) no-repeat 0 0;
+  background: url(../img/ico/ico-sns-l.png) no-repeat 0 0;
   background-size: 42px; }
 
 .popup .popup-sns .send-txt {
@@ -5466,7 +5466,7 @@ a.ui-button:active,
   display: none;
   width: 1.56rem;
   height: 1.56rem;
-  background: url(/img/ico/ico-group.png) no-repeat 0 -42.19rem;
+  background: url(../img/ico/ico-group.png) no-repeat 0 -42.19rem;
   background-size: 3.13rem; }
 
 .popup .popup-dropdown .dropdown-list li .line {
@@ -5780,7 +5780,7 @@ a.ui-button:active,
   width: 2.06rem;
   height: 2.06rem;
   margin-right: 0.75rem;
-  background: url(/img/ico/ico-group-100.png) no-repeat -3.63rem -41.25rem;
+  background: url(../img/ico/ico-group-100.png) no-repeat -3.63rem -41.25rem;
   background-size: 6.25rem; }
 
 /* slick.css */
@@ -5947,7 +5947,7 @@ a.ui-button:active,
 .badge {
   display: inline-block;
   overflow: hidden;
-  background-image: url(/img/ico/badge-group.png); }
+  background-image: url(../img/ico/badge-group.png); }
 
 .badge.badge-main {
   background-position: 0 0;
@@ -6141,7 +6141,7 @@ a.ui-button:active,
   background-color: #ff4d3f; }
 
 .bar-chart-hoz .data-bar.orange-dazzle {
-  background: url(/img/chart/bg-pattern1.png) repeat;
+  background: url(../img/chart/bg-pattern1.png) repeat;
   background-size: 0.5rem 0.5rem; }
 
 .bar-chart-hoz .data-bar.gray {
@@ -6170,7 +6170,7 @@ a.ui-button:active,
   display: inline-block;
   width: 5rem;
   height: 5rem;
-  background: url(/img/ico/ico-illustration.png) no-repeat -3.06rem -47.75rem;
+  background: url(../img/ico/ico-illustration.png) no-repeat -3.06rem -47.75rem;
   background-size: 55.81rem; }
 
 .address-wrap {
@@ -6262,7 +6262,7 @@ a.ui-button:active,
   display: inline-block;
   width: 1rem;
   height: 1rem;
-  background: url(/img/ico/ico-group.png) no-repeat -1.88rem -42.5rem;
+  background: url(../img/ico/ico-group.png) no-repeat -1.88rem -42.5rem;
   background-size: 3.13rem auto;
   vertical-align: bottom; }
 
@@ -6380,7 +6380,7 @@ a.ui-button:active,
   display: block;
   width: 5.81rem;
   height: 1.06rem;
-  background: url(/img/benefit/tit_membership.png) no-repeat;
+  background: url(../img/benefit/tit_membership.png) no-repeat;
   background-size: 100%;
   font-size: 0;
   line-height: 0; }
@@ -6397,15 +6397,15 @@ a.ui-button:active,
 
 .membership-card-box .rating.silver {
   width: 3.75rem;
-  background-image: url(/img/main/silver.png); }
+  background-image: url(../img/main/silver.png); }
 
 .membership-card-box .rating.gold {
   width: 3.25rem;
-  background-image: url(/img/main/gold.png); }
+  background-image: url(../img/main/gold.png); }
 
 .membership-card-box .rating.vip {
   width: 2.44rem;
-  background-image: url(/img/main/vip.png); }
+  background-image: url(../img/main/vip.png); }
 
 .membership-card-box .card-name {
   position: relative;
@@ -6461,7 +6461,7 @@ a.ui-button:active,
 
 .notice-point .t-np1 {
   padding-top: 4.81rem;
-  background: url(/img/ico/ico-notice-point.png) no-repeat center 0;
+  background: url(../img/ico/ico-notice-point.png) no-repeat center 0;
   background-size: 60px auto;
   font-size: 1.56rem;
   font-weight: 500; }
@@ -6539,7 +6539,7 @@ a.ui-button:active,
   width: 0.75rem !important;
   height: 0.75rem !important;
   margin: 0.19rem 0.44rem 0 0;
-  background-image:url(/img/svg/component_check_small_on_disabled.svg); }
+  background-image:url(../img/svg/component_check_small_on_disabled.svg); }
 
 .resultsearch-box .on {
   color: #000; }
@@ -6695,7 +6695,7 @@ a.ui-button:active,
 .searchapplication-list li {
   padding: 1.31rem 0 1.31rem 2.25rem;
   border-top: 1px solid #f2f2f2;
-  background: url(/img/search/bg_ser.png) no-repeat 0 50%;
+  background: url(../img/search/bg_ser.png) no-repeat 0 50%;
   background-size: 22px 22px;
   color: #000;
   font-size: 1rem;
@@ -7046,7 +7046,7 @@ a.ui-button:active,
   margin-top: 0.94rem;
   padding: 0.81rem 0 0.88rem 1.25rem;
   border-top: 1px solid #f2f2f2;
-  background: url(/img/discount/bg_internet.png) no-repeat 0 0.81rem;
+  background: url(../img/discount/bg_internet.png) no-repeat 0 0.81rem;
   background-size: 0.88rem 0.88rem;
   color: #666666;
   font-size: 0.75rem; }
@@ -7491,33 +7491,33 @@ a.ui-button:active,
 .products-detailinfo02 .category-type .gb {
   display: inline-block;
   padding: 0.13rem 0 0.13rem 1.25rem;
-  background: url(/img/product/bg_gb.png) no-repeat 0 0.13rem;
+  background: url(../img/product/bg_gb.png) no-repeat 0 0.13rem;
   background-size: 14px 14px;
   color: #178bce; }
 
 .products-detailinfo02 .category-type .type {
   display: inline-block;
   padding: 0.13rem 0 0.13rem 1.19rem;
-  background: url(/img/product/bg_type.png) no-repeat 0 50%;
+  background: url(../img/product/bg_type.png) no-repeat 0 50%;
   background-size: 14px 14px; }
 
 .products-detailinfo02 .category-type .basic {
   display: inline-block;
   padding: 0.13rem 0 0.13rem 1.19rem;
-  background: url(/img/product/bg_sms.png) no-repeat 0 0.31rem;
+  background: url(../img/product/bg_sms.png) no-repeat 0 0.31rem;
   background-size: 14px 10px; }
 
 .device_ios .products-detailinfo02 .category-type .gb {
   display: inline-block;
   padding: 0.19rem 0 0.13rem 1.25rem;
-  background: url(/img/product/bg_gb.png) no-repeat 0 0.19rem;
+  background: url(../img/product/bg_gb.png) no-repeat 0 0.19rem;
   background-size: 14px 14px;
   color: #178bce; }
 
 .device_ios .products-detailinfo02 .category-type .type {
   display: inline-block;
   padding: 0.19rem 0 0.13rem 1.19rem;
-  background: url(/img/product/bg_type.png) no-repeat 0 50%;
+  background: url(../img/product/bg_type.png) no-repeat 0 50%;
   background-size: 14px 14px; }
 
 .device_ios .products-detailinfo02 .category-type .basic {
@@ -7925,7 +7925,7 @@ a.ui-button:active,
   width: 0.5rem;
   height: 0.75rem;
   content: '';
-  background: url(/img/ico/ico-group2.png) no-repeat -0.56rem -3.56rem;
+  background: url(../img/ico/ico-group2.png) no-repeat -0.56rem -3.56rem;
   background-size: 3.13rem auto; }
 
 .ti-caption-gray .detail-view2,
@@ -7945,7 +7945,7 @@ a.ui-button:active,
   width: 0.5rem;
   height: 0.75rem;
   content: '';
-  background: url(/img/ico/ico-group2.png) no-repeat -0.56rem -3.56rem;
+  background: url(../img/ico/ico-group2.png) no-repeat -0.56rem -3.56rem;
   background-size: 3.13rem auto; }
 
 .ti-caption-gray .info-view-ic,
@@ -7959,7 +7959,7 @@ a.ui-button:active,
   vertical-align: top;
   width: 1.56rem;
   height: 1.56rem;
-  background: url(/img/ico/ico-group.png) no-repeat -1.56rem -68.75rem;
+  background: url(../img/ico/ico-group.png) no-repeat -1.56rem -68.75rem;
   background-size: 3.13rem;
   margin: -0.5rem 0 0 0;
   position: relative;
@@ -8078,7 +8078,7 @@ a.ui-button:active,
   right: 0;
   width: 2.5rem;
   height: 2.5rem;
-  background: #ebf5fe url(/img/common/ico-refresh.png) no-repeat center;
+  background: #ebf5fe url(../img/common/ico-refresh.png) no-repeat center;
   background-size: 23px 18px;
   border-radius: 0.31rem;
   color: transparent; }
@@ -8089,7 +8089,7 @@ a.ui-button:active,
   right: 0;
   width: 2.5rem;
   height: 2.5rem;
-  background: #ebf5fe url(/img/common/ico-sound.png) no-repeat center;
+  background: #ebf5fe url(../img/common/ico-sound.png) no-repeat center;
   background-size: 18px 17px;
   border-radius: 0.31rem;
   color: transparent; }
@@ -8641,7 +8641,7 @@ html,
   margin: -0.81rem 0 0 0;
   width: 1.56rem;
   height: 1.56rem;
-  background: url(/img/ico/ico-group.png) no-repeat -1.56rem -32.81rem;
+  background: url(../img/ico/ico-group.png) no-repeat -1.56rem -32.81rem;
   background-size: 50px; }
 
 .rg-br-body input[type=text]::-ms-clear {
@@ -8819,7 +8819,7 @@ html,
   margin-top: 0.1875rem;
   margin-left: 0.3125rem;
   vertical-align: top;
-  background: url(/img/autosms/ico/ico-group.png) no-repeat -1.75rem -11.88rem;
+  background: url(../img/autosms/ico/ico-group.png) no-repeat -1.75rem -11.88rem;
   background-size: 2.875rem; }
 
 .rg-br-body .bt-link-tx .ico {
@@ -8831,7 +8831,7 @@ html,
   height: 0.6875rem;
   margin-top: -0.375rem;
   vertical-align: top;
-  background: url(/img/autosms/ico/ico-group.png) no-repeat -0.44rem -11.88rem;
+  background: url(../img/autosms/ico/ico-group.png) no-repeat -0.44rem -11.88rem;
   background-size: 2.875rem; }
 
 .rg-br-body button {
@@ -9098,7 +9098,7 @@ button:focus span {
     display: block;
     width: 2rem;
     height: 2rem;
-    background: url(/img/autosms/ico/ico-group.png) no-repeat 0.1875rem -9.1875rem;
+    background: url(../img/autosms/ico/ico-group.png) no-repeat 0.1875rem -9.1875rem;
     background-size: 3.125rem;
 }
 
@@ -9182,7 +9182,7 @@ button:focus span {
   left: 1.625rem;
   width: 8.375rem;
   height: 3.375rem;
-  background: url(/img/autosms/ico/tworld-logo.png) no-repeat;
+  background: url(../img/autosms/ico/tworld-logo.png) no-repeat;
   background-size: 67px 27px; }
 
 .rg-br-body .rg-br-tworld .rg-br-ico-logo .rg-br-logo-name {
@@ -9206,7 +9206,7 @@ button:focus span {
   display: inline-block;
   width: 4.1875rem;
   height: 1.6875rem;
-  background: url(/img/autosms/ico/tworld-logo.png) no-repeat;
+  background: url(../img/autosms/ico/tworld-logo.png) no-repeat;
   background-size: 67px 27px; }
 
 .rg-br-body .rg-br-tworld-center .rg-br-ico-logo .rg-br-logo-name {
@@ -9278,7 +9278,7 @@ button:focus span {
   display: block;
   width: 1.5625rem;
   height: 1.5625rem;
-  background: url(/img/autosms/ico/ico-group.png) no-repeat 0 -20.31rem;
+  background: url(../img/autosms/ico/ico-group.png) no-repeat 0 -20.31rem;
   background-size: 3.125rem; }
 
 .rg-br-body .rg-br-widget .accordion .acco-cover.on {
@@ -9318,7 +9318,7 @@ button:focus span {
   margin: -0.78125rem 0 0;
   width: 1.5625rem;
   height: 1.5625rem;
-  background: url(/img/autosms/ico/ico-group.png) no-repeat -1.56rem -21.88rem;
+  background: url(../img/autosms/ico/ico-group.png) no-repeat -1.56rem -21.88rem;
   background-size: 3.125rem; }
 
 .rg-br-body .rg-br-widget .accordion .acco-list .acco-box .acco-tit button.bt-title {
@@ -9524,7 +9524,7 @@ button:focus span {
   display: inline-block;
   width: 0.875rem;
   height: 0.625rem;
-  background: url(/img/autosms/footer/ico-close-s.png) no-repeat;
+  background: url(../img/autosms/footer/ico-close-s.png) no-repeat;
   background-size: 7px 5px; }
 
 .rg-br-body .rg-br-footer .foot-container .rg-br-widget .accordion .acco-cover.on .acco-list .acco-box.on button.business-txt:after {
@@ -9535,7 +9535,7 @@ button:focus span {
   display: inline-block;
   width: 0.875rem;
   height: 0.625rem;
-  background: url(/img/autosms/footer/ico-open-s.png) no-repeat !important;
+  background: url(../img/autosms/footer/ico-open-s.png) no-repeat !important;
   background-size: 7px 5px !important; }
 
 .rg-br-body .rg-br-footer .foot-container .acco-cont.no-pd {
@@ -9613,13 +9613,13 @@ button:focus span {
 .popup .popup-info.tod-eventpop-type1 .popup-contents .inner-contents p {font-size:inherit; color:inherit;}
 .popup .popup-info.tod-eventpop-type1 .popup-contents .inner-contents .text-ti-big {display:block; font-size:1.438rem; line-height:1.2; font-weight:bold;}
 .popup .popup-info.tod-eventpop-type1 .popup-contents .inner-contents .text-ti {display:block; font-size:0.875rem; font-weight:bold;}
-.popup .popup-info.tod-eventpop-type1 .popup-contents .inner-contents .ico {display:block; width:5.25rem; height:5.75rem; margin:-4.75rem 0 1.5rem; background:url(/img/benefit/bg-ico-eventpop01.png) no-repeat 0 0; background-size:100%;}
+.popup .popup-info.tod-eventpop-type1 .popup-contents .inner-contents .ico {display:block; width:5.25rem; height:5.75rem; margin:-4.75rem 0 1.5rem; background:url(../img/benefit/bg-ico-eventpop01.png) no-repeat 0 0; background-size:100%;}
 .popup .popup-info.tod-eventpop-type1 .popup-contents .inner-contents .terms-area {height:9.3rem; margin:0 -1.75rem; overflow-y:auto; -webkit-overflow-scrolling:touch;}
 .popup .popup-info.tod-eventpop-type1 .popup-header .btn-tooltip-close {top:2px; right:2px;}
 .popup .popup-info.tod-eventpop-type1 .bt-box {overflow:hidden; margin-top:-1px; background:#fff; border-radius:0 0 0.56rem 0.56rem;}
 .popup .popup-info.tod-eventpop-type1 .bt-box .btn-floating {height:3rem; line-height:3rem; border-radius:0; font-size:0.9375rem; font-weight:bold;}
 .popup .popup-info.tod-eventpop-type1 .bt-box .btn-floating.btn-style-blue {background:#178bce; color:#fff;} /* 210216 [2021 접근성] 수정 */
-.popup .popup-info.tod-eventpop-type1 .bt-box .btn-floating.btn-style-blue.back:before {content:''; display:inline-block; vertical-align:middle; width:0.4375rem; height:0.8125rem; margin:0 0.375rem 0.1875rem 0; background:url(/img/benefit/sp-eventpop.png) no-repeat 0 -2.25rem; background-size:3.563rem auto;}
+.popup .popup-info.tod-eventpop-type1 .bt-box .btn-floating.btn-style-blue.back:before {content:''; display:inline-block; vertical-align:middle; width:0.4375rem; height:0.8125rem; margin:0 0.375rem 0.1875rem 0; background:url(../img/benefit/sp-eventpop.png) no-repeat 0 -2.25rem; background-size:3.563rem auto;}
 .popup .popup-info.tod-eventpop-type1 .bt-box .btn-floating.btn-style-blue.disagree {font-size:0.8125rem;} /* 210315 [2021 접근성] 수정 */
 .popup .popup-info.tod-eventpop-type1 .bt-box.bt-slice>li {height:auto; padding:0;}
 
@@ -9635,10 +9635,10 @@ button:focus span {
 .sch-form.tod-sch-form input[type='search']{display:block; width:100%; height:2.63rem; padding:0.125rem 2.875rem 0 0.625rem; background:#fff; border:none; border-radius:0.25rem; font-size:0.94rem; color:#000; font-weight:300}
 .sch-form.tod-sch-form .inputbox .input .cancel{right:40px}
 .sch-form.tod-sch-form .icon-gnb-search{left:auto; right:0.75rem}
-.sch-form.tod-sch-form .close-area{width:3rem; right:auto; left:0; background:url('/img/common/search-arr-white.png') no-repeat 50% 50%; background-size:0.6875rem 1.25rem}
+.sch-form.tod-sch-form .close-area{width:3rem; right:auto; left:0; background:url('../img/common/search-arr-white.png') no-repeat 50% 50%; background-size:0.6875rem 1.25rem}
 .tod-rec-search-box{padding:1rem 0}
 .tod-rec-search-box .rec-search{display:flex; width:100%; flex-wrap:nowrap; align-items:center}
-.tod-rec-search-box .rec-search .rec-item{width:3.375rem; height:1.25rem; box-sizing:border-box; background:url('/img/common/recommand_sear_badge.png') no-repeat left top; background-size:3.375rem 1.25rem; } 
+.tod-rec-search-box .rec-search .rec-item{width:3.375rem; height:1.25rem; box-sizing:border-box; background:url('../img/common/recommand_sear_badge.png') no-repeat left top; background-size:3.375rem 1.25rem; } 
 .tod-rec-search-box .rec-search .rec-word{width:-webkit-calc(100% - 3.375rem - 0.5rem); width:calc(100% - 3.375rem - 0.5rem); height:1.25rem; box-sizing:border-box; margin-left:0.5rem}
 .tod-rec-search-box .rec-search .rec-word button{display:inline-block; width:100%; line-height:21px; white-space:nowrap; font-size:1rem; text-overflow:ellipsis; overflow:hidden; text-align:left}
 .tod-search-tit{font-size:16px; color:#000; font-weight:500 }
@@ -9658,7 +9658,7 @@ button:focus span {
 .tod-popularword-wrap .popularsearchword-list.linklist-type li:nth-child(n+6):nth-child(-n+10) {display:none}
 .tod-popularword-wrap.show .popularsearchword-list.linklist-type li:nth-child(n+6):nth-child(-n+10) {display:block}
 .btn-more button .tod-pop-btn{display:inline-block}
-.btn-more button .tod-pop-btn:after{content:''; display:inline-block; width:0.75rem; height:0.4375rem; background:url('/img/common/btn-arr.png') no-repeat left top; background-size:100% 100%; vertical-align:top; margin:0.3125rem 0 0 0.5rem}
+.btn-more button .tod-pop-btn:after{content:''; display:inline-block; width:0.75rem; height:0.4375rem; background:url('../img/common/btn-arr.png') no-repeat left top; background-size:100% 100%; vertical-align:top; margin:0.3125rem 0 0 0.5rem}
 .btn-more button .tod-pop-btn.hide{display:none}
 .btn-more button .tod-pop-btn.fold:after{-webkit-transform:rotate(180deg); transform:rotate(180deg);}
 .tod-search-bann-wrap{overflow:hidden}
@@ -9674,8 +9674,8 @@ button:focus span {
 .tod-search-bann-wrap .tod-bann-auto.main-tip-box.box-type .slider1-auto .slider-box .tod-bann-btn{top:-3.9375rem !important}
 .tod-search-bann-wrap .tod-bann-auto.accessories-box .slider1-auto .slider-box .tod-bann-btn{top:1.6875rem !important}
 .tod-search-bann-wrap .tod-bann-auto .tod-bann-btn{position:absolute; width:auto !important; top:1.3125rem; right:1.5rem; padding:0.3125rem; line-height:0; vertical-align:top }
-.tod-search-bann-wrap .tod-bann-auto .tod-bann-btn:before{content:''; display:inline-block; width:0.8125rem !important; height:0.8125rem !important; border-radius:50%; text-align:center;  background:rgba(00,00,00,0.3) url('/img/main/tod_ban_play.png') no-repeat 50% 50%; background-size:100%;}
-.tod-search-bann-wrap .tod-bann-auto .tod-bann-btn.stop:before{background-image:url('/img/main/tod_ban_stop.png')}
+.tod-search-bann-wrap .tod-bann-auto .tod-bann-btn:before{content:''; display:inline-block; width:0.8125rem !important; height:0.8125rem !important; border-radius:50%; text-align:center;  background:rgba(00,00,00,0.3) url('../img/main/tod_ban_play.png') no-repeat 50% 50%; background-size:100%;}
+.tod-search-bann-wrap .tod-bann-auto .tod-bann-btn.stop:before{background-image:url('../img/main/tod_ban_stop.png')}
 .tod-search-bann-wrap .section-swiper-box .slick-prev,
 .tod-search-bann-wrap .section-swiper-box .slick-next {display: none !important; }
 .tod-search-bann-wrap .section-swiper-box .slider-box .slick-dots {position: absolute;right: 1.5rem;top: 0;bottom: auto;width: auto; }
@@ -9717,13 +9717,13 @@ button:focus span {
 .btn-more.noborder {border-top:0;}
 .btn-more.tod-nogaps {margin-left:-1rem; margin-right:-1rem;}
 .btn-more.tod-nogaps-white {background:#fff; margin-left:-1rem; margin-right:-1rem;}
-.btn-more i.ico-arrow-r {display:inline-block; vertical-align:middle; width:1rem; height:1rem; margin:0 0 0.125rem 0.25rem; background:url('/img/svg/icon_32px_arrowmore_black.svg') no-repeat 0 0; background-size:1rem 1rem;}
+.btn-more i.ico-arrow-r {display:inline-block; vertical-align:middle; width:1rem; height:1rem; margin:0 0 0.125rem 0.25rem; background:url('../img/svg/icon_32px_arrowmore_black.svg') no-repeat 0 0; background-size:1rem 1rem;}
 
 .inputbox.tod-searchtype1 .input input {width:100%; height:1.625rem; padding:0 1.875rem 0 0.8125rem; background:#fff; border:none; border-radius:0.8125rem; font-size:0.75rem; -webkit-appearance:none; appearance:none;}
 .inputbox.tod-searchtype1 .input input::-webkit-input-placeholder {font-size:inherit;}
 .inputbox.tod-searchtype1 .input input[type='search']::-webkit-search-cancel-button {display:none;}
 .inputbox.tod-searchtype1 .input .cancel {display:none !important; right:1.875rem;}
-.inputbox.tod-searchtype1 .btn-search {position:absolute; top:0; bottom:0; right:0; width:1.875rem; background:url('/img/svg/icon_48px_titlebar_search.svg') no-repeat 50% 50%; background-size:1rem 1rem;}
+.inputbox.tod-searchtype1 .btn-search {position:absolute; top:0; bottom:0; right:0; width:1.875rem; background:url('../img/svg/icon_48px_titlebar_search.svg') no-repeat 50% 50%; background-size:1rem 1rem;}
 .tod-re-searchbox:after {content:''; display:block; clear:both;}
 .tod-re-searchbox .tit {float:left; padding:0.375rem 0 0.125rem 0; font-size:0.8125rem;}
 .tod-re-searchbox .inputbox.tod-searchtype1 {float:right; width:46%;}
@@ -9749,7 +9749,7 @@ button:focus span {
 .tod-related-keywords .widget-box .horizontal-slide .horizontal-list >li button, .tod-related-keywords .widget-box .horizontal-slide .horizontal-list >li a {display:inline-block; padding:0 0.375rem; font-size:0.75rem; line-height:1.375rem; white-space:nowrap;}
 .tod-related-keywords .widget-box .horizontal-slide .horizontal-list >li:last-child {padding-right:0.625rem;}
 .tod-search-mytbox {background:#fff; border-radius:0.625rem; overflow:hidden; box-shadow:0 0.0625rem 0.9375rem rgba(0,0,0,.03);}
-.tod-search-mytbox .tit {display:block; margin:0 1.063rem; padding:1.125rem 0 0.75rem 1.625rem; background:url('/img/svg/icon_48px_my.svg') no-repeat 0 1rem; background-size:1.25rem 1.25rem; font-size:0.75rem; font-weight:500;}
+.tod-search-mytbox .tit {display:block; margin:0 1.063rem; padding:1.125rem 0 0.75rem 1.625rem; background:url('../img/svg/icon_48px_my.svg') no-repeat 0 1rem; background-size:1.25rem 1.25rem; font-size:0.75rem; font-weight:500;}
 .tod-search-mytbox .text-area {margin:0 1.063rem; padding:1.063rem 0 2rem; border-top:1px solid #f2f2f2; text-align:center;}
 .tod-search-mytbox .text-area .text {font-size:1.125rem; line-height:1.5; color:#858585; font-weight:500;}
 .tod-search-mytbox .text-area .text .highlight {position:relative; display:inline-block; padding:0 0.25rem; background:#f76556; background:-webkit-linear-gradient(left, #f76556 0%, #f65984 100%); background:linear-gradient(to right, #f76556 0%, #f65984 100%); color:#fff;}
@@ -9762,13 +9762,13 @@ button:focus span {
 .tod-searchlist-head {border-bottom:1px solid #e5e5e5;}
 .tod-searchlist-head:after {content:''; display:block; clear:both;}
 .tod-searchlist-head .tit {float:left; padding:0 0 0.625rem; font-size:1rem; font-weight:bold;}
-.tod-searchlist-head .tit >a, .tod-searchlist-head .tit >button {display:inline-block; padding-right:1.313rem; background:url('/img/svg/icon_32px_arrowmore.svg') no-repeat right 45%; background-size:1rem 1rem; font-size:inherit; font-weight:inherit;}
+.tod-searchlist-head .tit >a, .tod-searchlist-head .tit >button {display:inline-block; padding-right:1.313rem; background:url('../img/svg/icon_32px_arrowmore.svg') no-repeat right 45%; background-size:1rem 1rem; font-size:inherit; font-weight:inherit;}
 .tod-searchlist-head .tit .num {padding:0 0.125rem; color:#858585; font-weight:normal;}
-.tod-searchlist-head .btn-select {display:inline-block; vertical-align:top; height:1.5rem; margin:0 0 0.5rem; padding-right:1.25rem; background:url('/img/svg/icon_32px_arrowdown.svg') no-repeat right 45%; background-size:1rem 1rem; color:#000; font-size:0.8125rem; line-height:1.5rem; font-weight:500;}
+.tod-searchlist-head .btn-select {display:inline-block; vertical-align:top; height:1.5rem; margin:0 0 0.5rem; padding-right:1.25rem; background:url('../img/svg/icon_32px_arrowdown.svg') no-repeat right 45%; background-size:1rem 1rem; color:#000; font-size:0.8125rem; line-height:1.5rem; font-weight:500;}
 .tod-searchlist-head .bt-link-tx.underline {margin:0 0 0.5rem; padding:0 !important; font-size:0.75rem; height:1.5rem;}
 .tod-search-feedback {padding:2rem 0 2.5rem; text-align:center;}
 .tod-search-feedback .text-ti {font-size:1rem; font-weight:500;}
-.tod-search-feedback .text-ti.srch:before {content:''; display:inline-block; vertical-align:middle; width:1.125rem; height:1.125rem; margin:0 0.3125rem 0.125rem 0; background:url('/img/svg/icon_48px_titlebar_search.svg') no-repeat 0 0; background-size:100% 100%;}
+.tod-search-feedback .text-ti.srch:before {content:''; display:inline-block; vertical-align:middle; width:1.125rem; height:1.125rem; margin:0 0.3125rem 0.125rem 0; background:url('../img/svg/icon_48px_titlebar_search.svg') no-repeat 0 0; background-size:100% 100%;}
 .tod-search-feedback .bt-slice > li .btn-round2 {padding:0;}
 .tod-search-feedback.noresult {padding:2.625rem 0 2.75rem; text-align:center;}
 .tod-search-feedback.noresult .text {margin-top:0.625rem; font-size:0.8125rem;}
@@ -9778,7 +9778,7 @@ button:focus span {
 
 .tapplist-wrap.tapplist-wrap02 .list li >a, .tapplist-wrap.tapplist-wrap02 .list li >button {display:inline-block; font-size:initial;}
 .extraservice-list >.category-type .products-detailitext-spec {padding:0.375rem 0 0.625rem;}
-.extraservice-list >.category-type .products-detailitext-spec .spec-text {display:inline-block; padding:0.09375rem 0.5rem 0 1.5rem; background:#f5f5f5 url('/img/ico/ico-speed-plan.png') no-repeat 0.3125rem 50%; background-size:0.94rem; border-radius:0.125rem; color:#666; font-size:0.75rem; line-height:1.40625rem;}
+.extraservice-list >.category-type .products-detailitext-spec .spec-text {display:inline-block; padding:0.09375rem 0.5rem 0 1.5rem; background:#f5f5f5 url('../img/ico/ico-speed-plan.png') no-repeat 0.3125rem 50%; background-size:0.94rem; border-radius:0.125rem; color:#666; font-size:0.75rem; line-height:1.40625rem;}
 .extraservice-list.tod-srhtype1 >.category-type:first-child {border-top:0;}
 .extraservice-list.tod-srhtype1 >.category-type {border-top:1px solid #f2f2f2; margin:0; border-radius:0; background:none; box-shadow:none;}
 .extraservice-list.tod-srhtype1 >.category-type .link, .extraservice-list.tod-srhtype1 >.category-type.no-link {padding:1.438rem 0 0.8125rem 0;}
@@ -9821,7 +9821,7 @@ button:focus span {
 /* 191209 [OP002-5498] 유선 업무처리 동의 프로세스 */
 .popup .popup-info.tod-eventpop-type1.sel-line-pop .popup-contents{background:#ff9000; padding-bottom:2.9375rem}
 .popup .popup-info.tod-eventpop-type1.sel-line-pop .popup-contents .inner-contents{color:#fff; font-size:23px; line-height:1.8125rem}
-.popup .popup-info.tod-eventpop-type1.sel-line-pop .popup-contents .inner-contents .ico{width:10.625rem; height:5.4375rem; background-image:url('/img/myt/line-sel-pop.png'); background-size:100%; margin:-5.375rem 0 2.375rem 0}
+.popup .popup-info.tod-eventpop-type1.sel-line-pop .popup-contents .inner-contents .ico{width:10.625rem; height:5.4375rem; background-image:url('../img/myt/line-sel-pop.png'); background-size:100%; margin:-5.375rem 0 2.375rem 0}
 .popup .popup-info.tod-eventpop-type1.sel-line-pop .bt-box{background:#fff; }
 .popup .popup-info.tod-eventpop-type1.sel-line-pop .bt-box .btn-floating.disagree{color:#666; font-size:0.8125rem}
 .popup .popup-info.tod-eventpop-type1.sel-line-pop .bt-box .btn-floating{color:#000; font-size:1rem}
@@ -9850,7 +9850,7 @@ button:focus span {
 .tod-ui-chabot2 .chatbot-tit:after{
   content: ''; display: inline-block;
   position: relative; top: 2px;
-  background: url(/img/svg/txt-beta.svg) no-repeat 0 0;
+  background: url(../img/svg/txt-beta.svg) no-repeat 0 0;
   width: 2.125rem; height: 0.9375rem; margin-left: 0.3125rem;
   background-size: 100% 100%;}
 .tod-ui-chabot2.expanded .chatbot-tit:after{top: -4px; }
@@ -9866,27 +9866,27 @@ button:focus span {
 
 .tod-ui-chabot2 .close-wrap{position: absolute; right: 1.125rem; top: 0.75rem; width: 1.375rem; height: 1.375rem;}
 .tod-ui-chabot2 .btn-close{width: 1.5rem; height: 1.5rem;}
-.tod-ui-chabot2 .btn-close:after{content:'';display: inline-block;  width: 1.25rem; height: 1.25rem; background: url(/img/common/chatbot/btn-close-bk.svg) no-repeat 0 0;background-size: 100% 100%; margin: 0 auto;}
+.tod-ui-chabot2 .btn-close:after{content:'';display: inline-block;  width: 1.25rem; height: 1.25rem; background: url(../img/common/chatbot/btn-close-bk.svg) no-repeat 0 0;background-size: 100% 100%; margin: 0 auto;}
 /* //201204 [웹접근성] 수정 [OP002-12223] */
 
 /* keyword(발화어) */
 /* Atype - class naming change */
-.tod-ui-chabot2 .ico-chatbot.initial{background:url('/img/common/chatbot/ico-ai.png') no-repeat 0 0; background-size: 100% 100%;}
-.tod-ui-chabot2 .ico-chatbot.pay_mthd, .tod-ui-chabot2 .ico-chatbot.micro_pay{background:url('/img/common/chatbot/ico-pay.png') no-repeat 0 0; background-size: 100% 100%;}
-.tod-ui-chabot2 .ico-chatbot.data_gift{background:url('/img/common/chatbot/ico-data.png') no-repeat 0 0; background-size: 100% 100%;}
-.tod-ui-chabot2 .ico-chatbot.refill_coupon{background:url('/img/common/chatbot/ico-coupon.png') no-repeat 0 0; background-size: 100% 100%;}
-.tod-ui-chabot2 .ico-chatbot.unpaid_amt{background:url('/img/common/chatbot/ico-unpaid-charge.png') no-repeat 0 0; background-size: 100% 100%;}
-.tod-ui-chabot2 .ico-chatbot.hotbill{background:url('/img/common/chatbot/ico-live-charge.png') no-repeat 0 0; background-size: 100% 100%;}
-.tod-ui-chabot2 .ico-chatbot.pay_bill{background:url('/img/common/chatbot/ico-thismonth-charge.png') no-repeat 0 0;background-size: 100% 100%;}
-.tod-ui-chabot2 .ico-chatbot.membership_benefit{background:url('/img/common/chatbot/ico-membership.png') no-repeat 0 0;background-size: 100% 100%;}
-.tod-ui-chabot2 .ico-chatbot.cancel_pause{background:url('/img/common/chatbot/ico-pause.png') no-repeat 0 0; background-size: 100% 100%;}
-.tod-ui-chabot2 .ico-chatbot.hotdata{ background:url('/img/common/chatbot/ico-dataused.png') no-repeat 0 0; background-size: 100% 100%;}
+.tod-ui-chabot2 .ico-chatbot.initial{background:url('../img/common/chatbot/ico-ai.png') no-repeat 0 0; background-size: 100% 100%;}
+.tod-ui-chabot2 .ico-chatbot.pay_mthd, .tod-ui-chabot2 .ico-chatbot.micro_pay{background:url('../img/common/chatbot/ico-pay.png') no-repeat 0 0; background-size: 100% 100%;}
+.tod-ui-chabot2 .ico-chatbot.data_gift{background:url('../img/common/chatbot/ico-data.png') no-repeat 0 0; background-size: 100% 100%;}
+.tod-ui-chabot2 .ico-chatbot.refill_coupon{background:url('../img/common/chatbot/ico-coupon.png') no-repeat 0 0; background-size: 100% 100%;}
+.tod-ui-chabot2 .ico-chatbot.unpaid_amt{background:url('../img/common/chatbot/ico-unpaid-charge.png') no-repeat 0 0; background-size: 100% 100%;}
+.tod-ui-chabot2 .ico-chatbot.hotbill{background:url('../img/common/chatbot/ico-live-charge.png') no-repeat 0 0; background-size: 100% 100%;}
+.tod-ui-chabot2 .ico-chatbot.pay_bill{background:url('../img/common/chatbot/ico-thismonth-charge.png') no-repeat 0 0;background-size: 100% 100%;}
+.tod-ui-chabot2 .ico-chatbot.membership_benefit{background:url('../img/common/chatbot/ico-membership.png') no-repeat 0 0;background-size: 100% 100%;}
+.tod-ui-chabot2 .ico-chatbot.cancel_pause{background:url('../img/common/chatbot/ico-pause.png') no-repeat 0 0; background-size: 100% 100%;}
+.tod-ui-chabot2 .ico-chatbot.hotdata{ background:url('../img/common/chatbot/ico-dataused.png') no-repeat 0 0; background-size: 100% 100%;}
 /* add */
-.tod-ui-chabot2 .ico-chatbot.contents_pay{ background:url('/img/common/chatbot/ico-contents-pay.svg') no-repeat 0 0; background-size: 100% 100%;}
-.tod-ui-chabot2 .ico-chatbot.vcoloring{ background:url('/img/common/chatbot/ico-vcoloring.svg') no-repeat 0 0; background-size: 100% 100%;}
-.tod-ui-chabot2 .ico-chatbot.wavve{ background:url('/img/common/chatbot/ico-wavve.svg') no-repeat 0 0; background-size: 100% 100%;}
-.tod-ui-chabot2 .ico-chatbot.flo{ background:url('/img/common/chatbot/ico-flo.svg') no-repeat 0 0; background-size: 100% 100%;}
-.tod-ui-chabot2 .ico-chatbot.xbox{ background:url('/img/common/chatbot/ico-xbox.svg') no-repeat 0 0; background-size: 100% 100%;}
+.tod-ui-chabot2 .ico-chatbot.contents_pay{ background:url('../img/common/chatbot/ico-contents-pay.svg') no-repeat 0 0; background-size: 100% 100%;}
+.tod-ui-chabot2 .ico-chatbot.vcoloring{ background:url('../img/common/chatbot/ico-vcoloring.svg') no-repeat 0 0; background-size: 100% 100%;}
+.tod-ui-chabot2 .ico-chatbot.wavve{ background:url('../img/common/chatbot/ico-wavve.svg') no-repeat 0 0; background-size: 100% 100%;}
+.tod-ui-chabot2 .ico-chatbot.flo{ background:url('../img/common/chatbot/ico-flo.svg') no-repeat 0 0; background-size: 100% 100%;}
+.tod-ui-chabot2 .ico-chatbot.xbox{ background:url('../img/common/chatbot/ico-xbox.svg') no-repeat 0 0; background-size: 100% 100%;}
 
 /* Ctype - .tod-combot-ctype[data-color="purple"] case */
 .tod-combot-ctype[data-color="purple"] .ico-chatbot.initial,
@@ -9900,11 +9900,11 @@ button:focus span {
 .tod-combot-ctype[data-color="purple"] .ico-chatbot.membership_benefit,
 .tod-combot-ctype[data-color="purple"] .ico-chatbot.cancel_pause,
 .tod-combot-ctype[data-color="purple"] .ico-chatbot.hotdata, 
-.tod-combot-ctype[data-color="purple"] .ico-chatbot.contents_pay{background:url('/img/common/chatbot/ico-chabot-al.svg') no-repeat 0 0; background-size: 100% 100%;}
-.tod-combot-ctype[data-color="purple"] .ico-chatbot.vcoloring{background:url('/img/common/chatbot/ico-vcoloring-al.svg') no-repeat 0 0; background-size: 100% 100%;}
-.tod-combot-ctype[data-color="purple"] .ico-chatbot.wavve{background:url('/img/common/chatbot/ico-wavve-al.svg') no-repeat 0 0; background-size: 100% 100%;}
-.tod-combot-ctype[data-color="purple"] .ico-chatbot.flo{background:url('/img/common/chatbot/ico-flo-al.svg') no-repeat 0 0; background-size: 100% 100%;}
-.tod-combot-ctype[data-color="purple"] .ico-chatbot.xbox{background:url('/img/common/chatbot/ico-xbox-al.svg') no-repeat 0 0; background-size: 100% 100%;}
+.tod-combot-ctype[data-color="purple"] .ico-chatbot.contents_pay{background:url('../img/common/chatbot/ico-chabot-al.svg') no-repeat 0 0; background-size: 100% 100%;}
+.tod-combot-ctype[data-color="purple"] .ico-chatbot.vcoloring{background:url('../img/common/chatbot/ico-vcoloring-al.svg') no-repeat 0 0; background-size: 100% 100%;}
+.tod-combot-ctype[data-color="purple"] .ico-chatbot.wavve{background:url('../img/common/chatbot/ico-wavve-al.svg') no-repeat 0 0; background-size: 100% 100%;}
+.tod-combot-ctype[data-color="purple"] .ico-chatbot.flo{background:url('../img/common/chatbot/ico-flo-al.svg') no-repeat 0 0; background-size: 100% 100%;}
+.tod-combot-ctype[data-color="purple"] .ico-chatbot.xbox{background:url('../img/common/chatbot/ico-xbox-al.svg') no-repeat 0 0; background-size: 100% 100%;}
 
 /* Ctype - .tod-combot-ctype[data-color="gray"] case */
 .tod-combot-ctype[data-color="gray"] .ico-chatbot.initial,
@@ -9918,11 +9918,11 @@ button:focus span {
 .tod-combot-ctype[data-color="gray"] .ico-chatbot.membership_benefit,
 .tod-combot-ctype[data-color="gray"] .ico-chatbot.cancel_pause,
 .tod-combot-ctype[data-color="gray"] .ico-chatbot.hotdata,
-.tod-combot-ctype[data-color="gray"] .ico-chatbot.contents_pay{background:url('/img/common/chatbot/ico-chabot.svg') no-repeat 0 0; background-size: 100% 100%;}
-.tod-combot-ctype[data-color="gray"] .ico-chatbot.vcoloring{ background:url('/img/common/chatbot/ico-vcoloring.svg') no-repeat 0 0; background-size: 100% 100%;}
-.tod-combot-ctype[data-color="gray"] .ico-chatbot.wavve{ background:url('/img/common/chatbot/ico-wavve.svg') no-repeat 0 0; background-size: 100% 100%;}
-.tod-combot-ctype[data-color="gray"] .ico-chatbot.flo{ background:url('/img/common/chatbot/ico-flo.svg') no-repeat 0 0; background-size: 100% 100%;}
-.tod-combot-ctype[data-color="gray"] .ico-chatbot.xbox{ background:url('/img/common/chatbot/ico-xbox.svg') no-repeat 0 0; background-size: 100% 100%;}
+.tod-combot-ctype[data-color="gray"] .ico-chatbot.contents_pay{background:url('../img/common/chatbot/ico-chabot.svg') no-repeat 0 0; background-size: 100% 100%;}
+.tod-combot-ctype[data-color="gray"] .ico-chatbot.vcoloring{ background:url('../img/common/chatbot/ico-vcoloring.svg') no-repeat 0 0; background-size: 100% 100%;}
+.tod-combot-ctype[data-color="gray"] .ico-chatbot.wavve{ background:url('../img/common/chatbot/ico-wavve.svg') no-repeat 0 0; background-size: 100% 100%;}
+.tod-combot-ctype[data-color="gray"] .ico-chatbot.flo{ background:url('../img/common/chatbot/ico-flo.svg') no-repeat 0 0; background-size: 100% 100%;}
+.tod-combot-ctype[data-color="gray"] .ico-chatbot.xbox{ background:url('../img/common/chatbot/ico-xbox.svg') no-repeat 0 0; background-size: 100% 100%;}
 
 /* Ctype - .tod-combot-ctype[data-color="white"] case */
 .tod-combot-ctype[data-color="white"] .ico-chatbot.initial,
@@ -9936,11 +9936,11 @@ button:focus span {
 .tod-combot-ctype[data-color="white"] .ico-chatbot.membership_benefit,
 .tod-combot-ctype[data-color="white"] .ico-chatbot.cancel_pause,
 .tod-combot-ctype[data-color="white"] .ico-chatbot.hotdata,
-.tod-combot-ctype[data-color="white"] .ico-chatbot.contents_pay{background:url('/img/common/chatbot/ico-chabot-wh.svg') no-repeat 0 0; background-size: 100% 100%;}
-.tod-combot-ctype[data-color="white"] .ico-chatbot.vcoloring{ background:url('/img/common/chatbot/ico-vcoloring-wh.svg') no-repeat 0 0; background-size: 100% 100%;}
-.tod-combot-ctype[data-color="white"] .ico-chatbot.wavve{ background:url('/img/common/chatbot/ico-wavve-wh.svg') no-repeat 0 0; background-size: 100% 100%;}
-.tod-combot-ctype[data-color="white"] .ico-chatbot.flo{ background:url('/img/common/chatbot/ico-flo-wh.svg') no-repeat 0 0; background-size: 100% 100%;}
-.tod-combot-ctype[data-color="white"] .ico-chatbot.xbox{ background:url('/img/common/chatbot/ico-xbox-wh.svg') no-repeat 0 0; background-size: 100% 100%;}
+.tod-combot-ctype[data-color="white"] .ico-chatbot.contents_pay{background:url('../img/common/chatbot/ico-chabot-wh.svg') no-repeat 0 0; background-size: 100% 100%;}
+.tod-combot-ctype[data-color="white"] .ico-chatbot.vcoloring{ background:url('../img/common/chatbot/ico-vcoloring-wh.svg') no-repeat 0 0; background-size: 100% 100%;}
+.tod-combot-ctype[data-color="white"] .ico-chatbot.wavve{ background:url('../img/common/chatbot/ico-wavve-wh.svg') no-repeat 0 0; background-size: 100% 100%;}
+.tod-combot-ctype[data-color="white"] .ico-chatbot.flo{ background:url('../img/common/chatbot/ico-flo-wh.svg') no-repeat 0 0; background-size: 100% 100%;}
+.tod-combot-ctype[data-color="white"] .ico-chatbot.xbox{ background:url('../img/common/chatbot/ico-xbox-wh.svg') no-repeat 0 0; background-size: 100% 100%;}
 /* //keyword(발화어) */
 
 .tod-ui-chabot2 .link-wrap{text-align: right; margin-top: 2.5rem;}
@@ -9948,7 +9948,7 @@ button:focus span {
 .tod-ui-chabot2 .link-chatbot-go:after{
 	content: ""; display: inline-block; position: absolute; top: 50%; right: 0; 
 	width: 0.875rem; height: 0.875rem; transform: translateY(-50%); 
-	background: url(/img/svg/icon_48px_next.svg) no-repeat 0 0;
+	background: url(../img/svg/icon_48px_next.svg) no-repeat 0 0;
 	background-size: 100% 100%;
 }
 .tod-ui-chabot2 .link-wrap{display: none;}
@@ -9990,7 +9990,7 @@ button:focus span {
 .tod-chatbotIntro-tit-wrap .link-text:after{
   content: ""; display: inline-block; position: absolute; top: 50%; right: 0;
   width: 0.75rem; height: 0.75rem; transform: translateY(-50%);
-  background: url(/img/svg/icon_48px_next.svg) no-repeat 0 0;
+  background: url(../img/svg/icon_48px_next.svg) no-repeat 0 0;
   background-size: 100% 100%;
   margin-right: -0.9375rem;
 }
@@ -10015,7 +10015,7 @@ button:focus span {
 	width: 1.1875rem;
 	height: 0.75rem;
 	margin-left: 1rem;
-	background: url('/img/common/chatbot/ico-arrow-violet.png') no-repeat 0 0; 
+	background: url('../img/common/chatbot/ico-arrow-violet.png') no-repeat 0 0; 
 	background-size: 100% 100%;
 }
 .btn-chabot-default.on{
@@ -10026,7 +10026,7 @@ button:focus span {
 .btn-chabot-default.on .txt{color: #fff;}
 .btn-chabot-default.on .txt:after{
 	content: ''; display: inline-block; width: 1.1875rem; height: 0.75rem; margin-left: 1rem;
-	background: url('/img/common/chatbot/ico-arrow-white.png') no-repeat 0 0; 
+	background: url('../img/common/chatbot/ico-arrow-white.png') no-repeat 0 0; 
 	background-size: 100% 100%;
 }
 .tod-chatbotIntro-copy{ text-align: center; margin: 3.125rem 0 0;}
@@ -10062,13 +10062,13 @@ button:focus span {
 .tod-combot-btn[data-thema="normal"] .chat-icon{position: absolute; top: -11.36px; right: -2.8px;width: 56px; height: 70px;} /* 201120 */
 .tod-combot-btn[data-thema="normal"] .beta{
     display: block; position: absolute; top: -9px; right: -0.4px; z-index: 1; 
-    background: url(/img/common/chatbot/badge-beta-txt.svg) no-repeat 0 0; background-size: 100% 100%; 
+    background: url(../img/common/chatbot/badge-beta-txt.svg) no-repeat 0 0; background-size: 100% 100%; 
     width: 0; height: 17px; opacity:0;}
 .tod-combot-btn[data-thema="normal"] .beta.on{width:2.1875rem; opacity:1;}
 .tod-combot-btn[data-thema="santa"] .chat-icon {position: absolute;top: -19px;right: -11px;width: 64px;}
 .tod-combot-btn[data-thema="santa"] .beta{
     display: block; position: absolute; top: -1.5rem; right: -0.8125rem; z-index: 1; 
-    background: url(/img/common/chatbot/badge-beta-santa.svg) no-repeat 0 0; background-size: 100% 100%; 
+    background: url(../img/common/chatbot/badge-beta-santa.svg) no-repeat 0 0; background-size: 100% 100%; 
     width: 0; height: 2.625rem; opacity:0;}
 .tod-combot-btn[data-thema="santa"] .beta.on{width:3.25rem; opacity:1;} 
 
@@ -10102,7 +10102,7 @@ button:focus span {
 .tod-combot-ctype-wrap{z-index: 29; position: fixed; left: 50%; transform: translateX(-49.9%); bottom: -6.25rem; transition : all .5s;}
 .tod-combot-ctype-wrap.slideUp{ bottom: 4rem;}
 .tod-combot-ctype{position: relative;}
-.tod-combot-ctype .beta{position: absolute; top: -8px; right: 2px;display: block; width: 2.125rem; height: 0.9375rem; background: url(/img/svg/txt-beta.svg) no-repeat 0 0; background-size: 100% 100%;}
+.tod-combot-ctype .beta{position: absolute; top: -8px; right: 2px;display: block; width: 2.125rem; height: 0.9375rem; background: url(../img/svg/txt-beta.svg) no-repeat 0 0; background-size: 100% 100%;}
 .tod-combot-ctype .btn-close{position: absolute; right: 0.3125rem; top: 0.25rem; display: inline-block;}
 .tod-combot-ctype .list-wrap{max-width: 18.75rem; height: 2.875rem; border-radius: 1.3125rem; overflow: hidden; box-sizing: border-box; }
 .tod-combot-ctype .item{display:-webkit-box; display:-ms-flexbox;display:flex; -webkit-align-items: center;align-items: center;  padding: 0.5rem 0.625rem 0.5rem 0.75rem; width: 100%; box-sizing: border-box; text-align: left; white-space: nowrap; -webkit-user-select: none; user-select: none;}
@@ -10124,7 +10124,7 @@ button:focus span {
   content:"";
   display: inline-block;
   vertical-align: middle;
-  background: url(/img/common/chatbot/btn-close-wh.svg) no-repeat 0 0; 
+  background: url(../img/common/chatbot/btn-close-wh.svg) no-repeat 0 0; 
   width: 0.75rem; height: 0.75rem; background-size: 100%;}/*수정*/
 .tod-combot-ctype[data-color="white"] .list-wrap{background: #fff; border: 1px solid #f1f1f1; box-shadow: 0 1px 0.25rem rgba(0, 0, 0, .5);}
 .tod-combot-ctype[data-color="white"] .ico-chatbot{width: 1.625rem; height: 1.625rem;}
@@ -10135,22 +10135,22 @@ button:focus span {
   content:"";
   display: inline-block;
   vertical-align: middle;
-  background: url(/img/common/chatbot/btn-close-pp.svg) no-repeat 0 0; 
+  background: url(../img/common/chatbot/btn-close-pp.svg) no-repeat 0 0; 
   width: 0.75rem; height: 0.75rem; background-size: 100%;}/*수정*/
 /* //201109 [OP002-11653] [UX/PUB] (W-2010-032-01) [컴봇] Greeting 작업 건 수정 */
 
 /* 201027 [OP002-11515] T world 내 글로벌 T 바로가기 영역 적용 */
   /* main */
-.tod-i-global {display:inline-block; width:1.5rem; height:1.5rem; vertical-align:middle; background: url(/img/common/icon_global.png) no-repeat 0 0; background-size: 100% 100%}
+.tod-i-global {display:inline-block; width:1.5rem; height:1.5rem; vertical-align:middle; background: url(../img/common/icon_global.png) no-repeat 0 0; background-size: 100% 100%}
 .tod-global-link {position:relative; margin:1.25rem 0 -0.3125rem 0; padding:0.9375rem 1.25rem 0 1.25rem; border-top:1px solid #f2f2f2}
 .tod-global-link .tod-gb-box {position:relative; display: -webkit-box; display:flex; -webkit-box-align: center; align-items: center;}
-.tod-global-link .tod-gb-box::after {position:absolute; right:0; top:50%; transform: translateY(-50%); display: inline-block; content: "";width: 0.41rem; height: 0.69rem;background: url(/img/ico/icon-link-arrow.png) no-repeat right center;background-size: 6.5px 11px; margin: 0 0 0.19rem 0.5rem;color: #000 !important}
+.tod-global-link .tod-gb-box::after {position:absolute; right:0; top:50%; transform: translateY(-50%); display: inline-block; content: "";width: 0.41rem; height: 0.69rem;background: url(../img/ico/icon-link-arrow.png) no-repeat right center;background-size: 6.5px 11px; margin: 0 0 0.19rem 0.5rem;color: #000 !important}
 .tod-global-link .tod-gb-box .tod-txt {margin-left:0.625rem; font-size:0.9375rem;color:#000;line-height:1.06rem}
 .tod-global-link .tod-gb-box .i_beta {position:absolute; width:1.4375rem; height:0.6875rem; margin:-1.25rem 0 0 0.875rem}
   /* 전체메뉴 footer */
 #common-menu.tod-common-menu .footer .tod-f-gb-area {position:relative; margin-top:1.875rem}
 #common-menu.tod-common-menu .footer .tod-f-gb-area .f-ltd {position:absolute; right:0; top:4px; width:101px; height:12px; margin-top:0; background-size:101px 12px}
-#common-menu.tod-common-menu .footer .tod-f-gb-area .tod-f-gb-link a .tod-i-global {width:0.875rem;height:0.875rem;background-image: url(/img/common/icon_global_r.png);}
+#common-menu.tod-common-menu .footer .tod-f-gb-area .tod-f-gb-link a .tod-i-global {width:0.875rem;height:0.875rem;background-image: url(../img/common/icon_global_r.png);}
 #common-menu.tod-common-menu .footer .tod-f-gb-area .tod-f-gb-link a em {font-size:0.6875rem; color:#bb0024}
 #common-menu.tod-common-menu .footer .tod-f-gb-area .tod-f-gb-link .i_beta {width:1.4375rem; height:0.6875rem; vertical-align:middle}
 
@@ -10163,7 +10163,7 @@ button:focus span {
 .tod-tos-text-banner .tb-icon {display:block; width:37px; height:37px}
 .tod-tos-text-banner .tb-icon img {width:37px; height:37px; vertical-align:middle}
 .tod-tos-text-banner .tb-text {margin-left:0.625rem; color:#333333; font-size:0.875rem; letter-spacing: -0.5px; line-height:1.2} /* 210426 [OP002-14427] */
-.tod-tos-text-banner .tb-close {position:absolute; top:0; bottom:0; right:0; width:2.5rem; background: url(/img/svg/icon_32px_exit.svg) no-repeat top 50% right 19px; background-size: 13px 13px;}/* 210426 [OP002-14427] */
+.tod-tos-text-banner .tb-close {position:absolute; top:0; bottom:0; right:0; width:2.5rem; background: url(../img/svg/icon_32px_exit.svg) no-repeat top 50% right 19px; background-size: 13px 13px;}/* 210426 [OP002-14427] */
 #common-menu.tod-common-menu.user-type.use-tos-banner {padding-top:11.375rem}
 #common-menu.tod-common-menu.user-type.use-tos-banner .tod-tos-text-banner {position:absolute; top:7.9375rem;}
 #common-menu.tod-common-menu.user-type.use-tos-banner.scroll {padding-top:9.9375rem;}
@@ -10185,7 +10185,7 @@ button:focus span {
 .tod-renew.tod-srhtype1 .acco-list .acco-box.on > .acco-tit + .acco-cont{padding-top: 0 !important; padding-bottom: 0 !important;}
 
 /* 210322 [OP002-13839] NetFunnel 팝업 코딩 및 디자인 작업 재작업 */ 
-.popup .popup-info .popup-contents .inner-contents.tod-wait-wrap{margin-top:3.125rem; padding-top:10.625rem; text-align:center; background: url(/img/product/img-banner-wait.png) no-repeat 50% 0; background-size: 16rem auto}
+.popup .popup-info .popup-contents .inner-contents.tod-wait-wrap{margin-top:3.125rem; padding-top:10.625rem; text-align:center; background: url(../img/product/img-banner-wait.png) no-repeat 50% 0; background-size: 16rem auto}
 .popup .popup-info .popup-contents .inner-contents.tod-wait-wrap .tod-wait-txt{margin-top:0.625rem; padding: 0 1.5rem; word-break: keep-all}
 .popup .popup-info .popup-contents .inner-contents.tod-wait-wrap .tod-wait-box{margin:1.0625rem 0.5rem 3.75rem 0.5rem; padding:1.25rem 0; background:#f5f5f5; border-radius:0.4375rem}
 .popup .popup-info .popup-contents .inner-contents.tod-wait-wrap .tod-wait-box .txt{display:block; color:#000; font-size:0.94rem; font-weight:500}
