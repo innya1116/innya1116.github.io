@@ -1,18 +1,16 @@
 # 삼성전자 글로벌 권리대응 사이트 UX개선 프로젝트
-## 1. 담당자
+## 프로젝트 정보
+- 반응형 제작
+- 글로벌 확산을 위한 RTL 언어 사용국가 고려 작업(dir="rtl" 적용하여 테스트)<br>
+  ```html
+  <html lang="언어코드" dir="rtl">
+  ```
+- 고대비 모드 작업 필요(고대비 모드 적용 클래스: high-contrast-mode)<br>
+  ```html
+  <body class="high-contrast-mode">
+  ```
 
-## 2. 프로젝트 정보
-- 반응형 제작<br>
-- 글로벌 확산을 위한 RTL 언어 사용국가 고려 작업(dir="rtl" 적용하여 테스트)
-````html
-<html lang="언어코드" dir="rtl">
-````
-- 고대비 모드 작업 필요(고대비 모드 적용 클래스: high-contrast-mode)
-````html
-<body class="high-contrast-mode">
-````
-
-## 3. 작업환경 정보
+## 작업환경 정보
 ### 1) 사용 프로그램
 - node.js - https://nodejs.org/ko/
 - git - https://git-scm.com/download/win
@@ -41,12 +39,12 @@
 - 최종산출물 /output/ 폴더 내
 - 개발 전달 시 /output/ 폴더 안의 내용만 전체 압축하여 전달
 
-| type | 경로 | file | 설명 |
-| ---- | ---- | ---- | ---- |
-| css | /css/ | normalize.css<br>common.css<br>style.css | 초기화 css<br>공통 스타일<br>페이지별 스타일 |
-| font | /css/fonts/ | | 국가별 언어 font 파일 |
-| js | /js/ | commonJs.min.js |
+| type  | 경로 | file | 설명 |
+|-------|------|------|------|
+| css   | /css/ | normalize.css<br>common.css<br>style.css | 초기화 css<br>공통 스타일<br>페이지별 스타일 |
+| font  | /css/fonts/ | | 국가별 언어 font 파일 |
+| js    | /js/ | commonJs.min.js |
 | image | /images/ |
-| html | /html/ |
+| html  | /html/ |
 | guide | /guide/ |
 
