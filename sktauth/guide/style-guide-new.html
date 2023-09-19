@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no, address=no, email=no" />
+    <link rel="shortcut icon" href="/img/common/favicon.ico" />
+    <link rel="shortcut icon" href="/img/common/favicon.png" />
+    <link rel="apple-touch-icon" href="/img/common/favicon.png" />
+    <meta name="description" content="페이지설명" />
+    <meta name="keywords" content="서비스키워드" />
+    <meta property="og:title" content="SKT 홈페이지" />
+    <meta property="og:site_name" content="SKT" />
+    <meta property="og:image" content="/image/common/skt_facebook.jpg" />
+    <meta property="og:description" content="SKT framework" />
+    <title>STYLE GUIDE - T월드 인증 개선 - MOBILE</title>
+    <link rel="stylesheet" type="text/css" href="/css/common.css" media="all" /><!-- [C] 공통 스타일 -->
+    <link rel="stylesheet" type="text/css" href="/css/layout.css" media="all" /><!-- [C] 박스 모델 -->
+    <link rel="stylesheet" type="text/css" href="/css/widgets.css" media="all" /><!-- [C] 기능별 위젯 -->
+    <link rel="stylesheet" type="text/css" href="/css/components.css" media="all" /><!-- [C] 단락별 컴퍼넌트 -->
+    <script type="text/javascript" src="/lib/jquery-1.12.3.min.js"></script><!--[C] jquery API-->
+    <script type="text/javascript" src="/lib/handlebars-v4.0.5.js"></script><!--[C] handlebars tmpl API-->
+    <script type="text/javascript" src="/lib/slick.js"></script><!--[C] iscroll API -->
+    <script type="text/javascript" src="/js/$vars.js"></script><!--[C] 전역 변수 -->
+    <script type="text/javascript" src="/js/common.js"></script><!--[C] 공통 기능 -->
+    <script type="text/javascript" src="/js/widgets.js"></script><!--[C] 기능별 위젯 -->
+
+    <!-- 인증 CSS/JS 추가 -->
+    <link rel="stylesheet" type="text/css" href="/css/auth.css" media="all" />
+    <script type="text/javascript" src="/js/auth.js"></script>
+    <!--// 인증 CSS/JS 추가 -->
+
+<style>
+    html{scroll-behavior:smooth}
+    body{background:#fff}
+    .style-guide{position:relative;padding:6rem 0 2rem;transition:all .2s;}
+    .style-guide.anchor-open{padding-right:30%;}
+    .top-area{position:fixed;left:0;right:0;top:0;margin:0;background:#000;box-shadow:0 1px 5px rgba(0,0,0,.2);z-index:10000;}
+    .go-main{display:block;position:absolute;left:0;top:.5rem;width:3rem;height:3rem;color:transparent !important;font-size:.625rem;}
+    .go-main:after{content:'';display:block;position:absolute;left:60%;top:50%;width:1rem;height:1rem;border:2px solid #fff;border-width: 0 0 2px 2px;transform:rotate(45deg) translate(-50%, -50%);transform-origin: 0 0;}
+    .style-guide-nav{box-sizing:border-box;background:#dfdfdf;}
+    .style-guide-nav.view{right:0;}
+    .style-guide-nav ul{display:flex;padding:0 2rem;}
+    .style-guide-nav ul li+li{margin-left:1rem;}
+    .style-guide-nav ul li a{color:#333;font-size:.875rem;line-height:2.25rem;text-decoration:underline}
+    .style-guide-nav ul li a:before{content:'#'}
+    .style-guide-nav ul li a:hover, .style-guide-nav ul li a:focus{color:#000;font-weight:bold;}
+    .style-guide-nav ul li.on a{color:red}
+    .guide-tit1{padding:1rem 4.5rem 1rem 3.5rem;color:#fff;font-size:1.5rem;line-height:2rem}
+    .guide-tit2{padding-top:1.5rem;margin:0 1.5rem;font-size:2rem;color:#000;font-size:1.5rem;font-weight:bold}
+    .guide-tit2 span{color:#178bce;}
+    .guide-tit3{margin-bottom:.5rem;font-size:1.2rem;font-weight:500}
+    .guide-tit3 a{font-size:1rem;color:initial;text-decoration:underline;}
+    .guide-tit3 ~ .guide-tit3{margin-top:1.25rem}
+    .guide-txt{margin:.5rem 1.5rem 0;font-size:.875rem;font-weight:normal;}
+    .guide-txt strong{display:block;margin-bottom:.25rem}
+    .guide-txt ul li{position:relative;padding-left:.625rem;}
+    .guide-txt ul li+li{margin-top:.25rem;}
+    .guide-txt ul li:before{content:'- ';position:absolute;left:0;}
+    .guide-content{margin:1rem .7rem 0 .7rem;;padding:.8rem;border:1px dashed #aaa}
+    .guide-content .guide-txt{margin:0}
+    .code-sample{border:1px dotted #000}
+    .guide-code:before{content:'[Source Code]';display:block;margin-top:1rem;font-weight:500;font-size:.875rem}
+    .guide-code pre{display:block;overflow:auto;margin:.5rem 0 0;padding:.5rem;background:#333;color:#ccc;font-size:.8125rem;line-height:1.5;letter-spacing:0;white-space:pre-wrap;font-family:'Consolas', 'Courier New', Sans-serif}
+    .guide-code .cmt{color:#999;font-style:italic}
+    .guide-code .point{color:#fcff00;font-weight:bold;}
+    .guide-device-view a{color:#178bce;text-decoration:underline}
+    .guide-device-view iframe{display:block;width:375px;height:778px;border:1px solid #aaa}
+    .style-guide-nav__btn{position:fixed;right:0;top:0;z-index:10000;width:4rem;height:4rem;background:#000;}
+    .style-guide-nav__btn:before{content:'';display:block;position:absolute;left:50%;top:50%;height:1.5rem;width:2rem;border:2px solid #fff;border-width:2px 0;transform:translate(-50%,-50%);transition:all .2s;}
+    .style-guide-nav__btn:after{content:'';display:block;position:absolute;left:50%;top:50%;height:.125rem;width:2rem;background:#fff;transform:translate(-50%,-50%);transition:all .2s;}
+    .view .style-guide-nav__btn:before,
+    .view .style-guide-nav__btn:after{height:.125rem;width:2rem;border:0 none;background:#fff;transform-origin:0;}
+    .view .style-guide-nav__btn:before{transform:rotate(45deg) translate(-50%)}
+    .view .style-guide-nav__btn:after{transform:rotate(-45deg) translate(-50%)}
+    .go-top{position:fixed;right:.7rem;bottom:.7rem;z-index:10000;width:3rem;height:3rem;background:rgba(0,0,0,.7);}
+    .go-top:after{content:'';display:block;position:absolute;left:50%;top:50%;width:1rem;height:1rem;border:2px solid #fff;border-width:2px 2px 0 0;transform:rotate(-45deg) translate(-20%,-50%);}
+</style>
+
+</head>
+
+<body>
+    <div class="style-guide">
+        <div class="top-area">
+            <a class="go-main" href="/index.html">Main</a>
+            <h1 class="guide-tit1">STYLE GUIDE - T월드 인증 개선 - MOBILE</h1>
+            <div class="style-guide-nav">
+                <!-- <button class="style-guide-nav__btn">바로가기</button> -->
+                <ul class="style-guide-nav__list">
+                </ul>
+            </div>
+        </div>
+        <h2 class="guide-tit2">Common</h2>
+        <div class="guide-content">
+            <div class="guide-txt">
+                <ul>
+                    <li>Mobile T world 운영 Style Guide를 기준으로 재정의 되었습니다.(단위 rem 사용/들여쓰기 Space 사용(4칸))</li>
+                    <li>아래에 정의된 스타일 가이드는 Action Sheet 레이아웃의 코드 구조를 우선으로 두고 div.auth-container 영역 내에 위치할 경우 스타일 및 스크립트가 정상적으로 동작됩니다.</li>
+                </ul>
+            </div>
+        </div>
+        <h2 class="guide-tit2">Layout</h2>
+        <div class="guide-content">
+            <h3 class="guide-tit3">1. Action Sheet - <a href="/guide/layout-actionsheet.html" target="_blank" title="새창 열림">layout-actionsheet.html</a></h3>
+            <div class="guide-device-view">
+                <iframe src="/guide/layout-actionsheet.html"></iframe>
+            </div>
+
+            <div class="guide-code">
+<pre>
+<span class="cmt">&lt;!-- .popup hbs<span class="point">(new 인증 팝업페이지 auth-popup 클래스 추가)</span>: 팝업 활성화 시 aria-hidden="false" 로 변경 --&gt;</span>
+&lt;div class="popup tw-popup <span class="point">auth-popup</span>" role="dialog" aria-modal="true" aria-hidden="true"&gt;
+    <span class="cmt">&lt;!-- actionsheet 팝업 actionsheet_full 추가 --&gt;</span>
+    &lt;div class="popup-page layer actionsheet_full" style="bottom: 0px;"&gt;
+        <span class="cmt">&lt;!-- .auth-popup__inner --&gt;</span>
+        &lt;div class="auth-popup__inner"&gt;
+            <span class="cmt">&lt;!-- .auth-header --&gt;</span>
+            &lt;div class="auth-header"&gt;
+                &lt;h1 class="auth-header__eyebrow"&gt;서브가이드&lt;/h1&gt;
+                &lt;h2 class="auth-header__title"&gt;메인가이드 문구&lt;/h2&gt;
+            &lt;/div&gt;
+            <span class="cmt">&lt;!--// .auth-header --&gt;</span>
+            <span class="cmt">&lt;!-- .auth-container --&gt;</span>
+            &lt;div class="auth-container"&gt;
+                &lt;div class="cont-box cont-box--auth"&gt;
+                    contents 입력 영역&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            <span class="cmt">&lt;!--// .auth-container --&gt;</span>
+            <span class="cmt">&lt;!-- .auth-footer --&gt;</span>
+            &lt;div class="auth-footer"&gt;
+                &lt;div class="auth-bottom-fixed"&gt;
+                    &lt;div class="auth-bottom-fixed__area"&gt;
+                        스크롤 or 키패드가 올라올 경우 floating 되는 버튼이 있을 경우 추가
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+                페이지 하단에 위치하는 버튼이 있는 경우 사용
+
+            &lt;/div&gt;
+            <span class="cmt">&lt;!--// .auth-footer --&gt;</span>
+        &lt;/div&gt;
+        <span class="cmt">&lt;!--// .auth-popup__inner --&gt;</span>
+
+        <span class="cmt">&lt;!-- .popup-closeBtn --&gt;</span>
+        &lt;button class="popup-closeBtn"&gt;&lt;span class="blind"&gt;팝업 페이지 닫기&lt;/span&gt;&lt;/button&gt;
+        <span class="cmt">&lt;!--// .popup-closeBtn --&gt;</span>
+    &lt;/div&gt;
+    &lt;div class="popup-blind"&gt;&lt;/div&gt;
+&lt;/div&gt;
+<span class="cmt">&lt;!--// .popup hbs --&gt;</span>
+</pre>
+            </div>
+
+            <h3 class="guide-tit3">2. Layer Popup - <a href="/guide/layout-layerpopup.html" target="_blank" title="새창 열림">layout-layerpopup.html</a></h3>
+            <p class="guide-txt">Mobile T world 가이드와 동일하게 사용</p>
+            <div class="guide-device-view mt16">
+                <iframe src="/guide/layout-layerpopup.html"></iframe>
+            </div>
+
+            <div class="guide-code">
+<pre>
+<span class="cmt">&lt;!-- .popup hbs: 팝업 활성화 시 aria-hidden="false" 로 변경 --&gt;</span>
+&lt;div class="popup tw-popup" role="dialog" aria-hidden="true"&gt;
+    &lt;div class="popup-info" role="alertdialog" aria-labelledby="alertHeading" aria-describedby="alertText"&gt;
+        &lt;div class="popup-header"&gt;
+            &lt;h5 class="popup-title tl" id="alertHeading"&gt;타이틀&lt;/h5&gt;
+        &lt;/div&gt;
+        <span class="cmt">&lt;!-- 콘텐츠 영역이 없는 경우 none 클래스 추가 --&gt;</span>
+        &lt;div class="popup-contents" id="alertText"&gt;
+            &lt;div class="inner-contents"&gt;
+                &lt;div class="tl font-only-gray"&gt;콘텐츠&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;ul class="bt-bottom"&gt;
+            &lt;li class="bt-red1 pos-right"&gt;
+                &lt;button&gt;주 버튼&lt;/button&gt;
+            &lt;/li&gt;
+            &lt;li class="pos-left"&gt;
+                &lt;button&gt;닫기&lt;/button&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;div class="popup-blind"&gt;&lt;/div&gt;
+&lt;/div&gt;
+<span class="cmt">&lt;!--// .popup hbs --&gt;</span>
+</pre>
+            </div>
+
+            <h3 class="guide-tit3">3. Toast Popup - <a href="/guide/layout-toastpopup.html" target="_blank" title="새창 열림">layout-toastpopup.html</a></h3>
+            <div class="guide-device-view mt16">
+                <iframe src="/guide/layout-toastpopup.html"></iframe>
+            </div>
+
+            <div class="guide-code">
+<pre>
+<span class="cmt">&lt;!-- 인증개선 toast popup <span class="point">(.auth-popup 클래스 추가)</span> --&gt;</span>
+&lt;div class="toast-popup tw-popup <span class="point">auth-popup</span>"&gt;
+    <span class="cmt">&lt;!-- 활성화 전: on 클래스 삭제 및 aria-hidden="true" --&gt;</span>
+    &lt;div class="toast-layer on" aria-live="assertive" aria-hidden="false"&gt;
+        &lt;p class="toast-txt"&gt;인증번호가 전송되었어요.&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+<span class="cmt">&lt;!--// 인증개선 toast popup --&gt;</span>
+</pre>
+            </div>
+        </div>
+
+        <h2 class="guide-tit2">Button</h2>
+        <div class="guide-content">
+            <h3 class="guide-tit3">Btn L(Primary Button)</h3>
+            <div class="popup auth-popup" style="position:static">
+                <!-- buttons -->
+                <button class="btn-floating btn-style1">Primary button(active)</button>
+                <button class="btn-floating btn-style1" disabled>Primary button(disabled)</button>
+                <!--// buttons -->
+            </div>
+
+            <div class="guide-code">
+<pre>
+&lt;button class="btn-floating btn-style1"&gt;Primary button(active)&lt;/button&gt;
+&lt;button class="btn-floating btn-style1" disabled&gt;Primary button(disabled)&lt;/button&gt;
+</pre>
+            </div>
+
+            <h3 class="guide-tit3">Btn M(Secondary Button)</h3>
+            <div class="popup auth-popup" style="position:static">
+                <!-- buttons -->
+                <button class="btn-floating btn-style3">Secondary button(active)</button>
+                <button class="btn-floating btn-style3" disabled>Secondary button(disabled)</button>
+                <!--// buttons -->
+            </div>
+
+            <div class="guide-code">
+<pre>
+&lt;button class="btn-floating btn-style3"&gt;Secondary button(active)&lt;/button&gt;
+&lt;button class="btn-floating btn-style3" disabled&gt;Secondary button(disabled)&lt;/button&gt;
+</pre>
+            </div>
+
+            <h3 class="guide-tit3">Btn S</h3>
+            <div class="popup auth-popup" style="position:static">
+                <!-- buttons -->
+                <button class="btn-round2 btn-style3">Small button(active)</button>
+                <button class="btn-round2 btn-style3" disabled>Small button(disabled)</button>
+                <!--// buttons -->
+            </div>
+
+            <div class="guide-code">
+<pre>
+&lt;button class="btn-round2 btn-style3"&gt;Small button(active)&lt;/button&gt;
+&lt;button class="btn-round2 btn-style3" disabled&gt;Small button(disabled)&lt;/button&gt;
+</pre>
+            </div>
+
+            <h3 class="guide-tit3">Etc</h3>
+            <div class="popup auth-popup" style="position:static">
+                <!-- buttons -->
+                <button class="auth-btn-arrow">다른 방법으로 인증하기</button>
+                <!--// buttons -->
+            </div>
+
+            <div class="guide-code">
+<pre>
+&lt;button class="auth-btn-arrow"&gt;다른 방법으로 인증하기&lt;/button&gt;
+</pre>
+            </div>
+        </div>
+
+        <h2 class="guide-tit2">Form</h2>
+        <div class="guide-content">
+            <div class="guide-txt">
+                <strong>접근성</strong>
+                <ul>
+                    <li>label 속성을 가진 항목이 있으면 id를 추가하고, input에 aria-labelledby를 추가하여 연결</li>
+                    <li>label이 없다면 placeholder 내용과 중복되지 않는 내용으로 title을 추가하여 input을 설명</li>
+                </ul>
+            </div>
+
+            <h3 class="guide-tit3 mt24">Input Default</h3>
+            <div class="popup auth-popup" style="position:static">
+                <div class="auth-container" style="padding:0">
+                    <div class="cont-box--auth" style="padding:0">
+
+                        <span class="inputbox inputbox--auth">
+                            <span class="input">
+                                <input type="text" title="Placeholder와 중복되지 않는 내용의 input 설명" placeholder="Placeholder Text">
+                                <button class="cancel"><span class="blind">삭제</span></button>
+                            </span>
+                        </span>
+
+                        <span class="inputbox inputbox--auth">
+                            <!-- 오류: error 클래스 추가 -->
+                            <span class="input">
+                                <!-- 오류: aria-describedby="auth-errmsg-input-info" 추가 -->
+                                <input class="input__phone-number" type="tel" title="휴대폰 번호" placeholder="휴대폰 번호 입력(숫자만 입력)" maxlength="13">
+                                <button class="cancel"><span class="blind">삭제</span></button>
+                            </span>
+
+                            <span class="tx-box">
+                                <!-- 오류: none 클래스 삭제 -->
+                                <span id="auth-errmsg-input-info" class="error-txt none" aria-hidden="true">입력하신 정보를 다시 한번 확인해주세요.</span>
+                            </span>
+                        </span>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="guide-code">
+<pre>
+&lt;span class="inputbox inputbox--auth"&gt;
+    &lt;span class="input"&gt;
+        &lt;input type="text" title="Placeholder와 중복되지 않는 내용의 input 설명" placeholder="Placeholder Text"&gt;
+        &lt;button class="cancel"&gt;&lt;span class="blind"&gt;삭제&lt;/span&gt;&lt;/button&gt;
+    &lt;/span&gt;
+&lt;/span&gt;
+
+&lt;span class="inputbox inputbox--auth"&gt;
+    <span class="cmt">&lt;!-- 오류: error 클래스 추가 --&gt;</span>
+    &lt;span class="input"&gt;
+        <span class="cmt">&lt;!-- 오류: aria-describedby="auth-errmsg-input-info" 추가 --&gt;</span>
+        &lt;input class="input__phone-number" type="tel" title="휴대폰 번호" placeholder="휴대폰 번호 입력(숫자만 입력)" maxlength="13"&gt;
+        &lt;button class="cancel"&gt;&lt;span class="blind"&gt;삭제&lt;/span&gt;&lt;/button&gt;
+    &lt;/span&gt;
+
+    &lt;span class="tx-box"&gt;
+        <span class="cmt">&lt;!-- 오류: none 클래스 삭제 --&gt;</span>
+        &lt;span id="auth-errmsg-input-info" class="error-txt none" aria-hidden="true"&gt;입력하신 정보를 다시 한번 확인해주세요.&lt;/span&gt;
+    &lt;/span&gt;
+&lt;/span&gt;
+
+&lt;span class="inputbox inputbox--auth resident-number"&gt;
+    &lt;span class="input resident-number__front"&gt;
+        &lt;input type="tel" title="주민등록번호 앞 6자리 숫자 입력" placeholder="주민등록번호" maxlength="6"&gt;
+        &lt;button class="cancel"&gt;&lt;span class="blind"&gt;삭제&lt;/span&gt;&lt;/button&gt;
+    &lt;/span&gt;
+    &lt;span class="bar"&gt;-&lt;/span&gt;
+    &lt;span class="input resident-number__back"&gt;
+        &lt;input type="tel" title="주민등록번호 뒷 7자리 중 첫번째 숫자 입력" placeholder="" maxlength="1"&gt;
+        &lt;span class="masking-area" aria-hidden="true"&gt;●●●●●●&lt;/span&gt;
+    &lt;/span&gt;
+&lt;/span&gt;
+</pre>
+            </div>
+
+            <h3 class="guide-tit3 mt24">Input - 영역 우측에 버튼 등 다른 내용이 있는 경우</h3>
+
+            <div class="popup auth-popup" style="position:static">
+                <div class="auth-container" style="padding:0;">
+                    <div class="cont-box--auth" style="padding:0;">
+
+                        <span class="inputbox inputbox--auth">
+                            <!-- 오류: error 클래스 추가 -->
+                            <span class="input input--in-btn">
+                                <!-- 오류: 오류: aria-describedby="auth-errmsg-auth-number" 추가 -->
+                                <input class="input__phone-number" type="tel" title="휴대폰으로 전송받은 인증번호 입력" placeholder="인증번호 입력(6자리 숫자)" maxlength="6">
+                                <button class="cancel"><span class="blind">삭제</span></button>
+
+                                <span class="input__right">
+                                    <span class="sms-time">
+                                        <span class="blind">남은 시간</span>
+                                        <span class="sms-time__text">3:59</span>
+                                    </span>
+                                    <span class="btn-area ml8">
+                                        <button class="btn-round2 btn-style3">다시 받기</button>
+                                    </span>
+                                </span>
+                            </span>
+
+                            <span class="tx-box">
+                                <!-- 오류: none 클래스 삭제 -->
+                                <span id="auth-errmsg-auth-number" class="error-txt none" aria-hidden="true">인증번호가 일치하지 않습니다.</span>
+                            </span>
+                        </span>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="guide-code">
+<pre>
+&lt;span class="inputbox inputbox--auth"&gt;
+    <span class="cmt">&lt;!-- 오류: error 클래스 추가 --&gt;</span>
+    &lt;span class="input <span class="point">input--in-btn</span>"&gt;
+        <span class="cmt">&lt;!-- 오류: 오류: aria-describedby="auth-errmsg-auth-number" 추가 --&gt;</span>
+        &lt;input type="tel" title="휴대폰으로 전송받은 인증번호 입력" placeholder="인증번호 입력(6자리 숫자)" maxlength="6"&gt;
+        &lt;button class="cancel"&gt;&lt;span class="blind"&gt;삭제&lt;/span&gt;&lt;/button&gt;
+
+        <span class="point">&lt;span class="input__right"&gt;</span>
+            &lt;span class="sms-time"&gt;
+                &lt;span class="blind"&gt;남은 시간&lt;/span&gt;
+                &lt;span class="sms-time__text"&gt;3:59&lt;/span&gt;
+            &lt;/span&gt;
+            &lt;span class="btn-area ml8"&gt;
+                &lt;button class="btn-round2 btn-style3"&gt;다시 받기&lt;/button&gt;
+            &lt;/span&gt;
+        <span class="point">&lt;/span&gt;</span>
+    &lt;/span&gt;
+
+    &lt;span class="tx-box"&gt;
+        <span class="cmt">&lt;!-- 오류: none 클래스 삭제 --&gt;</span>
+        &lt;span id="aria-sms-exp-desc1" class="error-txt none" aria-hidden="true"&gt;인증번호가 일치하지 않습니다.&lt;/span&gt;
+    &lt;/span&gt;
+&lt;/span&gt;
+</pre>
+            </div>
+
+            <h3 class="guide-tit3 mt24">Input Error</h3>
+            <p class="guide-txt">오류 시 오류 문구 영역에 id를 추가하고, input에 aria-describedby를 추가하여 연결</p>
+            <div class="popup auth-popup" style="position:static">
+                <div class="auth-container">
+                    <div class="cont-box--auth" style="padding:0;">
+
+                        <span class="inputbox inputbox--auth">
+                            <!-- 오류: error 클래스 추가 -->
+                            <span class="input error">
+                                <!-- 오류: aria-describedby="auth-errmsg-cell-number" 추가 -->
+                                <input class="input__phone-number" type="tel" title="인증을 진행할 휴대폰 번호" placeholder="휴대폰 번호 입력" maxlength="13" aria-describedby="auth-errmsg-cell-number">
+                                <button class="cancel"><span class="blind">삭제</span></button>
+                            </span>
+
+                            <span class="tx-box">
+                                <!-- 오류: none 클래스 삭제 -->
+                                <span id="auth-errmsg-cell-number" class="error-txt" aria-hidden="true">입력하신 정보를 다시 한번 확인해주세요.</span>
+                            </span>
+                        </span>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="guide-code">
+<pre>
+&lt;span class="inputbox inputbox--auth"&gt;
+    &lt;!-- 오류: error 클래스 추가 --&gt;
+    &lt;span class="input <span class="point">error</span>"&gt;
+        &lt;!-- 오류: aria-describedby="auth-errmsg-cell-number" 추가 --&gt;
+        &lt;input class="input__phone-number" type="tel" title="인증을 진행할 휴대폰 번호" placeholder="휴대폰 번호 입력" maxlength="13" <span class="point">aria-describedby="auth-errmsg-cell-number"</span>&gt;
+        &lt;button class="cancel"&gt;&lt;span class="blind"&gt;삭제&lt;/span&gt;&lt;/button&gt;
+    &lt;/span&gt;
+
+    &lt;span class="tx-box"&gt;
+        &lt;!-- 오류: none 클래스 삭제 --&gt;
+        &lt;span <span class="point">id="auth-errmsg-cell-number" class="error-txt"</span> aria-hidden="true"&gt;입력하신 정보를 다시 한번 확인해주세요.&lt;/span&gt;
+    &lt;/span&gt;
+&lt;/span&gt;
+</pre>
+            </div>
+
+            <h3 class="guide-tit3 mt24">Radio(성별 선택)</h3>
+            <p class="guide-txt">div.auth-container에 auth-step-contents가 있는 경우에만 클래스가 정상적으로 적용됨</p>
+            <div class="popup auth-popup" style="position:static;">
+                <div class="auth-container auth-step-contents">
+                    <div class="cont-box--auth" style="padding:0;">
+
+                        <!-- 성별 선택 -->
+                        <div class="gender-selection step-gender-selection">
+                            <ul class="radio-group">
+                                <!-- 선택 시 checked 클래스 추가 -->
+                                <li class="input-radio">
+                                    <!-- 선택 시 checked 속성 추가 -->
+                                    <input type="radio" name="auth-gender-selection" aria-labelledby="auth-gender-selection-male">
+                                    <span class="label" id="auth-gender-selection-male" aria-hidden="true">남성</span>
+                                </li>
+                                <!-- 선택 시 checked 클래스 추가 -->
+                                <li class="input-radio">
+                                    <!-- 선택 시 checked 속성 추가 -->
+                                    <input type="radio" name="auth-gender-selection" aria-labelledby="auth-gender-selection-female">
+                                    <span class="label" id="auth-gender-selection-female" aria-hidden="true">여성</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--// 성별 선택 -->
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="guide-code">
+<pre>
+<span class="cmt">&lt;!-- 성별 선택 --&gt;</span>
+&lt;div class="gender-selection step-gender-selection"&gt;
+    &lt;ul class="radio-group"&gt;
+        <span class="cmt">&lt;!-- 선택 시 checked 클래스 추가 --&gt;</span>
+        &lt;li class="input-radio"&gt;
+            <span class="cmt">&lt;!-- 선택 시 checked 속성 추가 --&gt;</span>
+            &lt;input type="radio" name="auth-gender-selection" aria-labelledby="auth-gender-selection-male"&gt;
+            &lt;span class="label" id="auth-gender-selection-male" aria-hidden="true"&gt;남성&lt;/span&gt;
+        &lt;/li&gt;
+        <span class="cmt">&lt;!-- 선택 시 checked 클래스 추가 --&gt;</span>
+        &lt;li class="input-radio"&gt;
+            <span class="cmt">&lt;!-- 선택 시 checked 속성 추가 --&gt;</span>
+            &lt;input type="radio" name="auth-gender-selection" aria-labelledby="auth-gender-selection-female"&gt;
+            &lt;span class="label" id="auth-gender-selection-female" aria-hidden="true"&gt;여성&lt;/span&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+<span class="cmt">&lt;!--// 성별 선택 --&gt;</span>
+</pre>
+            </div>
+
+        </div>
+
+        <h2 class="guide-tit2">Accordion</h2>
+        <p class="guide-txt">개인정보활용 동의 부분에 사용</p>
+
+        <div class="guide-content">
+            <h3 class="guide-tit3">전체동의가 있는 case</h3>
+            <div class="popup auth-popup" style="position:static">
+                <div class="auth-container" style="padding: 20px 0 0;">
+
+                    <div class="auth-terms">
+                        <!-- .widget -->
+                        <div class="widget">
+                            <div class="widget-box accordion">
+                                <div class="auth-terms__check-all">
+                                    <span class="custom-form"><input type="checkbox" id="auth-terms-check-all"><span class="c-type1"></span></span>
+                                    <label for="auth-terms-check-all">전체동의</label>
+                                </div>
+                                <div class="acco-cover on">
+                                    <div class="acco-style btn-hold">
+                                        <ul class="acco-list">
+                                            <!-- 활성화 항목에 on 클래스 추가 및 button.acco-btn에 aria-pressed="true" 세팅 필요 -->
+                                            <li class="acco-box on">
+                                                <div class="acco-tit">
+                                                    <span class="custom-form"><input type="checkbox" id="auth-term1-1"><span class="c-type1"></span></span>
+                                                    <label for="auth-term1-1">PASS인증서 이용에 대한 동의 (필수)</label>
+                                                    <!--
+                                                        아코디언 열려있는 상태일 경우 aria-pressed="true",
+                                                        닫혀있는 상태일 경우 aria-pressed="false"
+                                                    -->
+                                                    <button class="acco-btn" aria-pressed="true"><span class="blind">상세보기</span></button>
+                                                </div>
+                                                <div class="acco-cont auth-cont-box has-maxh">
+                                                    <div class="auth-cont-box-inner">
+                                                        동의 내용
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <!-- 활성화 항목에 on 클래스 추가 및 button.acco-btn에 aria-pressed="true" 세팅 필요 -->
+                                            <li class="acco-box on">
+                                                <div class="acco-tit">
+                                                    <span class="custom-form"><input type="checkbox" id="auth-term1-2"><span class="c-type1"></span></span>
+                                                    <label for="auth-term1-2">개인정보 활용 동의 (필수)</label>
+                                                    <!--
+                                                        아코디언 열려있는 상태일 경우 aria-pressed="true",
+                                                        닫혀있는 상태일 경우 aria-pressed="false"
+                                                    -->
+                                                    <button class="acco-btn" aria-pressed="true"><span class="blind">상세보기</span></button>
+                                                </div>
+                                                <div class="acco-cont auth-cont-box has-maxh">
+                                                    <div class="auth-cont-box-inner">
+                                                        동의 내용
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--// .widget -->
+                    </div><!--// auth-terms -->
+                </div>
+            </div>
+
+            <div class="guide-code">
+<pre>
+&lt;div class="auth-terms"&gt;
+    <span class="cmt">&lt;!-- .widget --&gt;</span>
+    &lt;div class="widget"&gt;
+        &lt;div class="widget-box accordion"&gt;
+            &lt;div class="auth-terms__check-all"&gt;
+                &lt;span class="custom-form"&gt;&lt;input type="checkbox" id="auth-terms-check-all"&gt;&lt;span class="c-type1"&gt;&lt;/span&gt;&lt;/span&gt;
+                &lt;label for="auth-terms-check-all"&gt;전체동의&lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div class="acco-cover on"&gt;
+                &lt;div class="acco-style btn-hold"&gt;
+                    &lt;ul class="acco-list"&gt;
+                        <span class="cmt">&lt;!-- 활성화 항목에 on 클래스 추가 및 button.acco-btn에 aria-pressed="true" 세팅 필요 --&gt;</span>
+                        &lt;li class="acco-box on"&gt;
+                            &lt;div class="acco-tit"&gt;
+                                &lt;span class="custom-form"&gt;&lt;input type="checkbox" id="auth-term1-1"&gt;&lt;span class="c-type1"&gt;&lt;/span&gt;&lt;/span&gt;
+                                &lt;label for="auth-term1-1"&gt;PASS인증서 이용에 대한 동의 (필수)&lt;/label&gt;
+                                <span class="cmt">&lt;!--
+                                    아코디언 열려있는 상태일 경우 aria-pressed="true",
+                                    닫혀있는 상태일 경우 aria-pressed="false"
+                                --&gt;</span>
+                                &lt;button class="acco-btn" aria-pressed="true"&gt;&lt;span class="blind"&gt;상세보기&lt;/span&gt;&lt;/button&gt;
+                            &lt;/div&gt;
+                            &lt;div class="acco-cont auth-cont-box has-maxh"&gt;
+                                &lt;div class="auth-cont-box-inner"&gt;
+                                    동의 내용
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/li&gt;
+                        <span class="cmt">&lt;!-- 활성화 항목에 on 클래스 추가 및 button.acco-btn에 aria-pressed="true" 세팅 필요 --&gt;</span>
+                        &lt;li class="acco-box on"&gt;
+                            &lt;div class="acco-tit"&gt;
+                                &lt;span class="custom-form"&gt;&lt;input type="checkbox" id="auth-term1-2"&gt;&lt;span class="c-type1"&gt;&lt;/span&gt;&lt;/span&gt;
+                                &lt;label for="auth-term1-2"&gt;개인정보 활용 동의 (필수)&lt;/label&gt;
+                                <span class="cmt">&lt;!--
+                                    아코디언 열려있는 상태일 경우 aria-pressed="true",
+                                    닫혀있는 상태일 경우 aria-pressed="false"
+                                --&gt;</span>
+                                &lt;button class="acco-btn" aria-pressed="true"&gt;&lt;span class="blind"&gt;상세보기&lt;/span&gt;&lt;/button&gt;
+                            &lt;/div&gt;
+                            &lt;div class="acco-cont auth-cont-box has-maxh"&gt;
+                                &lt;div class="auth-cont-box-inner"&gt;
+                                    동의 내용
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    <span class="cmt">&lt;!--// .widget --&gt;</span>
+&lt;/div&gt;<span class="cmt">&lt;!--// auth-terms --&gt;</span>
+</pre>
+            </div>
+
+
+            <h3 class="guide-tit3 mt24">항목이 1개인 case</h3>
+            <div class="popup auth-popup" style="position:static">
+                <div class="auth-container" style="padding: 20px 0 0;">
+
+                    <!-- 항목이 1개 인 경우, auth-terms--only 클래스 추가 -->
+                    <div class="auth-terms auth-terms--only">
+                        <!-- .widget -->
+                        <div class="widget">
+                            <div class="widget-box accordion">
+                                <div class="acco-cover on">
+                                    <div class="acco-style btn-hold">
+                                        <ul class="acco-list">
+                                            <!-- 활성화 항목에 on 클래스 추가 및 button.acco-btn에 aria-pressed="true" 세팅 필요 -->
+                                            <li class="acco-box on">
+                                                <div class="acco-tit">
+                                                    <span class="custom-form"><input type="checkbox" id="auth-term1-3"><span class="c-type1"></span></span>
+                                                    <label for="auth-term1-3">간편인증서비스 이용에 대한 동의(필수)</label>
+                                                    <!--
+                                                        아코디언 열려있는 상태일 경우 aria-pressed="true",
+                                                        닫혀있는 상태일 경우 aria-pressed="false"
+                                                    -->
+                                                    <button class="acco-btn" aria-pressed="true"><span class="blind">상세보기</span></button>
+                                                </div>
+                                                <div class="acco-cont auth-cont-box has-maxh">
+                                                    <div class="auth-cont-box-inner">
+                                                        동의 내용
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--// .widget -->
+                    </div><!--// auth-terms -->
+                </div>
+            </div>
+
+            <div class="guide-code">
+<pre>
+<span class="cmt">&lt;!-- 항목이 1개 인 경우, auth-terms--only 클래스 추가 --&gt;</span>
+&lt;div class="auth-terms auth-terms--only"&gt;
+    <span class="cmt">&lt;!-- .widget --&gt;</span>
+    &lt;div class="widget"&gt;
+        &lt;div class="widget-box accordion"&gt;
+            &lt;div class="acco-cover on"&gt;
+                &lt;div class="acco-style btn-hold"&gt;
+                    &lt;ul class="acco-list"&gt;
+                        <span class="cmt">&lt;!-- 활성화 항목에 on 클래스 추가 및 button.acco-btn에 aria-pressed="true" 세팅 필요 --&gt;</span>
+                        &lt;li class="acco-box on"&gt;
+                            &lt;div class="acco-tit"&gt;
+                                &lt;span class="custom-form"&gt;&lt;input type="checkbox" id="auth-term1-3"&gt;&lt;span class="c-type1"&gt;&lt;/span&gt;&lt;/span&gt;
+                                &lt;label for="auth-term1-3"&gt;간편인증서비스 이용에 대한 동의(필수)&lt;/label&gt;
+                                <span class="cmt">&lt;!--
+                                    아코디언 열려있는 상태일 경우 aria-pressed="true",
+                                    닫혀있는 상태일 경우 aria-pressed="false"
+                                --&gt;</span>
+                                &lt;button class="acco-btn" aria-pressed="true"&gt;&lt;span class="blind"&gt;상세보기&lt;/span&gt;&lt;/button&gt;
+                            &lt;/div&gt;
+                            &lt;div class="acco-cont auth-cont-box has-maxh"&gt;
+                                &lt;div class="auth-cont-box-inner"&gt;
+                                    동의 내용
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    <span class="cmt">&lt;!--// .widget --&gt;</span>
+&lt;/div&gt;<span class="cmt">&lt;!--// auth-terms --&gt;</span>
+</pre>
+            </div>
+
+        </div>
+
+        <h2 class="guide-tit2">Etc</h2>
+
+        <div class="guide-content">
+            <h3 class="guide-tit3">레이아웃성 박스(.cont-box--auth)</h3>
+            <p class="guide-txt">div.cont-box에 더블클래스로 선언해서 사용</p>
+            <div class="popup auth-popup" style="position:static">
+                <div class="auth-container" style="padding: 10px 0 0;">
+                    <div class="code-sample">
+                        <div class="cont-box cont-box--auth">
+                            상하단 여백 및 border는 없고, 좌우 여백은 24px
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="guide-code">
+<pre>
+&lt;div class="cont-box cont-box--auth"&gt;
+    상하단 여백 및 border는 없고, 좌우 여백은 24px
+&lt;/div&gt;
+</pre>
+            </div>
+
+            <h3 class="guide-tit3">컨텐츠 박스(.auth-cont-box)</h3>
+            <p class="guide-txt">contents 영역에 사용</p>
+            <div class="popup auth-popup" style="position:static">
+                <div class="auth-container" style="padding: 10px 0 0;">
+                    <div class="auth-cont-box">
+                        <p>인증요청(알림)이 휴대폰으로 오지 않았다면 아래 순서로 확인해주세요.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="guide-code">
+<pre>
+&lt;div class="auth-cont-box"&gt;
+    &lt;p&gt;인증요청(알림)이 휴대폰으로 오지 않았다면 아래 순서로 확인해주세요.&lt;/p&gt;
+&lt;/div&gt;
+</pre>
+            </div>
+
+            <h3 class="guide-tit3">리스트 텍스트(.auth-info-list)</h3>
+            <p class="guide-txt">안내문구 등에 사용</p>
+            <div class="popup auth-popup" style="position:static">
+                <div class="auth-container" style="padding: 10px 0 0;">
+                    <div class="code-sample">
+                        <div class="auth-info-list">
+                            <p class="auth-info-txt">한 줄 타입으로 사용 시</p>
+                        </div>
+                        <hr class="mt30">
+                        <ul class="auth-info-list">
+                            <li>여러줄 타입으로 사용 시</li>
+                            <li>여러줄 타입으로 사용 시</li>
+                            <li>여러줄 타입으로 사용 시</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="guide-code">
+<pre>
+&lt;div class="auth-info-list"&gt;
+    &lt;p class="auth-info-txt"&gt;한 줄 타입으로 사용 시&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;ul class="auth-info-list"&gt;
+    &lt;li&gt;여러줄 타입으로 사용 시&lt;/li&gt;
+    &lt;li&gt;여러줄 타입으로 사용 시&lt;/li&gt;
+    &lt;li&gt;여러줄 타입으로 사용 시&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+            </div>
+
+        </div>
+    </div>
+
+    <button class="go-top" onclick="window.scrollTo(0, 0);"><span class="blind">페이지 위로</span></button>
+
+    <script>
+
+        window.onload = function(){
+            const drLinkText = document.querySelectorAll('.guide-tit2');
+            const directLink = document.querySelector('.style-guide-nav');
+            const directLinkUL = document.querySelector('.style-guide-nav__list');
+
+            for (let i = 0; i < drLinkText.length; i++) {
+                /* 타이틀 영역에 id 추가*/
+                drLinkText[i].id = drLinkText[i].innerText;
+
+                /* 바로가기 링크 추가 */
+                const drLinkLi = document.createElement('li');
+                const drLinkAnchor = document.createElement('a');
+                let anchorText = document.createTextNode(drLinkText[i].innerText);
+                drLinkAnchor.appendChild(anchorText);
+                drLinkAnchor.href = 'javascript:void(0)';
+                drLinkLi.appendChild(drLinkAnchor);
+                directLinkUL.appendChild(drLinkLi);
+            }
+
+            const allNavAchor = document.querySelectorAll('.style-guide-nav__list a');
+            const navAnchor = Array.prototype.slice.call(allNavAchor);
+            let sectionTop = [];
+            const topAreaH = document.querySelector('.top-area').offsetHeight;
+
+            navAnchor.forEach(function(item, index) {
+                item.addEventListener('click', function(event) {
+                    let anchorScrollTop = document.querySelector('#' + item.innerText).offsetTop;
+                    let windowScrollY = anchorScrollTop - topAreaH;
+                    setTimeout(function() {
+                        if (windowScrollY > 0) {
+                            window.scrollTo(0, windowScrollY);
+                        } else {
+                            window.scrollTo(0, 0);
+                        }
+                    }, 100);
+                })
+
+                sectionTop.push(document.querySelector('#'+item.innerText).offsetTop - topAreaH);
+            })
+
+            window.addEventListener('scroll', function() {
+                // 현재 nav 선택
+                let currentScrollY = window.pageYOffset; // ie 에서 현재 스크롤 값이 window.scrollY : undefined , window.pageYOffset으로 변경
+                let selIdx;
+
+                for (let i = 0; i < sectionTop.length; i++) {
+                    let bodyScrollH = document.querySelector('body').scrollHeight;
+
+                    if (currentScrollY + window.outerHeight > bodyScrollH) {
+                        //마지막 스크롤 일 경우 마지막 nav 체크
+                        selIdx = navAnchor.length - 1;
+                    } else if (sectionTop[i] <= currentScrollY) {
+                        //현재 스크롤 nav 체크
+                        selIdx = i;
+                    }
+                }
+
+                //nav 활성화 되어 있는 클래스 삭제
+                if (document.querySelector('.style-guide-nav__list li.on')) {
+                    document.querySelector('.style-guide-nav__list li.on').classList.remove('on');
+                }
+
+                //nav 활성화 클래스 추가
+                setTimeout(function() {
+                    navAnchor[selIdx].parentNode.classList.add('on');
+                }, 150);
+            });
+
+
+            //현재 nav 선택 하기 위해서  임의로 scroll 이벤트 발생,  ie 에서 dispatchEvent 오류 나서 아래와 같이 작성
+            //jquery로 할 경우 trigger 이벤트 사용
+            let event;
+            if (typeof(Event) === 'function') {
+                event = new Event('scroll');
+            } else {
+                event = document.createEvent('Event');
+                event.initEvent('scroll', true, true);
+            }
+
+            window.dispatchEvent(event);
+        }
+    </script>
+</body>
+</html>

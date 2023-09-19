@@ -1,0 +1,102 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>본인확인 &gt; 금융 거래용 본인인증 | T world</title>
+<link href="/poc/inc/css/common.css" rel="stylesheet" type="text/css">
+<link href="/poc/inc/css/util.css" rel="stylesheet" type="text/css">
+<!-- [MOZOP002-18487] 20220207 pass 인증서 관련 css 추가 -->
+<link href="/poc/inc/css/auth.css" rel="stylesheet" type="text/css">
+<!--// [MOZOP002-18487] 20220207 pass 인증서 관련 css 추가 -->
+<script type="text/javascript" src="/poc/inc/js/lib/jquery.min.js"></script>
+<script type="text/javascript" src="/poc/inc/js/lib/libs.js"></script>
+<script type="text/javascript" src="/poc/inc/js/common/common.js"></script>
+<!-- select box 관련 -->
+<script type="text/javascript" src="/poc/inc/js/lib/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="/poc/inc/js/lib/jquery.jscrollpane.min.js"></script>
+<script type="text/javascript" src="/poc/inc/js/lib/wddo.selectbox-1.5.4.js"></script>
+<script type="text/javascript">
+	$.SelectBoxSet('.selectBox > select', { height: 200, scrollHeight: 200 - 8 });
+</script>
+</head>
+
+<body>
+	<div class="accessbility"><a href="#content">본문 바로가기</a></div>
+	<!-- wrap -->
+	<div id="wrap">
+		<!-- header -->
+		<div id="header">
+			<div class="h_con"><img src="/poc/img/tmp/tmp_gnb.gif" alt="임시 GNB이미지"></div>
+		</div>
+		<!-- //header -->
+		<hr>
+		<!-- container -->
+		<div id="container" class="util"><!-- util 메뉴만 사용 -->
+			<!-- content -->
+			<div id="content">
+				<div class="conBox_center">
+					<h1 class="titDep1"><img src="/poc/img/util/tit_ut9_2_1.gif" alt="금융 거래용 본인인증"></h1>
+					<h2 class="titDep2">인증 방식 선택</h2>
+					<p class="titCopy2">T world에서는 15년 2월 12일부터 고객정보 보호를 위해 추가 본인확인 후 금융 거래가 가능하도록 변경되었습니다.</p>
+					<div class="stepBox">
+						<ol class="stepCol2">
+							<li class="on"><span><strong><span>현재단계:</span>step. 01</strong><em>본인확인</em></span></li>
+							<li><span><strong>step. 02</strong><em>금융 거래용 공인인증서로 서명하기</em></span></li>
+						</ol>
+					</div>
+					<h3 class="hidden">step. 01 본인확인</h3>
+					<div class="d_listType1 type2 h40">
+						<ul class="col2"><!-- [MOZOP002-18487] 20220207 pass 인증서 항목 추가로 클래스 변경(col4 → col2) -->
+							<li class="skt">
+								<a href="#" title="새창 열림" target="_blank">
+									<strong class="tit">SK텔레콤 SMS 인증</strong>
+									<span>고객명의의 휴대폰 번호로<br>SMS 인증합니다.</span>
+								</a>
+							</li>
+							<li class="ipin">
+								<a href="#">
+									<strong class="tit">아이핀 인증</strong>
+									<span>고객명의의 아이핀으로<br>인증합니다.</span>
+								</a>
+							</li>
+							<li class="kt">
+								<a href="#">
+									<strong class="tit">KT 인증</strong>
+									<span>고객명의의 KT 휴대폰 번호로<br>SMS 인증합니다.</span>
+								</a>
+							</li>
+							<li class="lg">
+								<a href="#">
+									<strong class="tit">LG U+ 인증</strong>
+									<span>고객명의의 LG U+ 휴대폰 번호로<br>SMS 인증합니다.</span>
+								</a>
+							</li>
+							<!-- [MOZOP002-18487] 20220207 pass 인증서 항목 추가 -->
+							<li class="pass">
+								<a href="#">
+									<strong class="tit">PASS 인증서</strong>
+									<span>고객명의의 PASS앱내 PASS인증서로<br>인증합니다.</span>
+								</a>
+							</li>
+							<!--// [MOZOP002-18487] 20220207 pass 인증서 항목 추가 -->
+						</ul>
+					</div>
+					<div class="btnBox">
+						<a href="#" class="btnL btnBlack">이전</a>
+					</div>
+				</div>
+			</div>
+			<!-- //content -->
+		</div>
+		<!-- //container -->
+		<hr>
+		<!-- footer -->
+		<div id="footer">
+			<div class="f_con"><img src="/poc/img/tmp/tmp_footer.gif" alt="임시 FOOTER이미지"></div>
+		</div>
+		<!-- //footer -->
+	</div>
+	<!-- //wrap -->
+</body>
+</html>

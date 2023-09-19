@@ -1,0 +1,10 @@
+<svg id="ico_24x" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <defs>
+        <style>
+            .cls-2{fill:none;stroke:#6d6d6d;stroke-linecap:round;stroke-width:1.5px}
+        </style>
+    </defs>
+    <circle id="타원_1" data-name="타원 1" cx="12" cy="12" r="12" style="fill:#efeff1"/>
+    <path id="선_1" data-name="선 1" class="cls-2" transform="translate(8 8)" d="m0 0 8 8"/>
+    <path id="선_2" data-name="선 2" class="cls-2" transform="translate(8 8)" d="M8 0 0 8"/>
+</svg>

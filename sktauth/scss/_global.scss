@@ -1,0 +1,61 @@
+$default: '.auth';
+
+$px2: .125rem;
+$px3: .1875rem;
+$px4: .25rem;
+$px-3: -.1875rem;
+$px-4: -.25rem;
+$px5: .3125rem;
+$px6: .375rem;
+$px7: .438rem;
+$px8: .5rem;
+$px9: .5625rem;
+$px10: .625rem;
+$px12: .75rem;
+$px13: .8125rem;
+$px14: .875rem;
+$px15: .9375rem;
+$px16: 1rem;
+$px18: 1.125rem;
+$px19: 1.188rem;
+$px20: 1.25rem;
+$px21: 1.313rem;
+$px22: 1.375rem;
+$px24: 1.5rem;
+$px26: 1.6255rem;
+$px28: 1.75rem;
+$px30: 1.875rem;
+$px32: 2rem;
+$px36: 2.25rem;
+$px38: 2.375rem;
+$px40: 2.5rem;
+$px42: 2.625rem;
+$px46: 2.875rem;
+$px48: 3rem;
+$px50: 3.125rem;
+$px56: 3.5rem;
+$px60: 3.75rem;
+$px64: 4rem;
+$px72: 4.5rem;
+$px74: 4.625rem;
+$px84: 5.25rem;
+$px86: 5.375rem;
+$px88: 5.5rem;
+$px96: 6rem;
+$px100: 6.25rem;
+$px102: 6.375rem;
+$px104: 6.5rem;
+$px108: 6.75rem;
+$px112: 7rem;
+$px120: 7.5rem;
+$px128: 8rem;
+$px140: 8.75rem;
+$px160: 10rem;
+$px218: 13.625rem;
+
+
+@mixin boxcon($radius) {
+  background: #f6f8fa;
+  border: 1px solid #e5e8eb;
+  border-radius: $radius;
+}

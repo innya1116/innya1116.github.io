@@ -1,0 +1,582 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>STYLE GUIDE - T월드 인증 개선 - PC</title>
+<link rel="stylesheet" href="/poc/inc/css/common.css" type="text/css">
+<link rel="stylesheet" href="/poc/inc/css/util.css" type="text/css">
+<script type="text/javascript" src="/poc/inc/js/lib/jquery.min.js"></script>
+<script type="text/javascript" src="/poc/inc/js/lib/libs.js"></script>
+<script type="text/javascript" src="/poc/inc/js/common/common.js"></script>
+
+<!-- 본인인증 css, js 추가 -->
+<link rel="stylesheet" href="/poc/inc/css/auth.css" type="text/css">
+<script type="text/javascript" src="/poc/inc/js/auth/auth.js"></script>
+<!--// 본인인증 css, js 추가 -->
+
+<style type="text/css">
+	body{padding:60px 16px 40px;margin:0;letter-spacing:-.5px;}
+	.topArea{position:absolute;left:0;right:0;top:0;margin:0;padding:16px 16px 16px 56px;background:#000;}
+	.goMain{display:block;position:absolute;left:0;top:50%;width:48px;height:48px;transform:translateY(-50%);color:transparent !important;font-size:.625rem;}
+	.goMain:after{content:'';display:block;position:absolute;left:60%;top:50%;width:16px;height:16px;border:2px solid #fff;border-width: 0 0 2px 2px;transform:rotate(45deg) translate(-50%, -50%);transform-origin: 0 0;}
+	.guideTit1{color:#fff;font-size:24px;line-height:32px}
+	.guideTit2{margin:32px 0 5px;color:#000;font-size:24px;line-height:30px;font-weight:bold}
+	.guideTit3{margin:20px 0 10px;color:#000;font-size:18px;line-height:24px;font-weight:bold}
+	a.guideLink{display:inline-block;margin-top:10px;text-decoration:underline}
+	[class^='guideTit'] > span.structure{font-weight:normal;font-style:italic;letter-spacing:0;font-size:16px;font-family:consolas,'malgun gothic'}
+	[class^='guideTit'] > span.structure:before{content:'('}
+	[class^='guideTit'] > span.structure:after{content:')'}
+	.guideContent{margin-top:10px;padding:16px;border:1px dashed #aaa}
+	.guideContent .guide-txt{margin:0}
+	.infoTxt{font-size:14px;line-height:20px;font-weight:normal;}
+	.infoTxt strong{display:block;margin-bottom:5px;color:#000;font-size:15px}
+	.infoTxt ul li{position:relative;padding-left:10px}
+	.infoTxt ul li:before{content:'- ';position:absolute;left:0;}
+	.guideCode:before{content:'[Source Code]';display:block;margin-top:16px;color:#333;font-weight:500;font-size:14px;font-weight:bold}
+	.guideCode pre{display:block;overflow:auto;margin:8px 0 0;padding:8px;background:#333;color:#ccc;font-size:13px;line-height:1.5;letter-spacing:0;white-space:pre-wrap;tab-size:4;font-family:'Consolas', 'Courier New', Sans-serif}
+	.guideCode .cmt{color:#999;font-style:italic}
+	.guideCode .point{color:#fcff00;font-weight:bold;}
+	.guideCode .cmt .point{font-weight:normal;}
+
+    .navBtn{position:fixed;right:0;top:0;z-index:10000;width:64px;height:64px;background:#000;}
+    .navBtn:before{content:'';display:block;position:absolute;left:50%;top:50%;height:24px;width:32px;border:2px solid #fff;border-width:2px 0;transform:translate(-50%,-50%);transition:all .2s;}
+    .navBtn:after{content:'';display:block;position:absolute;left:50%;top:50%;height:2px;width:32px;background:#fff;transform:translate(-50%,-50%);transition:all .2s;}
+    .view .navBtn:before,
+    .view .navBtn:after{height:.125rem;width:32px;border:0 none;background:#fff;transform-origin:0;}
+    .view .navBtn:before{transform:rotate(45deg) translate(-50%)}
+    .view .navBtn:after{transform:rotate(-45deg) translate(-50%)}
+    .styleGuideNav{position:fixed;top:0;right:-30%;z-index:10;width:30%;;height:100vh;padding-top:64px;box-sizing:border-box;background:rgba(0,0,0,.9);transition:all .2s}
+    .styleGuideNav.view{right:0;}
+    .styleGuideNav ul{padding:24px 32px;}
+    .styleGuideNav ul li+li{margin-top:24px;}
+    .styleGuideNav ul li a{color:#fff;font-size:24px;font-weight:bold;}
+    .styleGuideNav ul li a:hover, .styleGuideNav ul li a:focus{text-decoration:underline;}
+
+	.goTop{position:fixed;right:.7rem;bottom:.7rem;z-index:10000;width:48px;height:48px;background:rgba(0,0,0,.7);}
+	.goTop:after{content:'';display:block;position:absolute;left:50%;top:50%;width:16px;height:16px;border:2px solid #fff;border-width:2px 2px 0 0;transform:rotate(-45deg) translate(-20%,-50%);}
+</style>
+</head>
+<body>
+	<div class="topArea">
+		<a class="goMain" href="/poc/index.html">Main</a>
+		<h1 class="guideTit1">STYLE GUIDE - T월드 인증 개선 - PC</h1>
+	</div>
+
+	<div class="styleGuideNav">
+		<button class="navBtn">바로가기</button>
+		<ul class="navList">
+		</ul>
+	</div>
+
+	<h2 class="guideTit2">Common</h2>
+	<div class="guideContent">
+		<div class="infoTxt">
+			<ul>
+				<li>PC T world 운영 Style Guide를 기준으로 재정의 되었습니다.(단위 px 사용/들여쓰기 tab 사용)</li>
+				<li>아래에 정의된 스타일 가이드는 System Popup 레이아웃의 코드 구조를 우선으로 두고 .popCont &gt; .inPop 영역 내에 위치할 경우 스타일 및 스크립트가 정상적으로 동작됩니다.</li>
+			</ul>
+		</div>
+	</div>
+
+	<h2 class="guideTit2">Layout</h2>
+	<div class="guideContent">
+		<h3 class="guideTit3 h0">System Popup - SIZE: width=650, height=700</h3>
+		<div class="infoTxt">width=650, height=700 사이즈 및 top에서 120px 위치에 호출합니다.<br>(스크롤 영역으로 인해 반드시 사이즈를 맞춰 호출해주세요.)</div>
+		<a class="guideLink" href="/poc/guide/layout-popup.html" onclick="window.open(this.href,'','width=650,height=700,top=120,scrollbars=no'); return false;">시스템 팝업 보기</a>
+
+		<div class="guideCode">
+<pre>
+<span class="cmt">&lt;!-- new 본인인증 : <span class="point">typeAuthPopup</span> 클래스 추가 --&gt;</span>
+&lt;<span class="point">body class="typeAuthPopup"</span>&gt;
+	<span class="cmt">&lt;!-- 팝업 사이즈 : W650 X H700 --&gt;</span>
+	<span class="cmt">&lt;!-- new 본인인증 : <span class="point">authPopup</span> 클래스 추가 --&gt;</span>
+	&lt;div class="popup <span class="point">authPopup</span>"&gt;
+		&lt;div class="popScrollArea"&gt;
+			&lt;div class="authPopupInner"&gt;
+				&lt;div class="popHead"&gt;
+					&lt;h1 class="hidden"&gt;페이지타이틀&lt;/h1&gt;
+					&lt;h2 class="popTit"&gt;타이틀&lt;/h2&gt;
+				&lt;/div&gt;
+				&lt;div class="popCon"&gt;
+					&lt;div class="inPop"&gt;
+						콘텐츠 입력 영역
+					&lt;/div&gt;<span class="cmt">&lt;!--// .inPop --&gt;</span>
+				&lt;/div&gt;<span class="cmt">&lt;!--// .popCon --&gt;</span>
+			&lt;/div&gt;<span class="cmt">&lt;!--// .authPopupInner --&gt;</span>
+		&lt;/div&gt;<span class="cmt">&lt;!--// .popScrollArea --&gt;</span>
+
+		&lt;div class="popBottom"&gt;
+			<span class="cmt">&lt;!-- 좌우 버튼 배열 시 --&gt;</span>
+			&lt;div class="btnArea"&gt;
+				&lt;span class="rArea"&gt;
+					&lt;button type="button" class="authBtnL" disabled&gt;&lt;span&gt;인증 완료하기&lt;/span&gt;&lt;/button&gt;
+				&lt;/span&gt;
+				&lt;span class="lArea"&gt;
+					&lt;button type="button" class="authBtnM cancel"&gt;&lt;span&gt;취소&lt;/span&gt;&lt;/button&gt;
+				&lt;/span&gt;
+			&lt;/div&gt;
+			<span class="cmt">&lt;!--// 좌우 버튼 배열 시 --&gt;</span>
+
+			<span class="cmt">&lt;!-- 버튼 1개 사용 시
+			&lt;div class="btnArea"&gt;
+				&lt;span&gt;
+					&lt;button type="button" class="authBtnM cancel"&gt;&lt;span&gt;취소&lt;/span&gt;&lt;/button&gt;
+				&lt;/span&gt;
+			&lt;/div&gt;
+			//--&gt;</span>
+		&lt;/div&gt;<span class="cmt">&lt;!--// .popBottom --&gt;</span>
+	&lt;/div&gt;<span class="cmt">&lt;!--// .popup --&gt;</span>
+&lt;/body&gt;
+</pre>
+		</div>
+	</div>
+
+	<h2 class="guideTit2">Button</h2>
+	<div class="guideContent">
+		<h3 class="guideTit3 h0">Btn L (Primary Button)</h3>
+		<div class="authPopup">
+			<button type="button" class="authBtnL"><span>Primary button(active)</span></button>
+			<button type="button" class="authBtnL" disabled><span>Primary button(disabled)</span></button>
+		</div>
+
+		<div class="guideCode">
+<pre>
+&lt;button type="button" class="authBtnL"&gt;&lt;span&gt;Primary button(active)&lt;/span&gt;&lt;/button&gt;
+&lt;button type="button" class="authBtnL" disabled&gt;&lt;span&gt;Primary button(disabled)&lt;/span&gt;&lt;/button&gt;
+</pre>
+		</div>
+
+		<h3 class="guideTit3">Btn M (Secondary Button)</h3>
+		<div class="authPopup">
+			<button type="button" class="authBtnM"><span>Secondary button(active)</span></button>
+			<button type="button" class="authBtnM" disabled><span>Secondary button(disabled)</span></button>
+			<button type="button" class="authBtnM cancel"><span>취소</span></button>
+		</div>
+		<div class="guideCode">
+<pre>
+&lt;button type="button" class="authBtnM"&gt;&lt;span&gt;Secondary button(active)&lt;/span&gt;&lt;/button&gt;
+&lt;button type="button" class="authBtnM" disabled&gt;&lt;span&gt;Secondary button(disabled)&lt;/span&gt;&lt;/button&gt;
+&lt;button type="button" class="authBtnM cancel"&gt;&lt;span&gt;취소&lt;/span&gt;&lt;/button&gt;
+</pre>
+		</div>
+
+		<h3 class="guideTit3">Btn S</h3>
+		<div class="authPopup">
+			<button type="button" class="authBtnS"><span>버튼입니다(활성)</span></button>
+			<button type="button" class="authBtnS" disabled><span>버튼입니다(비활성)</span></button>
+		</div>
+		<div class="guideCode">
+<pre>
+&lt;button type="button" class="authBtnS"&gt;&lt;span&gt;버튼입니다(활성)&lt;/span&gt;&lt;/button&gt;
+&lt;button type="button" class="authBtnS" disabled&gt;&lt;span&gt;버튼입니다(비활성)&lt;/span&gt;&lt;/button&gt;
+</pre>
+		</div>
+
+	</div>
+
+	<h2 class="guideTit2">Form</h2>
+	<div class="guideContent">
+		<div class="infoTxt">
+			<strong>접근성</strong>
+			<ul>
+				<li>접근성 준수를 위해 label을 사용하는 경우 input의 id와 label의 for 값을 반드시 매칭해야 함</li>
+				<li>label 없이 사용하는 경우 title을 이용하여 해당 input에 대한 설명 추가 필요</li>
+			</ul>
+		</div>
+
+		<h3 class="guideTit3">Input Default</h3>
+		<p class="infoTxt">label의 for 값과 input의 id 값 매칭 필요</p>
+		<div class="authPopup">
+			<div class="inputbox">
+				<div class="input">
+					<label class="placeholder" for="auth-input-default">인증 input 기본형</label>
+					<input type="text" class="authInput" id="auth-input-default">
+				</div>
+			</div>
+		</div>
+
+		<div class="guideCode">
+<pre>
+&lt;div class="inputbox"&gt;
+	&lt;div class="input"&gt;
+		&lt;label class="placeholder" <span class="point">for="auth-input-default"</span>&gt;인증 input 기본형&lt;/label&gt;
+		&lt;input type="text" class="authInput" <span class="point">id="auth-input-default"</span>&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+		<h3 class="guideTit3">Number Input - 숫자만 입력되는 input</h3>
+		<p class="infoTxt">- 법정 생년월일 및 인증번호 등 숫자만 입력되는 input 사용 시, inpNumber 클래스 추가 필요</p>
+		<div class="authPopup">
+			<div class="inputbox">
+				<div class="input">
+					<label class="placeholder" for="auth-number">숫자만 입력되는 input</label>
+					<input type="text" class="authInput inpNumber" id="auth-number">
+				</div>
+			</div>
+		</div>
+
+		<div class="guideCode">
+<pre>
+&lt;div class="inputbox"&gt;
+	&lt;div class="input"&gt;
+		&lt;label class="placeholder" for="auth-number"&gt;숫자만 입력되는 input&lt;/label&gt;
+		&lt;input type="text" class="authInput <span class="point">inpNumber</span>" id="auth-number"&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+		<h3 class="guideTit3">Cell Number Input - 휴대폰 번호 입력 input</h3>
+		<p class="infoTxt">- 휴대폰 번호 입력 input 인 경우, inpCellNumber 클래스 추가시 자동으로 dash(-)가 추가됨</p>
+		<div class="authPopup">
+			<div class="inputbox">
+				<div class="input">
+					<label class="placeholder" for="auth-cell-number">휴대폰 번호('-' 제외한 숫자만 입력)</label>
+					<input type="text" class="authInput inpCellNumber" id="auth-cell-number">
+				</div>
+			</div>
+		</div>
+
+		<div class="guideCode">
+<pre>
+&lt;div class="inputbox"&gt;
+	&lt;div class="input"&gt;
+		&lt;label class="placeholder" for="auth-cell-number"&gt;휴대폰 번호('-' 제외한 숫자만 입력)&lt;/label&gt;
+		&lt;input type="text" class="authInput <span class="point">inpCellNumber</span>" id="auth-cell-number"&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+		</div>
+
+		<h3 class="guideTit3">Input + Right Contents - 영역 우측에 버튼 등 다른 내용이 있는 경우</h3>
+		<p class="infoTxt">div.inputbox에 inputInBtn 클래스 추가 및 div.input 영역 내에 .rightBox 영역 추가</p>
+		<div class="authPopup">
+			<div class="inputbox inputInBtn">
+				<!-- 오류: error 클래스 추가 -->
+				<div class="input">
+					<label class="placeholder" for="auth-number">6자리 숫자</label>
+					<input class="authInput" type="text" id="auth-number" maxlength="6">
+
+					<div class="rightBox">
+						<span class="smsTime"><span class="hidden">인증번호 입력 남은시간</span>03:59</span>
+						<button type="button" class="authBtnS"><span>다시받기</span></button>
+					</div>
+				</div>
+
+				<!-- 성공: none 클래스 삭제 -->
+				<p class="inpMsg success none">성공메시지</p>
+				<!-- 오류: none 클래스 삭제 -->
+				<p class="inpMsg error none">에러메시지</p>
+			</div>
+		</div>
+
+		<div class="guideCode">
+<pre>
+&lt;div class="inputbox <span class="point">inputInBtn</span>"&gt;
+	&lt;div class="input"&gt;
+		&lt;label class="placeholder" for="auth-number"&gt;6자리 숫자&lt;/label&gt;
+		&lt;input class="authInput" type="text" id="auth-number" maxlength="6"&gt;
+
+		<span class="point">&lt;div class="rightBox"&gt;</span>
+			&lt;span class="smsTime"&gt;&lt;span class="hidden"&gt;인증번호 입력 남은시간&lt;/span&gt;03:59&lt;/span&gt;
+			&lt;button type="button" class="authBtnS"&gt;&lt;span&gt;다시받기&lt;/span&gt;&lt;/button&gt;
+		<span class="point">&lt;/div&gt;</span>
+	&lt;/div&gt;
+
+	&lt;!-- 성공: none 클래스 삭제 --&gt;
+	&lt;p class="inpMsg success none"&gt;성공메시지&lt;/p&gt;
+	&lt;!-- 오류: none 클래스 삭제 --&gt;
+	&lt;p class="inpMsg error none"&gt;에러메시지&lt;/p&gt;
+&lt;/div&gt;
+</pre>
+		</div>
+
+		<h3 class="guideTit3">Success Message - 성공메시지</h3>
+		<p class="infoTxt">p.inpMsg.success - default 비노출인 경우 none 클래스 추가 / 노출 시 none 클래스 삭제</p>
+		<div class="authPopup">
+			<div class="inputbox">
+				<div class="input">
+					<label class="placeholder" for="auth-number">6자리 숫자</label>
+
+					<input class="authInput" type="text" id="auth-number" maxlength="6">
+				</div>
+				<!-- 성공: none 클래스 삭제 -->
+				<p class="inpMsg success">성공메시지</p>
+			</div>
+
+			<div class="h40"></div>
+		</div>
+
+		<div class="guideCode">
+<pre>
+&lt;div class="inputbox"&gt;
+	&lt;div class="input"&gt;
+		&lt;label class="placeholder" for="auth-number"&gt;6자리 숫자&lt;/label&gt;
+		&lt;input class="authInput" type="text" id="auth-number" maxlength="6"&gt;
+	&lt;/div&gt;
+	&lt;!-- 성공: none 클래스 삭제 --&gt;
+	<span class="point">&lt;p class="inpMsg success"&gt;성공메시지&lt;/p&gt;</span>
+&lt;/div&gt;
+</pre>
+		</div>
+
+		<h3 class="guideTit3">Error message - 에러메시지</h3>
+		<p class="infoTxt">p.inpMsg.error - default 비노출인 경우 none 클래스 추가 / 노출 시 none 클래스 삭제</p>
+		<div class="authPopup">
+			<div class="inputbox">
+				<!-- 오류: error 클래스 추가 -->
+				<div class="input error">
+					<label class="placeholder" for="auth-number">6자리 숫자</label>
+					<input class="authInput" type="text" id="auth-number" maxlength="6">
+				</div>
+				<!-- 오류: none 클래스 삭제 -->
+				<p class="inpMsg error">에러메시지</p>
+			</div>
+
+			<div class="h40"></div>
+		</div>
+
+		<div class="guideCode">
+<pre>
+&lt;div class="inputbox"&gt;
+	&lt;!-- 오류: error 클래스 추가 --&gt;
+	&lt;div class="input <span class="point">error</span>"&gt;
+		&lt;label class="placeholder" for="auth-number"&gt;6자리 숫자&lt;/label&gt;
+		&lt;input class="authInput" type="text" id="auth-number" maxlength="6"&gt;
+	&lt;/div&gt;
+	&lt;!-- 오류: none 클래스 삭제 --&gt;
+	<span class="point">&lt;p class="inpMsg error"&gt;에러메시지&lt;/p&gt;</span>
+&lt;/div&gt;
+</pre>
+		</div>
+
+		<h3 class="guideTit3">Radio(성별선택)</h3>
+		<div class="authPopup">
+			<div class="genderSelection">
+				<span class="radio">
+					<input type="radio" id="gender-selection-male" name="auth-gender-selection"><label for="gender-selection-male">남성</label>
+				</span>
+				<span class="radio">
+					<input type="radio" id="gender-selection-female" name="auth-gender-selection"><label for="gender-selection-female">여성</label>
+				</span>
+			</div>
+		</div>
+
+		<div class="guideCode">
+<pre>
+&lt;div class="genderSelection"&gt;
+	&lt;span class="radio"&gt;
+		&lt;input type="radio" id="gender-selection-male" name="auth-gender-selection">&lt;label for="gender-selection-male">남성&lt;/label&gt;
+	&lt;/span&gt;
+	&lt;span class="radio"&gt;
+		&lt;input type="radio" id="gender-selection-female" name="auth-gender-selection">&lt;label for="gender-selection-female">여성&lt;/label&gt;
+	&lt;/span&gt;
+&lt;/div&gt;
+</pre>
+		</div>
+	</div>
+
+	<h2 class="guideTit2">Accordion</h2>
+	<p class="infoTxt">checkpoint / 개인정보 활용 동의에 사용</p>
+	<div class="guideContent">
+		<h3 class="guideTit3 h0">개인정보 활용동의 - Default: Open</h3>
+		<div class="authPopup">
+
+			<div class="accordion authTerms">
+				<!-- 전체 동의가 있는 경우 사용 -->
+				<span class="checkbox checkAll">
+					<input type="checkbox" id="auth-terms-all" role="checkbox" aria-checked="false">
+					<label for="auth-terms-all">전체 동의</label>
+				</span>
+				<!--// 전체 동의가 있는 경우 사용 -->
+				<ul class="accoList">
+					<!-- 활성화 시 open 클래스 추가 -->
+					<li class="accoBox open">
+						<div class="accoTit">
+							<span class="checkbox">
+								<input type="checkbox" id="auth-terms1" role="checkbox" aria-checked="false">
+								<label for="auth-terms1">PASS 인증서 이용에 대한 동의 (필수)</label>
+							</span>
+							<button type="button" class="accoBtn"><span class="hidden">상세보기</span></button>
+						</div>
+						<div class="accoCont auth_contBox">
+							PASS 인증서 이용에 대한 동의 상세 내용
+						</div>
+					</li>
+					<!-- 활성화 시 open 클래스 추가 -->
+					<li class="accoBox open">
+						<div class="accoTit">
+							<span class="checkbox">
+								<input type="checkbox" id="auth-terms2" role="checkbox" aria-checked="false">
+								<label for="auth-terms2">개인정보 활용 동의 (필수)</label>
+							</span>
+							<button type="button" class="accoBtn"><span class="hidden">상세보기</span></button>
+						</div>
+						<div class="accoCont auth_contBox">
+							개인정보 활용 동의 상세 내용
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="guideCode">
+<pre>
+&lt;div class="accordion authTerms"&gt;
+	<span class="cmt">&lt;!-- 전체 동의가 있는 경우 사용 --&gt;</span>
+	&lt;span class="checkbox checkAll"&gt;
+		&lt;input type="checkbox" id="auth-terms-all" role="checkbox" aria-checked="false"&gt;
+		&lt;label for="auth-terms-all"&gt;전체 동의&lt;/label&gt;
+	&lt;/span&gt;
+	<span class="cmt">&lt;!--// 전체 동의가 있는 경우 사용 --&gt;</span>
+	&lt;ul class="accoList"&gt;
+		<span class="cmt">&lt;!-- 활성화 시 open 클래스 추가 --&gt;</span>
+		&lt;li class="accoBox open"&gt;
+			&lt;div class="accoTit"&gt;
+				&lt;span class="checkbox"&gt;
+					&lt;input type="checkbox" id="auth-terms1" role="checkbox" aria-checked="false"&gt;
+					&lt;label for="auth-terms1"&gt;PASS 인증서 이용에 대한 동의 (필수)&lt;/label&gt;
+				&lt;/span&gt;
+				&lt;button type="button" class="accoBtn"&gt;&lt;span class="hidden"&gt;상세보기&lt;/span&gt;&lt;/button&gt;
+			&lt;/div&gt;
+			&lt;div class="accoCont auth_contBox"&gt;
+				PASS 인증서 이용에 대한 동의 상세 내용
+			&lt;/div&gt;
+		&lt;/li&gt;
+		<span class="cmt">&lt;!-- 활성화 시 open 클래스 추가 --&gt;</span>
+		&lt;li class="accoBox open"&gt;
+			&lt;div class="accoTit"&gt;
+				&lt;span class="checkbox"&gt;
+					&lt;input type="checkbox" id="auth-terms2" role="checkbox" aria-checked="false"&gt;
+					&lt;label for="auth-terms2"&gt;개인정보 활용 동의 (필수)&lt;/label&gt;
+				&lt;/span&gt;
+				&lt;button type="button" class="accoBtn"&gt;&lt;span class="hidden"&gt;상세보기&lt;/span&gt;&lt;/button&gt;
+			&lt;/div&gt;
+			&lt;div class="accoCont auth_contBox"&gt;
+				개인정보 활용 동의 상세 내용
+			&lt;/div&gt;
+		&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;
+</pre>
+		</div>
+
+		<h3 class="guideTit3">Check Point - Default: Close</h3>
+		<p class="infoTxt">운영사이트의 checkpoint와 디자인이 달라져서 마크업이 변경되었고, 상세 내용의 마크업은 버튼을 제외하고는 기존 운영 코드와 동일하게 반영했습니다.</p>
+		<div class="authPopup">
+			<div class="accordion checkPoint">
+				<strong class="cpTit">CHECK POINT</strong>
+				<ul class="accoList">
+					<!-- 활성화 시 open 클래스 추가 -->
+					<li class="accoBox">
+						<div class="accoTit">
+							<button type="button" class="accoBtn"><span>SMS 인증번호 수신 불가</span></button>
+						</div>
+						<div class="accoCont">
+							<ul class="listType1">
+								<li>인증문자는 <em>114</em> 번호로 발신되오니 해당 번호의 단말기 <em>스팸설정 여부 및 스팸편지함을 확인</em>해 주세요.</li>
+								<li><em>스팸필터링 부가서비스</em> 가입 후 114 번호를 스팸설정 하신 경우 <em>스팸설정을 해제</em>해 주세요.</li>
+								<li><em>착신 관련 서비스</em>에 가입되어 있는 경우 SMS 인증문자가 수신되지 않을 수 있습니다.</li>
+							</ul>
+						</div>
+					</li>
+					<!-- 활성화 시 open 클래스 추가 -->
+					<li class="accoBox">
+						<div class="accoTit">
+							<button type="button" class="accoBtn"><span>USIM 단독상태</span></button>
+						</div>
+						<div class="accoCont">
+							<ul class="listType1">
+								<li>현재 사용중인 휴대폰이 <em>USIM 단독 상태</em>이거나 휴대폰과 <em>USIM카드가 분리</em>된 상태에서는 <em>SMS 인증을 받으실 수 없습니다.</em></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="guideCode">
+<pre>
+&lt;div class="accordion checkPoint"&gt;
+	&lt;strong class="cpTit"&gt;CHECK POINT&lt;/strong&gt;
+	&lt;ul class="accoList"&gt;
+		<span class="cmt">&lt;!-- 활성화 시 open 클래스 추가 --&gt;</span>
+		&lt;li class="accoBox"&gt;
+			&lt;div class="accoTit"&gt;
+				&lt;button type="button" class="accoBtn"&gt;&lt;span&gt;SMS 인증번호 수신 불가&lt;/span&gt;&lt;/button&gt;
+			&lt;/div&gt;
+			&lt;div class="accoCont"&gt;
+				&lt;ul class="listType1"&gt;
+					&lt;li&gt;인증문자는 &lt;em&gt;114&lt;/em&gt; 번호로 발신되오니 해당 번호의 단말기 &lt;em&gt;스팸설정 여부 및 스팸편지함을 확인&lt;/em&gt;해 주세요.&lt;/li&gt;
+					&lt;li&gt;&lt;em&gt;스팸필터링 부가서비스&lt;/em&gt; 가입 후 114 번호를 스팸설정 하신 경우 &lt;em&gt;스팸설정을 해제&lt;/em&gt;해 주세요.&lt;/li&gt;
+					&lt;li&gt;&lt;em&gt;착신 관련 서비스&lt;/em&gt;에 가입되어 있는 경우 SMS 인증문자가 수신되지 않을 수 있습니다.&lt;/li&gt;
+				&lt;/ul&gt;
+			&lt;/div&gt;
+		&lt;/li&gt;
+		<span class="cmt">&lt;!-- 활성화 시 open 클래스 추가 --&gt;</span>
+		&lt;li class="accoBox"&gt;
+			&lt;div class="accoTit"&gt;
+				&lt;button type="button" class="accoBtn"&gt;&lt;span&gt;USIM 단독상태&lt;/span&gt;&lt;/button&gt;
+			&lt;/div&gt;
+			&lt;div class="accoCont"&gt;
+				&lt;ul class="listType1"&gt;
+					&lt;li&gt;현재 사용중인 휴대폰이 &lt;em&gt;USIM 단독 상태&lt;/em&gt;이거나 휴대폰과 &lt;em&gt;USIM카드가 분리&lt;/em&gt;된 상태에서는 &lt;em&gt;SMS 인증을 받으실 수 없습니다.&lt;/em&gt;&lt;/li&gt;
+				&lt;/ul&gt;
+			&lt;/div&gt;
+		&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;
+</pre>
+		</div>
+	</div>
+
+	<h2 class="guideTit2">Html Call Function(js)</h2>
+	<h3 class="guideTit3">Function - mvJs.utils.sendFrmSms.CheckBtnAuth();</h3>
+	<div class="infoTxt">
+		<ul>
+			<li>정보입력 페이지에서 다음 스텝으로 진행되는 버튼 활성화 함수(필요에 따라 호출)</li>
+			<li>현재는 PASS인증서 정보입력 페이지에만 적용되어 있음</li>
+		</ul>
+	</div>
+	<div class="guideContent">
+		<div class="infoTxt">
+			<ul>
+				<li>.inPop > input 모두 입력 되었을 경우 .popup.authPopup .rArea > button 버튼 활성화</li>
+				<li>input[type=text] : 한글 자 이상 입력 되어 있을 경우</li>
+				<li>input[type=radio], input[type=checkbox] : 체크 되었을 경우, 알뜰폰 체크 박스 제외</li>
+			</ul>
+		</div>
+		<a class="guideLink" href="/poc/util/auth/PPAS1.html" onclick="window.open(this.href,'','width=650,height=700,top=120,scrollbars=no'); return false;">적용된 페이지 확인(PASS인증서)</a>
+	</div>
+
+	<button class="goTop" onclick="window.scrollTo(0, 0);"><span class="blind">페이지 위로</span></button>
+
+    <script>
+        window.onload = function(){
+            const drLinkText = document.querySelectorAll('.guideTit2');
+            const directLink = document.querySelector('.styleGuideNav');
+            const directLinkUL = document.querySelector('.navList');
+            const anchorNavBtn = document.querySelector('.navBtn');
+
+            for(let i = 0; i < drLinkText.length; i++) {
+                /* 타이틀 영역에 id 추가*/
+                drLinkText[i].id = drLinkText[i].innerText;
+
+                /* 바로가기 링크 추가 */
+                let drLinkLi = document.createElement('li');
+                let drLinkAnchor = document.createElement('a');
+                let anchorText = document.createTextNode(drLinkText[i].innerText);
+                drLinkAnchor.appendChild(anchorText);
+                drLinkAnchor.href = "#" + drLinkText[i].innerText;
+                drLinkLi.appendChild(drLinkAnchor);
+                directLinkUL.appendChild(drLinkLi);
+            }
+
+            anchorNavBtn.onclick = function() {
+                directLink.classList.toggle('view');
+            }
+        }
+    </script>
+</body>
+</html>

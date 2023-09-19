@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no, address=no, email=no" />
+    <link rel="shortcut icon" href="/img/common/favicon.ico" />
+    <link rel="shortcut icon" href="/img/common/favicon.png" />
+    <link rel="apple-touch-icon" href="/img/common/favicon.png" />
+    <meta name="description" content="페이지설명" />
+    <meta name="keywords" content="서비스키워드" />
+    <meta property="og:title" content="SKT 홈페이지" />
+    <meta property="og:site_name" content="SKT" />
+    <meta property="og:image" content="/image/common/skt_facebook.jpg" />
+    <meta property="og:description" content="SKT framework" />
+    <title>SKT</title>
+    <link rel="stylesheet" type="text/css" href="/css/common.css" media="all" /><!-- [C] 공통 스타일 -->
+    <link rel="stylesheet" type="text/css" href="/css/layout.css" media="all" /><!-- [C] 박스 모델 -->
+    <link rel="stylesheet" type="text/css" href="/css/widgets.css" media="all" /><!-- [C] 기능별 위젯 -->
+    <link rel="stylesheet" type="text/css" href="/css/components.css" media="all" /><!-- [C] 단락별 컴퍼넌트 -->
+    <script type="text/javascript" src="/lib/jquery-1.12.3.min.js"></script><!--[C] jquery API-->
+    <script type="text/javascript" src="/lib/handlebars-v4.0.5.js"></script><!--[C] handlebars tmpl API-->
+    <script type="text/javascript" src="/lib/slick.js"></script><!--[C] iscroll API -->
+    <script type="text/javascript" src="/js/$vars.js"></script><!--[C] 전역 변수 -->
+    <script type="text/javascript" src="/js/common.js"></script><!--[C] 공통 기능 -->
+    <script type="text/javascript" src="/js/widgets.js"></script><!--[C] 기능별 위젯 -->
+
+    <!-- 인증 CSS/JS 추가 -->
+    <link rel="stylesheet" type="text/css" href="/css/auth.css" media="all" />
+    <script type="text/javascript" src="/js/auth.js"></script>
+    <!--// 인증 CSS/JS 추가 -->
+</head>
+
+<body>
+    <!-- #skip_navigation -->
+    <!--
+        <div id="skipNav" class="skip_navi">
+            <ul>
+                <li><li><a class="fe-replace-history" href="#contents-area">본문 바로가기</a></li>
+            </ul>
+        </div>
+        -->
+    <!--// #skip_navigation -->
+    <div class="wrap">
+        <!-- #header -->
+        <div id="header" class="header-wrap">
+            <div class="h-belt">
+                <div class="h-default">
+                    <div class="h-menu">
+                        <button type="button" class="icon-gnb-menu"><span class="blind">메뉴열기</span></button>
+                    </div>
+                    <div class="h-tit">휴대폰인증</div>
+                    <div class="h-serarch">
+                        <button class="icon-gnb-search"><span class="blind">검색</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--// #header -->
+
+        <!-- #contents -->
+        <div id="contents" class="container-wrap">
+            <div class="container">
+            </div>
+        </div>
+        <!--// #contents -->
+
+        <!-- .popup hbs(new 인증 팝업페이지 auth-popup 클래스 추가): 팝업 활성화 시 aria-hidden="false" 로 변경 -->
+        <div class="popup tw-popup auth-popup" role="dialog" aria-modal="true" aria-hidden="true">
+            <!-- actionsheet 팝업 actionsheet_full 추가 -->
+            <div class="popup-page layer actionsheet_full" style="bottom: 0px;">
+                <!-- .auth-popup__inner -->
+                <div class="auth-popup__inner">
+                    <!-- .auth-header -->
+                    <div class="auth-header">
+                        <h1 class="auth-header__eyebrow">휴대폰 인증</h1>
+                        <!-- 진행되는 단계의 title 항목에 none 클래스 삭제 -->
+                        <h2 class="auth-header__title none" id="auth-phone-name-label" aria-hidden="true">이름을 입력해 주세요.</h2>
+                        <h2 class="auth-header__title none" id="auth-birthday-label" aria-hidden="true">법정 생년월일과 성별을 입력해 주세요.</h2><!-- 20220203 법정 생년월일/성별 입력 한단계로 수정(title) -->
+                        <h2 class="auth-header__title none" id="auth-security-text-label" aria-hidden="true">보안 문자를 입력해 주세요.</h2>
+                        <h2 class="auth-header__title" id="auth-phone-number-label" aria-hidden="true">휴대폰 번호를 확인해 주세요.</h2>
+                    </div>
+                    <!--// .auth-header -->
+                    <!-- .auth-container -->
+                    <div class="auth-container auth-step-contents" data-flow="full">
+                        <!-- .cont-box -->
+                        <div class="cont-box cont-box--auth cont-box--reverse">
+                            <!-- 각 단계 진행 시,
+                                div[data-type="step-contents"] 영역의 none 클래스 삭제 및 해당 영역에서 첫번째로 포커스 가능한 입력 영역에 focus-in
+                            -->
+
+                            <!-- 이름 입력 -->
+                            <div class="inputbox inputbox--auth step-name" data-type="step-contents">
+                                <span class="input">
+                                    <input class="input__name" type="text" aria-labelledby="auth-phone-name-label" placeholder="휴대폰 명의자 이름" value="김이나"><!-- 20220203 placeholder 값 수정 -->
+                                    <button class="cancel"><span class="blind">삭제</span></button>
+                                </span>
+                            </div>
+                            <!--// 이름 입력 -->
+
+                            <!-- 20220203 법정 생년월일/성별 입력 한단계로 수정(contents) -->
+                            <!-- 법정생년월일/성별 입력 -->
+                            <div class="inputbox inputbox--auth step-resident-number mb36" data-type="step-contents">
+                                <!-- 오류: error 클래스 추가 -->
+                                <div class="input input--in-btn error">
+                                    <!-- 오류: aria-describedby="aria-errmsg-birthday" 추가 -->
+                                    <input type="tel" aria-labelledby="auth-birthday-label" placeholder="법정 생년월일(6자리)" maxlength="6" value="010101" aria-describedby="aria-errmsg-birthday">
+                                    <button class="cancel"><span class="blind">삭제</span></button>
+
+                                    <!-- 성별 선택 -->
+                                    <div class="input__right gender-selection">
+                                        <ul class="radio-group">
+                                            <li class="input-radio"><!-- 선택 시 checked 클래스 추가 -->
+                                                <input type="radio" name="auth-gender-selection" aria-labelledby="auth-gender-selection-male"><!-- 선택 시 checked 속성 추가 -->
+                                                <span class="label" id="auth-gender-selection-male" aria-hidden="true">남성</span>
+                                            </li>
+                                            <li class="input-radio checked">
+                                                <input type="radio" name="auth-gender-selection" aria-labelledby="auth-gender-selection-female" checked>
+                                                <span class="label" id="auth-gender-selection-female" aria-hidden="true">여성</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!--// 성별 선택 -->
+                                </div>
+
+                                <div class="tx-box">
+                                    <!-- 오류: none 클래스 삭제 -->
+                                    <span id="aria-errmsg-birthday" class="error-txt" aria-hidden="true">생년월일 6자리를 정확히 입력해 주세요.</span>
+                                </div>
+                            </div>
+                            <!--// 법정생년월일/성별 입력 -->
+                            <!--// 20220203 법정 생년월일/성별 입력 한단계로 수정(contents) -->
+
+                            <!-- 보안 문자 입력 -->
+                            <div class="captcha-box step-security-text mb36" data-type="step-contents">
+                                <div class="captcha">
+                                    <span class="captcha-img" tabindex="0"><img src="/img/common/img-captcha.jpg" alt="캡차이미지"></span>
+                                    <button class="captcha-sound">음성으로 듣기</button>
+                                    <button class="captcha-refresh">새로고침</button>
+                                </div>
+                                <div class="inputbox inputbox--auth">
+                                    <!-- 오류: error 클래스 추가 -->
+                                    <span class="input">
+                                        <!-- 오류: aria-describedby="aria-errmsg-security-text" 추가 -->
+                                        <!-- 20220203 주석 추가: 보안 문자 입력 값 유효한 경우, 다음단계 진행 시 disabled 속성 추가 -->
+                                        <input type="tel" placeholder="위 이미지의 문자 입력" aria-labelledby="auth-security-text-label" value="524865" disabled>
+                                        <button class="cancel"><span class="blind">삭제</span></button>
+                                    </span>
+                                    <div class="tx-box">
+                                        <!-- 오류: none 클래스 삭제 -->
+                                        <span id="aria-errmsg-security-text" class="error-txt none" aria-hidden="true">보안 문자를 정확하게 입력해 주세요.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--// 보안 문자 입력 -->
+
+                            <!-- 휴대폰 번호 입력 -->
+                            <div class="inputbox inputbox--auth step-phone-number mb36" data-type="step-contents">
+                                <!-- 오류: error 클래스 추가 -->
+                                <span class="input error">
+                                    <!-- 오류: aria-describedby="auth-errmsg-input-info" 추가 -->
+                                    <input class="input__phone-number" type="tel" maxlength="13" aria-labelledby="auth-phone-number-label" placeholder="휴대폰 번호('-' 제외한 숫자만 입력)" value="010-1234-5678" aria-describedby="auth-errmsg-input-info">
+                                    <button class="cancel"><span class="blind">삭제</span></button>
+                                </span>
+                                <span class="tx-box">
+                                    <!-- 오류: none 클래스 삭제 -->
+                                    <span id="auth-errmsg-input-info" class="error-txt" aria-hidden="true">입력하신 정보가 일치하지 않습니다.</span>
+                                </span>
+                            </div>
+                            <!--// 휴대폰 번호 입력 -->
+                        </div>
+                        <!--// .cont-box -->
+                    </div>
+                    <!--// .auth-container -->
+                    <!-- .auth-footer -->
+                    <div class="auth-footer">
+                        <div class="auth-bottom-fixed">
+                            <div class="auth-bottom-fixed__area">
+                                <!-- 이름 입력 단계 사용버튼
+                                    1. 이름 입력 input에 입력값이 발생할 경우 출력, none 클래스 삭제
+                                    2. 2자 이상 입력 시 활성화, disabled 속성 삭제
+                                    3. 활성화 된 다음으로 버튼 클릭 시, 법정생년월일 입력 영역 활성화
+                                -->
+                                <button class="btn-floating btn-style1 none" data-type="step-name" disabled>다음으로</button>
+                                <!-- 보안 문자 입력단계 사용버튼
+                                    1. 보안 문자 입력 input에 입력값이 발생할 경우 출력, none 클래스 삭제
+                                    2. 5자 이상 입력 시 활성화, disabled 속성 삭제
+                                    3. 활성화 된 다음으로 버튼 클릭 시
+                                        3-1. 보안 문자 정상 입력 시, 다음 스텝 진행을 위한 함수 호출
+                                        3-2. 보안 문자 입력 오류 시, disabled 속성 추가
+                                -->
+                                <button class="btn-floating btn-style1 none" data-type="step-security-text" disabled>다음으로</button>
+                                <!-- 휴대폰 번호 입력단계 사용버튼
+                                    1. 활성화 된 상태로 출력
+                                    2. 사용자의 임의 수정으로 입력값이 10자리 미만이 될 경우, disabled 속성 추가
+                                    3. 활성화 된 인증번호 요청하기 버튼 클릭 시
+                                        3-1. 인증번호 정상 전송 시, 인증번호 전송완료 토스트팝업 호출 및 다음 스텝 진행
+                                        3-2. 인증번호 전송 오류 시(입력정보의 오류가 있는 경우), disabled 속성 추가
+                                -->
+                                <button class="btn-floating btn-style1" data-type="step-phone-number">인증번호 요청하기</button><!-- 20220216 인증번호 요청하기 클래스 변경 -->
+                            </div>
+                        </div>
+                        <button class="auth-btn-arrow">다른 방법으로 인증하기</button>
+                    </div>
+                    <!--// .auth-footer -->
+                </div>
+                <!--// .auth-popup__inner -->
+                <!-- .popup-closeBtn -->
+                <button class="popup-closeBtn"><span class="blind">팝업 페이지 닫기</span></button>
+                <!--// .popup-closeBtn -->
+            </div>
+            <div class="popup-blind"></div>
+        </div>
+        <!--// .popup hbs -->
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>SKT 휴대폰 인증 | T world</title>
+<link rel="stylesheet" href="/poc/inc/css/common.css" type="text/css">
+<link rel="stylesheet" href="/poc/inc/css/util.css" type="text/css">
+<script type="text/javascript" src="/poc/inc/js/lib/jquery.min.js"></script>
+<script type="text/javascript" src="/poc/inc/js/lib/libs.js"></script>
+<script type="text/javascript" src="/poc/inc/js/common/common.js"></script>
+<!-- 본인인증 css, js 추가 -->
+<link rel="stylesheet" href="/poc/inc/css/auth.css" type="text/css">
+<script type="text/javascript" src="/poc/inc/js/auth/auth.js"></script>
+<!--// 본인인증 css, js 추가 -->
+</head>
+<!-- new 본인인증 : typeAuthPopup 클래스 추가 -->
+<body class="typeAuthPopup">
+<!-- 팝업 사이즈 : W650 X H700 -->
+<!-- new 본인인증 : authPopup 클래스 추가 -->
+<div class="popup authPopup">
+	<div class="popScrollArea">
+		<div class="authPopupInner">
+			<div class="popHead">
+				<h1 class="popSubTit">휴대폰 인증</h1>
+				<h2 class="popTit">본인 확인을 위한 <br>정보를 입력해주세요.</h2>
+			</div>
+			<div class="popCon">
+				<div class="inPop">
+
+					<!-- 이름 입력 영역 -->
+					<div class="inputbox">
+						<h3 class="hidden">이름 입력</h3>
+						<div class="input">
+							<label class="placeholder" for="auth-name">휴대폰 명의자 이름</label>
+							<input class="authInput" type="text" id="auth-name" title="휴대폰 명의자 이름을 입력하세요">
+							<button type="button" class="btnDel"><span class="hidden">입력된 이름 삭제</span></button>
+						</div>
+					</div>
+					<!--// 이름 입력 영역 -->
+
+					<!-- 법정생년월일 및 성별 입력 영역 -->
+					<div class="inputbox residentNumber h36">
+						<h3 class="hidden">법정생년월일 및 성별 입력</h3>
+						<div class="inputWrap">
+							<!-- 오류: error 클래스 추가 --><!-- 20220120 error 클래스 추가 위치 변경으로 주석 위치 수정 -->
+							<div class="input">
+								<label class="placeholder" for="auth-resident-number">법정 생년월일(6자리)</label>
+								<input class="authInput" type="text" id="auth-resident-number" title="주민등록번호 앞 6자리를 입력하세요." maxlength="6">
+								<button type="button" class="btnDel"><span class="hidden">입력된 생년월일 삭제</span></button>
+							</div>
+
+							<!-- 오류: none 클래스 삭제 -->
+							<p class="inpMsg error none">법정 생년월일 6자리를 입력하세요.</p><!-- 20220120 에러메시지 문구 위치 수정 -->
+
+							<div class="genderSelection">
+								<span class="radio">
+									<input type="radio" id="gender-selection-male" name="auth-gender-selection"><label for="gender-selection-male">남성</label>
+								</span>
+								<span class="radio">
+									<input type="radio" id="gender-selection-female" name="auth-gender-selection"><label for="gender-selection-female">여성</label>
+								</span>
+							</div>
+						</div>
+					</div>
+					<!--// 법정생년월일 및 성별 입력 영역 -->
+
+					<!-- 보안문자 입력 영역 -->
+					<div class="auth_captcha h36">
+						<h3 class="hidden">보안문자 입력</h3>
+						<div class="captcha_area">
+							<div class="captcha_image">
+								<img src="/poc/img/auth/img-captcha.png" alt="보안문자"><!-- 20220114 캡챠 이미지 경로 수정 -->
+							</div>
+
+							<div class="captcha_btn">
+								<button type="button" class="captcha_sound" id="sound"><span class="hidden">보안문자 음성듣기</span></button>
+								<button type="button" class="captcha_refresh" id="refresh"><span class="hidden">보안문자 새로고침</span></button>
+							</div>
+						</div>
+
+						<div class="inputbox">
+							<!-- 오류: error 클래스 추가 -->
+							<div class="input captcha_input">
+								<input class="authInput" type="text" id="captchaimage" title="이미지에 보이는 보안문자를 입력해주세요.">
+								<label class="placeholder" for="captchaimage">위 이미지의 문자 입력</label>
+								<button type="button" class="btnDel"><span class="hidden">입력된 보안문자 삭제</span></button>
+							</div>
+
+							<!-- 오류: none 클래스 삭제 -->
+							<p class="inpMsg error none">보안문자를 정확하게 입력해 주세요.</p>
+						</div>
+					</div>
+					<!--// 보안문자 입력 영역 -->
+
+					<!-- 휴대폰 번호 입력 -->
+					<div class="inputbox h36">
+						<h3 class="hidden">휴대폰 번호 입력</h3>
+						<!-- 오류: error 클래스 추가 -->
+						<div class="input">
+							<input class="authInput inpCellNumber" type="text" id="auth-cell-number" title="인증받을 휴대폰 번호를 입력하세요" maxlength="13" value="010-12**-56**"><!-- 20220114 default value 값 마스킹 처리 수정 -->
+							<label class="placeholder" for="auth-cell-number">휴대폰 번호 ('-'제외한 숫자만 입력)</label>
+							<button type="button" class="btnDel"><span class="hidden">입력된 휴대폰번호 삭제</span></button>
+						</div>
+
+						<!-- 오류: none 클래스 삭제 -->
+						<p class="inpMsg error none">입력하신 정보가 일치하지 않습니다.</p>
+					</div>
+					<!--// 휴대폰 번호 입력 -->
+
+					<!-- check point -->
+					<div class="accordion checkPoint">
+						<h3 class="cpTit">CHECK POINT</h3>
+						<ul class="accoList">
+							<!-- 활성화 시 open 클래스 추가 -->
+							<li class="accoBox">
+								<div class="accoTit">
+									<button type="button" class="accoBtn">인증 가능한 휴대폰 번호</button>
+								</div>
+								<div class="accoCont">
+									<ul class="listType1">
+										<li><em>고객님 명의</em>의 SK텔레콤 휴대폰</li>
+										<li><em>고객님 명의</em>로 "법인 본인확인 비밀번호" 서비스에 가입한 SK텔레콤 휴대폰 번호
+											<div class="incBtn"><a href="http://www.biztworld.co.kr/docs/information/NoticeDetail.jsp?idx=382" target="_blank" title="새창" class="authBtnS">법인 본인확인 비밀번호 가입방법 자세히 보기</a></div>
+										</li>
+										<li><em>로그인한 아이디에 등록</em>되어 있는 <em>법인명의</em> SK텔레콤 휴대폰 번호</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<!--// check point -->
+
+				</div><!--// .inPop -->
+			</div><!--// .popCon -->
+		</div><!--// .authPopupInner -->
+	</div><!--// .popScrollArea -->
+
+	<div class="popBottom">
+		<div class="btnArea">
+			<span class="rArea">
+				<!-- 전체 input에 입력값이 있는 경우 활성화, disabled 속성 삭제 -->
+				<button type="button" class="authBtnM" disabled><span>인증번호 요청하기</span></button>
+			</span>
+			<span class="lArea">
+				<button type="button" class="authBtnM cancel" title="클릭하면 팝업창이 닫힙니다."><span>취소</span></button>
+			</span>
+		</div>
+	</div><!--// .popBottom -->
+</div><!--// .popup -->
+
+</body>
+</html>

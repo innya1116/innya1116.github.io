@@ -1,0 +1,60 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>PASS인증서 인증 | T world</title>
+<link rel="stylesheet" href="/poc/inc/css/common.css" type="text/css">
+<link rel="stylesheet" href="/poc/inc/css/util.css" type="text/css">
+<script type="text/javascript" src="/poc/inc/js/lib/jquery.min.js"></script>
+<script type="text/javascript" src="/poc/inc/js/lib/libs.js"></script>
+<script type="text/javascript" src="/poc/inc/js/common/common.js"></script>
+<!-- 본인인증 css, js 추가 -->
+<link rel="stylesheet" href="/poc/inc/css/auth.css" type="text/css">
+<script type="text/javascript" src="/poc/inc/js/auth/auth.js"></script>
+<!--// 본인인증 css, js 추가 -->
+</head>
+<!-- new 본인인증 : typeAuthPopup 클래스 추가 -->
+<body class="typeAuthPopup">
+<!-- 팝업 사이즈 : W650 X H700 -->
+<!-- new 본인인증 : authPopup 클래스 추가 -->
+<div class="popup authPopup">
+	<div class="popScrollArea">
+		<div class="authPopupInner">
+			<div class="popHead">
+				<h1 class="popSubTit">PASS인증서</h1>
+				<h2 class="popTit">PASS 앱에서 인증을 <br>진행해 주세요.</h2><!-- 20220304 띄어쓰기 수정 -->
+			</div>
+			<div class="popCon">
+				<div class="inPop">
+					<!-- 20220304 디자인 및 문구 변경 -->
+					<div class="auth_contBox passInfo">
+						<strong class="authTime">인증 유효시간 : 5분</strong>
+						<p class="passTxt">인증 요청(알림)이 휴대폰으로 오지 않았다면 아래 순서대로 확인해 주세요.</p>
+						<ol class="auth_numList">
+							<li>[PASS 앱 실행 &gt; 홈 화면 또는 인증서 메뉴]에서 인증 요청 내용을 확인하실 수 있습니다.</li>
+							<li>PASS 앱 설치 및 알림 수신 동의 여부를 확인해 주세요.</li>
+							<li>문제가 계속된다면, [PASS인증서 고객센터: 1800 - 4273]로 문의해 주세요.</li>
+						</ol>
+					</div>
+					<!--// 20220304 디자인 및 문구 변경 -->
+				</div><!--// .inPop -->
+			</div><!--// .popCon -->
+		</div><!--// .authPopupInner -->
+	</div><!--// .popScrollArea -->
+
+	<div class="popBottom">
+		<div class="btnArea">
+			<span class="rArea">
+				<button type="button" class="authBtnL"><span>인증하기</span></button>
+			</span>
+			<span class="lArea">
+				<!-- 선택 시 팝업 닫힘 -->
+				<button type="button" class="authBtnM cancel" title="클릭하면 팝업창이 닫힙니다."><span>취소</span></button>
+			</span>
+		</div>
+	</div><!--// .popBottom -->
+</div><!--// .popup -->
+
+</body>
+</html>

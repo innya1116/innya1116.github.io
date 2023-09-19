@@ -1,0 +1,256 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=euc-kr">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>T월드 인증 개선 - PC</title>
+<link rel="stylesheet" href="/poc/inc/css/common.css" type="text/css">
+<link rel="stylesheet" href="/poc/inc/css/util.css" type="text/css">
+<script type="text/javascript" src="/poc/inc/js/lib/jquery.min.js"></script>
+<script type="text/javascript" src="/poc/inc/js/lib/libs.js"></script>
+<script type="text/javascript" src="/poc/inc/js/common/common.js"></script>
+<!-- 본인인증 css, js 추가 -->
+<link rel="stylesheet" href="/poc/inc/css/auth.css" type="text/css">
+<script type="text/javascript" src="/poc/inc/js/auth/auth.js"></script>
+<!--// 본인인증 css, js 추가 -->
+
+<style type="text/css">
+	.workingGuide{padding:0 16px;margin:0;letter-spacing:-.5px;}
+	.ls0{letter-spacing: 0;}
+	.guideTit1{padding:16px;margin:0 -1rem;background:#000;color:#fff;font-size:24px;line-height:32px}
+	.guideTit2{margin-top:32px;color:#000;font-size:22px;font-weight:bold}
+	.guideTit3{margin-top:20px;color:#000;font-size:18px;font-weight:bold}
+	.guideDesc{margin-top:10px;color:#666;font-size:15px;font-weight:normal}
+	.infoTxt ul li{position:relative;padding-left:12px;color:#000;line-height:1.5}
+	.infoTxt ul li+li{margin-top:5px}
+	.infoTxt ul li:before{content:'- ';position:absolute;left:0;}
+	.infoTxt ul li strong{display:block;margin-bottom:5px;}
+	.infoTxt ul li a{text-decoration:underline}
+	.guideLink{display:inline-block;margin-top:10px;text-decoration:underline}
+	.guideSelectType{margin:0 -1rem}
+	.guideSelectType ul{display:table;width:100%}
+	.guideSelectType li {display:table-cell;width:50%}
+	.guideSelectType li a{display:block;height:40px;background:#ccc;color:#fff;font-size:16px;line-height:40px;text-align:center}
+	.guideSelectType li a:hover{color:#000;text-decoration:underline}
+	.guideSelectType li.on a{background:#fff;color:#000;font-weight:bold;text-decoration:underline}
+	.guideLinkList li{position:relative;margin-left:24px}
+	.guideLinkList li:before{content:'';display:block;position:absolute;left:-16px;top:10px;width:8px;height:1px;background:#000}
+	.guideLinkList li a{font-size:14px}
+	/* .guideLinkList li a:not([href='/']){text-decoration:underline} */
+	.guideLinkList li a:not([href='/']):after{content:'(view)';display:inline-block;margin-left:12px;font-size:13px;font-weight:bold;color:#178bce}
+	.guideBox, .filelistWrap{margin-top:20px;padding:10px;border:1px dashed #aaa;background:#efefef}
+	.guideBox pre{padding:5px;margin:5px 0 10px;background:#111;color:#fff;font-size:12px;font-family:'Consolas', 'Courier New', Sans-serif}
+	.guideBox pre .cmt{font-style:italic;color:rgb(255, 182, 182)}
+	.filelistWrap{padding:0 10px 20px;font-size:0;}
+	.filelist > li{/*display:inline-block;width:30%;*/font-size:16px;line-height:20px;vertical-align:top;}
+	.filelist li.inDepth{position:relative;margin-top:20px;}
+	.filelist li.inDepth:after{content:'';display:block;position:absolute;top:25px;left:8px;bottom:11px;width:1px;background:#000}
+	.filelist li.inDepth li.inDepth{margin-top:10px}
+	.filelist > li strong{display:block;color:#000;font-size:15px}
+	.filelist > li:first-child strong{margin-top:0}
+	.filelist > li ul{margin-top:8px}
+	.filelist > li ul li{position:relative;margin-top:3px;margin-left:24px}
+	.filelist > li ul li:before{content:'';display:block;position:absolute;left:-16px;top:10px;width:8px;height:1px;background:#000}
+	.filelist > li ul li a{font-size:14px}
+	/* .filelist > li ul li a:not([href='/']){text-decoration:underline} */
+	.filelist > li ul li a:not([href='/']):after{content:'(view)';display:inline-block;margin-left:12px;font-size:13px;font-weight:bold;color:#178bce}
+	.filelist li.del, .filelist li.del a:after{text-decoration:line-through}
+	.filelist li .edit{display:block;margin-left:50px;font-size:13px;opacity:.8;}
+</style>
+</head>
+
+<body class="workingGuide">
+	<h1 class="guideTit1">T월드 인증 개선 - PC</h1>
+
+	<div class="guideSelectType">
+		<ul>
+			<li class="on"><a href="/poc/index.html">PC</a></li>
+			<li><a href="/index.html">MOBILE</a></li>
+		</ul>
+	</div>
+
+	<h2 class="guideTit2">Guide</h2>
+	<div class="guideBox infoTxt">
+		<ul>
+			<li>T world PC 가이드를 기반으로 작업되었습니다. <a class="ls0" href="http://150.24.227.144/poc/guide/real_index.html">http://150.24.227.144/poc/guide/real_index.html</a></li>
+			<li><a href="/poc/guide/style-guide.html">T월드 인증개선 PC Style Guide</a></li>
+			<li>Layout은 본인 확인 방법(POTH1-page.html)을 제외하고, 모두 System Popup 레이아웃으로 작업되었습니다.</li>
+			<li class="h10"><strong>주석 적용</strong>
+				<p>1. 개발적용 관련주석은 적용되어야 하는 코드의 바로 윗줄에 작성되어 있습니다.</p>
+<pre>
+<span class="cmt">&lt;!-- 오류: error 클래스 추가 --&gt;</span>
+&lt;span class="input"&gt;
+	...
+&lt;/span&gt;
+</pre>
+				<p>2. 수정 주석의 경우 단일행에 대한 수정은 코드 끝에 작성되어 있습니다.</p>
+<pre>
+&lt;input ... &gt;<span class="cmt">&lt;!-- 날짜 수정내용 --&gt;</span>
+</pre>
+				<p>3. 블록 영역의 수정 주석은 시작과 끝에 작성되어 있습니다.</p>
+<pre>
+<span class="cmt">&lt;!-- 날짜 수정내용 --&gt;</span>
+&lt;div&gt;
+	...
+&lt;/div&gt;
+<span class="cmt">&lt;!--// 날짜 수정내용 --&gt;</span>
+</pre>
+			</li>
+			<li class="h10"><strong>File 경로</strong>
+				<p class="ls0">html - /poc/util/auth/*.html<br>
+				css - /poc/inc/css/auth.css<br>
+				js - /poc/inc/js/auth/auth.js<br>
+				image - /poc/img/auth/<br></p>
+			</li>
+		</ul>
+	</div>
+
+	<h2 class="guideTit2">File List</h2>
+
+	<div class="filelistWrap">
+		<p class="guideDesc">02.07: 인증 방법 선택 페이지에 PASS인증서 항목 추가([MOZOP002-18487] 20220207 주석 표기)</p>
+		<ul class="filelist">
+			<li class="inDepth"><strong>운영 페이지 수정 건 <b>(반영)</b></strong>
+				<ul>
+					<li><a href="/poc/util/auth/UT9.2.html">UT9.2 - 인증방식선택(page - type1)</a></li>
+					<li><a href="/poc/util/auth/UT9.34.html">UT9.34 - 인증방식선택(page - type2)</a></li>
+					<li><a href="/poc/util/auth/UT9.35P.html" onclick="window.open(this.href,'','width=1000,height=680'); return false;">UT9.35P - 본인인증(popup)</a></li>
+					<li><a href="/poc/util/auth/UT9.9L.html">UT9.9L - 본인인증(layer)</a></li>
+					<li><a href="/poc/util/auth/UT9.5.1.html">UT9.5.1 - 금융 거래용 본인인증(page)</a></li>
+					<li><a href="/poc/util/auth/UT9.6P.1.html" onclick="window.open(this.href,'','width=868,height=735'); return false;">UT9.6P.1 - 금융 거래용 본인인증(popup)</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<div class="filelistWrap">
+		<p class="guideDesc">Error case에는 checkpoint 내용이 없습니다.<br>Error case가 아닌 원본페이지에서 checkpoint를 확인해주세요.</p>
+		<ul class="filelist">
+			<li class="inDepth"><strong>휴대폰 인증 <b>(미반영)</b></strong>
+				<ul>
+					<li class="inDepth"><strong>자사 인증 - 휴대폰 번호</strong>
+						<ul>
+							<li><a href="/poc/util/auth/PSMS1.html" onclick="window.open(this.href,'','width=650,height=700,top=120,scrollbars=no'); return false;">PSMS1 - 휴대폰 번호 입력</a>
+								<span class="edit">01.14: 다른 방법으로 인증하기 버튼 삭제</span>
+							</li>
+							<li><a href="/poc/util/auth/PSMS1-error.html" onclick="window.open(this.href,'','width=650,height=700,top=120,scrollbars=no'); return false;">PSMS1 - 휴대폰 번호 입력 <b>(Error Case)</b></a>
+								<span class="edit">01.14: 다른 방법으로 인증하기 버튼 삭제</span>
+							</li>
+							<li><a href="/poc/util/auth/PSMS1-disabled.html" onclick="window.open(this.href,'','width=650,height=700,top=120,scrollbars=no'); return false;">PSMS1 - 휴대폰 번호 입력 <b>(번호 변경 불가)</b></a>
+								<span class="edit">01.14: 다른 방법으로 인증하기 버튼 삭제</span>
+							</li>
+							<li><a href="/poc/util/auth/PSMS2.html" onclick="window.open(this.href,'','width=650,height=700,top=120,scrollbars=no'); return false;">PSMS2 - 회선 선택</a>
+								<span class="edit">01.14: id/for 값 중복항목 수정</span>
+							</li>
+						</ul>
+					</li>
+					<li class="inDepth"><strong>자사 인증 - 이름, 생년월일, 보안문자, 휴대폰 번호</strong>
+						<ul>
+							<li><a href="/poc/util/auth/PSMS3.html" onclick="window.open(this.href,'','width=650,height=700,top=120,scrollbars=no'); return false;">PSMS3 - 자사 개인정보 + 보안문자 입력</a>
+								<span class="edit">01.14: captcha 이미지 경로 수정 / default value 값 마스킹 처리</span>
+								<span class="edit">01.20: 생년월일 입력 영역 에러 클래스 및 문구 위치 수정</span>
+							</li>
+							<li><a href="/poc/util/auth/PSMS3-error.html" onclick="window.open(this.href,'','width=650,height=700,top=120,scrollbars=no'); return false;">PSMS3 - 자사 개인정보 + 보안문자 입력 <b>(Error Case)</b></a>
+								<span class="edit">01.14: captcha 이미지 경로 수정</span>
+								<span class="edit">01.20: 생년월일 입력 영역 에러 클래스 및 문구 위치 수정</span>
+							</li>
+						</ul>
+					</li>
+					<li><a href="/poc/util/auth/PSMS5.html" onclick="window.open(this.href,'','width=650,height=700,top=120,scrollbars=no'); return false;">PSMS5 - 인증번호 입력</a>
+						<span class="edit">01.20: 인증번호 input에 inpCellNumber 클래스 삭제</span>
+					</li>
+					<li><a href="/poc/util/auth/PSMS5-error.html" onclick="window.open(this.href,'','width=650,height=700,top=120,scrollbars=no'); return false;">PSMS5 - 인증번호 입력 <b>(Error Case)</b></a>
+						<span class="edit">01.20: 인증번호 input에 inpCellNumber 클래스 삭제</span>
+					</li>
+				</ul>
+			</li>
+			<li class="inDepth"><strong>공동인증서 인증(App) <b>(미반영)</b></strong>
+				<ul>
+					<li><a href="/poc/util/auth/PGON2.html" onclick="window.open(this.href,'','width=650,height=700,top=120,scrollbars=no'); return false;">PGON2 - 보안 소프트웨어 설치</a></li>
+					<li><a href="/poc/util/auth/PGON1.html" onclick="window.open(this.href,'','width=650,height=700,top=120,scrollbars=no'); return false;">PGON1 - 개인정보활용 동의</a></li>
+				</ul>
+			</li>
+			<li class="inDepth"><strong>PASS 인증서 인증 <b>(반영)</b></strong>
+				<ul>
+					<li><a href="/poc/util/auth/PPAS1.html" onclick="window.open(this.href,'','width=650,height=700,top=120,scrollbars=no'); return false;">PPAS1 - 인증 정보 입력(생년월일 정보 입력X)</a>
+						<span class="edit">01.14: 이용동의 추가</span>
+						<span class="edit">02.14: 휴대폰 번호 입력 영역에 통신사 선택 영역 추가 / 이용동의 영역 전체 수정</span>
+						<span class="edit">03.03: 문구 수정 반영, 휴대폰 통신사 skt 항목 default로 선택되도록 수정, 에러케이스 없음으로 관련 내용 삭제, 입력내용 있는 경우 다음으로 버튼 활성화 함수 호출</span>
+						<span class="edit">03.23: 알뜰폰 통신사 툴팁 영역 통신사(SKT/KT/LGU+) 텍스트 bold 처리</span>
+					</li>
+					<li class="del"><a href="/poc/util/auth/PPAS1-error.html" onclick="window.open(this.href,'','width=650,height=700,top=120,scrollbars=no'); return false;">PPAS1 - 인증 정보 입력 <b>(Error Case)</b></a>
+						<span class="edit">01.14: 이용동의 추가</span>
+						<span class="edit">02.14: 휴대폰 번호 입력 영역에 통신사 선택 영역 추가 / 이용동의 영역 전체 수정</span>
+						<span class="edit">03.03: 에러케이스 없음, 페이지 삭제</span>
+					</li>
+					<li class="del"><a href="/poc/util/auth/PPAS2.html" onclick="window.open(this.href,'','width=650,height=700,top=120,scrollbars=no'); return false;">PPAS2 - 제3자 정보제공 동의</a>
+						<span class="edit">01.14: PPAS1 페이지로 흡수되어 삭제</span>
+					</li>
+					<li><a href="/poc/util/auth/PPAS3.html" onclick="window.open(this.href,'','width=650,height=700,top=120,scrollbars=no'); return false;">PPAS3 - PASS인증서 인증 진행 안내</a>
+						<span class="edit">01.14: 문구 변경</span>
+						<span class="edit">03.04: 디자인 및 문구 변경</span>
+					</li>
+				</ul>
+			</li>
+			<li class="inDepth"><strong>금융인증 - 공동인증서 <b>(미반영)</b></strong>
+				<ul>
+					<li><a href="/poc/util/auth/PSMS4.html" onclick="window.open(this.href,'','width=650,height=700,top=120,scrollbars=no'); return false;">PSMS4 - 자사 개인정보_정보 입력</a>
+						<span class="edit">01.14: default value 값 마스킹 처리</span>
+						<span class="edit">01.20: 생년월일 입력 영역 에러 클래스 및 문구 위치 수정</span>
+					</li>
+					<li><a href="/poc/util/auth/PSMS4-error.html" onclick="window.open(this.href,'','width=650,height=700,top=120,scrollbars=no'); return false;">PSMS4 - 자사 개인정보_정보 입력 <b>(Error Case)</b></a>
+						<span class="edit">01.20: 생년월일 입력 영역 에러 클래스 및 문구 위치 수정</span>
+					</li>
+					<li><a href="/poc/util/auth/PSMS6.html" onclick="window.open(this.href,'','width=650,height=700,top=120,scrollbars=no'); return false;">PSMS6 - 인증번호 입력</a>
+						<span class="edit">01.20: 인증번호 input에 inpCellNumber 클래스 삭제</span>
+					</li>
+					<li><a href="/poc/util/auth/PSMS6-error.html" onclick="window.open(this.href,'','width=650,height=700,top=120,scrollbars=no'); return false;">PSMS6 - 인증번호 입력 <b>(Error Case)</b></a>
+						<span class="edit">01.20: 인증번호 input에 inpCellNumber 클래스 삭제</span>
+					</li>
+					<li class="del"><strong><a href="/poc/util/auth/PFIN1.html" onclick="window.open(this.href,'','width=650,height=700,top=120,scrollbars=no'); return false;">PFIN1 - 금융인증서 선택</a></strong>
+						<span class="edit">01.28: 인증 flow 변경으로 페이지 삭제</span>
+					</li>
+					<li class="inDepth"><strong>공동인증서</strong>
+						<ul>
+							<li><a href="/poc/util/auth/PGON2.html" onclick="window.open(this.href,'','width=650,height=700,top=120,scrollbars=no'); return false;">PGON2 - 보안 소프트웨어 설치</a></li>
+							<li><a href="/poc/util/auth/PGON3.html" onclick="window.open(this.href,'','width=650,height=700,top=120,scrollbars=no'); return false;">PGON3 - 개인정보활용 동의</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li class="inDepth"><strong>금융인증 - PASS 인증서 <b>(반영)</b></strong>
+				<ul>
+					<li><a href="/poc/util/auth/PPAS1-type2.html" onclick="window.open(this.href,'','width=650,height=700,top=120,scrollbars=no'); return false;">PPAS1 - 인증 정보 입력(생년월일/성별 정보 입력O)</a>
+						<span class="edit">02.14: 휴대폰 번호 입력 영역에 통신사 선택 영역 추가 / 이용동의 영역 전체 수정</span>
+						<span class="edit">02.15: 생년월일 자릿수 수정(6자리 &gt; 8자리)</span>
+						<span class="edit">03.03: 문구 수정 반영, 생년월일 입력 input title 내용 수정, 휴대폰 통신사 skt 항목 default로 선택되도록 수정, 에러케이스 없음으로 관련 내용 삭제, 입력내용 있는 경우 다음으로 버튼 활성화 함수 호출</span>
+						<span class="edit">03.23: 알뜰폰 통신사 툴팁 영역 통신사(SKT/KT/LGU+) 텍스트 bold 처리</span>
+					</li>
+					<li class="del"><a href="/poc/util/auth/PPAS2.html" onclick="window.open(this.href,'','width=650,height=700,top=120,scrollbars=no'); return false;">PPAS2 - 제3자 정보제공 동의</a></li>
+					<li><a href="/poc/util/auth/PPAS3.html" onclick="window.open(this.href,'','width=650,height=700,top=120,scrollbars=no'); return false;">PPAS3 - PASS인증서 인증 진행 안내</a>
+						<span class="edit">03.04: 디자인 및 문구 변경</span>
+					</li>
+				</ul>
+			</li>
+			<li class="inDepth"><strong>본인 확인 방법 <b>(미반영)</b></strong>
+				<ul>
+					<li><a href="/poc/util/auth/POTH1-page.html">POTH1 - 본인 확인 방법(page)</a></li>
+					<li><a href="/poc/util/auth/POTH1-popup.html" onclick="window.open(this.href,'','width=650,height=700,top=120,scrollbars=no'); return false;">POTH1 - 본인 확인 방법(팝업)</a></li>
+					<li class="inDepth"><strong>그룹별 인증 수단</strong>
+						<ul>
+							<li><a href="/poc/util/auth/POTH1-group2.html" onclick="window.open(this.href,'','width=650,height=700,top=120,scrollbars=no'); return false;">그룹2 (SMS+SMS외)</a></li>
+							<li><a href="/poc/util/auth/POTH1-group3.html" onclick="window.open(this.href,'','width=650,height=700,top=120,scrollbars=no'); return false;">그룹3 (SMS외 Only)</a></li>
+							<li><a href="/poc/util/auth/POTH1-group4.html" onclick="window.open(this.href,'','width=650,height=700,top=120,scrollbars=no'); return false;">그룹4 (금융거래인증)</a></li>
+							<li><a href="/poc/util/auth/POTH1-group5.html" onclick="window.open(this.href,'','width=650,height=700,top=120,scrollbars=no'); return false;">그룹5 (SMS 자사+인증서)</a></li>
+							<li><a href="/poc/util/auth/POTH1-group6-7.html" onclick="window.open(this.href,'','width=650,height=700,top=120,scrollbars=no'); return false;">그룹6 (생체+인증확대형)</a></li>
+							<li><a href="/poc/util/auth/POTH1-group6-7.html" onclick="window.open(this.href,'','width=650,height=700,top=120,scrollbars=no'); return false;">그룹7 (SMS 자사 +인증확대형)</a></li>
+							<li><a href="/poc/util/auth/PFIN1.html" onclick="window.open(this.href,'','width=650,height=700,top=120,scrollbars=no'); return false;">그룹8 (인증서 Only)</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+
+	<br><br>
+</body>
+</html>

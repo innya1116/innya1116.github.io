@@ -1,0 +1,90 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>본인인증 | T world</title>
+<link rel="stylesheet" href="/poc/inc/css/common.css" type="text/css">
+<link rel="stylesheet" href="/poc/inc/css/util.css" type="text/css">
+<!-- [MOZOP002-18487] 20220207 pass 인증서 관련 css 추가 -->
+<link href="/poc/inc/css/auth.css" rel="stylesheet" type="text/css">
+<!--// [MOZOP002-18487] 20220207 pass 인증서 관련 css 추가 -->
+<script type="text/javascript" src="/poc/inc/js/lib/jquery.min.js"></script>
+<script type="text/javascript" src="/poc/inc/js/lib/libs.js"></script>
+<script type="text/javascript" src="/poc/inc/js/common/common.js"></script>
+</head>
+<body>
+<!-- 팝업 사이즈 : W1000 X H680 -->
+<div class="popup">
+	<div class="popHead">
+		<h1>본인인증</h1>
+	</div>
+	<div class="popCon meCert">
+		<div class="inPop">
+			<h2 class="titDep1">인증 방식 선택</h2>
+			<p>고객님의 소중한 개인정보 보호를 위해 본인인증 후 서비스를 이용하실 수 있습니다.</p>
+			<div class="certList">
+				<ul>
+					<li class="skt"><a href="#" title="새창 열림" target="_blank"><strong>SK텔레콤 SMS 인증</strong><span>고객님이 선택한 휴대폰 번호로 SMS 인증합니다.</span></a></li>
+					<li class="npki"><a href="#"><strong>공동인증서 인증</strong><span>로그인한 고객 명의의 범용/금융 거래용 인증서로 인증합니다.</span></a></li>
+					<li class="kt"><a href="#"><strong>KT 인증</strong><span>고객명의의 KT 휴대폰 번호로  SMS 인증합니다.</span></a></li>
+					<li class="lg"><a href="#"><strong>LG U+인증</strong><span>고객명의의 LG U+ 휴대폰 번호로 SMS 인증합니다. </span></a></li>
+					<li class="sms"><a href="#"><strong>알뜰폰 SMS 인증</strong><span>고객명의의 알뜰폰으로 SMS 인증합니다.</span></a></li>
+					<li class="email"><a href="#" title="새창 열림" target="_blank"><strong>이메일 인증</strong><span>회원정보에 등록한 이메일로 인증합니다.</span></a></li>
+					<!-- [MOZOP002-18487] 20220207 pass 인증서 항목 추가 -->
+					<li class="pass"><a href="#"><strong>PASS 인증서</strong><span>고객명의의 PASS앱내 PASS인증서로 <br>인증합니다.</span></a></li>
+					<!--// [MOZOP002-18487] 20220207 pass 인증서 항목 추가 -->
+				</ul>
+			</div>
+
+			<div class="p_checkPoint">
+				<strong class="titDep2">Check Point</strong>
+				<table border="1" class="cpCont">
+					<tbody>
+						<tr>
+							<td class="chkptTit tabJs" width="35%">
+								<ol>
+									<li class="on"><a href="#chkpt1">1. 가려진 정보보기 해제 안내</a></li>
+									<li><a href="#chkpt2">2. 본인인증 실패 시 안내</a></li>
+									<li><a href="#chkpt3">3. 공동인증서 관리 안내</a></li>
+								</ol>
+							</td>
+							<td>
+								<div class="chkptCont" id="chkpt1">
+									<strong class="tit">가려진 정보보기 해제 안내</strong>
+									<ul class="listType1">
+										<li>본인인증 성공 시 <em>* 또는 <img src="/poc/img/common/img_masking.gif" alt="마스킹" class="valignM"> 가 해제</em>됩니다.<br>(본인명의 전화번호, 카드번호, 주소 등 일부 정보는 본인인증 후에도 가려져 보일 수 있습니다)</li>
+									</ul>
+								</div>
+								<div class="chkptCont" id="chkpt2" style="display:none">
+									<strong class="tit">본인인증 실패 시 안내</strong>
+									<ul class="listType1">
+										<li>본인인증 실패 시 이용하시는 서비스에 따라 고객센터로 연락 주시기 바랍니다.
+											<ul class="listType2">
+												<li>이동전화 고객센터 : 휴대폰 국번없이 114(무료) 또는 080-011-6000(무료), 국번없이 1599-0011(유료)</li>
+												<li>인터넷/집전화 고객센터 : 080-816-2000(무료) 또는 1600-2000(유료)</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+								<div class="chkptCont" id="chkpt3" style="display:none">
+									<strong class="tit">공동인증서 관리 안내</strong>
+									<ul class="listType1">
+										<li>공동인증서는 USB 등 이동식 저장장치에 저장하시고, 포털사이트 메일함, P2P, 웹하드 등에 저장하지 마시기 바랍니다.</li>
+										<li>포털사이트의 비밀번호와 공동인증서의 비밀번호를 동일하게 사용하실 경우 위험하오니 주의하시기 바랍니다.</li>
+									</ul>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div class="btnBox">
+				<a href="#" class="btnS btnBlack">확인</a>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

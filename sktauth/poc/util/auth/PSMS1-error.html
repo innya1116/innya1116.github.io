@@ -1,0 +1,63 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>SKT 휴대폰 인증 | T world</title>
+<link rel="stylesheet" href="/poc/inc/css/common.css" type="text/css">
+<link rel="stylesheet" href="/poc/inc/css/util.css" type="text/css">
+<script type="text/javascript" src="/poc/inc/js/lib/jquery.min.js"></script>
+<script type="text/javascript" src="/poc/inc/js/lib/libs.js"></script>
+<script type="text/javascript" src="/poc/inc/js/common/common.js"></script>
+<!-- 본인인증 css, js 추가 -->
+<link rel="stylesheet" href="/poc/inc/css/auth.css" type="text/css">
+<script type="text/javascript" src="/poc/inc/js/auth/auth.js"></script>
+<!--// 본인인증 css, js 추가 -->
+</head>
+<!-- new 본인인증 : typeAuthPopup 클래스 추가 -->
+<body class="typeAuthPopup">
+<!-- 팝업 사이즈 : W650 X H700 -->
+<!-- new 본인인증 : authPopup 클래스 추가 -->
+<div class="popup authPopup">
+	<div class="popScrollArea">
+		<div class="authPopupInner">
+			<div class="popHead">
+				<h1 class="popSubTit">휴대폰 인증</h1>
+				<h2 class="popTit">휴대폰으로 <br>인증번호를 요청해주세요.</h2>
+			</div>
+			<div class="popCon">
+				<div class="inPop">
+					<div class="inputbox inputInBtn">
+						<!-- 오류: error 클래스 추가 -->
+						<div class="input error">
+							<label class="placeholder" for="auth-cell-number">휴대폰 번호('-' 제외한 숫자만 입력)</label>
+							<input class="authInput inpCellNumber" type="text" id="auth-cell-number" value="010-90**-90**" maxlength="13">
+							<button type="button" class="btnDel"><span class="hidden">입력된 휴대폰 번호 삭제</span></button>
+
+							<div class="rightBox">
+								<button type="button" class="authBtnS"><span>번호변경</span></button>
+							</div>
+						</div>
+						<!-- 오류메시지(error 클래스 추가): 출력 시, none 클래스 삭제 -->
+						<p class="inpMsg error">인증번호를 전송할 수 없는 번호 입니다.</p>
+					</div>
+				</div><!--// .inPop -->
+			</div><!--// .popCon -->
+		</div><!--// .authPopupInner -->
+	</div><!--// .popScrollArea -->
+
+	<div class="popBottom">
+		<div class="btnArea">
+			<span class="rArea">
+				<!-- 휴대폰 번호 입력 완료 시(10자리 이상 입력 시) 활성화, disabled 속성 삭제 -->
+				<button type="button" class="authBtnM"><span>인증번호 요청하기</span></button>
+			</span>
+			<span class="lArea">
+				<button type="button" class="authBtnM cancel" title="클릭하면 팝업창이 닫힙니다."><span>취소</span></button>
+			</span>
+		</div>
+	</div><!--// .popBottom -->
+</div><!--// .popup -->
+
+</body>
+</html>

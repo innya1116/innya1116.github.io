@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no, address=no, email=no" />
+    <link rel="shortcut icon" href="/img/common/favicon.ico" />
+    <link rel="shortcut icon" href="/img/common/favicon.png" />
+    <link rel="apple-touch-icon" href="/img/common/favicon.png" />
+    <meta name="description" content="페이지설명" />
+    <meta name="keywords" content="서비스키워드" />
+    <meta property="og:title" content="SKT 홈페이지" />
+    <meta property="og:site_name" content="SKT" />
+    <meta property="og:image" content="/image/common/skt_facebook.jpg" />
+    <meta property="og:description" content="SKT framework" />
+    <title>SKT</title>
+    <link rel="stylesheet" type="text/css" href="/css/common.css" media="all" /><!-- [C] 공통 스타일 -->
+    <link rel="stylesheet" type="text/css" href="/css/layout.css" media="all" /><!-- [C] 박스 모델 -->
+    <link rel="stylesheet" type="text/css" href="/css/widgets.css" media="all" /><!-- [C] 기능별 위젯 -->
+    <link rel="stylesheet" type="text/css" href="/css/components.css" media="all" /><!-- [C] 단락별 컴퍼넌트 -->
+    <script type="text/javascript" src="/lib/jquery-1.12.3.min.js"></script><!--[C] jquery API-->
+    <script type="text/javascript" src="/lib/handlebars-v4.0.5.js"></script><!--[C] handlebars tmpl API-->
+    <script type="text/javascript" src="/lib/slick.js"></script><!--[C] iscroll API -->
+    <script type="text/javascript" src="/js/$vars.js"></script><!--[C] 전역 변수 -->
+    <script type="text/javascript" src="/js/common.js"></script><!--[C] 공통 기능 -->
+    <script type="text/javascript" src="/js/widgets.js"></script><!--[C] 기능별 위젯 -->
+
+    <!-- 인증 CSS/JS 추가 -->
+    <link rel="stylesheet" type="text/css" href="/css/auth.css" media="all" />
+    <script type="text/javascript" src="/js/auth.js"></script>
+    <!--// 인증 CSS/JS 추가 -->
+</head>
+
+<body>
+    <!-- .popup hbs(new 인증 팝업페이지 auth-popup 클래스 추가) -->
+    <div class="popup tw-popup auth-popup">
+        <!-- height 값은 브라우저 전체 높이값에서 top 영역 52px을 제외한 높이값으로 넣어줌 -->
+        <div class="popup-page layer actionsheet_full" style="bottom: 0px;">
+            <!-- .auth-popup__inner -->
+            <div class="auth-popup__inner">
+                <!-- .auth-header -->
+                <div class="auth-header">
+                    <h1 class="auth-header__title">타이틀 입니다</h1>
+                </div>
+                <!--// .auth-header -->
+                <!-- .auth-container -->
+                <div class="auth-container">
+                    <!-- .cont-box -->
+                    <div class="cont-box cont-box--auth">
+                        <!-- 정보성 텍스트 -->
+                        <ul class="auth-info-list">
+                            <li>고객님 명의의 범용/금융 거래용 인증서로 인증하신 후 이용하실 수 있습니다.</li>
+                            <li>공동인증서란 인증기관이 발행하는 사이버 전자 상거래용 인감 증명서를 말합니다.(증권 거래용 인증서 사용불가)</li>
+                        </ul>
+                        <div class="auth-info-list">
+                            <p class="auth-info-txt">한 줄짜리 정보성 텍스트</p>
+                        </div>
+                        <!--// 정보성 텍스트 -->
+
+                        <!-- 약관동의(리스트가 하나일 때 auth-terms--only 클래스 추가) -->
+                        <div class="auth-terms auth-terms--only">
+                            <!-- .widget -->
+                            <div class="widget">
+                                <div class="widget-box accordion">
+                                    <div class="acco-cover">
+                                        <div class="acco-style btn-hold">
+                                            <ul class="acco-list">
+                                                <!-- 활성화 항목에 on 클래스 추가 -->
+                                                <li class="acco-box on">
+                                                    <div class="acco-tit">
+                                                        <span class="custom-form"><input type="checkbox" id="auth-term1-1"><span class="c-type1"></span></span>
+                                                        <label for="auth-term1-1">간편인증서비스 이용에 대한 동의(필수)</label>
+                                                        <!--
+                                                            아코디언 열려있는 상태일 경우 aria-pressed="true",
+                                                            닫혀있는 상태일 경우 aria-pressed="false"
+                                                        -->
+                                                        <button class="acco-btn" aria-pressed="false"><span class="blind">상세보기</span></button>
+                                                    </div>
+                                                    <div class="acco-cont auth-cont-box has-maxh">
+                                                        <div class="auth-cont-box-inner">
+                                                            본인은 귀사가 공동인증서 인증을 위해 한국정보인증으로 부터 본인 식별정보(CI/DI)를 제공받아 본인 확인 목적으로 이용하는 것에 동의합니다.
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--// .widget -->
+                        </div><!--// .auth-terms -->
+                        <!--// 약관동의(리스트가 하나일 때 auth-terms--only 클래스 추가) -->
+
+                        <!-- 약관동의 -->
+                        <div class="auth-terms">
+                            <!-- .widget -->
+                            <div class="widget">
+                                <div class="widget-box accordion">
+                                    <div class="auth-terms__check-all">
+                                        <span class="custom-form"><input type="checkbox" id="auth-terms-check-all"><span class="c-type1"></span></span>
+                                        <label for="auth-terms-check-all">전체동의</label>
+                                    </div>
+                                    <div class="acco-cover">
+                                        <div class="acco-style btn-hold">
+                                            <ul class="acco-list">
+                                                <!-- 활성화 항목에 on 클래스 추가 -->
+                                                <li class="acco-box on">
+                                                    <div class="acco-tit">
+                                                        <span class="custom-form"><input type="checkbox" id="auth-term-input1"><span class="c-type1"></span></span>
+                                                        <label for="auth-term-input1">간편인증서비스 이용에 대한 동의(필수)</label>
+                                                        <!--
+                                                            아코디언 열려있는 상태일 경우 aria-pressed="true",
+                                                            닫혀있는 상태일 경우 aria-pressed="false"
+                                                        -->
+                                                        <button class="acco-btn" aria-pressed="true"><span class="blind">상세보기</span></button>
+                                                    </div>
+                                                    <div class="acco-cont auth-cont-box has-maxh">
+                                                        <div class="auth-cont-box-inner">
+                                                            본인은 귀사가 공동인증서 인증을 위해 한국정보인증으로 부터 본인 식별정보(CI/DI)를 제공받아 본인 확인 목적으로 이용하는 것에 동의합니다.
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="acco-box">
+                                                    <div class="acco-tit">
+                                                        <span class="custom-form"><input type="checkbox" id="auth-term-input2"><span class="c-type1"></span></span>
+                                                        <label for="auth-term-input2">개인정보활용 동의 (필수)</label>
+                                                        <!--
+                                                            아코디언 열려있는 상태일 경우 aria-pressed="true",
+                                                            닫혀있는 상태일 경우 aria-pressed="false"
+                                                        -->
+                                                        <button class="acco-btn" aria-pressed="false"><span class="blind">상세보기</span></button>
+                                                    </div>
+                                                    <div class="acco-cont auth-cont-box">
+                                                        <div class="auth-cont-box-inner">
+                                                            본인은 귀사가 공동인증서 인증을 위해 한국정보인증으로 부터 본인 식별정보(CI/DI)를 제공받아 본인 확인 목적으로 이용하는 것에 동의합니다. (※본인 식별정보(CI/DI)는 한국전자인증, 한국정보인증에서 발급한 공동인증서 (구 공인인증서) 인증시에만 제공받습니다.)
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--// .widget -->
+                        </div><!--// .auth-terms -->
+                        <!--// 약관동의 -->
+
+                        <!-- 인증번호 입력 -->
+                        <span class="inputbox inputbox--auth mt36">
+                            <!-- 오류: error 클래스 추가 -->
+                            <span class="input input--in-btn focus">
+                                <!-- 오류: aria-describedby="aria-sms-exp-desc1" 추가 -->
+                                <input type="number" pattern="^[0-9]+$" aria-describedby="" maxlength="6" placeholder="6자리 숫자" title="인증번호 입력">
+                                <span class="input__right">
+                                    <span class="sms-time">
+                                        <span class="blind">남은 시간</span>
+                                        <span class="sms-time__text">3:59</span>
+                                    </span>
+                                </span>
+                            </span>
+                            <span class="tx-box">
+                                <!-- 오류: none 클래스 삭제 -->
+                                <span id="aria-sms-exp-desc1" class="error-txt none" aria-hidden="true">인증번호가 일치하지 않습니다.</span>
+                            </span>
+                        </span>
+                        <!--// 인증번호 입력 -->
+
+                        <!-- 인증번호 입력(오류 case) -->
+                        <span class="inputbox inputbox--auth">
+                            <!-- 오류: error 클래스 추가 -->
+                            <span class="input input--in-btn error">
+                                <!-- 오류: aria-describedby="aria-sms-exp-desc1" 추가 -->
+                                <input type="number" pattern="^[0-9]+$" aria-describedby="aria-sms-exp-desc1" maxlength="6" placeholder="6자리 숫자" title="인증번호 입력" value="362951">
+                                <span class="input__right">
+                                    <span class="sms-time">
+                                        <span class="blind">남은 시간</span>
+                                        <span class="sms-time__text">3:59</span>
+                                    </span>
+                                </span>
+                            </span>
+                            <span class="tx-box">
+                                <!-- 오류: none 클래스 삭제 -->
+                                <span id="aria-sms-exp-desc1" class="error-txt" aria-hidden="true">인증번호가 일치하지 않습니다.</span>
+                            </span>
+                        </span>
+                        <!--// 인증번호 입력 -->
+
+                        <!-- 휴대폰번호 입력 -->
+                        <span class="inputbox inputbox--auth mt36">
+                            <span class="input">
+                                <input class="input__phone-number" type="tel" title="휴대폰 번호" placeholder="다른 휴대폰 번호 입력" maxlength="13">
+                                <button class="cancel"><span class="blind">삭제</span></button>
+                            </span>
+                        </span>
+                        <!--// 휴대폰번호 입력 -->
+
+                        <!-- 휴대폰번호 입력(휴대폰번호 입력된 상태(disabled) + 번호선택버튼) -->
+                        <span class="inputbox inputbox--auth mt36">
+                            <span class="input input--in-btn disabled">
+                                <input class="input__phone-number" type="tel" title="휴대폰 번호" value="010-90**-90**" maxlength="13" disabled>
+                                <button class="cancel none"><span class="blind">삭제</span></button>
+                                <span class="input__right">
+                                    <span class="btn-area">
+                                        <button class="btn-round2 btn-style3" aria-label="인증 받을 다른 번호 선택" aria-haspopup="true">번호선택</button>
+                                    </span>
+                                </span>
+                            </span>
+                        </span>
+                        <!--// 휴대폰번호 입력(휴대폰번호 입력된 상태(disabled) + 번호선택버튼) -->
+
+                        <!-- 휴대폰번호 입력(휴대폰번호 입력된 상태 + 번호선택버튼) -->
+                        <span class="inputbox inputbox--auth mt36">
+                            <!-- 번호선택 후: disabled 클래스 삭제 / editable 클래스 추가 -->
+                            <span class="input input--in-btn editable">
+                                <!-- 번호선택 후: input에 disabled 속성 삭제 -->
+                                <input class="input__phone-number" type="tel" title="휴대폰 번호" value="010-90**-90**" maxlength="13">
+                                <!-- 번호선택 후: none 클래스 삭제 -->
+                                <button class="cancel"><span class="blind">삭제</span></button>
+                                <span class="input__right">
+                                    <span class="btn-area">
+                                        <button class="btn-round2 btn-style3" aria-label="인증 받을 다른 번호 선택" aria-haspopup="true">번호선택</button>
+                                    </span>
+                                </span>
+                            </span>
+                        </span>
+                        <!--// 휴대폰번호 입력(휴대폰번호 입력된 상태 + 번호선택버튼) -->
+
+                        <!-- 이름 입력 -->
+                        <span class="inputbox inputbox--auth mt36">
+                            <span class="input">
+                                <input class="input__name" type="text" title="이름 입력" placeholder="휴대폰 명의자 이름">
+                                <button class="cancel"><span class="blind">삭제</span></button>
+                            </span>
+                        </span>
+                        <!--// 이름 입력 -->
+
+                        <!-- 주민등록번호 앞 7자리 입력 -->
+                        <span class="inputbox inputbox--auth resident-number mt36">
+                            <span class="input resident-number__front">
+                                <input type="tel" title="주민등록번호 앞 6자리 숫자 입력" placeholder="주민등록번호" maxlength="6">
+                                <button class="cancel"><span class="blind">삭제</span></button>
+                            </span>
+                            <span class="bar">-</span>
+                            <span class="input resident-number__back">
+                                <input type="tel" title="주민등록번호 뒷 7자리 중 첫번째 숫자 입력" placeholder="" maxlength="1">
+                                <span class="masking-area" aria-hidden="true">●●●●●●</span>
+                            </span>
+                        </span>
+                        <!--// 주민등록번호 앞 7자리 입력 -->
+
+                        <!-- buttons -->
+                        <button class="btn-floating btn-style1" disabled>다음으로</button>
+                        <button class="btn-floating btn-style1">다음으로</button>
+                        <button class="btn-floating btn-style3" disabled>인증번호 요청하기</button>
+                        <button class="btn-floating btn-style3">인증번호 요청하기</button>
+                        <button class="btn-round2 btn-style3">인증번호 다시 받기</button>
+                        <button class="btn-round2 btn-style3" disabled>시간연장</button>
+                        <button class="auth-btn-arrow">다른 방법으로 인증하기</button>
+                        <!--// buttons -->
+
+                    </div>
+                    <!--// .cont-box -->
+                </div>
+                <!--// .auth-container -->
+                <!-- .auth-footer(페이지 하단 고정버튼이 없는 경우 코드 삭제) -->
+                <div class="auth-footer">
+                    <div class="auth-bottom-fixed">
+                        <div class="auth-bottom-fixed__area">
+                            <button class="btn-floating btn-style1" disabled>다음으로</button>
+                        </div>
+                    </div>
+                    <button class="auth-btn-arrow">다른 방법으로 인증하기</button>
+                </div>
+                <!--// .auth-footer -->
+            </div>
+            <!--// .auth-popup__inner -->
+
+            <!-- .popup-closeBtn -->
+            <button class="popup-closeBtn"><span class="blind">팝업 페이지 닫기</span></button>
+            <!--// .popup-closeBtn -->
+        </div>
+        <div class="popup-blind"></div>
+    </div>
+    <!--// .popup hbs -->
+</body>
+
+</html>

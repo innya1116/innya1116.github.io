@@ -1,0 +1,64 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>다른 방법으로 인증하기 | T world</title>
+<link rel="stylesheet" href="/poc/inc/css/common.css" type="text/css">
+<link rel="stylesheet" href="/poc/inc/css/util.css" type="text/css">
+<script type="text/javascript" src="/poc/inc/js/lib/jquery.min.js"></script>
+<script type="text/javascript" src="/poc/inc/js/lib/libs.js"></script>
+<script type="text/javascript" src="/poc/inc/js/common/common.js"></script>
+<!-- 본인인증 css, js 추가 -->
+<link rel="stylesheet" href="/poc/inc/css/auth.css" type="text/css">
+<script type="text/javascript" src="/poc/inc/js/auth/auth.js"></script>
+<!--// 본인인증 css, js 추가 -->
+</head>
+<!-- new 본인인증 : typeAuthPopup 클래스 추가 -->
+<body class="typeAuthPopup">
+<!-- 팝업 사이즈 : W650 X H700 -->
+<!-- new 본인인증 : authPopup 클래스 추가 -->
+<div class="popup authPopup">
+	<div class="popScrollArea">
+		<div class="authPopupInner">
+			<div class="popHead">
+				<h1 class="hidden">다른 방법으로 인증하기</h1>
+				<h2 class="popTit">본인 확인이 가능한 <br>인증 방법을 선택해주세요.</h2>
+			</div>
+			<div class="popCon">
+				<div class="inPop">
+					<div class="auth_waySelect">
+						<ul>
+							<li class="passCert">
+								<a href="#" title="새창 열림" target="_blank">
+									<strong>PASS인증서</strong>
+								</a>
+							</li>
+							<li class="ipin">
+								<a href="#" title="새창 열림" target="_blank">
+									<strong>아이핀 인증</strong>
+								</a>
+							</li>
+							<li class="cert">
+								<a href="#" title="새창 열림" target="_blank">
+									<strong>공동인증서</strong>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div><!--// .inPop -->
+			</div><!--// .popCon -->
+		</div><!--// .authPopupInner -->
+	</div><!--// .popScrollArea -->
+
+	<div class="popBottom">
+		<div class="btnArea">
+			<span>
+				<button type="button" class="authBtnM cancel" title="클릭하면 팝업창이 닫힙니다."><span>취소</span></button>
+			</span>
+		</div>
+	</div><!--// .popBottom -->
+</div><!--// .popup -->
+
+</body>
+</html>

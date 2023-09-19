@@ -1,0 +1,169 @@
+@charset 'euc-kr';
+
+.authPopup{overflow:hidden !important;letter-spacing:-1px}
+body.typeAuthPopup{overflow:hidden !important}
+.authPopup .popScrollArea{height:615px;max-height:100%;overflow-x:hidden;overflow-y:auto;background:#fff}
+.authPopup .authPopupInner{width:100vw}
+.authPopup .popHead{width:400px;margin:0 auto;padding:32px 0 24px;background:none;color:#000;letter-spacing:-1.5px}
+.authPopup .popHead .popTit{color:#000;font-size:24px;line-height:1.33;letter-spacing:-2px;word-break:keep-all}
+.authPopup .popHead .popSubTit{display:block;margin-bottom:16px;color:#333;font-weight:normal;font-size:15px;line-height:21px}
+.authPopup .popCon .inPop{width:400px;margin:0 auto;padding:0 0 36px}
+.authPopup .popCon .inPop.pb0{padding-bottom:0}
+.authPopup .popBottom{position:fixed;bottom:0;left:0;right:0;z-index:1000;padding:12px 0 16px;background:#fff}
+.authPopup .popBottom .btnArea{position:relative;width:400px;margin:0 auto}
+.authPopup .popBottom .btnArea > span:only-child{display:block;text-align:center}
+.authPopup .popBottom .btnArea > span:only-child button{display:inline-block;width:130px}
+.authPopup .popBottom .btnArea span.lArea{display:block;width:130px}
+.authPopup .popBottom .btnArea span.rArea{position:absolute;right:0;top:0;width:262px}
+.authPopup.scroll .popBottom:before{content:'';display:block;position:absolute;left:0;right:0;bottom:100%;height:28px;background:url(/poc/img/auth/bg-popup-bottom.png) repeat-x}
+.authPopup .h12{margin-top:12px !important}
+.authPopup .h16{margin-top:16px !important}
+.authPopup .h24{margin-top:24px !important}
+.authPopup .h36{margin-top:36px !important}
+.authPopup .h48{margin-top:48px !important}
+.authPopup .popCopy{font-size:15px;line-height:1.5}
+.authPopup .txtColor1{color:#ef4b49 !important}
+.authPopup .txtColor2{color:#178bcd !important}
+.authPopup .authBtnL, .authPopup .authBtnM{display:block;width:100%;height:56px;padding:0 32px;-webkit-box-sizing:border-box;box-sizing:border-box;border-radius:56px;font-size:18px;font-weight:bold;letter-spacing:-1px}
+.authPopup .authBtnL{background:#f76252;color:#fff}
+.authPopup .authBtnM{border:1px solid #222;background:#fff;color:#000}
+.authPopup .authBtnM.cancel{border-color:#e5e5e5;font-weight:normal}
+.authPopup .authBtnS{padding:6px 15px 7px;border:1px solid #d8d8d8;border-radius:32px;-webkit-box-sizing:border-box;box-sizing:border-box;background:#fff;font-weight:bold;font-size:13px;line-height:17px;letter-spacing:-1.5px}
+.authPopup .authBtnArrow{display:inline-block;position:relative;padding-right:13px;color:#222;font-size:15px;line-height:20px;letter-spacing:-2px}
+.authPopup .authBtnArrow:after{content:'';display:block;position:absolute;right:0;top:50%;width:7px;height:12px;background:url(/poc/img/auth/icon-arrow.png) no-repeat;-webkit-transform:translateY(-50%);transform:translateY(-50%)}
+.authPopup button[class*='authBtn']:disabled{border-color:#dcdcdc;background:#dcdcdc;color:#fff;cursor:auto}
+.authPopup button[class*='authBtn'] span{position:relative}
+.authPopup .inputbox, .authPopup .inputbox .input{position:relative}
+.authPopup .inputbox .authInput, .authPopup .inputbox .input .authInput{width:100%;height:48px;padding:0;border:0 none;border-bottom:2px solid #e5e5e5;color:#919191;font-weight:bold;font-size:24px}
+.authPopup .inputbox .authInput:not([value='']), .authPopup .inputbox .input .authInput:not([value='']){color:#000}
+.authPopup .inputbox .authInput:focus, .authPopup .inputbox .authInput:active, .authPopup .inputbox .input .authInput:focus, .authPopup .inputbox .input .authInput:active{color:#000;border-bottom-color:#000}
+.authPopup .inputbox .authInput:disabled, .authPopup .inputbox .input .authInput:disabled{color:#919191 !important;border-bottom-color:#e5e5e5 !important;background:#fff}
+.authPopup .inputbox .placeholder, .authPopup .inputbox .input .placeholder{position:absolute;left:0;top:0;height:48px;font-size:18px;line-height:48px;color:#919191}
+.authPopup .inputbox .btnDel, .authPopup .inputbox .input .btnDel{display:none !important;position:absolute;right:0;top:25px;width:24px;height:24px;margin-top:-12px;background:url(/poc/img/auth/icon-cancel.png) no-repeat}
+.authPopup .inputbox .rightBox, .authPopup .inputbox .input .rightBox{position:absolute;right:0;top:25px;height:32px;margin-top:-16px;font-size:0}
+.authPopup .inputbox .rightBox .smsTime, .authPopup .inputbox .input .rightBox .smsTime{margin-right:8px;color:#f76252;font-size:15px;font-weight:bold}
+.authPopup .inputbox .inputWrap.error .authInput, .authPopup .inputbox .input.error .authInput{border-bottom-color:#ef4b49}
+.authPopup .inputbox .inpMsg{position:absolute;top:60px;font-size:15px}
+.authPopup .inputbox .inpMsg.none{display:none}
+.authPopup .inputbox .inpMsg.success{color:#178bcd}
+.authPopup .inputbox .inpMsg.error{color:#ef4b49}
+.authPopup .auth_numberSelector li{border:1px solid #f2f2f2;border-width:1px 0}
+.authPopup .auth_numberSelector li + li{margin-top:-1px}
+.authPopup .auth_numberSelector li .radio{display:block}
+.authPopup .auth_numberSelector li .radio label{display:block;width:100%;padding:16px 36px 16px 0;-webkit-box-sizing:border-box;box-sizing:border-box;background:url(/poc/img/auth/icon-radio-off.png) no-repeat 100% 50%;font-size:0}
+.authPopup .auth_numberSelector li .radio label .name{display:inline-block;overflow:hidden;text-overflow:ellipsis;max-width:265px;color:#000;font-weight:normal;font-size:20px;line-height:1.3;white-space:nowrap}
+.authPopup .auth_numberSelector li .radio label .number{margin-left:8px;color:#919191;font-size:15px;line-height:1.73}
+.authPopup .auth_numberSelector li .radio.checked label{background-image:url(/poc/img/auth/icon-radio-on.png)}
+.authPopup .auth_numberSelector li.disabled .radio label{background:none}
+.authPopup .auth_numberSelector li.disabled .radio label strong.name{color:#919191}
+.authPopup .auth_waySelect{overflow:hidden}
+.authPopup .auth_waySelect > ul{margin:0 -4px;font-size:0}
+.authPopup .auth_waySelect > ul > li{display:inline-block;width:50%;padding:0 4px;-webkit-box-sizing:border-box;box-sizing:border-box}
+.authPopup .auth_waySelect > ul > li + li + li{margin-top:8px}
+.authPopup .auth_waySelect > ul > li > a{display:block;padding:76px 0 12px !important;border:1px solid #e5e8eb;border-radius:10px;background:#f6f8fa;color:#222;font-size:15px;line-height:1.4;text-align:center}
+.authPopup .auth_waySelect > ul > li > a:before{top:20px;width:48px;height:48px;margin-left:-24px;border-radius:0;background-color:transparent}
+.authPopup .auth_waySelect > ul > li > a strong{padding:0 !important;font-weight:normal}
+.authPopup .auth_waySelect.type2 > ul > li{width:100%}
+.authPopup .auth_waySelect.type2 > ul > li > a{padding:16px !important;font-size:0}
+.authPopup .auth_waySelect.type2 > ul > li > a:hover,
+.authPopup .auth_waySelect.type2 > ul > li > a:focus{text-decoration:none}
+.authPopup .auth_waySelect.type2 > ul > li > a strong{font-size:18px;font-weight:bold;line-height:32px;vertical-align:top}
+.authPopup .auth_waySelect.type2 > ul > li > a:hover strong,
+.authPopup .auth_waySelect.type2 > ul > li > a:focus strong{text-decoration:underline}
+.authPopup .auth_waySelect.type2 > ul > li > a:before{position:static;display:inline-block;width:32px;height:32px;margin-right:8px;vertical-align:top}
+.authPopup .auth_waySelect.type2 > ul > li.passCert > a:before{background-image:url(/poc/img/auth/icon-pass-32px.png)}
+.authPopup .auth_waySelect.type2 > ul > li.cert > a:before{background-image:url(/poc/img/auth/icon-certification-32px.png)}
+.authPopup .residentNumber .inputWrap{font-size:0}
+.authPopup .residentNumber .inputWrap > div, .authPopup .residentNumber .inputWrap > span{display:inline-block;-webkit-box-sizing:border-box;box-sizing:border-box}
+.authPopup .residentNumber .inputWrap .input{width:187px}
+.authPopup .residentNumber .inputWrap .input ~ .input{background:url(/poc/img/auth/bg-resident-number.png) no-repeat 100% 50%}
+.authPopup .residentNumber .inputWrap .input ~ .input input{width:100%;padding-right:120px;-webkit-box-sizing:border-box;box-sizing:border-box;background:transparent}
+.authPopup .residentNumber .inputWrap .bar{width:26px;text-align:center}
+.authPopup .residentNumber .inputWrap .bar:before{content:'';display:inline-block;width:6px;height:2px;background:#151515}
+.authPopup .residentNumber .inputWrap .genderSelection{margin-left:16px}
+.authPopup .radio{margin:0}
+.authPopup .radio input + label{padding:0;border:1px solid #d8d8d8;border-radius:20px;background:none;font-size:15px;color:#000;font-weight:bold;line-height:38px;text-align:center}
+.authPopup .radio input:checked + label{position:relative;margin:0;border-color:#000 !important}
+.authPopup .radio input:focus + label{margin:0;border:1px solid #d8d8d8}
+.authPopup .radio input:focus + label:before{content:'';position:absolute;left:-2px;top:-2px;right:-2px;bottom:-2px;border:1px dotted #000}
+.authPopup .checkbox label{width:100%;padding:0 0 0 36px;-webkit-box-sizing:border-box;box-sizing:border-box;background:url(/poc/img/auth/icon-check-off.png) no-repeat 0 50%;color:#666;font-size:15px;line-height:24px}
+.authPopup .checkbox.checked label{background-image:url(/poc/img/auth/icon-check-on.png)}
+.authPopup .radio + .radio{margin-left:8px}
+.authPopup .genderSelection{width:196px;font-size:0}
+.authPopup .genderSelection .radio input + label{width:92px}
+.authPopup .agencySelection{position:relative;margin-bottom:16px}
+.authPopup .agencySelection .radioGroup{display:table;width:100%;padding-right:88px;box-sizing:border-box}
+.authPopup .agencySelection .radioGroup .radio{display:table-cell;width:33.33%;padding-right:6px}
+.authPopup .agencySelection .radioGroup .radio label{width:100%}
+.authPopup .agencySelection .mvnoCheck{position:absolute;right:0;top:20px;transform:translateY(-50%)}
+.authPopup .agencySelection .mvnoInfoTip{margin-top:8px;text-align:right}
+.authPopup .agencySelection .mvnoInfoTip .tipTxt{vertical-align:middle}
+.authPopup .agencySelection .mvnoInfoTip .con b{color:#333;letter-spacing:-1px}
+.authPopup .agencySelection .qInfo.dirLeft.on .qTxt{left:auto;right:30px;background-image:url(/poc/img/auth/bg_question.png)}
+.authPopup .agencySelection .qInfo.dirLeft.on .qTxt .pointer{left:auto;right:-3px;transform:scaleX(-1)}
+.authPopup .agencySelection .qInfo .qTxt .con{width:400px}
+.authPopup .auth_captcha .captcha_area{position:relative;padding-right:52px;margin-bottom:8px}
+.authPopup .auth_captcha .captcha_area > div{float:none}
+.authPopup .auth_captcha .captcha_area .captcha_image{width:100%;height:88px}
+.authPopup .auth_captcha .captcha_area .captcha_image img{width:100%;height:100%}
+.authPopup .auth_captcha .captcha_area .captcha_btn > button{overflow:hidden;position:absolute;right:0;width:40px;height:40px;margin:0;border-radius:40px;background-color:#ebf4fd;background-position:50% 50%}
+.authPopup .auth_captcha .captcha_area .captcha_btn .captcha_sound{bottom:0;background-image:url(/poc/img/auth/icon-sound.png)}
+.authPopup .auth_captcha .captcha_area .captcha_btn .captcha_refresh{top:0;background-image:url(/poc/img/auth/icon-refresh.png)}
+.authPopup .infoList li{position:relative;padding-left:8px;color:#666;font-size:13px;line-height:20px}
+.authPopup .infoList li:before{content:'';display:block;position:absolute;left:0;top:8px;width:3px;height:3px;border-radius:3px;background:#6d6d6d}
+.authPopup .infoList li + li{margin-top:8px}
+.authPopup .infoList li a{text-decoration:underline}
+.authPopup .accordion .accoList .accoBox .accoTit .accoBtn{display:block;position:relative;width:100%;padding:12px 36px 12px 0;font-weight:bold;font-size:16px;text-align:left;color:#222;background:none}
+.authPopup .accordion .accoList .accoBox .accoTit .accoBtn:after{content:'';position:absolute;right:-8px;top:50%;width:24px;height:24px;background:url(/poc/img/auth/icon-open-down.png) no-repeat 100% 50%;-webkit-transform:translateY(-50%);transform:translateY(-50%)}
+.authPopup .accordion .accoList .accoBox .accoTit .accoBtn:hover, .authPopup .accordion .accoList .accoBox .accoTit .accoBtn:focus{text-decoration:none}
+.authPopup .accordion .accoList .accoBox.open .accoBtn:after{background-image:url(/poc/img/auth/icon-close-up.png)}
+.authPopup .accordion .accoList .accoBox .accoCont{overflow:hidden;max-height:0;padding:0;border:0 none}
+.authPopup .accordion .accoList .accoBox.open .accoCont{max-height:none;font-size:13px;line-height:1.6}
+.authPopup .accordion .accoList .accoBox.open .accoCont .listType1 li{position:relative;margin-top:8px;padding-left:8px;line-height:20px;background:none !important}
+.authPopup .accordion .accoList .accoBox.open .accoCont .listType1 li:first-child{margin-top:0}
+.authPopup .accordion .accoList .accoBox.open .accoCont .listType1 li:before{content:'';display:block;position:absolute;left:0;top:8px;width:3px;height:3px;background:#6d6d6d}
+.authPopup .accordion .accoList .accoBox.open .accoCont .listType1 li em{color:#ea002c}
+.authPopup .accordion .accoList .accoBox.open .accoCont .listType1 li .incBtn{padding:7px 0}
+.authPopup .accordion .accoList .accoBox.open .accoCont .listType1 li .listType2{padding-left:0}
+.authPopup .accordion .accoList .accoBox.open .accoCont .listType1 li .listType2 li:before{width:4px;height:1px}
+.authPopup .accordion .accoList .accoBox.open .accoCont .listType1 li:last-child .listType2{padding-bottom:0}
+.authPopup .btnArea ~ .checkPoint{margin-top:36px}
+.authPopup .checkPoint{margin-top:50px}
+.authPopup .checkPoint .accoList .accoBox{padding:0 24px;border:1px solid #e5e5e5;border-radius:8px;background:#f6f8fa}
+.authPopup .checkPoint .accoList .accoBox ~ .accoBox{margin-top:4px}
+.authPopup .checkPoint .accoList .accoBox.open .accoCont{position:relative;padding-bottom:12px}
+.authPopup .checkPoint .cpTit{display:block;margin-bottom:10px;color:#ea002c;font-size:18px;line-height:22px;font-weight:bold}
+.authPopup .inputbox ~ .authTerms{margin-top:32px}
+.authPopup .authTerms .checkbox{display:block;padding-right:36px}
+.authPopup .authTerms .checkbox.checkAll{padding-right:0}
+.authPopup .authTerms .checkAll{display:block;margin-bottom:16px}
+.authPopup .authTerms .checkAll label{color:#666;font-size:15px;line-height:24px}
+.authPopup .authTerms .accoList .accoBox{padding:16px 0;border-bottom:2px solid #e5e5e5}
+.authPopup .authTerms .accoList .accoBox + li{margin-top:-2px}
+.authPopup .authTerms .accoList .accoBox .accoTit{position:relative}
+.authPopup .authTerms .accoList .accoBox .accoTit .accoBtn{display:block;position:absolute;top:0;right:0;bottom:0;width:36px;background:url(/poc/img/auth/icon-accordion-open.png) no-repeat 100% 50%}
+.authPopup .authTerms .accoList .accoBox .accoTit .accoBtn:after{content:none}
+.authPopup .authTerms .accoList .accoBox.open{padding-bottom:0;border:0 none}
+.authPopup .authTerms .accoList .accoBox.open .accoBtn{background-image:url(/poc/img/auth/icon-accordion-close.png)}
+.authPopup .authTerms .accoList .accoBox.open .accoCont.auth_contBox{margin-top:12px;padding:16px 36px 16px 16px;border:1px solid #e5e8eb}
+.authPopup .auth_contBox{padding:16px;border:1px solid #e5e8eb;border-radius:8px;background:#f6f8fa;font-size:13px;line-height:1.62}
+.authPopup .passInfo .authTime{display:block;color:#178bce;font-size:15px;line-height:1.4;text-align:center}
+.authPopup .passInfo .authTime:before{content:'';display:inline-block;width:15px;height:15px;margin-right:4px;background:url(/poc/img/auth/icon-clock.png) no-repeat;vertical-align:middle}
+.authPopup .passInfo .passTxt{margin-top:20px;color:#333;font-size:13px;line-height:1.62}
+.authPopup .auth_numList{margin-top:12px;counter-reset:number 0}
+.authPopup .auth_numList li{position:relative;padding-left:14px;color:#8f8f8f;font-size:12px;line-height:1.75}
+.authPopup .auth_numList li:before{content:counter(number) ". ";counter-increment:number 1;display:inline-block;position:absolute;top:0;left:0}
+.auth_waySelect > ul > li{vertical-align:top;background:none !important}
+.auth_waySelect > ul > li > a{position:relative;padding-bottom:40px !important}
+.auth_waySelect > ul > li > a:before{content:'';display:block;position:absolute;top:40px;left:50%;width:110px;height:110px;margin-left:-55px;border-radius:110px;background:#f5f5f5 no-repeat 50% 50%}
+.auth_waySelect > ul > li > a strong{padding:170px 0 0 !important;line-height:1.33}
+.auth_waySelect > ul > li.sktPhone a:before{background-image:url(/poc/img/auth/icon-sktphone.png)}
+.auth_waySelect > ul > li.ipin a:before{background-image:url(/poc/img/auth/icon-ipin.png)}
+.auth_waySelect > ul > li.passCert a:before{background-image:url(/poc/img/auth/icon-pass-48px.png)}
+.auth_waySelect > ul > li.cert a:before{background-image:url(/poc/img/auth/icon-certification-48px.png)}
+.auth_waySelect > ul > li.passPhone a:before{background-image:url(/poc/img/auth/icon-pass-phone.png)}
+
+/* 20220204 추가 [OP002-18487] pass 인증서 아이콘 */
+.d_listType1 .pass{background:url(/poc/img/auth/bg-pass.gif) no-repeat 50% 50px}
+.d_listType1.type2 .pass{background:url(/poc/img/auth/bg-pass2.gif) no-repeat 50% 50px}
+.meCert .certList li.pass a{background:url(/poc/img/auth/bg-pass.png) no-repeat 30px 50%}

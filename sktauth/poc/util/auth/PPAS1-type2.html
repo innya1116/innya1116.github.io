@@ -1,0 +1,179 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>PASS인증서 인증 | T world</title>
+<link rel="stylesheet" href="/poc/inc/css/common.css" type="text/css">
+<link rel="stylesheet" href="/poc/inc/css/util.css" type="text/css">
+<script type="text/javascript" src="/poc/inc/js/lib/jquery.min.js"></script>
+<script type="text/javascript" src="/poc/inc/js/lib/libs.js"></script>
+<script type="text/javascript" src="/poc/inc/js/common/common.js"></script>
+<!-- 본인인증 css, js 추가 -->
+<link rel="stylesheet" href="/poc/inc/css/auth.css" type="text/css">
+<script type="text/javascript" src="/poc/inc/js/auth/auth.js"></script>
+<!--// 본인인증 css, js 추가 -->
+</head>
+<!-- new 본인인증 : typeAuthPopup 클래스 추가 -->
+<body class="typeAuthPopup">
+<!-- 팝업 사이즈 : W650 X H700 -->
+<!-- new 본인인증 : authPopup 클래스 추가 -->
+<div class="popup authPopup">
+	<div class="popScrollArea">
+		<div class="authPopupInner">
+			<div class="popHead">
+				<h1 class="popSubTit">PASS인증서</h1>
+				<h2 class="popTit">PASS인증서 요청을 위해 <br>정보를 입력해 주세요.</h2><!-- 20220303 띄어쓰기 수정 -->
+			</div>
+			<div class="popCon">
+				<div class="inPop">
+
+					<!-- 이름 입력 영역 -->
+					<div class="inputbox">
+						<h3 class="hidden">이름 입력</h3>
+						<div class="input">
+							<label class="placeholder" for="auth-name">휴대폰 명의자 이름</label>
+							<input class="authInput" type="text" id="auth-name">
+							<button type="button" class="btnDel"><span class="hidden">입력된 이름 삭제</span></button>
+						</div>
+					</div>
+					<!--// 이름 입력 영역 -->
+
+					<!-- 법정생년월일 및 성별 입력 영역 -->
+					<div class="inputbox residentNumber h36">
+						<h3 class="hidden">법정 생년월일 및 성별 입력</h3>
+						<!-- 20220303 pass error case 없음으로 error 관련 주석 및 유효성체크 문구 삭제 -->
+						<div class="inputWrap">
+							<div class="input">
+								<label class="placeholder" for="auth-resident-number">법정 생년월일(8자리)</label><!-- 20220215 생년월일 자릿수 수정 6자리 > 8자리 -->
+								<input class="authInput inpNumber" type="text" id="auth-resident-number" title="법정 생년월일 8자리를 입력하세요." maxlength="8"><!-- 20220215 생년월일 자릿수 수정 6자리 > 8자리 --><!-- 20220303 title 내용 수정 --><!-- 20220316 inpNumber 클래스 추가(숫자만 입력 가능하도록 기능 추가) -->
+								<button type="button" class="btnDel"><span class="hidden">입력된 생년월일 삭제</span></button>
+							</div>
+
+							<div class="genderSelection">
+								<span class="radio">
+									<input type="radio" id="gender-selection-male" name="auth-gender-selection"><label for="gender-selection-male">남성</label>
+								</span>
+								<span class="radio">
+									<input type="radio" id="gender-selection-female" name="auth-gender-selection"><label for="gender-selection-female">여성</label>
+								</span>
+							</div>
+						</div>
+						<!--// 20220303 pass error case 없음으로 error 관련 주석 및 유효성체크 문구 삭제 -->
+					</div>
+					<!--// 법정생년월일 및 성별 입력 영역 -->
+
+					<!-- 20220214 통신사 선택 영역 추가 -->
+					<!-- 휴대폰 번호 입력 -->
+					<div class="stepPhoneNumber h36">
+						<div class="agencySelection">
+							<h3 class="hidden">휴대폰 통신사 선택</h3>
+							<div class="radioGroup">
+								<!-- 20220303 휴대폰 통신사 skt 기본 선택 항목으로 설정 -->
+								<span class="radio checked">
+									<input type="radio" id="agency-selection-skt" name="auth-agency-selection" checked><label for="agency-selection-skt">SKT</label>
+								</span>
+								<!--// 20220303 휴대폰 통신사 skt 기본 선택 항목으로 설정 -->
+								<span class="radio">
+									<input type="radio" id="agency-selection-kt" name="auth-agency-selection"><label for="agency-selection-kt">KT</label>
+								</span>
+								<span class="radio">
+									<input type="radio" id="agency-selection-lg" name="auth-agency-selection"><label for="agency-selection-lg">LG</label>
+								</span>
+							</div>
+							<div class="mvnoCheck">
+								<span class="checkbox">
+									<input type="checkbox" id="agency-mvno">
+									<label for="agency-mvno">알뜰폰</label>
+								</span>
+							</div>
+							<div class="mvnoInfoTip">
+								<span class="tipTxt">알뜰폰(MVNO) 통신사 선택</span>
+								<div class="qInfo dirLeft">
+									<a href="#" class="qTit">안내</a>
+									<div class="qTxt">
+										<!-- 20220323 skt/kt/lgu+ 텍스트 bold 처리 -->
+										<div class="con">
+											<strong class="tit">알뜰폰(MVNO) 통신사 선택</strong>
+											이용 중인 알뜰폰(MVNO) 통신사가 목록에 없는 경우, 해당 알뜰폰 통신사의 망 제공 사업자(SKT, KT, LG U+)를 선택해 주세요.<br><br>
+											<b>SKT</b>: 아이즈모바일, 모빙, 이야기모바일, 스마텔, SK 세븐모바일, 프리티, 에스원 안심모바일, LG헬로모바일, 티플러스<br><br>
+											<b>KT</b>: WMVNO, WHOM, A모바일, 프리티, 이지모바일, KT파워텔(아이디스파워텔), 웰알뜰폰, 앤텔레콤, 마이월드, 플래시 모바일, 안심모바일, 아이즈모바일, KT M모바일, 모빙, 아이플러스유, 스테이지파이브(카카오키즈폰), 드림라인, 티플러스, 여유텔레콤, 이야기모바일, 온세텔레콤(재판매), 스노우맨, 헬로모바일<br><br>
+											<b>LGU+</b>: 프리티, 마이월드, 유플러스 알뜰모바일, 여유텔레콤, 이마트24 알뜰폰, 서경모바일, JCN모바일, 푸른방송, 엠펀, KCN알뜰폰, KCTV알뜰폰, 플래시모바일, 이지모바일, 모빙, 이야기모바일, 스마텔, WHOM/A모바일, 온국민폰, 조이텔, 아이즈모바일, 스테이지파이브(카카오키즈폰), 안심모바일, 원텔레콤, 리브엠(Liiv M)
+										</div>
+										<!--// 20220323 skt/kt/lgu+ 텍스트 bold 처리 -->
+										<a href="#" class="btnClose">닫기</a>
+										<span class="pointer"><!--design--></span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- 20220303 pass error case 없음으로 error 관련 주석 및 유효성체크 문구 삭제 -->
+						<div class="inputbox">
+							<h3 class="hidden">휴대폰 번호 입력</h3>
+							<div class="input">
+								<label class="placeholder" for="auth-cell-number">휴대폰 번호 ('-'제외한 숫자만 입력)</label>
+								<input class="authInput inpCellNumber" type="text" id="auth-cell-number" title="인증받을 휴대폰 번호를 입력하세요" maxlength="13">
+								<button type="button" class="btnDel"><span class="hidden">입력된 휴대폰번호 삭제</span></button>
+							</div>
+						</div>
+						<!--// 20220303 pass error case 없음으로 error 관련 주석 및 유효성체크 문구 삭제 -->
+					</div>
+					<!--// 휴대폰 번호 입력 -->
+					<!--// 20220214 통신사 선택 영역 추가 -->
+
+					<!-- 20220114 이용동의 추가 | 20220214 이용동의 영역 전체 수정 -->
+					<div class="accordion authTerms">
+						<ul class="accoList">
+							<!-- 활성화 시 open 클래스 추가 -->
+							<li class="accoBox open">
+								<div class="accoTit">
+									<span class="checkbox">
+										<input type="checkbox" id="auth-terms1">
+										<label for="auth-terms1">전자서명을 위한 개인정보 활용 동의(필수)</label>
+									</span>
+									<button type="button" class="accoBtn"><span class="hidden">상세보기</span></button>
+								</div>
+								<div class="accoCont auth_contBox">
+									<p>본인은 SK텔레콤이 PASS인증서 인증을 위해 PASS 인증서로부터 본인식별 정보 (CI)와 인증서 정보를 제공받아 본인 확인 및 출금이체 동의 전자서명 목적으로 이용하는 것에 동의합니다.<br><br>PASS인증서에 제공하는 개인정보 : 이름, 생년월일, 성별, 전화번호, 통신사, 계좌번호(은행 자동이체 변경 등 출금이체 동의 전자 서명 업무 시)</p><!-- 20220303 문구 변경 -->
+								</div>
+							</li>
+						</ul>
+					</div>
+					<!--// 20220114 이용동의 추가 | 20220214 이용동의 영역 전체 수정 -->
+
+				</div><!--// .inPop -->
+			</div><!--// .popCon -->
+		</div><!--// .authPopupInner -->
+	</div><!--// .popScrollArea -->
+
+	<div class="popBottom">
+		<div class="btnArea">
+			<span class="rArea">
+				<!-- 전체 input에 입력값이 있는 경우 활성화, disabled 속성 삭제 -->
+				<button type="button" class="authBtnL" disabled><span>다음으로</span></button>
+			</span>
+			<span class="lArea">
+				<button type="button" class="authBtnM cancel" title="클릭하면 팝업창이 닫힙니다."><span>취소</span></button>
+			</span>
+		</div>
+	</div><!--// .popBottom -->
+</div><!--// .popup -->
+
+<!-- 20220303 input data 있는 경우 버튼 활성화 함수 호출 -->
+<script type="text/javascript">
+/*
+1. 스크립트 함수
+mvJs.utils.sendFrmSms.CheckBtnAuth();
+
+2. 기능
+- .inPop > input 모두 입력 되었을 경우 .popup.authPopup .rArea > button 버튼 활성화
+- input[type=text] : 한글 자 이상 입력 되어 있을 경우
+- input[type=radio], input[type=checkbox] : 체크 되었을 경우, 알뜰폰 체크 박스 제외
+*/
+mvJs.utils.sendFrmSms.CheckBtnAuth();
+</script>
+<!--// 20220303 input data 있는 경우 버튼 활성화 함수 호출 -->
+
+</body>
+</html>

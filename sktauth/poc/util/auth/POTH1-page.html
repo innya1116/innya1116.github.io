@@ -1,0 +1,127 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>본인인증 | T world</title>
+<link href="/poc/inc/css/common.css" rel="stylesheet" type="text/css">
+<link href="/poc/inc/css/util.css" rel="stylesheet" type="text/css">
+<link href="/poc/inc/css/auth.css" rel="stylesheet" type="text/css"><!-- 본인인증 css 추가 -->
+<script type="text/javascript" src="/poc/inc/js/lib/jquery.min.js"></script>
+<script type="text/javascript" src="/poc/inc/js/lib/libs.js"></script>
+<script type="text/javascript" src="/poc/inc/js/common/common.js"></script>
+<!-- select box 관련 -->
+<script type="text/javascript" src="/poc/inc/js/lib/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="/poc/inc/js/lib/jquery.jscrollpane.min.js"></script>
+<script type="text/javascript" src="/poc/inc/js/lib/wddo.selectbox-1.5.4.js"></script>
+<script type="text/javascript">
+	$.SelectBoxSet('.selectBox > select', {height:200, scrollHeight:200-8});
+</script>
+</head>
+
+<body>
+<div class="accessbility"><a href="#content">본문 바로가기</a></div>
+<!-- wrap -->
+<div id="wrap">
+	<!-- header -->
+	<div id="header">
+		<div class="h_con"><img src="/poc/img/tmp/tmp_gnb.gif" alt="임시 GNB이미지"></div>
+	</div>
+	<!-- //header -->
+	<hr>
+	<!-- container -->
+	<div id="container" class="util"><!-- util 메뉴만 사용 -->
+		<!-- content -->
+		<div id="content">
+			<div class="conBox_center">
+				<h1 class="titDep1"><img src="/poc/img/util/tit_ut9_1.gif" alt="본인인증"></h1>
+				<h2 class="titDep2">본인 확인이 가능한 인증 방법을 선택해주세요.</h2>
+				<div class="d_listType1 type2 auth_waySelect">
+					<ul class="col3">
+						<li class="sktPhone">
+							<a href="#" title="새창 열림" target="_blank">
+								<strong>휴대폰 인증</strong>
+							</a>
+						</li>
+						<li class="passPhone">
+							<a href="#" title="새창 열림" target="_blank">
+								<strong>PASS 휴대폰 인증</strong>
+							</a>
+						</li>
+						<li class="passCert">
+							<a href="#" title="새창 열림" target="_blank">
+								<strong>PASS인증서</strong>
+							</a>
+						</li>
+						<li class="ipin">
+							<a href="#" title="새창 열림" target="_blank">
+								<strong>아이핀 인증</strong>
+							</a>
+						</li>
+						<li class="cert">
+							<a href="#" title="새창 열림" target="_blank">
+								<strong>공동인증서</strong>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="btnBox">
+					<a href="#" class="btnL btnBlack">이전</a>
+				</div>
+			</div>
+
+			<!-- Check Point(등록된 내용이 있을 경우 출력됨) -->
+			<div class="b_checkPoint">
+				<div class="b_cp">
+					<div class="fLeft">
+						<strong class="tit">CHECK POINT</strong>
+						<ul class="b_cpList tabJs">
+							<li class="on"><a href="#b_cpCont1">1. 가려진 정보보기 해제 안내</a></li>
+							<li><a href="#b_cpCont2">2. 본인인증 실패 시 안내</a></li>
+							<li><a href="#b_cpCont3">3. 공동인증서 관리 안내</a></li><!-- 201231 [OP002-12440] 수정_02 -->
+						</ul>
+					</div>
+					<div class="b_cpCont" id="b_cpCont1">
+						<strong class="cpTit">가려진 정보보기 해제 안내</strong>
+						<ul class="listType1">
+							<li>본인인증 성공 시 <em class="fColor1">* 또는 <img src="/poc/img/common/img_masking2.gif" alt="마스킹" class="valignM"> 가 해제</em>됩니다.<br>(본인명의 전화번호, 카드번호, 주소 등 일부 정보는 본인인증 후에도 가려져 보일 수 있습니다)</li>
+						</ul>
+					</div>
+					<div class="b_cpCont" id="b_cpCont2" style="display:none">
+						<strong class="cpTit">본인인증 실패 시 안내</strong>
+						<ul class="listType1">
+							<li>본인인증 실패 시 이용하시는 서비스에 따라 고객센터로 연락 주시기 바랍니다.
+								<ul class="listType2">
+									<li>이동전화 고객센터 : 휴대폰 국번없이 114(무료) 또는 080-011-6000(무료), 국번없이 1599-0011(유료)</li>
+									<li>인터넷/집전화 고객센터 : 080-816-2000(무료) 또는 1600-2000(유료)</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<div class="b_cpCont" id="b_cpCont3" style="display:none">
+						<!-- 211201 [OP002-18251] 수정_02 -->
+						<strong class="cpTit">공동인증서 관리 안내</strong>
+						<ul class="listType1">
+							<li>공동인증서는 USB 등 이동식 저장장치에 저장하시고, 포털사이트 메일함, P2P, 웹하드 등에 저장하지 마시기 바랍니다.</li>
+							<li>포털사이트의 비밀번호와 공동인증서의 비밀번호를 동일하게 사용하실 경우 위험하오니 주의하시기 바랍니다.</li>
+						</ul>
+						<!-- 211201 [OP002-18251] 수정_02 -->
+					</div>
+				</div>
+			</div>
+			<!-- //Check Point -->
+		</div>
+		<!-- //content -->
+	</div>
+	<!-- //container -->
+	<hr>
+	<!-- footer -->
+	<div id="footer">
+		<div class="f_con"><img src="/poc/img/tmp/tmp_footer.gif" alt="임시 FOOTER이미지"></div>
+	</div>
+	<!-- //footer -->
+</div>
+<!-- //wrap -->
+</body>
+</html>

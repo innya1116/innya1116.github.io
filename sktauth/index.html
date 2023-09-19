@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no, address=no, email=no" />
+    <link rel="shortcut icon" href="/img/common/favicon.ico" />
+    <link rel="shortcut icon" href="/img/common/favicon.png" />
+    <link rel="apple-touch-icon" href="/img/common/favicon.png" />
+    <meta name="description" content="페이지설명" />
+    <meta name="keywords" content="서비스키워드" />
+    <meta property="og:title" content="SKT 홈페이지" />
+    <meta property="og:site_name" content="SKT" />
+    <meta property="og:image" content="/image/common/skt_facebook.jpg" />
+    <meta property="og:description" content="SKT framework" />
+    <title>T월드 인증 개선 - MOBILE</title>
+    <link rel="stylesheet" type="text/css" href="/css/common.css" media="all" /><!-- [C] 공통 스타일 -->
+    <link rel="stylesheet" type="text/css" href="/css/layout.css" media="all" /><!-- [C] 박스 모델 -->
+    <link rel="stylesheet" type="text/css" href="/css/widgets.css" media="all" /><!-- [C] 기능별 위젯 -->
+    <link rel="stylesheet" type="text/css" href="/css/components.css" media="all" /><!-- [C] 단락별 컴퍼넌트 -->
+
+    <style>
+        body{background:#fff;}
+        .working-guide{padding:0 1rem;margin:0;box-sizing:border-box}
+        .guide-tit1{padding:1rem;margin:0 -1rem;background:#000;color:#fff;font-size:1.5rem;line-height:2rem}
+        .guide-tit2{margin-top:2rem;color:#000;font-size:1.2rem;font-weight:bold}
+        .guide-tit2 span{color:#178bce;}
+        .guide-txt{font-size:0.875rem;font-weight:normal;}
+        .guide-txt strong{display:block;margin-bottom:.25rem}
+        .guide-txt ul li{position:relative;padding-left:.625rem;}
+        .guide-txt ul li a{text-decoration:underline;}
+        .guide-txt ul li+li{margin-top:.25rem;}
+        .guide-txt ul li:before{content:'- ';position:absolute;left:0;}
+        .guide-select-type{margin:0 -1rem}
+        .guide-select-type ul{display:table;width:100%}
+        .guide-select-type li {display:table-cell;width:50%}
+        .guide-select-type li a{display:block;height:2.5rem;background:#ccc;color:#fff;font-size:1rem;line-height:2.5rem;text-align:center}
+        .guide-select-type li a:hover{color:#000;text-decoration:underline}
+        .guide-select-type li.on a{background:#fff;color:#000;font-weight:bold;text-decoration:underline}
+        .guide-contents, .filelist{margin-top:.7rem;padding:.5rem;border:1px dashed #aaa;background:#efefef}
+        .guide-link-list{margin-top:.7rem}
+        .guide-link-list li{position:relative;padding-left:1rem}
+        .guide-link-list li:before{content:'';display:block;position:absolute;left:0;top:50%;width:.4rem;height:1px;background:#000}
+        .guide-link-list li a{font-size:.9rem}
+        .guide-link-list li a:not([href='/']){text-decoration:underline}
+        .guide-link-list li a:not([href='/']):after{content:'(view)';margin-left:.9375rem;color:#178bce;font-weight:bold;font-size:.8rem}
+        /* .filelist{display:flex;align-items:flex-start;flex-wrap:wrap;} */
+        .filelist > li{position:relative;font-size:.9375rem;line-height:1.5rem;}
+        .filelist > li + li{margin-top:1rem;}
+        .filelist li.in-depth{position:relative}
+        .filelist li.in-depth:after{content:'';display:block;position:absolute;top:1.7rem;left:.5rem;bottom:.7rem;width:1px;height:auto !important;background:#000}
+        /* .filelist > li.in-depth:after{bottom:1.2rem} */
+        .filelist > li strong{display:block;}
+        .filelist > li li strong{display:block;margin-top:.5rem;font-size:.9rem}
+        .filelist > li ul{margin:0 0 .5rem}
+        .filelist > li ul li{position:relative;margin-left:1.5rem}
+        .filelist > li ul li:before{content:'';display:block;position:absolute;left:-1rem;top:.8rem;width:.4rem;height:1px;background:#000}
+        .filelist > li ul li a{font-size:.9rem}
+        .filelist > li a strong{display:inline-block;}
+        .filelist > li a b{font-weight:bold;}
+        .filelist > li a:not([href='/']),
+        .filelist > li a:not([href='/']) strong{text-decoration:underline}
+        .filelist > li a:not([href='/']):after{content:'(view)';margin-left:.9375rem;color:#178bce;font-weight:bold;font-size:.8rem}
+        .filelist > li .edit{display:block;margin-left:1.25rem;color:#666;font-size:.8125rem}
+        .filelist > li del{text-decoration:line-through;}
+        .filelist > li del a:after{content:none !important;}
+        .filelist .del{opacity: .3}
+        pre{padding:5px;margin:5px 0 10px;background:#111;color:#fff;font-size:12px;font-family:'Consolas', 'Courier New', Sans-serif}
+        pre .cmt{font-style:italic;color:rgb(255, 182, 182)}
+    </style>
+
+</head>
+
+<body class="working-guide">
+    <h1 class="guide-tit1">T월드 인증 개선 - MOBILE</h1>
+
+    <div class="guide-select-type">
+        <ul>
+            <li><a href="/poc/index.html">PC</a></li>
+            <li class="on"><a href="/index.html">MOBILE</a></li>
+        </ul>
+    </div>
+
+    <h2 class="guide-tit2">Guide</h2>
+    <div class="guide-contents guide-txt">
+        <ul>
+            <li>T world Mobile 가이드를 기반으로 작업되었습니다. <a href="http://150.24.227.144:8088/guide/">http://150.24.227.144:8088/guide/</a></li>
+            <li><a href="/guide/style-guide.html">T월드 인증개선 Mobile Style Guide</a></li>
+            <li>Layout은 Actionsheet / layer-popup 두가지 레이아웃으로 작업되었습니다.</li>
+            <li>스타일 정의를 위한 클래스는 prefix '.auth-*'를 사용하여 정의 되었습니다.</li>
+            <li class="mt10"><strong>주석 적용</strong>
+				<p>1. 개발적용 관련주석은 적용되어야 하는 코드의 바로 윗줄에 작성되어 있습니다.</p>
+<pre>
+<span class="cmt">&lt;!-- 오류: error 클래스 추가 --&gt;</span>
+&lt;span class="input"&gt;
+	...
+&lt;/span&gt;
+</pre>
+				<p>2. 수정 주석의 경우 단일행에 대한 수정은 코드 끝에 작성되어 있습니다.</p>
+<pre>
+&lt;input ... &gt;<span class="cmt">&lt;!-- 날짜 수정내용 --&gt;</span>
+</pre>
+				<p>3. 블록 영역의 수정 주석은 시작과 끝에 작성되어 있습니다.</p>
+<pre>
+<span class="cmt">&lt;!-- 날짜 수정내용 --&gt;</span>
+&lt;div&gt;
+	...
+&lt;/div&gt;
+<span class="cmt">&lt;!--// 날짜 수정내용 --&gt;</span>
+</pre>
+			</li>
+			<li class="mt10"><strong>File 경로</strong>
+                html - /html/auth/*.html<br>
+                css - /css/auth.css<br>
+                js - /js/auth.js<br>
+                image - /img/auth/<br>
+            </li>
+        </ul>
+    </div>
+    <ul class="guide-link-list" hidden>
+        <li><a href="/guide/style-guide.html">본인인증 개선페이지 Style Guide</a></li>
+        <li hidden><a href="/guide/common-ui.html">공통 UI</a></li>
+    </ul>
+
+    <h2 class="guide-tit2">File List</h2>
+    <ul class="filelist">
+        <li class="in-depth"><strong>SKT 휴대폰 인증</strong>
+            <ul>
+                <li class="in-depth"><strong>개인정보를 입력하지 않는 case</strong>
+                    <ul>
+                        <li><a href="/html/auth/SMS1.html">SMS1 - SMS 자사_인증번호 요청</a>
+                            <span class="edit">01.14: 휴대폰 번호 default value 값 마스킹 처리</span>
+                            <span class="edit">01.20: title 영역 id/aria-hidden 속성 추가 | 휴대폰 번호 input title 속성 삭제/aria-labelledby 속성 추가</span>
+                            <span class="edit">02.03: 에러 메시지 변경 | 가이드 문구 추가</span>
+                            <span class="edit">02.09: ul.auth-info-list > type2 / border-wrap 클래스 추가</span>
+                            <span class="edit">02.16: 인증번호 요청하기 버튼 클래스 변경(btn-style3 &gt; btn-style1)</span>
+                        </li>
+                        <li><a href="/html/auth/SMS1-error.html">SMS1 - SMS 자사_인증번호 요청 <b>(Error Case)</b></a>
+                            <span class="edit">01.20: title 영역 id/aria-hidden 속성 추가 | 휴대폰 번호 input title 속성 삭제/aria-labelledby 속성 추가</span>
+                            <span class="edit">02.03: 에러 메시지 변경 | 가이드 문구 추가</span>
+                            <span class="edit">02.09: ul.auth-info-list > type2 / border-wrap 클래스 추가</span>
+                            <span class="edit">02.16: 인증번호 요청하기 버튼 클래스 변경(btn-style3 &gt; btn-style1)</span>
+                        </li>
+                        <li><a href="/html/auth/SMS1-disabled.html">SMS1 - SMS 자사_인증번호 요청 <b>(번호 변경 불가)</b></a>
+                            <span class="edit">01.14: 휴대폰 번호 default value 값 마스킹 처리</span>
+                            <span class="edit">01.20: title 영역 id/aria-hidden 속성 추가 | 휴대폰 번호 input title 속성 삭제/aria-labelledby 속성 추가</span>
+                            <span class="edit">02.03: 가이드 문구 추가</span>
+                            <span class="edit">02.09: ul.auth-info-list > type2 / border-wrap 클래스 추가</span>
+                            <span class="edit">02.16: 인증번호 요청하기 버튼 클래스 변경(btn-style3 &gt; btn-style1)</span>
+                        </li>
+                        <li><a href="/html/auth/SMS2.html">SMS2 - SMS 자사_번호선택</a>
+                            <span class="edit">01.20: title 영역 id/aria-hidden 속성 추가 | 번호선택 부분 aria-labelledby/tabindex 속성 추가</span>
+                            <span class="edit">02.03: 활성회선 title 속성 삭제</span>
+                            <span class="edit">02.16: 현재회선에 current 클래스 추가</span>
+                        </li>
+                    </ul>
+                </li>
+                <li class="in-depth"><strong>개인정보를 입력하는 case</strong>
+                    <ul>
+                        <li><a href="/html/auth/SMS3-step.html">SMS3, SMS4, SMS7, SMS5 - SMS 자사 개인정보+보안문자 <b>(Step진행 스크립트 예시 확인page)</b></a>
+                            <span class="edit">01.14: 휴대폰 번호 default value 값 마스킹 처리 | 페이지 내 스크립트 코드 수정</span>
+                            <span class="edit">02.03: 이름 input placeholder 값 수정 | 법정생년월일/성별 입력 단계를 한단계로 수정 | 보안문자 input 주석 추가</span>
+                            <span class="edit">02.16: 인증번호 요청하기 버튼 클래스 변경(btn-style3 &gt; btn-style1)</span>
+                        </li>
+                        <li><a href="/html/auth/SMS7-error.html">SMS7 - SMS 자사 개인정보+보안문자_보안문자 입력 <b>(Error Case)</b></a>
+                            <span class="edit">01.14: 페이지 내 스크립트 코드 수정</span>
+                            <span class="edit">02.03: 이름 input placeholder 값 수정 | 법정생년월일/성별 입력 단계를 한단계로 수정 | 보안문자 input 주석 추가</span>
+                            <span class="edit">02.16: 인증번호 요청하기 버튼 클래스 변경(btn-style3 &gt; btn-style1)</span>
+                        </li>
+                        <li><a href="/html/auth/SMS5-error.html">SMS5 - SMS 자사 개인정보+보안문자_휴대폰 번호 입력 <b>(Error Case)</b></a>
+                            <span class="edit">02.03: 이름 input placeholder 값 수정 | 법정생년월일/성별 입력 단계를 한단계로 수정 | 보안문자 input 주석 추가</span>
+                            <span class="edit">02.16: 인증번호 요청하기 버튼 클래스 변경(btn-style3 &gt; btn-style1)</span>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="/html/auth/POP6.html">POP6 - 휴대폰 인증 > 정보 불일치 시(본인정보=등록한 휴대폰 명의=SMS수신 휴대폰 명의)</a></li>
+                <li><a href="/html/auth/POP-F.html">POP-F - 법인명의&amp;법인폰 개인인증 서비스 가입자 &amp; 법인폰 비밀번호 인증 팝업</a>
+                    <span class="edit">02.11: 신규 팝업 추가</span>
+                </li>
+                <li><a href="/html/auth/SMS10.html">SMS10 - 인증번호 입력</a>
+                    <span class="edit">01.20: title 영역 id/aria-hidden 속성 추가 | 인증번호 input title 속성 삭제/aria-labelledby 속성 추가</span>
+                    <span class="edit">02.03: 가이드 문구 추가</span>
+                    <span class="edit">02.09: 이전 버튼 추가 및 버튼영역 클래스 추가(multi-btn) | ul.auth-info-list > type2 / border-wrap 클래스 추가</span>
+                </li>
+                <li><a href="/html/auth/SMS10-error.html">SMS10 - 인증번호 입력 <b>(Error Case)</b></a>
+                    <span class="edit">01.20: title 영역 id/aria-hidden 속성 추가 | 인증번호 input title 속성 삭제/aria-labelledby 속성 추가</span>
+                    <span class="edit">02.03: 가이드 문구 추가</span>
+                    <span class="edit">02.09: 이전 버튼 추가 및 버튼영역 클래스 추가(multi-btn) | ul.auth-info-list > type2 / border-wrap 클래스 추가</span>
+                </li>
+            </ul>
+        </li>
+        <li class="in-depth" hidden><strong>생체 인증</strong>
+            <ul>
+                <li><a href="/html/auth/TWD01.html">TWD01 - 설정(as-is)</a></li>
+                <li><a href="/html/auth/TWD02.html">TWD02 - 생체 인증 설정(as-is)</a></li>
+            </ul>
+        </li>
+        <li class="in-depth"><strong>PASS 인증</strong>
+            <ul>
+                <li></li>
+                <li><a href="/html/auth/PAS4-type1.html">PAS4 - 개인정보 활용 동의</a>
+                    <span class="edit">02.08: 메인가이드 문구 수정 및 개인정보 활용동의 항목 한개로 수정</span>
+                </li>
+                <li><a href="/html/auth/PAS1-step.html">PAS1, PAS3 - PASS인증서(이름입력, 휴대폰번호입력) <b>(Step진행 스크립트 예시 확인page)</b></a>
+                    <span class="edit">02.03: 메인가이드 문구 수정 | 이름 input placeholder 값 수정 | 휴대폰 번호 입력 단계에 통신사 선택 영역 추가 | 알뜰폰 사용자 가이드 문구 추가</span>
+                    <span class="edit">02.07: 알뜰폰 사용자 가이드 문구 Tip 버튼 마크업 수정</span>
+                    <span class="edit">02.09: 알뜰폰 통신사 선택 TIP 버튼 위치 및 마크업 변경</span>
+                    <span class="edit">02.16: skt 항목 checked 설정</span>
+                    <span class="edit">02.23: error 케이스 내용 삭제</span>
+                </li>
+                <li><a href="/html/auth/PAS3-error.html">PAS3 - PASS인증서(휴대폰번호입력) <b>(Error Case)</b></a>
+                </li>
+                <li><a href="/html/auth/PAS-tooltip.html">알뜰폰 사용자인 경우 통신사 선택(Tooltip popup)</a>
+                    <span class="edit">02.07: 신규페이지 추가</span>
+                    <span class="edit">02.09: auth-popup 클래스 추가(360px under 해상도 대응)</span>
+                </li>
+                <li><a href="/html/auth/PAS5.html">PAS5 - 인증 진행 안내</a>
+                    <span class="edit">01.14: 문구 변경</span>
+                    <span class="edit">02.11: div.auth-container에 fixed-btn-only 클래스 추가 | 진행 안내 문구 영역 수정</span>
+                </li>
+                <li><a href="/html/auth/POP7.html">POP7 - SKT 고객 입력정보 불일치 시</a></li>
+                <li><a href="/html/auth/POP4-confirm.html">POP4 - PASS인증서 오류 (confirm 팝업)</a></li>
+                <li><a href="/html/auth/POP4-alert.html">POP4 - PASS인증서 오류 (alert 팝업)</a></li>
+                <li><a href="/html/auth/POP2.html">POP2 - PASS인증서 미 서명 시</a></li>
+                <li><a href="/html/auth/POP3.html">POP3 - PASS 인증서 서명 시간 초과</a></li>
+            </ul>
+        </li>
+        <li class="in-depth"><strong>공동인증서 인증(App)</strong>
+            <ul>
+                <li><a href="/html/auth/GON4.html">GON4 - 개인정보활용 동의</a>
+                    <span class="edit">02.03: 신규페이지 추가</span>
+                    <span class="edit">02.09: div.auth-container에 fixed-btn-only 클래스 추가</span>
+                    <span class="edit">02.22: 다른 방법으로 인증하기 버튼 추가 | div.auth-container의 fixed-btn-only 클래스 삭제</span>
+                </li>
+                <li><del><a href="/html/auth/GON2.html">GON2 - 인증서 선택</a></del><span class="ml20">> native로 처리</span>
+                    <del><span class="edit">02.03: 메인 가이드 문구 수정 | 다른 방법으로 인증하기 버튼 삭제</span></del>
+                </li>
+                <li><del><a href="/html/auth/GON3.html">GON3 - 인증서 선택(선택 항목이 없는 경우)</a></del><span class="ml20">> native로 처리</span>
+                    <del><span class="edit">02.03: 신규페이지 추가</span></del>
+                </li>
+                <li><a href="/html/auth/POP8.html">인증서 비밀번호 유효성 검사 실패 팝업</a></li>
+                <li><a href="/html/auth/POP9.html">인증서 유효성 검사 실패 팝업</a></li>
+            </ul>
+        </li>
+        <li class="in-depth"><strong>금융인증(인증서 선택)</strong>
+            <ul>
+                <li class="in-depth"><strong>휴대폰 인증</strong>
+                    <ul>
+                        <li><a href="/html/auth/SMS3-step-type2.html">SMS3, SMS4, SMS8 - SMS 자사 개인정보 입력 <b>(Step진행 스크립트 예시 확인page)</b></a>
+                            <span class="edit">01.14: 휴대폰 번호 default value 값 마스킹 처리</span>
+                            <span class="edit">02.03: 이름 input placeholder 값 수정 | 법정생년월일/성별 입력 단계를 한단계로 수정</span>
+                            <span class="edit">02.16: 인증번호 요청하기 버튼 클래스 변경(btn-style3 &gt; btn-style1)</span>
+                        </li>
+                        <li><a href="/html/auth/SMS8-error.html">SMS8 - SMS 자사 개인정보_휴대폰 번호 입력 <b>(Error Case)</b></a>
+                            <span class="edit">02.03: 이름 input placeholder 값 수정 | 법정생년월일/성별 입력 단계를 한단계로 수정</span>
+                            <span class="edit">02.16: 인증번호 요청하기 버튼 클래스 변경(btn-style3 &gt; btn-style1)</span>
+                        </li>
+                        <li><a href="/html/auth/SMS11.html">SMS11 - SMS 자사_인증번호 입력</a>
+                            <span class="edit">02.09: 이전 버튼 추가 및 버튼영역 클래스 추가(multi-btn)</span>
+                        </li>
+                        <li><a href="/html/auth/SMS11-error.html">SMS11 - SMS 자사_인증번호 입력 <b>(Error Case)</b></a>
+                            <span class="edit">02.09: 이전 버튼 추가 및 버튼영역 클래스 추가(multi-btn)</span>
+                        </li>
+                        <li><a href="/html/auth/GON1.html">GON1 - 개인정보활용 동의</a>
+                            <span class="edit">02.03: 메인가이드 문구 내 br 삭제 | 동의 문구 내용 추가 | 다른 방법으로 인증하기 버튼 삭제</span>
+                            <span class="edit">02.09: div.auth-container에 fixed-btn-only 클래스 추가</span>
+                            <span class="edit">02.22: 다른 방법으로 인증하기 버튼 원복 | div.auth-container의 fixed-btn-only 클래스 삭제</span>
+                        </li>
+                        <li><del><a href="/html/auth/GON2.html">GON2 - 인증서 선택</a></del><span class="ml20">> native로 처리</span>
+                            <del><span class="edit">02.03: 메인 가이드 문구 수정 | 다른 방법으로 인증하기 버튼 삭제</span></del>
+                        </li>
+                        <li><del><a href="/html/auth/GON3.html">GON2 - 인증서 선택(선택 항목이 없는 경우)</a></del><span class="ml20">> native로 처리</span>
+                            <del><span class="edit">02.03: 신규페이지 추가</span></del>
+                            <del><span class="edit">02.09: div.auth-container에 fixed-btn-only 클래스 추가</span></del>
+                        </li>
+                        <li><a href="/html/auth/POP8.html">인증서 비밀번호 유효성 검사 실패 팝업</a></li>
+                        <li><a href="/html/auth/POP9.html">인증서 유효성 검사 실패 팝업</a></li>
+                    </ul>
+                </li>
+                <li class="in-depth"><strong>PASS 휴대폰 인증</strong>
+                    <ul>
+                        <li><a href="/html/auth/PAS4-type2.html">PAS4 - 개인정보 활용 동의</a>
+                            <span class="edit">02.08: 메인가이드 문구 수정 및 개인정보 활용동의 항목 한개로 수정</span>
+                        </li>
+                        <li><a href="/html/auth/PAS1-step-type2.html">PAS1, PAS2, PAS3 - PASS인증서(이름입력, 법정생년월일/성별입력, 휴대폰번호입력) <b>(Step진행 스크립트 예시 확인page)</b></a>
+                            <span class="edit">02.03: 신규페이지(기존의 PASS인증에 법정생년월일/성별 입력 단계가 추가된 케이스)</span>
+                            <span class="edit">02.07: 알뜰폰 사용자 가이드 문구 Tip 버튼 마크업 수정</span>
+                            <span class="edit">02.08: 생년월일 입력 8자리로 변경(금융인증인 경우에만 적용 - 개발요청)</span>
+                            <span class="edit">02.09: 알뜰폰 통신사 선택 TIP 버튼 위치 및 마크업 변경</span>
+                            <span class="edit">02.16: skt 항목 checked 설정</span>
+                            <span class="edit">02.23: error 케이스 내용 삭제</span>
+                        </li>
+                        <li><a href="/html/auth/PAS2-3-error.html">PAS2, PAS3 - PASS인증서(법정생년월일/성별입력, 휴대폰번호입력) <b>(Error Case)</b></a>
+                        <li><a href="/html/auth/PAS-tooltip.html">알뜰폰 사용자인 경우 통신사 선택(Tooltip popup)</a>
+                            <span class="edit">02.07: 신규페이지 추가</span>
+                            <span class="edit">02.09: auth-popup 클래스 추가(360px under 해상도 대응)</span>
+                        </li>
+                        <li><a href="/html/auth/PAS5.html">PAS5 - 인증 진행 안내</a>
+                            <span class="edit">01.14: 문구 변경</span>
+                            <span class="edit">02.11: div.auth-container에 fixed-btn-only 클래스 추가 | 진행 안내 문구 영역 수정</span>
+                        </li>
+                    </ul>
+                    <li><a href="/html/auth/POP2.html">POP2 - PASS인증서 미 서명 시</a></li>
+                    <li><a href="/html/auth/POP3.html">POP3 - PASS 인증서 서명 시간 초과</a></li>
+                    <li><a href="/html/auth/POP4-confirm.html">POP4 - PASS인증서 오류 (confirm 팝업)</a></li>
+                    <li><a href="/html/auth/POP4-alert.html">POP4 - PASS인증서 오류 (alert 팝업)</a></li>
+                </li>
+            </ul>
+        </li>
+        <li class="in-depth"><strong>다른 방법으로 인증하기</strong>
+            <ul>
+                <li><a href="/html/auth/OTH1.html">OTH1 - 다른방법으로 인증하기</a>
+                    <span class="edit">02.03: 점검중 케이스 추가</span>
+                    <span class="edit">02.09: 인증수단 명칭 변경(pass 휴대폰 인증) > KT/LGU+/알뜰폰 인증</span>
+                </li>
+                <li class="in-depth"><strong>그룹별 인증 수단</strong>
+                    <ul>
+                        <li><a href="/html/auth/OTH1-group2.html">그룹2 (SMS+SMS외)</a></li>
+                        <li><a href="/html/auth/OTH1-group3.html">그룹3 (SMS외 Only)</a></li>
+                        <li><a href="/html/auth/OTH1-group4.html">그룹4 (금융거래 인증)</a></li>
+                        <li><a href="/html/auth/OTH1-group5.html">그룹5 (SMS 자사+인증서)</a></li>
+                        <li><a href="/html/auth/OTH1-group6-7.html">그룹6 (생체+인증확대형)</a></li>
+                        <li><a href="/html/auth/OTH1-group6-7.html">그룹7 (SMS 자사+인증확대형)</a></li>
+                        <li><a href="/html/auth/FIN1.html">그룹8 (인증서 Only)</a>
+                            <span class="edit">02.09: 스타일 수정으로 인한 마크업 변경</span>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="/html/auth/popup-upgrade.html">APP 업그레이드 안내 팝업</a></li>
+                <li><a href="/html/auth/POP-AOS6.html">AOS버전 업그레이드 안내 팝업</a></li>
+            </ul>
+        </li>
+        <li class="in-depth"><strong>기타 인증 정책 정의</strong>
+            <ul>
+                <li><a href="/html/auth/OTH-only.html">인증수단 1개 인 경우</a></li>
+                <li><a href="/html/auth/POP-non-auth.html">인증수단이 없는 경우 팝업</a></li>
+            </ul>
+        </li>
+        <li class="in-depth"><strong>공통 Toast Popup</strong>
+            <span class="edit">03.17: tw-popup 클래스 삭제</span>
+            <ul>
+                <li><a href="/html/auth/TOP1.html">TOP1 - 인증번호 전송(toast popup)</a></li>
+                <li><a href="/html/auth/TOP2.html">TOP2 - 인증 완료(toast popup)</a></li>
+                <li><a href="/html/auth/TOP3.html">TOP3 - 인증번호 재전송(toast popup)</a></li>
+            </ul>
+        </li>
+        <li class="in-depth"><strong>공통 Layer Popup</strong>
+            <ul>
+                <li><a href="/html/auth/POP1.html">POP1 - 작업 미 완료 시</a></li>
+                <li><a href="/html/auth/POP2.html">POP2 - PASS인증서 미 서명 시</a></li>
+                <li><a href="/html/auth/POP3.html">POP3 - PASS인증서 서명 시간 초과</a></li>
+                <li><a href="/html/auth/POP4-confirm.html">POP4 - PASS인증서 오류 (confirm 팝업)</a></li>
+                <li><a href="/html/auth/POP4-alert.html">POP4 - PASS인증서 오류 (alert 팝업)</a></li>
+                <li><a href="/html/auth/POP6.html">POP6 - 휴대폰 인증 > 정보 불일치 시(본인정보 = 등록한 휴대폰 명의 = SMS수신 휴대폰 명의)</a></li>
+                <li><a href="/html/auth/POP5.html">POP5 - PASS인증서 > 정보 불일치 시(본인정보 = 등록한 휴대폰 명의 = SMS수신 휴대폰 명의)</a></li>
+                <li><a href="/html/auth/POP7.html">POP7 - SKT 고객 입력정보 불일치 시</a></li>
+                <li><a href="/html/auth/POP8.html">인증서 비밀번호 유효성 검사 실패 팝업</a></li>
+                <li><a href="/html/auth/POP9.html">인증서 유효성 검사 실패 팝업</a></li>
+                <li><del><a href="/html/auth/BOD1.html">BOD1 - 생체인증 등록 Offer 팝업</a></del></li>
+                <li><del><a href="/html/auth/BOD3.html">BOD3 - 지문인식 실패 팝업</a></del></li>
+                <li><del><a href="/html/auth/BOD10.html">BOD10 - 생체인증 등록 완료 팝업</a></del></li>
+            </ul>
+        </li>
+    </ul>
+
+    <br><br>
+    <!--// contents -->
+</body>
+
+</html>
